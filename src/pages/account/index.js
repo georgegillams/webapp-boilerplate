@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import Account from 'containers/Account';
 import CommonLayout from 'components/CommonLayout';

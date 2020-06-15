@@ -1,10 +1,6 @@
 #!/usr/bin/env node
 
-import {
-  formValueChanged,
-  normaliseArray,
-  denormaliseObject,
-} from './objects.js';
+import { formValueChanged, normaliseArray, denormaliseObject } from './objects.js';
 
 // #region formValueChanged
 test('formValueChanged with value - adds attribute', () => {
@@ -23,7 +19,7 @@ test('formValueChanged with value - adds attribute', () => {
     },
     newValue => {
       formEntity = newValue;
-    },
+    }
   );
 
   expect(formEntity.name).toBe('testName');
@@ -48,7 +44,7 @@ test('formValueChanged with boolean - adds attribute', () => {
     },
     newValue => {
       formEntity = newValue;
-    },
+    }
   );
 
   expect(formEntity.name).toBe('testName');
@@ -69,7 +65,7 @@ test('formValueChanged with value - updates attribute', () => {
     },
     newValue => {
       formEntity = newValue;
-    },
+    }
   );
 
   expect(formEntity.name).toBe('newValue');
@@ -94,7 +90,7 @@ test('formValueChanged with boolean - updates attribute', () => {
     },
     newValue => {
       formEntity = newValue;
-    },
+    }
   );
 
   expect(formEntity.name).toBe('testName');
@@ -114,12 +110,7 @@ test('normaliseArray - returns correct result', () => {
 
   const result = normaliseArray(input);
 
-  expect(Object.keys(result)).toStrictEqual([
-    '0',
-    'testId2',
-    'testId3',
-    'testId4',
-  ]);
+  expect(Object.keys(result)).toStrictEqual(['0', 'testId2', 'testId3', 'testId4']);
   expect(result['0'].name).toBe('name1');
   expect(result.testId2.id).toBe('testId2');
   expect(result.testId2.name).toBe('name2');
