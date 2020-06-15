@@ -1,12 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Home from 'containers/Home';
+import Account from 'containers/Account';
 import { withTranslation } from 'utils/with-i18next';
+import CommonLayout from 'components/CommonLayout';
 
 export class AccountPage extends React.PureComponent {
   render() {
-    return <Home {...this.props} />;
+    return (
+      <CommonLayout>
+        <Account {...this.props} />;
+      </CommonLayout>
+    );
   }
 }
 

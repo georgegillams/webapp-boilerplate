@@ -1,6 +1,6 @@
 {
-  "name": "React Next Boilerplate",
-  "short_name": "React Next Boilerplate",
+  "name": "WebApp Boilerplate",
+  "short_name": "WebApp Boilerplate",
   "icons": [
     {
       "src": "/static/favicon/android-chrome-192x192.png",

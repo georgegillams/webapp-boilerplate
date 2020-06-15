@@ -8,7 +8,8 @@ import App from 'next/app';
 
 import withReduxStore from 'utils/with-redux-store';
 import { appWithTranslation } from 'utils/with-i18next';
-import Layout from 'components/Layout';
+import Header from 'components/Header';
+import appConfig from 'helpers/appConfig';
 
 import 'typeface-metropolis';
 import '@typefaces-pack/typeface-inter';
@@ -24,9 +25,14 @@ class Srr extends App {
 
         <Provider store={reduxStore}>
           <CacheProvider value={cache}>
-            <Layout>
-              <Component {...pageProps} />
-            </Layout>
+            <Head>
+              <title>{appConfig.app.title}</title>
+              {appConfig.app.head.meta.map(m => (
+                <meta key={m.property} name={m.property} content={m.content} />
+              ))}
+            </Head>
+            <Header />
+            <Component {...pageProps} />
           </CacheProvider>
         </Provider>
       </React.StrictMode>
