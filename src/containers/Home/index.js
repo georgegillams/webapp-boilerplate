@@ -8,7 +8,6 @@ import { createStructuredSelector } from 'reselect';
 import { useInjectReducer } from 'utils/inject-reducer';
 import { useInjectSaga } from 'utils/inject-saga';
 
-import Layout from 'components/Layout';
 import Features from 'components/Features';
 import Showcases from 'components/Showcases';
 
@@ -22,11 +21,10 @@ export function Home({ getShowcases, showcasesData }) {
   useInjectReducer({ key: 'showcases', reducer });
 
   return (
-    <Layout>
+    <div>
       <Features />
-
       <Showcases onGetShowcases={getShowcases} data={showcasesData} />
-    </Layout>
+    </div>
   );
 }
 

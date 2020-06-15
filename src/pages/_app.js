@@ -8,6 +8,7 @@ import App from 'next/app';
 
 import withReduxStore from 'utils/with-redux-store';
 import { appWithTranslation } from 'utils/with-i18next';
+import Layout from 'components/Layout';
 
 import 'typeface-metropolis';
 import '@typefaces-pack/typeface-inter';
@@ -23,7 +24,9 @@ class Srr extends App {
 
         <Provider store={reduxStore}>
           <CacheProvider value={cache}>
-            <Component {...pageProps} />
+            <Layout>
+              <Component {...pageProps} />
+            </Layout>
           </CacheProvider>
         </Provider>
       </React.StrictMode>

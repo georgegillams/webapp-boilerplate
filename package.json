@@ -5,6 +5,10 @@
   "author": "Jorge Luis Calleja <jorgelca1205@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "prebuild": "npm run build:clean && npm run link-helpers",
+    "build:clean": "rimraf ./build",
+    "link-helpers": "npm run link-helpers:clean && ln -Ffs $(pwd)/helpers $(pwd)/src/helpers && ln -Ffs $(pwd)/helpers $(pwd)/server/helpers",
+    "link-helpers:clean": "rm -f $(pwd)/src/helpers $(pwd)/server/helpers",
     "dev": "cross-env node ./server/app.js src",
     "build": "next build",
     "start": "cross-env NODE_ENV=production node ./server/app.js",

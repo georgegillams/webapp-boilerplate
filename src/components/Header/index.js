@@ -6,7 +6,7 @@ import styled from '@emotion/styled';
 import { withTranslation } from 'utils/with-i18next';
 
 import SelectLanguages from './SelectLanguages';
-import CustomLink from './CustomLink';
+import Link from 'next/link';
 
 const HeaderRoot = styled(`header`)`
   left: 0;
@@ -51,8 +51,10 @@ export function Header({ t }) {
       <HeaderContainer>
         <NavRoot>
           <ListItem>
-            <CustomLink href={'#features'} name={t('phrases.features')} />
-            <CustomLink href={'#exampleGetApi'} name={t('phrases.apiExample')} />
+            <Link href={'/'}>
+              <a>{t('phrases.features')}</a>
+            </Link>
+            <Link href={'#exampleGetApi'}>{t('phrases.apiExample')}</Link>
           </ListItem>
 
           <Space />
