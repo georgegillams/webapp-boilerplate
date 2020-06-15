@@ -8,7 +8,9 @@ exports[`<Showcases /> Should render correctly 1`] = `
   >
     <button
       class="css-67bxaj-ButonGetApi e1vuap0q1"
-    />
+    >
+      phrases.getShowcases
+    </button>
   </div>
 </div>
 `;
@@ -21,7 +23,9 @@ exports[`<Showcases /> When props.loading is true must render component <Spiner 
   >
     <button
       class="css-67bxaj-ButonGetApi e1vuap0q1"
-    />
+    >
+      phrases.getShowcases
+    </button>
     <div
       class="css-d9vn3c-SpinnerRoot elalafq0"
     />

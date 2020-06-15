@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 import styled from '@emotion/styled';
 
-import { withTranslation } from 'utils/with-i18next';
 import Spiner from 'components/Spiner';
 
 const Container = styled('div')`
@@ -66,7 +65,7 @@ const LinkShoucase = styled('a')`
 `;
 
 export function Showcases(props) {
-  const { data, onGetShowcases, t } = props;
+  const { data, onGetShowcases } = props;
 
   const { loading, fetched, showcases } = data;
 
@@ -96,7 +95,7 @@ export function Showcases(props) {
 
   return (
     <Container id="exampleGetApi">
-      <ButonGetApi onClick={onGetShowcases}>{t('phrases.getShowcases')}</ButonGetApi>
+      <ButonGetApi onClick={onGetShowcases}>phrases.getShowcases</ButonGetApi>
 
       {renderCases()}
     </Container>
@@ -104,9 +103,8 @@ export function Showcases(props) {
 }
 
 Showcases.propTypes = {
-  t: PropTypes.func,
   data: PropTypes.object,
   onGetShowcases: PropTypes.func,
 };
 
-export default withTranslation('common')(Showcases);
+export default Showcases;

@@ -4,10 +4,8 @@ import { render } from '@testing-library/react';
 import { Header } from '..';
 
 describe('<Header />', () => {
-  const spy = jest.fn();
-
   it('Should render correctly', () => {
-    const { container } = render(<Header t={spy} />);
+    const { container } = render(<Header />);
 
     expect(container).toMatchSnapshot();
   });

@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Account from 'containers/Account';
-import { withTranslation } from 'utils/with-i18next';
 import CommonLayout from 'components/CommonLayout';
 
 export class AccountPage extends React.PureComponent {
@@ -15,12 +14,10 @@ export class AccountPage extends React.PureComponent {
   }
 }
 
-AccountPage.propTypes = {
-  t: PropTypes.func,
-};
+AccountPage.propTypes = {};
 
 AccountPage.getInitialProps = async () => ({
   namespacesRequired: ['common', 'banner', 'features'],
 });
 
-export default withTranslation('common')(AccountPage);
+export default AccountPage;

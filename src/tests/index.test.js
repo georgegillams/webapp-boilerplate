@@ -8,7 +8,6 @@ import { IndexPage } from '../pages/index';
 
 describe('<HomePage />', () => {
   let store;
-  const spy = jest.fn();
 
   beforeAll(() => {
     store = configureStore({});
@@ -23,7 +22,7 @@ describe('<HomePage />', () => {
 
     const { container } = render(
       <Provider store={store}>
-        <IndexPage t={spy} {...props} />
+        <IndexPage {...props} />
       </Provider>
     );
 

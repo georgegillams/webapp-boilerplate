@@ -36,7 +36,7 @@ describe('<Showcases />', () => {
   };
 
   it('Should render correctly', () => {
-    const { container } = render(<Showcases data={data} t={spy} onGetShowcases={spy} />);
+    const { container } = render(<Showcases data={data} onGetShowcases={spy} />);
 
     expect(container).toMatchSnapshot();
   });
@@ -48,7 +48,7 @@ describe('<Showcases />', () => {
       loading: true,
     };
 
-    const { container } = render(<Showcases data={customDta} t={spy} onGetShowcases={spy} />);
+    const { container } = render(<Showcases data={customDta} onGetShowcases={spy} />);
 
     expect(container).toMatchSnapshot();
   });
@@ -60,7 +60,7 @@ describe('<Showcases />', () => {
       fetched: true,
     };
 
-    const { getByText } = render(<Showcases data={customDta} t={spy} onGetShowcases={spy} />);
+    const { getByText } = render(<Showcases data={customDta} onGetShowcases={spy} />);
 
     expect(getByText('Auth0')).toBeInTheDocument();
     expect(getByText('LEGO for Kids')).toBeInTheDocument();

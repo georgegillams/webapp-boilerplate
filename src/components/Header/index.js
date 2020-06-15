@@ -3,9 +3,6 @@ import PropTypes from 'prop-types';
 
 import styled from '@emotion/styled';
 
-import { withTranslation } from 'utils/with-i18next';
-
-import SelectLanguages from './SelectLanguages';
 import Link from 'next/link';
 
 const HeaderRoot = styled(`header`)`
@@ -45,30 +42,30 @@ const Space = styled('div')`
   flex: 1 1 auto;
 `;
 
-export function Header({ t }) {
+export function Header() {
   return (
     <HeaderRoot>
       <HeaderContainer>
         <NavRoot>
           <ListItem>
-            <Link href={'/'}>Home</Link>
+            <Link href={'/'}>
+              <a>Home</a>
+            </Link>
             <Space />
-            <Link href={'/account'}>Account</Link>
+            <Link href={'/account'}>
+              <a>Account</a>
+            </Link>
           </ListItem>
 
           <Space />
 
-          <ListActions>
-            <SelectLanguages t={t} />
-          </ListActions>
+          <ListActions></ListActions>
         </NavRoot>
       </HeaderContainer>
     </HeaderRoot>
   );
 }
 
-Header.propTypes = {
-  t: PropTypes.func,
-};
+Header.propTypes = {};
 
-export default withTranslation('common')(Header);
+export default Header;
