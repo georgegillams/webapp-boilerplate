@@ -6,9 +6,7 @@ module.exports = {
     '!src/.next/**',
     '!server/**',
     '!src/utils/with-redux-store.js',
-    '!<rootDir>/i18n.js',
     '!<rootDir>/next.config.js',
-    '!src/utils/with-i18next.js',
   ],
   testPathIgnorePatterns: [
     '<rootDir>/src/.next',

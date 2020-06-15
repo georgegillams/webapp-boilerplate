@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Home from 'containers/Home';
-import { withTranslation } from 'utils/with-i18next';
 
 export class IndexPage extends React.PureComponent {
   render() {
@@ -10,12 +9,10 @@ export class IndexPage extends React.PureComponent {
   }
 }
 
-IndexPage.propTypes = {
-  t: PropTypes.func,
-};
+IndexPage.propTypes = {};
 
 IndexPage.getInitialProps = async () => ({
   namespacesRequired: ['common', 'banner', 'features'],
 });
 
-export default withTranslation('common')(IndexPage);
+export default IndexPage;

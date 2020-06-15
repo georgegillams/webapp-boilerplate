@@ -7,7 +7,6 @@ import Head from 'next/head';
 import App from 'next/app';
 
 import withReduxStore from 'utils/with-redux-store';
-import { appWithTranslation } from 'utils/with-i18next';
 import Header from 'components/Header';
 import appConfig from 'helpers/appConfig';
 
@@ -40,4 +39,4 @@ class Srr extends App {
   }
 }
 
-export default appWithTranslation(withReduxStore(Srr));
+export default withReduxStore(Srr);
