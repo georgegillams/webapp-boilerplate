@@ -51,10 +51,9 @@ export function Header({ t }) {
       <HeaderContainer>
         <NavRoot>
           <ListItem>
-            <Link href={'/'}>
-              <a>{t('phrases.features')}</a>
-            </Link>
-            <Link href={'#exampleGetApi'}>{t('phrases.apiExample')}</Link>
+            <Link href={'/'}>Home</Link>
+            <Space />
+            <Link href={'/account'}>Account</Link>
           </ListItem>
 
           <Space />
