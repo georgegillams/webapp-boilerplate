@@ -18,7 +18,7 @@
     "test:watch": "cross-env NODE_ENV=test jest --watchAll",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "lint": "npm run lint:js",
-    "lint:js": "eslint src --fix",
+    "lint:js": "eslint src --fix && eslint server --fix",
     "prettier": "prettier --config .prettierrc \"./**/*.+(js|json|jsx)\" --write",
     "clean:example": "rnb --c"
   },
