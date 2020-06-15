@@ -9,9 +9,11 @@
     "build:clean": "rimraf ./build",
     "link-helpers": "npm run link-helpers:clean && ln -Ffs $(pwd)/helpers $(pwd)/src/helpers && ln -Ffs $(pwd)/helpers $(pwd)/server/helpers",
     "link-helpers:clean": "rm -f $(pwd)/src/helpers $(pwd)/server/helpers",
-    "dev": "cross-env node ./server/app.js src",
-    "build": "next build",
-    "start": "cross-env NODE_ENV=production node ./server/app.js",
+    "dev": "nodemon --ignore 'server/server_content' --ignore 'src/*' --ignore 'build/*' --exec babel-node --inspect ./server/app.js src",
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "next build",
+    "build:server": "cross-env NODE_ENV=development babel -d ./build/server ./server -s --copy-files && cp next.config.js ./build",
+    "start": "cross-env NODE_ENV=production node ./build/server/app.js",
     "start:aws": "npm run start",
     "test:unit": "cross-env NODE_ENV=test jest --coverage",
     "test": "npm run test:unit",
@@ -60,6 +62,8 @@
     "typeface-metropolis": "^0.0.74"
   },
   "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/node": "^7.10.1",
     "@babel/preset-env": "^7.10.2",
     "@r-next-b/cli": "^0.1.1",
     "@testing-library/jest-dom": "^5.9.0",
@@ -81,6 +85,7 @@
     "husky": "^2.4.1",
     "jest-cli": "^24.9.0",
     "lint-staged": "^10.0.3",
+    "nodemon": "^2.0.4",
     "prettier": "^1.18.2",
     "react-test-renderer": "^16.12.0",
     "whatwg-fetch": "^3.0.0"
