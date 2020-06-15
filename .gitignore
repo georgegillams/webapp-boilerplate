@@ -5,6 +5,10 @@ node_modules
 stats.json
 yarn-error.log
 build
+src/helpers
+helpers/helpers
+server/helpers
+
 
 # Cruft
 .DS_Store

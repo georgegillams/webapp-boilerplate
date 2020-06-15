@@ -38,7 +38,6 @@ class MyDocument extends Document {
           <link rel="mask-icon" href="/static/favicon/safari-pinned-tab.svg" color="#000000" />
           <link rel="shortcut icon" href="/static/favicon/favicon.png" />
           <meta name="msapplication-config" content="/static/favicon/browserconfig.xml" />
-          <meta name="theme-color" content="#000" />
           <style data-emotion-css={this.props.ids.join(' ')} dangerouslySetInnerHTML={{ __html: this.props.css }} />
         </Head>
 
