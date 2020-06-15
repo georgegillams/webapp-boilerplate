@@ -8,6 +8,7 @@ build
 src/helpers
 helpers/helpers
 server/helpers
+build.zip
 
 
 # Cruft
