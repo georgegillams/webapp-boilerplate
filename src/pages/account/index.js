@@ -2,21 +2,26 @@ import React from 'react';
 
 import Account from 'containers/Account';
 import CommonLayout from 'components/CommonLayout';
+import Head from 'next/head';
+import appConfig from 'helpers/appConfig';
 
-export class AccountPage extends React.PureComponent {
+export class Page extends React.PureComponent {
   render() {
     return (
       <CommonLayout>
+        <Head>
+          <title>Account - {appConfig.projectTitle}</title>
+        </Head>
         <Account {...this.props} />;
       </CommonLayout>
     );
   }
 }
 
-AccountPage.propTypes = {};
+Page.propTypes = {};
 
-AccountPage.getInitialProps = async () => ({
+Page.getInitialProps = async () => ({
   namespacesRequired: ['common', 'banner', 'features'],
 });
 
-export default AccountPage;
+export default Page;

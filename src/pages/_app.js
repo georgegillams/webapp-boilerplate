@@ -19,17 +19,14 @@ class Srr extends App {
     return (
       <React.StrictMode>
         <Head>
-          <title>React Next Boilerplate</title>
+          <title>{appConfig.app.title}</title>
+          {appConfig.app.head.meta.map(m => (
+            <meta key={m.property} name={m.property} content={m.content} />
+          ))}
         </Head>
 
         <Provider store={reduxStore}>
           <CacheProvider value={cache}>
-            <Head>
-              <title>{appConfig.app.title}</title>
-              {appConfig.app.head.meta.map(m => (
-                <meta key={m.property} name={m.property} content={m.content} />
-              ))}
-            </Head>
             <Header />
             <Component {...pageProps} />
           </CacheProvider>

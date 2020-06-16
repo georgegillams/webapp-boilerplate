@@ -29,7 +29,7 @@ module.exports = {
   siteUrl,
   apiEndpoint,
   app: {
-    title: 'Web App Boilerplate - just some boilerplate for a web app',
+    title: `${projectTitle} ${projectDescription}`,
     head: {
       titleTemplate: `${projectTitle}: %s`,
       meta: [

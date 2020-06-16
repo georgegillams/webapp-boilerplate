@@ -1,17 +1,22 @@
 import React from 'react';
 
-import Home from 'containers/Home';
+import Home from 'containers/HomeBP';
+import CommonLayout from 'components/CommonLayout';
 
-export class IndexPage extends React.PureComponent {
+export class Page extends React.PureComponent {
   render() {
-    return <Home {...this.props} />;
+    return (
+      <CommonLayout>
+        <Home {...this.props} />
+      </CommonLayout>
+    );
   }
 }
 
-IndexPage.propTypes = {};
+Page.propTypes = {};
 
-IndexPage.getInitialProps = async () => ({
+Page.getInitialProps = async () => ({
   namespacesRequired: ['common', 'banner', 'features'],
 });
 
-export default IndexPage;
+export default Page;
