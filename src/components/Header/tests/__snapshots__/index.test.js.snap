@@ -11,28 +11,24 @@ exports[`<Header /> Should render correctly 1`] = `
       <nav
         class="css-wvyf6s-NavRoot ez4dfsd2"
       >
-        <div
-          class="css-1vw1113-ListItem ez4dfsd3"
+        <a
+          href="/"
         >
-          <a
-            href="/"
-          >
-            Home
-          </a>
-          <div
-            class="css-kh7q0g-Space ez4dfsd5"
-          />
-          <a
-            href="/account"
-          >
-            Account
-          </a>
-        </div>
+          Home
+        </a>
         <div
-          class="css-kh7q0g-Space ez4dfsd5"
+          class="css-kh7q0g-Space ez4dfsd4"
+        />
+        <a
+          href="/account"
+        >
+          Account
+        </a>
+        <div
+          class="css-kh7q0g-Space ez4dfsd4"
         />
         <div
-          class="css-1jbsa08-ListActions ez4dfsd4"
+          class="css-1jbsa08-ListActions ez4dfsd3"
         />
       </nav>
     </div>
