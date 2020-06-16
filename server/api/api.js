@@ -38,7 +38,6 @@ const appFunc = (req, res) => {
 
   try {
     if (action) {
-      console.log(`action`, action);
       action(req, params)
         .then(result => {
           if (result instanceof Function) {
