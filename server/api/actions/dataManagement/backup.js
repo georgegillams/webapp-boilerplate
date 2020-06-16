@@ -6,7 +6,8 @@ import authentication from 'utils/authentication';
 import appConfig from 'helpers/appConfig';
 import { UNAUTHORISED_READ } from 'utils/errorConstants';
 
-const dataFilePath = 'server/server_content/data.json';
+const serverContentDir = 'server/server_content';
+const dataFilePath = `${serverContentDir}/data.json`;
 
 export default function load(req) {
   return authentication(req)
@@ -23,6 +24,9 @@ export default function load(req) {
         data,
       };
       return res => {
+        if (!fs.existsSync(serverContentDir)) {
+          fs.mkdirSync(serverContentDir);
+        }
         fs.writeFileSync(dataFilePath, JSON.stringify(dataAnnotated));
         res.download(dataFilePath);
       };
