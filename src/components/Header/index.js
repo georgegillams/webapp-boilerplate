@@ -29,10 +29,6 @@ const NavRoot = styled('nav')`
   max-width: 1024px;
 `;
 
-const ListItem = styled('div')`
-  display: flex;
-`;
-
 const ListActions = styled('div')`
   display: flex;
 `;
@@ -46,15 +42,13 @@ export function Header() {
     <HeaderRoot>
       <HeaderContainer>
         <NavRoot>
-          <ListItem>
-            <Link href={'/'}>
-              <a>Home</a>
-            </Link>
-            <Space />
-            <Link href={'/account'}>
-              <a>Account</a>
-            </Link>
-          </ListItem>
+          <Link style={{ marginRight: '1rem' }} href={'/'}>
+            <a>Home</a>
+          </Link>
+          <Space />
+          <Link href={'/account'}>
+            <a>Account</a>
+          </Link>
 
           <Space />
 
