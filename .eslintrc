@@ -1,7 +1,18 @@
 {
   "parser": "babel-eslint",
-  "extends": ["plugin:prettier/recommended", "eslint:recommended", "plugin:react/recommended"],
+  "extends": [
+    "plugin:prettier/recommended",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:promise/recommended"
+  ],
   "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["./server", "./src"],
+        "extensions": [".js", ".jsx", ".json"]
+      }
+    },
     "react": {
       "pragma": "React",
       "version": "*"
@@ -13,7 +24,7 @@
     "es6": true,
     "jest/globals": true
   },
-  "plugins": ["prettier", "react", "redux-saga", "react-hooks", "jest"],
+  "plugins": ["prettier", "react", "redux-saga", "react-hooks", "jest", "promise"],
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "module",
