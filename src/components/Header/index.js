@@ -37,17 +37,18 @@ const Space = styled('div')`
   flex: 1 1 auto;
 `;
 
+import STYLES from './styles.scss';
+
 export function Header() {
   return (
     <HeaderRoot>
       <HeaderContainer>
         <NavRoot>
           <Link href={'/'}>
-            <a>Home</a>
+            <a className={STYLES.header__link}>Home</a>
           </Link>
-          <Space />
           <Link href={'/account'}>
-            <a>Account</a>
+            <a className={STYLES.header__link}>Account</a>
           </Link>
 
           <Space />
