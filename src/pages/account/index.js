@@ -12,7 +12,7 @@ export class Page extends React.PureComponent {
         <Head>
           <title>Account - {appConfig.projectTitle}</title>
         </Head>
-        <Account {...this.props} />;
+        <Account style={{ background: 'black' }} {...this.props} />
       </CommonLayout>
     );
   }

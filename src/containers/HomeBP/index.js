@@ -14,13 +14,17 @@ import saga from './saga';
 import reducer from './reducer';
 import { getShowcases } from './actions';
 import { selectShowcases } from './selectors';
+import { BurgerButton } from 'gg-components/Button';
 
-export function Home({ getShowcases, showcasesData }) {
+export function Home({ getShowcases, showcasesData, ...rest }) {
   useInjectSaga({ key: 'showcases', saga });
   useInjectReducer({ key: 'showcases', reducer });
 
+  delete rest.namespacesRequired;
+
   return (
-    <div>
+    <div {...rest}>
+      <BurgerButton open={false} />
       <Showcases onGetShowcases={getShowcases} data={showcasesData} />
     </div>
   );
