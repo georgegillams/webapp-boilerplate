@@ -41,7 +41,7 @@ module.exports = {
         { property: 'og:site_name', content: projectTitle },
         {
           property: 'og:image',
-          content: 'https://via.placeholder.com/500x200.png?text=Placeholder',
+          content: 'https://via.placeholder.com/1200x630.png?text=Placeholder',
         },
         {
           property: 'og:url',
