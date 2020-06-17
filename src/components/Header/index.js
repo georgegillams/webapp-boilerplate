@@ -42,7 +42,7 @@ export function Header() {
     <HeaderRoot>
       <HeaderContainer>
         <NavRoot>
-          <Link style={{ marginRight: '1rem' }} href={'/'}>
+          <Link href={'/'}>
             <a>Home</a>
           </Link>
           <Space />
