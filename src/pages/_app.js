@@ -7,8 +7,8 @@ import Head from 'next/head';
 import App from 'next/app';
 
 import withReduxStore from 'utils/with-redux-store';
-import Header from 'components/Header';
 import appConfig from 'helpers/appConfig';
+import Navigation from 'containers/NavigationBarWrapper';
 
 import 'global-styles.scss';
 import 'typeface-metropolis';
@@ -28,8 +28,10 @@ class Srr extends App {
 
         <Provider store={reduxStore}>
           <CacheProvider value={cache}>
-            <Header />
-            <Component {...pageProps} />
+            <Navigation />
+            <main id="mainScrollView">
+              <Component {...pageProps} />
+            </main>
           </CacheProvider>
         </Provider>
       </React.StrictMode>
