@@ -53,6 +53,7 @@
     "gg-components": "^5.0.0",
     "hoist-non-react-statics": "3.3.0",
     "immer": "^6.0.9",
+    "immutable": "^4.0.0-rc.12",
     "invariant": "2.2.4",
     "ip": "^1.1.5",
     "lodash": "^4.17.15",

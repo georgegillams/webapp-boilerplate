@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { cssModules } from 'gg-components/helpers/cssModules';
-import { Paragraph, SubSection, TextLink, PageTitle } from 'gg-components/Typography';
+import { Paragraph, SubSection, PageTitle } from 'gg-components/Typography';
+import TextLink from 'components/TextLink';
 import Link from 'next/link';
 
 import STYLES from './not-found.scss';
