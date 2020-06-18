@@ -15,18 +15,19 @@ const apiStructure = {
   requestVerificationEmail: {
     method: POST,
     path: '/auth/request-verification-email',
+    isSensitive: true,
   },
-  verifyEmail: { method: POST, path: '/auth/verify-email' },
+  verifyEmail: { method: POST, path: '/auth/verify-email', isSensitive: true },
 
   // Login
-  loginWithMagicLink: { method: POST, path: '/magic-links/login' },
-  requestMagicLink: { method: POST, path: '/magic-links/request' },
+  loginWithMagicLink: { method: POST, path: '/magic-links/login', isSensitive: true },
+  requestMagicLink: { method: POST, path: '/magic-links/request', isSensitive: true },
 
   // Data
-  backupAllData: { method: GET, path: '/data-management/backup' },
-  deleteEntity: { method: POST, path: '/data-management/delete-entity' },
-  deleteSet: { method: POST, path: '/data-management/delete-set' },
-  restoreBackup: { method: POST, path: '/data-management/restore' },
+  backupAllData: { method: GET, path: '/data-management/backup', isSensitive: true },
+  deleteEntity: { method: POST, path: '/data-management/delete-entity', isSensitive: true },
+  deleteSet: { method: POST, path: '/data-management/delete-set', isSensitive: true },
+  restoreBackup: { method: POST, path: '/data-management/restore', isSensitive: true },
 
   // Notifications
   createNotification: { method: POST, path: '/notifications/create' },
@@ -40,7 +41,7 @@ const apiStructure = {
   deleteUser: { method: POST, path: '/users/delete' },
   loadUser: { method: GET, path: '/users/load' },
   loadUsers: { method: GET, path: '/users/load-all' },
-  signUp: { method: POST, path: '/users/sign-up' },
+  signUp: { method: POST, path: '/users/sign-up', isSensitive: true },
   updateUser: { method: POST, path: '/users/update' },
 };
 
