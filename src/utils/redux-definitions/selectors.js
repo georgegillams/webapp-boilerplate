@@ -9,8 +9,7 @@ const createSelectors = (id, stateEntities) => {
     const entity = stateEntities[i];
     const selectorName = camelCase(`MAKE_SELECT_${entity}`);
 
-    const entitySelector = () =>
-      createSelector(selectState, state => state.get(entity));
+    const entitySelector = () => createSelector(selectState, state => state.get(entity));
     result[selectorName] = entitySelector;
   }
   return result;

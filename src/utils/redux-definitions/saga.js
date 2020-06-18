@@ -10,7 +10,7 @@ function* sagaHelper(
   registerErrorAction,
   registerSuccessAction,
   successMessage,
-  postSuccessCallback,
+  postSuccessCallback
 ) {
   try {
     const result = yield call(request, requestURL, requestParams);
@@ -19,9 +19,7 @@ function* sagaHelper(
       yield put(pushMessage({ type: 'error', message: result.errorMessage }));
     } else {
       if (result.warning) {
-        yield put(
-          pushMessage({ type: 'warn', message: result.warningMessage }),
-        );
+        yield put(pushMessage({ type: 'warn', message: result.warningMessage }));
       }
       if (successMessage) {
         yield put(pushMessage(successMessage));

@@ -104,10 +104,5 @@ const createAppReducer = (actionDefinitions, constants, initialState) => {
   return appReducerFunc;
 };
 
-export {
-  inferPropertiesFromInitialState,
-  getInitialState,
-  createInitialState,
-  createAppReducer,
-};
+export { inferPropertiesFromInitialState, getInitialState, createInitialState, createAppReducer };
 export default inferPropertiesFromInitialState;

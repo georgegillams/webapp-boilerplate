@@ -1,3 +1,6 @@
+/* stylelint-disable selector-max-type */
+/* stylelint-disable custom-property-empty-line-before */
+/* stylelint-disable selector-max-id */
 @import '~utils/tokens';
 
 :root {
@@ -22,21 +25,20 @@
 
 html,
 body {
-  height: 100%;
   width: 100%;
+  height: 100%;
   line-height: 1;
 }
 
 body {
+  background-color: $background-color;
+  color: $not-black;
   font-family: 'Quattrocento Sans', sans-serif;
   src: url('https://fonts.googleapis.com/css?family=Quattrocento+Sans');
 
-  color: $not-black;
-  background-color: $background-color;
-
   @media (prefers-color-scheme: dark) {
-    color: $not-black-invert;
     background-color: $background-color-invert;
+    color: $not-black-invert;
   }
 }
 
@@ -46,47 +48,6 @@ body.fontLoaded {
 }
 
 #app {
-  min-height: 100%;
   min-width: 100%;
-}
-@import '~utils/tokens';
-
-:root {
-  --segmented-control-selected-color: #{$primary-color};
-  --checkbox-tick-color: #{$primary-color};
-  --primary-color: #{$primary-color};
-  --primary-color-invert: #{$primary-color-dark};
-  --link-color: #{$link-color};
-  --link-color-invert: #{$link-color-invert};
-  --link-hover-color: #{$primary-color};
-}
-
-html,
-body {
-  height: 100%;
-  width: 100%;
-  line-height: 1;
-}
-
-body {
-  font-family: 'Quattrocento Sans', sans-serif;
-  src: url('https://fonts.googleapis.com/css?family=Quattrocento+Sans');
-
-  color: $not-black;
-  background-color: $background-color;
-
-  @media (prefers-color-scheme: dark) {
-    color: $not-black-invert;
-    background-color: $background-color-invert;
-  }
-}
-
-body.fontLoaded {
-  font-family: 'Quattrocento Sans', sans-serif;
-  src: url('https://fonts.googleapis.com/css?family=Quattrocento+Sans');
-}
-
-#app {
   min-height: 100%;
-  min-width: 100%;
 }

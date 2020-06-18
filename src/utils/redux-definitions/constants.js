@@ -1,7 +1,6 @@
 import crypto from 'crypto';
 
-const generateConstantValue = constantName =>
-  `${constantName}-${crypto.randomBytes(6).toString('hex')}`;
+const generateConstantValue = constantName => `${constantName}-${crypto.randomBytes(6).toString('hex')}`;
 
 const defineConstants = (...constantNames) => {
   const result = {};
@@ -20,9 +19,5 @@ const inferConstantsFromActionDefinitions = defs => {
   return result;
 };
 
-export {
-  defineConstants,
-  generateConstantValue,
-  inferConstantsFromActionDefinitions,
-};
+export { defineConstants, generateConstantValue, inferConstantsFromActionDefinitions };
 export default defineConstants;
