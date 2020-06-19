@@ -1,6 +1,7 @@
 const withSass = require('@zeit/next-sass');
 const withCSS = require('@zeit/next-css');
 const nextTranspileModules = require('next-transpile-modules');
+const withImages = require('next-images');
 
 const nextConfig = {
   distDir: 'build',
@@ -13,15 +14,17 @@ const nextConfig = {
 
 const withTM = nextTranspileModules(['gg-components']);
 
-module.exports = withTM(
-  withSass(
-    withCSS({
-      cssModules: true,
-      cssLoaderOptions: {
-        url: false,
-        localIdentName: '[local]___[hash:base64:5]',
-      },
-      ...nextConfig,
-    })
+module.exports = withImages(
+  withTM(
+    withSass(
+      withCSS({
+        cssModules: true,
+        cssLoaderOptions: {
+          url: false,
+          localIdentName: '[local]___[hash:base64:5]',
+        },
+        ...nextConfig,
+      })
+    )
   )
 );

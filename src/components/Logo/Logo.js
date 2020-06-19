@@ -33,9 +33,11 @@ const Logo = props => {
   return (
     <div className={classNameFinal.join(' ')} {...rest}>
       <Link href="/">
-        <h1 role="button" aria-label="Home page" className={largeTextClassNameFinal.join(' ')}>
-          {'LOGO'}
-        </h1>
+        <a href="/">
+          <h1 role="button" aria-label="Home page" className={largeTextClassNameFinal.join(' ')}>
+            {'LOGO'}
+          </h1>
+        </a>
       </Link>
     </div>
   );
