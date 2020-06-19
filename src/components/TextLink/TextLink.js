@@ -11,7 +11,7 @@ const TextLink = props => {
 
   return (
     <Link href={href} passHref>
-      <GGTextLink href={href} {...rest}></GGTextLink>
+      <GGTextLink href={href} {...rest} />
     </Link>
   );
 };
