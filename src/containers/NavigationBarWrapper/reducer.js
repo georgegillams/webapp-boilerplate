@@ -2,8 +2,8 @@ import { fromJS } from 'immutable';
 
 const initialState = fromJS({});
 
-function appReducer(state = initialState) {
+function reducer(state = initialState) {
   return state;
 }
 
-export default appReducer;
+export default reducer;

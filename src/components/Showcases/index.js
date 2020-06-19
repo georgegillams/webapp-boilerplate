@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 
 import Spiner from 'components/Spiner';
+import { Button } from 'gg-components/Button';
 
 const Container = styled('div')`
   width: 100%;
@@ -11,22 +12,6 @@ const Container = styled('div')`
   padding: 2rem 1rem;
   max-width: 1024px;
   text-align: center;
-`;
-
-const ButonGetApi = styled('button')`
-  margin: 0;
-  padding: 0 3.5rem;
-  height: 2.81rem;
-  line-height: 2.8rem;
-  font-size: 16px;
-  font-weight: 300;
-  border-radius: 7px;
-  background-color: #09d3ac;
-  box-shadow: 0 4px 14px 0 rgba(9, 211, 172, 0.35);
-  color: white;
-  cursor: pointer;
-  border: none;
-  margin-bottom: 55px;
 `;
 
 const ShowcasesRow = styled('div')`
@@ -67,14 +52,10 @@ const LinkShoucase = styled('a')`
 export function Showcases(props) {
   const { data, onGetShowcases } = props;
 
-  const { loading, fetched, showcases } = data;
+  const { loadingShowcases, showcases } = data;
 
   const renderCases = () => {
-    if (loading) {
-      return <Spiner />;
-    }
-
-    if (fetched) {
+    if (showcases && showcases.map) {
       return (
         <ShowcasesRow>
           {showcases.map(item => (
@@ -91,11 +72,15 @@ export function Showcases(props) {
         </ShowcasesRow>
       );
     }
+
+    return <Spiner />;
   };
 
   return (
     <Container id="exampleGetApi">
-      <ButonGetApi onClick={onGetShowcases}>phrases.getShowcases</ButonGetApi>
+      <Button disabled={loadingShowcases} large onClick={onGetShowcases}>
+        Get showcases
+      </Button>
 
       {renderCases()}
     </Container>

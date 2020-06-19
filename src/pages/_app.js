@@ -6,7 +6,7 @@ import { cache } from 'emotion';
 import Head from 'next/head';
 import App from 'next/app';
 
-import withReduxStore from 'utils/with-redux-store';
+import withReduxStore from 'utils/redux/with-redux-store';
 import appConfig from 'helpers/appConfig';
 import Navigation from 'containers/NavigationBarWrapper';
 

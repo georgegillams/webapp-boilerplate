@@ -1,9 +1,10 @@
 import { createSelector } from 'reselect';
 
+import { KEY } from './constants';
 import { initialState } from './reducer';
 
-const selectShowcasesDomain = state => state.showcases || initialState;
+const selectShowcasesDomain = state => state[KEY] || initialState;
 
-const selectShowcases = () => createSelector(selectShowcasesDomain, subState => subState);
+const selectShowcasesState = () => createSelector(selectShowcasesDomain, subState => subState);
 
-export { selectShowcases, selectShowcasesDomain };
+export { selectShowcasesState };

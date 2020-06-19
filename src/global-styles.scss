@@ -23,6 +23,11 @@
   --segmented-control-selected-color: #{$segmented-control-selected-color};
 }
 
+::selection {
+  background-color: #{$primary-color};
+  color: white;
+}
+
 html,
 body {
   width: 100%;
