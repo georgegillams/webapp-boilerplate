@@ -15,7 +15,7 @@ export class Page extends React.PureComponent {
         <Head>
           <title>Status - {appConfig.projectTitle}</title>
         </Head>
-        <Status builtAt={BUILT_AT} nodeEnv={NODE_ENV} {...this.props} />
+        <Status builtAt={parseInt(BUILT_AT, 10)} nodeEnv={NODE_ENV} {...this.props} />
       </CommonLayout>
     );
   }
