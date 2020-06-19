@@ -7,7 +7,7 @@ const NavigationItem = props => {
   const { name, linkUrl, hrefExternal, ...rest } = props;
   if (hrefExternal) {
     return (
-      <Button href={linkUrl} hrefExternal bouncy {...rest}>
+      <Button href={linkUrl} hrefExternal={hrefExternal} bouncy {...rest}>
         {name}
       </Button>
     );
@@ -15,7 +15,7 @@ const NavigationItem = props => {
 
   return (
     <Link href={linkUrl}>
-      <Button href={linkUrl} hrefDumb bouncy {...rest}>
+      <Button href={linkUrl} bouncy {...rest}>
         {name}
       </Button>
     </Link>

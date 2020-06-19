@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Status /> should render correctly 1`] = `
+<div>
+  <div>
+    <div
+      class="typography__main"
+    >
+      <h1
+        class="typography__text typography__text--section page-title__section"
+        id="status"
+      >
+        Status
+      </h1>
+      <img
+        alt="Build status"
+        class="style__component"
+        src="https://github.com/georgegillams/georgegillams.co.uk/workflows/CI/badge.svg"
+      />
+      <br />
+      <img
+        alt="Dependency status"
+        class="style__component"
+        src="https://img.shields.io/david/georgegillams/georgegillams.co.uk"
+      />
+      <div
+        class="typography__main pages__component"
+      >
+        <span
+          class="typography__main typography__paragraph"
+        >
+          Built 
+          50 years ago
+        </span>
+      </div>
+      <div
+        class="typography__main pages__component"
+      >
+        <span
+          class="typography__main typography__paragraph"
+        >
+          Environment 
+          test-node-env
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

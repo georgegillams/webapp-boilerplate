@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { cssModules } from 'gg-components/helpers/cssModules';
 import { Paragraph, SubSection, PageTitle } from 'gg-components/Typography';
 import TextLink from 'components/TextLink';
-import Link from 'next/link';
 
 import STYLES from './not-found.scss';
 
@@ -23,13 +22,7 @@ const NotFound = props => {
           <Paragraph>
             The page you&apos;re looking for doesn&apos;t exist, or you don&apos;t have permission to view it.
             <br />
-            Maybe the{' '}
-            <Link href={'/site-map'}>
-              <TextLink hrefDumb href="/site-map">
-                sitemap
-              </TextLink>
-            </Link>{' '}
-            can help
+            Maybe the <TextLink href={'/site-map'}>sitemap</TextLink> can help
           </Paragraph>
         </SubSection>
       </PageTitle>

@@ -6,6 +6,8 @@ const nextConfig = {
   distDir: 'build',
   publicRuntimeConfig: {
     localeSubpaths: typeof process.env.LOCALE_SUBPATHS === 'string' ? process.env.LOCALE_SUBPATHS : 'all',
+    NODE_ENV: process.env.NODE_ENV,
+    BUILT_AT: process.env.BUILT_AT,
   },
 };
 
