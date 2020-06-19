@@ -2,7 +2,10 @@
 
 exports[`<HomePage /> should render correctly 1`] = `
 <div>
-  <main>
+  <main
+    class="page-container__container"
+    id="mainScrollView"
+  >
     <div>
       <div
         class="css-1hvjfqy-Container e1vuap0q0"

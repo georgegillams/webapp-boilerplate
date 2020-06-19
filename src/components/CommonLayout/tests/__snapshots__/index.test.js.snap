@@ -2,7 +2,10 @@
 
 exports[`<Layout /> Should render correctly 1`] = `
 <div>
-  <main>
+  <main
+    class="page-container__container"
+    id="mainScrollView"
+  >
     <div>
       some text
     </div>
