@@ -10,4 +10,9 @@ describe('<Footer />', () => {
 
     expect(container).toMatchSnapshot();
   });
+  it('Should render correctly with custom className', () => {
+    const { container } = render(<Footer className="test-custom-className" />);
+
+    expect(container).toMatchSnapshot();
+  });
 });

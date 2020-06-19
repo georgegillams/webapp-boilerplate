@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextLink /> Should render correctly 1`] = `
+<div>
+  <a
+    class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+    href="/test"
+  >
+    some text
+  </a>
+</div>
+`;
+
+exports[`<TextLink /> Should render correctly with custom className 1`] = `
+<div>
+  <a
+    class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline test-custom-classname"
+    href="/test"
+  >
+    some text
+  </a>
+</div>
+`;

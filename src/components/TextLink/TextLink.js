@@ -4,17 +4,24 @@ import { TextLink as GGTextLink } from 'gg-components/Typography';
 import Link from 'next/link';
 
 const TextLink = props => {
-  const { href, ...rest } = props;
+  const { href, hrefExternal, ...rest } = props;
+  if (hrefExternal) {
+    return <TextLink {...props} />;
+  }
 
   return (
-    <Link href={href}>
-      <GGTextLink href={href} hrefDumb {...rest}></GGTextLink>
+    <Link href={href} passHref>
+      <GGTextLink href={href} {...rest}></GGTextLink>
     </Link>
   );
 };
 
 TextLink.propTypes = {
   href: PropTypes.string.isRequired,
+  hrefExternal: PropTypes.bool,
+};
+TextLink.defaultProps = {
+  hrefExternal: false,
 };
 
 export default TextLink;

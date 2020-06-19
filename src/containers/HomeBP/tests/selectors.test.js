@@ -14,7 +14,7 @@ describe('selectShowcases', () => {
   });
 
   it('should select the showcases state', () => {
-    const initialState = {
+    const initialShowcasesState = {
       loadingShowcases: false,
       loadShowcasesError: null,
       showcases: [
@@ -28,11 +28,11 @@ describe('selectShowcases', () => {
     };
 
     const mockedState = {
-      showcases: initialState,
+      showcases: initialShowcasesState,
     };
 
     const selectShowcasesMock = selectShowcasesState();
 
-    expect(selectShowcasesMock(mockedState)).toEqual(initialState);
+    expect(selectShowcasesMock(mockedState)).toEqual(initialShowcasesState);
   });
 });

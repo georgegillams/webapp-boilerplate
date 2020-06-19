@@ -13,7 +13,7 @@ describe('<HomePage />', () => {
     store = configureStore({});
   });
 
-  it('should render and match the snapshot', () => {
+  it('should render correctly', () => {
     let props;
 
     // If the page defines `getInitialProps` we should call them here
