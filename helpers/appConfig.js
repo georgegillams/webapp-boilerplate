@@ -14,6 +14,8 @@ const projectTitle = 'Web App Boilerplate';
 const projectDescription = 'Just some boilerplate for a web app';
 const projectDescriptionShort = 'just some boilerplate for a web app';
 const domain = 'webapp-boilerplate.georgegillams.co.uk';
+const githubRepo = 'georgegillams/webapp-boilerplate';
+const githubRepoUrl = `https://github.com/${githubRepo}`;
 const port = PORT || 3000;
 const siteUrl = NODE_ENV === 'development' || PROJECT_UNDER_TEST ? `http://localhost:${port}` : `https://${domain}`;
 const apiEndpoint = `${siteUrl}/api`;
@@ -28,6 +30,8 @@ module.exports = {
   domain,
   siteUrl,
   apiEndpoint,
+  githubRepo,
+  githubRepoUrl,
   app: {
     title: `${projectTitle} ${projectDescription}`,
     head: {

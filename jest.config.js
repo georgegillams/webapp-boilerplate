@@ -3,6 +3,7 @@ module.exports = {
     'src/**/*.{js,jsx}',
     'server/**/*.{js,jsx}',
     '!src/pages/_*.js',
+    '!build/**',
     '!coverage/**',
     '!src/.next/**',
     '!server/**/*.test.{js,jsx}',
