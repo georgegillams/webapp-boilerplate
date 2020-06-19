@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import PageContainer from 'components/PageContainer';
 import Footer from 'components/Footer';
 
 const CommonLayout = props => {
@@ -8,7 +9,7 @@ const CommonLayout = props => {
 
   return (
     <>
-      <main>{children}</main>
+      <PageContainer id="mainScrollView">{children}</PageContainer>
       <Footer />
     </>
   );
