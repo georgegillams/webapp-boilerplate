@@ -2,17 +2,69 @@
 
 exports[`<HomePage /> should render and match the snapshot 1`] = `
 <div>
-  <div>
+  <main>
     <div
-      class="css-1hvjfqy-Container e1vuap0q0"
-      id="exampleGetApi"
+      style="background: black;"
     >
-      <button
-        class="css-67bxaj-ButonGetApi e1vuap0q1"
+      <div
+        class="css-1hvjfqy-Container e1vuap0q0"
+        id="exampleGetApi"
       >
-        phrases.getShowcases
-      </button>
+        <button
+          class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
+          type="button"
+        >
+          Get showcases
+        </button>
+        <div
+          class="css-1bqe7xb-ShowcasesRow e1vuap0q1"
+        />
+      </div>
     </div>
-  </div>
+  </main>
+  <footer
+    class="jsx-898115948 root"
+  >
+    <div
+      class="jsx-898115948 container"
+    >
+      <div
+        class="jsx-898115948 row"
+      >
+        <a
+          class="jsx-898115948 link"
+          href="https://nextjs.org/features/server-side-rendering"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          SSR
+        </a>
+        <a
+          class="jsx-898115948 link"
+          href="https://nextjs.org/features/static-exporting"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Static Exporting
+        </a>
+        <a
+          class="jsx-898115948 link"
+          href="https://nextjs.org/features/css-in-js"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          CSS-in-JS
+        </a>
+        <a
+          class="jsx-898115948 link"
+          href="https://nextjs.org/features/progressive-web-apps"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          PWA
+        </a>
+      </div>
+    </div>
+  </footer>
 </div>
 `;

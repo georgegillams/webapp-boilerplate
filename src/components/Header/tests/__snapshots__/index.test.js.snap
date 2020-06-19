@@ -16,9 +16,6 @@ exports[`<Header /> Should render correctly 1`] = `
         >
           Home
         </a>
-        <div
-          class="css-kh7q0g-Space ez4dfsd4"
-        />
         <a
           href="/account"
         >

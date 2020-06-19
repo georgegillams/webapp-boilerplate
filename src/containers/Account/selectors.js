@@ -7,4 +7,4 @@ const selectShowcasesDomain = state => state[KEY] || initialState;
 
 const selectShowcasesState = () => createSelector(selectShowcasesDomain, subState => subState);
 
-export { selectShowcasesState };
+export { selectShowcasesDomain, selectShowcasesState };

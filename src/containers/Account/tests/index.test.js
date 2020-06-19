@@ -2,18 +2,18 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
 
-import { getShowcases } from '../actions';
+import { loadShowcases } from '../actions';
 import configureStore from 'utils/redux/configure-store';
 
-import { Home, mapDispatchToProps } from '..';
+import { mapDispatchToProps } from '..';
+import Home from '../Container';
 
 describe('<Home />', () => {
   let store;
   const spy = jest.fn();
   const state = {
-    loading: false,
-    fetched: false,
-    error: null,
+    loadingShowcases: false,
+    loadShowcasesError: null,
     showcases: [],
   };
 
@@ -24,7 +24,7 @@ describe('<Home />', () => {
   it('should render and match the snapshot', () => {
     const { container } = render(
       <Provider store={store}>
-        <Home getShowcases={spy} showcasesData={state} />
+        <Home loadShowcases={spy} showcasesState={state} />
       </Provider>
     );
 
@@ -35,14 +35,14 @@ describe('<Home />', () => {
     it('should be injected', () => {
       const dispatch = jest.fn();
       const result = mapDispatchToProps(dispatch);
-      expect(result.getShowcases).toBeDefined();
+      expect(result.loadShowcases).toBeDefined();
     });
 
-    it('should dispatch getShowcases when called', () => {
+    it('should dispatch loadShowcases when called', () => {
       const dispatch = jest.fn();
       const result = mapDispatchToProps(dispatch);
-      result.getShowcases();
-      expect(dispatch).toHaveBeenCalledWith(getShowcases());
+      result.loadShowcases();
+      expect(dispatch).toHaveBeenCalledWith(loadShowcases());
     });
   });
 });
