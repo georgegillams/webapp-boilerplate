@@ -4,13 +4,17 @@
   &__container {
     display: flex;
     height: 13rem;
-    padding: 2rem 4rem;
+    padding: 2rem 2rem;
     flex-direction: column;
     justify-content: space-around;
     background-color: $not-black;
     background-position: center;
     background-size: cover;
     color: $not-black-invert;
+
+    @include bpk-breakpoint-mobile {
+      padding: 2rem 1rem;
+    }
 
     @media (prefers-color-scheme: dark) {
       border-top: solid white 0.15rem;

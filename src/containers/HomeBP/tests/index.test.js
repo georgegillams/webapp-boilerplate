@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 
 import configureStore from 'utils/redux/configure-store';
 
-import Home from '../Container';
+import Home from '../index';
 
 describe('<Home />', () => {
   let store;
