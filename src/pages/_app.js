@@ -29,8 +29,6 @@ class Srr extends App {
 
         <Provider store={reduxStore}>
           <CacheProvider value={cache}>
-  <div className={getClassName('app-wrapper')} id="app-wrapper">
-    <div className={getClassName('app-wrapper--inner')}>
             <Navigation />
             <Authenticator />
             <Component {...pageProps} />
