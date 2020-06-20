@@ -2,13 +2,13 @@ import { put, takeLatest } from 'redux-saga/effects';
 
 import { loadShowcases } from '../actions';
 
-import dataShowcases, { loadShowcasesRequest } from '../saga';
+import saga, { loadShowcasesRequest } from '../saga';
 
 describe('loadShowcasesRequest Saga', () => {
   let mainSaga;
 
   beforeEach(() => {
-    mainSaga = dataShowcases();
+    mainSaga = saga();
   });
 
   it('Should get list of showcases TRIGGER', () => {
@@ -37,17 +37,17 @@ describe('loadShowcasesRequest Saga', () => {
 
     it('Should loadShowcasesRequest be success', () => {
       loadShowcasesGenerate.next(response);
-      const putShowcasesSuccess = loadShowcasesGenerate.next(response).value;
+      const putSuccess = loadShowcasesGenerate.next(response).value;
       loadShowcasesGenerate.next(response);
 
-      expect(putShowcasesSuccess).toEqual(put(loadShowcases.success(response)));
+      expect(putSuccess).toEqual(put(loadShowcases.success(response)));
     });
 
     it('Should loadShowcasesRequest be failure', () => {
       const response = new Error('Some error');
-      const putShowcasesFailure = loadShowcasesGenerate.throw(response).value;
+      const putFailure = loadShowcasesGenerate.throw(response).value;
 
-      expect(putShowcasesFailure).toEqual(put(loadShowcases.failure(response)));
+      expect(putFailure).toEqual(put(loadShowcases.failure(response)));
     });
   });
 });
