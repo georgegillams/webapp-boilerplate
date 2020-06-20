@@ -6,7 +6,7 @@ describe('selectShowcases', () => {
       cookiesAllowed: false,
       loadingAuth: false,
       loadAuthError: null,
-      user: null,
+      user: undefined,
     };
 
     const mockedState = {};

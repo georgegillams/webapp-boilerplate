@@ -8,7 +8,7 @@ describe('authenticatorReducer', () => {
     cookiesAllowed: false,
     loadingAuth: false,
     loadAuthError: null,
-    user: null,
+    user: undefined,
   };
 
   beforeEach(() => {

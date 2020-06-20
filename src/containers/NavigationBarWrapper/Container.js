@@ -7,13 +7,15 @@ import { SmallButtonSkeleton } from 'gg-components/Skeletons';
 import Logo from 'components/Logo';
 
 const NavigationBarWrapper = props => {
-  const { user, userLoading } = props;
+  const { authenticatorState } = props;
+  const { user } = authenticatorState;
 
-  const accountItem = userLoading ? (
-    <SmallButtonSkeleton />
-  ) : (
-    <NavigationItem name={user ? 'Account' : 'Login'} linkUrl={user ? '/account' : '/login'} />
-  );
+  const accountItem =
+    user === undefined ? (
+      <SmallButtonSkeleton />
+    ) : (
+      <NavigationItem name={user ? 'Account' : 'Login'} linkUrl={user ? '/account' : '/login'} />
+    );
 
   const adminItem = user && user.admin ? <NavigationItem name="Admin" linkUrl="/admin" /> : null;
 
@@ -42,8 +44,9 @@ const NavigationBarWrapper = props => {
 };
 
 NavigationBarWrapper.propTypes = {
-  user: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
-  userLoading: PropTypes.bool.isRequired,
+  authenticatorState: PropTypes.shape({
+    user: PropTypes.object,
+  }).isRequired,
 };
 
 export default NavigationBarWrapper;
