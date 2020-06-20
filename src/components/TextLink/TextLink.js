@@ -6,7 +6,7 @@ import Link from 'next/link';
 const TextLink = props => {
   const { href, hrefExternal, ...rest } = props;
   if (hrefExternal) {
-    return <TextLink {...props} />;
+    return <GGTextLink {...props} />;
   }
 
   return (
