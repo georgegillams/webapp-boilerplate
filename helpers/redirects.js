@@ -1,7 +1,8 @@
+import appConfig from './appConfig';
 const redirects = [
   {
     from: '/codebase',
-    to: 'https://github.com/georgegillams/webapp-boilerplate',
+    to: appConfig.githubRepoUrl,
   },
 
   { from: '/wp-admin', to: '/admin' },
