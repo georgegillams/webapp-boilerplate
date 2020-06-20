@@ -28,6 +28,12 @@
   color: white;
 }
 
+// This makes box-sizing conform to the more-convenient IE standard.
+// See https://stackoverflow.com/a/4698091/6029750
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   width: 100%;
