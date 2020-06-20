@@ -23,7 +23,7 @@ const NotFound = props => {
           <Paragraph>
             The page you&apos;re looking for doesn&apos;t exist, or you don&apos;t have permission to view it.
             <br />
-            Maybe the <TextLink href={'/site-map'}>sitemap</TextLink> can help
+            Maybe the <TextLink href={'/sitemap'}>sitemap</TextLink> can help
           </Paragraph>
         </SubSection>
       </PageTitle>

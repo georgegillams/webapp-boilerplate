@@ -4,7 +4,7 @@ import PageTitle from 'components/PageTitle';
 import TextLink from 'components/TextLink';
 import { cssModules } from 'gg-components/helpers/cssModules';
 
-import STYLES from './style.scss';
+import STYLES from './api-docs.scss';
 import apiStructure from './apiStructureWithDescriptions';
 
 const getClassName = cssModules(STYLES);
@@ -14,19 +14,19 @@ const Container = () => (
     <table className={getClassName('api-docs__table')} cellSpacing="4" cellPadding="4">
       <thead>
         <tr>
-          <th>
+          <th className={getClassName('api-docs__cell')}>
             <Paragraph>Path</Paragraph>
           </th>
-          <th>
+          <th className={getClassName('api-docs__cell')}>
             <Paragraph>Method</Paragraph>
           </th>
-          <th>
+          <th className={getClassName('api-docs__cell')}>
             <Paragraph>Arguments</Paragraph>
           </th>
-          <th>
+          <th className={getClassName('api-docs__cell')}>
             <Paragraph>Authorisation</Paragraph>
           </th>
-          <th>
+          <th className={getClassName('api-docs__cell')}>
             <Paragraph>Description</Paragraph>
           </th>
         </tr>
@@ -36,21 +36,21 @@ const Container = () => (
           const apiCapability = apiStructure[key];
           return (
             <tr key={key}>
-              <td>
+              <td className={getClassName('api-docs__cell')}>
                 <TextLink href={apiCapability.fullPath} hrefExternal>
                   {apiCapability.path}
                 </TextLink>
               </td>
-              <td>
+              <td className={getClassName('api-docs__cell')}>
                 <Paragraph className={getClassName('api-docs__method')}>{apiCapability.method}</Paragraph>
               </td>
-              <td>
+              <td className={getClassName('api-docs__cell')}>
                 <Paragraph>{apiCapability.arguments}</Paragraph>
               </td>
-              <td>
+              <td className={getClassName('api-docs__cell')}>
                 <Paragraph>{apiCapability.authorisation}</Paragraph>
               </td>
-              <td>
+              <td className={getClassName('api-docs__cell')}>
                 <Paragraph className={getClassName('api-docs__description')}>{apiCapability.description}</Paragraph>
               </td>
             </tr>

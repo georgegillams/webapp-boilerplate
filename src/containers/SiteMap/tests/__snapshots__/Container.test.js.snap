@@ -1,0 +1,221 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SiteMap /> should render correctly 1`] = `
+<div>
+  <div
+    class="typography__main"
+  >
+    <h1
+      class="typography__text typography__text--section page-title__section"
+      id="site-map"
+    >
+      Site map
+    </h1>
+    <div
+      class="typography__main pages__site-map-item"
+    >
+      <h2
+        class="typography__text typography__text--subsection"
+        id="design-🎨"
+      >
+        Design 🎨
+      </h2>
+      <a
+        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        href="/design/privacy-policy"
+      >
+        Privacy Policy
+      </a>
+    </div>
+    <div
+      class="typography__main pages__site-map-item"
+    >
+      <h2
+        class="typography__text typography__text--subsection"
+        id="other-stuff-🤷‍♂️"
+      >
+        Other stuff 🤷‍♂️
+      </h2>
+      <a
+        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        href="/status"
+      >
+        Status
+      </a>
+    </div>
+    <div
+      class="typography__main pages__site-map-item"
+    >
+      <h2
+        class="typography__text typography__text--subsection"
+        id="random-🐉"
+      >
+        Random 🐉
+      </h2>
+      <a
+        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        href="/robots.txt"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Robots.txt
+        <div
+          class="typography__icon"
+        >
+          <svg
+            class="typography__icon--inner"
+            height="18"
+            style="width: 1.125rem; height: 1.125rem;"
+            viewBox="0 0 24 24"
+            width="18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+            />
+          </svg>
+        </div>
+      </a>
+      <br />
+      <a
+        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        href="/sitemap.xml"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        SiteMap.xml
+        <div
+          class="typography__icon"
+        >
+          <svg
+            class="typography__icon--inner"
+            height="18"
+            style="width: 1.125rem; height: 1.125rem;"
+            viewBox="0 0 24 24"
+            width="18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+            />
+          </svg>
+        </div>
+      </a>
+      <br />
+      <a
+        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        href="/page-not-found"
+      >
+        404 Page
+      </a>
+      <br />
+      <a
+        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        href="/418"
+      >
+        418 I'm a teapot
+      </a>
+    </div>
+    <div
+      class="typography__main pages__site-map-item"
+    >
+      <h2
+        class="typography__text typography__text--subsection"
+        id="api"
+      >
+        API
+      </h2>
+      <a
+        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        href="/api-docs"
+      >
+        API docs
+      </a>
+    </div>
+    <div
+      class="typography__main pages__site-map-item"
+    >
+      <h2
+        class="typography__text typography__text--subsection"
+        id="accounts-🔑"
+      >
+        Accounts 🔑
+      </h2>
+      <a
+        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        href="/sign-up"
+      >
+        Sign up
+      </a>
+      <br />
+      <a
+        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        href="/account"
+      >
+        Account
+      </a>
+    </div>
+    <div
+      class="typography__main pages__site-map-item"
+    >
+      <h2
+        class="typography__text typography__text--subsection"
+        id="admin-👮‍♂️"
+      >
+        Admin 👮‍♂️
+      </h2>
+      <a
+        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        href="/admin/users"
+      >
+        Users
+      </a>
+      <br />
+      <a
+        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        href="/admin/analytics"
+      >
+        Analytics
+      </a>
+      <br />
+      <a
+        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        href="/admin/notifications"
+      >
+        Notifications
+      </a>
+    </div>
+    <div
+      class="typography__main pages__site-map-item"
+    >
+      <h2
+        class="typography__text typography__text--subsection"
+        id="redirects-👉"
+      >
+        Redirects 👉
+      </h2>
+      <a
+        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        href="/codebase"
+      >
+        /codebase ⇒ https://github.com/georgegillams/webapp-boilerplate
+      </a>
+      <br />
+      <a
+        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        href="/wp-admin"
+      >
+        /wp-admin ⇒ /admin
+      </a>
+      <br />
+      <a
+        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        href="/site-map"
+      >
+        /site-map ⇒ /sitemap
+      </a>
+      <br />
+    </div>
+  </div>
+</div>
+`;
