@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import HelperFunctions from './HelperFunctions.js';
+import HelperFunctions from '../HelperFunctions.js';
 
 test('includes test string - returns false', () => {
   expect(HelperFunctions.includes('asdfghj', 'zxc')).toBe(false);

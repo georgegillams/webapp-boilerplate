@@ -21,7 +21,7 @@ const Footer = props => {
 
   return (
     <footer id="footer" className={outerClassNameFinal.join(' ')} {...rest}>
-      <Logo pride={isPride} alwaysCentered className={getClassName('footer__logo')} padding={false} />
+      <Logo pride={isPride} alwaysCentred className={getClassName('footer__logo')} padding={false} />
       <TechSpecs className={getClassName('footer__tech')} light />
     </footer>
   );

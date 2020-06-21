@@ -32,7 +32,7 @@ const LoginForm = props => {
           validationRegex: EMAIL_REGEX,
           show: true,
           inputProps: {
-            spellcheck: 'false',
+            spellCheck: 'false',
             autofill: 'email',
           },
         },

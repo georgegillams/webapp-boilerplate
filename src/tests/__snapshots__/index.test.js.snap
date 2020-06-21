@@ -28,7 +28,7 @@ exports[`<HomePage /> should render correctly 1`] = `
     id="footer"
   >
     <div
-      class="logo__container footer__logo logo__container--centered logo__container--no-padding"
+      class="logo__container footer__logo logo__container--centred logo__container--no-padding"
     >
       <a
         href="/"
