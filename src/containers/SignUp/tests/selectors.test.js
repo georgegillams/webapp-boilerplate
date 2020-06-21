@@ -2,7 +2,7 @@ import { selectState, selectDomain } from '../selectors';
 import { initialState } from '../reducer';
 
 describe('selectSignUp', () => {
-  it('should select the initialState state', () => {
+  it('should select the initial state', () => {
     const mockedState = {};
 
     expect(selectDomain(mockedState)).toEqual(initialState);

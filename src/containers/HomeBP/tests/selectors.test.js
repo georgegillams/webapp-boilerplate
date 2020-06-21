@@ -1,7 +1,7 @@
 import { selectState, selectDomain } from '../selectors';
 
 describe('selectShowcases', () => {
-  it('should select the initialState state', () => {
+  it('should select the initial state', () => {
     const initialState = {
       loadingShowcases: false,
       loadShowcasesError: null,

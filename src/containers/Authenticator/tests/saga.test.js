@@ -4,7 +4,7 @@ import { loadAuth } from '../actions';
 
 import saga, { doLoadAuth } from '../saga';
 
-describe('loadAuthRequest Saga', () => {
+describe('Authenticator saga', () => {
   let mainSaga;
 
   beforeEach(() => {

@@ -1,0 +1,370 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Account /> should render correctly with initial state 1`] = `
+<div>
+  <div
+    class="loading-cover__outer-container"
+  >
+    <div
+      class="loading-cover__overlay"
+    >
+      <div
+        class=""
+      >
+        <div
+          class="skeleton__outer skeleton__section"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="skeleton__outer skeleton__button"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="skeleton__outer skeleton__button"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Account /> should render correctly with logOutError 1`] = `
+<div>
+  <div
+    class="loading-cover__outer-container"
+  >
+    <div
+      class="loading-cover__overlay"
+    >
+      <div
+        class=""
+      >
+        <div
+          class="skeleton__outer skeleton__section"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="skeleton__outer skeleton__button"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="skeleton__outer skeleton__button"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Account /> should render correctly with logOutResult 1`] = `
+<div>
+  <div
+    class="loading-cover__outer-container"
+  >
+    <div
+      class="loading-cover__overlay"
+    >
+      <div
+        class=""
+      >
+        <div
+          class="skeleton__outer skeleton__section"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="skeleton__outer skeleton__button"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="skeleton__outer skeleton__button"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Account /> should render correctly with loggingOut=true 1`] = `
+<div>
+  <div
+    class="loading-cover__outer-container"
+  >
+    <div
+      class="loading-cover__overlay"
+    >
+      <div
+        class=""
+      >
+        <div
+          class="skeleton__outer skeleton__section"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="skeleton__outer skeleton__button"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="skeleton__outer skeleton__button"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Account /> should render correctly with no user 1`] = `
+<div>
+  <div
+    class="loading-cover__outer-container"
+  >
+    <div
+      class="loading-cover__overlay"
+    >
+      <div
+        class=""
+      >
+        <div
+          class="skeleton__outer skeleton__section"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="skeleton__outer skeleton__button"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="skeleton__outer skeleton__button"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Account /> should render correctly with requestVerificationEmailError 1`] = `
+<div>
+  <div
+    class="loading-cover__outer-container"
+  >
+    <div
+      class="loading-cover__overlay"
+    >
+      <div
+        class=""
+      >
+        <div
+          class="skeleton__outer skeleton__section"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="skeleton__outer skeleton__button"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="skeleton__outer skeleton__button"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Account /> should render correctly with requestVerificationEmailResult 1`] = `
+<div>
+  <div
+    class="loading-cover__outer-container"
+  >
+    <div
+      class="loading-cover__overlay"
+    >
+      <div
+        class=""
+      >
+        <div
+          class="skeleton__outer skeleton__section"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="skeleton__outer skeleton__button"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="skeleton__outer skeleton__button"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Account /> should render correctly with requestingVerificationEmail=true 1`] = `
+<div>
+  <div
+    class="loading-cover__outer-container"
+  >
+    <div
+      class="loading-cover__overlay"
+    >
+      <div
+        class=""
+      >
+        <div
+          class="skeleton__outer skeleton__section"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="skeleton__outer skeleton__button"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="skeleton__outer skeleton__button"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Account /> should render correctly with user with emailVerified=true 1`] = `
+<div>
+  <div
+    class="loading-cover__outer-container"
+  >
+    <div
+      class="loading-cover__overlay"
+    >
+      <div
+        class=""
+      >
+        <div
+          class="skeleton__outer skeleton__section"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="skeleton__outer skeleton__button"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="skeleton__outer skeleton__button"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
