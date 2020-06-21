@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Paragraph, TextLink, Section } from 'gg-components/Typography';
+import { Paragraph, Section } from 'gg-components/Typography';
+import TextLink from 'components/TextLink';
 
 const AdminOnly = props => {
   const { user, children, setLoginRedirect, ...rest } = props;
@@ -15,7 +16,7 @@ const AdminOnly = props => {
       <Paragraph>
         You need to be logged in with an admin account to view this content.
         <br />
-        <TextLink onClick={setLoginRedirect} to="/login">
+        <TextLink onClick={setLoginRedirect} href="/login">
           Got a different admin account? Log in here.
         </TextLink>
       </Paragraph>

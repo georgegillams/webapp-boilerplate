@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Paragraph, TextLink, Section } from 'gg-components/Typography';
+import { Paragraph, Section } from 'gg-components/Typography';
+import TextLink from 'components/TextLink';
 
 const LoggedInOnly = props => {
   const { user, activityName, children, setLoginRedirect, ...rest } = props;
@@ -11,9 +12,9 @@ const LoggedInOnly = props => {
         <Paragraph>
           You need to be logged in to {activityName || 'view this content'}
           <br />
-          <TextLink to="/sign-up">Register here - it&apos;s quick and easy.</TextLink>
+          <TextLink href="/sign-up">Register here - it&apos;s quick and easy.</TextLink>
           <br />
-          <TextLink onClick={setLoginRedirect} to="/login">
+          <TextLink onClick={setLoginRedirect} href="/login">
             Already got an account? Log in here.
           </TextLink>
         </Paragraph>

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { TextLink, Section } from 'gg-components/Typography';
+import { Section } from 'gg-components/Typography';
+import TextLink from 'components/TextLink';
 
 const EmailVerifiedOnly = props => {
   const { user, children, ...rest } = props;
@@ -11,7 +12,7 @@ const EmailVerifiedOnly = props => {
 
   return (
     <Section name="You need to verify your email before completing this step." {...rest}>
-      <TextLink to="/account">Account</TextLink>
+      <TextLink href="/account">Account</TextLink>
     </Section>
   );
 };
