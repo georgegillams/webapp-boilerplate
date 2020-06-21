@@ -36,12 +36,10 @@ const Login = props => {
   }
   let preSubmitText = null;
   if (loginState.loginResult && loginState.loginResult.success) {
-    preSubmitText =
-      // eslint-disable-next-line max-len
-      'A magic login link has been sent to your email address. Please check your junk folder before requesting another.';
+    preSubmitText = loginState.loginResult.success;
   }
-  if (loginState.loginResult && loginState.loginResult.error) {
-    preSubmitText = loginState.loginResult.errorMessage;
+  if (loginState.loginError && loginState.loginError.errorMessage) {
+    preSubmitText = loginState.loginError.errorMessage;
   }
 
   const page = (

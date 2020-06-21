@@ -24,7 +24,11 @@ export function* doLogin() {
       },
     });
 
-    yield put(login.success(result));
+    if (result.error) {
+      yield put(login.failure(result));
+    } else {
+      yield put(login.success(result));
+    }
   } catch (err) {
     yield put(login.failure(err));
   } finally {

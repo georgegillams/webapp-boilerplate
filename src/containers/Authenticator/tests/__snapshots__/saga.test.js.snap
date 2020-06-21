@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`loadAuthRequest Saga loadAuthenticator actions Should loadAuthRequest be failure 1`] = `
+exports[`loadAuthRequest Saga loadAuthenticator actions Should call loadAuth.failure if an exception occurs 1`] = `
 Object {
   "@@redux-saga/IO": true,
   "combinator": false,
@@ -14,7 +14,7 @@ Object {
 }
 `;
 
-exports[`loadAuthRequest Saga loadAuthenticator actions Should loadAuthRequest be success 1`] = `
+exports[`loadAuthRequest Saga loadAuthenticator actions Should call loadAuth.success on successful API call 1`] = `
 Object {
   "@@redux-saga/IO": true,
   "combinator": false,
