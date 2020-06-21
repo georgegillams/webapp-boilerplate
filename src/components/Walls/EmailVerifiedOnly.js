@@ -19,8 +19,12 @@ const EmailVerifiedOnly = props => {
 
 EmailVerifiedOnly.propTypes = {
   // eslint-disable-next-line react/forbid-prop-types
-  user: PropTypes.object.isRequired,
+  user: PropTypes.object,
   children: PropTypes.node.isRequired,
+};
+
+EmailVerifiedOnly.defaultProps = {
+  user: null,
 };
 
 export default EmailVerifiedOnly;

@@ -8,13 +8,13 @@ import STYLES from './logo.scss';
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const Logo = props => {
-  const { padding, animated, className, alwaysCentered, pride, ...rest } = props;
+  const { padding, animated, className, alwaysCentred, pride, ...rest } = props;
   const classNameFinal = [getClassName('logo__container')];
   if (className) {
     classNameFinal.push(className);
   }
-  if (alwaysCentered) {
-    classNameFinal.push(getClassName('logo__container--centered'));
+  if (alwaysCentred) {
+    classNameFinal.push(getClassName('logo__container--centred'));
   }
 
   const largeTextClassNameFinal = [getClassName('logo__heading')];
@@ -48,7 +48,7 @@ Logo.propTypes = {
   padding: PropTypes.bool,
   animated: PropTypes.bool,
   pride: PropTypes.bool,
-  alwaysCentered: PropTypes.bool,
+  alwaysCentred: PropTypes.bool,
 };
 
 Logo.defaultProps = {
@@ -56,7 +56,7 @@ Logo.defaultProps = {
   padding: true,
   animated: false,
   pride: false,
-  alwaysCentered: false,
+  alwaysCentred: false,
 };
 
 export default Logo;

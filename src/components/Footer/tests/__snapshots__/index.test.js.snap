@@ -7,7 +7,7 @@ exports[`<Footer /> Should render correctly 1`] = `
     id="footer"
   >
     <div
-      class="logo__container footer__logo logo__container--centered logo__container--no-padding"
+      class="logo__container footer__logo logo__container--centred logo__container--no-padding"
     >
       <a
         href="/"
@@ -83,7 +83,7 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
     id="footer"
   >
     <div
-      class="logo__container footer__logo logo__container--centered logo__container--no-padding"
+      class="logo__container footer__logo logo__container--centred logo__container--no-padding"
     >
       <a
         href="/"

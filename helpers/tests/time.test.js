@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { getTimeDifference } from './time.js';
+import { getTimeDifference } from '../time.js';
 
 test('getTimeDifference for large values - returns "5 years"', () => {
   const timeStamp = Number.MAX_SAFE_INTEGER;
