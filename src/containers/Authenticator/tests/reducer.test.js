@@ -1,5 +1,5 @@
 import authenticatorReducer from '../reducer';
-import { loadAuth, setCookiesAllowed } from '../actions';
+import { setUser, loadAuth, setCookiesAllowed } from '../actions';
 import { initialState } from '../reducer';
 
 describe('authenticatorReducer', () => {
@@ -23,6 +23,15 @@ describe('authenticatorReducer', () => {
       };
 
       expect(authenticatorReducer(state, setCookiesAllowed.trigger(true))).toEqual(expectResult);
+    });
+
+    it('should handle the action setUser.TRIGGER correctly', () => {
+      const expectResult = {
+        ...state,
+        user: { name: 'userName', email: 'email' },
+      };
+
+      expect(authenticatorReducer(state, setUser.trigger({ name: 'userName', email: 'email' }))).toEqual(expectResult);
     });
 
     it('should handle the action loadAuth.REQUEST correctly', () => {

@@ -26,7 +26,7 @@ const SiteMap = props => (
         SiteMap.xml
       </TextLink>
       <br />
-      <TextLink href="/page-not-found">404 error page - not found</TextLink>
+      <TextLink href="/404">404 error page - not found</TextLink>
       <br />
       <TextLink href="/teapot">418 error page - I&apos;m a teapot</TextLink>
     </SubSection>
@@ -47,10 +47,10 @@ const SiteMap = props => (
     </SubSection>
     <SubSection anchor={false} className={getClassName('pages__site-map-item')} name="Redirects 👉">
       {redirects.map(redirect => (
-        <>
+        <div key={redirect.from}>
           <TextLink href={`${redirect.from}`}>{`${redirect.from} ⇒ ${redirect.to}`}</TextLink>
           <br />
-        </>
+        </div>
       ))}
     </SubSection>
   </PageTitle>
