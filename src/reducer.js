@@ -1,7 +1,4 @@
-const initialState = {
-  loading: false,
-  error: false,
-};
+const initialState = {};
 
 function appReducer(state = initialState) {
   return state;
