@@ -1,6 +1,7 @@
 import produce from 'immer';
+import cookie from 'react-cookies';
 
-import { loadAuth, setCookiesAllowed } from './actions';
+import { setUser, loadAuth, setCookiesAllowed } from './actions';
 
 export const initialState = {
   cookiesAllowed: false,
@@ -14,6 +15,16 @@ const reducer = (state = initialState, { type, payload }) =>
     switch (type) {
       case setCookiesAllowed.TRIGGER:
         draft.cookiesAllowed = payload;
+        break;
+
+      case setUser.TRIGGER:
+        draft.user = payload;
+        if (payload && payload.session) {
+          cookie.save('session', payload.session, {
+            path: '/',
+            expires: new Date(Date.now() + 24 * 60 * 60 * 100 * 1000),
+          });
+        }
         break;
 
       case loadAuth.REQUEST:
