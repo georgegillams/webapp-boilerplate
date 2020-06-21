@@ -1,22 +1,21 @@
 import { selectState, selectDomain } from '../selectors';
 import { initialState } from '../reducer';
 
-describe('selectAuthenticator', () => {
+describe('selectLogin', () => {
   it('should select the initialState state', () => {
     const mockedState = {};
 
     expect(selectDomain(mockedState)).toEqual(initialState);
   });
 
-  it('should select the authenticator state', () => {
+  it('should select the login state', () => {
     const state = {
       ...initialState,
-      cookiesAllowed: true,
-      user: { name: 'userName' },
+      loginResult: { success: 'Magic link sent' },
     };
 
     const mockedState = {
-      authenticator: state,
+      login: state,
     };
 
     const selectStateMock = selectState();

@@ -1,19 +1,13 @@
 import authenticatorReducer from '../reducer';
 import { loadAuth, setCookiesAllowed } from '../actions';
+import { initialState } from '../reducer';
 
 describe('authenticatorReducer', () => {
   let state;
 
-  const authenticator = {
-    cookiesAllowed: false,
-    loadingAuth: false,
-    loadAuthError: null,
-    user: undefined,
-  };
-
   beforeEach(() => {
     state = {
-      ...authenticator,
+      ...initialState,
     };
   });
 

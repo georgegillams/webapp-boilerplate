@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { cssModules } from 'gg-components/helpers/cssModules';
 import { SubSection } from 'gg-components/Typography';
 import TextLink from 'components/TextLink';
@@ -56,14 +55,5 @@ const SiteMap = props => (
     </SubSection>
   </PageTitle>
 );
-
-SiteMap.propTypes = {
-  blogsLoadError: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
-  blogs: PropTypes.object,
-  filter: PropTypes.func,
-  linkPrefix: PropTypes.string,
-  loadBlogs: PropTypes.func.isRequired,
-  className: PropTypes.string,
-};
 
 export default SiteMap;

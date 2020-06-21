@@ -17,7 +17,7 @@ describe('loadShowcasesRequest Saga', () => {
   });
 
   describe('loadShowcases actions', () => {
-    let loadShowcasesGenerate;
+    let loadShowcasesGenerator;
 
     const response = [
       {
@@ -29,23 +29,23 @@ describe('loadShowcasesRequest Saga', () => {
     ];
 
     beforeEach(() => {
-      loadShowcasesGenerate = loadShowcasesRequest();
+      loadShowcasesGenerator = loadShowcasesRequest();
 
-      const selectDescriptor = loadShowcasesGenerate.next().value;
+      const selectDescriptor = loadShowcasesGenerator.next().value;
       expect(selectDescriptor).toMatchSnapshot();
     });
 
     it('Should loadShowcasesRequest be success', () => {
-      loadShowcasesGenerate.next(response);
-      const putSuccess = loadShowcasesGenerate.next(response).value;
-      loadShowcasesGenerate.next(response);
+      loadShowcasesGenerator.next(response);
+      const putSuccess = loadShowcasesGenerator.next(response).value;
+      loadShowcasesGenerator.next(response);
 
       expect(putSuccess).toEqual(put(loadShowcases.success(response)));
     });
 
     it('Should loadShowcasesRequest be failure', () => {
       const response = new Error('Some error');
-      const putFailure = loadShowcasesGenerate.throw(response).value;
+      const putFailure = loadShowcasesGenerator.throw(response).value;
 
       expect(putFailure).toEqual(put(loadShowcases.failure(response)));
     });
