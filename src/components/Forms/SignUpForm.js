@@ -11,8 +11,9 @@ const SignUpForm = props => {
   if (className) classNameFinal.push(className);
 
   const onDataChangedCustom = newValue => {
-    if (!newValue.email) {
+    if (!newValue || !newValue.email) {
       onDataChanged(newValue);
+      return;
     }
     const newEmail = newValue.email.split(' ').join('');
     onDataChanged({ ...newValue, email: newEmail });
