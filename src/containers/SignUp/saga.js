@@ -27,6 +27,7 @@ export function* doSignUp() {
       yield put(signUp.failure(result));
     } else {
       yield put(signUp.success(result));
+      // TODO yield put(setUser(signUpResult));
     }
   } catch (err) {
     yield put(signUp.failure(err));

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Login /> should render correctly with initial state 1`] = `
+exports[`<SignUp /> should render correctly with initial state 1`] = `
 <div>
   <div
     class="loading-cover__outer-container"
@@ -21,14 +21,6 @@ exports[`<Login /> should render correctly with initial state 1`] = `
         </div>
         <div
           class="skeleton__outer skeleton__input"
-        >
-          <div
-            class="skeleton__shimmer"
-            style="margin-left: -0px;"
-          />
-        </div>
-        <div
-          class="skeleton__outer skeleton__checkbox"
         >
           <div
             class="skeleton__shimmer"
@@ -49,7 +41,7 @@ exports[`<Login /> should render correctly with initial state 1`] = `
 </div>
 `;
 
-exports[`<Login /> should render correctly with loggingIn=true 1`] = `
+exports[`<SignUp /> should render correctly with signUpError 1`] = `
 <div>
   <div
     class="loading-cover__outer-container"
@@ -70,14 +62,6 @@ exports[`<Login /> should render correctly with loggingIn=true 1`] = `
         </div>
         <div
           class="skeleton__outer skeleton__input"
-        >
-          <div
-            class="skeleton__shimmer"
-            style="margin-left: -0px;"
-          />
-        </div>
-        <div
-          class="skeleton__outer skeleton__checkbox"
         >
           <div
             class="skeleton__shimmer"
@@ -98,7 +82,7 @@ exports[`<Login /> should render correctly with loggingIn=true 1`] = `
 </div>
 `;
 
-exports[`<Login /> should render correctly with loginError 1`] = `
+exports[`<SignUp /> should render correctly with signUpResult 1`] = `
 <div>
   <div
     class="loading-cover__outer-container"
@@ -119,14 +103,6 @@ exports[`<Login /> should render correctly with loginError 1`] = `
         </div>
         <div
           class="skeleton__outer skeleton__input"
-        >
-          <div
-            class="skeleton__shimmer"
-            style="margin-left: -0px;"
-          />
-        </div>
-        <div
-          class="skeleton__outer skeleton__checkbox"
         >
           <div
             class="skeleton__shimmer"
@@ -147,7 +123,7 @@ exports[`<Login /> should render correctly with loginError 1`] = `
 </div>
 `;
 
-exports[`<Login /> should render correctly with loginResult 1`] = `
+exports[`<SignUp /> should render correctly with signingUp=true 1`] = `
 <div>
   <div
     class="loading-cover__outer-container"
@@ -168,14 +144,6 @@ exports[`<Login /> should render correctly with loginResult 1`] = `
         </div>
         <div
           class="skeleton__outer skeleton__input"
-        >
-          <div
-            class="skeleton__shimmer"
-            style="margin-left: -0px;"
-          />
-        </div>
-        <div
-          class="skeleton__outer skeleton__checkbox"
         >
           <div
             class="skeleton__shimmer"
@@ -196,7 +164,7 @@ exports[`<Login /> should render correctly with loginResult 1`] = `
 </div>
 `;
 
-exports[`<Login /> should render correctly with user 1`] = `
+exports[`<SignUp /> should render correctly with user 1`] = `
 <div>
   <div
     class="loading-cover__outer-container"
@@ -217,14 +185,6 @@ exports[`<Login /> should render correctly with user 1`] = `
         </div>
         <div
           class="skeleton__outer skeleton__input"
-        >
-          <div
-            class="skeleton__shimmer"
-            style="margin-left: -0px;"
-          />
-        </div>
-        <div
-          class="skeleton__outer skeleton__checkbox"
         >
           <div
             class="skeleton__shimmer"

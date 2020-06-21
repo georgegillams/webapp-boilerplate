@@ -1,10 +1,10 @@
 import { put, takeLatest } from 'redux-saga/effects';
 
-import { login } from '../actions';
+import { signUp } from '../actions';
 
-import saga, { doLogin } from '../saga';
+import saga, { doSignUp } from '../saga';
 
-describe('loginRequest Saga', () => {
+describe('signUpRequest Saga', () => {
   let mainSaga;
 
   beforeEach(() => {
@@ -13,53 +13,54 @@ describe('loginRequest Saga', () => {
 
   it('Should request magic link on TRIGGER', () => {
     const takeLatestDescriptor = mainSaga.next().value;
-    expect(takeLatestDescriptor).toEqual(takeLatest(login.TRIGGER, doLogin));
+    expect(takeLatestDescriptor).toEqual(takeLatest(signUp.TRIGGER, doSignUp));
   });
 
-  describe('login actions', () => {
-    let loginGenerator;
+  describe('signUp actions', () => {
+    let signUpGenerator;
 
     const response = {
-      success: 'magic link sent',
+      uname: 'uname',
+      email: 'email',
       status: 200,
     };
 
     beforeEach(() => {
-      loginGenerator = doLogin();
+      signUpGenerator = doSignUp();
 
-      const selectDescriptor = loginGenerator.next().value;
+      const selectDescriptor = signUpGenerator.next().value;
       expect(selectDescriptor).toMatchSnapshot();
     });
 
-    it('Should call login.success on successful API call', () => {
-      loginGenerator.next({ credentials: {} });
-      loginGenerator.next(response);
-      const putSuccess = loginGenerator.next(response).value;
-      loginGenerator.next(response);
+    it('Should call signUp.success on successful API call', () => {
+      signUpGenerator.next({ credentials: {} });
+      signUpGenerator.next(response);
+      const putSuccess = signUpGenerator.next(response).value;
+      signUpGenerator.next(response);
 
-      expect(putSuccess).toEqual(put(login.success(response)));
+      expect(putSuccess).toEqual(put(signUp.success(response)));
     });
 
-    it('Should call login.failure if API returns error', () => {
+    it('Should call signUp.failure if API returns error', () => {
       const response = {
         error: 'error_type',
         errorMessage: 'Error message',
         status: 500,
       };
-      loginGenerator.next({ credentials: {} });
-      loginGenerator.next(response);
-      const putSuccess = loginGenerator.next(response).value;
-      loginGenerator.next(response);
+      signUpGenerator.next({ credentials: {} });
+      signUpGenerator.next(response);
+      const putSuccess = signUpGenerator.next(response).value;
+      signUpGenerator.next(response);
 
-      expect(putSuccess).toEqual(put(login.failure(response)));
+      expect(putSuccess).toEqual(put(signUp.failure(response)));
     });
 
-    it('Should call login.failure if an exception occurs', () => {
-      loginGenerator.next({ credentials: {} });
+    it('Should call signUp.failure if an exception occurs', () => {
+      signUpGenerator.next({ credentials: {} });
       const response = new Error('Some error');
-      const putFailure = loginGenerator.throw(response).value;
+      const putFailure = signUpGenerator.throw(response).value;
 
-      expect(putFailure).toEqual(put(login.failure(response)));
+      expect(putFailure).toEqual(put(signUp.failure(response)));
     });
   });
 });

@@ -1,8 +1,8 @@
-import loginReducer from '../reducer';
-import { login } from '../actions';
+import signUpReducer from '../reducer';
+import { signUp } from '../actions';
 import { initialState } from '../reducer';
 
-describe('loginReducer', () => {
+describe('signUpReducer', () => {
   let state;
 
   beforeEach(() => {
@@ -12,35 +12,35 @@ describe('loginReducer', () => {
   });
 
   it('should return the initial state', () => {
-    expect(loginReducer(undefined, {})).toEqual(state);
+    expect(signUpReducer(undefined, {})).toEqual(state);
   });
 
-  describe('login actions', () => {
-    it('should handle the action login.REQUEST correctly', () => {
+  describe('signUp actions', () => {
+    it('should handle the action signUp.REQUEST correctly', () => {
       const expectResult = {
         ...state,
-        loggingIn: true,
+        signingUp: true,
       };
 
-      expect(loginReducer(state, login.request())).toEqual(expectResult);
+      expect(signUpReducer(state, signUp.request())).toEqual(expectResult);
     });
 
-    it('should return the action login.SUCCESS correctly', () => {
+    it('should return the action signUp.SUCCESS correctly', () => {
       const expectResult = {
         ...state,
-        loginResult: { success: 'magic link sent' },
+        signUpResult: { uname: 'uname', email: 'email' },
       };
 
-      expect(loginReducer(state, login.success({ success: 'magic link sent' }))).toEqual(expectResult);
+      expect(signUpReducer(state, signUp.success({ uname: 'uname', email: 'email' }))).toEqual(expectResult);
     });
 
-    it('should return the action login.FAILURE', () => {
+    it('should return the action signUp.FAILURE', () => {
       const expectResult = {
         ...state,
-        loginError: 'some error',
+        signUpError: 'some error',
       };
 
-      expect(loginReducer(state, login.failure('some error'))).toEqual(expectResult);
+      expect(signUpReducer(state, signUp.failure('some error'))).toEqual(expectResult);
     });
   });
 });

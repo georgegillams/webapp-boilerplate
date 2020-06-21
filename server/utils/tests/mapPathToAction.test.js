@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import mapPathToActions from './mapPathToAction.js';
+import mapPathToActions from '../mapPathToAction.js';
 
 const testAPIStructure = {
   action1: {

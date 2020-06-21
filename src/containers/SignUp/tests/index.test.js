@@ -6,9 +6,9 @@ import { initialState as initialAuthenticatorState } from '../../Authenticator/r
 
 import configureStore from 'utils/redux/configure-store';
 
-import Login from '../index';
+import SignUp from '../index';
 
-describe('<Login />', () => {
+describe('<SignUp />', () => {
   let store;
   const spy = jest.fn();
 
@@ -19,9 +19,9 @@ describe('<Login />', () => {
   it('should render correctly with initial state', () => {
     const { container } = render(
       <Provider store={store}>
-        <Login
+        <SignUp
           login={spy}
-          loginState={{
+          signUpState={{
             ...initialState,
           }}
           authenticatorState={{
@@ -33,14 +33,14 @@ describe('<Login />', () => {
 
     expect(container).toMatchSnapshot();
   });
-  it('should render correctly with loginError', () => {
+  it('should render correctly with signUpError', () => {
     const { container } = render(
       <Provider store={store}>
-        <Login
+        <SignUp
           login={spy}
-          loginState={{
+          signUpState={{
             ...initialState,
-            loginError: { error: 'not_found', errorMessage: 'No matching email found' },
+            signUpError: { error: 'not_found', errorMessage: 'No matching email found' },
           }}
           authenticatorState={{
             ...initialAuthenticatorState,
@@ -51,14 +51,14 @@ describe('<Login />', () => {
 
     expect(container).toMatchSnapshot();
   });
-  it('should render correctly with loginResult', () => {
+  it('should render correctly with signUpResult', () => {
     const { container } = render(
       <Provider store={store}>
-        <Login
+        <SignUp
           login={spy}
-          loginState={{
+          signUpState={{
             ...initialState,
-            loginResult: { success: 'Magic link sent' },
+            signUpResult: { uname: 'uname', email: 'email' },
           }}
           authenticatorState={{
             ...initialAuthenticatorState,
@@ -69,14 +69,14 @@ describe('<Login />', () => {
 
     expect(container).toMatchSnapshot();
   });
-  it('should render correctly with loggingIn=true', () => {
+  it('should render correctly with signingUp=true', () => {
     const { container } = render(
       <Provider store={store}>
-        <Login
+        <SignUp
           login={spy}
-          loginState={{
+          signUpState={{
             ...initialState,
-            loggingIn: true,
+            signingUp: true,
           }}
           authenticatorState={{
             ...initialAuthenticatorState,
@@ -90,9 +90,9 @@ describe('<Login />', () => {
   it('should render correctly with user', () => {
     const { container } = render(
       <Provider store={store}>
-        <Login
+        <SignUp
           login={spy}
-          loginState={{
+          signUpState={{
             ...initialState,
           }}
           authenticatorState={{
