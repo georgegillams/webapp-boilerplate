@@ -8,14 +8,14 @@ describe('selectLogin', () => {
     expect(selectDomain(mockedState)).toEqual(initialState);
   });
 
-  it('should select the login state', () => {
+  it('should select the account state', () => {
     const state = {
       ...initialState,
-      loginResult: { success: 'Magic link sent' },
+      logOutResult: { success: 'Logged out' },
     };
 
     const mockedState = {
-      login: state,
+      account: state,
     };
 
     const selectStateMock = selectState();

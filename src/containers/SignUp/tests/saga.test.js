@@ -4,7 +4,7 @@ import { signUp } from '../actions';
 
 import saga, { doSignUp } from '../saga';
 
-describe('signUpRequest Saga', () => {
+describe('Sign up saga', () => {
   let mainSaga;
 
   beforeEach(() => {
