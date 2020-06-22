@@ -1,0 +1,309 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
+<div>
+  <div
+    class="loading-cover__outer-container"
+  >
+    <div
+      class="loading-cover__overlay"
+    >
+      <div
+        class=""
+      >
+        <div
+          class="skeleton__outer skeleton__section"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="admin-navigation__card-container"
+        >
+          <div
+            class="skeleton__outer skeleton__card--compact"
+          >
+            <div
+              class="skeleton__shimmer"
+              style="margin-left: -0px;"
+            />
+          </div>
+          <div
+            class="skeleton__outer skeleton__card--compact"
+          >
+            <div
+              class="skeleton__shimmer"
+              style="margin-left: -0px;"
+            />
+          </div>
+          <div
+            class="skeleton__outer skeleton__card--compact"
+          >
+            <div
+              class="skeleton__shimmer"
+              style="margin-left: -0px;"
+            />
+          </div>
+          <div
+            class="skeleton__outer skeleton__card--compact"
+          >
+            <div
+              class="skeleton__shimmer"
+              style="margin-left: -0px;"
+            />
+          </div>
+          <div
+            class="skeleton__outer skeleton__card--compact"
+          >
+            <div
+              class="skeleton__shimmer"
+              style="margin-left: -0px;"
+            />
+          </div>
+          <div
+            class="skeleton__outer skeleton__card--compact"
+          >
+            <div
+              class="skeleton__shimmer"
+              style="margin-left: -0px;"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<AdminNavigation /> should render correctly with auth error 1`] = `
+<div>
+  <div
+    class="loading-cover__outer-container"
+  >
+    <div
+      class="loading-cover__overlay"
+    >
+      <div
+        class=""
+      >
+        <div
+          class="skeleton__outer skeleton__section"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="admin-navigation__card-container"
+        >
+          <div
+            class="skeleton__outer skeleton__card--compact"
+          >
+            <div
+              class="skeleton__shimmer"
+              style="margin-left: -0px;"
+            />
+          </div>
+          <div
+            class="skeleton__outer skeleton__card--compact"
+          >
+            <div
+              class="skeleton__shimmer"
+              style="margin-left: -0px;"
+            />
+          </div>
+          <div
+            class="skeleton__outer skeleton__card--compact"
+          >
+            <div
+              class="skeleton__shimmer"
+              style="margin-left: -0px;"
+            />
+          </div>
+          <div
+            class="skeleton__outer skeleton__card--compact"
+          >
+            <div
+              class="skeleton__shimmer"
+              style="margin-left: -0px;"
+            />
+          </div>
+          <div
+            class="skeleton__outer skeleton__card--compact"
+          >
+            <div
+              class="skeleton__shimmer"
+              style="margin-left: -0px;"
+            />
+          </div>
+          <div
+            class="skeleton__outer skeleton__card--compact"
+          >
+            <div
+              class="skeleton__shimmer"
+              style="margin-left: -0px;"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<AdminNavigation /> should render correctly with initial state 1`] = `
+<div>
+  <div
+    class="loading-cover__outer-container"
+  >
+    <div
+      class="loading-cover__overlay"
+    >
+      <div
+        class=""
+      >
+        <div
+          class="skeleton__outer skeleton__section"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="admin-navigation__card-container"
+        >
+          <div
+            class="skeleton__outer skeleton__card--compact"
+          >
+            <div
+              class="skeleton__shimmer"
+              style="margin-left: -0px;"
+            />
+          </div>
+          <div
+            class="skeleton__outer skeleton__card--compact"
+          >
+            <div
+              class="skeleton__shimmer"
+              style="margin-left: -0px;"
+            />
+          </div>
+          <div
+            class="skeleton__outer skeleton__card--compact"
+          >
+            <div
+              class="skeleton__shimmer"
+              style="margin-left: -0px;"
+            />
+          </div>
+          <div
+            class="skeleton__outer skeleton__card--compact"
+          >
+            <div
+              class="skeleton__shimmer"
+              style="margin-left: -0px;"
+            />
+          </div>
+          <div
+            class="skeleton__outer skeleton__card--compact"
+          >
+            <div
+              class="skeleton__shimmer"
+              style="margin-left: -0px;"
+            />
+          </div>
+          <div
+            class="skeleton__outer skeleton__card--compact"
+          >
+            <div
+              class="skeleton__shimmer"
+              style="margin-left: -0px;"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<AdminNavigation /> should render correctly with user 1`] = `
+<div>
+  <div
+    class="loading-cover__outer-container"
+  >
+    <div
+      class="loading-cover__overlay"
+    >
+      <div
+        class=""
+      >
+        <div
+          class="skeleton__outer skeleton__section"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="admin-navigation__card-container"
+        >
+          <div
+            class="skeleton__outer skeleton__card--compact"
+          >
+            <div
+              class="skeleton__shimmer"
+              style="margin-left: -0px;"
+            />
+          </div>
+          <div
+            class="skeleton__outer skeleton__card--compact"
+          >
+            <div
+              class="skeleton__shimmer"
+              style="margin-left: -0px;"
+            />
+          </div>
+          <div
+            class="skeleton__outer skeleton__card--compact"
+          >
+            <div
+              class="skeleton__shimmer"
+              style="margin-left: -0px;"
+            />
+          </div>
+          <div
+            class="skeleton__outer skeleton__card--compact"
+          >
+            <div
+              class="skeleton__shimmer"
+              style="margin-left: -0px;"
+            />
+          </div>
+          <div
+            class="skeleton__outer skeleton__card--compact"
+          >
+            <div
+              class="skeleton__shimmer"
+              style="margin-left: -0px;"
+            />
+          </div>
+          <div
+            class="skeleton__outer skeleton__card--compact"
+          >
+            <div
+              class="skeleton__shimmer"
+              style="margin-left: -0px;"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

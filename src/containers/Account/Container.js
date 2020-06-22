@@ -30,14 +30,14 @@ const Account = props => {
   } = props;
   const { user } = authenticatorState;
 
-  const outerClassNameFinal = [];
+  const outerClassNames = [];
 
   if (className) {
-    outerClassNameFinal.push(className);
+    outerClassNames.push(className);
   }
 
   const page = (
-    <div className={outerClassNameFinal.join(' ')}>
+    <div className={outerClassNames.join(' ')}>
       <LoggedInOnly user={authenticatorState.user}>
         <PageTitle name="Account">
           <Paragraph>

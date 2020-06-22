@@ -5,14 +5,14 @@ import { SectionSkeleton, ButtonSkeleton } from 'gg-components/Skeletons';
 const Skeleton = props => {
   const { className } = props;
 
-  const outerClassNameFinal = [];
+  const outerClassNames = [];
 
   if (className) {
-    outerClassNameFinal.push(className);
+    outerClassNames.push(className);
   }
 
   return (
-    <div className={outerClassNameFinal.join(' ')}>
+    <div className={outerClassNames.join(' ')}>
       <SectionSkeleton />
       <ButtonSkeleton />
       <ButtonSkeleton />
