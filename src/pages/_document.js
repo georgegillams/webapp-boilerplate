@@ -22,7 +22,7 @@ class MyDocument extends Document {
           <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png" />
           <link rel="manifest" href="/static/favicon/site.webmanifest" />
-          <link rel="mask-icon" href="/static/favicon/safari-pinned-tab.svg" color="#000000" />
+          <link rel="mask-icon" href="/static/favicon/safari-pinned-tab.svg" color="#FF0000" />
           <link rel="shortcut icon" href="/static/favicon/favicon.png" />
           <meta name="msapplication-config" content="/static/favicon/browserconfig.xml" />
           <style data-emotion-css={this.props.ids.join(' ')} dangerouslySetInnerHTML={{ __html: this.props.css }} />
