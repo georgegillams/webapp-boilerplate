@@ -5,20 +5,21 @@ import apiStructure from 'helpers/apiStructure';
 import { selectState } from './selectors';
 
 import { login } from './actions';
+import { getPostLoginRedirectAndRemove } from 'utils/storageHelpers';
 
 export function* doLogin() {
   const currentState = yield select(selectState());
   const { credentials } = currentState;
+  const loginRedirect = getPostLoginRedirectAndRemove();
 
   const requestURL = apiStructure.requestMagicLink.fullPath;
 
   try {
     yield put(login.request());
 
-    // TODO should pass loginRedirect to the API
     const result = yield call(request, requestURL, {
       method: 'POST',
-      body: JSON.stringify({ ...credentials }),
+      body: JSON.stringify({ ...credentials, loginRedirect }),
       headers: {
         'Content-Type': 'application/json',
       },

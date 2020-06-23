@@ -5,6 +5,7 @@ import { DebugObject, LoadingCover } from 'gg-components/Auth';
 import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/Cards';
 import STYLES from './admin-navigation.scss';
 import { cssModules } from 'gg-components/helpers/cssModules';
+import { setPostLoginRedirect } from 'utils/storageHelpers';
 
 import Skeleton from './Skeleton';
 
@@ -28,7 +29,11 @@ const AdminNavigation = props => {
 
   const page = (
     <div className={outerClassNames.join(' ')}>
-      <AdminOnly user={user}>
+      <AdminOnly
+        user={user}
+        setLoginRedirect={() => {
+          setPostLoginRedirect('admin');
+        }}>
         <PageTitle name="Admin">
           <div className={getClassName('admin-navigation__card-container')}>
             <ArticleCard
