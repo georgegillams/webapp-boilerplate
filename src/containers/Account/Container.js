@@ -4,6 +4,7 @@ import PageTitle from 'components/PageTitle';
 import { DebugObject, LoadingCover } from 'gg-components/Auth';
 import { Paragraph } from 'gg-components/Typography';
 import { Button } from 'gg-components/Button';
+import { setPostLoginRedirect } from 'utils/storageHelpers';
 
 import Skeleton from './Skeleton';
 
@@ -38,7 +39,11 @@ const Account = props => {
 
   const page = (
     <div className={outerClassNames.join(' ')}>
-      <LoggedInOnly user={authenticatorState.user}>
+      <LoggedInOnly
+        user={authenticatorState.user}
+        setLoginRedirect={() => {
+          setPostLoginRedirect('account');
+        }}>
         <PageTitle name="Account">
           <Paragraph>
             {user && user.email && <div>{`Email: ${user.email}`}</div>}
