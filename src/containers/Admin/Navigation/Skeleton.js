@@ -1,6 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { SectionSkeleton, ButtonSkeleton } from 'gg-components/Skeletons';
+import { SectionSkeleton, CompactCardSkeleton } from 'gg-components/Skeletons';
+import STYLES from './admin-navigation.scss';
+import { cssModules } from 'gg-components/helpers/cssModules';
+
+const getClassName = cssModules(STYLES);
 
 const Skeleton = props => {
   const { className } = props;
@@ -14,8 +18,11 @@ const Skeleton = props => {
   return (
     <div className={outerClassNames.join(' ')}>
       <SectionSkeleton />
-      <ButtonSkeleton />
-      <ButtonSkeleton />
+      <div className={getClassName('admin-navigation__card-container')}>
+        <CompactCardSkeleton />
+        <CompactCardSkeleton />
+        <CompactCardSkeleton />
+      </div>
     </div>
   );
 };

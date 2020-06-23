@@ -5,14 +5,14 @@ import { SectionSkeleton, InputSkeleton, CheckboxSkeleton, ButtonSkeleton } from
 const Skeleton = props => {
   const { className } = props;
 
-  const outerClassNameFinal = [];
+  const outerClassNames = [];
 
   if (className) {
-    outerClassNameFinal.push(className);
+    outerClassNames.push(className);
   }
 
   return (
-    <div className={outerClassNameFinal.join(' ')}>
+    <div className={outerClassNames.join(' ')}>
       <SectionSkeleton />
       <InputSkeleton />
       <CheckboxSkeleton />

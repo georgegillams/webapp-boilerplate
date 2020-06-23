@@ -13,9 +13,9 @@ const getClassName = cssModules(STYLES); // REGEX_REPLACED
 const TechSpecs = props => {
   const { light, fancy, className, ...rest } = props;
 
-  const outerClassNameFinal = [];
+  const outerClassNames = [];
   if (className) {
-    outerClassNameFinal.push(className);
+    outerClassNames.push(className);
   }
 
   const iconClassNameFinal = [getClassName('tech-specs__icon')];
@@ -24,7 +24,7 @@ const TechSpecs = props => {
   darkIconClassNameFinal.push(getClassName('tech-specs__icon--light-inverted'));
 
   return (
-    <div className={outerClassNameFinal.join(' ')} {...rest}>
+    <div className={outerClassNames.join(' ')} {...rest}>
       <Section className={getClassName('tech-specs__container')} noPadding light={light} fancy={fancy}>
         Built in
         <a href="https://reactjs.org/" rel="noopener noreferrer" target="_blank">
