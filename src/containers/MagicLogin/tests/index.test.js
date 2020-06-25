@@ -6,7 +6,8 @@ import { initialState as initialAuthenticatorState } from '../../Authenticator/r
 
 import configureStore from 'utils/redux/configure-store';
 
-import MagicLogin from '../index';
+import MagicLoginIndex from '../index';
+import MagicLogin from '../Container';
 
 describe('<MagicLogin />', () => {
   let store;
@@ -14,6 +15,16 @@ describe('<MagicLogin />', () => {
 
   beforeAll(() => {
     store = configureStore({});
+  });
+
+  it('should render correctly - index', () => {
+    const { container } = render(
+      <Provider store={store}>
+        <MagicLoginIndex />
+      </Provider>
+    );
+
+    expect(container).toMatchSnapshot();
   });
 
   it('should render correctly with initial state', () => {

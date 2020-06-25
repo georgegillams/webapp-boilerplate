@@ -5,13 +5,24 @@ import { initialState as initialAuthenticatorState } from '../../../Authenticato
 
 import configureStore from 'utils/redux/configure-store';
 
-import AdminNavigation from '../index';
+import AdminNavigationIndex from '../index';
+import AdminNavigation from '../Container';
 
 describe('<AdminNavigation />', () => {
   let store;
 
   beforeAll(() => {
     store = configureStore({});
+  });
+
+  it('should render correctly - index', () => {
+    const { container } = render(
+      <Provider store={store}>
+        <AdminNavigationIndex />
+      </Provider>
+    );
+
+    expect(container).toMatchSnapshot();
   });
 
   it('should render correctly with initial state', () => {
