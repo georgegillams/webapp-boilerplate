@@ -73,7 +73,6 @@ describe('Account saga', () => {
       expect(putFailure).toEqual(put(logout.failure(response)));
     });
 
-    // TODO also test emailVerification
     it('Should call requestVerificationEmail.success on successful API call', () => {
       const response = requestVerificationEmailResponse;
       requestVerificationEmailGenerator.next(response);
@@ -102,7 +101,5 @@ describe('Account saga', () => {
 
       expect(putFailure).toEqual(put(requestVerificationEmail.failure(response)));
     });
-
-    // END TODO
   });
 });
