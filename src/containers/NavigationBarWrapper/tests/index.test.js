@@ -5,13 +5,24 @@ import { initialState as initialAuthenticatorState } from '../../Authenticator/r
 
 import configureStore from 'utils/redux/configure-store';
 
-import NavigationBarWrapper from '../index';
+import NavigationBarWrapperIndex from '../index';
+import NavigationBarWrapper from '../Container';
 
 describe('<Authenticator />', () => {
   let store;
 
   beforeAll(() => {
     store = configureStore({});
+  });
+
+  it('should render correctly - index', () => {
+    const { container } = render(
+      <Provider store={store}>
+        <NavigationBarWrapperIndex />
+      </Provider>
+    );
+
+    expect(container).toMatchSnapshot();
   });
 
   it('should render correctly with default state', () => {
@@ -27,6 +38,7 @@ describe('<Authenticator />', () => {
 
     expect(container).toMatchSnapshot();
   });
+
   it('should render correctly with user', () => {
     const { container } = render(
       <Provider store={store}>
@@ -41,6 +53,7 @@ describe('<Authenticator />', () => {
 
     expect(container).toMatchSnapshot();
   });
+
   it('should render correctly with null user', () => {
     const { container } = render(
       <Provider store={store}>

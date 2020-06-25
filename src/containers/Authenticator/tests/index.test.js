@@ -5,7 +5,8 @@ import { initialState } from '../reducer';
 
 import configureStore from 'utils/redux/configure-store';
 
-import Authenticator from '../index';
+import AuthenticatorIndex from '../index';
+import Authenticator from '../Container';
 
 describe('<Authenticator />', () => {
   let store;
@@ -13,6 +14,16 @@ describe('<Authenticator />', () => {
 
   beforeAll(() => {
     store = configureStore({});
+  });
+
+  it('should render correctly - index', () => {
+    const { container } = render(
+      <Provider store={store}>
+        <AuthenticatorIndex />
+      </Provider>
+    );
+
+    expect(container).toMatchSnapshot();
   });
 
   it('should render correctly', () => {

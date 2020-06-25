@@ -6,7 +6,8 @@ import { initialState as initialAuthenticatorState } from '../../Authenticator/r
 
 import configureStore from 'utils/redux/configure-store';
 
-import SignUp from '../index';
+import SignUpIndex from '../index';
+import SignUp from '../Container';
 
 describe('<SignUp />', () => {
   let store;
@@ -14,6 +15,16 @@ describe('<SignUp />', () => {
 
   beforeAll(() => {
     store = configureStore({});
+  });
+
+  it('should render correctly - index', () => {
+    const { container } = render(
+      <Provider store={store}>
+        <SignUpIndex />
+      </Provider>
+    );
+
+    expect(container).toMatchSnapshot();
   });
 
   it('should render correctly with initial state', () => {
@@ -33,6 +44,7 @@ describe('<SignUp />', () => {
 
     expect(container).toMatchSnapshot();
   });
+
   it('should render correctly with signUpError', () => {
     const { container } = render(
       <Provider store={store}>
@@ -51,6 +63,7 @@ describe('<SignUp />', () => {
 
     expect(container).toMatchSnapshot();
   });
+
   it('should render correctly with signUpResult', () => {
     const { container } = render(
       <Provider store={store}>
@@ -69,6 +82,7 @@ describe('<SignUp />', () => {
 
     expect(container).toMatchSnapshot();
   });
+
   it('should render correctly with signingUp=true', () => {
     const { container } = render(
       <Provider store={store}>
@@ -87,6 +101,7 @@ describe('<SignUp />', () => {
 
     expect(container).toMatchSnapshot();
   });
+
   it('should render correctly with user', () => {
     const { container } = render(
       <Provider store={store}>
