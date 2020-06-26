@@ -29,7 +29,7 @@ const MagicLogin = props => {
     className,
   } = props;
 
-  const { logInError } = magicLoginState;
+  const { logInError, logInResult } = magicLoginState;
 
   useEffect(() => {
     const token = new URL(window.location).searchParams.get('token');
@@ -43,6 +43,8 @@ const MagicLogin = props => {
 
   const { user } = authenticatorState;
 
+  const success = user && logInResult && !logInError;
+
   const outerClassNames = [];
 
   if (className) {
@@ -50,7 +52,7 @@ const MagicLogin = props => {
   }
 
   let redirectLocation = null;
-  if (user) {
+  if (success) {
     redirectLocation = new URL(window.location).searchParams.get('redirect');
     if (!redirectLocation || redirectLocation === '' || !redirectLocation.match(REDIRECT_REGEX)) {
       redirectLocation = 'account';
@@ -62,8 +64,8 @@ const MagicLogin = props => {
 
   return (
     <div className={outerClassNames.join(' ')}>
-      <PageTitle name={user ? 'Logged in' : 'Logging in'}>
-        {user && (
+      <PageTitle name={success ? 'Logged in' : 'Logging in'}>
+        {success && (
           <>
             <Paragraph>Logged in!</Paragraph>
             <br />
@@ -82,7 +84,7 @@ const MagicLogin = props => {
               </>
             )}
             <br />
-            <TextLink href={'/login'}>Try logging in with a new magic link</TextLink>
+            <TextLink href={'/login'}>Try logging in again</TextLink>
           </>
         )}
       </PageTitle>
