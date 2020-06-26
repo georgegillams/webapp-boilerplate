@@ -41,6 +41,8 @@ const SiteMap = props => (
       <TextLink href="/account">Account</TextLink>
     </SubSection>
     <SubSection anchor={false} className={getClassName('pages__site-map-item')} name="Admin 👮‍♂️">
+      <TextLink href="/admin">Admin navigation</TextLink>
+      <br />
       <TextLink href="/admin/users">Users</TextLink>
       <br />
       <TextLink href="/admin/analytics">Analytics</TextLink>

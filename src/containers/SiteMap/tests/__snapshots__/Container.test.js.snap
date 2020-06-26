@@ -173,6 +173,13 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </h2>
       <a
         class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        href="/admin"
+      >
+        Admin navigation
+      </a>
+      <br />
+      <a
+        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
         href="/admin/users"
       >
         Users
