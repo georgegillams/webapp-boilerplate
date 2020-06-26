@@ -73,7 +73,6 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
         <a
           class="article-card article-card--narrow-compact admin-navigation__card"
           href="/admin/analytics"
-          linkurl="/admin/analytics"
           role="button"
           style="text-decoration: none;"
         >
@@ -127,7 +126,6 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
         <a
           class="article-card article-card--narrow-compact admin-navigation__card"
           href="/admin/notifications"
-          linkurl="/admin/notifications"
           role="button"
           style="text-decoration: none;"
         >
@@ -181,7 +179,6 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
         <a
           class="article-card article-card--narrow-compact admin-navigation__card"
           href="/admin/users"
-          linkurl="/admin/users"
           role="button"
           style="text-decoration: none;"
         >

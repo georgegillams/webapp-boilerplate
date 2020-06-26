@@ -1,26 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { ArticleCard as GGArticleCard } from 'gg-components/Cards';
+import { Card as GGCard } from 'gg-components/Cards';
 import Link from 'next/link';
 import HelperFunctions from 'helpers/HelperFunctions';
 
-const ArticleCard = props => {
+const Card = props => {
   const { href } = props;
   const hrefExternal = href && HelperFunctions.includes(href, 'http');
 
   if (hrefExternal) {
-    return <GGArticleCard {...props} />;
+    return <GGCard {...props} />;
   }
 
   return (
     <Link href={href} passHref>
-      <GGArticleCard {...props} />
+      <GGCard {...props} />
     </Link>
   );
 };
 
-ArticleCard.propTypes = {
+Card.propTypes = {
   href: PropTypes.string.isRequired,
 };
 
-export default ArticleCard;
+export default Card;

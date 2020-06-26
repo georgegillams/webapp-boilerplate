@@ -39,7 +39,7 @@ describe('showcasesReducer', () => {
       expect(showcasesReducer(state, loadShowcases.success({ data: [] }))).toEqual(expectResult);
     });
 
-    it('should return the action loadShowcases.FAILURE', () => {
+    it('should return the action loadShowcases.FAILURE correctly', () => {
       const expectResult = {
         ...state,
         loadShowcasesError: 'some error',

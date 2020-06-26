@@ -34,7 +34,7 @@ describe('loginReducer', () => {
       expect(loginReducer(state, login.success({ success: 'magic link sent' }))).toEqual(expectResult);
     });
 
-    it('should return the action login.FAILURE', () => {
+    it('should return the action login.FAILURE correctly', () => {
       const expectResult = {
         ...state,
         loginError: 'some error',

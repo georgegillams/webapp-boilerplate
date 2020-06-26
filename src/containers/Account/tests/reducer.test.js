@@ -36,7 +36,7 @@ describe('accountReducer', () => {
       );
     });
 
-    it('should return the action requestVerificationEmail.FAILURE', () => {
+    it('should return the action requestVerificationEmail.FAILURE correctly', () => {
       const expectResult = {
         ...state,
         requestVerificationEmailError: 'some error',
@@ -65,7 +65,7 @@ describe('accountReducer', () => {
       expect(accountReducer(state, logout.success({ success: 'you are now logged out' }))).toEqual(expectResult);
     });
 
-    it('should return the action logout.FAILURE', () => {
+    it('should return the action logout.FAILURE correctly', () => {
       const expectResult = {
         ...state,
         logOutError: 'some error',

@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card /> Should render correctly 1`] = `
+<div>
+  <a
+    href="/test"
+    role="button"
+    style="text-decoration: none;"
+  >
+    <div
+      class="card"
+    >
+      <div
+        class="card__background"
+        style="background-image: url(null);"
+      />
+      <div
+        class="card__outer-container card__outer-container--padded"
+      />
+      <div
+        class="card__banner"
+      />
+    </div>
+  </a>
+</div>
+`;
+
+exports[`<Card /> Should render correctly hrefExternal 1`] = `
+<div>
+  <a
+    href="https://duckduckgo.com/"
+    role="button"
+    style="text-decoration: none;"
+  >
+    <div
+      class="card"
+    >
+      <div
+        class="card__background"
+        style="background-image: url(null);"
+      />
+      <div
+        class="card__outer-container card__outer-container--padded"
+      />
+      <div
+        class="card__banner"
+      />
+    </div>
+  </a>
+</div>
+`;
+
+exports[`<Card /> Should render correctly with custom className 1`] = `
+<div>
+  <a
+    class="test-custom-classname"
+    href="/test"
+    role="button"
+    style="text-decoration: none;"
+  >
+    <div
+      class="card"
+    >
+      <div
+        class="card__background"
+        style="background-image: url(null);"
+      />
+      <div
+        class="card__outer-container card__outer-container--padded"
+      />
+      <div
+        class="card__banner"
+      />
+    </div>
+  </a>
+</div>
+`;

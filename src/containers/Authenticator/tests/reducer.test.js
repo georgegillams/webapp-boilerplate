@@ -52,7 +52,7 @@ describe('authenticatorReducer', () => {
       expect(authenticatorReducer(state, loadAuth.success({ user: { name: 'userName' } }))).toEqual(expectResult);
     });
 
-    it('should return the action loadAuth.FAILURE', () => {
+    it('should return the action loadAuth.FAILURE correctly', () => {
       const expectResult = {
         ...state,
         loadAuthError: 'some error',
