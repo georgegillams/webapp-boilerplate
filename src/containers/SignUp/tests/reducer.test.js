@@ -34,7 +34,7 @@ describe('signUpReducer', () => {
       expect(signUpReducer(state, signUp.success({ uname: 'uname', email: 'email' }))).toEqual(expectResult);
     });
 
-    it('should return the action signUp.FAILURE', () => {
+    it('should return the action signUp.FAILURE correctly', () => {
       const expectResult = {
         ...state,
         signUpError: 'some error',

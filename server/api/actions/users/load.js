@@ -7,10 +7,12 @@ import reqSecure from 'utils/reqSecure';
 
 export default function load(req) {
   reqSecure(req, usersAllowedAttributes);
-  return authentication(req).then(user => {
-    if (user && user.admin) {
-      return dbLoad({ includeDeleted: true, redisKey: 'users' });
-    }
-    throw UNAUTHORISED_READ;
-  });
+  return authentication(req)
+    .then(user => {
+      if (user && user.admin) {
+        return dbLoad({ includeDeleted: true, redisKey: 'users' });
+      }
+      throw UNAUTHORISED_READ;
+    })
+    .then(users => ({ users }));
 }
