@@ -11,28 +11,25 @@ import awsLogo from './aws-logo.svg';
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const TechSpecs = props => {
-  const { light, fancy, className, ...rest } = props;
+  const { className, ...rest } = props;
 
   const outerClassNames = [];
   if (className) {
     outerClassNames.push(className);
   }
 
-  const iconClassNameFinal = [getClassName('tech-specs__icon')];
-  const darkIconClassNameFinal = [getClassName('tech-specs__icon')];
-  iconClassNameFinal.push(getClassName('tech-specs__icon--no-light'));
-  darkIconClassNameFinal.push(getClassName('tech-specs__icon--light-inverted'));
+  const iconClassName = getClassName('tech-specs__icon');
 
   return (
     <div className={outerClassNames.join(' ')} {...rest}>
-      <Section className={getClassName('tech-specs__container')} noPadding light={light} fancy={fancy}>
+      <Section className={getClassName('tech-specs__container')} noPadding>
         Built in
         <a href="https://reactjs.org/" rel="noopener noreferrer" target="_blank">
-          <img alt="React" width={5} height={5} className={darkIconClassNameFinal.join(' ')} src={reactLogo} />
+          <img alt="React" width={5} height={5} className={iconClassName} src={reactLogo} />
         </a>
         and
         <a href="https://redux.js.org/" rel="noopener noreferrer" target="_blank">
-          <img alt="Redux" width={5} height={5} className={darkIconClassNameFinal.join(' ')} src={reduxLogo} />
+          <img alt="Redux" width={5} height={5} className={iconClassName} src={reduxLogo} />
         </a>
         Hosted on
         <a href="https://aws.amazon.com/" rel="noopener noreferrer" target="_blank">
@@ -40,7 +37,7 @@ const TechSpecs = props => {
             alt="Amazon Web Services"
             width={8.28}
             height={5}
-            className={darkIconClassNameFinal.join(' ')}
+            className={iconClassName}
             style={{ marginTop: '.8rem', maxWidth: '2.9rem' }}
             src={awsLogo}
           />
@@ -51,14 +48,10 @@ const TechSpecs = props => {
 };
 
 TechSpecs.propTypes = {
-  light: PropTypes.bool,
-  fancy: PropTypes.bool,
   className: PropTypes.string,
 };
 
 TechSpecs.defaultProps = {
-  light: false,
-  fancy: false,
   className: null,
 };
 
