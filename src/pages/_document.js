@@ -1,22 +1,17 @@
 import React from 'react';
-import { Global } from '@emotion/core';
-import { extractCritical } from 'emotion-server';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const page = ctx.renderPage();
     // extract css to render in SSR
-    const styles = extractCritical(page.html);
     const initialProps = await Document.getInitialProps(ctx);
-    return { ...initialProps, ...page, ...styles };
+    return { ...initialProps, ...page };
   }
 
   render() {
     return (
       <Html>
-        <Global />
-
         <Head>
           <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png" />
@@ -25,7 +20,7 @@ class MyDocument extends Document {
           <link rel="mask-icon" href="/static/favicon/safari-pinned-tab.svg" color="#FF0000" />
           <link rel="shortcut icon" href="/static/favicon/favicon.png" />
           <meta name="msapplication-config" content="/static/favicon/browserconfig.xml" />
-          <style data-emotion-css={this.props.ids.join(' ')} dangerouslySetInnerHTML={{ __html: this.props.css }} />
+          <style dangerouslySetInnerHTML={{ __html: this.props.css }} />
         </Head>
 
         <body>

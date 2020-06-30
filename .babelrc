@@ -10,5 +10,5 @@
       "presets": ["next/babel"]
     }
   },
-  "plugins": ["emotion", "babel-plugin-add-module-exports"]
+  "plugins": ["babel-plugin-add-module-exports"]
 }

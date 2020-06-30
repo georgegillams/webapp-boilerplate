@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Home from 'containers/HomeBP';
+import Home from 'containers/HomePage';
 import CommonLayout from 'components/CommonLayout';
 
 const Page = props => {
