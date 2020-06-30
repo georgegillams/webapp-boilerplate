@@ -6,6 +6,7 @@ import { DebugObject, LoadingCover } from 'gg-components/Auth';
 
 import Skeleton from './Skeleton';
 
+import CookiesRequired from 'containers/CookiesRequired';
 import { LoggedOutOnly } from 'components/Walls';
 import { LoginForm } from 'components/Forms';
 import { useInjectSaga } from 'utils/redux/inject-saga';
@@ -44,6 +45,7 @@ const Login = props => {
 
   const page = (
     <div className={outerClassNames.join(' ')}>
+      <CookiesRequired reason={'log in'} />
       <LoggedOutOnly user={authenticatorState.user}>
         <PageTitle name="Login">
           <LoginForm

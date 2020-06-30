@@ -7,10 +7,12 @@ import { createStructuredSelector } from 'reselect';
 import { signUp } from './actions';
 import { selectState } from './selectors';
 import { selectState as selectAuthenticatorState } from '../Authenticator/selectors';
+import { selectState as selectConsentState } from '../Consent/selectors';
 import SignUp from './Container';
 
 const mapStateToProps = createStructuredSelector({
   signUpState: selectState(),
+  consentState: selectConsentState(),
   authenticatorState: selectAuthenticatorState(),
 });
 

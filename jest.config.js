@@ -6,6 +6,7 @@ module.exports = {
     '!build/**',
     '!coverage/**',
     '!src/.next/**',
+    '!src/pages/**',
     '!server/**/*.test.{js,jsx}',
     '!src/utils/with-redux-store.js',
     '!<rootDir>/next.config.js',

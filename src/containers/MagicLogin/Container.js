@@ -7,22 +7,25 @@ import { Paragraph } from 'gg-components/Typography';
 import { useInjectSaga } from 'utils/redux/inject-saga';
 import { useInjectReducer } from 'utils/redux/inject-reducer';
 import TextLink from 'components/TextLink';
-import { useRouter } from 'next/router';
+import CookiesRequired from 'containers/CookiesRequired';
+import { withRouter } from 'next/router';
 
 import { KEY } from './constants';
 import saga from './saga';
 import reducer from './reducer';
 import { REDIRECT_REGEX } from 'helpers/regexConstants';
+import { CONSENT_STATE_ALLOWED } from 'containers/Consent/constants';
 
 const MagicLogin = props => {
   useInjectSaga({ key: KEY, saga });
   useInjectReducer({ key: KEY, reducer });
 
-  const router = useRouter();
-
   const {
+    router,
+
     login,
 
+    consentState,
     magicLoginState,
     authenticatorState,
 
@@ -32,14 +35,15 @@ const MagicLogin = props => {
   const { logInError, logInResult } = magicLoginState;
 
   useEffect(() => {
-    const token = new URL(window.location).searchParams.get('token');
-    const interval = setInterval(() => {
-      if (token) {
-        login(token);
-        clearInterval(interval);
-      }
-    }, 200);
-  }, []);
+    let token = null;
+    if (router && router.query) {
+      token = router.query.token;
+    }
+    // We want to wait for cookies to be accepted before logging in
+    if (token && consentState.cookieConsent === CONSENT_STATE_ALLOWED) {
+      login(token);
+    }
+  }, [consentState, router]);
 
   const { user } = authenticatorState;
 
@@ -51,9 +55,11 @@ const MagicLogin = props => {
     outerClassNames.push(className);
   }
 
-  let redirectLocation = null;
+  let redirectLocation = 'account';
   if (success) {
-    redirectLocation = new URL(window.location).searchParams.get('redirect');
+    if (router && router.query) {
+      redirectLocation = router.query.redirectLocation;
+    }
     if (!redirectLocation || redirectLocation === '' || !redirectLocation.match(REDIRECT_REGEX)) {
       redirectLocation = 'account';
       setTimeout(() => {
@@ -64,6 +70,7 @@ const MagicLogin = props => {
 
   return (
     <div className={outerClassNames.join(' ')}>
+      <CookiesRequired reason={'log in'} />
       <PageTitle name={success ? 'Logged in' : 'Logging in'}>
         {success && (
           <>
@@ -101,6 +108,11 @@ const MagicLogin = props => {
 };
 
 MagicLogin.propTypes = {
+  router: PropTypes.shape({
+    query: PropTypes.shape({
+      highlight: PropTypes.string,
+    }).isRequired,
+  }),
   login: PropTypes.func.isRequired,
   magicLoginState: PropTypes.shape({
     token: PropTypes.string,
@@ -111,13 +123,17 @@ MagicLogin.propTypes = {
   authenticatorState: PropTypes.shape({
     user: PropTypes.object,
   }).isRequired,
+  consentState: PropTypes.shape({
+    cookieConsent: PropTypes.string,
+  }).isRequired,
   className: PropTypes.string,
 };
 
 MagicLogin.defaultProps = {
+  router: null,
   authenticatorState: null,
   magicLoginState: null,
   className: null,
 };
 
-export default MagicLogin;
+export default withRouter(MagicLogin);

@@ -11,11 +11,11 @@ describe('selectAuthenticator', () => {
   it('should select the authenticator state', () => {
     const state = {
       ...initialState,
-      user: { name: 'userName' },
+      cookieConsent: 'SOME_COOKIE_CONSENT',
     };
 
     const mockedState = {
-      authenticator: state,
+      consent: state,
     };
 
     const selectStateMock = selectState();

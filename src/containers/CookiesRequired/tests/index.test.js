@@ -1,14 +1,14 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
-import { initialState } from '../reducer';
+import { initialState as initialConsentState } from '../../Consent/reducer';
 
 import configureStore from 'utils/redux/configure-store';
 
-import AuthenticatorIndex from '../index';
-import Authenticator from '../Container';
+import CookiesRequiredIndex from '../index';
+import CookiesRequired from '../Container';
 
-describe('<Authenticator />', () => {
+describe('<CookiesRequired />', () => {
   let store;
   const spy = jest.fn();
 
@@ -19,20 +19,21 @@ describe('<Authenticator />', () => {
   it('should render correctly - index', () => {
     const { container } = render(
       <Provider store={store}>
-        <AuthenticatorIndex />
+        <CookiesRequiredIndex reason="some reason" />
       </Provider>
     );
 
     expect(container).toMatchSnapshot();
   });
 
-  it('should render correctly', () => {
+  it('should render correctly with default state', () => {
     const { container } = render(
       <Provider store={store}>
-        <Authenticator
-          loadAuth={spy}
-          authenticatorState={{
-            ...initialState,
+        <CookiesRequired
+          reason="some reason"
+          rePromptConsent={spy}
+          consentState={{
+            ...initialConsentState,
           }}
         />
       </Provider>

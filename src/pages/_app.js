@@ -3,6 +3,7 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import Head from 'next/head';
 import App from 'next/app';
+import Consent from 'containers/Consent';
 import Authenticator from 'containers/Authenticator';
 
 import withReduxStore from 'utils/redux/with-redux-store';
@@ -27,6 +28,7 @@ class Srr extends App {
         <Provider store={reduxStore}>
           <AppWrapper>
             <Navigation />
+            <Consent />
             <Authenticator />
             <Component {...pageProps} />
           </AppWrapper>
