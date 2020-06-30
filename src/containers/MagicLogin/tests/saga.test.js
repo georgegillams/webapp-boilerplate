@@ -33,9 +33,9 @@ describe('MagicLogin saga', () => {
 
     it('Should call login.success on successful API call', () => {
       logoutGenerator.next({ token: 'asdfghjkl' });
-      logoutGenerator.next(response);
+      logoutGenerator.next();
       const putSuccess = logoutGenerator.next(response).value;
-      logoutGenerator.next(response);
+      logoutGenerator.next();
 
       expect(putSuccess).toEqual(put(login.success(response)));
     });
@@ -47,9 +47,9 @@ describe('MagicLogin saga', () => {
         errorMessage: 'Error message',
         status: 500,
       };
-      logoutGenerator.next(response);
+      logoutGenerator.next();
       const putSuccess = logoutGenerator.next(response).value;
-      logoutGenerator.next(response);
+      logoutGenerator.next();
 
       expect(putSuccess).toEqual(put(login.failure(response)));
     });

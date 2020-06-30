@@ -34,9 +34,9 @@ describe('Sign up saga', () => {
 
     it('Should call signUp.success on successful API call', () => {
       signUpGenerator.next({ credentials: {} });
-      signUpGenerator.next(response);
+      signUpGenerator.next();
       const putSuccess = signUpGenerator.next(response).value;
-      signUpGenerator.next(response);
+      signUpGenerator.next();
 
       expect(putSuccess).toEqual(put(signUp.success(response)));
     });
@@ -48,9 +48,9 @@ describe('Sign up saga', () => {
         status: 500,
       };
       signUpGenerator.next({ credentials: {} });
-      signUpGenerator.next(response);
+      signUpGenerator.next();
       const putSuccess = signUpGenerator.next(response).value;
-      signUpGenerator.next(response);
+      signUpGenerator.next();
 
       expect(putSuccess).toEqual(put(signUp.failure(response)));
     });
