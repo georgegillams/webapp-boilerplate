@@ -2,6 +2,7 @@
 /* stylelint-disable custom-property-empty-line-before */
 /* stylelint-disable selector-max-id */
 @import '~utils/tokens';
+@import '~fontsource-quattrocento-sans/index.css';
 
 :root {
   --checkbox-tick-color: #{$checkbox-tick-color};
@@ -46,8 +47,8 @@ body {
 body {
   background-color: $background-color;
   color: $not-black;
-  font-family: 'Quattrocento Sans', sans-serif;
-  src: url('https://fonts.googleapis.com/css?family=Quattrocento+Sans');
+  font-family: 'Quattrocento Sans', -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
 
   @media (prefers-color-scheme: dark) {
     background-color: $background-color-invert;
@@ -56,8 +57,8 @@ body {
 }
 
 body.fontLoaded {
-  font-family: 'Quattrocento Sans', sans-serif;
-  src: url('https://fonts.googleapis.com/css?family=Quattrocento+Sans');
+  font-family: 'Quattrocento Sans', -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 #app {

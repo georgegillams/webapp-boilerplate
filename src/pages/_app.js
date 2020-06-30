@@ -11,8 +11,6 @@ import Navigation from 'containers/NavigationBarWrapper';
 import AppWrapper from 'components/AppWrapper';
 
 import 'global-styles.scss';
-import 'typeface-metropolis';
-import '@typefaces-pack/typeface-inter';
 
 class Srr extends App {
   render() {

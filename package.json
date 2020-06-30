@@ -39,7 +39,6 @@
     ]
   },
   "dependencies": {
-    "@typefaces-pack/typeface-inter": "^1.0.3",
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
     "async-lock": "^1.2.4",
@@ -47,6 +46,7 @@
     "chalk": "^4.1.0",
     "clsx": "^1.1.1",
     "express": "^4.17.1",
+    "fontsource-quattrocento-sans": "^2.1.4",
     "gg-components": "^5.1.0",
     "hoist-non-react-statics": "3.3.0",
     "immer": "^6.0.9",
@@ -72,8 +72,7 @@
     "reselect": "4.0.0",
     "safe-compare": "^1.1.4",
     "sass": "^1.26.8",
-    "signale": "^1.4.0",
-    "typeface-metropolis": "^0.0.74"
+    "signale": "^1.4.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.1",
