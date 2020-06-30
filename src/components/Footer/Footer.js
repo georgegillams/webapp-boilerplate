@@ -5,6 +5,7 @@ import { cssModules } from 'gg-components/helpers/cssModules';
 import Logo from '../Logo';
 
 import TechSpecs from './TechSpecs';
+import FooterNav from './FooterNav';
 import STYLES from './footer.scss';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
@@ -22,7 +23,8 @@ const Footer = props => {
   return (
     <footer id="footer" className={outerClassNames.join(' ')} {...rest}>
       <Logo pride={isPride} alwaysCentred className={getClassName('footer__logo')} padding={false} />
-      <TechSpecs className={getClassName('footer__tech')} light />
+      <TechSpecs className={getClassName('footer__tech')} />
+      <FooterNav className={getClassName('footer__nav')} />
     </footer>
   );
 };
