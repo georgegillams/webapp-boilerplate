@@ -8,12 +8,14 @@ import Skeleton from './Skeleton';
 
 import { LoggedOutOnly } from 'components/Walls';
 import { SignUpForm } from 'components/Forms';
+import CookiesRequired from 'containers/CookiesRequired';
 import { useInjectSaga } from 'utils/redux/inject-saga';
 import { useInjectReducer } from 'utils/redux/inject-reducer';
 
 import { KEY } from './constants';
 import saga from './saga';
 import reducer from './reducer';
+import { CONSENT_STATE_ALLOWED } from 'containers/Consent/constants';
 
 const SignUp = props => {
   useInjectSaga({ key: KEY, saga });
@@ -24,6 +26,7 @@ const SignUp = props => {
   const {
     signUp,
 
+    consentState,
     signUpState,
     authenticatorState,
 
@@ -42,16 +45,20 @@ const SignUp = props => {
     preSubmitText = signUpState.signUpError.errorMessage;
   }
 
+  // We shouldn't allow a user to sign up unless cookies are consented to
   const page = (
     <div className={outerClassNames.join(' ')}>
+      <CookiesRequired reason={'sign up'} />
       <LoggedOutOnly user={authenticatorState.user}>
         <PageTitle name="Sign up">
           <SignUpForm
-            disabled={signUpState.signingUp}
+            disabled={signUpState.signingUp || consentState.cookieConsent !== CONSENT_STATE_ALLOWED}
             credentials={credentials}
             onDataChanged={setCredentials}
             onSubmit={() => {
-              signUp(credentials);
+              if (consentState.cookieConsent === CONSENT_STATE_ALLOWED) {
+                signUp(credentials);
+              }
             }}
             preSubmitText={preSubmitText}
           />
@@ -88,6 +95,9 @@ SignUp.propTypes = {
   }).isRequired,
   authenticatorState: PropTypes.shape({
     user: PropTypes.object,
+  }).isRequired,
+  consentState: PropTypes.shape({
+    cookieConsent: PropTypes.string,
   }).isRequired,
   className: PropTypes.string,
 };

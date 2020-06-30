@@ -3,25 +3,21 @@ import { memo } from 'react';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
-
-import { login } from './actions';
-import { selectState } from './selectors';
-import { selectState as selectAuthenticatorState } from '../Authenticator/selectors';
 import { selectState as selectConsentState } from '../Consent/selectors';
-import MagicLogin from './Container';
+
+import CookiesRequired from './Container';
+import { rePromptConsent } from 'containers/Consent/actions';
 
 const mapStateToProps = createStructuredSelector({
-  magicLoginState: selectState(),
   consentState: selectConsentState(),
-  authenticatorState: selectAuthenticatorState(),
 });
 
 export function mapDispatchToProps(dispatch) {
   return {
-    login: payload => dispatch(login(payload)),
+    rePromptConsent: payload => dispatch(rePromptConsent(payload)),
   };
 }
 
 const withConnect = connect(mapStateToProps, mapDispatchToProps);
 
-export default compose(withConnect, memo)(MagicLogin);
+export default compose(withConnect, memo)(CookiesRequired);

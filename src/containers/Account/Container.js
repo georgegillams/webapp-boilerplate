@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import PageTitle from 'components/PageTitle';
 import { DebugObject, LoadingCover } from 'gg-components/Auth';
 import { Paragraph } from 'gg-components/Typography';
-import { Button } from 'gg-components/Button';
+import Button from 'components/Button';
 import { setPostLoginRedirect } from 'utils/storageHelpers';
 
 import Skeleton from './Skeleton';

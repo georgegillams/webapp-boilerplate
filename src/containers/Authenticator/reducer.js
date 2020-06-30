@@ -1,10 +1,9 @@
 import produce from 'immer';
 import cookie from 'react-cookies';
 
-import { setUser, loadAuth, setCookiesAllowed } from './actions';
+import { setUser, loadAuth } from './actions';
 
 export const initialState = {
-  cookiesAllowed: false,
   loadingAuth: false,
   loadAuthError: null,
   user: undefined,
@@ -13,10 +12,6 @@ export const initialState = {
 const reducer = (state = initialState, { type, payload }) =>
   produce(state, draft => {
     switch (type) {
-      case setCookiesAllowed.TRIGGER:
-        draft.cookiesAllowed = payload;
-        break;
-
       case setUser.TRIGGER:
         draft.user = payload;
         if (payload && payload.session) {
