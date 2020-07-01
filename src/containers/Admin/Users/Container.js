@@ -10,8 +10,7 @@ import { SplitDetailView } from 'components/SplitDetailView';
 import { setPostLoginRedirect } from 'utils/storageHelpers';
 import Skeleton from './Skeleton';
 import { withRouter } from 'next/router';
-import { Select, Input } from 'gg-components/Input';
-import { Checkbox } from 'gg-components/Checkbox';
+import UserFilter from './UserFilter';
 
 import { useInjectSaga } from 'utils/redux/inject-saga';
 import { useInjectReducer } from 'utils/redux/inject-reducer';
@@ -115,7 +114,7 @@ const AdminUsers = props => {
       });
     }
     if (filterName) {
-      filteredUsers = filteredUsers.filter(x => x.name.includes(filterName));
+      filteredUsers = filteredUsers.filter(x => x.name && x.name.includes(filterName));
     }
   }
 
@@ -201,52 +200,22 @@ const AdminUsers = props => {
   );
 
   const filterControls = (
-    <div>
-      <Checkbox
-        label="Show deleted"
-        name="filterDeleted"
-        checked={!filterDeleted}
-        onChange={event => {
-          setFilterDeleted(!event.target.checked);
-        }}
-      />
-      <br />
-      <br />
-      <label htmlFor="filterAdminStatus">Filter by admin status</label>
-      <Select
-        id="filterAdminStatus"
-        name="Filter by admin status"
-        value={filterAdminStatus}
-        options={[
-          { value: 'all', name: 'All' },
-          { value: 'admin', name: 'Admin' },
-          { value: 'nonAdmin', name: 'Non-admin' },
-        ]}
-        onChange={event => {
-          setFilterAdminStatus(event.target.value);
-        }}
-      />
-      <br />
-      <br />
-      <label htmlFor="filterEmailVerified">Filter by email verification status</label>
-      <Select
-        id="filterEmailVerified"
-        name="Filter by email verification status"
-        value={filterEmailVerified}
-        options={[
-          { value: 'all', name: 'All' },
-          { value: 'verified', name: 'Verified' },
-          { value: 'nonVerified', name: 'Non-verified' },
-        ]}
-        onChange={event => {
-          setFilterEmailVerified(event.target.value);
-        }}
-      />
-      <br />
-      <br />
-      <label htmlFor="filterName">Filter by name</label>
-      <Input id="filterName" value={filterName} onChange={event => setFilterName(event.target.value)} />
-    </div>
+    <UserFilter
+      filterDeleted={filterDeleted}
+      onDeletedFilterChanged={event => {
+        setFilterDeleted(!event.target.checked);
+      }}
+      filterAdminStatus={filterAdminStatus}
+      onAdminStatusFilterChanged={event => {
+        setFilterAdminStatus(event.target.value);
+      }}
+      filterEmailVerified={filterEmailVerified}
+      onEmailVerifiedFilterChanged={event => {
+        setFilterEmailVerified(event.target.value);
+      }}
+      filterName={filterName}
+      onNameFilterChanged={event => setFilterName(event.target.value)}
+    />
   );
 
   return (
@@ -260,7 +229,9 @@ const AdminUsers = props => {
           setLoginRedirect={() => {
             setPostLoginRedirect('admin/users');
           }}>
-          <PageTitle link={{ to: '/admin', text: 'Admin' }} name="Admin users"></PageTitle>
+          <div>
+            <PageTitle link={{ to: '/admin', text: 'Admin' }} name="Admin users"></PageTitle>
+          </div>
           {mainControls}
           {showFilters && filterControls}
           {users && (
