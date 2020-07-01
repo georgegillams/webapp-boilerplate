@@ -1,0 +1,33 @@
+@import '~utils/tokens';
+
+.consent {
+  &__modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: rgba(8, 8, 8, 0.733);
+  }
+
+  &__modal-content {
+    width: auto;
+    max-width: calc(100vw - 2rem);
+    padding: 2rem;
+    border: 0.1rem gray solid;
+    border-radius: 0.4rem;
+    background: $background-color;
+
+    @media (prefers-color-scheme: dark) {
+      background: $background-color-invert;
+    }
+  }
+
+  &__button {
+    margin: 0.5rem 1rem 0 0;
+  }
+}

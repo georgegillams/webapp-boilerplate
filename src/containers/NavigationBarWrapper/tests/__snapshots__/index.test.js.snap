@@ -52,7 +52,7 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
             >
               <h1
                 aria-label="Home page"
-                class="logo__heading logo__subheading--animated logo__heading--pride logo__heading--no-padding"
+                class="logo__heading logo__subheading--animated logo__heading--no-padding"
                 role="button"
               >
                 LOGO
@@ -130,7 +130,7 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
             >
               <h1
                 aria-label="Home page"
-                class="logo__heading logo__subheading--animated logo__heading--pride logo__heading--no-padding"
+                class="logo__heading logo__subheading--animated logo__heading--no-padding"
                 role="button"
               >
                 LOGO
@@ -208,7 +208,7 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
             >
               <h1
                 aria-label="Home page"
-                class="logo__heading logo__subheading--animated logo__heading--pride logo__heading--no-padding"
+                class="logo__heading logo__subheading--animated logo__heading--no-padding"
                 role="button"
               >
                 LOGO
@@ -290,7 +290,7 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
             >
               <h1
                 aria-label="Home page"
-                class="logo__heading logo__subheading--animated logo__heading--pride logo__heading--no-padding"
+                class="logo__heading logo__subheading--animated logo__heading--no-padding"
                 role="button"
               >
                 LOGO
