@@ -62,10 +62,10 @@ const MagicLogin = props => {
     }
     if (!redirectLocation || redirectLocation === '' || !redirectLocation.match(REDIRECT_REGEX)) {
       redirectLocation = 'account';
-      setTimeout(() => {
-        router.push(`/${redirectLocation}`);
-      }, 1000);
     }
+    setTimeout(() => {
+      router.push(`/${redirectLocation}`);
+    }, 1000);
   }
 
   return (

@@ -1,5 +1,5 @@
 import verificationReducer from '../reducer';
-import { load, remove, requestMagicLink } from '../actions';
+import { load, remove, requestMagicLink, create, update } from '../actions';
 import { initialState } from '../reducer';
 
 describe('adminUsersReducer', () => {
@@ -125,6 +125,83 @@ describe('adminUsersReducer', () => {
       };
 
       expect(verificationReducer(state, requestMagicLink.failure('some error'))).toEqual(expectResult);
+    });
+  });
+
+  describe('create actions', () => {
+    it('should handle the action create.TRIGGER correctly', () => {
+      const expectResult = {
+        ...state,
+        userToCreate: 'userToCreate',
+      };
+
+      expect(verificationReducer(state, create.trigger('userToCreate'))).toEqual(expectResult);
+    });
+
+    it('should handle the action create.REQUEST correctly', () => {
+      const expectResult = {
+        ...state,
+        creating: true,
+      };
+
+      expect(verificationReducer(state, create.request())).toEqual(expectResult);
+    });
+
+    it('should return the action create.SUCCESS correctly', () => {
+      const expectResult = {
+        ...state,
+      };
+
+      expect(verificationReducer(state, create.success({ success: 'user created' }))).toEqual(expectResult);
+    });
+
+    it('should return the action create.FAILURE correctly', () => {
+      const expectResult = {
+        ...state,
+        createError: 'some error',
+      };
+
+      expect(verificationReducer(state, create.failure('some error'))).toEqual(expectResult);
+    });
+  });
+
+  describe('update actions', () => {
+    it('should handle the action update.TRIGGER correctly', () => {
+      const expectResult = {
+        ...state,
+        userToUpdate: 'userToCreate',
+        onUpdateSuccessCb: 'on success cb',
+      };
+
+      expect(
+        verificationReducer(state, update.trigger({ userToUpdate: 'userToCreate', onUpdateSuccessCb: 'on success cb' }))
+      ).toEqual(expectResult);
+    });
+
+    it('should handle the action update.REQUEST correctly', () => {
+      const expectResult = {
+        ...state,
+        updating: true,
+      };
+
+      expect(verificationReducer(state, update.request())).toEqual(expectResult);
+    });
+
+    it('should return the action update.SUCCESS correctly', () => {
+      const expectResult = {
+        ...state,
+      };
+
+      expect(verificationReducer(state, update.success({ success: 'user updated' }))).toEqual(expectResult);
+    });
+
+    it('should return the action update.FAILURE correctly', () => {
+      const expectResult = {
+        ...state,
+        updateError: 'some error',
+      };
+
+      expect(verificationReducer(state, update.failure('some error'))).toEqual(expectResult);
     });
   });
 });

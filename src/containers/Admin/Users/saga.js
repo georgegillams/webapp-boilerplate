@@ -4,7 +4,7 @@ import request from 'utils/request';
 import apiStructure from 'helpers/apiStructure';
 
 import { selectState } from './selectors';
-import { load, remove, requestMagicLink } from './actions';
+import { load, remove, requestMagicLink, create, update } from './actions';
 
 export function* doLoad() {
   const requestURL = apiStructure.loadUsers.fullPath;
@@ -83,8 +83,71 @@ export function* doRequestMagicLink() {
   }
 }
 
+export function* doCreate() {
+  const currentState = yield select(selectState());
+  const { userToCreate } = currentState;
+  const requestURL = apiStructure.createUser.fullPath;
+
+  try {
+    yield put(create.request());
+
+    const result = yield call(request, requestURL, {
+      method: 'POST',
+      body: JSON.stringify(userToCreate),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+
+    if (result.error) {
+      yield put(create.failure(result));
+    } else {
+      yield put(create.success(result));
+      yield put(load.trigger());
+    }
+  } catch (err) {
+    yield put(create.failure(err));
+  } finally {
+    yield put(create.fulfill());
+  }
+}
+
+export function* doUpdate() {
+  const currentState = yield select(selectState());
+  const { userToUpdate, onUpdateSuccessCb } = currentState;
+  const requestURL = apiStructure.updateUser.fullPath;
+
+  try {
+    yield put(update.request());
+
+    const result = yield call(request, requestURL, {
+      method: 'POST',
+      body: JSON.stringify(userToUpdate),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+
+    if (result.error) {
+      yield put(update.failure(result));
+    } else {
+      yield put(update.success(result));
+      if (onUpdateSuccessCb) {
+        onUpdateSuccessCb(result);
+      }
+      yield put(load.trigger());
+    }
+  } catch (err) {
+    yield put(update.failure(err));
+  } finally {
+    yield put(update.fulfill());
+  }
+}
+
 export default function* saga() {
   yield takeLatest(load.TRIGGER, doLoad);
   yield takeLatest(remove.TRIGGER, doRemove);
   yield takeLatest(requestMagicLink.TRIGGER, doRequestMagicLink);
+  yield takeLatest(create.TRIGGER, doCreate);
+  yield takeLatest(update.TRIGGER, doUpdate);
 }

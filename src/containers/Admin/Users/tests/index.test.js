@@ -194,6 +194,7 @@ describe('<AdminUsers />', () => {
     );
     expect(container).toMatchSnapshot();
   });
+
   it('should render correctly with removing=true', () => {
     const { container } = render(
       <Provider store={store}>
@@ -225,6 +226,90 @@ describe('<AdminUsers />', () => {
           adminUsersState={{
             ...initialState,
             removeError: { error: 'some_error', errorMessage: 'Something went wrong' },
+          }}
+          authenticatorState={{
+            ...initialAuthenticatorState,
+            user: { name: 'testUser', admin: true },
+          }}
+        />
+      </Provider>
+    );
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should render correctly with creating=true', () => {
+    const { container } = render(
+      <Provider store={store}>
+        <AdminUsers
+          load={spy}
+          remove={spy}
+          requestMagicLink={spy}
+          adminUsersState={{
+            ...initialState,
+            creating: true,
+          }}
+          authenticatorState={{
+            ...initialAuthenticatorState,
+            user: { name: 'testUser', admin: true },
+          }}
+        />
+      </Provider>
+    );
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should render correctly with createError', () => {
+    const { container } = render(
+      <Provider store={store}>
+        <AdminUsers
+          load={spy}
+          remove={spy}
+          requestMagicLink={spy}
+          adminUsersState={{
+            ...initialState,
+            createError: { error: 'some_error', errorMessage: 'Something went wrong' },
+          }}
+          authenticatorState={{
+            ...initialAuthenticatorState,
+            user: { name: 'testUser', admin: true },
+          }}
+        />
+      </Provider>
+    );
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should render correctly with updating=true', () => {
+    const { container } = render(
+      <Provider store={store}>
+        <AdminUsers
+          load={spy}
+          remove={spy}
+          requestMagicLink={spy}
+          adminUsersState={{
+            ...initialState,
+            updating: true,
+          }}
+          authenticatorState={{
+            ...initialAuthenticatorState,
+            user: { name: 'testUser', admin: true },
+          }}
+        />
+      </Provider>
+    );
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should render correctly with updateError', () => {
+    const { container } = render(
+      <Provider store={store}>
+        <AdminUsers
+          load={spy}
+          remove={spy}
+          requestMagicLink={spy}
+          adminUsersState={{
+            ...initialState,
+            updateError: { error: 'some_error', errorMessage: 'Something went wrong' },
           }}
           authenticatorState={{
             ...initialAuthenticatorState,

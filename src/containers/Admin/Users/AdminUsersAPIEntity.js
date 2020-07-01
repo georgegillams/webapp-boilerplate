@@ -3,10 +3,12 @@ import PropTypes from 'prop-types';
 import { Button } from 'gg-components/Button';
 import { Paragraph, SubSection } from 'gg-components/Typography';
 import Card from 'components/Card';
+import { UserEditForm } from 'components/Forms';
 
 const AdminUsersAPIEntity = props => {
-  const { compact, entity, onUserUpdateSuccess, children, ...rest } = props;
+  const { compact, entity, updateUser, adminUserState, children, ...rest } = props;
   const [editing, setEditing] = useState(false);
+  const [updatedUser, setUpdatedUser] = useState(null);
 
   const content = (
     <SubSection anchor={false} name={entity.name || `User ${entity.id}`}>
@@ -42,6 +44,34 @@ const AdminUsersAPIEntity = props => {
           </Button>
         </>
       )}
+      {editing && (
+        <>
+          <br />
+          <br />
+          <UserEditForm
+            showAdminControls
+            user={updatedUser || entity}
+            onDataChanged={setUpdatedUser}
+            onSubmit={() => {
+              if (updateUser) {
+                updateUser({
+                  userToUpdate: updatedUser,
+                  onUpdateSuccessCb: () => {
+                    setEditing(false);
+                  },
+                });
+              }
+            }}
+            disabled={adminUserState.updating}
+          />
+        </>
+      )}
+      {!compact && adminUserState && adminUserState.updateError && (
+        <>
+          <br />
+          <Paragraph>{adminUserState.updateError.errorMessage || 'Something went wrong'}</Paragraph>
+        </>
+      )}
       {!compact && children && children}
     </SubSection>
   );
@@ -63,15 +93,17 @@ const AdminUsersAPIEntity = props => {
 AdminUsersAPIEntity.propTypes = {
   // eslint-disable-next-line react/forbid-prop-types
   entity: PropTypes.object.isRequired,
+  updateUser: PropTypes.func,
   children: PropTypes.node,
   compact: PropTypes.bool,
-  onUserUpdateSuccess: PropTypes.func,
+  adminUserState: PropTypes.object,
 };
 
 AdminUsersAPIEntity.defaultProps = {
+  updateUser: null,
   children: null,
   compact: false,
-  onUserUpdateSuccess: null,
+  adminUserState: null,
 };
 
 export default AdminUsersAPIEntity;

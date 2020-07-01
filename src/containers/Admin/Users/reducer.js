@@ -1,6 +1,6 @@
 import produce from 'immer';
 
-import { load, remove, requestMagicLink } from './actions';
+import { load, remove, requestMagicLink, create, update } from './actions';
 
 export const initialState = {
   users: null,
@@ -14,6 +14,15 @@ export const initialState = {
   userToLogIn: null,
   requesting: false,
   requestError: null,
+
+  userToCreate: null,
+  creating: false,
+  createError: null,
+
+  userToUpdate: null,
+  updating: false,
+  updateError: null,
+  onUpdateSuccessCb: null,
 };
 
 const reducer = (state = initialState, { type, payload }) =>
@@ -68,6 +77,43 @@ const reducer = (state = initialState, { type, payload }) =>
       case requestMagicLink.FAILURE:
         draft.requesting = false;
         draft.requestError = payload;
+        break;
+
+      case create.TRIGGER:
+        draft.userToCreate = payload;
+        break;
+
+      case create.REQUEST:
+        draft.creating = true;
+        draft.createError = null;
+        break;
+
+      case create.SUCCESS:
+        draft.creating = false;
+        break;
+
+      case create.FAILURE:
+        draft.creating = false;
+        draft.createError = payload;
+        break;
+
+      case update.TRIGGER:
+        draft.userToUpdate = payload.userToUpdate;
+        draft.onUpdateSuccessCb = payload.onUpdateSuccessCb;
+        break;
+
+      case update.REQUEST:
+        draft.updating = true;
+        draft.updateError = null;
+        break;
+
+      case update.SUCCESS:
+        draft.updating = false;
+        break;
+
+      case update.FAILURE:
+        draft.updating = false;
+        draft.updateError = payload;
         break;
     }
   });
