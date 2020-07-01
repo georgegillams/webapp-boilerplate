@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
 import update from './update.js';
 
 import { dbCreate, dbLoad } from 'utils/database';
@@ -29,7 +30,7 @@ const createSomeValues = () => {
 
 test('update notification as admin - updates data', () => {
   const req = {
-    cookies: { session: 'adminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'adminSessionKey1' },
     headers: {},
     body: {
       id: 'notification1',
@@ -57,7 +58,7 @@ test('update notification as admin - updates data', () => {
 
 test('update non-existent notification as admin - throws not found error', () => {
   const req = {
-    cookies: { session: 'adminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'adminSessionKey1' },
     headers: {},
     body: {
       id: 'notificationNotExists',
@@ -79,7 +80,7 @@ test('update non-existent notification as admin - throws not found error', () =>
 
 test('update notification non-admin - throws auth error', () => {
   const req = {
-    cookies: { session: 'nonAdminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'nonAdminSessionKey1' },
     headers: {},
     body: {
       id: 'notification1',

@@ -1,3 +1,4 @@
+import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
 import { INT_REGEX, ID_REGEX, PASSWORD_REGEX, ANYTHING_REGEX } from 'helpers/regexConstants';
 
 const standardAttributes = [
@@ -6,7 +7,7 @@ const standardAttributes = [
   { attribute: 'requestedId', pattern: ID_REGEX },
   { attribute: 'apikey', pattern: PASSWORD_REGEX },
   { attribute: 'timestamp', pattern: INT_REGEX },
-  { attribute: 'session', pattern: ID_REGEX },
+  { attribute: SESSION_COOKIE_KEY, pattern: ID_REGEX },
   { attribute: 'x-forwarded-for', pattern: ANYTHING_REGEX },
 ];
 

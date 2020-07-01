@@ -1,4 +1,5 @@
 import authAllowedAttributes from './private/authAllowedAttributes';
+import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
 
 import { dbLoad, dbUpdate } from 'utils/database';
 import { INVALID_SESSION } from 'utils/errorConstants';
@@ -12,7 +13,7 @@ export default function logout(req) {
   return lockPromise('sessions', () =>
     dbLoad({ redisKey: 'sessions' })
       .then(sessionData => {
-        const { existingValue: session } = find(sessionData, req.cookies.session, 'sessionKey');
+        const { existingValue: session } = find(sessionData, req.cookies[SESSION_COOKIE_KEY], 'sessionKey');
         if (session) {
           session.userId = null;
           session.userAuthenticatedTimestamp = null;

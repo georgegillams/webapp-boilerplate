@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
 import deleteNotification from './delete.js';
 
 import { dbCreate, dbLoad } from 'utils/database';
@@ -27,7 +28,7 @@ const createSomeValues = () => {
 
 test('delete notification as admin - removes data from collection', () => {
   const req = {
-    cookies: { session: 'adminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'adminSessionKey1' },
     headers: {},
     body: {
       id: 'notification1',
@@ -51,7 +52,7 @@ test('delete notification as admin - removes data from collection', () => {
 
 test('delete non-existent notification as admin - throws not found error', () => {
   const req = {
-    cookies: { session: 'adminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'adminSessionKey1' },
     headers: {},
     body: {
       id: 'notificationNotExists',
@@ -72,7 +73,7 @@ test('delete non-existent notification as admin - throws not found error', () =>
 
 test('delete notification non-admin - throws auth error', () => {
   const req = {
-    cookies: { session: 'nonAdminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'nonAdminSessionKey1' },
     headers: {},
     body: {
       id: 'notification1',

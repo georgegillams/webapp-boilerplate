@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
 import deleteEntity from './deleteEntity.js';
 
 import { dbLoadSingle, dbCreate } from 'utils/database';
@@ -31,7 +32,7 @@ const createSomeValues = () => {
 
 test('remove deleted entity non-admin - throws auth error', () => {
   const req = {
-    cookies: { session: 'nonAdminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'nonAdminSessionKey1' },
     headers: {},
     body: {
       collectionName: 'users',
@@ -67,7 +68,7 @@ test('remove deleted entity non-admin - throws auth error', () => {
 
 test('remove non-deleted entity admin - throws auth error', () => {
   const req = {
-    cookies: { session: 'nonAdminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'nonAdminSessionKey1' },
     headers: {},
     body: {
       collectionName: 'emails',
@@ -101,7 +102,7 @@ test('remove non-deleted entity admin - throws auth error', () => {
 
 test('remove non-existent entity admin - throws invalid input error', () => {
   const req = {
-    cookies: { session: 'adminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'adminSessionKey1' },
     headers: {},
     body: {
       collectionName: 'nonExistentCollection',
@@ -134,7 +135,7 @@ test('remove non-existent entity admin - throws invalid input error', () => {
 
 test('remove deleted entity admin', () => {
   const req = {
-    cookies: { session: 'adminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'adminSessionKey1' },
     headers: {},
     body: {
       collectionName: 'users',

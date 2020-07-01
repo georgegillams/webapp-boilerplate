@@ -2,6 +2,7 @@
 
 import loadAll from './loadAll.js';
 
+import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
 import { dbCreate } from 'utils/database';
 import { clearDatabaseCollection, createUsersWithSessions } from 'utils/testUtils';
 
@@ -30,7 +31,7 @@ const createSomeValues = () => {
 
 test('load notifications as admin - returns all values', () => {
   const req = {
-    cookies: { session: 'adminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'adminSessionKey1' },
     headers: {},
     body: {},
   };
@@ -50,7 +51,7 @@ test('load notifications as admin - returns all values', () => {
 
 test('load notifications as non-admin - returns non-deleted values', () => {
   const req = {
-    cookies: { session: 'nonAdminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'nonAdminSessionKey1' },
     headers: {},
     body: {},
   };

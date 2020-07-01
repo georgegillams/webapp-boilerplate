@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
 import backup from './backup.js';
 
 import { AuthError } from 'utils/errors';
@@ -13,7 +14,7 @@ beforeEach(() => {
 
 test('backup as admin - should return ', () => {
   const req = {
-    cookies: { session: 'adminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'adminSessionKey1' },
     headers: {},
     body: {},
   };
@@ -33,7 +34,7 @@ test('backup as admin - should return ', () => {
 
 test('backup non-admin - throws auth error', () => {
   const req = {
-    cookies: { session: 'nonAdminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'nonAdminSessionKey1' },
     headers: {},
     body: {},
   };

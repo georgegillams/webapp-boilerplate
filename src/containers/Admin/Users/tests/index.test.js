@@ -34,6 +34,8 @@ describe('<AdminUsers />', () => {
           load={spy}
           remove={spy}
           requestMagicLink={spy}
+          create={spy}
+          update={spy}
           adminUsersState={{
             ...initialState,
           }}
@@ -53,6 +55,8 @@ describe('<AdminUsers />', () => {
           load={spy}
           remove={spy}
           requestMagicLink={spy}
+          create={spy}
+          update={spy}
           adminUsersState={{
             ...initialState,
           }}
@@ -73,6 +77,8 @@ describe('<AdminUsers />', () => {
           load={spy}
           remove={spy}
           requestMagicLink={spy}
+          create={spy}
+          update={spy}
           adminUsersState={{
             ...initialState,
           }}
@@ -93,6 +99,8 @@ describe('<AdminUsers />', () => {
           load={spy}
           remove={spy}
           requestMagicLink={spy}
+          create={spy}
+          update={spy}
           adminUsersState={{
             ...initialState,
             loading: true,
@@ -114,6 +122,8 @@ describe('<AdminUsers />', () => {
           load={spy}
           remove={spy}
           requestMagicLink={spy}
+          create={spy}
+          update={spy}
           adminUsersState={{
             ...initialState,
             loadError: { error: 'some_error', errorMessage: 'Something went wrong' },
@@ -135,6 +145,8 @@ describe('<AdminUsers />', () => {
           load={spy}
           remove={spy}
           requestMagicLink={spy}
+          create={spy}
+          update={spy}
           adminUsersState={{
             ...initialState,
             users: [
@@ -160,6 +172,8 @@ describe('<AdminUsers />', () => {
           load={spy}
           remove={spy}
           requestMagicLink={spy}
+          create={spy}
+          update={spy}
           adminUsersState={{
             ...initialState,
             requesting: true,
@@ -181,6 +195,8 @@ describe('<AdminUsers />', () => {
           load={spy}
           remove={spy}
           requestMagicLink={spy}
+          create={spy}
+          update={spy}
           adminUsersState={{
             ...initialState,
             requestError: { error: 'some_error', errorMessage: 'Something went wrong' },
@@ -202,6 +218,8 @@ describe('<AdminUsers />', () => {
           load={spy}
           remove={spy}
           requestMagicLink={spy}
+          create={spy}
+          update={spy}
           adminUsersState={{
             ...initialState,
             removing: true,
@@ -223,6 +241,8 @@ describe('<AdminUsers />', () => {
           load={spy}
           remove={spy}
           requestMagicLink={spy}
+          create={spy}
+          update={spy}
           adminUsersState={{
             ...initialState,
             removeError: { error: 'some_error', errorMessage: 'Something went wrong' },
@@ -244,6 +264,8 @@ describe('<AdminUsers />', () => {
           load={spy}
           remove={spy}
           requestMagicLink={spy}
+          create={spy}
+          update={spy}
           adminUsersState={{
             ...initialState,
             creating: true,
@@ -265,6 +287,8 @@ describe('<AdminUsers />', () => {
           load={spy}
           remove={spy}
           requestMagicLink={spy}
+          create={spy}
+          update={spy}
           adminUsersState={{
             ...initialState,
             createError: { error: 'some_error', errorMessage: 'Something went wrong' },
@@ -286,6 +310,8 @@ describe('<AdminUsers />', () => {
           load={spy}
           remove={spy}
           requestMagicLink={spy}
+          create={spy}
+          update={spy}
           adminUsersState={{
             ...initialState,
             updating: true,
@@ -307,6 +333,8 @@ describe('<AdminUsers />', () => {
           load={spy}
           remove={spy}
           requestMagicLink={spy}
+          create={spy}
+          update={spy}
           adminUsersState={{
             ...initialState,
             updateError: { error: 'some_error', errorMessage: 'Something went wrong' },

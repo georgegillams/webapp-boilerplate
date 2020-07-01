@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
 import logout from './logout.js';
 
 import { dbCreate, dbLoad } from 'utils/database';
@@ -80,7 +81,7 @@ test('logout with no valid session - throws error', () => {
 
 test('logout with session - removes user from session', () => {
   const req = {
-    cookies: { session: 'sessionKey2' },
+    cookies: { [SESSION_COOKIE_KEY]: 'sessionKey2' },
     headers: {},
     body: {},
   };
@@ -114,7 +115,7 @@ test('logout with session - removes user from session', () => {
 
 test('duplicate logout - returns OK', () => {
   const req = {
-    cookies: { session: 'sessionKey2' },
+    cookies: { [SESSION_COOKIE_KEY]: 'sessionKey2' },
     headers: {},
     body: {},
   };
