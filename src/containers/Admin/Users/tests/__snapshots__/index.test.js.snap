@@ -35,21 +35,23 @@ exports[`<AdminUsers /> should render correctly - index 1`] = `
 
 exports[`<AdminUsers /> should render correctly with admin user 1`] = `
 <div>
-  <a
-    class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline page-title__link"
-    href="/admin"
-  >
-    ⇠ Admin
-  </a>
-  <div
-    class="typography__main"
-  >
-    <h1
-      class="typography__text typography__text--section page-title__section page-title__section--with-link"
-      id="admin-users"
+  <div>
+    <a
+      class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline page-title__link"
+      href="/admin"
     >
-      Admin users
-    </h1>
+      ⇠ Admin
+    </a>
+    <div
+      class="typography__main"
+    >
+      <h1
+        class="typography__text typography__text--section page-title__section page-title__section--with-link"
+        id="admin-users"
+      >
+        Admin users
+      </h1>
+    </div>
   </div>
   <div>
     <button
@@ -149,21 +151,23 @@ exports[`<AdminUsers /> should render correctly with initial state 1`] = `
 
 exports[`<AdminUsers /> should render correctly with loadError 1`] = `
 <div>
-  <a
-    class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline page-title__link"
-    href="/admin"
-  >
-    ⇠ Admin
-  </a>
-  <div
-    class="typography__main"
-  >
-    <h1
-      class="typography__text typography__text--section page-title__section page-title__section--with-link"
-      id="admin-users"
+  <div>
+    <a
+      class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline page-title__link"
+      href="/admin"
     >
-      Admin users
-    </h1>
+      ⇠ Admin
+    </a>
+    <div
+      class="typography__main"
+    >
+      <h1
+        class="typography__text typography__text--section page-title__section page-title__section--with-link"
+        id="admin-users"
+      >
+        Admin users
+      </h1>
+    </div>
   </div>
   <div>
     <button
@@ -241,21 +245,23 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
 
 exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
 <div>
-  <a
-    class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline page-title__link"
-    href="/admin"
-  >
-    ⇠ Admin
-  </a>
-  <div
-    class="typography__main"
-  >
-    <h1
-      class="typography__text typography__text--section page-title__section page-title__section--with-link"
-      id="admin-users"
+  <div>
+    <a
+      class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline page-title__link"
+      href="/admin"
     >
-      Admin users
-    </h1>
+      ⇠ Admin
+    </a>
+    <div
+      class="typography__main"
+    >
+      <h1
+        class="typography__text typography__text--section page-title__section page-title__section--with-link"
+        id="admin-users"
+      >
+        Admin users
+      </h1>
+    </div>
   </div>
   <div>
     <button
@@ -323,21 +329,23 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
 
 exports[`<AdminUsers /> should render correctly with removeError 1`] = `
 <div>
-  <a
-    class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline page-title__link"
-    href="/admin"
-  >
-    ⇠ Admin
-  </a>
-  <div
-    class="typography__main"
-  >
-    <h1
-      class="typography__text typography__text--section page-title__section page-title__section--with-link"
-      id="admin-users"
+  <div>
+    <a
+      class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline page-title__link"
+      href="/admin"
     >
-      Admin users
-    </h1>
+      ⇠ Admin
+    </a>
+    <div
+      class="typography__main"
+    >
+      <h1
+        class="typography__text typography__text--section page-title__section page-title__section--with-link"
+        id="admin-users"
+      >
+        Admin users
+      </h1>
+    </div>
   </div>
   <div>
     <button
@@ -404,21 +412,23 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
 
 exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
 <div>
-  <a
-    class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline page-title__link"
-    href="/admin"
-  >
-    ⇠ Admin
-  </a>
-  <div
-    class="typography__main"
-  >
-    <h1
-      class="typography__text typography__text--section page-title__section page-title__section--with-link"
-      id="admin-users"
+  <div>
+    <a
+      class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline page-title__link"
+      href="/admin"
     >
-      Admin users
-    </h1>
+      ⇠ Admin
+    </a>
+    <div
+      class="typography__main"
+    >
+      <h1
+        class="typography__text typography__text--section page-title__section page-title__section--with-link"
+        id="admin-users"
+      >
+        Admin users
+      </h1>
+    </div>
   </div>
   <div>
     <button
@@ -485,21 +495,23 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
 
 exports[`<AdminUsers /> should render correctly with requestError 1`] = `
 <div>
-  <a
-    class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline page-title__link"
-    href="/admin"
-  >
-    ⇠ Admin
-  </a>
-  <div
-    class="typography__main"
-  >
-    <h1
-      class="typography__text typography__text--section page-title__section page-title__section--with-link"
-      id="admin-users"
+  <div>
+    <a
+      class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline page-title__link"
+      href="/admin"
     >
-      Admin users
-    </h1>
+      ⇠ Admin
+    </a>
+    <div
+      class="typography__main"
+    >
+      <h1
+        class="typography__text typography__text--section page-title__section page-title__section--with-link"
+        id="admin-users"
+      >
+        Admin users
+      </h1>
+    </div>
   </div>
   <div>
     <button
@@ -566,21 +578,23 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
 
 exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
 <div>
-  <a
-    class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline page-title__link"
-    href="/admin"
-  >
-    ⇠ Admin
-  </a>
-  <div
-    class="typography__main"
-  >
-    <h1
-      class="typography__text typography__text--section page-title__section page-title__section--with-link"
-      id="admin-users"
+  <div>
+    <a
+      class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline page-title__link"
+      href="/admin"
     >
-      Admin users
-    </h1>
+      ⇠ Admin
+    </a>
+    <div
+      class="typography__main"
+    >
+      <h1
+        class="typography__text typography__text--section page-title__section page-title__section--with-link"
+        id="admin-users"
+      >
+        Admin users
+      </h1>
+    </div>
   </div>
   <div>
     <button
@@ -674,21 +688,23 @@ exports[`<AdminUsers /> should render correctly with user 1`] = `
 
 exports[`<AdminUsers /> should render correctly with users 1`] = `
 <div>
-  <a
-    class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline page-title__link"
-    href="/admin"
-  >
-    ⇠ Admin
-  </a>
-  <div
-    class="typography__main"
-  >
-    <h1
-      class="typography__text typography__text--section page-title__section page-title__section--with-link"
-      id="admin-users"
+  <div>
+    <a
+      class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline page-title__link"
+      href="/admin"
     >
-      Admin users
-    </h1>
+      ⇠ Admin
+    </a>
+    <div
+      class="typography__main"
+    >
+      <h1
+        class="typography__text typography__text--section page-title__section page-title__section--with-link"
+        id="admin-users"
+      >
+        Admin users
+      </h1>
+    </div>
   </div>
   <div>
     <button
