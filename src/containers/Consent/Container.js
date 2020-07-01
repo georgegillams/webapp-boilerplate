@@ -9,6 +9,7 @@ import {
   CONSENT_STATE_ALLOWED_CLIENT_KEY,
   CONSENT_STATE_DEFERRED_CLIENT_KEY,
 } from './constants';
+import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
 import saga from './saga';
 import reducer from './reducer';
 import { useInjectSaga } from 'utils/redux/inject-saga';
@@ -41,7 +42,7 @@ const Consent = props => {
     if (!test) {
       Modal.setAppElement('#__next');
     }
-    const sessionCookie = cookie.load('session');
+    const sessionCookie = cookie.load(SESSION_COOKIE_KEY);
     if (sessionCookie) {
       if (sessionCookie === CONSENT_STATE_DEFERRED_CLIENT_KEY) {
         deferConsent();
@@ -79,7 +80,7 @@ const Consent = props => {
           <Button
             className={getClassName('consent__button')}
             onClick={() => {
-              cookie.save('session', CONSENT_STATE_ALLOWED_CLIENT_KEY);
+              cookie.save(SESSION_COOKIE_KEY, CONSENT_STATE_ALLOWED_CLIENT_KEY);
               consent();
             }}>
             Accept
@@ -88,7 +89,7 @@ const Consent = props => {
             className={getClassName('consent__button')}
             onClick={() => {
               deferConsent();
-              cookie.save('session', CONSENT_STATE_DEFERRED_CLIENT_KEY);
+              cookie.save(SESSION_COOKIE_KEY, CONSENT_STATE_DEFERRED_CLIENT_KEY);
             }}
             href={consentState.cookieConsent === CONSENT_STATE_REQUIRED ? '/' : null}>
             {consentState.cookieConsent === CONSENT_STATE_REQUIRED ? 'Dismiss and go to home page' : 'Dismiss'}

@@ -5,6 +5,7 @@ import requestMagicLink from './requestMagicLink.js';
 import { dbLoad } from 'utils/database';
 import { AuthError, NotFoundError } from 'utils/errors';
 import { clearDatabaseCollection, createUsersWithSessions } from 'utils/testUtils';
+import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
 
 beforeEach(() => {
   clearDatabaseCollection('users');
@@ -43,7 +44,7 @@ test('request magic link for user - should succeed', () => {
 
 test('request diverted magic link admin - should send email to admin account', () => {
   const req = {
-    cookies: { session: 'adminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'adminSessionKey1' },
     headers: {},
     body: { email: 'nonAdminUser1@example.com', divertToAdmin: true },
   };
@@ -71,7 +72,7 @@ test('request diverted magic link admin - should send email to admin account', (
 
 test('request diverted magic link non-admin - should throw auth error', () => {
   const req = {
-    cookies: { session: 'nonAdminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'nonAdminSessionKey1' },
     headers: {},
     body: { email: 'nonAdminUser1@example.com', divertToAdmin: true },
   };

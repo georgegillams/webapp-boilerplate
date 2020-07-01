@@ -1,6 +1,8 @@
 import produce from 'immer';
 import cookie from 'react-cookies';
 
+import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
+
 import { setUser, loadAuth } from './actions';
 
 export const initialState = {
@@ -15,7 +17,7 @@ const reducer = (state = initialState, { type, payload }) =>
       case setUser.TRIGGER:
         draft.user = payload;
         if (payload && payload.session) {
-          cookie.save('session', payload.session, {
+          cookie.save(SESSION_COOKIE_KEY, payload.session, {
             path: '/',
             expires: new Date(Date.now() + 24 * 60 * 60 * 100 * 1000),
           });
