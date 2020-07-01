@@ -124,6 +124,7 @@ const AdminUsers = props => {
   const listView = (
     <div>
       <Card
+        scroll={false}
         highlighted={highlightId === 'new'}
         href="/admin/users?highlight=new"
         className={getClassName('admin-users__card')}>
@@ -132,6 +133,7 @@ const AdminUsers = props => {
       {showUsers &&
         filteredUsers.map(n => (
           <AdminUsersAPIEntity
+            scroll={false}
             key={n.id}
             href={`/admin/users?highlight=${n.id}`}
             compact
