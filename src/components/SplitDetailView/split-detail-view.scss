@@ -8,8 +8,8 @@
   &__list-view {
     width: 50%;
     height: 100%;
-    overflow: scroll;
     padding: 2rem 1rem 2rem 0;
+    overflow: scroll;
 
     @include bpk-breakpoint-tablet {
       width: 100%;
@@ -20,17 +20,17 @@
   &__detail-view {
     width: 50%;
     height: 100%;
-    overflow: scroll;
     padding: 2rem 0 2rem 1rem;
+    overflow: scroll;
 
     @include bpk-breakpoint-tablet {
       position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 4;
       width: 100vw;
       height: calc(100vh - 2rem);
       padding: 8rem 0 1rem 1rem;
-      z-index: 4;
-      top: 0;
-      left: 0;
       background: $background-color;
 
       @media (prefers-color-scheme: dark) {
@@ -40,11 +40,11 @@
   }
 
   &__close-button {
-    display: none;
-    z-index: 4;
     position: absolute;
     top: 6rem;
     right: 2rem;
+    display: none;
+    z-index: 4;
 
     @include bpk-breakpoint-tablet {
       display: inherit;

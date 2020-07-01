@@ -17,15 +17,10 @@ const SplitDetailView = props => {
 
   return (
     <div className={outerClassNameFinal.join(' ')} {...rest}>
-      <div className={getClassName('split-detail-view__list-view')}>
-        {listView}
-      </div>
+      <div className={getClassName('split-detail-view__list-view')}>{listView}</div>
       {detailView && (
         <div className={getClassName('split-detail-view__detail-view')}>
-          <Button
-            className={getClassName('split-detail-view__close-button')}
-            href={closeLink}
-          >
+          <Button className={getClassName('split-detail-view__close-button')} href={closeLink}>
             Close
           </Button>
           {detailView}
