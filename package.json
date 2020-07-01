@@ -46,7 +46,6 @@
     "chalk": "^4.1.0",
     "clsx": "^1.1.1",
     "express": "^4.17.1",
-    "fontsource-quattrocento-sans": "^2.1.4",
     "gg-components": "^5.1.0",
     "hoist-non-react-statics": "3.3.0",
     "immer": "^6.0.9",
