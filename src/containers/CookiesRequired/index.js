@@ -6,7 +6,7 @@ import { createStructuredSelector } from 'reselect';
 import { selectState as selectConsentState } from '../Consent/selectors';
 
 import CookiesRequired from './Container';
-import { rePromptConsent } from 'containers/Consent/actions';
+import { setConsentReason } from 'containers/Consent/actions';
 
 const mapStateToProps = createStructuredSelector({
   consentState: selectConsentState(),
@@ -14,7 +14,7 @@ const mapStateToProps = createStructuredSelector({
 
 export function mapDispatchToProps(dispatch) {
   return {
-    rePromptConsent: payload => dispatch(rePromptConsent(payload)),
+    setConsentReason: payload => dispatch(setConsentReason(payload)),
   };
 }
 

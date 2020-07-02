@@ -1,5 +1,5 @@
 import consentReducer from '../reducer';
-import { consent, resetConsent, deferConsent, rePromptConsent } from '../actions';
+import { consent, resetConsent, deferConsent, setConsentReason } from '../actions';
 import { initialState } from '../reducer';
 
 describe('consentReducer', () => {
@@ -43,14 +43,13 @@ describe('consentReducer', () => {
       expect(consentReducer(state, deferConsent.trigger())).toEqual(expectResult);
     });
 
-    it('should handle the action rePromptConsent.TRIGGER correctly', () => {
+    it('should handle the action setConsentReason.TRIGGER correctly', () => {
       const expectResult = {
         ...state,
-        cookieConsent: 'CONSENT_STATE_REQUIRED',
         cookieConsentReason: 'log in',
       };
 
-      expect(consentReducer(state, rePromptConsent.trigger('log in'))).toEqual(expectResult);
+      expect(consentReducer(state, setConsentReason.trigger('log in'))).toEqual(expectResult);
     });
   });
 });
