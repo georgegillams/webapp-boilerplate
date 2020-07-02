@@ -9,6 +9,7 @@
     margin-left: auto;
     padding-right: 2rem;
     padding-left: 2rem;
+    overflow-x: scroll;
 
     @include bpk-breakpoint-tablet {
       padding-right: 1rem;
