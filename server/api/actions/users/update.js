@@ -17,7 +17,6 @@ export default function update(req) {
   let userOwnsResourceResult = false;
   let emailVerificationRequired = false;
   let user = null;
-  let updatedUser = null;
   return lockPromise('users', () =>
     authentication(req)
       .then(authenticatedUser => {
@@ -76,13 +75,12 @@ export default function update(req) {
         return true;
       })
       .then(() => dbUpdate({ redisKey: 'users' }, req))
-      .then(updateResult => {
-        updatedUser = updateResult;
+      .then(() => {
         if (emailVerificationRequired) {
-          return sendEmailVerificationEmail(updatedUser);
+          return sendEmailVerificationEmail(req.body);
         }
         return true;
       })
-      .then(() => updatedUser)
+      .then(() => true)
   );
 }
