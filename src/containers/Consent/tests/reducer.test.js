@@ -1,5 +1,5 @@
 import consentReducer from '../reducer';
-import { consent, resetConsent, deferConsent, setConsentReason } from '../actions';
+import { consent, resetConsent, deferConsent, setConsentReason, setConsentSuppression } from '../actions';
 import { initialState } from '../reducer';
 
 describe('consentReducer', () => {
@@ -50,6 +50,15 @@ describe('consentReducer', () => {
       };
 
       expect(consentReducer(state, setConsentReason.trigger('log in'))).toEqual(expectResult);
+    });
+
+    it('should handle the action setConsentSuppression.TRIGGER correctly', () => {
+      const expectResult = {
+        ...state,
+        consentSuppressed: 'suppression',
+      };
+
+      expect(consentReducer(state, setConsentSuppression.trigger('suppression'))).toEqual(expectResult);
     });
   });
 });

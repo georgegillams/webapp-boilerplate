@@ -7,6 +7,7 @@ import configureStore from 'utils/redux/configure-store';
 
 import ConsentIndex from '../index';
 import Consent from '../Container';
+import { CONSENT_STATE_ALLOWED, CONSENT_STATE_DEFERRED } from '../constants';
 
 describe('<Consent />', () => {
   let store;
@@ -36,6 +37,83 @@ describe('<Consent />', () => {
           deferConsent={spy}
           consentState={{
             ...initialState,
+          }}
+        />
+      </Provider>
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should render correctly with consent allowed', () => {
+    const { container } = render(
+      <Provider store={store}>
+        <Consent
+          test
+          consent={spy}
+          resetConsent={spy}
+          deferConsent={spy}
+          consentState={{
+            ...initialState,
+            cookieConsent: CONSENT_STATE_ALLOWED,
+          }}
+        />
+      </Provider>
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should render correctly with consent deferred', () => {
+    const { container } = render(
+      <Provider store={store}>
+        <Consent
+          test
+          consent={spy}
+          resetConsent={spy}
+          deferConsent={spy}
+          consentState={{
+            ...initialState,
+            cookieConsent: CONSENT_STATE_DEFERRED,
+          }}
+        />
+      </Provider>
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should render correctly with consent deferred and reason', () => {
+    const { container } = render(
+      <Provider store={store}>
+        <Consent
+          test
+          consent={spy}
+          resetConsent={spy}
+          deferConsent={spy}
+          consentState={{
+            ...initialState,
+            cookieConsent: CONSENT_STATE_DEFERRED,
+            cookieConsentReason: 'log in',
+          }}
+        />
+      </Provider>
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should render correctly with consent suppressed', () => {
+    const { container } = render(
+      <Provider store={store}>
+        <Consent
+          test
+          consent={spy}
+          resetConsent={spy}
+          deferConsent={spy}
+          consentState={{
+            ...initialState,
+            consentSuppressed: true,
           }}
         />
       </Provider>
