@@ -1,15 +1,13 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import cookie from 'react-cookies';
 import { DebugObject } from 'gg-components/Auth';
 import {
   KEY,
   CONSENT_STATE_UNSET,
   CONSENT_STATE_REQUIRED,
-  CONSENT_STATE_ALLOWED_CLIENT_KEY,
-  CONSENT_STATE_DEFERRED_CLIENT_KEY,
+  CONSENT_STATE_ALLOWED_CLIENT_VALUE,
+  CONSENT_STATE_DEFERRED_CLIENT_VALUE,
 } from './constants';
-import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
 import saga from './saga';
 import reducer from './reducer';
 import { useInjectSaga } from 'utils/redux/inject-saga';
@@ -19,6 +17,7 @@ import { Paragraph } from 'gg-components/Typography';
 import Modal from 'react-modal';
 import { cssModules } from 'gg-components/helpers/cssModules';
 import STYLES from './consent.scss';
+import { getPrivacyPreferences, setPrivacyPreferences } from 'utils/storageHelpers';
 
 const getClassName = cssModules(STYLES);
 
@@ -42,13 +41,11 @@ const Consent = props => {
     if (!test) {
       Modal.setAppElement('#__next');
     }
-    const sessionCookie = cookie.load(SESSION_COOKIE_KEY);
-    if (sessionCookie) {
-      if (sessionCookie === CONSENT_STATE_DEFERRED_CLIENT_KEY) {
-        deferConsent();
-      } else {
-        consent();
-      }
+    const privacyPreferences = getPrivacyPreferences();
+    if (privacyPreferences === CONSENT_STATE_DEFERRED_CLIENT_VALUE) {
+      deferConsent();
+    } else if (privacyPreferences === CONSENT_STATE_ALLOWED_CLIENT_VALUE) {
+      consent();
     } else {
       resetConsent();
     }
@@ -80,7 +77,7 @@ const Consent = props => {
           <Button
             className={getClassName('consent__button')}
             onClick={() => {
-              cookie.save(SESSION_COOKIE_KEY, CONSENT_STATE_ALLOWED_CLIENT_KEY);
+              setPrivacyPreferences(CONSENT_STATE_ALLOWED_CLIENT_VALUE);
               consent();
             }}>
             Accept
@@ -89,7 +86,7 @@ const Consent = props => {
             className={getClassName('consent__button')}
             onClick={() => {
               deferConsent();
-              cookie.save(SESSION_COOKIE_KEY, CONSENT_STATE_DEFERRED_CLIENT_KEY);
+              setPrivacyPreferences(CONSENT_STATE_DEFERRED_CLIENT_VALUE);
             }}
             href={consentState.cookieConsent === CONSENT_STATE_REQUIRED ? '/' : null}>
             {consentState.cookieConsent === CONSENT_STATE_REQUIRED ? 'Dismiss and go to home page' : 'Dismiss'}
