@@ -23,9 +23,8 @@ exports[`<Debug /> should render correctly 1`] = `
           type="checkbox"
         />
         <svg
-          class="checkbox__check"
+          class="icon checkbox__check"
           height="18"
-          style="width: 1.125rem; height: 1.125rem;"
           viewBox="0 0 24 24"
           width="18"
           xmlns="http://www.w3.org/2000/svg"
@@ -55,9 +54,8 @@ exports[`<Debug /> should render correctly 1`] = `
           type="checkbox"
         />
         <svg
-          class="checkbox__check"
+          class="icon checkbox__check"
           height="18"
-          style="width: 1.125rem; height: 1.125rem;"
           viewBox="0 0 24 24"
           width="18"
           xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +75,7 @@ exports[`<Debug /> should render correctly 1`] = `
       </div>
       <br />
       <span
-        class="typography__main typography__paragraph"
+        class="paragraph"
       >
         Note that changes will not take effect until you reload the page.
       </span>

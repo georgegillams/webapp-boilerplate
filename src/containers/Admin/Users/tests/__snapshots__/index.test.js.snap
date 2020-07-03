@@ -37,7 +37,7 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
 <div>
   <div>
     <a
-      class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline page-title__link"
+      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
       href="/admin"
     >
       ⇠ Admin
@@ -120,7 +120,7 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
 <div>
   <div>
     <a
-      class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline page-title__link"
+      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
       href="/admin"
     >
       ⇠ Admin
@@ -203,7 +203,7 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
 <div>
   <div>
     <a
-      class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline page-title__link"
+      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
       href="/admin"
     >
       ⇠ Admin
@@ -319,7 +319,7 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
 <div>
   <div>
     <a
-      class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline page-title__link"
+      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
       href="/admin"
     >
       ⇠ Admin
@@ -396,13 +396,13 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
     </div>
   </div>
   <span
-    class="typography__main typography__paragraph"
+    class="paragraph"
   >
     Could not load users
   </span>
   <br />
   <span
-    class="typography__main typography__paragraph"
+    class="paragraph"
   >
     Something went wrong
   </span>
@@ -413,7 +413,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
 <div>
   <div>
     <a
-      class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline page-title__link"
+      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
       href="/admin"
     >
       ⇠ Admin
@@ -497,7 +497,7 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
 <div>
   <div>
     <a
-      class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline page-title__link"
+      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
       href="/admin"
     >
       ⇠ Admin
@@ -580,7 +580,7 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
 <div>
   <div>
     <a
-      class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline page-title__link"
+      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
       href="/admin"
     >
       ⇠ Admin
@@ -663,7 +663,7 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
 <div>
   <div>
     <a
-      class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline page-title__link"
+      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
       href="/admin"
     >
       ⇠ Admin
@@ -746,7 +746,7 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
 <div>
   <div>
     <a
-      class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline page-title__link"
+      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
       href="/admin"
     >
       ⇠ Admin
@@ -829,7 +829,7 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
 <div>
   <div>
     <a
-      class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline page-title__link"
+      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
       href="/admin"
     >
       ⇠ Admin
@@ -912,7 +912,7 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
 <div>
   <div>
     <a
-      class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline page-title__link"
+      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
       href="/admin"
     >
       ⇠ Admin
@@ -1003,12 +1003,12 @@ exports[`<AdminUsers /> should render correctly with user 1`] = `
       Admin only
     </h1>
     <span
-      class="typography__main typography__paragraph"
+      class="paragraph"
     >
       You need to be logged in with an admin account to view this content.
       <br />
       <a
-        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="/login"
       >
         Got a different admin account? Log in here.
@@ -1022,7 +1022,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
 <div>
   <div>
     <a
-      class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline page-title__link"
+      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
       href="/admin"
     >
       ⇠ Admin
@@ -1058,7 +1058,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
   </div>
   <br />
   <span
-    class="typography__main typography__paragraph"
+    class="paragraph"
   >
     Showing 
     3
@@ -1134,7 +1134,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
                   name
                 </h2>
                 <span
-                  class="typography__main typography__paragraph"
+                  class="paragraph"
                 >
                   id: 
                   1
@@ -1173,7 +1173,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
                   another
                 </h2>
                 <span
-                  class="typography__main typography__paragraph"
+                  class="paragraph"
                 >
                   id: 
                   2
@@ -1212,7 +1212,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
                   a third
                 </h2>
                 <span
-                  class="typography__main typography__paragraph"
+                  class="paragraph"
                 >
                   id: 
                   3

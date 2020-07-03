@@ -260,7 +260,7 @@ exports[`<Login /> should render correctly with user 1`] = `
         You're logged in
       </h1>
       <a
-        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="/account"
       >
         Go to your account.

@@ -56,7 +56,7 @@ exports[`<Account /> should render correctly with initial state 1`] = `
         Account
       </h1>
       <span
-        class="typography__main typography__paragraph"
+        class="paragraph"
       >
         <br />
       </span>
@@ -93,7 +93,7 @@ exports[`<Account /> should render correctly with initial state 2`] = `
         Account
       </h1>
       <span
-        class="typography__main typography__paragraph"
+        class="paragraph"
       >
         <br />
       </span>
@@ -130,7 +130,7 @@ exports[`<Account /> should render correctly with logOutError 1`] = `
         Account
       </h1>
       <span
-        class="typography__main typography__paragraph"
+        class="paragraph"
       >
         <br />
       </span>
@@ -167,7 +167,7 @@ exports[`<Account /> should render correctly with logOutResult 1`] = `
         Account
       </h1>
       <span
-        class="typography__main typography__paragraph"
+        class="paragraph"
       >
         <br />
       </span>
@@ -204,7 +204,7 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
         Account
       </h1>
       <span
-        class="typography__main typography__paragraph"
+        class="paragraph"
       >
         <br />
       </span>
@@ -283,7 +283,7 @@ exports[`<Account /> should render correctly with requestVerificationEmailError 
         Account
       </h1>
       <span
-        class="typography__main typography__paragraph"
+        class="paragraph"
       >
         <br />
       </span>
@@ -320,7 +320,7 @@ exports[`<Account /> should render correctly with requestVerificationEmailResult
         Account
       </h1>
       <span
-        class="typography__main typography__paragraph"
+        class="paragraph"
       >
         <br />
       </span>
@@ -357,7 +357,7 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
         Account
       </h1>
       <span
-        class="typography__main typography__paragraph"
+        class="paragraph"
       >
         <br />
       </span>
@@ -395,7 +395,7 @@ exports[`<Account /> should render correctly with user with emailVerified=true 1
         Account
       </h1>
       <span
-        class="typography__main typography__paragraph"
+        class="paragraph"
       >
         <br />
       </span>

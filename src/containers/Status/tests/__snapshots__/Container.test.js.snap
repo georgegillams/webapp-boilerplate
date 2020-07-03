@@ -27,7 +27,7 @@ exports[`<Status /> should render correctly 1`] = `
         class="typography__main pages__component"
       >
         <span
-          class="typography__main typography__paragraph"
+          class="paragraph"
         >
           Built 
           50 years ago
@@ -37,7 +37,7 @@ exports[`<Status /> should render correctly 1`] = `
         class="typography__main pages__component"
       >
         <span
-          class="typography__main typography__paragraph"
+          class="paragraph"
         >
           Environment 
           test-node-env

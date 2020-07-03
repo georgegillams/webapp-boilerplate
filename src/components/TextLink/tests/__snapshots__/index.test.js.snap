@@ -3,7 +3,7 @@
 exports[`<TextLink /> Should render correctly 1`] = `
 <div>
   <a
-    class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+    class="text-link text-link--text-link text-link--no-padding text-link--inline"
     href="/test"
   >
     some text
@@ -14,7 +14,7 @@ exports[`<TextLink /> Should render correctly 1`] = `
 exports[`<TextLink /> Should render correctly with custom className 1`] = `
 <div>
   <a
-    class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline test-custom-classname"
+    class="text-link text-link--text-link text-link--no-padding text-link--inline test-custom-classname"
     href="/test"
   >
     some text

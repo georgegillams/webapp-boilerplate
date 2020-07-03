@@ -12,7 +12,7 @@ exports[`<PrivacyPolicy /> should render correctly - index 1`] = `
       Privacy policy
     </h1>
     <span
-      class="typography__main typography__paragraph"
+      class="paragraph"
     >
       blah
     </span>

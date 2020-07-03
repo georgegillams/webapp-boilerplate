@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Section } from 'gg-components/Typography';
+import { Section } from 'gg-components/Section';
 import TextLink from 'components/TextLink';
 
 const LoggedOutOnly = props => {

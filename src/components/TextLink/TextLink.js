@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { TextLink as GGTextLink } from 'gg-components/Typography';
+import { TextLink as GGTextLink } from 'gg-components/TextLink';
 import Link from 'next/link';
 
 const TextLink = props => {

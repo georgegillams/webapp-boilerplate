@@ -76,13 +76,13 @@ exports[`<Footer /> Should render correctly 1`] = `
       class="footer-nav__container footer__nav"
     >
       <a
-        class="typography__main typography__link typography__link--text-link typography--no-padding typography--light typography--light--text-link typography--inline footer-nav__link footer__nav"
+        class="text-link text-link--text-link text-link--no-padding text-link--light text-link--light--text-link text-link--inline footer-nav__link footer__nav"
         href="/sitemap"
       >
         Site map
       </a>
       <a
-        class="typography__main typography__link typography__link--text-link typography--no-padding typography--light typography--light--text-link typography--inline footer-nav__link footer__nav"
+        class="text-link text-link--text-link text-link--no-padding text-link--light text-link--light--text-link text-link--inline footer-nav__link footer__nav"
         href="/status"
       >
         Status
@@ -168,13 +168,13 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
       class="footer-nav__container footer__nav"
     >
       <a
-        class="typography__main typography__link typography__link--text-link typography--no-padding typography--light typography--light--text-link typography--inline footer-nav__link footer__nav"
+        class="text-link text-link--text-link text-link--no-padding text-link--light text-link--light--text-link text-link--inline footer-nav__link footer__nav"
         href="/sitemap"
       >
         Site map
       </a>
       <a
-        class="typography__main typography__link typography__link--text-link typography--no-padding typography--light typography--light--text-link typography--inline footer-nav__link footer__nav"
+        class="text-link text-link--text-link text-link--no-padding text-link--light text-link--light--text-link text-link--inline footer-nav__link footer__nav"
         href="/status"
       >
         Status
