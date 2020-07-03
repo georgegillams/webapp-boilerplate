@@ -30,7 +30,7 @@ exports[`<Status /> should render correctly 1`] = `
           class="paragraph"
         >
           Built 
-          50 years ago
+          about 50 years ago
         </span>
       </div>
       <div

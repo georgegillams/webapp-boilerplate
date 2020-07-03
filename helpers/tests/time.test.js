@@ -1,27 +1,55 @@
-#!/usr/bin/env node
+import { getTimeDifference, getTimeDifferenceFromMilliseconds } from '../time';
 
-import { getTimeDifference } from '../time.js';
+describe('time', () => {
+  // #region getTimeDifference
+  it('should getTimeDifference - 0', () => {
+    expect(getTimeDifference(0)).toBe('over 50 years ago');
+  });
 
-test('getTimeDifference for large values - returns "5 years"', () => {
-  const timeStamp = Number.MAX_SAFE_INTEGER;
+  it('should getTimeDifference - - 1 second', () => {
+    expect(getTimeDifference(Date.now() - 1000)).toBe('less than a minute ago');
+  });
 
-  const result = getTimeDifference(timeStamp);
+  it('should getTimeDifference - - 200 second', () => {
+    expect(getTimeDifference(Date.now() - 200 * 1000)).toBe('3 minutes ago');
+  });
 
-  expect(result).toBe('more than 5 years');
-});
+  it('should getTimeDifference - + 1 second', () => {
+    expect(getTimeDifference(Date.now() + 1000)).toBe('in less than a minute');
+  });
 
-test('getTimeDifference for 5 minutes time - returns 5 minutes', () => {
-  const timeStamp = Date.now() + 5 * 60 * 1000;
+  it('should getTimeDifference - + 200 second', () => {
+    expect(getTimeDifference(Date.now() + 200 * 1000)).toBe('in 3 minutes');
+  });
 
-  const result = getTimeDifference(timeStamp);
+  it('should getTimeDifference - INT_MAX', () => {
+    expect(getTimeDifference(Number.MAX_SAFE_INTEGER - 1)).toBe('5 years');
+  });
+  // #endregion getTimeDifference
 
-  expect(result).toBe('in 5 minutes');
-});
+  // #region getTimeDifferenceFromMilliseconds
+  it('should getTimeDifferenceFromMilliseconds - 0', () => {
+    expect(getTimeDifferenceFromMilliseconds(0)).toBe('less than a minute ago');
+  });
 
-test('getTimeDifference for 5 minutes ago - returns 5 minutes ago', () => {
-  const timeStamp = Date.now() - 5 * 60 * 1000;
+  it('should getTimeDifferenceFromMilliseconds - - 1 second', () => {
+    expect(getTimeDifferenceFromMilliseconds(-1000)).toBe('less than a minute ago');
+  });
 
-  const result = getTimeDifference(timeStamp);
+  it('should getTimeDifferenceFromMilliseconds - - 200 second', () => {
+    expect(getTimeDifferenceFromMilliseconds(-200 * 1000)).toBe('3 minutes ago');
+  });
 
-  expect(result).toBe('5 minutes ago');
+  it('should getTimeDifferenceFromMilliseconds - + 1 second', () => {
+    expect(getTimeDifferenceFromMilliseconds(1000)).toBe('in less than a minute');
+  });
+
+  it('should getTimeDifferenceFromMilliseconds - + 200 second', () => {
+    expect(getTimeDifferenceFromMilliseconds(200 * 1000)).toBe('in 3 minutes');
+  });
+
+  it('should getTimeDifferenceFromMilliseconds - INT_MAX', () => {
+    expect(getTimeDifferenceFromMilliseconds(Number.MAX_SAFE_INTEGER - 1)).toBe('a long time');
+  });
+  // #endregion getTimeDifferenceFromMilliseconds
 });
