@@ -18,6 +18,7 @@ import Modal from 'react-modal';
 import { cssModules } from 'gg-components/helpers/cssModules';
 import STYLES from './consent.scss';
 import { getPrivacyPreferences, setPrivacyPreferences } from 'utils/storageHelpers';
+import TextLink from 'components/TextLink';
 
 const getClassName = cssModules(STYLES);
 
@@ -64,15 +65,13 @@ const Consent = props => {
         overlayClassName={getClassName('consent__modal-overlay')}
         className={getClassName('consent__modal-content')}>
         <Paragraph>
-          This site uses cookies to manage account sessions.
+          To provide the best possible experience, we would like to use cookies and handle your data in accordance with
+          our <TextLink href="/privacy-policy">Privacy policy</TextLink>.
           <br />
-          It also stores the URLs you access within the site.
-          <br />
-          No other data is collected or stored by the site or any third-parties.
           {consentState.cookieConsentReason && (
             <>
               <br />
-              You must accept usage of cookies and data to {consentState.cookieConsentReason}
+              You must accept usage of cookies and data to {consentState.cookieConsentReason}.
             </>
           )}
         </Paragraph>
