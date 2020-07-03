@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { DebugObject } from 'gg-components/Auth';
+import { DebugObject } from 'gg-components/DebugObject';
 import {
   KEY,
   CONSENT_STATE_UNSET,

@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import PageTitle from 'components/PageTitle';
-import { DebugObject, LoadingCover } from 'gg-components/Auth';
+import { DebugObject } from 'gg-components/DebugObject';
+import { LoadingCover } from 'gg-components/LoadingCover';
 import { ARTICLE_CARD_LAYOUTS } from 'gg-components/Cards';
 import ArticleCard from 'components/ArticleCard';
 import STYLES from './admin-navigation.scss';

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import PageTitle from 'components/PageTitle';
-import { DebugObject, LoadingCover } from 'gg-components/Auth';
+import { DebugObject } from 'gg-components/DebugObject';
+import { LoadingCover } from 'gg-components/LoadingCover';
 import { Button } from 'gg-components/Button';
 import { Paragraph, SubSection } from 'gg-components/Typography';
 import Card from 'components/Card';

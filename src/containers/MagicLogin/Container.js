@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import PageTitle from 'components/PageTitle';
-import { DebugObject } from 'gg-components/Auth';
+import { DebugObject } from 'gg-components/DebugObject';
 import { Paragraph } from 'gg-components/Typography';
 
 import { useInjectSaga } from 'utils/redux/inject-saga';
