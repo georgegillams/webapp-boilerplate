@@ -46,7 +46,7 @@
     "chalk": "^4.1.0",
     "clsx": "^1.1.1",
     "express": "^4.17.1",
-    "gg-components": "^6.0.0",
+    "gg-components": "^7.0.0",
     "hoist-non-react-statics": "3.3.0",
     "immer": "^6.0.9",
     "immutable": "^4.0.0-rc.12",

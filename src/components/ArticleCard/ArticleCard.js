@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { ArticleCard as GGArticleCard } from 'gg-components/Cards';
+import { ArticleCard as GGArticleCard } from 'gg-components/ArticleCard';
 import Link from 'next/link';
 import HelperFunctions from 'helpers/HelperFunctions';
 
