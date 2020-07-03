@@ -1,5 +1,5 @@
 import { dbLoad } from 'utils/database';
-import { REDIS_INFORMATION_STORES } from 'helpers/constants';
+import { REDIS_INFORMATION_STORES } from './redisStores';
 
 /**
  * Loads all data from key redis stores and compiles it into a single object
