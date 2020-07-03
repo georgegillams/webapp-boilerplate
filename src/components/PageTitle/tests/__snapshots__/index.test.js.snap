@@ -35,7 +35,7 @@ exports[`<PageTitle /> Should render correctly with custom className 1`] = `
 exports[`<PageTitle /> Should render correctly with other props 1`] = `
 <div>
   <a
-    class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline page-title__link"
+    class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
     href="/test"
   >
     ⇠ test

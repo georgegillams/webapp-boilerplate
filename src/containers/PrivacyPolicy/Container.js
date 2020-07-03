@@ -1,6 +1,6 @@
 import React from 'react';
 import PageTitle from 'components/PageTitle';
-import { Paragraph } from 'gg-components/Typography';
+import { Paragraph } from 'gg-components/Paragraph';
 
 import ConsentSuppressor from 'containers/ConsentSuppressor';
 

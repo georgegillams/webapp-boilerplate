@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { cssModules } from 'gg-components/helpers/cssModules';
-import { Section } from 'gg-components/Typography';
+import { Section } from 'gg-components/Section';
 
 import STYLES from './tech-specs.scss';
 import reactLogo from './react-logo.svg';

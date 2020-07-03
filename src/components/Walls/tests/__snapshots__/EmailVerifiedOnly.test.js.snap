@@ -12,7 +12,7 @@ exports[`<EmailVerifiedOnly /> Should render correctly 1`] = `
       You need to verify your email before completing this step.
     </h1>
     <a
-      class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
       href="/account"
     >
       Account
@@ -33,7 +33,7 @@ exports[`<EmailVerifiedOnly /> Should render correctly with user 1`] = `
       You need to verify your email before completing this step.
     </h1>
     <a
-      class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
       href="/account"
     >
       Account

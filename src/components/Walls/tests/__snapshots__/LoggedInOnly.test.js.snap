@@ -12,20 +12,20 @@ exports[`<LoggedInOnly /> Should render correctly 1`] = `
       Logged out
     </h1>
     <span
-      class="typography__main typography__paragraph"
+      class="paragraph"
     >
       You need to be logged in to 
       view this content
       <br />
       <a
-        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="/sign-up"
       >
         Register here - it's quick and easy.
       </a>
       <br />
       <a
-        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="/login"
       >
         Already got an account? Log in here.

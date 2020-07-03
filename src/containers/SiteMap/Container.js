@@ -1,6 +1,6 @@
 import React from 'react';
 import { cssModules } from 'gg-components/helpers/cssModules';
-import { Subsection } from 'gg-components/Typography';
+import { Subsection } from 'gg-components/Subsection';
 import TextLink from 'components/TextLink';
 import PageTitle from 'components/PageTitle';
 

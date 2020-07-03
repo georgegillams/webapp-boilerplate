@@ -53,19 +53,19 @@ exports[`<MagicLogin /> should render correctly with logInError 1`] = `
         Logging in
       </h1>
       <span
-        class="typography__main typography__paragraph"
+        class="paragraph"
       >
         Something went wrong logging you in
       </span>
       <br />
       <span
-        class="typography__main typography__paragraph"
+        class="paragraph"
       >
         Invalid session
       </span>
       <br />
       <a
-        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="/login"
       >
         Try logging in again
@@ -109,13 +109,13 @@ exports[`<MagicLogin /> should render correctly with user 1`] = `
         Logged in
       </h1>
       <span
-        class="typography__main typography__paragraph"
+        class="paragraph"
       >
         Logged in!
       </span>
       <br />
       <span
-        class="typography__main typography__paragraph"
+        class="paragraph"
       >
         You will now be redirected to the 
         account
@@ -123,7 +123,7 @@ exports[`<MagicLogin /> should render correctly with user 1`] = `
       </span>
       <br />
       <a
-        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="account"
       >
         Not been redirected? Click here

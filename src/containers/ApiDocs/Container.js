@@ -1,5 +1,5 @@
 import React from 'react';
-import { Paragraph } from 'gg-components/Typography';
+import { Paragraph } from 'gg-components/Paragraph';
 import PageTitle from 'components/PageTitle';
 import TextLink from 'components/TextLink';
 import { cssModules } from 'gg-components/helpers/cssModules';

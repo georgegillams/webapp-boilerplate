@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Button } from 'gg-components/Button';
-import { Paragraph, Subsection } from 'gg-components/Typography';
+import { Paragraph } from 'gg-components/Paragraph';
+import { Subsection } from 'gg-components/Subsection';
 import Card from 'components/Card';
 import { UserEditForm } from 'components/Forms';
 
