@@ -4,7 +4,7 @@ import PageTitle from 'components/PageTitle';
 import { DebugObject } from 'gg-components/DebugObject';
 import { LoadingCover } from 'gg-components/LoadingCover';
 import { Button } from 'gg-components/Button';
-import { Paragraph, SubSection } from 'gg-components/Typography';
+import { Paragraph, Subsection } from 'gg-components/Typography';
 import Card from 'components/Card';
 import { AdminOnly } from 'components/Walls';
 import { SplitDetailView } from 'components/SplitDetailView';
@@ -153,7 +153,7 @@ const AdminUsers = props => {
         highlighted={highlightId === 'new'}
         href="/admin/users?highlight=new"
         className={getClassName('admin-users__card')}>
-        <SubSection name="New +" anchor={false} noPadding />
+        <Subsection name="New +" anchor={false} noPadding />
       </Card>
       {showUsers &&
         filteredUsers.map(n => (

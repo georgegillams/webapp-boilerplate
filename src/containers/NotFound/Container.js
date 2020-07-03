@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { cssModules } from 'gg-components/helpers/cssModules';
-import { Paragraph, SubSection } from 'gg-components/Typography';
+import { Paragraph, Subsection } from 'gg-components/Typography';
 import PageTitle from 'components/PageTitle';
 import TextLink from 'components/TextLink';
 
@@ -19,13 +19,13 @@ const NotFound = props => {
   return (
     <div className={classNameFinal.join(' ')}>
       <PageTitle className={getClassName('not-found__container')} name="Oops." pageTitle="404">
-        <SubSection anchor={false}>
+        <Subsection anchor={false}>
           <Paragraph>
             The page you&apos;re looking for doesn&apos;t exist, or you don&apos;t have permission to view it.
             <br />
             Maybe the <TextLink href={'/sitemap'}>site map</TextLink> can help
           </Paragraph>
-        </SubSection>
+        </Subsection>
       </PageTitle>
     </div>
   );

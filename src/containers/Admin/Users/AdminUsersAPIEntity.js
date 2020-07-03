@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Button } from 'gg-components/Button';
-import { Paragraph, SubSection } from 'gg-components/Typography';
+import { Paragraph, Subsection } from 'gg-components/Typography';
 import Card from 'components/Card';
 import { UserEditForm } from 'components/Forms';
 
@@ -11,7 +11,7 @@ const AdminUsersAPIEntity = props => {
   const [updatedUser, setUpdatedUser] = useState(null);
 
   const content = (
-    <SubSection anchor={false} name={entity.name || `User ${entity.id}`}>
+    <Subsection anchor={false} name={entity.name || `User ${entity.id}`}>
       <Paragraph>id: {entity.id}</Paragraph>
       {!compact && (
         <>
@@ -73,7 +73,7 @@ const AdminUsersAPIEntity = props => {
         </>
       )}
       {!compact && children && children}
-    </SubSection>
+    </Subsection>
   );
 
   if (compact) {
