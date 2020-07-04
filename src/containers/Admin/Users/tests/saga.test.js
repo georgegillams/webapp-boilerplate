@@ -29,6 +29,7 @@ describe('AdminUsers saga', () => {
     expect(takeLatestDescriptor).toEqual(takeLatest(requestMagicLink.TRIGGER, doRequestMagicLink));
   });
 
+  // TODO Split this up into separate test regions, one for each generator
   describe('admin user actions', () => {
     let loadGenerator;
     let removeGenerator;

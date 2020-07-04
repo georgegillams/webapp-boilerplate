@@ -22,6 +22,7 @@ describe('Account saga', () => {
     expect(takeLatestDescriptor).toEqual(takeLatest(requestVerificationEmail.TRIGGER, doRequestVerificationEmail));
   });
 
+  // TODO Split this up into separate test regions, one for each generator
   describe('account actions', () => {
     let logoutGenerator;
     let requestVerificationEmailGenerator;
