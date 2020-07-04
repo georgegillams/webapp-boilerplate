@@ -76,16 +76,22 @@ exports[`<Footer /> Should render correctly 1`] = `
       class="footer-nav__container footer__nav"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--light text-link--light--text-link text-link--inline footer-nav__link footer__nav"
+        class="text-link text-link--text-link text-link--no-padding text-link--light text-link--light--text-link text-link--inline footer-nav__link"
         href="/sitemap"
       >
         Site map
       </a>
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--light text-link--light--text-link text-link--inline footer-nav__link footer__nav"
+        class="text-link text-link--text-link text-link--no-padding text-link--light text-link--light--text-link text-link--inline footer-nav__link"
         href="/status"
       >
         Status
+      </a>
+      <a
+        class="text-link text-link--text-link text-link--no-padding text-link--light text-link--light--text-link text-link--inline footer-nav__link"
+        href="/privacy-policy"
+      >
+        Privacy
       </a>
     </div>
   </footer>
@@ -168,16 +174,22 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
       class="footer-nav__container footer__nav"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--light text-link--light--text-link text-link--inline footer-nav__link footer__nav"
+        class="text-link text-link--text-link text-link--no-padding text-link--light text-link--light--text-link text-link--inline footer-nav__link"
         href="/sitemap"
       >
         Site map
       </a>
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--light text-link--light--text-link text-link--inline footer-nav__link footer__nav"
+        class="text-link text-link--text-link text-link--no-padding text-link--light text-link--light--text-link text-link--inline footer-nav__link"
         href="/status"
       >
         Status
+      </a>
+      <a
+        class="text-link text-link--text-link text-link--no-padding text-link--light text-link--light--text-link text-link--inline footer-nav__link"
+        href="/privacy-policy"
+      >
+        Privacy
       </a>
     </div>
   </footer>
