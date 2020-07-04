@@ -1,4 +1,4 @@
-Remember to update the following:
+Remember to check and update the following:
 
 - [ ] `README.md`
 - [ ] Documentation

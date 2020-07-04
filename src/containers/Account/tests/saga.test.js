@@ -22,31 +22,22 @@ describe('Account saga', () => {
     expect(takeLatestDescriptor).toEqual(takeLatest(requestVerificationEmail.TRIGGER, doRequestVerificationEmail));
   });
 
-  // TODO Split this up into separate test regions, one for each generator
-  describe('account actions', () => {
+  describe('logout actions', () => {
     let logoutGenerator;
-    let requestVerificationEmailGenerator;
 
-    const logoutResponse = {
+    const response = {
       success: 'you are logged out',
-      status: 200,
-    };
-    const requestVerificationEmailResponse = {
-      success: 'Verification email resent',
       status: 200,
     };
 
     beforeEach(() => {
       logoutGenerator = doLogout();
-      requestVerificationEmailGenerator = doRequestVerificationEmail();
 
-      const selectLogoutDescriptor = logoutGenerator.next().value;
-      const selectRVEDescriptor = requestVerificationEmailGenerator.next().value;
-      expect(selectLogoutDescriptor + selectRVEDescriptor).toMatchSnapshot();
+      const selectDescriptor = logoutGenerator.next().value;
+      expect(selectDescriptor).toMatchSnapshot();
     });
 
     it('Should call logout.success on successful API call', () => {
-      const response = logoutResponse;
       logoutGenerator.next();
       const putSuccess = logoutGenerator.next(response).value;
       logoutGenerator.next();
@@ -73,9 +64,24 @@ describe('Account saga', () => {
 
       expect(putFailure).toEqual(put(logout.failure(response)));
     });
+  });
+
+  describe('requestVerificationEmail actions', () => {
+    let requestVerificationEmailGenerator;
+
+    const response = {
+      success: 'Verification email resent',
+      status: 200,
+    };
+
+    beforeEach(() => {
+      requestVerificationEmailGenerator = doRequestVerificationEmail();
+
+      const selectDescriptor = requestVerificationEmailGenerator.next().value;
+      expect(selectDescriptor).toMatchSnapshot();
+    });
 
     it('Should call requestVerificationEmail.success on successful API call', () => {
-      const response = requestVerificationEmailResponse;
       requestVerificationEmailGenerator.next();
       const putSuccess = requestVerificationEmailGenerator.next(response).value;
       requestVerificationEmailGenerator.next();
