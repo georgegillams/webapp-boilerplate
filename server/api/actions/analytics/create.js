@@ -4,6 +4,7 @@ import { dbCreate } from 'utils/database';
 import lockPromise from 'utils/lock';
 import authentication from 'utils/authentication';
 import reqSecure from 'utils/reqSecure';
+import { ipPrefix } from 'utils/ipAddress';
 
 export default function create(req) {
   reqSecure(req, analyticsAllowedAttributes);
@@ -13,7 +14,9 @@ export default function create(req) {
       if (req.headers['x-forwarded-for']) {
         ipAddress = req.headers['x-forwarded-for'];
       }
-      req.body.ipAddress = ipAddress;
+      if (ipAddress) {
+        req.body.ipAddressPrefix = ipPrefix(ipAddress);
+      }
       return dbCreate({ redisKey: 'analytics', user }, req);
     })
   );

@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import Head from 'next/head';
 import App from 'next/app';
 import Consent from 'containers/Consent';
+import Analytics from 'containers/Analytics';
 import Authenticator from 'containers/Authenticator';
 
 import withReduxStore from 'utils/redux/with-redux-store';
@@ -29,6 +30,7 @@ class Srr extends App {
           <AppWrapper>
             <Navigation />
             <Consent />
+            <Analytics />
             <Authenticator />
             <Component {...pageProps} />
           </AppWrapper>
