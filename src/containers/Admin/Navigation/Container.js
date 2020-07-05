@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import PageTitle from 'components/PageTitle';
-import { DebugObject } from 'gg-components/DebugObject';
+import { DebugObject } from 'components/DebugObject';
 import { LoadingCover } from 'gg-components/LoadingCover';
 import { ARTICLE_CARD_LAYOUTS } from 'gg-components/ArticleCard';
 import ArticleCard from 'components/ArticleCard';

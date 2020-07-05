@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import PageTitle from 'components/PageTitle';
-import { DebugObject } from 'gg-components/DebugObject';
+import { DebugObject } from 'components/DebugObject';
 import { LoadingCover } from 'gg-components/LoadingCover';
 import { Button } from 'gg-components/Button';
 import { Subsection } from 'gg-components/Subsection';
