@@ -40,7 +40,7 @@ const MagicLogin = props => {
       token = router.query.token;
     }
     // We want to wait for cookies to be accepted before logging in
-    if (token && consentState.cookieConsent === CONSENT_STATE_ALLOWED) {
+    if (!logInResult && token && consentState.cookieConsent === CONSENT_STATE_ALLOWED) {
       login(token);
     }
   }, [consentState, router]);
