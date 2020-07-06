@@ -5,10 +5,10 @@ import { initialState } from '../reducer';
 
 import configureStore from 'utils/redux/configure-store';
 
-import AuthenticatorIndex from '../index';
-import Authenticator from '../Container';
+import ConsentIndex from '../index';
+import Consent from '../Container';
 
-describe('<Authenticator />', () => {
+describe('<Consent />', () => {
   let store;
   const spy = jest.fn();
 
@@ -19,7 +19,7 @@ describe('<Authenticator />', () => {
   it('should render correctly - index', () => {
     const { container } = render(
       <Provider store={store}>
-        <AuthenticatorIndex />
+        <ConsentIndex />
       </Provider>
     );
 
@@ -29,9 +29,11 @@ describe('<Authenticator />', () => {
   it('should render correctly', () => {
     const { container } = render(
       <Provider store={store}>
-        <Authenticator
-          loadAuth={spy}
-          authenticatorState={{
+        <Consent
+          consent={spy}
+          resetConsent={spy}
+          deferConsent={spy}
+          consentState={{
             ...initialState,
           }}
         />

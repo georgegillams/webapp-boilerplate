@@ -3,11 +3,13 @@ import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { initialState } from '../reducer';
 import { initialState as initialAuthenticatorState } from '../../Authenticator/reducer';
+import { initialState as initialConsentState } from '../../Consent/reducer';
 
 import configureStore from 'utils/redux/configure-store';
 
 import MagicLoginIndex from '../index';
 import MagicLogin from '../Container';
+import { CONSENT_STATE_ALLOWED } from 'containers/Consent/constants';
 
 describe('<MagicLogin />', () => {
   let store;
@@ -38,6 +40,7 @@ describe('<MagicLogin />', () => {
           authenticatorState={{
             ...initialAuthenticatorState,
           }}
+          consentState={{ ...initialConsentState }}
         />
       </Provider>
     );
@@ -57,6 +60,7 @@ describe('<MagicLogin />', () => {
           authenticatorState={{
             ...initialAuthenticatorState,
           }}
+          consentState={{ ...initialConsentState, cookieConsent: CONSENT_STATE_ALLOWED }}
         />
       </Provider>
     );
@@ -76,6 +80,7 @@ describe('<MagicLogin />', () => {
           authenticatorState={{
             ...initialAuthenticatorState,
           }}
+          consentState={{ ...initialConsentState, cookieConsent: CONSENT_STATE_ALLOWED }}
         />
       </Provider>
     );
@@ -96,6 +101,7 @@ describe('<MagicLogin />', () => {
             ...initialAuthenticatorState,
             user: { name: 'userName' },
           }}
+          consentState={{ ...initialConsentState, cookieConsent: CONSENT_STATE_ALLOWED }}
         />
       </Provider>
     );

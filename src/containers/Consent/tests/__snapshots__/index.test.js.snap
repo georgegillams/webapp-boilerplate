@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Consent /> should render correctly - index 1`] = `
+<div>
+  <div
+    class=""
+  />
+  <div>
+    <span
+      class="typography__main typography__paragraph"
+    >
+      Please let us use cookies
+      
+    </span>
+    <br />
+    <button
+      class="button__outer button__outer--regular button__outer--no-bouncy"
+      type="button"
+    >
+      YASS
+    </button>
+    <br />
+    <button
+      class="button__outer button__outer--regular button__outer--no-bouncy"
+      type="button"
+    >
+      Dismiss
+    </button>
+  </div>
+</div>
+`;
+
+exports[`<Consent /> should render correctly 1`] = `
+<div>
+  <div
+    class=""
+  />
+</div>
+`;

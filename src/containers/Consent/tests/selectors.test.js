@@ -1,21 +1,21 @@
 import { selectState, selectDomain } from '../selectors';
 import { initialState } from '../reducer';
 
-describe('selectAuthenticator', () => {
+describe('selectConsent', () => {
   it('should select the initial state', () => {
     const mockedState = {};
 
     expect(selectDomain(mockedState)).toEqual(initialState);
   });
 
-  it('should select the authenticator state', () => {
+  it('should select the consent state', () => {
     const state = {
       ...initialState,
-      user: { name: 'userName' },
+      cookieConsent: 'SOME_COOKIE_CONSENT',
     };
 
     const mockedState = {
-      authenticator: state,
+      consent: state,
     };
 
     const selectStateMock = selectState();

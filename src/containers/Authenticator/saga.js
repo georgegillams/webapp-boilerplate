@@ -6,9 +6,6 @@ import apiStructure from 'helpers/apiStructure';
 import { loadAuth } from './actions';
 
 export function* doLoadAuth() {
-  // const currentState = yield select(selectState());
-  // console.log(`currentState`, currentState);
-
   const requestURL = apiStructure.loadAuth.fullPath;
 
   try {

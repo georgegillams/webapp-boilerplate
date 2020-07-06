@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import cookie from 'react-cookies';
 import { DebugObject } from 'gg-components/Auth';
 import { KEY } from './constants';
 import saga from './saga';
@@ -13,15 +12,10 @@ const Authenticator = props => {
   useInjectReducer({ key: KEY, reducer });
 
   useEffect(() => {
-    const sessionCookie = cookie.load('session');
-    if (sessionCookie) {
-      props.setCookiesAllowed(true);
-    }
     props.loadAuth();
   }, []);
 
   const {
-    setCookiesAllowed,
     loadAuth,
 
     authenticatorState,
@@ -40,7 +34,6 @@ const Authenticator = props => {
       <DebugObject
         debugTitle="Authenticator"
         debugObject={{
-          setCookiesAllowed,
           loadAuth,
           authenticatorState,
           className,
@@ -51,10 +44,8 @@ const Authenticator = props => {
 };
 
 Authenticator.propTypes = {
-  setCookiesAllowed: PropTypes.func.isRequired,
   loadAuth: PropTypes.func.isRequired,
   authenticatorState: PropTypes.shape({
-    cookiesAllowed: PropTypes.bool,
     loadingAuth: PropTypes.bool,
     loadAuthError: PropTypes.object,
     user: PropTypes.object,

@@ -4,20 +4,22 @@ import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
-import { loadAuth } from './actions';
+import { consent, deferConsent, resetConsent } from './actions';
 import { selectState } from './selectors';
-import Authenticator from './Container';
+import Consent from './Container';
 
 const mapStateToProps = createStructuredSelector({
-  authenticatorState: selectState(),
+  consentState: selectState(),
 });
 
 export function mapDispatchToProps(dispatch) {
   return {
-    loadAuth: payload => dispatch(loadAuth(payload)),
+    consent: payload => dispatch(consent(payload)),
+    deferConsent: payload => dispatch(deferConsent(payload)),
+    resetConsent: payload => dispatch(resetConsent(payload)),
   };
 }
 
 const withConnect = connect(mapStateToProps, mapDispatchToProps);
 
-export default compose(withConnect, memo)(Authenticator);
+export default compose(withConnect, memo)(Consent);
