@@ -1,0 +1,41 @@
+import { takeLatest, put, call, select } from 'redux-saga/effects';
+
+import request from 'utils/request';
+import apiStructure from 'helpers/apiStructure';
+import { selectState } from './selectors';
+
+import { signUp } from './actions';
+
+export function* doSignUp() {
+  const currentState = yield select(selectState());
+  const { credentials } = currentState;
+
+  const requestURL = apiStructure.signUp.fullPath;
+
+  try {
+    yield put(signUp.request());
+
+    const result = yield call(request, requestURL, {
+      method: 'POST',
+      body: JSON.stringify(credentials),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+
+    if (result.error) {
+      yield put(signUp.failure(result));
+    } else {
+      yield put(signUp.success(result));
+      // TODO yield put(setUser(signUpResult));
+    }
+  } catch (err) {
+    yield put(signUp.failure(err));
+  } finally {
+    yield put(signUp.fulfill());
+  }
+}
+
+export default function* saga() {
+  yield takeLatest(signUp.TRIGGER, doSignUp);
+}
