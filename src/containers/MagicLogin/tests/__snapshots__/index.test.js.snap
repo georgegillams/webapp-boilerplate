@@ -68,7 +68,7 @@ exports[`<MagicLogin /> should render correctly with logInError 1`] = `
         class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
         href="/login"
       >
-        Try logging in with a new magic link
+        Try logging in again
       </a>
     </div>
   </div>
