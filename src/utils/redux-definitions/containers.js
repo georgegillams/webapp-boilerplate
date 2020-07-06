@@ -9,14 +9,7 @@ import injectSaga from 'utils/injectSaga';
 import injectReducer from 'utils/injectReducer';
 
 // TODO Write tests for this:
-const composeContainer = (
-  PageComponent,
-  key,
-  selectors,
-  actions,
-  reducer,
-  saga,
-) => {
+const composeContainer = (PageComponent, key, selectors, actions, reducer, saga) => {
   const mapDispatchToProps = dispatch => mapActions(dispatch, actions);
 
   const mapStateToProps = createStructuredSelector(mapSelectors(selectors));

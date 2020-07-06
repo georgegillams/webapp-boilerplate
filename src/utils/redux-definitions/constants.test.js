@@ -15,11 +15,7 @@ const testActionDefinitions = [
 ];
 
 test('correctly creates constants from strings', done => {
-  const constants = defineConstants(
-    'MY_ACTION_NAME',
-    'MY_ACTION_NAME_SUCCESS',
-    'MY_ACTION_NAME_ERROR',
-  );
+  const constants = defineConstants('MY_ACTION_NAME', 'MY_ACTION_NAME_SUCCESS', 'MY_ACTION_NAME_ERROR');
 
   const constantNames = Object.keys(constants);
   expect(constantNames.length).toBe(3);
@@ -29,12 +25,8 @@ test('correctly creates constants from strings', done => {
   expect(constantNames[2]).toBe('MY_ACTION_NAME_ERROR');
 
   expect(constants[constantNames[0]].includes('MY_ACTION_NAME-')).toBe(true);
-  expect(constants[constantNames[1]].includes('MY_ACTION_NAME_SUCCESS-')).toBe(
-    true,
-  );
-  expect(constants[constantNames[2]].includes('MY_ACTION_NAME_ERROR-')).toBe(
-    true,
-  );
+  expect(constants[constantNames[1]].includes('MY_ACTION_NAME_SUCCESS-')).toBe(true);
+  expect(constants[constantNames[2]].includes('MY_ACTION_NAME_ERROR-')).toBe(true);
 
   done();
 });

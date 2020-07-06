@@ -2,10 +2,7 @@
 
 // eslint-disable-next-line
 import { fromJS } from 'immutable';
-import {
-  inferPropertiesFromInitialState,
-  getInitialState,
-} from './reducers.js';
+import { inferPropertiesFromInitialState, getInitialState } from './reducers.js';
 
 const testInitialState = fromJS({
   loading: false,
@@ -48,9 +45,7 @@ test('correctly gets intial state from reducer', done => {
 });
 
 test('correctly infers properties from initial state', done => {
-  const inferedProperties = inferPropertiesFromInitialState(
-    getInitialState(testReducer),
-  );
+  const inferedProperties = inferPropertiesFromInitialState(getInitialState(testReducer));
 
   expect(inferedProperties).toEqual([
     'newBlog',
