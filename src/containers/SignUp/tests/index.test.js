@@ -31,7 +31,7 @@ describe('<SignUp />', () => {
     const { container } = render(
       <Provider store={store}>
         <SignUp
-          login={spy}
+          signUp={spy}
           signUpState={{
             ...initialState,
           }}
@@ -49,7 +49,7 @@ describe('<SignUp />', () => {
     const { container } = render(
       <Provider store={store}>
         <SignUp
-          login={spy}
+          signUp={spy}
           signUpState={{
             ...initialState,
             signUpError: { error: 'not_found', errorMessage: 'No matching email found' },
@@ -68,7 +68,7 @@ describe('<SignUp />', () => {
     const { container } = render(
       <Provider store={store}>
         <SignUp
-          login={spy}
+          signUp={spy}
           signUpState={{
             ...initialState,
             signUpResult: { uname: 'uname', email: 'email' },
@@ -87,7 +87,7 @@ describe('<SignUp />', () => {
     const { container } = render(
       <Provider store={store}>
         <SignUp
-          login={spy}
+          signUp={spy}
           signUpState={{
             ...initialState,
             signingUp: true,
@@ -106,7 +106,7 @@ describe('<SignUp />', () => {
     const { container } = render(
       <Provider store={store}>
         <SignUp
-          login={spy}
+          signUp={spy}
           signUpState={{
             ...initialState,
           }}

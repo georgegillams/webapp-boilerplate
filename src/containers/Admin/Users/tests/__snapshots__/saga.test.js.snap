@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AdminUsers saga admin user actions Should call load.success on successful API call 1`] = `"[object Object][object Object][object Object]"`;
+
+exports[`AdminUsers saga admin user actions Should call load.trigger on successful API call 1`] = `"[object Object][object Object][object Object]"`;
+
+exports[`AdminUsers saga admin user actions Should call remove.failure if API returns error 1`] = `"[object Object][object Object][object Object]"`;
+
+exports[`AdminUsers saga admin user actions Should call remove.failure if an exception occurs 1`] = `"[object Object][object Object][object Object]"`;
+
+exports[`AdminUsers saga admin user actions Should call remove.success on successful API call 1`] = `"[object Object][object Object][object Object]"`;
+
+exports[`AdminUsers saga admin user actions Should call requestMagicLink.failure if API returns error 1`] = `"[object Object][object Object][object Object]"`;
+
+exports[`AdminUsers saga admin user actions Should call requestMagicLink.failure if an exception occurs 1`] = `"[object Object][object Object][object Object]"`;
+
+exports[`AdminUsers saga admin user actions Should call requestMagicLink.success on successful API call 1`] = `"[object Object][object Object][object Object]"`;
+
+exports[`AdminUsers saga admin user actions Should call verify.failure if API returns error 1`] = `"[object Object][object Object][object Object]"`;
+
+exports[`AdminUsers saga admin user actions Should call verify.failure if an exception occurs 1`] = `"[object Object][object Object][object Object]"`;

@@ -43,7 +43,7 @@ describe('loadShowcasesRequest Saga', () => {
       expect(putSuccess).toEqual(put(loadShowcases.success(response)));
     });
 
-    it('Should loadShowcasesRequest be failure', () => {
+    it('Should loadShowcasesRequest be FAILURE correctly', () => {
       const response = new Error('Some error');
       const putFailure = loadShowcasesGenerator.throw(response).value;
 

@@ -42,7 +42,7 @@ const AdminNavigation = props => {
               day={null}
               month={null}
               className={getClassName('admin-navigation__card')}
-              linkUrl="/admin/analytics"
+              href="/admin/analytics"
               title="Analytics"
             />
             <ArticleCard
@@ -50,7 +50,7 @@ const AdminNavigation = props => {
               day={null}
               month={null}
               className={getClassName('admin-navigation__card')}
-              linkUrl="/admin/notifications"
+              href="/admin/notifications"
               title="Notifications"
             />
             <ArticleCard
@@ -58,7 +58,7 @@ const AdminNavigation = props => {
               day={null}
               month={null}
               className={getClassName('admin-navigation__card')}
-              linkUrl="/admin/users"
+              href="/admin/users"
               title="Users"
             />
           </div>
@@ -72,7 +72,7 @@ const AdminNavigation = props => {
       <LoadingCover
         loadingSkeleton={Skeleton}
         loading={authenticatorState.user === undefined}
-        error={authenticatorState.loadAuthError}>
+        error={!!authenticatorState.loadAuthError}>
         {page}
       </LoadingCover>
       <DebugObject debugTitle="Admin" debugObject={{ authenticatorState }} />

@@ -2,14 +2,14 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { initialState } from '../reducer';
-import { initialState as initialAuthenticatorState } from '../../Authenticator/reducer';
+import { initialState as initialAuthenticatorState } from '../../../Authenticator/reducer';
 
 import configureStore from 'utils/redux/configure-store';
 
-import AccountIndex from '../index';
-import Account from '../Container';
+import AdminUsersIndex from '../index';
+import AdminUsers from '../Container';
 
-describe('<Account />', () => {
+describe('<AdminUsers />', () => {
   let store;
   const spy = jest.fn();
 
@@ -20,7 +20,7 @@ describe('<Account />', () => {
   it('should render correctly - index', () => {
     const { container } = render(
       <Provider store={store}>
-        <AccountIndex />
+        <AdminUsersIndex />
       </Provider>
     );
 
@@ -30,205 +30,209 @@ describe('<Account />', () => {
   it('should render correctly with initial state', () => {
     const { container } = render(
       <Provider store={store}>
-        <Account
-          logout={spy}
-          requestVerificationEmail={spy}
-          accountState={{
+        <AdminUsers
+          load={spy}
+          remove={spy}
+          requestMagicLink={spy}
+          adminUsersState={{
             ...initialState,
           }}
           authenticatorState={{
             ...initialAuthenticatorState,
-            user: { name: 'userName' },
           }}
         />
       </Provider>
     );
-
     expect(container).toMatchSnapshot();
   });
 
-  it('should render correctly with initial state', () => {
+  it('should render correctly with user', () => {
     const { container } = render(
       <Provider store={store}>
-        <Account
-          logout={spy}
-          requestVerificationEmail={spy}
-          accountState={{
+        <AdminUsers
+          load={spy}
+          remove={spy}
+          requestMagicLink={spy}
+          adminUsersState={{
             ...initialState,
           }}
           authenticatorState={{
             ...initialAuthenticatorState,
-            user: { name: 'userName' },
+            user: { name: 'testUser' },
           }}
         />
       </Provider>
     );
-
     expect(container).toMatchSnapshot();
   });
 
-  it('should render correctly with logOutError', () => {
+  it('should render correctly with admin user', () => {
     const { container } = render(
       <Provider store={store}>
-        <Account
-          logout={spy}
-          requestVerificationEmail={spy}
-          accountState={{
+        <AdminUsers
+          load={spy}
+          remove={spy}
+          requestMagicLink={spy}
+          adminUsersState={{
             ...initialState,
-            logOutError: { error: 'not_found', errorMessage: 'Invalid session' },
           }}
           authenticatorState={{
             ...initialAuthenticatorState,
-            user: { name: 'userName' },
+            user: { name: 'testUser', admin: true },
           }}
         />
       </Provider>
     );
-
     expect(container).toMatchSnapshot();
   });
 
-  it('should render correctly with logOutResult', () => {
+  it('should render correctly with loading=true', () => {
     const { container } = render(
       <Provider store={store}>
-        <Account
-          logout={spy}
-          requestVerificationEmail={spy}
-          accountState={{
+        <AdminUsers
+          load={spy}
+          remove={spy}
+          requestMagicLink={spy}
+          adminUsersState={{
             ...initialState,
-            logOutResult: { success: 'logged out' },
+            loading: true,
           }}
           authenticatorState={{
             ...initialAuthenticatorState,
-            user: { name: 'userName' },
+            user: { name: 'testUser', admin: true },
           }}
         />
       </Provider>
     );
-
     expect(container).toMatchSnapshot();
   });
 
-  it('should render correctly with loggingOut=true', () => {
+  it('should render correctly with loadError', () => {
     const { container } = render(
       <Provider store={store}>
-        <Account
-          logout={spy}
-          requestVerificationEmail={spy}
-          accountState={{
+        <AdminUsers
+          load={spy}
+          remove={spy}
+          requestMagicLink={spy}
+          adminUsersState={{
             ...initialState,
-            loggingOut: true,
+            loadError: { error: 'some_error', errorMessage: 'Something went wrong' },
           }}
           authenticatorState={{
             ...initialAuthenticatorState,
-            user: { name: 'userName' },
+            user: { name: 'testUser', admin: true },
           }}
         />
       </Provider>
     );
-
     expect(container).toMatchSnapshot();
   });
 
-  it('should render correctly with requestingVerificationEmail=true', () => {
+  it('should render correctly with users', () => {
     const { container } = render(
       <Provider store={store}>
-        <Account
-          logout={spy}
-          requestVerificationEmail={spy}
-          accountState={{
+        <AdminUsers
+          load={spy}
+          remove={spy}
+          requestMagicLink={spy}
+          adminUsersState={{
             ...initialState,
-            requestingVerificationEmail: true,
+            users: [
+              { id: '1', name: 'name', email: 'test@example.com' },
+              { id: '2', name: 'another', email: 'another@example.com' },
+              { id: '3', name: 'a third', email: 'three@example.com' },
+            ],
           }}
           authenticatorState={{
             ...initialAuthenticatorState,
-            user: { name: 'userName' },
+            user: { name: 'testUser', admin: true },
           }}
         />
       </Provider>
     );
-
     expect(container).toMatchSnapshot();
   });
 
-  it('should render correctly with requestVerificationEmailResult', () => {
+  it('should render correctly with requesting=true', () => {
     const { container } = render(
       <Provider store={store}>
-        <Account
-          logout={spy}
-          requestVerificationEmail={spy}
-          accountState={{
+        <AdminUsers
+          load={spy}
+          remove={spy}
+          requestMagicLink={spy}
+          adminUsersState={{
             ...initialState,
-            requestVerificationEmailResult: { success: 'Verification email sent' },
+            requesting: true,
           }}
           authenticatorState={{
             ...initialAuthenticatorState,
-            user: { name: 'userName' },
+            user: { name: 'testUser', admin: true },
           }}
         />
       </Provider>
     );
-
     expect(container).toMatchSnapshot();
   });
 
-  it('should render correctly with requestVerificationEmailError', () => {
+  it('should render correctly with requestError', () => {
     const { container } = render(
       <Provider store={store}>
-        <Account
-          logout={spy}
-          requestVerificationEmail={spy}
-          accountState={{
+        <AdminUsers
+          load={spy}
+          remove={spy}
+          requestMagicLink={spy}
+          adminUsersState={{
             ...initialState,
-            requestVerificationEmailError: { error: 'not_found', errorMessage: 'Invalid session' },
+            requestError: { error: 'some_error', errorMessage: 'Something went wrong' },
           }}
           authenticatorState={{
             ...initialAuthenticatorState,
-            user: { name: 'userName' },
+            user: { name: 'testUser', admin: true },
           }}
         />
       </Provider>
     );
-
+    expect(container).toMatchSnapshot();
+  });
+  it('should render correctly with removing=true', () => {
+    const { container } = render(
+      <Provider store={store}>
+        <AdminUsers
+          load={spy}
+          remove={spy}
+          requestMagicLink={spy}
+          adminUsersState={{
+            ...initialState,
+            removing: true,
+          }}
+          authenticatorState={{
+            ...initialAuthenticatorState,
+            user: { name: 'testUser', admin: true },
+          }}
+        />
+      </Provider>
+    );
     expect(container).toMatchSnapshot();
   });
 
-  it('should render correctly with user with emailVerified=true', () => {
+  it('should render correctly with removeError', () => {
     const { container } = render(
       <Provider store={store}>
-        <Account
-          logout={spy}
-          requestVerificationEmail={spy}
-          accountState={{
+        <AdminUsers
+          load={spy}
+          remove={spy}
+          requestMagicLink={spy}
+          adminUsersState={{
             ...initialState,
+            removeError: { error: 'some_error', errorMessage: 'Something went wrong' },
           }}
           authenticatorState={{
             ...initialAuthenticatorState,
-            user: { name: 'userName', emailVerified: true },
+            user: { name: 'testUser', admin: true },
           }}
         />
       </Provider>
     );
-
-    expect(container).toMatchSnapshot();
-  });
-
-  it('should render correctly with no user', () => {
-    const { container } = render(
-      <Provider store={store}>
-        <Account
-          logout={spy}
-          requestVerificationEmail={spy}
-          accountState={{
-            ...initialState,
-          }}
-          authenticatorState={{
-            ...initialAuthenticatorState,
-          }}
-        />
-      </Provider>
-    );
-
     expect(container).toMatchSnapshot();
   });
 });

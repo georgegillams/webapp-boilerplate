@@ -5,7 +5,7 @@ import apiStructure from 'helpers/apiStructure';
 
 import { selectState } from './selectors';
 import { verify } from './actions';
-import { setUser } from '../Authenticator/actions';
+import { loadAuth } from '../Authenticator/actions';
 
 export function* doVerify() {
   const currentState = yield select(selectState());
@@ -27,7 +27,7 @@ export function* doVerify() {
       yield put(verify.failure(result));
     } else {
       yield put(verify.success(result));
-      yield put(setUser.trigger(result));
+      yield put(loadAuth.trigger());
     }
   } catch (err) {
     yield put(verify.failure(err));

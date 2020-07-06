@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`loadShowcasesRequest Saga loadShowcases actions Should loadShowcasesRequest be failure 1`] = `
+exports[`loadShowcasesRequest Saga loadShowcases actions Should loadShowcasesRequest be FAILURE correctly 1`] = `
 Object {
   "@@redux-saga/IO": true,
   "combinator": false,

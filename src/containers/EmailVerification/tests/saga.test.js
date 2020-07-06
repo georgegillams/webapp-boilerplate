@@ -1,6 +1,7 @@
 import { put, takeLatest } from 'redux-saga/effects';
 
 import { verify } from '../actions';
+import { loadAuth } from '../../Authenticator/actions';
 
 import saga, { doVerify } from '../saga';
 
@@ -33,11 +34,21 @@ describe('EmailVerification saga', () => {
 
     it('Should call verify.success on successful API call', () => {
       verifyGenerator.next({ token: 'asdfghjkl' });
-      verifyGenerator.next(response);
+      verifyGenerator.next();
       const putSuccess = verifyGenerator.next(response).value;
-      verifyGenerator.next(response);
+      verifyGenerator.next();
 
       expect(putSuccess).toEqual(put(verify.success(response)));
+    });
+
+    it('Should call loadAuth.trigger on successful API call', () => {
+      verifyGenerator.next({ token: 'asdfghjkl' });
+      verifyGenerator.next();
+      verifyGenerator.next(response);
+      const putSuccess = verifyGenerator.next().value;
+      verifyGenerator.next();
+
+      expect(putSuccess).toEqual(put(loadAuth.trigger()));
     });
 
     it('Should call verify.failure if API returns error', () => {
@@ -47,9 +58,9 @@ describe('EmailVerification saga', () => {
         errorMessage: 'Error message',
         status: 500,
       };
-      verifyGenerator.next(response);
+      verifyGenerator.next();
       const putSuccess = verifyGenerator.next(response).value;
-      verifyGenerator.next(response);
+      verifyGenerator.next();
 
       expect(putSuccess).toEqual(put(verify.failure(response)));
     });

@@ -43,7 +43,7 @@ describe('verificationReducer', () => {
       expect(verificationReducer(state, verify.success({ success: 'Email verified' }))).toEqual(expectResult);
     });
 
-    it('should return the action verify.FAILURE', () => {
+    it('should return the action verify.FAILURE correctly', () => {
       const expectResult = {
         ...state,
         verifyError: 'some error',

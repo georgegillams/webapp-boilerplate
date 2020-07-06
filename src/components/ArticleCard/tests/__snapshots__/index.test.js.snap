@@ -5,7 +5,6 @@ exports[`<NavigationItem /> Should render correctly 1`] = `
   <a
     class="article-card"
     href="/test"
-    linkurl="/test"
     role="button"
     style="text-decoration: none;"
   >
@@ -54,11 +53,11 @@ exports[`<NavigationItem /> Should render correctly 1`] = `
 
 exports[`<NavigationItem /> Should render correctly hrefExternal 1`] = `
 <div>
-  <div
+  <a
     class="article-card"
-    linkurl="https://duckduckgo.com/"
+    href="https://duckduckgo.com/"
     role="button"
-    tabindex="0"
+    style="text-decoration: none;"
   >
     <div
       class="card"
@@ -99,7 +98,7 @@ exports[`<NavigationItem /> Should render correctly hrefExternal 1`] = `
         class="card__banner"
       />
     </div>
-  </div>
+  </a>
 </div>
 `;
 
@@ -108,7 +107,6 @@ exports[`<NavigationItem /> Should render correctly with custom className 1`] = 
   <a
     class="article-card test-custom-classname"
     href="/test"
-    linkurl="/test"
     role="button"
     style="text-decoration: none;"
   >
