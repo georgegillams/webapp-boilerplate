@@ -26,9 +26,8 @@ exports[`<LoginForm /> Should render correctly 1`] = `
         value=""
       />
       <svg
-        class="input__icon input__icon--valid"
+        class="icon input__icon input__icon--valid"
         height="18"
-        style="width: 1.125rem; height: 1.125rem;"
         viewBox="0 0 24 24"
         width="18"
         xmlns="http://www.w3.org/2000/svg"

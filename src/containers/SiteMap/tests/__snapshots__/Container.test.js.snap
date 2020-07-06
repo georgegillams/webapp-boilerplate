@@ -21,7 +21,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         Design 🎨
       </h2>
       <a
-        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="/design/privacy-policy"
       >
         Privacy Policy
@@ -37,7 +37,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         Other stuff 🤷‍♂️
       </h2>
       <a
-        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="/status"
       >
         Status
@@ -53,19 +53,18 @@ exports[`<SiteMap /> should render correctly 1`] = `
         Random 🐉
       </h2>
       <a
-        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="/robots.txt"
         rel="noopener noreferrer"
         target="_blank"
       >
         Robots.txt
         <div
-          class="typography__icon"
+          class="text-link__icon-container"
         >
           <svg
-            class="typography__icon--inner"
+            class="icon text-link__icon"
             height="18"
-            style="width: 1.125rem; height: 1.125rem;"
             viewBox="0 0 24 24"
             width="18"
             xmlns="http://www.w3.org/2000/svg"
@@ -78,19 +77,18 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </a>
       <br />
       <a
-        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="/sitemap.xml"
         rel="noopener noreferrer"
         target="_blank"
       >
         SiteMap.xml
         <div
-          class="typography__icon"
+          class="text-link__icon-container"
         >
           <svg
-            class="typography__icon--inner"
+            class="icon text-link__icon"
             height="18"
-            style="width: 1.125rem; height: 1.125rem;"
             viewBox="0 0 24 24"
             width="18"
             xmlns="http://www.w3.org/2000/svg"
@@ -103,14 +101,14 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </a>
       <br />
       <a
-        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="/404"
       >
         404 error page - not found
       </a>
       <br />
       <a
-        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="/teapot"
       >
         418 error page - I'm a teapot
@@ -126,7 +124,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         API
       </h2>
       <a
-        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="/api-docs"
       >
         API docs
@@ -142,21 +140,21 @@ exports[`<SiteMap /> should render correctly 1`] = `
         Accounts 🔑
       </h2>
       <a
-        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="/sign-up"
       >
         Sign up
       </a>
       <br />
       <a
-        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="/login"
       >
         Log in
       </a>
       <br />
       <a
-        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="/account"
       >
         Account
@@ -172,28 +170,28 @@ exports[`<SiteMap /> should render correctly 1`] = `
         Admin 👮‍♂️
       </h2>
       <a
-        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="/admin"
       >
         Admin navigation
       </a>
       <br />
       <a
-        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="/admin/users"
       >
         Users
       </a>
       <br />
       <a
-        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="/admin/analytics"
       >
         Analytics
       </a>
       <br />
       <a
-        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+        class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="/admin/notifications"
       >
         Notifications
@@ -210,7 +208,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </h2>
       <div>
         <a
-          class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+          class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/codebase"
         >
           /codebase ⇒ https://github.com/georgegillams/webapp-boilerplate
@@ -219,7 +217,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+          class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/wp-admin"
         >
           /wp-admin ⇒ /admin
@@ -228,7 +226,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+          class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/site-map"
         >
           /site-map ⇒ /sitemap

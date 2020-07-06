@@ -13,7 +13,7 @@ import reducer from './reducer';
 import { useInjectSaga } from 'utils/redux/inject-saga';
 import { useInjectReducer } from 'utils/redux/inject-reducer';
 import Button from 'components/Button';
-import { Paragraph } from 'gg-components/Typography';
+import { Paragraph } from 'gg-components/Paragraph';
 import Modal from 'react-modal';
 import { cssModules } from 'gg-components/helpers/cssModules';
 import STYLES from './consent.scss';

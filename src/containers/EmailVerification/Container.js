@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import PageTitle from 'components/PageTitle';
 import { DebugObject } from 'gg-components/DebugObject';
-import { Paragraph } from 'gg-components/Typography';
+import { Paragraph } from 'gg-components/Paragraph';
 
 import { useInjectSaga } from 'utils/redux/inject-saga';
 import { useInjectReducer } from 'utils/redux/inject-reducer';
@@ -10,12 +10,16 @@ import { useInjectReducer } from 'utils/redux/inject-reducer';
 import { KEY } from './constants';
 import saga from './saga';
 import reducer from './reducer';
+import { withRouter } from 'next/router';
 
 const EmailVerification = props => {
   useInjectSaga({ key: KEY, saga });
   useInjectReducer({ key: KEY, reducer });
 
+  const [verificationAttempted, setVerificationAttempted] = useState(false);
+
   const {
+    router,
     verify,
 
     verificationState,
@@ -27,14 +31,15 @@ const EmailVerification = props => {
   const { verifyError, verifyResult } = verificationState;
 
   useEffect(() => {
-    const token = new URL(window.location).searchParams.get('token');
-    const interval = setInterval(() => {
-      if (token) {
-        verify(token);
-        clearInterval(interval);
-      }
-    }, 200);
-  }, []);
+    let token = null;
+    if (router && router.query) {
+      token = router.query.token;
+    }
+    if (!verificationAttempted && token) {
+      verify(token);
+      setVerificationAttempted(true);
+    }
+  }, [verificationState, router]);
 
   const success = verifyResult && !verifyError;
 
@@ -77,6 +82,13 @@ const EmailVerification = props => {
 };
 
 EmailVerification.propTypes = {
+  router: PropTypes.shape({
+    push: PropTypes.func,
+    query: PropTypes.shape({
+      token: PropTypes.string,
+      redirect: PropTypes.string,
+    }).isRequired,
+  }),
   verify: PropTypes.func.isRequired,
   verificationState: PropTypes.shape({
     token: PropTypes.string,
@@ -91,9 +103,10 @@ EmailVerification.propTypes = {
 };
 
 EmailVerification.defaultProps = {
+  router: null,
   verificationState: null,
   magicLoginState: null,
   className: null,
 };
 
-export default EmailVerification;
+export default withRouter(EmailVerification);

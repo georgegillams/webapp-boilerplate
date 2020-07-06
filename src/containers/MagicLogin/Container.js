@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import PageTitle from 'components/PageTitle';
 import { DebugObject } from 'gg-components/DebugObject';
-import { Paragraph } from 'gg-components/Typography';
+import { Paragraph } from 'gg-components/Paragraph';
 
 import { useInjectSaga } from 'utils/redux/inject-saga';
 import { useInjectReducer } from 'utils/redux/inject-reducer';
@@ -19,6 +19,8 @@ import { CONSENT_STATE_ALLOWED } from 'containers/Consent/constants';
 const MagicLogin = props => {
   useInjectSaga({ key: KEY, saga });
   useInjectReducer({ key: KEY, reducer });
+
+  const [loginAttempted, setLoginAttempted] = useState(false);
 
   const {
     router,
@@ -40,8 +42,9 @@ const MagicLogin = props => {
       token = router.query.token;
     }
     // We want to wait for cookies to be accepted before logging in
-    if (!logInResult && token && consentState.cookieConsent === CONSENT_STATE_ALLOWED) {
+    if (!loginAttempted && token && consentState.cookieConsent === CONSENT_STATE_ALLOWED) {
       login(token);
+      setLoginAttempted(true);
     }
   }, [consentState, router]);
 

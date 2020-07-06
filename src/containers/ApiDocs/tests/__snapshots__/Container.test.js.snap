@@ -22,7 +22,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             >
               Path
             </span>
@@ -31,7 +31,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             >
               Method
             </span>
@@ -40,7 +40,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             >
               Arguments
             </span>
@@ -49,7 +49,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             >
               Authorisation
             </span>
@@ -58,7 +58,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             >
               Description
             </span>
@@ -71,19 +71,18 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
-              class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://webapp-boilerplate.georgegillams.co.uk/api/analytics/create"
               rel="noopener noreferrer"
               target="_blank"
             >
               /analytics/create
               <div
-                class="typography__icon"
+                class="text-link__icon-container"
               >
                 <svg
-                  class="typography__icon--inner"
+                  class="icon text-link__icon"
                   height="18"
-                  style="width: 1.125rem; height: 1.125rem;"
                   viewBox="0 0 24 24"
                   width="18"
                   xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +98,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__method"
+              class="paragraph api-docs__method"
             >
               POST
             </span>
@@ -108,14 +107,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             />
           </td>
           <td
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             >
               None
             </span>
@@ -124,7 +123,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__description"
+              class="paragraph api-docs__description"
             >
               Registers information about the page navigated to
             </span>
@@ -135,19 +134,18 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
-              class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://webapp-boilerplate.georgegillams.co.uk/api/analytics/load-all"
               rel="noopener noreferrer"
               target="_blank"
             >
               /analytics/load-all
               <div
-                class="typography__icon"
+                class="text-link__icon-container"
               >
                 <svg
-                  class="typography__icon--inner"
+                  class="icon text-link__icon"
                   height="18"
-                  style="width: 1.125rem; height: 1.125rem;"
                   viewBox="0 0 24 24"
                   width="18"
                   xmlns="http://www.w3.org/2000/svg"
@@ -163,7 +161,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__method"
+              class="paragraph api-docs__method"
             >
               GET
             </span>
@@ -172,14 +170,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             />
           </td>
           <td
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             >
               Admin only
             </span>
@@ -188,7 +186,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__description"
+              class="paragraph api-docs__description"
             >
               Loads all raw analytic points
             </span>
@@ -199,19 +197,18 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
-              class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://webapp-boilerplate.georgegillams.co.uk/api/analytics/load"
               rel="noopener noreferrer"
               target="_blank"
             >
               /analytics/load
               <div
-                class="typography__icon"
+                class="text-link__icon-container"
               >
                 <svg
-                  class="typography__icon--inner"
+                  class="icon text-link__icon"
                   height="18"
-                  style="width: 1.125rem; height: 1.125rem;"
                   viewBox="0 0 24 24"
                   width="18"
                   xmlns="http://www.w3.org/2000/svg"
@@ -227,7 +224,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__method"
+              class="paragraph api-docs__method"
             >
               GET
             </span>
@@ -236,14 +233,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             />
           </td>
           <td
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             >
               Admin only
             </span>
@@ -252,7 +249,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__description"
+              class="paragraph api-docs__description"
             >
               Loads a summary of unique analytic points
             </span>
@@ -263,19 +260,18 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
-              class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://webapp-boilerplate.georgegillams.co.uk/api/auth/load"
               rel="noopener noreferrer"
               target="_blank"
             >
               /auth/load
               <div
-                class="typography__icon"
+                class="text-link__icon-container"
               >
                 <svg
-                  class="typography__icon--inner"
+                  class="icon text-link__icon"
                   height="18"
-                  style="width: 1.125rem; height: 1.125rem;"
                   viewBox="0 0 24 24"
                   width="18"
                   xmlns="http://www.w3.org/2000/svg"
@@ -291,7 +287,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__method"
+              class="paragraph api-docs__method"
             >
               GET
             </span>
@@ -300,14 +296,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             />
           </td>
           <td
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             >
               None
             </span>
@@ -316,7 +312,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__description"
+              class="paragraph api-docs__description"
             >
               Loads the currently authenticated used. Returns null if signed out
             </span>
@@ -327,19 +323,18 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
-              class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://webapp-boilerplate.georgegillams.co.uk/api/auth/logout"
               rel="noopener noreferrer"
               target="_blank"
             >
               /auth/logout
               <div
-                class="typography__icon"
+                class="text-link__icon-container"
               >
                 <svg
-                  class="typography__icon--inner"
+                  class="icon text-link__icon"
                   height="18"
-                  style="width: 1.125rem; height: 1.125rem;"
                   viewBox="0 0 24 24"
                   width="18"
                   xmlns="http://www.w3.org/2000/svg"
@@ -355,7 +350,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__method"
+              class="paragraph api-docs__method"
             >
               POST
             </span>
@@ -364,14 +359,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             />
           </td>
           <td
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             >
               None
             </span>
@@ -380,7 +375,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__description"
+              class="paragraph api-docs__description"
             >
               Logs out the currently authenticated user
             </span>
@@ -391,19 +386,18 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
-              class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://webapp-boilerplate.georgegillams.co.uk/api/auth/request-verification-email"
               rel="noopener noreferrer"
               target="_blank"
             >
               /auth/request-verification-email
               <div
-                class="typography__icon"
+                class="text-link__icon-container"
               >
                 <svg
-                  class="typography__icon--inner"
+                  class="icon text-link__icon"
                   height="18"
-                  style="width: 1.125rem; height: 1.125rem;"
                   viewBox="0 0 24 24"
                   width="18"
                   xmlns="http://www.w3.org/2000/svg"
@@ -419,7 +413,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__method"
+              class="paragraph api-docs__method"
             >
               POST
             </span>
@@ -428,14 +422,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             />
           </td>
           <td
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             >
               Any user
             </span>
@@ -444,7 +438,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__description"
+              class="paragraph api-docs__description"
             >
               Resends an email verification email
             </span>
@@ -455,19 +449,18 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
-              class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://webapp-boilerplate.georgegillams.co.uk/api/auth/verify-email"
               rel="noopener noreferrer"
               target="_blank"
             >
               /auth/verify-email
               <div
-                class="typography__icon"
+                class="text-link__icon-container"
               >
                 <svg
-                  class="typography__icon--inner"
+                  class="icon text-link__icon"
                   height="18"
-                  style="width: 1.125rem; height: 1.125rem;"
                   viewBox="0 0 24 24"
                   width="18"
                   xmlns="http://www.w3.org/2000/svg"
@@ -483,7 +476,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__method"
+              class="paragraph api-docs__method"
             >
               POST
             </span>
@@ -492,14 +485,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             />
           </td>
           <td
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             >
               None
             </span>
@@ -508,7 +501,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__description"
+              class="paragraph api-docs__description"
             >
               Verify an email address with a secret verification key
             </span>
@@ -519,19 +512,18 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
-              class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://webapp-boilerplate.georgegillams.co.uk/api/magic-links/login"
               rel="noopener noreferrer"
               target="_blank"
             >
               /magic-links/login
               <div
-                class="typography__icon"
+                class="text-link__icon-container"
               >
                 <svg
-                  class="typography__icon--inner"
+                  class="icon text-link__icon"
                   height="18"
-                  style="width: 1.125rem; height: 1.125rem;"
                   viewBox="0 0 24 24"
                   width="18"
                   xmlns="http://www.w3.org/2000/svg"
@@ -547,7 +539,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__method"
+              class="paragraph api-docs__method"
             >
               POST
             </span>
@@ -556,14 +548,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             />
           </td>
           <td
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             >
               None
             </span>
@@ -572,7 +564,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__description"
+              class="paragraph api-docs__description"
             >
               Login using a secret magic-link key
             </span>
@@ -583,19 +575,18 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
-              class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://webapp-boilerplate.georgegillams.co.uk/api/magic-links/request"
               rel="noopener noreferrer"
               target="_blank"
             >
               /magic-links/request
               <div
-                class="typography__icon"
+                class="text-link__icon-container"
               >
                 <svg
-                  class="typography__icon--inner"
+                  class="icon text-link__icon"
                   height="18"
-                  style="width: 1.125rem; height: 1.125rem;"
                   viewBox="0 0 24 24"
                   width="18"
                   xmlns="http://www.w3.org/2000/svg"
@@ -611,7 +602,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__method"
+              class="paragraph api-docs__method"
             >
               POST
             </span>
@@ -620,14 +611,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             />
           </td>
           <td
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             >
               None
             </span>
@@ -636,7 +627,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__description"
+              class="paragraph api-docs__description"
             >
               Request a magic link for a given account using the account's email address
             </span>
@@ -647,19 +638,18 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
-              class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://webapp-boilerplate.georgegillams.co.uk/api/data-management/backup"
               rel="noopener noreferrer"
               target="_blank"
             >
               /data-management/backup
               <div
-                class="typography__icon"
+                class="text-link__icon-container"
               >
                 <svg
-                  class="typography__icon--inner"
+                  class="icon text-link__icon"
                   height="18"
-                  style="width: 1.125rem; height: 1.125rem;"
                   viewBox="0 0 24 24"
                   width="18"
                   xmlns="http://www.w3.org/2000/svg"
@@ -675,7 +665,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__method"
+              class="paragraph api-docs__method"
             >
               GET
             </span>
@@ -684,14 +674,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             />
           </td>
           <td
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             >
               Admin only
             </span>
@@ -700,7 +690,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__description"
+              class="paragraph api-docs__description"
             >
               Returns a file containing a full data backup for the site
             </span>
@@ -711,19 +701,18 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
-              class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://webapp-boilerplate.georgegillams.co.uk/api/data-management/delete-entity"
               rel="noopener noreferrer"
               target="_blank"
             >
               /data-management/delete-entity
               <div
-                class="typography__icon"
+                class="text-link__icon-container"
               >
                 <svg
-                  class="typography__icon--inner"
+                  class="icon text-link__icon"
                   height="18"
-                  style="width: 1.125rem; height: 1.125rem;"
                   viewBox="0 0 24 24"
                   width="18"
                   xmlns="http://www.w3.org/2000/svg"
@@ -739,7 +728,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__method"
+              class="paragraph api-docs__method"
             >
               POST
             </span>
@@ -748,14 +737,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             />
           </td>
           <td
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             >
               Admin only
             </span>
@@ -764,7 +753,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__description"
+              class="paragraph api-docs__description"
             >
               Remove a previously deleted entity completely from the DB
             </span>
@@ -775,19 +764,18 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
-              class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://webapp-boilerplate.georgegillams.co.uk/api/data-management/delete-set"
               rel="noopener noreferrer"
               target="_blank"
             >
               /data-management/delete-set
               <div
-                class="typography__icon"
+                class="text-link__icon-container"
               >
                 <svg
-                  class="typography__icon--inner"
+                  class="icon text-link__icon"
                   height="18"
-                  style="width: 1.125rem; height: 1.125rem;"
                   viewBox="0 0 24 24"
                   width="18"
                   xmlns="http://www.w3.org/2000/svg"
@@ -803,7 +791,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__method"
+              class="paragraph api-docs__method"
             >
               POST
             </span>
@@ -812,14 +800,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             />
           </td>
           <td
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             >
               Admin only
             </span>
@@ -828,7 +816,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__description"
+              class="paragraph api-docs__description"
             >
               Remove an entire collection from the DB
             </span>
@@ -839,19 +827,18 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
-              class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://webapp-boilerplate.georgegillams.co.uk/api/data-management/restore"
               rel="noopener noreferrer"
               target="_blank"
             >
               /data-management/restore
               <div
-                class="typography__icon"
+                class="text-link__icon-container"
               >
                 <svg
-                  class="typography__icon--inner"
+                  class="icon text-link__icon"
                   height="18"
-                  style="width: 1.125rem; height: 1.125rem;"
                   viewBox="0 0 24 24"
                   width="18"
                   xmlns="http://www.w3.org/2000/svg"
@@ -867,7 +854,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__method"
+              class="paragraph api-docs__method"
             >
               POST
             </span>
@@ -876,14 +863,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             />
           </td>
           <td
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             >
               Admin only
             </span>
@@ -892,7 +879,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__description"
+              class="paragraph api-docs__description"
             >
               Restore all the data from a backup file
             </span>
@@ -903,19 +890,18 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
-              class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://webapp-boilerplate.georgegillams.co.uk/api/notifications/create"
               rel="noopener noreferrer"
               target="_blank"
             >
               /notifications/create
               <div
-                class="typography__icon"
+                class="text-link__icon-container"
               >
                 <svg
-                  class="typography__icon--inner"
+                  class="icon text-link__icon"
                   height="18"
-                  style="width: 1.125rem; height: 1.125rem;"
                   viewBox="0 0 24 24"
                   width="18"
                   xmlns="http://www.w3.org/2000/svg"
@@ -931,7 +917,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__method"
+              class="paragraph api-docs__method"
             >
               POST
             </span>
@@ -940,14 +926,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             />
           </td>
           <td
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             >
               Admin only
             </span>
@@ -956,7 +942,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__description"
+              class="paragraph api-docs__description"
             >
               Creates a notification which will be show at the top of the site
             </span>
@@ -967,19 +953,18 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
-              class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://webapp-boilerplate.georgegillams.co.uk/api/notifications/delete"
               rel="noopener noreferrer"
               target="_blank"
             >
               /notifications/delete
               <div
-                class="typography__icon"
+                class="text-link__icon-container"
               >
                 <svg
-                  class="typography__icon--inner"
+                  class="icon text-link__icon"
                   height="18"
-                  style="width: 1.125rem; height: 1.125rem;"
                   viewBox="0 0 24 24"
                   width="18"
                   xmlns="http://www.w3.org/2000/svg"
@@ -995,7 +980,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__method"
+              class="paragraph api-docs__method"
             >
               POST
             </span>
@@ -1004,14 +989,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             />
           </td>
           <td
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             >
               Admin only
             </span>
@@ -1020,7 +1005,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__description"
+              class="paragraph api-docs__description"
             >
               Deletes a notification
             </span>
@@ -1031,19 +1016,18 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
-              class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://webapp-boilerplate.georgegillams.co.uk/api/notifications/load-all"
               rel="noopener noreferrer"
               target="_blank"
             >
               /notifications/load-all
               <div
-                class="typography__icon"
+                class="text-link__icon-container"
               >
                 <svg
-                  class="typography__icon--inner"
+                  class="icon text-link__icon"
                   height="18"
-                  style="width: 1.125rem; height: 1.125rem;"
                   viewBox="0 0 24 24"
                   width="18"
                   xmlns="http://www.w3.org/2000/svg"
@@ -1059,7 +1043,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__method"
+              class="paragraph api-docs__method"
             >
               GET
             </span>
@@ -1068,14 +1052,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             />
           </td>
           <td
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             >
               Any user - only an admin can see deleted notifications
             </span>
@@ -1084,7 +1068,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__description"
+              class="paragraph api-docs__description"
             >
               Load all notifications
             </span>
@@ -1095,19 +1079,18 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
-              class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://webapp-boilerplate.georgegillams.co.uk/api/notifications/load/:id"
               rel="noopener noreferrer"
               target="_blank"
             >
               /notifications/load/:id
               <div
-                class="typography__icon"
+                class="text-link__icon-container"
               >
                 <svg
-                  class="typography__icon--inner"
+                  class="icon text-link__icon"
                   height="18"
-                  style="width: 1.125rem; height: 1.125rem;"
                   viewBox="0 0 24 24"
                   width="18"
                   xmlns="http://www.w3.org/2000/svg"
@@ -1123,7 +1106,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__method"
+              class="paragraph api-docs__method"
             >
               GET
             </span>
@@ -1132,21 +1115,21 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             />
           </td>
           <td
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             />
           </td>
           <td
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__description"
+              class="paragraph api-docs__description"
             />
           </td>
         </tr>
@@ -1155,19 +1138,18 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
-              class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://webapp-boilerplate.georgegillams.co.uk/api/notifications/update"
               rel="noopener noreferrer"
               target="_blank"
             >
               /notifications/update
               <div
-                class="typography__icon"
+                class="text-link__icon-container"
               >
                 <svg
-                  class="typography__icon--inner"
+                  class="icon text-link__icon"
                   height="18"
-                  style="width: 1.125rem; height: 1.125rem;"
                   viewBox="0 0 24 24"
                   width="18"
                   xmlns="http://www.w3.org/2000/svg"
@@ -1183,7 +1165,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__method"
+              class="paragraph api-docs__method"
             >
               POST
             </span>
@@ -1192,14 +1174,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             />
           </td>
           <td
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             >
               Admin only
             </span>
@@ -1208,7 +1190,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__description"
+              class="paragraph api-docs__description"
             >
               Update a given notification
             </span>
@@ -1219,19 +1201,18 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
-              class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://webapp-boilerplate.georgegillams.co.uk/api/users/create"
               rel="noopener noreferrer"
               target="_blank"
             >
               /users/create
               <div
-                class="typography__icon"
+                class="text-link__icon-container"
               >
                 <svg
-                  class="typography__icon--inner"
+                  class="icon text-link__icon"
                   height="18"
-                  style="width: 1.125rem; height: 1.125rem;"
                   viewBox="0 0 24 24"
                   width="18"
                   xmlns="http://www.w3.org/2000/svg"
@@ -1247,7 +1228,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__method"
+              class="paragraph api-docs__method"
             >
               POST
             </span>
@@ -1256,14 +1237,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             />
           </td>
           <td
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             >
               None - only an admin can create other admin users
             </span>
@@ -1272,7 +1253,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__description"
+              class="paragraph api-docs__description"
             >
               Create a user
             </span>
@@ -1283,19 +1264,18 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
-              class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://webapp-boilerplate.georgegillams.co.uk/api/users/delete"
               rel="noopener noreferrer"
               target="_blank"
             >
               /users/delete
               <div
-                class="typography__icon"
+                class="text-link__icon-container"
               >
                 <svg
-                  class="typography__icon--inner"
+                  class="icon text-link__icon"
                   height="18"
-                  style="width: 1.125rem; height: 1.125rem;"
                   viewBox="0 0 24 24"
                   width="18"
                   xmlns="http://www.w3.org/2000/svg"
@@ -1311,7 +1291,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__method"
+              class="paragraph api-docs__method"
             >
               POST
             </span>
@@ -1320,14 +1300,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             />
           </td>
           <td
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             >
               The user being deleted, or an admin only
             </span>
@@ -1336,7 +1316,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__description"
+              class="paragraph api-docs__description"
             >
               Delete a user
             </span>
@@ -1347,19 +1327,18 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
-              class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://webapp-boilerplate.georgegillams.co.uk/api/users/load"
               rel="noopener noreferrer"
               target="_blank"
             >
               /users/load
               <div
-                class="typography__icon"
+                class="text-link__icon-container"
               >
                 <svg
-                  class="typography__icon--inner"
+                  class="icon text-link__icon"
                   height="18"
-                  style="width: 1.125rem; height: 1.125rem;"
                   viewBox="0 0 24 24"
                   width="18"
                   xmlns="http://www.w3.org/2000/svg"
@@ -1375,7 +1354,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__method"
+              class="paragraph api-docs__method"
             >
               GET
             </span>
@@ -1384,14 +1363,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             />
           </td>
           <td
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             >
               The user being loaded, or an admin only
             </span>
@@ -1400,7 +1379,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__description"
+              class="paragraph api-docs__description"
             >
               Load a given user
             </span>
@@ -1411,19 +1390,18 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
-              class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://webapp-boilerplate.georgegillams.co.uk/api/users/load-all"
               rel="noopener noreferrer"
               target="_blank"
             >
               /users/load-all
               <div
-                class="typography__icon"
+                class="text-link__icon-container"
               >
                 <svg
-                  class="typography__icon--inner"
+                  class="icon text-link__icon"
                   height="18"
-                  style="width: 1.125rem; height: 1.125rem;"
                   viewBox="0 0 24 24"
                   width="18"
                   xmlns="http://www.w3.org/2000/svg"
@@ -1439,7 +1417,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__method"
+              class="paragraph api-docs__method"
             >
               GET
             </span>
@@ -1448,14 +1426,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             />
           </td>
           <td
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             >
               Admin only
             </span>
@@ -1464,7 +1442,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__description"
+              class="paragraph api-docs__description"
             >
               Load all users
             </span>
@@ -1475,19 +1453,18 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
-              class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://webapp-boilerplate.georgegillams.co.uk/api/users/sign-up"
               rel="noopener noreferrer"
               target="_blank"
             >
               /users/sign-up
               <div
-                class="typography__icon"
+                class="text-link__icon-container"
               >
                 <svg
-                  class="typography__icon--inner"
+                  class="icon text-link__icon"
                   height="18"
-                  style="width: 1.125rem; height: 1.125rem;"
                   viewBox="0 0 24 24"
                   width="18"
                   xmlns="http://www.w3.org/2000/svg"
@@ -1503,7 +1480,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__method"
+              class="paragraph api-docs__method"
             >
               POST
             </span>
@@ -1512,14 +1489,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             />
           </td>
           <td
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             >
               None
             </span>
@@ -1528,7 +1505,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__description"
+              class="paragraph api-docs__description"
             >
               Create a user, and sign in as that user at the same time
             </span>
@@ -1539,19 +1516,18 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
-              class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://webapp-boilerplate.georgegillams.co.uk/api/users/update"
               rel="noopener noreferrer"
               target="_blank"
             >
               /users/update
               <div
-                class="typography__icon"
+                class="text-link__icon-container"
               >
                 <svg
-                  class="typography__icon--inner"
+                  class="icon text-link__icon"
                   height="18"
-                  style="width: 1.125rem; height: 1.125rem;"
                   viewBox="0 0 24 24"
                   width="18"
                   xmlns="http://www.w3.org/2000/svg"
@@ -1567,7 +1543,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__method"
+              class="paragraph api-docs__method"
             >
               POST
             </span>
@@ -1576,14 +1552,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             />
           </td>
           <td
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph"
+              class="paragraph"
             >
               Any user - only an admin can promote other users to admin
             </span>
@@ -1592,7 +1568,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <span
-              class="typography__main typography__paragraph api-docs__description"
+              class="paragraph api-docs__description"
             >
               Update a given user
             </span>

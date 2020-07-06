@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { cssModules } from 'gg-components/helpers/cssModules';
-import { Paragraph, SubSection } from 'gg-components/Typography';
+import { Subsection } from 'gg-components/Subsection';
+import { Paragraph } from 'gg-components/Paragraph';
 import PageTitle from 'components/PageTitle';
 
 import STYLES from './teapot.scss';
@@ -18,11 +19,11 @@ const Teapot = props => {
   return (
     <main className={classNameFinal.join(' ')}>
       <PageTitle className={getClassName('not-found__container')} name="Error 418 - I'm a teapot." pageTitle="418">
-        <SubSection anchor={false}>
+        <Subsection anchor={false}>
           <Paragraph>
             Coffee cannot be brewed inside a teapot context. The resulting entity body MAY be short and stout.
           </Paragraph>
-        </SubSection>
+        </Subsection>
       </PageTitle>
     </main>
   );

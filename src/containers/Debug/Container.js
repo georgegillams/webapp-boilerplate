@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Checkbox } from 'gg-components/Checkbox';
-import { Paragraph } from 'gg-components/Typography';
+import { Paragraph } from 'gg-components/Paragraph';
 import PageTitle from 'components/PageTitle';
 import STYLES from './debug.scss';
 import { cssModules } from 'gg-components/helpers/cssModules';

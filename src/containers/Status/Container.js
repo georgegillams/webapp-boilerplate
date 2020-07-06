@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { cssModules } from 'gg-components/helpers/cssModules';
-import { Paragraph, SubSection } from 'gg-components/Typography';
+import { Subsection } from 'gg-components/Subsection';
+import { Paragraph } from 'gg-components/Paragraph';
 import PageTitle from 'components/PageTitle';
 
 import STYLES from './style.scss';
@@ -28,12 +29,12 @@ const Status = props => {
           alt="Dependency status"
           src={`https://img.shields.io/david/${appConfig.githubRepo}`}
         />
-        <SubSection className={getClassName('pages__component')} anchor={false}>
+        <Subsection className={getClassName('pages__component')} anchor={false}>
           <Paragraph>Built {getTimeDifference(new Date(builtAt * 1000))}</Paragraph>
-        </SubSection>
-        <SubSection className={getClassName('pages__component')} anchor={false}>
+        </Subsection>
+        <Subsection className={getClassName('pages__component')} anchor={false}>
           <Paragraph>Environment {nodeEnv}</Paragraph>
-        </SubSection>
+        </Subsection>
       </PageTitle>
     </div>
   );
