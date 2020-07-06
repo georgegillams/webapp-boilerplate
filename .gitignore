@@ -4,12 +4,20 @@ coverage
 node_modules
 stats.json
 yarn-error.log
+
 build
+build.zip
+
 src/helpers
 helpers/helpers
 server/helpers
-build.zip
 
+# runtime stuff
+server/server_content/greasemonkey
+server/server_content/data.json
+
+# redis
+dump.rdb
 
 # Cruft
 .DS_Store

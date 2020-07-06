@@ -15,9 +15,9 @@
     "build:server": "cross-env NODE_ENV=development babel -d ./build/server ./server -s --copy-files && cp next.config.js ./build",
     "start": "cross-env NODE_PATH=./build/server NODE_ENV=production node ./build/server/app.js",
     "start:aws": "npm run start",
-    "test:unit": "cross-env NODE_ENV=test jest --coverage",
+    "test:unit": "cross-env jest --coverage",
     "test": "npm run test:unit",
-    "test:watch": "cross-env NODE_ENV=test jest --watchAll",
+    "test:watch": "cross-env jest --watchAll",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "lint": "npm run lint:js",
     "lint:js": "eslint src --fix && eslint server --fix",
@@ -53,6 +53,7 @@
     "invariant": "2.2.4",
     "ip": "^1.1.5",
     "lodash": "^4.17.15",
+    "moment": "^2.26.0",
     "next": "^9.4.4",
     "nodemailer": "^6.4.8",
     "prop-types": "^15.7.2",
@@ -104,6 +105,7 @@
     "nodemon": "^2.0.4",
     "prettier": "^1.18.2",
     "react-test-renderer": "^16.12.0",
+    "stylelint-config-skyscanner": "^2.2.0",
     "whatwg-fetch": "^3.0.0"
   }
 }
