@@ -91,6 +91,8 @@
     &:active,
     &:focus {
       box-shadow: $focus-indicator;
+      animation-duration: 0.4s;
+      animation-name: gg-bounce-hover-effect;
 
       @media (prefers-color-scheme: dark) {
         box-shadow: $focus-indicator-invert;

@@ -1,0 +1,246 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Login /> should render correctly with initial state 1`] = `
+<div>
+  <div
+    class="loading-cover__outer-container"
+  >
+    <div
+      class="loading-cover__overlay"
+    >
+      <div
+        class=""
+      >
+        <div
+          class="skeleton__outer skeleton__section"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="skeleton__outer skeleton__input"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="skeleton__outer skeleton__checkbox"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="skeleton__outer skeleton__button"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Login /> should render correctly with loggingIn=true 1`] = `
+<div>
+  <div
+    class="loading-cover__outer-container"
+  >
+    <div
+      class="loading-cover__overlay"
+    >
+      <div
+        class=""
+      >
+        <div
+          class="skeleton__outer skeleton__section"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="skeleton__outer skeleton__input"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="skeleton__outer skeleton__checkbox"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="skeleton__outer skeleton__button"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Login /> should render correctly with loginError 1`] = `
+<div>
+  <div
+    class="loading-cover__outer-container"
+  >
+    <div
+      class="loading-cover__overlay"
+    >
+      <div
+        class=""
+      >
+        <div
+          class="skeleton__outer skeleton__section"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="skeleton__outer skeleton__input"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="skeleton__outer skeleton__checkbox"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="skeleton__outer skeleton__button"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Login /> should render correctly with loginResult 1`] = `
+<div>
+  <div
+    class="loading-cover__outer-container"
+  >
+    <div
+      class="loading-cover__overlay"
+    >
+      <div
+        class=""
+      >
+        <div
+          class="skeleton__outer skeleton__section"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="skeleton__outer skeleton__input"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="skeleton__outer skeleton__checkbox"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="skeleton__outer skeleton__button"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Login /> should render correctly with user 1`] = `
+<div>
+  <div
+    class="loading-cover__outer-container"
+  >
+    <div
+      class="loading-cover__overlay"
+    >
+      <div
+        class=""
+      >
+        <div
+          class="skeleton__outer skeleton__section"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="skeleton__outer skeleton__input"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="skeleton__outer skeleton__checkbox"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="skeleton__outer skeleton__button"
+        >
+          <div
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

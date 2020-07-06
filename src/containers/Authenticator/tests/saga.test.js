@@ -11,13 +11,13 @@ describe('loadAuthRequest Saga', () => {
     mainSaga = saga();
   });
 
-  it('Should get authenticated user TRIGGER', () => {
+  it('Should get authenticated user on TRIGGER', () => {
     const takeLatestDescriptor = mainSaga.next().value;
     expect(takeLatestDescriptor).toEqual(takeLatest(loadAuth.TRIGGER, doLoadAuth));
   });
 
   describe('loadAuthenticator actions', () => {
-    let loadAuthGenerate;
+    let loadAuthGenerator;
 
     const response = {
       name: 'userName',
@@ -25,23 +25,23 @@ describe('loadAuthRequest Saga', () => {
     };
 
     beforeEach(() => {
-      loadAuthGenerate = doLoadAuth();
+      loadAuthGenerator = doLoadAuth();
 
-      const selectDescriptor = loadAuthGenerate.next().value;
+      const selectDescriptor = loadAuthGenerator.next().value;
       expect(selectDescriptor).toMatchSnapshot();
     });
 
-    it('Should loadAuthRequest be success', () => {
-      loadAuthGenerate.next(response);
-      const putSuccess = loadAuthGenerate.next(response).value;
-      loadAuthGenerate.next(response);
+    it('Should call loadAuth.success on successful API call', () => {
+      loadAuthGenerator.next(response);
+      const putSuccess = loadAuthGenerator.next(response).value;
+      loadAuthGenerator.next(response);
 
       expect(putSuccess).toEqual(put(loadAuth.success(response)));
     });
 
-    it('Should loadAuthRequest be failure', () => {
+    it('Should call loadAuth.failure if an exception occurs', () => {
       const response = new Error('Some error');
-      const putFailure = loadAuthGenerate.throw(response).value;
+      const putFailure = loadAuthGenerator.throw(response).value;
 
       expect(putFailure).toEqual(put(loadAuth.failure(response)));
     });

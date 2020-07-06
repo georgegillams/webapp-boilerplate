@@ -24,7 +24,7 @@
     "es6": true,
     "jest/globals": true
   },
-  "plugins": ["prettier", "react", "redux-saga", "react-hooks", "jest", "promise"],
+  "plugins": ["prettier", "react", "redux-saga", "react-hooks", "jest", "promise", "jsx-a11y"],
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "module",
@@ -73,6 +73,7 @@
     "react/destructuring-assignment": ["error", "always"],
     "react-hooks/rules-of-hooks": "error",
     "react/jsx-first-prop-new-line": [2, "multiline"],
+    "react/prefer-stateless-function": ["error", {}],
     "redux-saga/no-yield-in-race": 2,
     "redux-saga/yield-effects": 2,
     "require-yield": 0
