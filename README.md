@@ -1,118 +1,85 @@
-[![react-next-boilerplate](./docs/images/rnb-bg.png)](https://www.reactnextboilerplate.com/)
+# [https://webapp-boilerplate.georgegillams.co.uk/](https://webapp-boilerplate.georgegillams.co.uk/?utm_source=GitHub)
 
-<div align="center">
-  We spend time using good community practices to make your project scalable.
-</div>
+![Build status](https://github.com/georgegillams/webapp-boilerplate/workflows/CI/badge.svg)
+![Dependencies status](https://img.shields.io/david/georgegillams/webapp-boilerplate)
 
-<br />
+This is yet another boilerplate project that you can use as the basis for your own app 😂
 
-<div align="center">
-  <!-- BUILD STATUS -->
-  <a href="https://travis-ci.com/react-next-boilerplate/react-next-boilerplate/builds">
-    <img src="https://img.shields.io/github/v/tag/react-next-boilerplate/react-next-boilerplate?color=000000&label=version&logo=version&style=flat-square" alt="Build Status" />
-  </a>
+Features:
 
-  <!-- TEST COVERAGE -->
-  <a href='https://coveralls.io/github/react-next-boilerplate/react-next-boilerplate?branch=master'>
-    <img src='https://img.shields.io/coveralls/github/react-next-boilerplate/react-next-boilerplate/master?style=flat-square' alt='Coverage Status' />
-  </a>
+- [NextJS](https://nextjs.org/)
+  - SSR
+  - SPA
+  - Link pre-fetching (LFP? Is there a TLA for that?)
+- [Redux](https://redux.js.org/)
+- [Reselect](https://github.com/reduxjs/reselect)
+- [Redux-saga](https://redux-saga.js.org/)
+- [Redux-saga-routines](https://github.com/afitiskin/redux-saga-routines)
+- Custom server for an API
+- Redis DB connection and helpers for reading/writing
+- Security features such as rate-limiting for sensitive API routes, CORS etc
+- Security features such as rate-limiting for sensitive API routes, CORS etc
+- Snapshot testing
+- Unit testing
+- Snapshot testing (coming soon)
+- Bundle size analysis
+- Light and Dark mode support
+- Self-hosted typeface
 
-  <!-- QUALITY -->
-  <a href="https://app.codacy.com/manual/react-next-boilerplate/react-next-boilerplate/dashboard?bid=14562912">
-    <img src="https://img.shields.io/codacy/grade/ee2b85244d434adaa5aa04470fcdde48?style=flat-square" alt="Quality" />
-  </a>
+For more information about how the key features work, see [the documentation](https://webapp-boilerplate.georgegillams.co.uk/tree/main/docs).
 
-  <!-- ISSUES -->
-  <a href="https://github.com/react-next-boilerplate/react-next-boilerplate/issues">
-    <img src="https://img.shields.io/github/issues/react-next-boilerplate/react-next-boilerplate?style=flat-square" alt="issues" />
-  </a>
- 
-  <!-- MIT -->
-  <a href="https://github.com/react-next-boilerplate/react-next-boilerplate/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/react-next-boilerplate/react-next-boilerplate?style=flat-square" alt="MIT" />
-  </a>
-  
-  <!-- CONTRIBUTORS -->
-  <a href="https://github.com/react-next-boilerplate/react-next-boilerplate/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/react-next-boilerplate/react-next-boilerplate?style=flat-square" alt="Contributors" />
-  </a>
+## Developing
 
-</div>
+### Prerequisites
 
-<div align="center">
+Ensure redis is installed (`brew install redis`).
 
-  <!-- DISCORD -->
-  <a href="https://discord.gg/ANbWXGs">
-    <img src="https://img.shields.io/discord/680982918541082638?color=%237289DA&logo=discord&style=flat-square" alt="Discord" />
-  </a>
+### Running locally
 
-  <!-- TWITTER -->
-  <a href="https://twitter.com/RNBoilerplate">
-    <img src="https://img.shields.io/twitter/url?label=%40RNBoilerplate&logo=twitter&style=flat-square&url=https%3A%2F%2Ftwitter.com%2FRNBoilerplate" alt="Twitter" />
-  </a>
+```
+PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm ci
+npm run dev
+```
 
-</div>
+`npm run dev` will set all necessary environment variables needed to run the application.
 
-<div align="center">
-  <sub>:rocket: A basis for reducing the configuration of your projects with <strong>Next.js</Strong>, best development practices and popular libraries in the developer community.</sub>
-</div>
+A debugger can be attached to debug server-side code.
 
-## Features
+### Testing
 
-- [x] **redux-saga**: A library that aims to make application side effects (i.e. asynchronous things like data fetching and impure things like accessing the browser cache) easier to manage, more efficient to execute, easy to test, and better at handling failures.
-- [x] **redux-saga-routines**: A smart action creator for Redux. Useful for any kind of async actions like fetching data. Also fully compatible with Redux Saga and Redux Form.
-- [x] **next-i18next**: A plugin for [Next.js](https://nextjs.org/) projects that allows you to get translations up and running quickly and easily, while fully supporting SSR, multiple namespaces with code splitting, etc.
-- [x] **i18next**: An internationalization-framework written in and for JavaScript. But it's much more than that.
-- [x] **redux**: A predictable state container for JavaScript apps.
-- [x] **reselect**: Simple selector library for Redux (and others) inspired by getters in [NuclearJS](https://optimizely.github.io/nuclear-js/), subscriptions in re-frame and this proposal from speedskater.
-- [x] **Immer**: (German for: always) is a tiny package that allows you to work with immutable state in a more convenient way. It is based on the copy-on-write mechanism
-- [x] **@testing-library/react**: Simple and complete React DOM testing utilities that encourage good testing practices.
-- [x] **SEO**: The advantages of this approach is to be able to create Rich User experiences in a uniform way, without compromising Search Engine Optimisation (SEO) factors that are key to good ranking on Google and other search engines.
-- [x] **Typefaces**: Self-hosting is significantly faster. Loading a typeface from Google Fonts or other hosted font service adds an extra (blocking) network request.
-- [x] **Emotion**: A library designed for writing css styles with JavaScript. It provides powerful and predictable style composition in addition to a great developer experience with features such as source maps, labels, and testing utilities.
+If components have changed, snapshot tests may need to be updated. Backstop js visual regression tests may also need to be updated.
 
-# Getting Started
+To update jest snapshots:
 
-Welcome to the light documentation of React Next Boilerplate!
+```
+npx jest -u
+```
 
-## System Requirements
+To update backstopJS snapshots:
 
-- [Node.js](https://nodejs.org/en/) 10 or later
-- MacOS, Windows (including WSL), and Linux are supported
+```
+docker build -t georgegillams-test -f Dockerfile.backstopjstest .
+docker run georgegillams-test
+docker cp DOCKER_CONTAINER_ID:/usr/src/tmp/backstop_data ./
+```
 
-## Setup
+Any changes resulting from these commands should be verified and checked in.
 
-1. Clone this repo using `git clone --depth=1 https://github.com/react-next-boilerplate/react-next-boilerplate.git <YOUR_PROJECT_NAME>`
-2. Move to the appropriate directory: `cd <YOUR_PROJECT_NAME>`.
-3. Run `yarn` or `npm install` to install dependencies .
-4. Run `yarn dev` or `npm run dev` to see the example app at `http://localhost:3000`.
+## Hosting
 
-These scripts refer to the different stages of developing an application:
+The following environment variables should be set up
 
-- `dev` - Runs `next` which starts Next.js in development mode
-- `build` - Runs `next` build which builds the application for production usage
-- `start` - Runs `next` start which starts a Next.js production server
+| Env var             | Reason                                 | Value                                                                     |
+| ------------------- | -------------------------------------- | ------------------------------------------------------------------------- |
+| GSUITE_APP_PASSWORD | To send emails from your Gmail account | The password generated to access yout G-Suite account                     |
+| GSUITE_EMAIL        | To send emails from your Gmail account | Your G-Suite email address                                                |
+| REDIS_URL           | To access the redis database.          | If no URL is provided, the server will connect to a local redis instance. |
+| SECRET_API_KEY      | Used to make admin API requests        | Anything secret and impossible to guess                                   |
 
-Now you're ready to rumble! :traffic_light:
+### Hosting on Heroku
 
-## Documentation
-
-- [Commands](./docs/general/commands.md): Getting the most out of this boilerplate
-
-## [Demo](https://react-next-boilerplate.herokuapp.com)
-
-## Code of Conduct
-
-React Next Boilerplate is dedicated to building a welcoming, diverse, safe community. We expect everyone participating in the React Next Boilerplate community to abide by our [Code of Conduct](./CODE_OF_CONDUCT.md). Please read it. Please follow it. In the React Next Boilerplate community, we work hard to build each other up and create amazing things together.
+To host this on Heroku, you will need to add the [Heroku-redis Add-on](https://devcenter.heroku.com/articles/heroku-redis). Doing so will create a the REDIS_URL environment variable required to connect to the DB.
 
 ## Contributing
 
-Thank you for your interest in contributing; we are delighted you want to help out. We have a [contributing guide](./CONTRIBUTING.md) to help you get started.
-
-## License
-
-This project is licensed under the MIT license, Copyright (c) 2019 Jorge Luis Calleja Alvarado. For more information see [project license](./LICENSE).
-
-## Authors
-
-- Jorge Luis Calleja Alvarado ([@wootsbot](https://twitter.com/wootsbot)) – [React Next Boilerplate](https://www.reactnextboilerplate.com/)
+Contributions are welcome. Please fork and submit a PR if you want to add or change a featurej.
