@@ -3,6 +3,7 @@ import nextConfig from '../next.config';
 import seo from './seo';
 import applySecurityPractises from './security';
 import api from './api/api';
+import appConfig from 'helpers/appConfig';
 
 const express = require('express');
 const next = require('next');
@@ -45,5 +46,5 @@ const signale = new Signale(options);
   server.get('*', (req, res) => handle(req, res));
 
   await server.listen(port);
-  signale.success(`<> React Next Boilerplate ready on localhost:${port}`);
+  signale.success(`> ${appConfig.projectTitle} ready on http://localhost:${port}`);
 })();

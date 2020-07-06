@@ -49,7 +49,7 @@ module.exports = {
         },
         {
           property: 'og:logo',
-          content: `https://${domain}/favicon.ico`,
+          content: `https://${domain}/static/favicon/apple-touch-icon.png`,
         },
         { property: 'og:locale', content: 'en_GB' },
         {
