@@ -15,8 +15,12 @@ if (process.env.GSUITE_EMAIL && process.env.GSUITE_APP_PASSWORD) {
   transporter = nodemailer.createTransport(mailConfig);
 } else {
   transporter = {
-    sendMail: (obj, cb) => {
-      logger.log(obj);
+    sendMail: (email, cb) => {
+      if (!email.to) {
+        cb(new Error('No recipient set'));
+        return;
+      }
+      logger.log(email);
       cb();
     },
   };
