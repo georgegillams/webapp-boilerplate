@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import PageTitle from 'components/PageTitle';
-import { DebugObject, LoadingCover } from 'gg-components/Auth';
+import { LoadingCover } from 'gg-components/LoadingCover';
+import { DebugObject } from 'gg-components/DebugObject';
 import { Paragraph } from 'gg-components/Typography';
 import Button from 'components/Button';
 import { setPostLoginRedirect } from 'utils/storageHelpers';
