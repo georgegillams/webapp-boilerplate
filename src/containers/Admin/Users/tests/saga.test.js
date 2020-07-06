@@ -29,59 +29,22 @@ describe('AdminUsers saga', () => {
     expect(takeLatestDescriptor).toEqual(takeLatest(requestMagicLink.TRIGGER, doRequestMagicLink));
   });
 
-  // TODO Split this up into separate test regions, one for each generator
-  describe('admin user actions', () => {
+  describe('load actions', () => {
     let loadGenerator;
-    let removeGenerator;
-    let requestGenerator;
-    let createGenerator;
-    let updateGenerator;
 
-    const loadResponse = {
+    const response = {
       users: ['user1', 'user2'],
-      status: 200,
-    };
-    const removeResponse = {
-      success: 'User removed',
-      status: 200,
-    };
-    const requestResponse = {
-      success: 'Magic link sent',
-      status: 200,
-    };
-    const createResponse = {
-      success: 'User created',
-      status: 200,
-    };
-    const updateResponse = {
-      success: 'User updated',
       status: 200,
     };
 
     beforeEach(() => {
       loadGenerator = doLoad();
-      removeGenerator = doRemove();
-      requestGenerator = doRequestMagicLink();
-      createGenerator = doCreate();
-      updateGenerator = doUpdate();
 
-      const selectLoadDescriptor = loadGenerator.next().value;
-      const selectRemoveDescriptor = removeGenerator.next().value;
-      const selectRequestDescriptor = requestGenerator.next().value;
-      const selectCreateDescriptor = createGenerator.next().value;
-      const selectUpdateDescriptor = updateGenerator.next().value;
-      expect(
-        selectLoadDescriptor +
-          selectRemoveDescriptor +
-          selectRequestDescriptor +
-          selectCreateDescriptor +
-          selectUpdateDescriptor
-      ).toMatchSnapshot();
+      const selectDescriptor = loadGenerator.next().value;
+      expect(selectDescriptor).toMatchSnapshot();
     });
 
-    // #region load
     it('Should call load.success on successful API call', () => {
-      const response = loadResponse;
       loadGenerator.next();
       const putSuccess = loadGenerator.next(response).value;
       loadGenerator.next();
@@ -108,11 +71,24 @@ describe('AdminUsers saga', () => {
 
       expect(putFailure).toEqual(put(load.failure(response)));
     });
-    // #endregion load
+  });
 
-    // #region remove
+  describe('remove actions', () => {
+    let removeGenerator;
+
+    const response = {
+      success: 'User removed',
+      status: 200,
+    };
+
+    beforeEach(() => {
+      removeGenerator = doRemove();
+
+      const selectDescriptor = removeGenerator.next().value;
+      expect(selectDescriptor).toMatchSnapshot();
+    });
+
     it('Should call remove.success on successful API call', () => {
-      const response = removeResponse;
       removeGenerator.next({ userToRemove: { id: 'u1' } });
       removeGenerator.next();
       const putSuccess = removeGenerator.next(response).value;
@@ -122,12 +98,10 @@ describe('AdminUsers saga', () => {
     });
 
     it('Should call load.trigger on successful API call', () => {
-      const response = removeResponse;
       removeGenerator.next({ userToRemove: { id: 'u1' } });
       removeGenerator.next();
       removeGenerator.next(response);
       const putSuccess = removeGenerator.next().value;
-      removeGenerator.next();
 
       expect(putSuccess).toEqual(put(load.trigger()));
     });
@@ -153,11 +127,24 @@ describe('AdminUsers saga', () => {
 
       expect(putFailure).toEqual(put(remove.failure(response)));
     });
-    // #endregion remove
+  });
 
-    // #region request
+  describe('request actions', () => {
+    let requestGenerator;
+
+    const response = {
+      success: 'Magic link sent',
+      status: 200,
+    };
+
+    beforeEach(() => {
+      requestGenerator = doRequestMagicLink();
+
+      const selectDescriptor = requestGenerator.next().value;
+      expect(selectDescriptor).toMatchSnapshot();
+    });
+
     it('Should call requestMagicLink.success on successful API call', () => {
-      const response = requestResponse;
       requestGenerator.next({ userToLogIn: { id: 'u1' } });
       requestGenerator.next();
       const putSuccess = requestGenerator.next(response).value;
@@ -187,11 +174,24 @@ describe('AdminUsers saga', () => {
 
       expect(putFailure).toEqual(put(requestMagicLink.failure(response)));
     });
-    // #endregion request
+  });
 
-    // #region create
+  describe('create actions', () => {
+    let createGenerator;
+
+    const response = {
+      success: 'User created',
+      status: 200,
+    };
+
+    beforeEach(() => {
+      createGenerator = doCreate();
+
+      const selectDescriptor = createGenerator.next().value;
+      expect(selectDescriptor).toMatchSnapshot();
+    });
+
     it('Should call create.success on successful API call', () => {
-      const response = createResponse;
       createGenerator.next({ userToCreate: { id: 'u1' } });
       createGenerator.next();
       const putSuccess = createGenerator.next(response).value;
@@ -201,7 +201,6 @@ describe('AdminUsers saga', () => {
     });
 
     it('Should call load.trigger on successful API call', () => {
-      const response = createResponse;
       createGenerator.next({ userToCreate: { id: 'u1' } });
       createGenerator.next();
       createGenerator.next(response);
@@ -232,11 +231,24 @@ describe('AdminUsers saga', () => {
 
       expect(putFailure).toEqual(put(create.failure(response)));
     });
-    // #endregion create
+  });
 
-    // #region update
+  describe('update actions', () => {
+    let updateGenerator;
+
+    const response = {
+      success: 'User updated',
+      status: 200,
+    };
+
+    beforeEach(() => {
+      updateGenerator = doUpdate();
+
+      const selectDescriptor = updateGenerator.next().value;
+      expect(selectDescriptor).toMatchSnapshot();
+    });
+
     it('Should call update.success on successful API call', () => {
-      const response = updateResponse;
       updateGenerator.next({ userToUpdate: { id: 'u1' } });
       updateGenerator.next();
       const putSuccess = updateGenerator.next(response).value;
@@ -246,12 +258,10 @@ describe('AdminUsers saga', () => {
     });
 
     it('Should call load.trigger on successful API call', () => {
-      const response = updateResponse;
       updateGenerator.next({ userToUpdate: { id: 'u1' } });
       updateGenerator.next();
       updateGenerator.next(response);
       const putSuccess = updateGenerator.next().value;
-      updateGenerator.next();
 
       expect(putSuccess).toEqual(put(load.trigger()));
     });
@@ -277,6 +287,5 @@ describe('AdminUsers saga', () => {
 
       expect(putFailure).toEqual(put(update.failure(response)));
     });
-    // #endregion update
   });
 });
