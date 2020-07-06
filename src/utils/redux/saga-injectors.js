@@ -6,7 +6,7 @@ import isString from 'lodash/isString';
 import conformsTo from 'lodash/conformsTo';
 
 import checkStore from './check-store';
-import { DAEMON, ONCE_TILL_UNMOUNT, RESTART_ON_REMOUNT } from './constants';
+import { DAEMON, ONCE_TILL_UNMOUNT, RESTART_ON_REMOUNT } from '../constants';
 
 const allowedModes = [RESTART_ON_REMOUNT, DAEMON, ONCE_TILL_UNMOUNT];
 

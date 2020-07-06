@@ -4,16 +4,16 @@ import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
-import { getShowcases } from './actions';
-import { selectShowcases } from './selectors';
+import { loadShowcases } from './actions';
+import { selectShowcasesState } from './selectors';
 import Home from './Container';
 
 const mapStateToProps = createStructuredSelector({
-  showcasesData: selectShowcases(),
+  showcasesState: selectShowcasesState(),
 });
 
 export function mapDispatchToProps(dispatch) {
-  return { getShowcases: () => dispatch(getShowcases()) };
+  return { loadShowcases: () => dispatch(loadShowcases()) };
 }
 
 const withConnect = connect(mapStateToProps, mapDispatchToProps);

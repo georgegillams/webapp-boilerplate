@@ -1,18 +1,17 @@
 import { memo } from 'react';
-import { connect } from 'react-redux';
+
 import { compose } from 'redux';
+import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
-import Container from './Container';
+import Home from './Container';
 
-// import appSelectors from 'containers/App/selectors';
-import { mapSelectors } from 'utils/redux-definitions/selectors';
+const mapStateToProps = createStructuredSelector({});
 
-const mapDispatchToProps = () => ({});
-
-// const mapStateToProps = createStructuredSelector(mapSelectors(appSelectors));
-const mapStateToProps = createStructuredSelector(mapSelectors([]));
+export function mapDispatchToProps(dispatch) {
+  return {};
+}
 
 const withConnect = connect(mapStateToProps, mapDispatchToProps);
 
-export default compose(withConnect, memo)(Container);
+export default compose(withConnect, memo)(Home);

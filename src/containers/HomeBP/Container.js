@@ -1,28 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { useInjectReducer } from 'utils/inject-reducer';
-import { useInjectSaga } from 'utils/inject-saga';
+import { KEY } from './constants';
+import { useInjectReducer } from 'utils/redux/inject-reducer';
+import { useInjectSaga } from 'utils/redux/inject-saga';
 
 import Showcases from 'components/Showcases';
 
 import saga from './saga';
 import reducer from './reducer';
 
-const Home = ({ getShowcases, showcasesData, ...rest }) => {
-  useInjectSaga({ key: 'showcases', saga });
-  useInjectReducer({ key: 'showcases', reducer });
+const Home = ({ loadShowcases, showcasesState, ...rest }) => {
+  useInjectSaga({ key: KEY, saga });
+  useInjectReducer({ key: KEY, reducer });
 
   return (
     <div {...rest}>
-      <Showcases onGetShowcases={getShowcases} data={showcasesData} />
+      <Showcases onGetShowcases={loadShowcases} data={showcasesState} />
     </div>
   );
 };
 
 Home.propTypes = {
-  showcasesData: PropTypes.object,
-  getShowcases: PropTypes.func,
+  showcasesState: PropTypes.object,
+  loadShowcases: PropTypes.func,
 };
 
 export default Home;

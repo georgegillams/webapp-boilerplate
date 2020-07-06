@@ -1,5 +1,5 @@
 import React from 'react';
-import { Global, css } from '@emotion/core';
+import { Global } from '@emotion/core';
 import { extractCritical } from 'emotion-server';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
@@ -15,20 +15,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Global
-          styles={css`
-            ::selection {
-              background-color: #26bd5a;
-              color: #fff;
-            }
-            body,
-            html {
-              margin: 0;
-              padding: 0;
-              font-family: 'Inter';
-            }
-          `}
-        />
+        <Global />
 
         <Head>
           <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png" />

@@ -3,7 +3,7 @@ import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
 
 import { getShowcases } from '../actions';
-import configureStore from 'utils/configure-store';
+import configureStore from 'utils/redux/configure-store';
 
 import { Home, mapDispatchToProps } from '..';
 
