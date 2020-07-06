@@ -8,11 +8,11 @@ import { cssModules } from 'gg-components/helpers/cssModules';
 const getClassName = cssModules(STYLES);
 
 const CommonLayout = props => {
-  const { children } = props;
+  const { children, ...rest } = props;
 
   return (
     <>
-      <PageContainer id="mainScrollView" className={getClassName('common-layout__grow')}>
+      <PageContainer id="mainScrollView" className={getClassName('common-layout__grow')} {...rest}>
         {children}
       </PageContainer>
       <Footer />
