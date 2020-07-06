@@ -13,7 +13,7 @@ test('create analytics unauthenticated - adds data to collection', () => {
   const req = {
     cookies: {},
     headers: {},
-    connection: { remoteAddress: 'remoteAddress1' },
+    connection: { remoteAddress: '1.2.3.4' },
     body: {
       type: 'type1',
       url: 'url1',
@@ -30,7 +30,7 @@ test('create analytics unauthenticated - adds data to collection', () => {
     .then(() => dbLoad({ redisKey: 'analytics', includeOwnerUname: true }))
     .then(results => {
       expect(results.length).toBe(1);
-      expect(results[0].ipAddress).toBe('remoteAddress1');
+      expect(results[0].ipAddressPrefix).toBe('1.2.X.X');
       expect(results[0].browser).toBe('browser1');
       expect(results[0].url).toBe('url1');
       expect(results[0].authorId).toBe(undefined);
@@ -43,7 +43,7 @@ test('create analytics unauthenticated with forwarded header - uses correct IP a
   const req = {
     cookies: {},
     headers: {
-      'x-forwarded-for': 'remoteAddress2',
+      'x-forwarded-for': '5.6.7.8',
     },
     connection: { remoteAddress: 'remoteAddress0' },
     body: {
@@ -62,7 +62,7 @@ test('create analytics unauthenticated with forwarded header - uses correct IP a
     .then(() => dbLoad({ redisKey: 'analytics', includeOwnerUname: true }))
     .then(results => {
       expect(results.length).toBe(1);
-      expect(results[0].ipAddress).toBe('remoteAddress2');
+      expect(results[0].ipAddressPrefix).toBe('5.6.X.X');
       expect(results[0].browser).toBe('browser2');
       expect(results[0].url).toBe('url2');
       expect(results[0].authorId).toBe(undefined);

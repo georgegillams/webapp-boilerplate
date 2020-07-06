@@ -13,8 +13,14 @@ const PrivacyPolicy = () => {
       <PageTitle name="Privacy policy">
         <Subsection name="Analytics">
           <Paragraph>
-            This site collects basic analytics information, namely the URL paths you visit within the site. This is
-            anonymous and never shared with third-parties.
+            This site collects basic analytics information, namely the URL paths you visit within the site, and
+            information about the device you are using. This is never shared with third-parties and never used to track
+            you across other services.
+          </Paragraph>
+          <br />
+          <Paragraph>
+            The information collected about your device includes browser, browser version, OS, OS version, and the first
+            part of your IP address which gives a very, very rough location of access.
           </Paragraph>
         </Subsection>
         <Subsection name="Accounts">
