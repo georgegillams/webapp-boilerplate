@@ -46,9 +46,9 @@ describe('Account saga', () => {
 
     it('Should call logout.success on successful API call', () => {
       const response = logoutResponse;
-      logoutGenerator.next(response);
+      logoutGenerator.next();
       const putSuccess = logoutGenerator.next(response).value;
-      logoutGenerator.next(response);
+      logoutGenerator.next();
 
       expect(putSuccess).toEqual(put(logout.success(response)));
     });
@@ -59,9 +59,9 @@ describe('Account saga', () => {
         errorMessage: 'Error message',
         status: 500,
       };
-      logoutGenerator.next(response);
+      logoutGenerator.next();
       const putSuccess = logoutGenerator.next(response).value;
-      logoutGenerator.next(response);
+      logoutGenerator.next();
 
       expect(putSuccess).toEqual(put(logout.failure(response)));
     });
@@ -75,9 +75,9 @@ describe('Account saga', () => {
 
     it('Should call requestVerificationEmail.success on successful API call', () => {
       const response = requestVerificationEmailResponse;
-      requestVerificationEmailGenerator.next(response);
+      requestVerificationEmailGenerator.next();
       const putSuccess = requestVerificationEmailGenerator.next(response).value;
-      requestVerificationEmailGenerator.next(response);
+      requestVerificationEmailGenerator.next();
 
       expect(putSuccess).toEqual(put(requestVerificationEmail.success(response)));
     });
@@ -88,9 +88,9 @@ describe('Account saga', () => {
         errorMessage: 'Error message',
         status: 500,
       };
-      requestVerificationEmailGenerator.next(response);
+      requestVerificationEmailGenerator.next();
       const putSuccess = requestVerificationEmailGenerator.next(response).value;
-      requestVerificationEmailGenerator.next(response);
+      requestVerificationEmailGenerator.next();
 
       expect(putSuccess).toEqual(put(requestVerificationEmail.failure(response)));
     });

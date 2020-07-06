@@ -75,7 +75,7 @@ describe('AdminUsers saga', () => {
       };
       loadGenerator.next();
       const putFailure = loadGenerator.next(response).value;
-      loadGenerator.next(response);
+      loadGenerator.next();
 
       expect(putFailure).toEqual(put(load.failure(response)));
     });

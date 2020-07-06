@@ -33,9 +33,9 @@ describe('loginRequest Saga', () => {
 
     it('Should call login.success on successful API call', () => {
       loginGenerator.next({ credentials: {} });
-      loginGenerator.next(response);
+      loginGenerator.next();
       const putSuccess = loginGenerator.next(response).value;
-      loginGenerator.next(response);
+      loginGenerator.next();
 
       expect(putSuccess).toEqual(put(login.success(response)));
     });
@@ -47,9 +47,9 @@ describe('loginRequest Saga', () => {
         status: 500,
       };
       loginGenerator.next({ credentials: {} });
-      loginGenerator.next(response);
+      loginGenerator.next();
       const putSuccess = loginGenerator.next(response).value;
-      loginGenerator.next(response);
+      loginGenerator.next();
 
       expect(putSuccess).toEqual(put(login.failure(response)));
     });

@@ -32,9 +32,9 @@ describe('Authenticator saga', () => {
     });
 
     it('Should call loadAuth.success on successful API call', () => {
-      loadAuthGenerator.next(response);
+      loadAuthGenerator.next();
       const putSuccess = loadAuthGenerator.next(response).value;
-      loadAuthGenerator.next(response);
+      loadAuthGenerator.next();
 
       expect(putSuccess).toEqual(put(loadAuth.success(response)));
     });

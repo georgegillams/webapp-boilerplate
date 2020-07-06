@@ -36,9 +36,9 @@ describe('loadShowcasesRequest Saga', () => {
     });
 
     it('Should loadShowcasesRequest be success', () => {
-      loadShowcasesGenerator.next(response);
+      loadShowcasesGenerator.next();
       const putSuccess = loadShowcasesGenerator.next(response).value;
-      loadShowcasesGenerator.next(response);
+      loadShowcasesGenerator.next();
 
       expect(putSuccess).toEqual(put(loadShowcases.success(response)));
     });
