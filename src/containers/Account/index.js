@@ -15,12 +15,14 @@ import reducer from './reducer';
 import { getShowcases } from './actions';
 import { selectShowcases } from './selectors';
 
-export function Home({ getShowcases, showcasesData }) {
+export function Home({ getShowcases, showcasesData, ...rest }) {
   useInjectSaga({ key: 'showcases', saga });
   useInjectReducer({ key: 'showcases', reducer });
 
+  delete rest.namespacesRequired;
+
   return (
-    <div>
+    <div {...rest}>
       <Showcases onGetShowcases={getShowcases} data={showcasesData} />
     </div>
   );

@@ -7,7 +7,7 @@ export class Page extends React.PureComponent {
   render() {
     return (
       <CommonLayout>
-        <Home {...this.props} />
+        <Home style={{ background: 'black' }} {...this.props} />
       </CommonLayout>
     );
   }
