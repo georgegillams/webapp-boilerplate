@@ -5,22 +5,27 @@ import Link from 'next/link';
 import HelperFunctions from 'helpers/HelperFunctions';
 
 const Card = props => {
-  const { href } = props;
+  const { href, scroll, ...rest } = props;
   const hrefExternal = href && HelperFunctions.includes(href, 'http');
 
   if (hrefExternal) {
-    return <GGCard {...props} />;
+    return <GGCard href={href} {...rest} />;
   }
 
   return (
-    <Link href={href} passHref>
-      <GGCard {...props} />
+    <Link href={href} scroll={scroll} passHref>
+      <GGCard href={href} {...rest} />
     </Link>
   );
 };
 
 Card.propTypes = {
   href: PropTypes.string.isRequired,
+  scroll: PropTypes.bool,
+};
+
+Card.defaultProps = {
+  scroll: true,
 };
 
 export default Card;
