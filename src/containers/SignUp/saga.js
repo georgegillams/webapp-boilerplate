@@ -4,6 +4,7 @@ import request from 'utils/request';
 import apiStructure from 'helpers/apiStructure';
 import { selectState } from './selectors';
 
+import { setUser } from '../Authenticator/actions';
 import { signUp } from './actions';
 
 export function* doSignUp() {
@@ -27,7 +28,7 @@ export function* doSignUp() {
       yield put(signUp.failure(result));
     } else {
       yield put(signUp.success(result));
-      // TODO yield put(setUser(signUpResult));
+      yield put(setUser.trigger(result));
     }
   } catch (err) {
     yield put(signUp.failure(err));

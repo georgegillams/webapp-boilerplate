@@ -21,11 +21,6 @@ const NavigationBarWrapper = props => {
 
   const menuItems = [
     <NavigationItem key="home" name="Home" linkUrl="/" />,
-    <NavigationItem key="blog" name="Blog" linkUrl="/blog" />,
-    <NavigationItem key="photography" name="Photography" linkUrl="/photography" />,
-    <NavigationItem key="work" name="Work" linkUrl="/work" />,
-    <NavigationItem key="contact" name="Contact" linkUrl="/contact" />,
-    <NavigationItem key="github" name="Github" linkUrl="https://github.com/georgegillams" hrefExternal />,
     adminItem,
     accountItem,
     <NavigationItem key="sitemap" name="Site map" linkUrl="/sitemap" />,

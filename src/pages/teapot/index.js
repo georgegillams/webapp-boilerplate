@@ -12,7 +12,9 @@ const Page = props => {
 };
 
 Page.getInitialProps = async ({ res }) => {
-  res.status(418);
+  if (res) {
+    res.status(418);
+  }
   return {};
 };
 

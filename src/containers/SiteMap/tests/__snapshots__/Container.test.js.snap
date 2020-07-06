@@ -104,7 +104,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       <br />
       <a
         class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
-        href="/page-not-found"
+        href="/404"
       >
         404 error page - not found
       </a>
@@ -194,27 +194,33 @@ exports[`<SiteMap /> should render correctly 1`] = `
       >
         Redirects 👉
       </h2>
-      <a
-        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
-        href="/codebase"
-      >
-        /codebase ⇒ https://github.com/georgegillams/webapp-boilerplate
-      </a>
-      <br />
-      <a
-        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
-        href="/wp-admin"
-      >
-        /wp-admin ⇒ /admin
-      </a>
-      <br />
-      <a
-        class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
-        href="/site-map"
-      >
-        /site-map ⇒ /sitemap
-      </a>
-      <br />
+      <div>
+        <a
+          class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+          href="/codebase"
+        >
+          /codebase ⇒ https://github.com/georgegillams/webapp-boilerplate
+        </a>
+        <br />
+      </div>
+      <div>
+        <a
+          class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+          href="/wp-admin"
+        >
+          /wp-admin ⇒ /admin
+        </a>
+        <br />
+      </div>
+      <div>
+        <a
+          class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+          href="/site-map"
+        >
+          /site-map ⇒ /sitemap
+        </a>
+        <br />
+      </div>
     </div>
   </div>
 </div>
