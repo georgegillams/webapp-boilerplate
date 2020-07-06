@@ -5,6 +5,7 @@ import { Paragraph } from 'gg-components/Typography';
 import PageTitle from 'components/PageTitle';
 import STYLES from './debug.scss';
 import { cssModules } from 'gg-components/helpers/cssModules';
+import { DEBUG_SHOW_PAGE_CONTAINER_KEY, DEBUG_SHOW_DEBUG_INFORMATION_KEY } from 'helpers/storageConstants';
 
 const getClassName = cssModules(STYLES);
 
@@ -46,13 +47,13 @@ const Debug = props => (
       <StatusControl
         className={getClassName('debug__checkbox')}
         name="Show session debug views"
-        storageKey="showSessionDebugViews"
+        storageKey={DEBUG_SHOW_DEBUG_INFORMATION_KEY}
       />
       <br />
       <StatusControl
         className={getClassName('debug__checkbox')}
         name="Show page container debug colours"
-        storageKey="showPageContainerDebugColor"
+        storageKey={DEBUG_SHOW_PAGE_CONTAINER_KEY}
       />
       <br />
       <Paragraph>Note that changes will not take effect until you reload the page.</Paragraph>

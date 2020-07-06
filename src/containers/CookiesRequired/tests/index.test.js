@@ -31,7 +31,7 @@ describe('<CookiesRequired />', () => {
       <Provider store={store}>
         <CookiesRequired
           reason="some reason"
-          rePromptConsent={spy}
+          setConsentReason={spy}
           consentState={{
             ...initialConsentState,
           }}
