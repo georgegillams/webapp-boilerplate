@@ -5,13 +5,17 @@ exports[`<Logo /> Should render correctly 1`] = `
   <div
     class="logo__container"
   >
-    <h1
-      aria-label="Home page"
-      class="logo__heading"
-      role="button"
+    <a
+      href="/"
     >
-      LOGO
-    </h1>
+      <h1
+        aria-label="Home page"
+        class="logo__heading"
+        role="button"
+      >
+        LOGO
+      </h1>
+    </a>
   </div>
 </div>
 `;
@@ -21,13 +25,17 @@ exports[`<Logo /> Should render correctly animated 1`] = `
   <div
     class="logo__container"
   >
-    <h1
-      aria-label="Home page"
-      class="logo__heading logo__subheading--animated"
-      role="button"
+    <a
+      href="/"
     >
-      LOGO
-    </h1>
+      <h1
+        aria-label="Home page"
+        class="logo__heading logo__subheading--animated"
+        role="button"
+      >
+        LOGO
+      </h1>
+    </a>
   </div>
 </div>
 `;
@@ -37,13 +45,17 @@ exports[`<Logo /> Should render correctly pride 1`] = `
   <div
     class="logo__container"
   >
-    <h1
-      aria-label="Home page"
-      class="logo__heading logo__heading--pride"
-      role="button"
+    <a
+      href="/"
     >
-      LOGO
-    </h1>
+      <h1
+        aria-label="Home page"
+        class="logo__heading logo__heading--pride"
+        role="button"
+      >
+        LOGO
+      </h1>
+    </a>
   </div>
 </div>
 `;
@@ -53,13 +65,17 @@ exports[`<Logo /> Should render correctly with custom className 1`] = `
   <div
     class="logo__container test-custom-classname"
   >
-    <h1
-      aria-label="Home page"
-      class="logo__heading"
-      role="button"
+    <a
+      href="/"
     >
-      LOGO
-    </h1>
+      <h1
+        aria-label="Home page"
+        class="logo__heading"
+        role="button"
+      >
+        LOGO
+      </h1>
+    </a>
   </div>
 </div>
 `;
