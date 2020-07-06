@@ -1,0 +1,26 @@
+@import '~utils/tokens';
+
+.page-container {
+  &__container {
+    display: flow-root;
+    width: 100%;
+    max-width: 60rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
+
+    @include bpk-breakpoint-tablet {
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
+
+    &--debug {
+      background-color: orange;
+
+      @media (prefers-color-scheme: dark) {
+        background-color: darkorange;
+      }
+    }
+  }
+}

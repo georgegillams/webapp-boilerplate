@@ -29,9 +29,7 @@ class Srr extends App {
         <Provider store={reduxStore}>
           <CacheProvider value={cache}>
             <Navigation />
-            <main id="mainScrollView">
-              <Component {...pageProps} />
-            </main>
+            <Component {...pageProps} />
           </CacheProvider>
         </Provider>
       </React.StrictMode>
