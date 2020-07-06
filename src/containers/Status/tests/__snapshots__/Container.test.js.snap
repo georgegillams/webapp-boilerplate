@@ -15,13 +15,13 @@ exports[`<Status /> should render correctly 1`] = `
       <img
         alt="Build status"
         class="style__component"
-        src="https://github.com/georgegillams/georgegillams.co.uk/workflows/CI/badge.svg"
+        src="https://github.com/georgegillams/webapp-boilerplate/workflows/CI/badge.svg"
       />
       <br />
       <img
         alt="Dependency status"
         class="style__component"
-        src="https://img.shields.io/david/georgegillams/georgegillams.co.uk"
+        src="https://img.shields.io/david/georgegillams/webapp-boilerplate"
       />
       <div
         class="typography__main pages__component"
