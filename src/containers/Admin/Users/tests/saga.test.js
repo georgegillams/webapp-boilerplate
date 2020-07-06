@@ -1,8 +1,8 @@
 import { put, takeLatest } from 'redux-saga/effects';
 
-import { load, remove, requestMagicLink } from '../actions';
+import { load, remove, requestMagicLink, create, update } from '../actions';
 
-import saga, { doLoad, doRemove, doRequestMagicLink } from '../saga';
+import saga, { doLoad, doRemove, doRequestMagicLink, doCreate, doUpdate } from '../saga';
 
 describe('AdminUsers saga', () => {
   let mainSaga;
@@ -33,6 +33,8 @@ describe('AdminUsers saga', () => {
     let loadGenerator;
     let removeGenerator;
     let requestGenerator;
+    let createGenerator;
+    let updateGenerator;
 
     const loadResponse = {
       users: ['user1', 'user2'],
@@ -46,18 +48,37 @@ describe('AdminUsers saga', () => {
       success: 'Magic link sent',
       status: 200,
     };
+    const createResponse = {
+      success: 'User created',
+      status: 200,
+    };
+    const updateResponse = {
+      success: 'User updated',
+      status: 200,
+    };
 
     beforeEach(() => {
       loadGenerator = doLoad();
       removeGenerator = doRemove();
       requestGenerator = doRequestMagicLink();
+      createGenerator = doCreate();
+      updateGenerator = doUpdate();
 
       const selectLoadDescriptor = loadGenerator.next().value;
       const selectRemoveDescriptor = removeGenerator.next().value;
       const selectRequestDescriptor = requestGenerator.next().value;
-      expect(selectLoadDescriptor + selectRemoveDescriptor + selectRequestDescriptor).toMatchSnapshot();
+      const selectCreateDescriptor = createGenerator.next().value;
+      const selectUpdateDescriptor = updateGenerator.next().value;
+      expect(
+        selectLoadDescriptor +
+          selectRemoveDescriptor +
+          selectRequestDescriptor +
+          selectCreateDescriptor +
+          selectUpdateDescriptor
+      ).toMatchSnapshot();
     });
 
+    // #region load
     it('Should call load.success on successful API call', () => {
       const response = loadResponse;
       loadGenerator.next();
@@ -67,7 +88,7 @@ describe('AdminUsers saga', () => {
       expect(putSuccess).toEqual(put(load.success(response.users)));
     });
 
-    it('Should call verify.failure if API returns error', () => {
+    it('Should call load.failure if API returns error', () => {
       const response = {
         error: 'error_type',
         errorMessage: 'Error message',
@@ -80,13 +101,15 @@ describe('AdminUsers saga', () => {
       expect(putFailure).toEqual(put(load.failure(response)));
     });
 
-    it('Should call verify.failure if an exception occurs', () => {
+    it('Should call load.failure if an exception occurs', () => {
       const response = new Error('Some error');
       const putFailure = loadGenerator.throw(response).value;
 
       expect(putFailure).toEqual(put(load.failure(response)));
     });
+    // #endregion load
 
+    // #region remove
     it('Should call remove.success on successful API call', () => {
       const response = removeResponse;
       removeGenerator.next({ userToRemove: { id: 'u1' } });
@@ -129,7 +152,9 @@ describe('AdminUsers saga', () => {
 
       expect(putFailure).toEqual(put(remove.failure(response)));
     });
+    // #endregion remove
 
+    // #region request
     it('Should call requestMagicLink.success on successful API call', () => {
       const response = requestResponse;
       requestGenerator.next({ userToLogIn: { id: 'u1' } });
@@ -161,5 +186,96 @@ describe('AdminUsers saga', () => {
 
       expect(putFailure).toEqual(put(requestMagicLink.failure(response)));
     });
+    // #endregion request
+
+    // #region create
+    it('Should call create.success on successful API call', () => {
+      const response = createResponse;
+      createGenerator.next({ userToCreate: { id: 'u1' } });
+      createGenerator.next();
+      const putSuccess = createGenerator.next(response).value;
+      createGenerator.next();
+
+      expect(putSuccess).toEqual(put(create.success(response)));
+    });
+
+    it('Should call load.trigger on successful API call', () => {
+      const response = createResponse;
+      createGenerator.next({ userToCreate: { id: 'u1' } });
+      createGenerator.next();
+      createGenerator.next(response);
+      const putSuccess = createGenerator.next().value;
+      createGenerator.next();
+
+      expect(putSuccess).toEqual(put(load.trigger()));
+    });
+
+    it('Should call create.failure if API returns error', () => {
+      const response = {
+        error: 'error_type',
+        errorMessage: 'Error message',
+        status: 500,
+      };
+      createGenerator.next({ userToCreate: { id: 'u1' } });
+      createGenerator.next();
+      const putFailure = createGenerator.next(response).value;
+      createGenerator.next(response);
+
+      expect(putFailure).toEqual(put(create.failure(response)));
+    });
+
+    it('Should call create.failure if an exception occurs', () => {
+      const response = new Error('Some error');
+      createGenerator.next({ userToCreate: { id: 'u1' } });
+      const putFailure = createGenerator.throw(response).value;
+
+      expect(putFailure).toEqual(put(create.failure(response)));
+    });
+    // #endregion create
+
+    // #region update
+    it('Should call update.success on successful API call', () => {
+      const response = updateResponse;
+      updateGenerator.next({ userToUpdate: { id: 'u1' } });
+      updateGenerator.next();
+      const putSuccess = updateGenerator.next(response).value;
+      updateGenerator.next();
+
+      expect(putSuccess).toEqual(put(update.success(response)));
+    });
+
+    it('Should call load.trigger on successful API call', () => {
+      const response = updateResponse;
+      updateGenerator.next({ userToUpdate: { id: 'u1' } });
+      updateGenerator.next();
+      updateGenerator.next(response);
+      const putSuccess = updateGenerator.next().value;
+      updateGenerator.next();
+
+      expect(putSuccess).toEqual(put(load.trigger()));
+    });
+
+    it('Should call update.failure if API returns error', () => {
+      const response = {
+        error: 'error_type',
+        errorMessage: 'Error message',
+        status: 500,
+      };
+      updateGenerator.next({ userToUpdate: { id: 'u1' } });
+      updateGenerator.next();
+      const putFailure = updateGenerator.next(response).value;
+      updateGenerator.next(response);
+
+      expect(putFailure).toEqual(put(update.failure(response)));
+    });
+
+    it('Should call update.failure if an exception occurs', () => {
+      const response = new Error('Some error');
+      updateGenerator.next({ userToUpdate: { id: 'u1' } });
+      const putFailure = updateGenerator.throw(response).value;
+
+      expect(putFailure).toEqual(put(update.failure(response)));
+    });
+    // #endregion update
   });
 });

@@ -13,6 +13,7 @@ const LoginForm = props => {
   const onDataChangedCustom = newValue => {
     if (!newValue.email) {
       onDataChanged(newValue);
+      return;
     }
     const newEmail = newValue.email.split(' ').join('');
     onDataChanged({ ...newValue, email: newEmail });

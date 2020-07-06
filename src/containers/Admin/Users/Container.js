@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import PageTitle from 'components/PageTitle';
 import { DebugObject, LoadingCover } from 'gg-components/Auth';
 import { Button } from 'gg-components/Button';
-import { Paragraph, Section, SubSection } from 'gg-components/Typography';
+import { Paragraph, SubSection } from 'gg-components/Typography';
 import Card from 'components/Card';
 import { AdminOnly } from 'components/Walls';
 import { SplitDetailView } from 'components/SplitDetailView';
@@ -11,6 +11,7 @@ import { setPostLoginRedirect } from 'utils/storageHelpers';
 import Skeleton from './Skeleton';
 import { withRouter } from 'next/router';
 import UserFilter from './UserFilter';
+import { UserEditForm } from 'components/Forms';
 
 import { useInjectSaga } from 'utils/redux/inject-saga';
 import { useInjectReducer } from 'utils/redux/inject-reducer';
@@ -36,11 +37,14 @@ const AdminUsers = props => {
   const [filterAdminStatus, setFilterAdminStatus] = useState('all');
   const [filterEmailVerified, setFilterEmailVerified] = useState('all');
   const [filterName, setFilterName] = useState('');
+  const [newUser, setNewUser] = useState({});
 
   const {
     load,
     remove,
     requestMagicLink,
+    update,
+    create,
 
     adminUsersState,
     authenticatorState,
@@ -120,7 +124,27 @@ const AdminUsers = props => {
 
   const showUsers = !!filteredUsers && !!filteredUsers.length && !!filteredUsers.map;
 
-  const newUserForm = <Section name="Coming soon" />;
+  const newUserForm = (
+    <>
+      {adminUsersState && adminUsersState.createError && (
+        <>
+          <Paragraph>{adminUsersState.createError.errorMessage || 'Something went wrong'}</Paragraph>
+          <br />
+        </>
+      )}
+
+      <UserEditForm
+        showAdminControls
+        user={newUser}
+        onDataChanged={setNewUser}
+        onSubmit={() => {
+          create(newUser);
+        }}
+        submitLabel="Create user"
+        disabled={adminUsersState.creating}
+      />
+    </>
+  );
   const listView = (
     <div>
       <Card
@@ -153,17 +177,14 @@ const AdminUsers = props => {
 
     detailView = !detailUser ? null : (
       <AdminUsersAPIEntity
+        adminUserState={adminUsersState}
+        updateUser={update}
         entity={detailUser}
         highlighted={highlightId === detailUser.id}
         className={getClassName('pages__component')}
         onUserUpdateSuccess={() => {
           load();
         }}>
-        <br />
-        <br />
-        <Button large disabled={removing} href={`/admin/users/${detailUser.id}`}>
-          Edit user on dedicated page
-        </Button>
         <br />
         <br />
         <Button
@@ -271,6 +292,8 @@ const AdminUsers = props => {
           load,
           remove,
           requestMagicLink,
+          update,
+          create,
           adminUsersState,
           authenticatorState,
         }}
@@ -283,12 +306,18 @@ AdminUsers.propTypes = {
   load: PropTypes.func.isRequired,
   remove: PropTypes.func.isRequired,
   requestMagicLink: PropTypes.func.isRequired,
+  update: PropTypes.func.isRequired,
+  create: PropTypes.func.isRequired,
   adminUsersState: PropTypes.shape({
     loading: PropTypes.bool,
     loadError: PropTypes.object,
     users: PropTypes.arrayOf(PropTypes.object),
     removing: PropTypes.bool,
     requesting: PropTypes.bool,
+    creating: PropTypes.bool,
+    updating: PropTypes.bool,
+    createError: PropTypes.object,
+    updateError: PropTypes.object,
   }).isRequired,
   authenticatorState: PropTypes.shape({
     user: PropTypes.object,
