@@ -11,6 +11,7 @@ const { Signale } = require('signale');
 import bodyParser from 'body-parser';
 import fileupload from 'express-fileupload';
 import cookieParser from 'cookie-parser';
+import redirects from 'helpers/redirects';
 
 setConfig(nextConfig);
 
@@ -42,6 +43,12 @@ const signale = new Signale(options);
   server.use(seo);
   server.use('/api', api);
   server.use('/static', express.static('public/static'));
+
+  redirects.forEach(redirect => {
+    server.get(redirect.from, (req, res) => {
+      res.redirect(redirect.to);
+    });
+  });
 
   server.get('*', (req, res) => handle(req, res));
 
