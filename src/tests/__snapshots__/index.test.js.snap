@@ -3,9 +3,7 @@
 exports[`<HomePage /> should render correctly 1`] = `
 <div>
   <main>
-    <div
-      style="background: black;"
-    >
+    <div>
       <div
         class="css-1hvjfqy-Container e1vuap0q0"
         id="exampleGetApi"
