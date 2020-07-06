@@ -70,11 +70,12 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
       <div
         class="admin-navigation__card-container"
       >
-        <div
+        <a
           class="article-card article-card--narrow-compact admin-navigation__card"
+          href="/admin/analytics"
           linkurl="/admin/analytics"
           role="button"
-          tabindex="0"
+          style="text-decoration: none;"
         >
           <div
             class="card"
@@ -122,12 +123,13 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
               class="card__banner"
             />
           </div>
-        </div>
-        <div
+        </a>
+        <a
           class="article-card article-card--narrow-compact admin-navigation__card"
+          href="/admin/notifications"
           linkurl="/admin/notifications"
           role="button"
-          tabindex="0"
+          style="text-decoration: none;"
         >
           <div
             class="card"
@@ -175,12 +177,13 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
               class="card__banner"
             />
           </div>
-        </div>
-        <div
+        </a>
+        <a
           class="article-card article-card--narrow-compact admin-navigation__card"
+          href="/admin/users"
           linkurl="/admin/users"
           role="button"
-          tabindex="0"
+          style="text-decoration: none;"
         >
           <div
             class="card"
@@ -228,7 +231,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
               class="card__banner"
             />
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </div>
