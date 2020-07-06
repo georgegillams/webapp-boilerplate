@@ -1,10 +1,10 @@
 import { put, takeLatest } from 'redux-saga/effects';
 
-import { getShowcases } from 'containers/Home/actions';
+import { loadShowcases } from '../actions';
 
-import dataShowcases, { getShowcasesRequest } from '../saga';
+import dataShowcases, { loadShowcasesRequest } from '../saga';
 
-describe('getShowcasesRequest Saga', () => {
+describe('loadShowcasesRequest Saga', () => {
   let mainSaga;
 
   beforeEach(() => {
@@ -13,11 +13,11 @@ describe('getShowcasesRequest Saga', () => {
 
   it('Should get list of showcases TRIGGER', () => {
     const takeLatestDescriptor = mainSaga.next().value;
-    expect(takeLatestDescriptor).toEqual(takeLatest(getShowcases.TRIGGER, getShowcasesRequest));
+    expect(takeLatestDescriptor).toEqual(takeLatest(loadShowcases.TRIGGER, loadShowcasesRequest));
   });
 
-  describe('getShowcases actions', () => {
-    let getShowcasesGenerate;
+  describe('loadShowcases actions', () => {
+    let loadShowcasesGenerate;
 
     const response = [
       {
@@ -29,25 +29,25 @@ describe('getShowcasesRequest Saga', () => {
     ];
 
     beforeEach(() => {
-      getShowcasesGenerate = getShowcasesRequest();
+      loadShowcasesGenerate = loadShowcasesRequest();
 
-      const selectDescriptor = getShowcasesGenerate.next().value;
+      const selectDescriptor = loadShowcasesGenerate.next().value;
       expect(selectDescriptor).toMatchSnapshot();
     });
 
-    it('Should getShowcasesRequest be success', () => {
-      getShowcasesGenerate.next(response);
-      const putShowcasesSuccess = getShowcasesGenerate.next(response).value;
-      getShowcasesGenerate.next(response);
+    it('Should loadShowcasesRequest be success', () => {
+      loadShowcasesGenerate.next(response);
+      const putShowcasesSuccess = loadShowcasesGenerate.next(response).value;
+      loadShowcasesGenerate.next(response);
 
-      expect(putShowcasesSuccess).toEqual(put(getShowcases.success(response)));
+      expect(putShowcasesSuccess).toEqual(put(loadShowcases.success(response)));
     });
 
-    it('Should getShowcasesRequest be failure', () => {
+    it('Should loadShowcasesRequest be failure', () => {
       const response = new Error('Some error');
-      const putShowcasesFailure = getShowcasesGenerate.throw(response).value;
+      const putShowcasesFailure = loadShowcasesGenerate.throw(response).value;
 
-      expect(putShowcasesFailure).toEqual(put(getShowcases.failure(response)));
+      expect(putShowcasesFailure).toEqual(put(loadShowcases.failure(response)));
     });
   });
 });

@@ -1,13 +1,12 @@
 import showcasesReducer from '../reducer';
-import { getShowcases } from '../actions';
+import { loadShowcases } from '../actions';
 
 describe('showcasesReducer', () => {
   let state;
 
   const showcases = {
-    loading: false,
-    fetched: false,
-    error: null,
+    loadingShowcases: false,
+    loadShowcasesError: null,
     showcases: [],
   };
 
@@ -21,33 +20,32 @@ describe('showcasesReducer', () => {
     expect(showcasesReducer(undefined, {})).toEqual(state);
   });
 
-  describe('getShowcases actions', () => {
-    it('should handle the action getShowcases.REQUEST correctly', () => {
+  describe('loadShowcases actions', () => {
+    it('should handle the action loadShowcases.REQUEST correctly', () => {
       const expectResult = {
         ...state,
-        loading: true,
+        loadingShowcases: true,
       };
 
-      expect(showcasesReducer(state, getShowcases.request())).toEqual(expectResult);
+      expect(showcasesReducer(state, loadShowcases.request())).toEqual(expectResult);
     });
 
-    it('should return the action getShowcases.SUCCESS correctly', () => {
+    it('should return the action loadShowcases.SUCCESS correctly', () => {
       const expectResult = {
         ...state,
-        fetched: true,
         showcases: [],
       };
 
-      expect(showcasesReducer(state, getShowcases.success({ data: [] }))).toEqual(expectResult);
+      expect(showcasesReducer(state, loadShowcases.success({ data: [] }))).toEqual(expectResult);
     });
 
-    it('should return the action getShowcases.FAILURE', () => {
+    it('should return the action loadShowcases.FAILURE', () => {
       const expectResult = {
         ...state,
-        error: 'error',
+        loadShowcasesError: 'some error',
       };
 
-      expect(showcasesReducer(state, getShowcases.failure('error'))).toEqual(expectResult);
+      expect(showcasesReducer(state, loadShowcases.failure('some error'))).toEqual(expectResult);
     });
   });
 });

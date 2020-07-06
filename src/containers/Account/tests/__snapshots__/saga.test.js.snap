@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`getShowcasesRequest Saga getShowcases actions Should getShowcasesRequest be failure 1`] = `
+exports[`loadShowcasesRequest Saga loadShowcases actions Should loadShowcasesRequest be failure 1`] = `
 Object {
   "@@redux-saga/IO": true,
   "combinator": false,
   "payload": Object {
     "action": Object {
-      "type": "app/Example/GET_SHOWCASES/REQUEST",
+      "type": "app/showcases/LOAD_SHOWCASES/REQUEST",
     },
     "channel": undefined,
   },
@@ -14,13 +14,13 @@ Object {
 }
 `;
 
-exports[`getShowcasesRequest Saga getShowcases actions Should getShowcasesRequest be success 1`] = `
+exports[`loadShowcasesRequest Saga loadShowcases actions Should loadShowcasesRequest be success 1`] = `
 Object {
   "@@redux-saga/IO": true,
   "combinator": false,
   "payload": Object {
     "action": Object {
-      "type": "app/Example/GET_SHOWCASES/REQUEST",
+      "type": "app/showcases/LOAD_SHOWCASES/REQUEST",
     },
     "channel": undefined,
   },

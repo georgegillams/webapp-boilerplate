@@ -8,10 +8,14 @@ exports[`<Home /> should render and match the snapshot 1`] = `
       id="exampleGetApi"
     >
       <button
-        class="css-67bxaj-ButonGetApi e1vuap0q1"
+        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
+        type="button"
       >
-        phrases.getShowcases
+        Get showcases
       </button>
+      <div
+        class="css-1bqe7xb-ShowcasesRow e1vuap0q1"
+      />
     </div>
   </div>
 </div>

@@ -1,11 +1,10 @@
-import { selectShowcases, selectShowcasesDomain } from '../selectors';
+import { selectShowcasesState, selectShowcasesDomain } from '../selectors';
 
 describe('selectShowcases', () => {
   it('should select the initialState state', () => {
     const initialState = {
-      loading: false,
-      fetched: false,
-      error: null,
+      loadingShowcases: false,
+      loadShowcasesError: null,
       showcases: [],
     };
 
@@ -16,9 +15,8 @@ describe('selectShowcases', () => {
 
   it('should select the showcases state', () => {
     const initialState = {
-      loading: false,
-      fetched: false,
-      error: null,
+      loadingShowcases: false,
+      loadShowcasesError: null,
       showcases: [
         { title: 'Auth0"', src: 'https://nextjs.org/static/images/showcases/auth0.jpg', link: 'https://auth0.com/' },
         {
@@ -30,11 +28,11 @@ describe('selectShowcases', () => {
     };
 
     const mockedState = {
-      ...initialState,
+      showcases: initialState,
     };
 
-    const selectShowcasesMock = selectShowcases();
+    const selectShowcasesMock = selectShowcasesState();
 
-    expect(selectShowcasesMock(mockedState)).toEqual(initialState.showcases);
+    expect(selectShowcasesMock(mockedState)).toEqual(initialState);
   });
 });

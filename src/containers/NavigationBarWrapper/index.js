@@ -8,7 +8,7 @@ import Home from './Container';
 
 const mapStateToProps = createStructuredSelector({});
 
-export function mapDispatchToProps(dispatch) {
+export function mapDispatchToProps() {
   return {};
 }
 
