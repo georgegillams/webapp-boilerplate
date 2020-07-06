@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { cssModules } from 'gg-components/helpers/cssModules';
-import { Paragraph, SubSection, PageTitle } from 'gg-components/Typography';
+import { Paragraph, SubSection } from 'gg-components/Typography';
+import PageTitle from 'components/PageTitle';
 import TextLink from 'components/TextLink';
 
 import STYLES from './not-found.scss';
@@ -17,7 +18,7 @@ const NotFound = props => {
 
   return (
     <main className={classNameFinal.join(' ')}>
-      <PageTitle className={getClassName('not-found__container')} name="Oops.">
+      <PageTitle className={getClassName('not-found__container')} name="Oops." pageTitle="404">
         <SubSection anchor={false}>
           <Paragraph>
             The page you&apos;re looking for doesn&apos;t exist, or you don&apos;t have permission to view it.

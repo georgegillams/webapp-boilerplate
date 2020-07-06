@@ -20,7 +20,7 @@ class Srr extends App {
     return (
       <React.StrictMode>
         <Head>
-          <title>{appConfig.app.title}</title>
+          <title>{appConfig.projectTitle}</title>
           {appConfig.app.head.meta.map(m => (
             <meta key={m.property} name={m.property} content={m.content} />
           ))}

@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { cssModules } from 'gg-components/helpers/cssModules';
-import { Paragraph, SubSection, PageTitle } from 'gg-components/Typography';
+import { Paragraph, SubSection } from 'gg-components/Typography';
+import PageTitle from 'components/PageTitle';
 
 import STYLES from './style.scss';
 
