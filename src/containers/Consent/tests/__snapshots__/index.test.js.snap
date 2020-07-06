@@ -11,3 +11,27 @@ exports[`<Consent /> should render correctly 1`] = `
   <div />
 </div>
 `;
+
+exports[`<Consent /> should render correctly with consent allowed 1`] = `
+<div>
+  <div />
+</div>
+`;
+
+exports[`<Consent /> should render correctly with consent deferred 1`] = `
+<div>
+  <div />
+</div>
+`;
+
+exports[`<Consent /> should render correctly with consent deferred and reason 1`] = `
+<div>
+  <div />
+</div>
+`;
+
+exports[`<Consent /> should render correctly with consent suppressed 1`] = `
+<div>
+  <div />
+</div>
+`;

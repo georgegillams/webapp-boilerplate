@@ -53,8 +53,9 @@ const Consent = props => {
 
   let cookieConsentPopup = null;
   if (
-    consentState.cookieConsent === CONSENT_STATE_UNSET ||
-    (consentState.cookieConsent === CONSENT_STATE_DEFERRED && consentState.cookieConsentReason)
+    !consentState.consentSuppressed &&
+    (consentState.cookieConsent === CONSENT_STATE_UNSET ||
+      (consentState.cookieConsent === CONSENT_STATE_DEFERRED && consentState.cookieConsentReason))
   ) {
     cookieConsentPopup = (
       <Modal
@@ -122,6 +123,7 @@ Consent.propTypes = {
   consentState: PropTypes.shape({
     cookieConsent: PropTypes.string,
     cookieConsentReason: PropTypes.string,
+    consentSuppressed: PropTypes.bool,
   }).isRequired,
 };
 
