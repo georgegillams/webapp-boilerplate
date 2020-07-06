@@ -29,10 +29,10 @@ const SignUp = props => {
 
     className,
   } = props;
-  const outerClassNameFinal = [];
+  const outerClassNames = [];
 
   if (className) {
-    outerClassNameFinal.push(className);
+    outerClassNames.push(className);
   }
   let preSubmitText = null;
   if (signUpState.signUpResult && signUpState.signUpResult.success) {
@@ -43,7 +43,7 @@ const SignUp = props => {
   }
 
   const page = (
-    <div className={outerClassNameFinal.join(' ')}>
+    <div className={outerClassNames.join(' ')}>
       <LoggedOutOnly user={authenticatorState.user}>
         <PageTitle name="Sign up">
           <SignUpForm
