@@ -3,9 +3,10 @@ import { selectState, selectDomain } from '../selectors';
 describe('selectShowcases', () => {
   it('should select the initialState state', () => {
     const initialState = {
-      loadingShowcases: false,
-      loadShowcasesError: null,
-      showcases: [],
+      cookiesAllowed: false,
+      loadingAuth: false,
+      loadAuthError: null,
+      user: null,
     };
 
     const mockedState = {};
@@ -15,20 +16,14 @@ describe('selectShowcases', () => {
 
   it('should select the showcases state', () => {
     const initialShowcasesState = {
-      loadingShowcases: false,
-      loadShowcasesError: null,
-      showcases: [
-        { title: 'Auth0"', src: 'https://nextjs.org/static/images/showcases/auth0.jpg', link: 'https://auth0.com/' },
-        {
-          link: 'https://marketplace.uber.com/',
-          title: 'Uber Marketplace',
-          src: 'https://nextjs.org/static/images/showcases/underbelly.jpg',
-        },
-      ],
+      cookiesAllowed: true,
+      loadingAuth: false,
+      loadAuthError: null,
+      user: { name: 'userName' },
     };
 
     const mockedState = {
-      showcases: initialShowcasesState,
+      authenticator: initialShowcasesState,
     };
 
     const selectShowcasesMock = selectState();

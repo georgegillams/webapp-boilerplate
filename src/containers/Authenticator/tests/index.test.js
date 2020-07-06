@@ -4,15 +4,16 @@ import { Provider } from 'react-redux';
 
 import configureStore from 'utils/redux/configure-store';
 
-import Home from '../Container';
+import Authenticator from '../index';
 
-describe('<Home />', () => {
+describe('<Authenticator />', () => {
   let store;
   const spy = jest.fn();
   const state = {
-    loadingShowcases: false,
-    loadShowcasesError: null,
-    showcases: [],
+    cookiesAllowed: false,
+    loadingAuth: false,
+    loadAuthError: null,
+    user: null,
   };
 
   beforeAll(() => {
@@ -22,7 +23,7 @@ describe('<Home />', () => {
   it('should render correctly', () => {
     const { container } = render(
       <Provider store={store}>
-        <Home loadShowcases={spy} showcasesState={state} />
+        <Authenticator loadAuth={spy} setCookiesAllowed={spy} authenticatorState={state} />
       </Provider>
     );
 

@@ -5,6 +5,7 @@ import { CacheProvider } from '@emotion/core';
 import { cache } from 'emotion';
 import Head from 'next/head';
 import App from 'next/app';
+import Authenticator from 'containers/Authenticator';
 
 import withReduxStore from 'utils/redux/with-redux-store';
 import appConfig from 'helpers/appConfig';
@@ -29,6 +30,7 @@ class Srr extends App {
         <Provider store={reduxStore}>
           <CacheProvider value={cache}>
             <Navigation />
+            <Authenticator />
             <Component {...pageProps} />
           </CacheProvider>
         </Provider>

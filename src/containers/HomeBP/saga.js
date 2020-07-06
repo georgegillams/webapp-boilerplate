@@ -20,6 +20,6 @@ export function* loadShowcasesRequest() {
   }
 }
 
-export default function* dataShowcases() {
+export default function* saga() {
   yield takeLatest(loadShowcases.TRIGGER, loadShowcasesRequest);
 }

@@ -4,18 +4,21 @@ import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
-import { loadShowcases } from './actions';
+import { setCookiesAllowed, loadAuth } from './actions';
 import { selectState } from './selectors';
-import Home from './Container';
+import Authenticator from './Container';
 
 const mapStateToProps = createStructuredSelector({
-  showcasesState: selectState(),
+  authenticatorState: selectState(),
 });
 
 export function mapDispatchToProps(dispatch) {
-  return { loadShowcases: payload => dispatch(loadShowcases(payload)) };
+  return {
+    setCookiesAllowed: payload => dispatch(setCookiesAllowed(payload)),
+    loadAuth: payload => dispatch(loadAuth(payload)),
+  };
 }
 
 const withConnect = connect(mapStateToProps, mapDispatchToProps);
 
-export default compose(withConnect, memo)(Home);
+export default compose(withConnect, memo)(Authenticator);
