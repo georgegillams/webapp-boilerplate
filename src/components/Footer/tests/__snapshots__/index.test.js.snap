@@ -25,7 +25,7 @@ exports[`<Footer /> Should render correctly 1`] = `
       class="footer__tech"
     >
       <div
-        class="typography__main typography--light typography--no-padding tech-specs__container"
+        class="typography__main typography--no-padding tech-specs__container"
       >
         Built in
         <a
@@ -35,7 +35,7 @@ exports[`<Footer /> Should render correctly 1`] = `
         >
           <img
             alt="React"
-            class="tech-specs__icon tech-specs__icon--light-inverted"
+            class="tech-specs__icon"
             height="5"
             src="IMAGE_MOCK"
             width="5"
@@ -49,7 +49,7 @@ exports[`<Footer /> Should render correctly 1`] = `
         >
           <img
             alt="Redux"
-            class="tech-specs__icon tech-specs__icon--light-inverted"
+            class="tech-specs__icon"
             height="5"
             src="IMAGE_MOCK"
             width="5"
@@ -63,7 +63,7 @@ exports[`<Footer /> Should render correctly 1`] = `
         >
           <img
             alt="Amazon Web Services"
-            class="tech-specs__icon tech-specs__icon--light-inverted"
+            class="tech-specs__icon"
             height="5"
             src="IMAGE_MOCK"
             style="margin-top: .8rem; max-width: 2.9rem;"
@@ -71,6 +71,22 @@ exports[`<Footer /> Should render correctly 1`] = `
           />
         </a>
       </div>
+    </div>
+    <div
+      class="footer-nav__container footer__nav"
+    >
+      <a
+        class="typography__main typography__link typography__link--text-link typography--no-padding typography--light typography--light--text-link typography--inline footer-nav__link footer__nav"
+        href="/sitemap"
+      >
+        Site map
+      </a>
+      <a
+        class="typography__main typography__link typography__link--text-link typography--no-padding typography--light typography--light--text-link typography--inline footer-nav__link footer__nav"
+        href="/status"
+      >
+        Status
+      </a>
     </div>
   </footer>
 </div>
@@ -101,7 +117,7 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
       class="footer__tech"
     >
       <div
-        class="typography__main typography--light typography--no-padding tech-specs__container"
+        class="typography__main typography--no-padding tech-specs__container"
       >
         Built in
         <a
@@ -111,7 +127,7 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
         >
           <img
             alt="React"
-            class="tech-specs__icon tech-specs__icon--light-inverted"
+            class="tech-specs__icon"
             height="5"
             src="IMAGE_MOCK"
             width="5"
@@ -125,7 +141,7 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
         >
           <img
             alt="Redux"
-            class="tech-specs__icon tech-specs__icon--light-inverted"
+            class="tech-specs__icon"
             height="5"
             src="IMAGE_MOCK"
             width="5"
@@ -139,7 +155,7 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
         >
           <img
             alt="Amazon Web Services"
-            class="tech-specs__icon tech-specs__icon--light-inverted"
+            class="tech-specs__icon"
             height="5"
             src="IMAGE_MOCK"
             style="margin-top: .8rem; max-width: 2.9rem;"
@@ -147,6 +163,22 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
           />
         </a>
       </div>
+    </div>
+    <div
+      class="footer-nav__container footer__nav"
+    >
+      <a
+        class="typography__main typography__link typography__link--text-link typography--no-padding typography--light typography--light--text-link typography--inline footer-nav__link footer__nav"
+        href="/sitemap"
+      >
+        Site map
+      </a>
+      <a
+        class="typography__main typography__link typography__link--text-link typography--no-padding typography--light typography--light--text-link typography--inline footer-nav__link footer__nav"
+        href="/status"
+      >
+        Status
+      </a>
     </div>
   </footer>
 </div>

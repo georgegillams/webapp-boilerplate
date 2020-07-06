@@ -2,6 +2,7 @@
 
 .tech-specs {
   &__container {
+    margin-top: 0.5rem;
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -17,32 +18,10 @@
     height: 100%;
     max-height: 2.3rem;
     padding: 0 0.5rem 0 0.2rem;
-    filter: opacity(70%);
+    filter: brightness(0) invert(1);
 
-    &--wide {
-      max-width: 3rem;
-    }
-
-    &--light {
-      filter: opacity(100%);
-
-      &:hover {
-        filter: opacity(80%);
-      }
-    }
-
-    &--light-inverted {
-      filter: brightness(0) invert(1);
-
-      &:hover {
-        filter: brightness(0) invert(1) opacity(90%);
-      }
-    }
-
-    &--no-light {
-      &:hover {
-        filter: opacity(90%);
-      }
+    &:hover {
+      filter: brightness(0) invert(1) opacity(70%);
     }
   }
 }
