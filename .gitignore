@@ -13,8 +13,7 @@ helpers/helpers
 server/helpers
 
 # runtime stuff
-server/server_content/greasemonkey
-server/server_content/data.json
+server/server_content
 
 # redis
 dump.rdb

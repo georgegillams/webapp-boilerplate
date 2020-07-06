@@ -9,7 +9,7 @@
     "build:clean": "rimraf ./build",
     "link-helpers": "npm run link-helpers:clean && ln -Ffs $(pwd)/helpers $(pwd)/src/helpers && ln -Ffs $(pwd)/helpers $(pwd)/server/helpers",
     "link-helpers:clean": "rm -f $(pwd)/src/helpers $(pwd)/server/helpers",
-    "dev": "redis-server & cross-env NODE_PATH=./server nodemon --ignore 'server/server_content' --ignore 'src/*' --ignore 'build/*' --exec babel-node --inspect ./server/app.js src",
+    "dev": "redis-server & cross-env NODE_PATH=./server SECRET_API_KEY=asdfghjkl nodemon --ignore 'server/server_content/*' --ignore 'src/*' --ignore 'build/*' --exec babel-node --inspect ./server/app.js src",
     "build": "npm run build:client && npm run build:server",
     "build:client": "next build",
     "build:server": "cross-env NODE_ENV=development babel -d ./build/server ./server -s --copy-files && cp next.config.js ./build",
