@@ -10,6 +10,9 @@ const environment = {
 }[NODE_ENV || 'development'];
 
 const projectName = 'WEBAPP_BOILERPLATE';
+const projectTitle = 'Web App Boilerplate';
+const projectDescription = 'Just some boilerplate for a web app';
+const projectDescriptionShort = 'just some boilerplate for a web app';
 const domain = 'webapp-boilerplate.georgegillams.co.uk';
 const port = PORT || 3000;
 const siteUrl = NODE_ENV === 'development' || PROJECT_UNDER_TEST ? `http://localhost:${port}` : `https://${domain}`;
@@ -19,40 +22,43 @@ module.exports = {
   host: process.env.HOST || 'localhost',
   port,
   projectName,
+  projectTitle,
+  projectDescription,
+  projectDescriptionShort,
   domain,
   siteUrl,
   apiEndpoint,
   app: {
     title: 'Web App Boilerplate - just some boilerplate for a web app',
     head: {
-      titleTemplate: 'Web App Boilerplate: %s',
+      titleTemplate: `${projectTitle}: %s`,
       meta: [
         { property: 'theme-color', content: '#025ca2' },
         {
           property: 'description',
-          content: 'just some boilerplate for a web app',
+          content: projectDescriptionShort,
         },
-        { property: 'og:site_name', content: 'Web App Boilerplate' },
+        { property: 'og:site_name', content: projectTitle },
         {
           property: 'og:image',
-          content: 'https://i.imgur.com/FLA0jkg.jpg',
+          content: 'https://via.placeholder.com/500x200.png?text=Placeholder',
         },
         {
           property: 'og:url',
-          content: 'https://webapp-boilerplate.georgegillams.co.uk/',
+          content: `https://${domain}/`,
         },
         {
           property: 'og:logo',
-          content: 'https://webapp-boilerplate.georgegillams.co.uk/favicon.ico',
+          content: `https://${domain}/favicon.ico`,
         },
         { property: 'og:locale', content: 'en_GB' },
         {
           property: 'og:title',
-          content: 'Web App Boilerplate - just some boilerplate for a web app',
+          content: `${projectTitle} ${projectDescriptionShort}`,
         },
         {
           property: 'og:description',
-          content: 'just some boilerplate for a web app',
+          content: projectDescription,
         },
         { property: 'og:card', content: 'summary' },
         { property: 'twitter:card', content: 'summary_large_image' },
