@@ -2,6 +2,7 @@
 
 import loadSingle from './loadSingle.js';
 
+import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
 import { dbCreate } from 'utils/database';
 import { NotFoundError } from 'utils/errors';
 import { clearDatabaseCollection, createUsersWithSessions } from 'utils/testUtils';
@@ -28,7 +29,7 @@ const createSomeValues = () => {
 
 test('load deleted notification as admin - returns value', () => {
   const req = {
-    cookies: { session: 'adminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'adminSessionKey1' },
     headers: {},
     body: {},
   };
@@ -45,7 +46,7 @@ test('load deleted notification as admin - returns value', () => {
 
 test('load deleted notification non-admin - throws not found error', () => {
   const req = {
-    cookies: { session: 'nonAdminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'nonAdminSessionKey1' },
     headers: {},
     body: {},
   };
@@ -83,7 +84,7 @@ test('load deleted notification unauthenticated - throws not found error', () =>
 
 test('load notification as admin - returns value', () => {
   const req = {
-    cookies: { session: 'adminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'adminSessionKey1' },
     headers: {},
     body: {},
   };
@@ -100,7 +101,7 @@ test('load notification as admin - returns value', () => {
 
 test('load notification non-admin - returns value', () => {
   const req = {
-    cookies: { session: 'nonAdminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'nonAdminSessionKey1' },
     headers: {},
     body: {},
   };

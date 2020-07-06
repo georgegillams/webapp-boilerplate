@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
 import load from './load.js';
 
 import { dbCreate } from 'utils/database';
@@ -56,12 +57,12 @@ test('load auth with no session - returns null user', () => {
 
 test('load auth with session - returns authenticated user', () => {
   const req1 = {
-    cookies: { session: 'sessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'sessionKey1' },
     headers: {},
     body: {},
   };
   const req2 = {
-    cookies: { session: 'sessionKey2' },
+    cookies: { [SESSION_COOKIE_KEY]: 'sessionKey2' },
     headers: {},
     body: {},
   };

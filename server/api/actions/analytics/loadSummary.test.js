@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
 import loadSummary from './loadSummary.js';
 
 import { dbCreate } from 'utils/database';
@@ -51,7 +52,7 @@ const createSomeValues = () => {
 
 test('load summary analytics admin - returns all values', () => {
   const req = {
-    cookies: { session: 'adminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'adminSessionKey1' },
     headers: {},
     body: {},
   };
@@ -69,7 +70,7 @@ test('load summary analytics admin - returns all values', () => {
 
 test('load summary analytics non-admin - throws auth error', () => {
   const req = {
-    cookies: { session: 'nonAdminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'nonAdminSessionKey1' },
     headers: {},
     body: {},
   };

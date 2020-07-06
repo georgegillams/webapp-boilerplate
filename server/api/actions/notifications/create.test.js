@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
 import create from './create.js';
 
 import { AuthError } from 'utils/errors';
@@ -13,7 +14,7 @@ beforeEach(() => {
 
 test('create notification as admin - adds data to collection', () => {
   const req = {
-    cookies: { session: 'adminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'adminSessionKey1' },
     headers: {},
     body: {
       type: 'error',
@@ -33,7 +34,7 @@ test('create notification as admin - adds data to collection', () => {
 
 test('create notification non-admin - throws auth error', () => {
   const req = {
-    cookies: { session: 'nonAdminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'nonAdminSessionKey1' },
     headers: {},
     body: {
       type: 'error',

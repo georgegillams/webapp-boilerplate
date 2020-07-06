@@ -3,11 +3,12 @@ import safeCompare from 'safe-compare';
 import { find } from './find';
 
 import { dbLoad } from 'utils/database';
+import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
 
 const secretApiKey = process.env.SECRET_API_KEY;
 
 export default function authentication(req) {
-  const sessionKey = req.cookies.session;
+  const sessionKey = req.cookies[SESSION_COOKIE_KEY];
   const apiKey = req.headers.apikey;
   let users = null;
   let sessions = null;

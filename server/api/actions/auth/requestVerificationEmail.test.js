@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
 import requestVerificationEmail from './requestVerificationEmail.js';
 
 import { clearDatabaseCollection, createUsersWithSessions } from 'utils/testUtils';
@@ -32,7 +33,7 @@ test('request verification email unauthenticated - throws error', () => {
 
 test('request verification email authenticated - returns OK', () => {
   const req = {
-    cookies: { session: 'nonAdminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'nonAdminSessionKey1' },
     headers: {},
     body: {},
   };
