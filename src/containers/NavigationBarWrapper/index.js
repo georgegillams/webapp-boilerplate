@@ -3,15 +3,14 @@ import { memo } from 'react';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
+import { selectState as selectAuthenticatorState } from '../Authenticator/selectors';
 
-import Home from './Container';
+import NavigationBarWrapper from './Container';
 
-const mapStateToProps = createStructuredSelector({});
+const mapStateToProps = createStructuredSelector({
+  authenticatorState: selectAuthenticatorState(),
+});
 
-export function mapDispatchToProps() {
-  return {};
-}
+const withConnect = connect(mapStateToProps);
 
-const withConnect = connect(mapStateToProps, mapDispatchToProps);
-
-export default compose(withConnect, memo)(Home);
+export default compose(withConnect, memo)(NavigationBarWrapper);

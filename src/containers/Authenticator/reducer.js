@@ -6,7 +6,7 @@ export const initialState = {
   cookiesAllowed: false,
   loadingAuth: false,
   loadAuthError: null,
-  user: null,
+  user: undefined,
 };
 
 const reducer = (state = initialState, { type, payload }) =>

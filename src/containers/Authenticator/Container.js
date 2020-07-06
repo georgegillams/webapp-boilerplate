@@ -16,8 +16,8 @@ const Authenticator = props => {
     const sessionCookie = cookie.load('session');
     if (sessionCookie) {
       props.setCookiesAllowed(true);
-      props.loadAuth();
     }
+    props.loadAuth();
   }, []);
 
   const {
