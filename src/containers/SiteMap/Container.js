@@ -12,7 +12,7 @@ const getClassName = cssModules(STYLES);
 const SiteMap = props => (
   <PageTitle name="Site map" {...props}>
     <Subsection anchor={false} className={getClassName('pages__site-map-item')} name="Design 🎨">
-      <TextLink href="/design/privacy-policy">Privacy Policy</TextLink>
+      <TextLink href="/privacy-policy">Privacy Policy</TextLink>
     </Subsection>
     <Subsection anchor={false} className={getClassName('pages__site-map-item')} name="Other stuff 🤷‍♂️">
       <TextLink href="/status">Status</TextLink>

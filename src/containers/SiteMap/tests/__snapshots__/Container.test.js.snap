@@ -22,7 +22,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </h2>
       <a
         class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/design/privacy-policy"
+        href="/privacy-policy"
       >
         Privacy Policy
       </a>
