@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import PageTitle from 'components/PageTitle';
 import { LoadingCover } from 'gg-components/LoadingCover';
-import { DebugObject } from 'gg-components/DebugObject';
+import { DebugObject } from 'components/DebugObject';
 import { Paragraph } from 'gg-components/Paragraph';
 import Button from 'components/Button';
 import { setPostLoginRedirect } from 'utils/storageHelpers';
