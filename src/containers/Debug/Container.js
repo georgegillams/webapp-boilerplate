@@ -3,9 +3,13 @@ import PropTypes from 'prop-types';
 import { Checkbox } from 'gg-components/Checkbox';
 import { Paragraph } from 'gg-components/Typography';
 import PageTitle from 'components/PageTitle';
+import STYLES from './debug.scss';
+import { cssModules } from 'gg-components/helpers/cssModules';
+
+const getClassName = cssModules(STYLES);
 
 const StatusControl = props => {
-  const { name, storageKey } = props;
+  const { name, storageKey, ...rest } = props;
   const [isEnabled, setIsEnabled] = useState(false);
 
   useEffect(() => {
@@ -26,6 +30,7 @@ const StatusControl = props => {
       onChange={event => {
         onValueChanged(event.target.checked);
       }}
+      {...rest}
     />
   );
 };
@@ -38,10 +43,17 @@ StatusControl.propTypes = {
 const Debug = props => (
   <div {...props}>
     <PageTitle anchor={false} name="Debug">
-      <StatusControl name="Show session debug views" storageKey="showSessionDebugViews" />
+      <StatusControl
+        className={getClassName('debug__checkbox')}
+        name="Show session debug views"
+        storageKey="showSessionDebugViews"
+      />
       <br />
-      <br />
-      <StatusControl name="Show page container debug colours" storageKey="showPageContainerDebugColor" />
+      <StatusControl
+        className={getClassName('debug__checkbox')}
+        name="Show page container debug colours"
+        storageKey="showPageContainerDebugColor"
+      />
       <br />
       <Paragraph>Note that changes will not take effect until you reload the page.</Paragraph>
     </PageTitle>

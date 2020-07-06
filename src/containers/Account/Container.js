@@ -15,6 +15,10 @@ import { useInjectReducer } from 'utils/redux/inject-reducer';
 import { KEY } from './constants';
 import saga from './saga';
 import reducer from './reducer';
+import STYLES from './account.scss';
+import { cssModules } from 'gg-components/helpers/cssModules';
+
+const getClassName = cssModules(STYLES);
 
 const Account = props => {
   useInjectSaga({ key: KEY, saga });
@@ -53,26 +57,24 @@ const Account = props => {
           {user && !user.emailVerified && (
             <>
               <Button
+                className={getClassName('account__button')}
                 large
                 disabled={accountState && accountState.requestingVerificationEmail}
                 onClick={requestVerificationEmail}>
                 Get a new verification email
               </Button>
               <br />
-              <br />
             </>
           )}
           {user && user.admin && (
             <>
-              <Button large href="/admin">
+              <Button className={getClassName('account__button')} large href="/admin">
                 Admin
               </Button>
               <br />
-              <br />
-              <Button large href="/status">
+              <Button className={getClassName('account__button')} large href="/status">
                 Site status
               </Button>
-              <br />
               <br />
             </>
           )}
