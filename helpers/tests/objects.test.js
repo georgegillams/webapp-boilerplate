@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { formValueChanged, normaliseArray, denormaliseObject } from './objects.js';
+import { formValueChanged, normaliseArray, denormaliseObject } from '../objects.js';
 
 // #region formValueChanged
 test('formValueChanged with value - adds attribute', () => {
