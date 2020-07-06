@@ -2,8 +2,15 @@ import appConfig from 'helpers/appConfig';
 import cors from 'cors';
 import helmet from 'helmet';
 import slowDown from 'express-slow-down';
+import apiStructure from 'helpers/apiStructure';
 
-const { NODE_ENV } = process.env;
+const sensitiveApiRoutes = [];
+Object.keys(apiStructure).forEach(k => {
+  const apiRoute = apiStructure[k];
+  if (apiRoute.isSensitive) {
+    sensitiveApiRoutes.push(`api${apiRoute.path}`);
+  }
+});
 
 const applySecurityPractises = server => {
   // Helmet
@@ -20,25 +27,27 @@ const applySecurityPractises = server => {
   server.use(
     slowDown({
       windowMs: 15 * 60 * 1000, // 15 minutes
-      delayAfter: NODE_ENV === 'production' ? 100 : 10000, // allow 50 requests per window without limiting...
+      delayAfter: 5, // allow 5 requests per window without limiting...
       delayMs: 500, // add 1s delay per request above 50...
       maxDelayMs: 10000, // with a maximum delay of 10 seconds
       // request # 1 no delay
       // ...
-      // request # 100 no delay
-      // request # 101 is delayed by 500ms
-      // request # 102 is delayed by 1000ms
-      // request # 103 is delayed by 1500ms
+      // request # 5 no delay
+      // request # 6 is delayed by 500ms
+      // request # 7 is delayed by 1000ms
+      // request # 8 is delayed by 1500ms
       // ...
-      // request # 120 is delayed by 10s
-      // request # 121 is delayed by 10s <-- won't exceed 10s delay
-      //
-      // The max request rate is 100 in 0s + 20 in 105s + 85 in 850s = 205 in 15 minutes = 820 in 1 hour
+      // request # 25 is delayed by 10s
+      // request # 26 is delayed by 10s <-- won't exceed 10s delay
+      // ...
       skip: req => {
-        if (req.originalUrl.includes('api')) {
-          return false;
-        }
-        return true;
+        let skip = true;
+        sensitiveApiRoutes.forEach(s => {
+          if (req.originalUrl.includes(s)) {
+            skip = false;
+          }
+        });
+        return skip;
       },
     })
   );
