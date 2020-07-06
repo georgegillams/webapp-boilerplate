@@ -6,20 +6,36 @@ exports[`<HomePage /> should render correctly 1`] = `
     class="page-container__container common-layout__grow"
     id="mainScrollView"
   >
-    <div>
+    <div
+      class="home-page__container"
+    >
       <div
-        class="css-1hvjfqy-Container e1vuap0q0"
-        id="exampleGetApi"
+        class="typography__main"
       >
-        <button
-          class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
-          type="button"
+        <h1
+          class="typography__text typography__text--section page-title__section"
+          id="home"
         >
-          Get showcases
-        </button>
+          Home
+        </h1>
         <div
-          class="css-1bqe7xb-ShowcasesRow e1vuap0q1"
-        />
+          class="typography__main"
+        >
+          <span
+            class="typography__main typography__paragraph"
+          >
+            This is just a boilerplate page, but you can put any content you want in here.
+            <br />
+            This page is pretty boring, but the 
+            <a
+              class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
+              href="/sitemap"
+            >
+              site map
+            </a>
+             might be more inspiring.
+          </span>
+        </div>
       </div>
     </div>
   </main>
