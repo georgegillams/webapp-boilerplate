@@ -10,6 +10,7 @@ import Authenticator from 'containers/Authenticator';
 import withReduxStore from 'utils/redux/with-redux-store';
 import appConfig from 'helpers/appConfig';
 import Navigation from 'containers/NavigationBarWrapper';
+import AppWrapper from 'components/AppWrapper';
 
 import 'global-styles.scss';
 import 'typeface-metropolis';
@@ -29,9 +30,11 @@ class Srr extends App {
 
         <Provider store={reduxStore}>
           <CacheProvider value={cache}>
-            <Navigation />
-            <Authenticator />
-            <Component {...pageProps} />
+            <AppWrapper>
+              <Navigation />
+              <Authenticator />
+              <Component {...pageProps} />
+            </AppWrapper>
           </CacheProvider>
         </Provider>
       </React.StrictMode>

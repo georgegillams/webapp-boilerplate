@@ -3,7 +3,7 @@
 exports[`<Layout /> Should render correctly 1`] = `
 <div>
   <main
-    class="page-container__container"
+    class="page-container__container common-layout__grow"
     id="mainScrollView"
   >
     <div>
