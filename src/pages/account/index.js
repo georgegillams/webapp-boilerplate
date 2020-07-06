@@ -20,8 +20,4 @@ export class Page extends React.PureComponent {
 
 Page.propTypes = {};
 
-Page.getInitialProps = async () => ({
-  namespacesRequired: ['common', 'banner', 'features'],
-});
-
 export default Page;
