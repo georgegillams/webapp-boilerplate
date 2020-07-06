@@ -10,6 +10,7 @@ import withReduxStore from 'utils/with-redux-store';
 import Header from 'components/Header';
 import appConfig from 'helpers/appConfig';
 
+import 'global-styles.scss';
 import 'typeface-metropolis';
 import '@typefaces-pack/typeface-inter';
 
