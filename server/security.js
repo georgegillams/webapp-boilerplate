@@ -17,11 +17,13 @@ const applySecurityPractises = server => {
   server.use(helmet());
 
   // Cors
-  server.use(
-    cors({
-      origin: appConfig.siteUrl,
-    })
-  );
+  if (appConfig.isProduction) {
+    server.use(
+      cors({
+        origin: appConfig.siteUrl,
+      })
+    );
+  }
 
   // Rate limiting
   server.use(
