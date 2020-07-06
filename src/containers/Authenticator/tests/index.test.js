@@ -13,7 +13,7 @@ describe('<Authenticator />', () => {
     cookiesAllowed: false,
     loadingAuth: false,
     loadAuthError: null,
-    user: null,
+    user: undefined,
   };
 
   beforeAll(() => {
