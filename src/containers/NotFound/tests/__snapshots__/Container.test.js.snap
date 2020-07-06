@@ -25,7 +25,7 @@ exports[`<NotFound /> should render correctly 1`] = `
           Maybe the 
           <a
             class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
-            href="/site-map"
+            href="/sitemap"
           >
             sitemap
           </a>
