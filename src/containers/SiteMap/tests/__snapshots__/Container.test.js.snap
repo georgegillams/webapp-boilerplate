@@ -106,14 +106,14 @@ exports[`<SiteMap /> should render correctly 1`] = `
         class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
         href="/page-not-found"
       >
-        404 Page
+        404 error page - not found
       </a>
       <br />
       <a
         class="typography__main typography__link typography__link--text-link typography--no-padding typography--inline"
-        href="/418"
+        href="/teapot"
       >
-        418 I'm a teapot
+        418 error page - I'm a teapot
       </a>
     </div>
     <div

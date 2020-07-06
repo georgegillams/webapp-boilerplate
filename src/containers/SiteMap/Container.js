@@ -27,9 +27,9 @@ const SiteMap = props => (
         SiteMap.xml
       </TextLink>
       <br />
-      <TextLink href="/page-not-found">404 Page</TextLink>
+      <TextLink href="/page-not-found">404 error page - not found</TextLink>
       <br />
-      <TextLink href="/418">418 I&apos;m a teapot</TextLink>
+      <TextLink href="/teapot">418 error page - I&apos;m a teapot</TextLink>
     </SubSection>
     <SubSection anchor={false} className={getClassName('pages__site-map-item')} name="API">
       <TextLink href="/api-docs">API docs</TextLink>
