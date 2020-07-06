@@ -16,9 +16,12 @@ const Footer = props => {
     outerClassNameFinal.push(className);
   }
 
+  const date = new Date();
+  const isPride = date.getMonth() === 5;
+
   return (
     <footer id="footer" className={outerClassNameFinal.join(' ')} {...rest}>
-      <Logo small alwaysCentered className={getClassName('footer__logo')} padding={false} />
+      <Logo pride={isPride} small alwaysCentered className={getClassName('footer__logo')} padding={false} />
       <TechSpecs className={getClassName('footer__tech')} light />
     </footer>
   );
