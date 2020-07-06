@@ -6,7 +6,8 @@ import { initialState as initialAuthenticatorState } from '../../Authenticator/r
 
 import configureStore from 'utils/redux/configure-store';
 
-import Account from '../index';
+import AccountIndex from '../index';
+import Account from '../Container';
 
 describe('<Account />', () => {
   let store;
@@ -34,6 +35,36 @@ describe('<Account />', () => {
 
     expect(container).toMatchSnapshot();
   });
+
+  it('should render correctly - index', () => {
+    const { container } = render(
+      <Provider store={store}>
+        <AccountIndex />
+      </Provider>
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should render correctly with initial state', () => {
+    const { container } = render(
+      <Provider store={store}>
+        <Account
+          logout={spy}
+          accountState={{
+            ...initialState,
+          }}
+          authenticatorState={{
+            ...initialAuthenticatorState,
+            user: { name: 'userName' },
+          }}
+        />
+      </Provider>
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
   it('should render correctly with logOutError', () => {
     const { container } = render(
       <Provider store={store}>
@@ -53,6 +84,7 @@ describe('<Account />', () => {
 
     expect(container).toMatchSnapshot();
   });
+
   it('should render correctly with logOutResult', () => {
     const { container } = render(
       <Provider store={store}>
@@ -72,6 +104,7 @@ describe('<Account />', () => {
 
     expect(container).toMatchSnapshot();
   });
+
   it('should render correctly with loggingOut=true', () => {
     const { container } = render(
       <Provider store={store}>
