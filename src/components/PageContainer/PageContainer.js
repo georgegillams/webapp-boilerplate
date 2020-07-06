@@ -8,7 +8,7 @@ import { DEBUG_SHOW_PAGE_CONTAINER_KEY } from 'helpers/storageConstants';
 const getClassName = cssModules(STYLES);
 
 const PageContainer = props => {
-  const { className, ...rest } = props;
+  const { className, prose, ...rest } = props;
   const [showDebug, setShowDebug] = useState(false);
 
   useEffect(() => {
@@ -19,6 +19,9 @@ const PageContainer = props => {
   if (showDebug) {
     outerClassNames.push([getClassName('page-container__container--debug')]);
   }
+  if (prose) {
+    outerClassNames.push([getClassName('page-container__container--prose')]);
+  }
 
   if (className) {
     outerClassNames.push(className);
@@ -28,10 +31,12 @@ const PageContainer = props => {
 };
 
 PageContainer.propTypes = {
+  prose: PropTypes.bool,
   className: PropTypes.string,
 };
 
 PageContainer.defaultProps = {
+  prose: false,
   className: null,
 };
 

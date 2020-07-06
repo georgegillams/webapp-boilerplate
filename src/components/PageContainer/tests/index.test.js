@@ -18,4 +18,10 @@ describe('<PageContainer />', () => {
 
     expect(container).toMatchSnapshot();
   });
+
+  it('Should render correctly with prose', () => {
+    const { container } = render(<PageContainer prose>{children}</PageContainer>);
+
+    expect(container).toMatchSnapshot();
+  });
 });

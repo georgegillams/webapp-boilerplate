@@ -12,4 +12,10 @@ describe('<Layout />', () => {
 
     expect(container).toMatchSnapshot();
   });
+
+  it('Should render correctly with spread props', () => {
+    const { container } = render(<Layout prose>{children}</Layout>);
+
+    expect(container).toMatchSnapshot();
+  });
 });
