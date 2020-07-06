@@ -12,11 +12,14 @@ const TechSpecs = props => {
 
   return (
     <div className={getClassName('footer-nav__container', className)} {...rest}>
-      <TextLink className={getClassName('footer-nav__link', className)} light href="/sitemap">
+      <TextLink className={getClassName('footer-nav__link')} light href="/sitemap">
         Site map
       </TextLink>
-      <TextLink className={getClassName('footer-nav__link', className)} light href="/status">
+      <TextLink className={getClassName('footer-nav__link')} light href="/status">
         Status
+      </TextLink>
+      <TextLink className={getClassName('footer-nav__link')} light href="/privacy-policy">
+        Privacy
       </TextLink>
     </div>
   );
