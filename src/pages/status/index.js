@@ -6,15 +6,13 @@ import getConfig from 'next/config';
 const { publicRuntimeConfig } = getConfig();
 const { BUILT_AT, NODE_ENV } = publicRuntimeConfig;
 
-export class Page extends React.PureComponent {
-  render() {
-    return (
-      <CommonLayout>
-        <Status builtAt={parseInt(BUILT_AT, 10)} nodeEnv={NODE_ENV} {...this.props} />
-      </CommonLayout>
-    );
-  }
-}
+const Page = props => {
+  return (
+    <CommonLayout>
+      <Status builtAt={parseInt(BUILT_AT, 10)} nodeEnv={NODE_ENV} {...props} />
+    </CommonLayout>
+  );
+};
 
 Page.propTypes = {};
 

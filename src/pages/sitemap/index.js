@@ -3,15 +3,13 @@ import React from 'react';
 import SiteMap from 'containers/SiteMap';
 import CommonLayout from 'components/CommonLayout';
 
-export class Page extends React.PureComponent {
-  render() {
-    return (
-      <CommonLayout>
-        <SiteMap {...this.props} />
-      </CommonLayout>
-    );
-  }
-}
+const Page = props => {
+  return (
+    <CommonLayout>
+      <SiteMap {...props} />
+    </CommonLayout>
+  );
+};
 
 Page.propTypes = {};
 
