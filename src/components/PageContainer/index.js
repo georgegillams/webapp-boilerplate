@@ -1,1 +1,1 @@
-export { default } from './PageContainer';
+export { default, LAYOUT_STYLES } from './PageContainer';

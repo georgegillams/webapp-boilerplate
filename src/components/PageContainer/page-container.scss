@@ -4,11 +4,8 @@
   &__container {
     display: flow-root;
     width: 100%;
-    max-width: 60rem;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 2rem;
-    padding-left: 2rem;
     overflow-x: scroll;
 
     @include bpk-breakpoint-tablet {
@@ -24,8 +21,20 @@
       }
     }
 
+    &--regular {
+      max-width: 60rem;
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
+
     &--prose {
       max-width: 41.25rem;
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
+
+    &--full-width-center {
+      text-align: center;
     }
   }
 }
