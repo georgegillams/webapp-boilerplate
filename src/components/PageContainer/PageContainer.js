@@ -5,10 +5,16 @@ import { cssModules } from 'gg-components/helpers/cssModules';
 import STYLES from './page-container.scss';
 import { DEBUG_SHOW_PAGE_CONTAINER_KEY } from 'helpers/storageConstants';
 
+export const LAYOUT_STYLES = {
+  default: 'default',
+  prose: 'prose',
+  fullWidthCenter: 'fullWidthCenter',
+};
+
 const getClassName = cssModules(STYLES);
 
 const PageContainer = props => {
-  const { className, prose, ...rest } = props;
+  const { className, layout, ...rest } = props;
   const [showDebug, setShowDebug] = useState(false);
 
   useEffect(() => {
@@ -19,8 +25,14 @@ const PageContainer = props => {
   if (showDebug) {
     outerClassNames.push([getClassName('page-container__container--debug')]);
   }
-  if (prose) {
+  if (layout === LAYOUT_STYLES.default) {
+    outerClassNames.push([getClassName('page-container__container--regular')]);
+  }
+  if (layout === LAYOUT_STYLES.prose) {
     outerClassNames.push([getClassName('page-container__container--prose')]);
+  }
+  if (layout === LAYOUT_STYLES.fullWidthCenter) {
+    outerClassNames.push([getClassName('page-container__container--full-width-center')]);
   }
 
   if (className) {
@@ -31,12 +43,12 @@ const PageContainer = props => {
 };
 
 PageContainer.propTypes = {
-  prose: PropTypes.bool,
+  layout: PropTypes.oneOf(Object.keys(LAYOUT_STYLES)),
   className: PropTypes.string,
 };
 
 PageContainer.defaultProps = {
-  prose: false,
+  layout: LAYOUT_STYLES.default,
   className: null,
 };
 
