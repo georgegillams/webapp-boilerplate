@@ -1,11 +1,11 @@
 import React from 'react';
 
 import Home from 'containers/HomePage';
-import CommonLayout from 'components/CommonLayout';
+import CommonLayout, { LAYOUT_STYLES } from 'components/CommonLayout';
 
 const Page = props => {
   return (
-    <CommonLayout>
+    <CommonLayout layout={LAYOUT_STYLES.defaultCenter}>
       <Home {...props} />
     </CommonLayout>
   );

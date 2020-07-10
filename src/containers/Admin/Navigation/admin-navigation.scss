@@ -2,10 +2,7 @@
 
 .admin-navigation {
   &__card-container {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    @include card-container;
   }
 
   &__card {

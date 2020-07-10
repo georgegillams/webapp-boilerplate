@@ -12,7 +12,7 @@ const CommonLayout = props => {
 
   return (
     <>
-      <PageContainer id="mainScrollView" className={getClassName('common-layout__grow')} {...rest}>
+      <PageContainer className={getClassName('common-layout__grow')} {...rest}>
         {children}
       </PageContainer>
       <Footer />

@@ -22,18 +22,22 @@
     }
 
     &--regular {
-      max-width: 60rem;
+      max-width: $page-max-width;
       padding-right: 2rem;
       padding-left: 2rem;
     }
 
     &--prose {
-      max-width: 41.25rem;
+      max-width: $page-max-width-prose;
       padding-right: 2rem;
       padding-left: 2rem;
     }
 
-    &--full-width-center {
+    &--center {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
       text-align: center;
     }
   }

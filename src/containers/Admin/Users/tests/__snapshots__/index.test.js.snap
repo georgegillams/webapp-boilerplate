@@ -78,11 +78,11 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <a
+        <div
           class="admin-users__card"
-          href="/admin/users?highlight=new"
           role="button"
-          style="text-decoration: none;"
+          style="cursor: pointer;"
+          tabindex="0"
         >
           <div
             class="card"
@@ -109,7 +109,7 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
               class="card__banner"
             />
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
@@ -161,11 +161,11 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <a
+        <div
           class="admin-users__card"
-          href="/admin/users?highlight=new"
           role="button"
-          style="text-decoration: none;"
+          style="cursor: pointer;"
+          tabindex="0"
         >
           <div
             class="card"
@@ -192,7 +192,7 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
               class="card__banner"
             />
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
@@ -244,11 +244,11 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <a
+        <div
           class="admin-users__card"
-          href="/admin/users?highlight=new"
           role="button"
-          style="text-decoration: none;"
+          style="cursor: pointer;"
+          tabindex="0"
         >
           <div
             class="card"
@@ -275,7 +275,7 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
               class="card__banner"
             />
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
@@ -360,11 +360,11 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <a
+        <div
           class="admin-users__card"
-          href="/admin/users?highlight=new"
           role="button"
-          style="text-decoration: none;"
+          style="cursor: pointer;"
+          tabindex="0"
         >
           <div
             class="card"
@@ -391,7 +391,7 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
               class="card__banner"
             />
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
@@ -455,11 +455,11 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <a
+        <div
           class="admin-users__card"
-          href="/admin/users?highlight=new"
           role="button"
-          style="text-decoration: none;"
+          style="cursor: pointer;"
+          tabindex="0"
         >
           <div
             class="card"
@@ -486,7 +486,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
               class="card__banner"
             />
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
@@ -538,11 +538,11 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <a
+        <div
           class="admin-users__card"
-          href="/admin/users?highlight=new"
           role="button"
-          style="text-decoration: none;"
+          style="cursor: pointer;"
+          tabindex="0"
         >
           <div
             class="card"
@@ -569,7 +569,7 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
               class="card__banner"
             />
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
@@ -621,11 +621,11 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <a
+        <div
           class="admin-users__card"
-          href="/admin/users?highlight=new"
           role="button"
-          style="text-decoration: none;"
+          style="cursor: pointer;"
+          tabindex="0"
         >
           <div
             class="card"
@@ -652,7 +652,7 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
               class="card__banner"
             />
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
@@ -704,11 +704,11 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <a
+        <div
           class="admin-users__card"
-          href="/admin/users?highlight=new"
           role="button"
-          style="text-decoration: none;"
+          style="cursor: pointer;"
+          tabindex="0"
         >
           <div
             class="card"
@@ -735,7 +735,7 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
               class="card__banner"
             />
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
@@ -787,11 +787,11 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <a
+        <div
           class="admin-users__card"
-          href="/admin/users?highlight=new"
           role="button"
-          style="text-decoration: none;"
+          style="cursor: pointer;"
+          tabindex="0"
         >
           <div
             class="card"
@@ -818,7 +818,7 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
               class="card__banner"
             />
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
@@ -870,11 +870,11 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <a
+        <div
           class="admin-users__card"
-          href="/admin/users?highlight=new"
           role="button"
-          style="text-decoration: none;"
+          style="cursor: pointer;"
+          tabindex="0"
         >
           <div
             class="card"
@@ -901,7 +901,7 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
               class="card__banner"
             />
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
@@ -953,11 +953,11 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <a
+        <div
           class="admin-users__card"
-          href="/admin/users?highlight=new"
           role="button"
-          style="text-decoration: none;"
+          style="cursor: pointer;"
+          tabindex="0"
         >
           <div
             class="card"
@@ -984,7 +984,7 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
               class="card__banner"
             />
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
@@ -1075,11 +1075,11 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <a
+        <div
           class="admin-users__card"
-          href="/admin/users?highlight=new"
           role="button"
-          style="text-decoration: none;"
+          style="cursor: pointer;"
+          tabindex="0"
         >
           <div
             class="card"
@@ -1106,13 +1106,13 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
               class="card__banner"
             />
           </div>
-        </a>
-        <a
+        </div>
+        <div
           class="admin-users__card"
-          href="/admin/users?highlight=1"
           id="1"
           role="button"
-          style="text-decoration: none;"
+          style="cursor: pointer;"
+          tabindex="0"
         >
           <div
             class="card"
@@ -1145,13 +1145,13 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
               class="card__banner"
             />
           </div>
-        </a>
-        <a
+        </div>
+        <div
           class="admin-users__card"
-          href="/admin/users?highlight=2"
           id="2"
           role="button"
-          style="text-decoration: none;"
+          style="cursor: pointer;"
+          tabindex="0"
         >
           <div
             class="card"
@@ -1184,13 +1184,13 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
               class="card__banner"
             />
           </div>
-        </a>
-        <a
+        </div>
+        <div
           class="admin-users__card"
-          href="/admin/users?highlight=3"
           id="3"
           role="button"
-          style="text-decoration: none;"
+          style="cursor: pointer;"
+          tabindex="0"
         >
           <div
             class="card"
@@ -1223,7 +1223,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
               class="card__banner"
             />
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
