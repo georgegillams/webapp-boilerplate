@@ -1,31 +1,45 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Card as GGCard } from 'gg-components/Card';
-import Link from 'next/link';
 import HelperFunctions from 'helpers/HelperFunctions';
+import { useRouter } from 'next/router';
 
 const Card = props => {
-  const { href, scroll, ...rest } = props;
+  const { href, onClick, scroll, ...rest } = props;
+  const router = useRouter();
+
   const hrefExternal = href && HelperFunctions.includes(href, 'http');
 
-  if (hrefExternal) {
-    return <GGCard href={href} {...rest} />;
+  const isServer = typeof window === 'undefined';
+
+  if (hrefExternal || isServer) {
+    return <GGCard href={href} onClick={onClick} {...rest} />;
   }
 
-  return (
-    <Link href={href} scroll={scroll} passHref>
-      <GGCard href={href} {...rest} />
-    </Link>
-  );
+  const onClickFinal = e => {
+    if (onClick) {
+      onClick(e);
+    }
+    return router.push(href).then(() => {
+      if (scroll) {
+        return window.scrollTo(0, 0);
+      }
+      return true;
+    });
+  };
+
+  return <GGCard style={{ cursor: 'pointer' }} onClick={onClickFinal} {...rest} />;
 };
 
 Card.propTypes = {
   href: PropTypes.string.isRequired,
   scroll: PropTypes.bool,
+  onClick: PropTypes.func,
 };
 
 Card.defaultProps = {
   scroll: true,
+  onClick: null,
 };
 
 export default Card;

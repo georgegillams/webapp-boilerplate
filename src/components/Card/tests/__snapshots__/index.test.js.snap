@@ -2,10 +2,10 @@
 
 exports[`<Card /> Should render correctly 1`] = `
 <div>
-  <a
-    href="/test"
+  <div
     role="button"
-    style="text-decoration: none;"
+    style="cursor: pointer;"
+    tabindex="0"
   >
     <div
       class="card"
@@ -21,7 +21,7 @@ exports[`<Card /> Should render correctly 1`] = `
         class="card__banner"
       />
     </div>
-  </a>
+  </div>
 </div>
 `;
 
@@ -52,11 +52,11 @@ exports[`<Card /> Should render correctly hrefExternal 1`] = `
 
 exports[`<Card /> Should render correctly with custom className 1`] = `
 <div>
-  <a
+  <div
     class="test-custom-classname"
-    href="/test"
     role="button"
-    style="text-decoration: none;"
+    style="cursor: pointer;"
+    tabindex="0"
   >
     <div
       class="card"
@@ -72,6 +72,6 @@ exports[`<Card /> Should render correctly with custom className 1`] = `
         class="card__banner"
       />
     </div>
-  </a>
+  </div>
 </div>
 `;

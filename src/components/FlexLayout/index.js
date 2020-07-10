@@ -8,11 +8,7 @@ const getClassName = cssModules(STYLES);
 const CommonLayout = props => {
   const { children } = props;
 
-  return (
-    <main id="mainScrollView" className={getClassName('flex-layout__grow')}>
-      {children}
-    </main>
-  );
+  return <main className={getClassName('flex-layout__grow')}>{children}</main>;
 };
 
 CommonLayout.propTypes = {
