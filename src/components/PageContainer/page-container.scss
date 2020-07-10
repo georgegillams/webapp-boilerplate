@@ -8,11 +8,6 @@
     margin-left: auto;
     overflow-x: scroll;
 
-    @include bpk-breakpoint-tablet {
-      padding-right: 1rem;
-      padding-left: 1rem;
-    }
-
     &--debug {
       background-color: orange;
 
@@ -25,12 +20,22 @@
       max-width: $page-max-width;
       padding-right: 2rem;
       padding-left: 2rem;
+
+      @include bpk-breakpoint-tablet {
+        padding-right: 1rem;
+        padding-left: 1rem;
+      }
     }
 
     &--prose {
       max-width: $page-max-width-prose;
       padding-right: 2rem;
       padding-left: 2rem;
+
+      @include bpk-breakpoint-tablet {
+        padding-right: 1rem;
+        padding-left: 1rem;
+      }
     }
 
     &--center {
