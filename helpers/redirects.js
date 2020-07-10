@@ -1,4 +1,5 @@
 import appConfig from './appConfig';
+
 const redirects = [
   {
     from: '/codebase',
