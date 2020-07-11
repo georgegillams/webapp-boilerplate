@@ -16,9 +16,9 @@
 
   &__modal-content {
     width: auto;
-    max-width: calc(100vw - 2rem);
+    max-width: calc(100vw - $spacing-lg);
     max-width: 30rem;
-    padding: 2rem;
+    padding: $spacing-lg;
     border: 0.1rem gray solid;
     border-radius: 0.4rem;
     background: $background-color;
