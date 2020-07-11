@@ -5,10 +5,7 @@ import { mapPathToAction } from 'utils/mapPathToAction.js';
 import logger from 'utils/logger';
 
 const appFunc = (req, res) => {
-  const splitUrlPath = req.url
-    .split('?')[0]
-    .split('/')
-    .slice(1);
+  const splitUrlPath = req.url.split('?')[0].split('/').slice(1);
 
   const pathMatches = mapPathToAction(apiStructure, splitUrlPath);
   const pathMatchesForMethod = pathMatches.filter(c => c.apiCapability.method === req.method);

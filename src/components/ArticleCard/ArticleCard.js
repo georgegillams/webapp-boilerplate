@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { ArticleCard as GGArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/ArticleCard';
 import HelperFunctions from 'helpers/HelperFunctions';
@@ -10,7 +10,11 @@ const ArticleCard = props => {
 
   const hrefExternal = href && HelperFunctions.includes(href, 'http');
 
-  const isServer = typeof window === 'undefined';
+  const [isServer, setIsServer] = useState(true);
+
+  useEffect(() => {
+    setIsServer(false);
+  }, []);
 
   if (hrefExternal || isServer) {
     return <GGArticleCard href={href} onClick={onClick} {...rest} />;
