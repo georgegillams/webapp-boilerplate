@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import KonamiResponder from 'konami';
-import { DebugObject } from 'gg-components/DebugObject';
+import DebugObject from 'components/DebugObject';
 
 const Konami = () => {
   const [konamiActivated, setKonamiActivated] = useState(false);
@@ -8,7 +8,7 @@ const Konami = () => {
 
   const setupConfetti = () => {
     // Require confetti-generator here so that it is only loaded when required
-    const ConfettiGenerator = require('confetti-js');
+    const ConfettiGenerator = require('confetti-js').default;
     const confettiSettings = { target: 'confetti-holder' };
     const confetti = new ConfettiGenerator(confettiSettings);
     confetti.render();
