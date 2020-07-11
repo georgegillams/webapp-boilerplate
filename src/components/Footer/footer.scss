@@ -4,7 +4,7 @@
   &__container {
     display: flex;
     height: 15rem;
-    padding: 2rem 2rem;
+    padding: $spacing-lg $spacing-lg;
     flex-direction: column;
     justify-content: space-around;
     background-color: $not-black;
@@ -13,7 +13,7 @@
     color: $not-black-invert;
 
     @include bpk-breakpoint-mobile {
-      padding: 2rem 1rem;
+      padding: $spacing-lg $spacing-base;
     }
 
     @media (prefers-color-scheme: dark) {

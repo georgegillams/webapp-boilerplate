@@ -18,23 +18,23 @@
 
     &--regular {
       max-width: $page-max-width;
-      padding-right: 2rem;
-      padding-left: 2rem;
+      padding-right: $spacing-lg;
+      padding-left: $spacing-lg;
 
       @include bpk-breakpoint-tablet {
-        padding-right: 1rem;
-        padding-left: 1rem;
+        padding-right: $spacing-base;
+        padding-left: $spacing-base;
       }
     }
 
     &--prose {
       max-width: $page-max-width-prose;
-      padding-right: 2rem;
-      padding-left: 2rem;
+      padding-right: $spacing-lg;
+      padding-left: $spacing-lg;
 
       @include bpk-breakpoint-tablet {
-        padding-right: 1rem;
-        padding-left: 1rem;
+        padding-right: $spacing-base;
+        padding-left: $spacing-base;
       }
     }
 

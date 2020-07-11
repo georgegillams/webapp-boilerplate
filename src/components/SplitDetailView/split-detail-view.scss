@@ -8,7 +8,7 @@
   &__list-view {
     width: 50%;
     height: 100%;
-    padding: 2rem 1rem 2rem 0;
+    padding: $spacing-lg $spacing-base $spacing-lg 0;
     overflow: scroll;
 
     @include bpk-breakpoint-tablet {
@@ -20,7 +20,7 @@
   &__detail-view {
     width: 50%;
     height: 100%;
-    padding: 2rem 0 2rem 1rem;
+    padding: $spacing-lg 0 $spacing-lg $spacing-base;
     overflow: scroll;
 
     @include bpk-breakpoint-tablet {
@@ -29,8 +29,8 @@
       left: 0;
       z-index: 4;
       width: 100vw;
-      height: calc(100vh - 2rem);
-      padding: 8rem 0 1rem 1rem;
+      height: calc(100vh - $spacing-lg);
+      padding: 4 * $spacing-lg 0 $spacing-base $spacing-base;
       background: $background-color;
 
       @media (prefers-color-scheme: dark) {
@@ -42,7 +42,7 @@
   &__close-button {
     position: absolute;
     top: 6rem;
-    right: 2rem;
+    right: $spacing-lg;
     display: none;
     z-index: 4;
 

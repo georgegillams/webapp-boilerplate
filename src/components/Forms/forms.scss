@@ -2,7 +2,7 @@
 
 .forms {
   &__component {
-    margin-bottom: 1rem;
+    margin-bottom: $spacing-base;
 
     &__text-box {
       width: 100%;
@@ -10,13 +10,13 @@
     }
 
     &__button {
-      margin-top: 1rem;
+      margin-top: $spacing-base;
     }
 
     &--inline {
       width: 15rem;
-      margin-right: 1rem;
-      margin-left: 1rem;
+      margin-right: $spacing-base;
+      margin-left: $spacing-base;
     }
 
     &__label {
@@ -34,7 +34,7 @@
 
   // Useful if you need to style a third-party form input (eg stripe component)
   &__bpk-input {
-    height: 2rem;
+    height: $spacing-lg;
     padding: 0.5rem;
     border: 1px #b2b2bf solid;
     border-radius: 0.25rem;

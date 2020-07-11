@@ -15,15 +15,15 @@
 .logo {
   &__container {
     display: flex;
-    padding-bottom: 1rem;
+    padding-bottom: $spacing-base;
     flex-direction: column;
     transition: transform 0.2s;
     border-radius: 0.25rem;
     outline: none;
 
     @include bpk-breakpoint-tablet {
-      padding-right: 2rem;
-      padding-left: 2rem;
+      padding-right: $spacing-lg;
+      padding-left: $spacing-lg;
       align-items: center;
     }
 

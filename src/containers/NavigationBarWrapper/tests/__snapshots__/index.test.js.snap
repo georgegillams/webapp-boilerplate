@@ -12,10 +12,6 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
       class="navigation-bar__container"
     >
       <div
-        aria-hidden="true"
-        class="blur-effect__outer"
-      />
-      <div
         class="navigation-bar__bar"
       >
         <div
@@ -90,10 +86,6 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
       class="navigation-bar__container"
     >
       <div
-        aria-hidden="true"
-        class="blur-effect__outer"
-      />
-      <div
         class="navigation-bar__bar"
       >
         <div
@@ -167,10 +159,6 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
     <div
       class="navigation-bar__container"
     >
-      <div
-        aria-hidden="true"
-        class="blur-effect__outer"
-      />
       <div
         class="navigation-bar__bar"
       >
@@ -249,10 +237,6 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
     <div
       class="navigation-bar__container"
     >
-      <div
-        aria-hidden="true"
-        class="blur-effect__outer"
-      />
       <div
         class="navigation-bar__bar"
       >
