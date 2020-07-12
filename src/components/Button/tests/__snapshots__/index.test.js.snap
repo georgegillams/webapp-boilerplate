@@ -2,15 +2,10 @@
 
 exports[`<Button /> Should render correctly 1`] = `
 <div>
-  <a
-    href="/test"
-  >
-    <button
-      aria-hidden="true"
-      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--link"
-      type="button"
-    />
-  </a>
+  <button
+    class="button__outer button__outer--regular button__outer--no-bouncy"
+    type="button"
+  />
 </div>
 `;
 
@@ -32,14 +27,9 @@ exports[`<Button /> Should render correctly hrefExternal 1`] = `
 
 exports[`<Button /> Should render correctly with custom className 1`] = `
 <div>
-  <a
-    href="/test"
-  >
-    <button
-      aria-hidden="true"
-      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--link test-custom-classname"
-      type="button"
-    />
-  </a>
+  <button
+    class="button__outer button__outer--regular button__outer--no-bouncy test-custom-classname"
+    type="button"
+  />
 </div>
 `;

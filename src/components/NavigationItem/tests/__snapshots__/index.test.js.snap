@@ -2,18 +2,12 @@
 
 exports[`<NavigationItem /> Should render correctly 1`] = `
 <div>
-  <a
-    aria-label="name"
-    href="/test"
+  <button
+    class="button__outer button__outer--dark-text button__outer--bouncy"
+    type="button"
   >
-    <button
-      aria-hidden="true"
-      class="button__outer button__outer--dark-text button__outer--bouncy button__outer--link"
-      type="button"
-    >
-      name
-    </button>
-  </a>
+    name
+  </button>
 </div>
 `;
 
@@ -38,17 +32,11 @@ exports[`<NavigationItem /> Should render correctly hrefExternal 1`] = `
 
 exports[`<NavigationItem /> Should render correctly with custom className 1`] = `
 <div>
-  <a
-    aria-label="name"
-    href="/test"
+  <button
+    class="button__outer button__outer--dark-text button__outer--bouncy test-custom-classname"
+    type="button"
   >
-    <button
-      aria-hidden="true"
-      class="button__outer button__outer--dark-text button__outer--bouncy button__outer--link test-custom-classname"
-      type="button"
-    >
-      name
-    </button>
-  </a>
+    name
+  </button>
 </div>
 `;
