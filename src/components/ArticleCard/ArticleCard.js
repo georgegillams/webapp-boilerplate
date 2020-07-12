@@ -20,16 +20,15 @@ const ArticleCard = props => {
     return <GGArticleCard href={href} onClick={onClick} {...rest} />;
   }
 
-  const onClickFinal = e => {
+  const onClickFinal = async e => {
     if (onClick) {
       onClick(e);
     }
-    return router.push(href).then(() => {
-      if (scroll) {
-        return window.scrollTo(0, 0);
-      }
-      return true;
-    });
+    await router.push(href);
+    if (scroll) {
+      return window.scrollTo(0, 0);
+    }
+    return true;
   };
 
   return <GGArticleCard style={{ cursor: 'pointer' }} onClick={onClickFinal} {...rest} />;
