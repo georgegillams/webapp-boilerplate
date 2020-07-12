@@ -43,6 +43,14 @@ const AdminNavigation = props => {
               day={null}
               month={null}
               className={getClassName('admin-navigation__card')}
+              href="/debug"
+              title="Debug settings"
+            />
+            <ArticleCard
+              layout={ARTICLE_CARD_LAYOUTS.narrowCompact}
+              day={null}
+              month={null}
+              className={getClassName('admin-navigation__card')}
               href="/admin/analytics"
               title="Analytics"
             />
