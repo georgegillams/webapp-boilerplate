@@ -30,7 +30,9 @@ jobs:
         run: npm ci
 
       - name: build
-        run: npm run build
+        run: |
+          npm run build
+          zip -r build build
 
       - name: lint
         run: npm run lint
@@ -38,27 +40,26 @@ jobs:
       - name: jest
         run: npm run test
 
-      # - name: snapshot test
-      #   run: npm run backstopjs:test
+      - name: snapshot test
+        run: npm run backstopjs:test
 
-      # - name: save snapshots
-      #   if: failure()
-      #   uses: actions/upload-artifact@v1
-      #   with:
-      #     name: bitmaps_reference
-      #     path: backstop_data/bitmaps_reference
+      - name: save snapshots
+        if: failure()
+        uses: actions/upload-artifact@v1
+        with:
+          name: bitmaps_reference
+          path: backstop_data/bitmaps_reference
 
-      # - name: commit changes to branch
-      #   if: failure()
-      #   uses: stefanzweifel/git-auto-commit-action@v4
-      #   with:
-      #     commit_message: Snapshot changes
-      #     push_options: --force
+      - name: commit changes to branch
+        if: failure()
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Snapshot changes
+          push_options: --force
 
       - name: deploy
         run: |
           if [ "${{ github.ref }}" == "refs/heads/main" ] && [ "${{ github.event_name }}" != "pull_request" ]; then
-            zip -r build build
             echo "${{ secrets.EC2_RSA }}" > ./identityFile.txt
             chmod 400 ./identityFile.txt
             scp -o "StrictHostKeyChecking=no" -i ./identityFile.txt -r ./build.zip ubuntu@ec2-35-178-235-11.eu-west-2.compute.amazonaws.com:/home/ubuntu/webapp-boilerplate/
