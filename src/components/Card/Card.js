@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Card as GGCard } from 'gg-components/Card';
 import HelperFunctions from 'helpers/HelperFunctions';
-import { useRouter } from 'next/router';
+import Router, { useRouter } from 'next/router';
 
 const Card = props => {
   const { href, onClick, scroll, ...rest } = props;
@@ -12,11 +12,16 @@ const Card = props => {
 
   const [isServer, setIsServer] = useState(true);
 
+  const renderNormalLink = !href || hrefExternal;
+
   useEffect(() => {
     setIsServer(false);
+    if (!renderNormalLink && process.env.NODE_ENV !== 'test') {
+      Router.prefetch(href);
+    }
   }, []);
 
-  if (hrefExternal || isServer) {
+  if (isServer || renderNormalLink) {
     return <GGCard href={href} onClick={onClick} {...rest} />;
   }
 
