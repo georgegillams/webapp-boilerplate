@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { Button as GGButton } from 'gg-components/Button';
-import { useRouter } from 'next/router';
+import Router, { useRouter } from 'next/router';
 
 const Button = props => {
   const { href, hrefExternal, onClick, ...rest } = props;
@@ -10,11 +10,16 @@ const Button = props => {
 
   const [isServer, setIsServer] = useState(true);
 
+  const renderNormalLink = !href || hrefExternal;
+
   useEffect(() => {
     setIsServer(false);
+    if (!renderNormalLink && process.env.NODE_ENV !== 'test') {
+      Router.prefetch(href);
+    }
   }, []);
 
-  if (isServer || !href || hrefExternal) {
+  if (isServer || renderNormalLink) {
     return <GGButton {...props} />;
   }
 
