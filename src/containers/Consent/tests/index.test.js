@@ -20,7 +20,7 @@ describe('<Consent />', () => {
   it('should render correctly - index', () => {
     const { container } = render(
       <Provider store={store}>
-        <ConsentIndex test />
+        <ConsentIndex />
       </Provider>
     );
 
@@ -31,7 +31,6 @@ describe('<Consent />', () => {
     const { container } = render(
       <Provider store={store}>
         <Consent
-          test
           consent={spy}
           resetConsent={spy}
           deferConsent={spy}
@@ -49,7 +48,6 @@ describe('<Consent />', () => {
     const { container } = render(
       <Provider store={store}>
         <Consent
-          test
           consent={spy}
           resetConsent={spy}
           deferConsent={spy}
@@ -68,7 +66,6 @@ describe('<Consent />', () => {
     const { container } = render(
       <Provider store={store}>
         <Consent
-          test
           consent={spy}
           resetConsent={spy}
           deferConsent={spy}
@@ -87,7 +84,6 @@ describe('<Consent />', () => {
     const { container } = render(
       <Provider store={store}>
         <Consent
-          test
           consent={spy}
           resetConsent={spy}
           deferConsent={spy}
@@ -107,7 +103,6 @@ describe('<Consent />', () => {
     const { container } = render(
       <Provider store={store}>
         <Consent
-          test
           consent={spy}
           resetConsent={spy}
           deferConsent={spy}

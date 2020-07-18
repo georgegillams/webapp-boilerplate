@@ -27,8 +27,6 @@ const Consent = props => {
   useInjectReducer({ key: KEY, reducer });
 
   const {
-    test,
-
     consent,
     deferConsent,
     resetConsent,
@@ -37,6 +35,8 @@ const Consent = props => {
 
     ...rest
   } = props;
+
+  const test = process.env.NODE_ENV === 'test';
 
   useEffect(() => {
     if (!test) {

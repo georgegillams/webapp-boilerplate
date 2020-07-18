@@ -45,6 +45,7 @@ const SignUpForm = props => {
           },
         },
       ]}
+      test={process.env.NODE_ENV === 'test'}
       {...rest}
     />
   );

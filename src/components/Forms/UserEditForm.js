@@ -61,6 +61,7 @@ const UserEditForm = props => {
           type: 'CHECKBOX',
         },
       ]}
+      test={process.env.NODE_ENV === 'test'}
       {...rest}
     />
   );
