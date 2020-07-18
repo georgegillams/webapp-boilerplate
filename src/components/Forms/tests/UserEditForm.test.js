@@ -5,14 +5,14 @@ import { UserEditForm } from '..';
 
 describe('<UserEditForm />', () => {
   it('Should render correctly', () => {
-    const { container } = render(<UserEditForm test user={{}} onDataChanged={() => null} onSubmit={() => null} />);
+    const { container } = render(<UserEditForm user={{}} onDataChanged={() => null} onSubmit={() => null} />);
 
     expect(container).toMatchSnapshot();
   });
 
   it('Should render correctly with admin controls shown', () => {
     const { container } = render(
-      <UserEditForm test showAdminControls user={{}} onDataChanged={() => null} onSubmit={() => null} />
+      <UserEditForm showAdminControls user={{}} onDataChanged={() => null} onSubmit={() => null} />
     );
 
     expect(container).toMatchSnapshot();

@@ -5,7 +5,7 @@ import { LoginForm } from '..';
 
 describe('<LoginForm />', () => {
   it('Should render correctly', () => {
-    const { container } = render(<LoginForm test credentials={{}} onDataChanged={() => null} onSubmit={() => null} />);
+    const { container } = render(<LoginForm credentials={{}} onDataChanged={() => null} onSubmit={() => null} />);
 
     expect(container).toMatchSnapshot();
   });
