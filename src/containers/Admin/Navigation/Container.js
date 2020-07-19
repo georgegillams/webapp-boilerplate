@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import PageTitle from 'components/PageTitle';
 import { DebugObject } from 'components/DebugObject';
 import { LoadingCover } from 'gg-components/LoadingCover';
-import { ARTICLE_CARD_LAYOUTS } from 'gg-components/ArticleCard';
-import ArticleCard from 'components/ArticleCard';
+import { FEATURE_CARD_LAYOUTS } from 'gg-components/FeatureCard';
+import FeatureCard from 'components/FeatureCard';
 import STYLES from './admin-navigation.scss';
 import { cssModules } from 'gg-components/helpers/cssModules';
 import { setPostLoginRedirect } from 'utils/storageHelpers';
@@ -38,32 +38,32 @@ const AdminNavigation = props => {
         }}>
         <PageTitle name="Admin">
           <div className={getClassName('admin-navigation__card-container')}>
-            <ArticleCard
-              layout={ARTICLE_CARD_LAYOUTS.narrowCompact}
+            <FeatureCard
+              layout={FEATURE_CARD_LAYOUTS.narrowCompact}
               day={null}
               month={null}
               className={getClassName('admin-navigation__card')}
               href="/debug"
               title="Debug settings"
             />
-            <ArticleCard
-              layout={ARTICLE_CARD_LAYOUTS.narrowCompact}
+            <FeatureCard
+              layout={FEATURE_CARD_LAYOUTS.narrowCompact}
               day={null}
               month={null}
               className={getClassName('admin-navigation__card')}
               href="/admin/analytics"
               title="Analytics"
             />
-            <ArticleCard
-              layout={ARTICLE_CARD_LAYOUTS.narrowCompact}
+            <FeatureCard
+              layout={FEATURE_CARD_LAYOUTS.narrowCompact}
               day={null}
               month={null}
               className={getClassName('admin-navigation__card')}
               href="/admin/notifications"
               title="Notifications"
             />
-            <ArticleCard
-              layout={ARTICLE_CARD_LAYOUTS.narrowCompact}
+            <FeatureCard
+              layout={FEATURE_CARD_LAYOUTS.narrowCompact}
               day={null}
               month={null}
               className={getClassName('admin-navigation__card')}

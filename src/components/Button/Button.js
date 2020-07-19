@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { Button as GGButton } from 'gg-components/Button';
 import Router, { useRouter } from 'next/router';
+import nextifyHref from 'utils/nextifyHref';
 
 const Button = props => {
   const { href, hrefExternal, onClick, ...rest } = props;
@@ -12,10 +13,12 @@ const Button = props => {
 
   const renderNormalLink = !href || hrefExternal;
 
+  const destination = nextifyHref(href);
+
   useEffect(() => {
     setIsServer(false);
     if (!renderNormalLink && process.env.NODE_ENV !== 'test') {
-      Router.prefetch(href);
+      Router.prefetch(destination.url, destination.as);
     }
   }, []);
 
@@ -27,7 +30,7 @@ const Button = props => {
     if (onClick) {
       onClick(e);
     }
-    await router.push(href);
+    await router.push(destination.url, destination.as, destination.options);
     if (scroll) {
       return window.scrollTo(0, 0);
     }

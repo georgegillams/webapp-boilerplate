@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { TextLink as GGTextLink } from 'gg-components/TextLink';
 import Link from 'next/link';
+import nextifyHref from 'utils/nextifyHref';
 
 const TextLink = props => {
   const { href, hrefExternal, ...rest } = props;
@@ -9,8 +10,9 @@ const TextLink = props => {
     return <GGTextLink {...props} />;
   }
 
+  const destination = nextifyHref(href);
   return (
-    <Link href={href} passHref>
+    <Link href={destination.url} as={destination.as} {...destination.options} passHref>
       <GGTextLink href={href} {...rest} />
     </Link>
   );

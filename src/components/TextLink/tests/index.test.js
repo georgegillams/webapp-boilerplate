@@ -13,6 +13,12 @@ describe('<TextLink />', () => {
     expect(container).toMatchSnapshot();
   });
 
+  it('Should render with nextified href', () => {
+    const { container } = render(<TextLink href="/blog/test">{children}</TextLink>);
+
+    expect(container).toMatchSnapshot();
+  });
+
   it('Should render correctly with custom className', () => {
     const { container } = render(
       <TextLink href="/test" className={'test-custom-classname'}>

@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { ArticleCard as GGArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/ArticleCard';
+import { FeatureCard as GGFeatureCard, FEATURE_CARD_LAYOUTS } from 'gg-components/FeatureCard';
 import HelperFunctions from 'helpers/HelperFunctions';
 import Router, { useRouter } from 'next/router';
+import nextifyHref from 'utils/nextifyHref';
 
-const ArticleCard = props => {
+const FeatureCard = props => {
   const { href, onClick, scroll, ...rest } = props;
   const router = useRouter();
 
@@ -14,41 +15,43 @@ const ArticleCard = props => {
 
   const renderNormalLink = !href || hrefExternal;
 
+  const destination = nextifyHref(href);
+
   useEffect(() => {
     setIsServer(false);
     if (!renderNormalLink && process.env.NODE_ENV !== 'test') {
-      Router.prefetch(href);
+      Router.prefetch(destination.url, destination.as);
     }
   }, []);
 
   if (isServer || renderNormalLink) {
-    return <GGArticleCard href={href} onClick={onClick} {...rest} />;
+    return <GGFeatureCard href={href} onClick={onClick} {...rest} />;
   }
 
   const onClickFinal = async e => {
     if (onClick) {
       onClick(e);
     }
-    await router.push(href);
+    await router.push(destination.url, destination.as, destination.options);
     if (scroll) {
       return window.scrollTo(0, 0);
     }
     return true;
   };
 
-  return <GGArticleCard style={{ cursor: 'pointer' }} onClick={onClickFinal} {...rest} />;
+  return <GGFeatureCard style={{ cursor: 'pointer' }} onClick={onClickFinal} {...rest} />;
 };
 
-ArticleCard.propTypes = {
+FeatureCard.propTypes = {
   href: PropTypes.string.isRequired,
   scroll: PropTypes.bool,
   onClick: PropTypes.func,
 };
 
-ArticleCard.defaultProps = {
+FeatureCard.defaultProps = {
   scroll: true,
   onClick: null,
 };
 
-export default ArticleCard;
-export { ARTICLE_CARD_LAYOUTS };
+export default FeatureCard;
+export { FEATURE_CARD_LAYOUTS };
