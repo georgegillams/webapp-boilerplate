@@ -33,3 +33,12 @@ exports[`<Button /> Should render correctly with custom className 1`] = `
   />
 </div>
 `;
+
+exports[`<Button /> Should render with nextified href 1`] = `
+<div>
+  <button
+    class="button__outer button__outer--regular button__outer--no-bouncy"
+    type="button"
+  />
+</div>
+`;

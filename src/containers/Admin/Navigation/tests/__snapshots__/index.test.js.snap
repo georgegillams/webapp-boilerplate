@@ -79,7 +79,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
         class="admin-navigation__card-container"
       >
         <div
-          class="article-card article-card--narrow-compact admin-navigation__card"
+          class="feature-card feature-card--narrow-compact admin-navigation__card"
           role="button"
           style="cursor: pointer;"
           tabindex="0"
@@ -95,23 +95,16 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
               class="card__outer-container card__outer-container--padded"
             >
               <div
-                class="article-card__outer-container article-card__outer-container--narrow-compact"
+                class="feature-card__outer-container feature-card__outer-container--narrow-compact"
               >
                 <div
-                  class="article-card__date article-card__date--narrow-compact"
-                >
-                  <div
-                    class="typography__main typography__link typography--no-padding"
-                  />
-                  <div
-                    class="typography__main typography__link typography--no-padding"
-                  />
-                </div>
+                  class="feature-card__date feature-card__date--narrow-compact"
+                />
                 <div
-                  class="article-card__center-container article-card__center-container--narrow-compact"
+                  class="feature-card__center-container feature-card__center-container--narrow-compact"
                 >
                   <div
-                    class="typography__main typography--no-padding article-card__title"
+                    class="typography__main typography--no-padding feature-card__title"
                   >
                     <h1
                       class="typography__text typography__text--section typography__link typography--no-padding"
@@ -120,9 +113,6 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
                       Debug settings
                     </h1>
                   </div>
-                  <div
-                    class="article-card__children"
-                  />
                 </div>
               </div>
             </div>
@@ -132,7 +122,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
           </div>
         </div>
         <div
-          class="article-card article-card--narrow-compact admin-navigation__card"
+          class="feature-card feature-card--narrow-compact admin-navigation__card"
           role="button"
           style="cursor: pointer;"
           tabindex="0"
@@ -148,23 +138,16 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
               class="card__outer-container card__outer-container--padded"
             >
               <div
-                class="article-card__outer-container article-card__outer-container--narrow-compact"
+                class="feature-card__outer-container feature-card__outer-container--narrow-compact"
               >
                 <div
-                  class="article-card__date article-card__date--narrow-compact"
-                >
-                  <div
-                    class="typography__main typography__link typography--no-padding"
-                  />
-                  <div
-                    class="typography__main typography__link typography--no-padding"
-                  />
-                </div>
+                  class="feature-card__date feature-card__date--narrow-compact"
+                />
                 <div
-                  class="article-card__center-container article-card__center-container--narrow-compact"
+                  class="feature-card__center-container feature-card__center-container--narrow-compact"
                 >
                   <div
-                    class="typography__main typography--no-padding article-card__title"
+                    class="typography__main typography--no-padding feature-card__title"
                   >
                     <h1
                       class="typography__text typography__text--section typography__link typography--no-padding"
@@ -173,9 +156,6 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
                       Analytics
                     </h1>
                   </div>
-                  <div
-                    class="article-card__children"
-                  />
                 </div>
               </div>
             </div>
@@ -185,7 +165,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
           </div>
         </div>
         <div
-          class="article-card article-card--narrow-compact admin-navigation__card"
+          class="feature-card feature-card--narrow-compact admin-navigation__card"
           role="button"
           style="cursor: pointer;"
           tabindex="0"
@@ -201,23 +181,16 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
               class="card__outer-container card__outer-container--padded"
             >
               <div
-                class="article-card__outer-container article-card__outer-container--narrow-compact"
+                class="feature-card__outer-container feature-card__outer-container--narrow-compact"
               >
                 <div
-                  class="article-card__date article-card__date--narrow-compact"
-                >
-                  <div
-                    class="typography__main typography__link typography--no-padding"
-                  />
-                  <div
-                    class="typography__main typography__link typography--no-padding"
-                  />
-                </div>
+                  class="feature-card__date feature-card__date--narrow-compact"
+                />
                 <div
-                  class="article-card__center-container article-card__center-container--narrow-compact"
+                  class="feature-card__center-container feature-card__center-container--narrow-compact"
                 >
                   <div
-                    class="typography__main typography--no-padding article-card__title"
+                    class="typography__main typography--no-padding feature-card__title"
                   >
                     <h1
                       class="typography__text typography__text--section typography__link typography--no-padding"
@@ -226,9 +199,6 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
                       Notifications
                     </h1>
                   </div>
-                  <div
-                    class="article-card__children"
-                  />
                 </div>
               </div>
             </div>
@@ -238,7 +208,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
           </div>
         </div>
         <div
-          class="article-card article-card--narrow-compact admin-navigation__card"
+          class="feature-card feature-card--narrow-compact admin-navigation__card"
           role="button"
           style="cursor: pointer;"
           tabindex="0"
@@ -254,23 +224,16 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
               class="card__outer-container card__outer-container--padded"
             >
               <div
-                class="article-card__outer-container article-card__outer-container--narrow-compact"
+                class="feature-card__outer-container feature-card__outer-container--narrow-compact"
               >
                 <div
-                  class="article-card__date article-card__date--narrow-compact"
-                >
-                  <div
-                    class="typography__main typography__link typography--no-padding"
-                  />
-                  <div
-                    class="typography__main typography__link typography--no-padding"
-                  />
-                </div>
+                  class="feature-card__date feature-card__date--narrow-compact"
+                />
                 <div
-                  class="article-card__center-container article-card__center-container--narrow-compact"
+                  class="feature-card__center-container feature-card__center-container--narrow-compact"
                 >
                   <div
-                    class="typography__main typography--no-padding article-card__title"
+                    class="typography__main typography--no-padding feature-card__title"
                   >
                     <h1
                       class="typography__text typography__text--section typography__link typography--no-padding"
@@ -279,9 +242,6 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
                       Users
                     </h1>
                   </div>
-                  <div
-                    class="article-card__children"
-                  />
                 </div>
               </div>
             </div>
