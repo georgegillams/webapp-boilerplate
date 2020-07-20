@@ -53,7 +53,7 @@ module.exports = {
         },
         {
           property: 'og:logo',
-          content: `https://${domain}/static/favicon/apple-touch-icon.png`,
+          content: `https://${domain}/static/favicon/favicon-150x150.png`,
         },
         { property: 'og:locale', content: 'en_GB' },
         {

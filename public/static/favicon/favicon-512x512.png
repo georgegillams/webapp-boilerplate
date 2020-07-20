@@ -1,0 +1,7 @@
+i Running ImageOptim...
+✓ public/static/favicon/favicon-150x150.png was: 5.55kB now: 5.55kB saving: 0B (0.00%)
+✓ public/static/favicon/favicon-180x180.png was: 6.7kB now: 6.7kB saving: 0B (0.00%)
+✓ public/static/favicon/favicon-192x192.png was: 7.16kB now: 7.16kB saving: 0B (0.00%)
+✓ public/static/favicon/favicon-64x64.png was: 6.91kB now: 2.79kB saving: 4.12kB (59.64%)
+✓ TOTAL was: 26.3kB now: 22.2kB saving: 4.12kB (15.65%)
+✓ Finished
