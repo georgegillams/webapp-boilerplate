@@ -48,6 +48,10 @@ module.exports = {
           content: `https://${domain}/static/images/social-preview.png`,
         },
         {
+          property: 'twitter:image',
+          content: `https://${domain}/static/images/social-preview.png`,
+        },
+        {
           property: 'og:url',
           content: `https://${domain}/`,
         },
