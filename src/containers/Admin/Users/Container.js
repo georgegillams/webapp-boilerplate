@@ -6,7 +6,7 @@ import { LoadingCover } from 'gg-components/LoadingCover';
 import { Button } from 'gg-components/Button';
 import { Subsection } from 'gg-components/Subsection';
 import { Paragraph } from 'gg-components/Paragraph';
-import Card from 'components/Card';
+import { SplitDetailItem } from 'components/SplitDetailView';
 import { AdminOnly } from 'components/Walls';
 import { SplitDetailView } from 'components/SplitDetailView';
 import { setPostLoginRedirect } from 'utils/storageHelpers';
@@ -149,13 +149,13 @@ const AdminUsers = props => {
   );
   const listView = (
     <div>
-      <Card
+      <SplitDetailItem
         scroll={false}
         highlighted={highlightId === 'new'}
         href="/admin/users?highlight=new"
         className={getClassName('admin-users__card')}>
         <Subsection name="New +" anchor={false} noPadding />
-      </Card>
+      </SplitDetailItem>
       {showUsers &&
         filteredUsers.map(n => (
           <AdminUsersAPIEntity
@@ -183,7 +183,6 @@ const AdminUsers = props => {
         updateUser={update}
         entity={detailUser}
         highlighted={highlightId === detailUser.id}
-        className={getClassName('pages__component')}
         onUserUpdateSuccess={() => {
           load();
         }}>

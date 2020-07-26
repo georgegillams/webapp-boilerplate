@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Button } from 'gg-components/Button';
 import { Paragraph } from 'gg-components/Paragraph';
 import { Subsection } from 'gg-components/Subsection';
-import Card from 'components/Card';
+import { SplitDetailItem } from 'components/SplitDetailView';
 import { UserEditForm } from 'components/Forms';
 
 const AdminUsersAPIEntity = props => {
@@ -12,26 +12,29 @@ const AdminUsersAPIEntity = props => {
   const [updatedUser, setUpdatedUser] = useState(null);
 
   const content = (
-    <Subsection anchor={false} name={entity.name || `User ${entity.id}`}>
-      <Paragraph>id: {entity.id}</Paragraph>
-      {!compact && (
-        <>
-          {entity.deleted && (
-            <>
-              <br />
-              <Paragraph>DELETED</Paragraph>
-            </>
-          )}
-          <br />
-          <Paragraph>uname: {entity.uname}</Paragraph>
-          <br />
-          <Paragraph>email: {entity.email}</Paragraph>
-          <br />
-          <Paragraph>{entity.admin ? 'Admin' : 'Regular user'}</Paragraph>
-          <br />
-          <Paragraph>Email{entity.emailVerified ? '' : ' not'} verified</Paragraph>
-        </>
-      )}
+    <Subsection anchor={false} noPadding={compact} name={entity.name || `User ${entity.id}`}>
+      <Paragraph>
+        {compact && <br />}
+        id: {entity.id}
+        {!compact && (
+          <>
+            {entity.deleted && (
+              <>
+                <br />
+                DELETED
+              </>
+            )}
+            <br />
+            uname: {entity.uname}
+            <br />
+            email: {entity.email}
+            <br />
+            {entity.admin ? 'Admin' : 'Regular user'}
+            <br />
+            Email{entity.emailVerified ? '' : ' not'} verified
+          </>
+        )}
+      </Paragraph>
       {!compact && (
         <>
           <br />
@@ -79,9 +82,9 @@ const AdminUsersAPIEntity = props => {
 
   if (compact) {
     return (
-      <Card id={entity.id} {...rest}>
+      <SplitDetailItem id={entity.id} {...rest}>
         {content}
-      </Card>
+      </SplitDetailItem>
     );
   }
   return (

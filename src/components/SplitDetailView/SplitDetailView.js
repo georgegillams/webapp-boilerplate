@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { cssModules } from 'gg-components/helpers/cssModules';
-import { Button } from 'gg-components/Button';
+import Button from 'components/Button';
 
 import STYLES from './split-detail-view.scss';
 
@@ -23,7 +23,7 @@ const SplitDetailView = props => {
           <Button className={getClassName('split-detail-view__close-button')} href={closeLink}>
             Close
           </Button>
-          {detailView}
+          <div className={getClassName('split-detail-view__detail-view-content')}>{detailView}</div>
         </div>
       )}
     </div>

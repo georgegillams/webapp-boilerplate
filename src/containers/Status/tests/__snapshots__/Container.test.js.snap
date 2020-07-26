@@ -14,17 +14,17 @@ exports[`<Status /> should render correctly 1`] = `
       </h1>
       <img
         alt="Build status"
-        class="style__component"
+        class="status__badge"
         src="https://github.com/georgegillams/webapp-boilerplate/workflows/CI/badge.svg"
       />
       <br />
       <img
         alt="Dependency status"
-        class="style__component"
+        class="status__badge"
         src="https://img.shields.io/david/georgegillams/webapp-boilerplate"
       />
       <div
-        class="typography__main pages__component"
+        class="typography__main"
       >
         <span
           class="paragraph"
@@ -34,7 +34,7 @@ exports[`<Status /> should render correctly 1`] = `
         </span>
       </div>
       <div
-        class="typography__main pages__component"
+        class="typography__main"
       >
         <span
           class="paragraph"
