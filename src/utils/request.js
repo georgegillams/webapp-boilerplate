@@ -1,3 +1,4 @@
+import 'whatwg-fetch';
 /**
  * Parses the JSON returned by a network request
  *
