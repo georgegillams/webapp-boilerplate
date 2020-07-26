@@ -5,7 +5,7 @@ import { Subsection } from 'gg-components/Subsection';
 import { Paragraph } from 'gg-components/Paragraph';
 import PageTitle from 'components/PageTitle';
 
-import STYLES from './style.scss';
+import STYLES from './status.scss';
 
 import { getTimeDifference } from 'helpers/time';
 import appConfig from 'helpers/appConfig';
@@ -19,20 +19,20 @@ const Status = props => {
     <div {...rest}>
       <PageTitle anchor={false} name="Status">
         <img
-          className={getClassName('style__component')}
+          className={getClassName('status__badge')}
           alt="Build status"
           src={`${appConfig.githubRepoUrl}/workflows/CI/badge.svg`}
         />
         <br />
         <img
-          className={getClassName('style__component')}
+          className={getClassName('status__badge')}
           alt="Dependency status"
           src={`https://img.shields.io/david/${appConfig.githubRepo}`}
         />
-        <Subsection className={getClassName('pages__component')} anchor={false}>
+        <Subsection anchor={false}>
           <Paragraph>Built {getTimeDifference(new Date(builtAt * 1000))}</Paragraph>
         </Subsection>
-        <Subsection className={getClassName('pages__component')} anchor={false}>
+        <Subsection anchor={false}>
           <Paragraph>Environment {nodeEnv}</Paragraph>
         </Subsection>
       </PageTitle>
