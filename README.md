@@ -18,8 +18,6 @@ Features:
 - Custom server for an API
 - Redis DB connection and helpers for reading/writing
 - Security features such as rate-limiting for sensitive API routes, CORS etc
-- Security features such as rate-limiting for sensitive API routes, CORS etc
-- Snapshot testing
 - Unit testing
 - Snapshot testing (coming soon)
 - Bundle size analysis
@@ -66,6 +64,10 @@ docker cp DOCKER_CONTAINER_ID:/usr/src/tmp/backstop_data ./
 Any changes resulting from these commands should be verified and checked in.
 
 ## Hosting
+
+Both `dependencies` and `devDependencies` should be used for development, testing, CI, and building.
+
+Only `dependencies` should be used when running the production app. To install prod dependencies only, use `npm ci --only=prod`.
 
 The following environment variables should be set up
 
