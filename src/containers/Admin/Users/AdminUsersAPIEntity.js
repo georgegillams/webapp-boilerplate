@@ -5,6 +5,7 @@ import { Paragraph } from 'gg-components/Paragraph';
 import { Subsection } from 'gg-components/Subsection';
 import { SplitDetailItem } from 'components/SplitDetailView';
 import { UserEditForm } from 'components/Forms';
+import { Error } from 'gg-components/Error';
 
 const AdminUsersAPIEntity = props => {
   const { compact, entity, updateUser, adminUserState, children, ...rest } = props;
@@ -73,7 +74,9 @@ const AdminUsersAPIEntity = props => {
       {!compact && adminUserState && adminUserState.updateError && (
         <>
           <br />
-          <Paragraph>{adminUserState.updateError.errorMessage || 'Something went wrong'}</Paragraph>
+          <Error>
+            <Paragraph>{adminUserState.updateError.errorMessage || 'Something went wrong'}</Paragraph>
+          </Error>
         </>
       )}
       {!compact && children && children}
