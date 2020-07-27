@@ -14,6 +14,7 @@ import Skeleton from './Skeleton';
 import { withRouter } from 'next/router';
 import UserFilter from './UserFilter';
 import { UserEditForm } from 'components/Forms';
+import { Error } from 'gg-components/Error';
 
 import { useInjectSaga } from 'utils/redux/inject-saga';
 import { useInjectReducer } from 'utils/redux/inject-reducer';
@@ -130,7 +131,9 @@ const AdminUsers = props => {
     <>
       {adminUsersState && adminUsersState.createError && (
         <>
-          <Paragraph>{adminUsersState.createError.errorMessage || 'Something went wrong'}</Paragraph>
+          <Error>
+            <Paragraph>{adminUsersState.createError.errorMessage || 'Something went wrong'}</Paragraph>
+          </Error>
           <br />
         </>
       )}
@@ -257,6 +260,19 @@ const AdminUsers = props => {
             <PageTitle link={{ to: '/admin', text: 'Admin' }} name="Admin users"></PageTitle>
           </div>
           {mainControls}
+          {loadError && (
+            <>
+              <Paragraph>Could not load users</Paragraph>
+              {loadError.errorMessage && (
+                <>
+                  <br />
+                  <Error>
+                    <Paragraph>{loadError.errorMessage}</Paragraph>
+                  </Error>
+                </>
+              )}
+            </>
+          )}
           {showFilters && filterControls}
           {users && (
             <>
@@ -274,17 +290,6 @@ const AdminUsers = props => {
             detailView={detailView}
             closeLink="/admin/users"
           />
-          {loadError && (
-            <>
-              <Paragraph>Could not load users</Paragraph>
-              {loadError.errorMessage && (
-                <>
-                  <br />
-                  <Paragraph>{loadError.errorMessage}</Paragraph>
-                </>
-              )}
-            </>
-          )}
         </AdminOnly>
       </LoadingCover>
       <DebugObject

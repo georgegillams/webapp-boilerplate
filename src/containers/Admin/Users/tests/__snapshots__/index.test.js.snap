@@ -365,6 +365,21 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
     <br />
     <br />
   </div>
+  <span
+    class="paragraph"
+  >
+    Could not load users
+  </span>
+  <br />
+  <span
+    class="error"
+  >
+    <span
+      class="paragraph"
+    >
+      Something went wrong
+    </span>
+  </span>
   <div
     class="split-detail-view__outer admin-users__split-view"
   >
@@ -411,17 +426,6 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
       </div>
     </div>
   </div>
-  <span
-    class="paragraph"
-  >
-    Could not load users
-  </span>
-  <br />
-  <span
-    class="paragraph"
-  >
-    Something went wrong
-  </span>
 </div>
 `;
 
