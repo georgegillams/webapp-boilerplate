@@ -5,7 +5,7 @@ import { cssModules } from 'gg-components/helpers/cssModules';
 
 import STYLES from './logo.scss';
 
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
+const getClassName = cssModules(STYLES);
 
 const Logo = props => {
   const { padding, animated, className, alwaysCentred, pride, ...rest } = props;

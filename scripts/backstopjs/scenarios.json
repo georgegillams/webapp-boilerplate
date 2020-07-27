@@ -1,0 +1,4 @@
+{
+  "scenarioIds": ["", "account", "admin", "debug", "not-found-page", "418", "sign-up", "sitemap"],
+  "globallyHiddenSelectors": ["img"]
+}

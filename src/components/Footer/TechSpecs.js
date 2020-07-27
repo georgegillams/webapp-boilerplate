@@ -3,12 +3,13 @@ import PropTypes from 'prop-types';
 import { cssModules } from 'gg-components/helpers/cssModules';
 import { Section } from 'gg-components/Section';
 
-import STYLES from './tech-specs.scss';
 import reactLogo from './react-logo.svg';
 import reduxLogo from './redux-logo.svg';
 import awsLogo from './aws-logo.svg';
 
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
+import STYLES from './tech-specs.scss';
+
+const getClassName = cssModules(STYLES);
 
 const TechSpecs = props => {
   const { className, ...rest } = props;
