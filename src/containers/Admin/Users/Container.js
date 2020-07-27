@@ -16,22 +16,14 @@ import UserFilter from './UserFilter';
 import { UserEditForm } from 'components/Forms';
 import { Error } from 'gg-components/Error';
 
-import { useInjectSaga } from 'utils/redux/inject-saga';
-import { useInjectReducer } from 'utils/redux/inject-reducer';
 import AdminUsersAPIEntity from './AdminUsersAPIEntity';
 
-import { KEY } from './constants';
-import saga from './saga';
-import reducer from './reducer';
 import { cssModules } from 'gg-components/helpers/cssModules';
 import STYLES from './admin-users.scss';
 
 const getClassName = cssModules(STYLES);
 
 const AdminUsers = props => {
-  useInjectSaga({ key: KEY, saga });
-  useInjectReducer({ key: KEY, reducer });
-
   const [firstPageHit, setFirstPageHit] = useState(true);
   const [highlightId, setHighlightId] = useState(null);
   const [highlightToScrollTo, setHighlightToScrollTo] = useState(null);

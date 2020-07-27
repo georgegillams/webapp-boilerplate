@@ -4,22 +4,13 @@ import PageTitle from 'components/PageTitle';
 import { DebugObject } from 'components/DebugObject';
 import { Paragraph } from 'gg-components/Paragraph';
 
-import { useInjectSaga } from 'utils/redux/inject-saga';
-import { useInjectReducer } from 'utils/redux/inject-reducer';
 import TextLink from 'components/TextLink';
 import CookiesRequired from 'containers/CookiesRequired';
 import { withRouter } from 'next/router';
-
-import { KEY } from './constants';
-import saga from './saga';
-import reducer from './reducer';
 import { REDIRECT_REGEX } from 'helpers/regexConstants';
 import { CONSENT_STATE_ALLOWED } from 'containers/Consent/constants';
 
 const MagicLogin = props => {
-  useInjectSaga({ key: KEY, saga });
-  useInjectReducer({ key: KEY, reducer });
-
   const [loginAttempted, setLoginAttempted] = useState(false);
 
   const {

@@ -4,18 +4,9 @@ import PageTitle from 'components/PageTitle';
 import { DebugObject } from 'components/DebugObject';
 import { Paragraph } from 'gg-components/Paragraph';
 
-import { useInjectSaga } from 'utils/redux/inject-saga';
-import { useInjectReducer } from 'utils/redux/inject-reducer';
-
-import { KEY } from './constants';
-import saga from './saga';
-import reducer from './reducer';
 import { withRouter } from 'next/router';
 
 const EmailVerification = props => {
-  useInjectSaga({ key: KEY, saga });
-  useInjectReducer({ key: KEY, reducer });
-
   const [verificationAttempted, setVerificationAttempted] = useState(false);
 
   const {

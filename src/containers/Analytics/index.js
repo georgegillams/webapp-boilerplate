@@ -7,7 +7,13 @@ import { createStructuredSelector } from 'reselect';
 import { sendAnalytic } from './actions';
 import { selectState as selectConsentState } from '../Consent/selectors';
 import { selectState } from './selectors';
-import Authenticator from './Container';
+import Analytics from './Container';
+import injectSaga from 'utils/redux/inject-saga';
+import injectReducer from 'utils/redux/inject-reducer';
+
+import { KEY } from './constants';
+import saga from './saga';
+import reducer from './reducer';
 
 const mapStateToProps = createStructuredSelector({
   consentState: selectConsentState(),
@@ -21,5 +27,7 @@ export function mapDispatchToProps(dispatch) {
 }
 
 const withConnect = connect(mapStateToProps, mapDispatchToProps);
+const withSaga = injectSaga({ key: KEY, saga });
+const withReducer = injectReducer({ key: KEY, reducer });
 
-export default compose(withConnect, memo)(Authenticator);
+export default compose(withSaga, withReducer, withConnect, memo)(Analytics);

@@ -7,6 +7,12 @@ import { createStructuredSelector } from 'reselect';
 import { loadAuth } from './actions';
 import { selectState } from './selectors';
 import Authenticator from './Container';
+import injectSaga from 'utils/redux/inject-saga';
+import injectReducer from 'utils/redux/inject-reducer';
+
+import { KEY } from './constants';
+import saga from './saga';
+import reducer from './reducer';
 
 const mapStateToProps = createStructuredSelector({
   authenticatorState: selectState(),
@@ -19,5 +25,7 @@ export function mapDispatchToProps(dispatch) {
 }
 
 const withConnect = connect(mapStateToProps, mapDispatchToProps);
+const withSaga = injectSaga({ key: KEY, saga });
+const withReducer = injectReducer({ key: KEY, reducer });
 
-export default compose(withConnect, memo)(Authenticator);
+export default compose(withSaga, withReducer, withConnect, memo)(Authenticator);
