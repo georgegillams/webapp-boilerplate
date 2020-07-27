@@ -10,21 +10,12 @@ import { setPostLoginRedirect } from 'utils/storageHelpers';
 import Skeleton from './Skeleton';
 
 import { LoggedInOnly } from 'components/Walls';
-import { useInjectSaga } from 'utils/redux/inject-saga';
-import { useInjectReducer } from 'utils/redux/inject-reducer';
-
-import { KEY } from './constants';
-import saga from './saga';
-import reducer from './reducer';
 import STYLES from './account.scss';
 import { cssModules } from 'gg-components/helpers/cssModules';
 
 const getClassName = cssModules(STYLES);
 
 const Account = props => {
-  useInjectSaga({ key: KEY, saga });
-  useInjectReducer({ key: KEY, reducer });
-
   const {
     logout,
     requestVerificationEmail,
