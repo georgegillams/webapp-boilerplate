@@ -1,16 +1,8 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { DebugObject } from 'components/DebugObject';
-import { KEY } from './constants';
-import saga from './saga';
-import reducer from './reducer';
-import { useInjectSaga } from 'utils/redux/inject-saga';
-import { useInjectReducer } from 'utils/redux/inject-reducer';
 
 const Authenticator = props => {
-  useInjectSaga({ key: KEY, saga });
-  useInjectReducer({ key: KEY, reducer });
-
   useEffect(() => {
     props.loadAuth();
   }, []);

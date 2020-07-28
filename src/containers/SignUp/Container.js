@@ -10,18 +10,9 @@ import Skeleton from './Skeleton';
 import { LoggedOutOnly } from 'components/Walls';
 import { SignUpForm } from 'components/Forms';
 import CookiesRequired from 'containers/CookiesRequired';
-import { useInjectSaga } from 'utils/redux/inject-saga';
-import { useInjectReducer } from 'utils/redux/inject-reducer';
-
-import { KEY } from './constants';
-import saga from './saga';
-import reducer from './reducer';
 import { CONSENT_STATE_ALLOWED } from 'containers/Consent/constants';
 
 const SignUp = props => {
-  useInjectSaga({ key: KEY, saga });
-  useInjectReducer({ key: KEY, reducer });
-
   const [credentials, setCredentials] = useState({});
 
   const {

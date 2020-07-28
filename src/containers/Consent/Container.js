@@ -2,16 +2,11 @@ import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { DebugObject } from 'components/DebugObject';
 import {
-  KEY,
   CONSENT_STATE_UNSET,
   CONSENT_STATE_ALLOWED_CLIENT_VALUE,
   CONSENT_STATE_DEFERRED_CLIENT_VALUE,
   CONSENT_STATE_DEFERRED,
 } from './constants';
-import saga from './saga';
-import reducer from './reducer';
-import { useInjectSaga } from 'utils/redux/inject-saga';
-import { useInjectReducer } from 'utils/redux/inject-reducer';
 import Button from 'components/Button';
 import { Paragraph } from 'gg-components/Paragraph';
 import Modal from 'react-modal';
@@ -23,9 +18,6 @@ import TextLink from 'components/TextLink';
 const getClassName = cssModules(STYLES);
 
 const Consent = props => {
-  useInjectSaga({ key: KEY, saga });
-  useInjectReducer({ key: KEY, reducer });
-
   const {
     consent,
     deferConsent,

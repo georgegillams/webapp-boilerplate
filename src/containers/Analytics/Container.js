@@ -1,19 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { DebugObject } from 'components/DebugObject';
-import { KEY } from './constants';
-import saga from './saga';
-import reducer from './reducer';
-import { useInjectSaga } from 'utils/redux/inject-saga';
-import { useInjectReducer } from 'utils/redux/inject-reducer';
 import { CONSENT_STATE_ALLOWED } from 'containers/Consent/constants';
 import { detect } from 'detect-browser';
 import { withRouter } from 'next/router';
 
 const Analytics = props => {
-  useInjectSaga({ key: KEY, saga });
-  useInjectReducer({ key: KEY, reducer });
-
   const [analytic, setAnalytic] = useState(null);
   const [analyticSent, setAnalyticSent] = useState(false);
 
