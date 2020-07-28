@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { Paragraph } from 'gg-components/Paragraph';
 import { Section } from 'gg-components/Section';
-import TextLink from 'components/TextLink';
+import TextLink from 'components/common/TextLink';
 
 const AdminOnly = props => {
   const { user, children, setLoginRedirect, ...rest } = props;

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import PageTitle from 'components/PageTitle';
-import { DebugObject } from 'components/DebugObject';
+import PageTitle from 'components/common/PageTitle';
+import { DebugObject } from 'components/common/DebugObject';
 import { Paragraph } from 'gg-components/Paragraph';
 
-import TextLink from 'components/TextLink';
+import TextLink from 'components/common/TextLink';
 import CookiesRequired from 'containers/CookiesRequired';
 import { withRouter } from 'next/router';
 import { REDIRECT_REGEX } from 'helpers/regexConstants';

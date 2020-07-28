@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import { DebugObject } from 'components/DebugObject';
+import { DebugObject } from 'components/common/DebugObject';
 import { CONSENT_STATE_ALLOWED } from 'containers/Consent/constants';
 import { detect } from 'detect-browser';
 import { withRouter } from 'next/router';

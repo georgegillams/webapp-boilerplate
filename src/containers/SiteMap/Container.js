@@ -1,7 +1,7 @@
 import React from 'react';
 import { Subsection } from 'gg-components/Subsection';
-import TextLink from 'components/TextLink';
-import PageTitle from 'components/PageTitle';
+import TextLink from 'components/common/TextLink';
+import PageTitle from 'components/common/PageTitle';
 import { Paragraph } from 'gg-components/Paragraph';
 
 import redirects from 'helpers/redirects';

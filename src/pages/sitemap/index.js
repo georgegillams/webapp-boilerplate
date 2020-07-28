@@ -1,7 +1,7 @@
 import React from 'react';
 
 import SiteMap from 'containers/SiteMap';
-import CommonLayout from 'components/CommonLayout';
+import CommonLayout from 'components/common/CommonLayout';
 
 const Page = props => {
   return (

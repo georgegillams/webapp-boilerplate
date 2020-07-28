@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Paragraph } from 'gg-components/Paragraph';
 import { Section } from 'gg-components/Section';
-import TextLink from 'components/TextLink';
+import TextLink from 'components/common/TextLink';
 
 const LoggedInOnly = props => {
   const { user, activityName, children, setLoginRedirect, ...rest } = props;

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import KonamiResponder from 'konami';
-import DebugObject from 'components/DebugObject';
+import DebugObject from 'components/common/DebugObject';
 
 const Konami = () => {
   const [konamiActivated, setKonamiActivated] = useState(false);

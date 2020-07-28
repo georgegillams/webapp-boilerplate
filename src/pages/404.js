@@ -1,6 +1,6 @@
 import React from 'react';
 
-import CommonLayout from 'components/CommonLayout';
+import CommonLayout from 'components/common/CommonLayout';
 import NotFound from 'containers/NotFound';
 
 const Page = props => {

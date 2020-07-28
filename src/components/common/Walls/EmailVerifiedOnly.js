@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Section } from 'gg-components/Section';
-import TextLink from 'components/TextLink';
+import TextLink from 'components/common/TextLink';
 
 const EmailVerifiedOnly = props => {
   const { user, children, ...rest } = props;
