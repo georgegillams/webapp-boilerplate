@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { NavigationBar } from 'gg-components/NavigationBar';
-import NavigationItem from 'components/NavigationItem';
+import NavigationItem from 'components/common/NavigationItem';
 import { SmallButtonSkeleton } from 'gg-components/Skeletons';
 
 import Logo from 'components/Logo';

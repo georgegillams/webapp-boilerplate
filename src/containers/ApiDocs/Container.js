@@ -1,7 +1,7 @@
 import React from 'react';
 import { Paragraph } from 'gg-components/Paragraph';
-import PageTitle from 'components/PageTitle';
-import TextLink from 'components/TextLink';
+import PageTitle from 'components/common/PageTitle';
+import TextLink from 'components/common/TextLink';
 import { cssModules } from 'gg-components/helpers/cssModules';
 
 import STYLES from './api-docs.scss';

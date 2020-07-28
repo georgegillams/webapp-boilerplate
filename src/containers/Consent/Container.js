@@ -1,19 +1,19 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { DebugObject } from 'components/DebugObject';
+import { DebugObject } from 'components/common/DebugObject';
 import {
   CONSENT_STATE_UNSET,
   CONSENT_STATE_ALLOWED_CLIENT_VALUE,
   CONSENT_STATE_DEFERRED_CLIENT_VALUE,
   CONSENT_STATE_DEFERRED,
 } from './constants';
-import Button from 'components/Button';
+import Button from 'components/common/Button';
 import { Paragraph } from 'gg-components/Paragraph';
 import Modal from 'react-modal';
 import { cssModules } from 'gg-components/helpers/cssModules';
 import STYLES from './consent.scss';
 import { getPrivacyPreferences, setPrivacyPreferences } from 'utils/storageHelpers';
-import TextLink from 'components/TextLink';
+import TextLink from 'components/common/TextLink';
 
 const getClassName = cssModules(STYLES);
 

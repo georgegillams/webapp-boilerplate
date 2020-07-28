@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import PageContainer, { LAYOUT_STYLES } from 'components/PageContainer';
+import PageContainer, { LAYOUT_STYLES } from 'components/common/PageContainer';
 import Footer from 'components/Footer';
 import STYLES from './common-layout.scss';
 import { cssModules } from 'gg-components/helpers/cssModules';

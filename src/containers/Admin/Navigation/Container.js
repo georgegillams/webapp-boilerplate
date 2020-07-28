@@ -1,17 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import PageTitle from 'components/PageTitle';
-import { DebugObject } from 'components/DebugObject';
+import PageTitle from 'components/common/PageTitle';
+import { DebugObject } from 'components/common/DebugObject';
 import { LoadingCover } from 'gg-components/LoadingCover';
 import { FEATURE_CARD_LAYOUTS } from 'gg-components/FeatureCard';
-import FeatureCard from 'components/FeatureCard';
+import FeatureCard from 'components/common/FeatureCard';
 import STYLES from './admin-navigation.scss';
 import { cssModules } from 'gg-components/helpers/cssModules';
 import { setPostLoginRedirect } from 'utils/storageHelpers';
 
 import Skeleton from './Skeleton';
 
-import { AdminOnly } from 'components/Walls';
+import { AdminOnly } from 'components/common/Walls';
 
 const getClassName = cssModules(STYLES);
 

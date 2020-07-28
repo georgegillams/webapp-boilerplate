@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { cssModules } from 'gg-components/helpers/cssModules';
 import { Subsection } from 'gg-components/Subsection';
 import { Paragraph } from 'gg-components/Paragraph';
-import PageTitle from 'components/PageTitle';
+import PageTitle from 'components/common/PageTitle';
 
 import STYLES from './teapot.scss';
 

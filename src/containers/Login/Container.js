@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import TextLink from 'components/TextLink';
-import PageTitle from 'components/PageTitle';
-import { DebugObject } from 'components/DebugObject';
+import TextLink from 'components/common/TextLink';
+import PageTitle from 'components/common/PageTitle';
+import { DebugObject } from 'components/common/DebugObject';
 import { LoadingCover } from 'gg-components/LoadingCover';
 
 import Skeleton from './Skeleton';
 
 import CookiesRequired from 'containers/CookiesRequired';
-import { LoggedOutOnly } from 'components/Walls';
-import { LoginForm } from 'components/Forms';
+import { LoggedOutOnly } from 'components/common/Walls';
+import { LoginForm } from 'components/common/Forms';
 
 const Login = props => {
   const [credentials, setCredentials] = useState({});

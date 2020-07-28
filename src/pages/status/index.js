@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Status from 'containers/Status';
-import CommonLayout from 'components/CommonLayout';
+import CommonLayout from 'components/common/CommonLayout';
 import getConfig from 'next/config';
 const { publicRuntimeConfig } = getConfig();
 const { BUILT_AT, NODE_ENV } = publicRuntimeConfig;

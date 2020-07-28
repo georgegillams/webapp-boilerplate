@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { DebugObject } from 'components/DebugObject';
+import { DebugObject } from 'components/common/DebugObject';
 
 const ConsentSuppressor = props => {
   const { consentState, setConsentSuppression } = props;

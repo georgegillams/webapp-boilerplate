@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { Button } from 'gg-components/Button';
 import { Paragraph } from 'gg-components/Paragraph';
 import { Subsection } from 'gg-components/Subsection';
-import { SplitDetailItem } from 'components/SplitDetailView';
-import { UserEditForm } from 'components/Forms';
+import { SplitDetailItem } from 'components/common/SplitDetailView';
+import { UserEditForm } from 'components/common/Forms';
 import { Error } from 'gg-components/Error';
 
 const AdminUsersAPIEntity = props => {

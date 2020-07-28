@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Users from 'containers/Admin/Users';
-import FlexLayout from 'components/FlexLayout';
+import FlexLayout from 'components/common/FlexLayout';
 
 const Page = props => {
   return (

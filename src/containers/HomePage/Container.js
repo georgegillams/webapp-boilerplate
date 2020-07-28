@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Subsection } from 'gg-components/Subsection';
 import { Paragraph } from 'gg-components/Paragraph';
-import PageTitle from 'components/PageTitle';
-import TextLink from 'components/TextLink';
+import PageTitle from 'components/common/PageTitle';
+import TextLink from 'components/common/TextLink';
 
 const NotFound = props => {
   return (

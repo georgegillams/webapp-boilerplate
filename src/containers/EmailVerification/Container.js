@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import PageTitle from 'components/PageTitle';
-import { DebugObject } from 'components/DebugObject';
+import PageTitle from 'components/common/PageTitle';
+import { DebugObject } from 'components/common/DebugObject';
 import { Paragraph } from 'gg-components/Paragraph';
 
 import { withRouter } from 'next/router';

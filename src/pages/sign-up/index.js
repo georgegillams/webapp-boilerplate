@@ -1,7 +1,7 @@
 import React from 'react';
 
 import SignUp from 'containers/SignUp';
-import CommonLayout from 'components/CommonLayout';
+import CommonLayout from 'components/common/CommonLayout';
 
 const Page = props => {
   return (

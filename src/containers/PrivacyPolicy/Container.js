@@ -1,10 +1,10 @@
 import React from 'react';
-import PageTitle from 'components/PageTitle';
+import PageTitle from 'components/common/PageTitle';
 import { Paragraph } from 'gg-components/Paragraph';
 
 import ConsentSuppressor from 'containers/ConsentSuppressor';
 import Subsection from 'gg-components/Subsection';
-import TextLink from 'components/TextLink';
+import TextLink from 'components/common/TextLink';
 
 const PrivacyPolicy = () => {
   return (

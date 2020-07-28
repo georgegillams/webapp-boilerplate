@@ -11,7 +11,7 @@ import Konami from 'containers/Konami';
 import withReduxStore from 'utils/redux/with-redux-store';
 import appConfig from 'helpers/appConfig';
 import Navigation from 'containers/NavigationBarWrapper';
-import AppWrapper from 'components/AppWrapper';
+import AppWrapper from 'components/common/AppWrapper';
 
 import 'global-styles.scss';
 

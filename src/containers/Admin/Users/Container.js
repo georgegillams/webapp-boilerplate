@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import PageTitle from 'components/PageTitle';
-import { DebugObject } from 'components/DebugObject';
+import PageTitle from 'components/common/PageTitle';
+import { DebugObject } from 'components/common/DebugObject';
 import { LoadingCover } from 'gg-components/LoadingCover';
 import { Button } from 'gg-components/Button';
 import { Subsection } from 'gg-components/Subsection';
 import { Paragraph } from 'gg-components/Paragraph';
-import { SplitDetailItem } from 'components/SplitDetailView';
-import { AdminOnly } from 'components/Walls';
-import { SplitDetailView } from 'components/SplitDetailView';
+import { SplitDetailItem } from 'components/common/SplitDetailView';
+import { AdminOnly } from 'components/common/Walls';
+import { SplitDetailView } from 'components/common/SplitDetailView';
 import { setPostLoginRedirect } from 'utils/storageHelpers';
 import Skeleton from './Skeleton';
 import { withRouter } from 'next/router';
 import UserFilter from './UserFilter';
-import { UserEditForm } from 'components/Forms';
+import { UserEditForm } from 'components/common/Forms';
 import { Error } from 'gg-components/Error';
 
 import AdminUsersAPIEntity from './AdminUsersAPIEntity';
