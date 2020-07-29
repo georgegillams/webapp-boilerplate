@@ -14,16 +14,16 @@ const NavigationBarWrapper = props => {
     user === undefined ? (
       <SmallButtonSkeleton />
     ) : (
-      <NavigationItem name={user ? 'Account' : 'Login'} linkUrl={user ? '/account' : '/login'} />
+      <NavigationItem name={user ? 'Account' : 'Login'} href={user ? '/account' : '/login'} />
     );
 
-  const adminItem = user && user.admin ? <NavigationItem name="Admin" linkUrl="/admin" /> : null;
+  const adminItem = user && user.admin ? <NavigationItem name="Admin" href="/admin" /> : null;
 
   const menuItems = [
-    <NavigationItem key="home" name="Home" linkUrl="/" />,
+    <NavigationItem key="home" name="Home" href="/" />,
     adminItem,
     accountItem,
-    <NavigationItem key="sitemap" name="Site map" linkUrl="/sitemap" />,
+    <NavigationItem key="sitemap" name="Site map" href="/sitemap" />,
   ];
 
   const date = new Date();
