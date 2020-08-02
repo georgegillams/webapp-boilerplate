@@ -1,5 +1,5 @@
 import sendEmailVerificationEmail from '../auth/private/sendEmailVerificationEmail';
-import { InvalidInputError } from '../../../utils/errors';
+import { InvalidInputError } from 'utils/errors';
 
 import usersAllowedAttributes from './private/usersAllowedAttributes';
 
