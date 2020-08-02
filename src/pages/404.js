@@ -1,7 +1,7 @@
 import React from 'react';
 
 import CommonLayout from 'components/common/CommonLayout';
-import NotFound from 'containers/NotFound';
+import NotFound from 'containers/common/NotFound';
 
 const Page = props => {
   return (

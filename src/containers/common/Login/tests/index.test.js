@@ -1,15 +1,17 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
+import { initialState } from '../reducer';
 import { initialState as initialAuthenticatorState } from 'containers/common/Authenticator/reducer';
 
 import configureStore from 'utils/redux/configure-store';
 
-import AdminNavigationIndex from '../index';
-import AdminNavigation from '../Container';
+import LoginIndex from '../index';
+import Login from '../Container';
 
-describe('<AdminNavigation />', () => {
+describe('<Login />', () => {
   let store;
+  const spy = jest.fn();
 
   beforeAll(() => {
     store = configureStore({});
@@ -18,7 +20,7 @@ describe('<AdminNavigation />', () => {
   it('should render correctly - index', () => {
     const { container } = render(
       <Provider store={store}>
-        <AdminNavigationIndex />
+        <LoginIndex />
       </Provider>
     );
 
@@ -28,7 +30,68 @@ describe('<AdminNavigation />', () => {
   it('should render correctly with initial state', () => {
     const { container } = render(
       <Provider store={store}>
-        <AdminNavigation
+        <Login
+          login={spy}
+          loginState={{
+            ...initialState,
+          }}
+          authenticatorState={{
+            ...initialAuthenticatorState,
+          }}
+        />
+      </Provider>
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should render correctly with loginError', () => {
+    const { container } = render(
+      <Provider store={store}>
+        <Login
+          login={spy}
+          loginState={{
+            ...initialState,
+            loginError: { error: 'not_found', errorMessage: 'No matching email found' },
+          }}
+          authenticatorState={{
+            ...initialAuthenticatorState,
+          }}
+        />
+      </Provider>
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should render correctly with loginResult', () => {
+    const { container } = render(
+      <Provider store={store}>
+        <Login
+          login={spy}
+          loginState={{
+            ...initialState,
+            loginResult: { success: 'Magic link sent' },
+          }}
+          authenticatorState={{
+            ...initialAuthenticatorState,
+          }}
+        />
+      </Provider>
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should render correctly with loggingIn=true', () => {
+    const { container } = render(
+      <Provider store={store}>
+        <Login
+          login={spy}
+          loginState={{
+            ...initialState,
+            loggingIn: true,
+          }}
           authenticatorState={{
             ...initialAuthenticatorState,
           }}
@@ -42,40 +105,14 @@ describe('<AdminNavigation />', () => {
   it('should render correctly with user', () => {
     const { container } = render(
       <Provider store={store}>
-        <AdminNavigation
+        <Login
+          login={spy}
+          loginState={{
+            ...initialState,
+          }}
           authenticatorState={{
             ...initialAuthenticatorState,
             user: { name: 'userName' },
-          }}
-        />
-      </Provider>
-    );
-
-    expect(container).toMatchSnapshot();
-  });
-
-  it('should render correctly with admin user', () => {
-    const { container } = render(
-      <Provider store={store}>
-        <AdminNavigation
-          authenticatorState={{
-            ...initialAuthenticatorState,
-            user: { name: 'userName', admin: true },
-          }}
-        />
-      </Provider>
-    );
-
-    expect(container).toMatchSnapshot();
-  });
-
-  it('should render correctly with auth error', () => {
-    const { container } = render(
-      <Provider store={store}>
-        <AdminNavigation
-          authenticatorState={{
-            ...initialAuthenticatorState,
-            loadAuthError: { error: 'error_type', errorMessage: 'Some error' },
           }}
         />
       </Provider>

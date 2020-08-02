@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
-import { initialState as initialAuthenticatorState } from '../../Authenticator/reducer';
+import { initialState as initialAuthenticatorState } from 'containers/common/Authenticator/reducer';
 
 import configureStore from 'utils/redux/configure-store';
 

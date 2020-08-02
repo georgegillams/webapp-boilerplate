@@ -1,6 +1,6 @@
 import React from 'react';
 
-import MagicLogin from 'containers/MagicLogin';
+import MagicLogin from 'containers/common/MagicLogin';
 import CommonLayout from 'components/common/CommonLayout';
 
 const Page = props => {

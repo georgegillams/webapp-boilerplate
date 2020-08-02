@@ -1,6 +1,6 @@
 import React from 'react';
 
-import EmailVerification from 'containers/EmailVerification';
+import EmailVerification from 'containers/common/EmailVerification';
 import CommonLayout from 'components/common/CommonLayout';
 
 const Page = props => {

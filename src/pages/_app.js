@@ -3,10 +3,10 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import Head from 'next/head';
 import App from 'next/app';
-import Consent from 'containers/Consent';
-import Analytics from 'containers/Analytics';
-import Authenticator from 'containers/Authenticator';
-import Konami from 'containers/Konami';
+import Consent from 'containers/common/Consent';
+import Analytics from 'containers/common/Analytics';
+import Authenticator from 'containers/common/Authenticator';
+import Konami from 'containers/common/Konami';
 
 import withReduxStore from 'utils/redux/with-redux-store';
 import appConfig from 'helpers/appConfig';
