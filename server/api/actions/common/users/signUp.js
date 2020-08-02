@@ -3,7 +3,7 @@ import loginUser from '../auth/private/login';
 import create from './create';
 import usersAllowedAttributes from './private/usersAllowedAttributes';
 
-import reqSecure from 'utils/reqSecure';
+import reqSecure from 'utils/common/reqSecure';
 
 export default function signUp(req) {
   reqSecure(req, usersAllowedAttributes);

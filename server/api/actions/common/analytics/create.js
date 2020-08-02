@@ -1,10 +1,10 @@
 import analyticsAllowedAttributes from './private/analyticsAllowedAttributes';
 
-import { dbCreate } from 'utils/database';
-import lockPromise from 'utils/lock';
-import authentication from 'utils/authentication';
-import reqSecure from 'utils/reqSecure';
-import { ipPrefix } from 'utils/ipAddress';
+import { dbCreate } from 'utils/common/database';
+import lockPromise from 'utils/common/lock';
+import authentication from 'utils/common/authentication';
+import reqSecure from 'utils/common/reqSecure';
+import { ipPrefix } from 'utils/common/ipAddress';
 
 export default function create(req) {
   reqSecure(req, analyticsAllowedAttributes);

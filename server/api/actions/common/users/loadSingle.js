@@ -1,7 +1,7 @@
-import { dbLoadSingle } from 'utils/database';
-import { UNAUTHORISED_READ } from 'utils/errorConstants';
-import authentication from 'utils/authentication';
-import reqSecure from 'utils/reqSecure';
+import { dbLoadSingle } from 'utils/common/database';
+import { UNAUTHORISED_READ } from 'utils/common/errorConstants';
+import authentication from 'utils/common/authentication';
+import reqSecure from 'utils/common/reqSecure';
 
 export default function loadSingle(req) {
   reqSecure(req, []);

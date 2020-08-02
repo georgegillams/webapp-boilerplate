@@ -2,8 +2,8 @@
 
 import login from './login.js';
 
-import { dbLoad } from 'utils/database';
-import { clearDatabaseCollection } from 'utils/testUtils';
+import { dbLoad } from 'utils/common/database';
+import { clearDatabaseCollection } from 'utils/common/testUtils';
 
 beforeEach(() => {
   clearDatabaseCollection('sessions');

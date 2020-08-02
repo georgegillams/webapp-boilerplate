@@ -3,9 +3,9 @@
 import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
 import deleteEntity from './deleteEntity.js';
 
-import { dbLoadSingle, dbCreate } from 'utils/database';
-import { clearDatabaseCollection, createUsersWithSessions } from 'utils/testUtils';
-import { AuthError, NotFoundError } from 'utils/errors';
+import { dbLoadSingle, dbCreate } from 'utils/common/database';
+import { clearDatabaseCollection, createUsersWithSessions } from 'utils/common/testUtils';
+import { AuthError, NotFoundError } from 'utils/common/errors';
 
 beforeEach(() => {
   clearDatabaseCollection('users');

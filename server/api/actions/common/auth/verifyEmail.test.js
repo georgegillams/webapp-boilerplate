@@ -2,9 +2,9 @@
 
 import verifyEmail from './verifyEmail.js';
 
-import { dbCreate, dbLoad } from 'utils/database';
-import { clearDatabaseCollection, createUsersWithSessions } from 'utils/testUtils';
-import { AuthError } from 'utils/errors';
+import { dbCreate, dbLoad } from 'utils/common/database';
+import { clearDatabaseCollection, createUsersWithSessions } from 'utils/common/testUtils';
+import { AuthError } from 'utils/common/errors';
 
 beforeEach(() => {
   clearDatabaseCollection('emailVerificationCodes');

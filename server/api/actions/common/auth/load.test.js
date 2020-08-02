@@ -3,8 +3,8 @@
 import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
 import load from './load.js';
 
-import { dbCreate } from 'utils/database';
-import { clearDatabaseCollection } from 'utils/testUtils';
+import { dbCreate } from 'utils/common/database';
+import { clearDatabaseCollection } from 'utils/common/testUtils';
 
 beforeEach(() => {
   clearDatabaseCollection('sessions');

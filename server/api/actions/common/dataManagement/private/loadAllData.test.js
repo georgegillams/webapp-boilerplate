@@ -2,7 +2,7 @@
 
 import loadAllData from './loadAllData.js';
 
-import { clearDatabaseCollection, createUsersWithSessions } from 'utils/testUtils';
+import { clearDatabaseCollection, createUsersWithSessions } from 'utils/common/testUtils';
 
 beforeEach(() => {
   clearDatabaseCollection('users');

@@ -3,9 +3,9 @@
 import loadSingle from './loadSingle.js';
 
 import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
-import { dbCreate } from 'utils/database';
-import { NotFoundError } from 'utils/errors';
-import { clearDatabaseCollection, createUsersWithSessions } from 'utils/testUtils';
+import { dbCreate } from 'utils/common/database';
+import { NotFoundError } from 'utils/common/errors';
+import { clearDatabaseCollection, createUsersWithSessions } from 'utils/common/testUtils';
 
 beforeEach(() => {
   clearDatabaseCollection('users');

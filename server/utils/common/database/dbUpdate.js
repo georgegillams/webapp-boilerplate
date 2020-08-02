@@ -1,9 +1,9 @@
 import loadAllValues from './private/loadAllValues';
 
-import redis from 'utils/redis';
-import { find } from 'utils/find';
+import redis from 'utils/common/redis';
+import { find } from 'utils/common/find';
 import appConfig from 'helpers/appConfig';
-import { RESOURCE_NOT_FOUND } from 'utils/errorConstants';
+import { RESOURCE_NOT_FOUND } from 'utils/common/errorConstants';
 
 export default function dbUpdate(settings, req) {
   // finds matching element - should use redis method directly

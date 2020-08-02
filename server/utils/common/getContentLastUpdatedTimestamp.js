@@ -1,4 +1,4 @@
-import { dbLoad } from 'utils/database';
+import { dbLoad } from 'utils/common/database';
 
 export default function getContentLastUpdatedTimestamp() {
   return dbLoad({ redisKey: 'contentUpdates' }).then(contentUpdateData => {

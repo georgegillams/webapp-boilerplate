@@ -15,4 +15,4 @@ The server uses CORS, so modern browsers will not allow a webpage other than thi
 
 When an API request comes in, [`server/index.js`](https://github.com/georgegillams/webapp-boilerplate/blob/master/server/index.js) will look for an action matching the path and the http method for the action. If a matching API capability is found, the associated action (Promise) is resolved.
 
-If an API action (Promise) resolves and object, it will be returned to the client. If an API action (Promise) throws a [`CategorisedError`](https://github.com/georgegillams/webapp-boilerplate/blob/master/server/utils/errors.js) then the server will sent back the error along with a suitable http status code.
+If an API action (Promise) resolves and object, it will be returned to the client. If an API action (Promise) throws a [`CategorisedError`](https://github.com/georgegillams/webapp-boilerplate/blob/master/server/utils/common/errors.js) then the server will sent back the error along with a suitable http status code.

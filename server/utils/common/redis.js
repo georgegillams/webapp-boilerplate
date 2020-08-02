@@ -1,6 +1,6 @@
 /* eslint-disable global-require */
 
-import logger from 'utils/logger';
+import logger from 'utils/common/logger';
 
 let redis = null;
 

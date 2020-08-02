@@ -2,8 +2,8 @@
 
 import signUp from './signUp.js';
 
-import { dbLoadSingle } from 'utils/database';
-import { InvalidInputError } from 'utils/errors.js';
+import { dbLoadSingle } from 'utils/common/database';
+import { InvalidInputError } from 'utils/common/errors.js';
 
 test('allows a user to be created', () => {
   const req = {

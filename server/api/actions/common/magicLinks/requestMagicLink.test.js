@@ -2,9 +2,9 @@
 
 import requestMagicLink from './requestMagicLink.js';
 
-import { dbLoad } from 'utils/database';
-import { AuthError, NotFoundError } from 'utils/errors';
-import { clearDatabaseCollection, createUsersWithSessions } from 'utils/testUtils';
+import { dbLoad } from 'utils/common/database';
+import { AuthError, NotFoundError } from 'utils/common/errors';
+import { clearDatabaseCollection, createUsersWithSessions } from 'utils/common/testUtils';
 import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
 
 beforeEach(() => {

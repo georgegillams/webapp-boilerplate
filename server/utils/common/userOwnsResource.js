@@ -1,6 +1,6 @@
 import { find } from './find';
 
-import { dbLoad } from 'utils/database';
+import { dbLoad } from 'utils/common/database';
 
 const determineIfUserOwnsResource = (redisKey, resourceId, user) =>
   dbLoad({ redisKey }).then(data => {

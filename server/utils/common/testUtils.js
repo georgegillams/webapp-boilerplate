@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import { dbCreate } from 'utils/database';
-import redis from 'utils/redis';
+import { dbCreate } from 'utils/common/database';
+import redis from 'utils/common/redis';
 import appConfig from 'helpers/appConfig';
 
 const clearDatabaseCollection = collectionName => {
