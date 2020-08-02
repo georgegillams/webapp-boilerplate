@@ -1,11 +1,11 @@
 import sendMagicLinkEmail from './private/sendMagicLinkEmail';
 import magicLinksAllowedAttributes from './private/magicLinksAllowedAttributes';
 
-import { dbLoad } from 'utils/database';
-import { AuthError, NotFoundError } from 'utils/errors';
-import { find } from 'utils/find';
-import authentication from 'utils/authentication';
-import reqSecure from 'utils/reqSecure';
+import { dbLoad } from 'utils/common/database';
+import { AuthError, NotFoundError } from 'utils/common/errors';
+import { find } from 'utils/common/find';
+import authentication from 'utils/common/authentication';
+import reqSecure from 'utils/common/reqSecure';
 
 export default function getmagiclink(req) {
   reqSecure(req, magicLinksAllowedAttributes);

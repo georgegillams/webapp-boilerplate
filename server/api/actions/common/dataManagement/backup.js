@@ -2,9 +2,9 @@ import fs from 'fs';
 
 import loadAllData from './private/loadAllData';
 
-import authentication from 'utils/authentication';
+import authentication from 'utils/common/authentication';
 import appConfig from 'helpers/appConfig';
-import { UNAUTHORISED_READ } from 'utils/errorConstants';
+import { UNAUTHORISED_READ } from 'utils/common/errorConstants';
 
 const serverContentDir = 'server/server_content';
 const dataFilePath = `${serverContentDir}/data.json`;

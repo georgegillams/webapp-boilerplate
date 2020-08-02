@@ -1,10 +1,10 @@
 import analyticsAllowedAttributes from './private/analyticsAllowedAttributes';
 import processAnalytics from './private/processAnalytics';
 
-import { dbLoad } from 'utils/database';
-import authentication from 'utils/authentication';
-import reqSecure from 'utils/reqSecure';
-import { UNAUTHORISED_READ } from 'utils/errorConstants';
+import { dbLoad } from 'utils/common/database';
+import authentication from 'utils/common/authentication';
+import reqSecure from 'utils/common/reqSecure';
+import { UNAUTHORISED_READ } from 'utils/common/errorConstants';
 
 export default function loadSummary(req) {
   reqSecure(req, analyticsAllowedAttributes);

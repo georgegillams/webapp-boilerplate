@@ -1,10 +1,10 @@
 import notificationsAllowedAttributes from './private/notificationsAllowedAttributes';
 
-import { dbUpdate } from 'utils/database';
-import lockPromise from 'utils/lock';
-import authentication from 'utils/authentication';
-import { UNAUTHORISED_WRITE } from 'utils/errorConstants';
-import reqSecure from 'utils/reqSecure';
+import { dbUpdate } from 'utils/common/database';
+import lockPromise from 'utils/common/lock';
+import authentication from 'utils/common/authentication';
+import { UNAUTHORISED_WRITE } from 'utils/common/errorConstants';
+import reqSecure from 'utils/common/reqSecure';
 
 export default function update(req) {
   reqSecure(req, notificationsAllowedAttributes);

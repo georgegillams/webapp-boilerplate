@@ -1,4 +1,4 @@
-import redis from 'utils/redis';
+import redis from 'utils/common/redis';
 import appConfig from 'helpers/appConfig';
 
 const loadValues = redisKey =>

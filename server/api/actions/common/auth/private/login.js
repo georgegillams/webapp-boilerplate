@@ -1,7 +1,7 @@
-import { dbCreate } from 'utils/database';
-import lockPromise from 'utils/lock';
-import { generateKey } from 'utils/hash';
-import setContentLastUpdatedTimestamp from 'utils/setContentLastUpdatedTimestamp';
+import { dbCreate } from 'utils/common/database';
+import lockPromise from 'utils/common/lock';
+import { generateKey } from 'utils/common/hash';
+import setContentLastUpdatedTimestamp from 'utils/common/setContentLastUpdatedTimestamp';
 
 /**
  * Creates a new session and assigns the user to it

@@ -1,4 +1,4 @@
-import authentication from 'utils/authentication';
+import authentication from 'utils/common/authentication';
 
 export default function load(req) {
   return authentication(req).then(user => {

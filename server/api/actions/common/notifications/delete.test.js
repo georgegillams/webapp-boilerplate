@@ -3,9 +3,9 @@
 import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
 import deleteNotification from './delete.js';
 
-import { dbCreate, dbLoad } from 'utils/database';
-import { AuthError, NotFoundError } from 'utils/errors';
-import { clearDatabaseCollection, createUsersWithSessions } from 'utils/testUtils';
+import { dbCreate, dbLoad } from 'utils/common/database';
+import { AuthError, NotFoundError } from 'utils/common/errors';
+import { clearDatabaseCollection, createUsersWithSessions } from 'utils/common/testUtils';
 
 beforeEach(() => {
   clearDatabaseCollection('users');

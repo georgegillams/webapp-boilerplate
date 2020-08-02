@@ -3,9 +3,9 @@
 import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
 import loadAll from './loadAll.js';
 
-import { dbCreate } from 'utils/database';
-import { AuthError } from 'utils/errors';
-import { clearDatabaseCollection, createUsersWithSessions } from 'utils/testUtils';
+import { dbCreate } from 'utils/common/database';
+import { AuthError } from 'utils/common/errors';
+import { clearDatabaseCollection, createUsersWithSessions } from 'utils/common/testUtils';
 
 beforeEach(() => {
   clearDatabaseCollection('analytics');

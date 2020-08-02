@@ -1,6 +1,6 @@
 import dbLoad from './dbLoad';
 
-import { RESOURCE_NOT_FOUND } from 'utils/errorConstants';
+import { RESOURCE_NOT_FOUND } from 'utils/common/errorConstants';
 
 export default function dbLoadSingle(settings) {
   // loads values using settings

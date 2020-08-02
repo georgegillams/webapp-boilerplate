@@ -1,10 +1,10 @@
 import usersAllowedAttributes from './private/usersAllowedAttributes';
 
-import { dbRemove } from 'utils/database';
-import authentication from 'utils/authentication';
-import { userOwnsResource } from 'utils/userOwnsResource';
-import { UNAUTHORISED_WRITE } from 'utils/errorConstants';
-import reqSecure from 'utils/reqSecure';
+import { dbRemove } from 'utils/common/database';
+import authentication from 'utils/common/authentication';
+import { userOwnsResource } from 'utils/common/userOwnsResource';
+import { UNAUTHORISED_WRITE } from 'utils/common/errorConstants';
+import reqSecure from 'utils/common/reqSecure';
 
 export default function remove(req) {
   reqSecure(req, usersAllowedAttributes);

@@ -1,6 +1,6 @@
 import nodemailer from 'nodemailer';
 
-import logger from 'utils/logger';
+import logger from 'utils/common/logger';
 
 let mailConfig = null;
 let transporter = null;

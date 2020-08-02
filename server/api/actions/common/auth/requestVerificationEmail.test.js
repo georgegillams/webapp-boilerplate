@@ -3,9 +3,9 @@
 import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
 import requestVerificationEmail from './requestVerificationEmail.js';
 
-import { clearDatabaseCollection, createUsersWithSessions } from 'utils/testUtils';
-import { AuthError } from 'utils/errors';
-import { UNAUTHORISED_WRITE } from 'utils/errorConstants';
+import { clearDatabaseCollection, createUsersWithSessions } from 'utils/common/testUtils';
+import { AuthError } from 'utils/common/errors';
+import { UNAUTHORISED_WRITE } from 'utils/common/errorConstants';
 
 beforeEach(() => {
   clearDatabaseCollection('sessions');
