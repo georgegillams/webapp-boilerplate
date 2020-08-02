@@ -5,10 +5,10 @@ import { DebugObject } from 'components/common/DebugObject';
 import { Paragraph } from 'gg-components/Paragraph';
 
 import TextLink from 'components/common/TextLink';
-import CookiesRequired from 'containers/CookiesRequired';
+import CookiesRequired from 'containers/common/CookiesRequired';
 import { withRouter } from 'next/router';
 import { REDIRECT_REGEX } from 'helpers/regexConstants';
-import { CONSENT_STATE_ALLOWED } from 'containers/Consent/constants';
+import { CONSENT_STATE_ALLOWED } from 'containers/common/Consent/constants';
 
 const MagicLogin = props => {
   const [loginAttempted, setLoginAttempted] = useState(false);

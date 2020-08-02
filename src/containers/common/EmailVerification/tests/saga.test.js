@@ -1,7 +1,7 @@
 import { put, takeLatest } from 'redux-saga/effects';
 
 import { verify } from '../actions';
-import { loadAuth } from '../../Authenticator/actions';
+import { loadAuth } from 'containers/common/Authenticator/actions';
 
 import saga, { doVerify } from '../saga';
 

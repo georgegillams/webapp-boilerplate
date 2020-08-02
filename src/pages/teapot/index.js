@@ -1,7 +1,7 @@
 import React from 'react';
 
 import CommonLayout from 'components/common/CommonLayout';
-import Teapot from 'containers/Teapot';
+import Teapot from 'containers/common/Teapot';
 
 const Page = props => {
   return (

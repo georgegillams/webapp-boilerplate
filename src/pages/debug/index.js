@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Debug from 'containers/Debug';
+import Debug from 'containers/common/Debug';
 import CommonLayout from 'components/common/CommonLayout';
 
 const Page = props => {

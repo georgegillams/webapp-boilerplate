@@ -5,7 +5,7 @@ import apiStructure from 'helpers/apiStructure';
 
 import { selectState } from './selectors';
 import { verify } from './actions';
-import { loadAuth } from '../Authenticator/actions';
+import { loadAuth } from 'containers/common/Authenticator/actions';
 
 export function* doVerify() {
   const currentState = yield select(selectState());

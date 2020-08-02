@@ -9,8 +9,8 @@ import Skeleton from './Skeleton';
 
 import { LoggedOutOnly } from 'components/common/Walls';
 import { SignUpForm } from 'components/common/Forms';
-import CookiesRequired from 'containers/CookiesRequired';
-import { CONSENT_STATE_ALLOWED } from 'containers/Consent/constants';
+import CookiesRequired from 'containers/common/CookiesRequired';
+import { CONSENT_STATE_ALLOWED } from 'containers/common/Consent/constants';
 
 const SignUp = props => {
   const [credentials, setCredentials] = useState({});

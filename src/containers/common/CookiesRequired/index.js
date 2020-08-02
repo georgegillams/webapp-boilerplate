@@ -6,7 +6,7 @@ import { createStructuredSelector } from 'reselect';
 import { selectState as selectConsentState } from '../Consent/selectors';
 
 import CookiesRequired from './Container';
-import { setConsentReason } from 'containers/Consent/actions';
+import { setConsentReason } from 'containers/common/Consent/actions';
 
 const mapStateToProps = createStructuredSelector({
   consentState: selectConsentState(),

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import PrivacyPolicy from 'containers/PrivacyPolicy';
+import PrivacyPolicy from 'containers/common/PrivacyPolicy';
 import CommonLayout from 'components/common/CommonLayout';
 
 const Page = props => {

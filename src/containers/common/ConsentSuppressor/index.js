@@ -6,7 +6,7 @@ import { createStructuredSelector } from 'reselect';
 import { selectState as selectConsentState } from '../Consent/selectors';
 
 import ConsentSuppressor from './Container';
-import { setConsentSuppression } from 'containers/Consent/actions';
+import { setConsentSuppression } from 'containers/common/Consent/actions';
 
 const mapStateToProps = createStructuredSelector({
   consentState: selectConsentState(),

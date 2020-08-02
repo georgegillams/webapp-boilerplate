@@ -2,7 +2,7 @@ import React from 'react';
 import PageTitle from 'components/common/PageTitle';
 import { Paragraph } from 'gg-components/Paragraph';
 
-import ConsentSuppressor from 'containers/ConsentSuppressor';
+import ConsentSuppressor from 'containers/common/ConsentSuppressor';
 import Subsection from 'gg-components/Subsection';
 import TextLink from 'components/common/TextLink';
 

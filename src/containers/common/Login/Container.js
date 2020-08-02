@@ -7,7 +7,7 @@ import { LoadingCover } from 'gg-components/LoadingCover';
 
 import Skeleton from './Skeleton';
 
-import CookiesRequired from 'containers/CookiesRequired';
+import CookiesRequired from 'containers/common/CookiesRequired';
 import { LoggedOutOnly } from 'components/common/Walls';
 import { LoginForm } from 'components/common/Forms';
 

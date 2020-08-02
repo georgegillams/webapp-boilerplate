@@ -4,7 +4,7 @@ import request from 'utils/request';
 import apiStructure from 'helpers/apiStructure';
 
 import { logout, requestVerificationEmail } from './actions';
-import { setUser } from '../Authenticator/actions';
+import { setUser } from 'containers/common/Authenticator/actions';
 
 export function* doLogout() {
   const requestURL = apiStructure.logout.fullPath;

@@ -5,7 +5,7 @@ import apiStructure from 'helpers/apiStructure';
 
 import { selectState } from './selectors';
 import { login } from './actions';
-import { setUser } from '../Authenticator/actions';
+import { setUser } from 'containers/common/Authenticator/actions';
 
 export function* doLogin() {
   const currentState = yield select(selectState());

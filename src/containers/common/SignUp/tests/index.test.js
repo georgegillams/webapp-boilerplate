@@ -2,14 +2,14 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { initialState } from '../reducer';
-import { initialState as initialAuthenticatorState } from '../../Authenticator/reducer';
+import { initialState as initialAuthenticatorState } from 'containers/common/Authenticator/reducer';
 import { initialState as initialConsentState } from '../../Consent/reducer';
 
 import configureStore from 'utils/redux/configure-store';
 
 import SignUpIndex from '../index';
 import SignUp from '../Container';
-import { CONSENT_STATE_ALLOWED } from 'containers/Consent/constants';
+import { CONSENT_STATE_ALLOWED } from 'containers/common/Consent/constants';
 
 describe('<SignUp />', () => {
   let store;

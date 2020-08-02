@@ -4,7 +4,7 @@ import request from 'utils/request';
 import apiStructure from 'helpers/apiStructure';
 import { selectState } from './selectors';
 
-import { setUser } from '../Authenticator/actions';
+import { setUser } from 'containers/common/Authenticator/actions';
 import { signUp } from './actions';
 
 export function* doSignUp() {

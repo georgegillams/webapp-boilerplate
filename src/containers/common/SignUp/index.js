@@ -6,7 +6,7 @@ import { createStructuredSelector } from 'reselect';
 
 import { signUp } from './actions';
 import { selectState } from './selectors';
-import { selectState as selectAuthenticatorState } from '../Authenticator/selectors';
+import { selectState as selectAuthenticatorState } from 'containers/common/Authenticator/selectors';
 import { selectState as selectConsentState } from '../Consent/selectors';
 import SignUp from './Container';
 import injectSaga from 'utils/redux/inject-saga';
