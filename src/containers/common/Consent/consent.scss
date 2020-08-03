@@ -19,7 +19,7 @@
     max-width: calc(100vw - $spacing-lg);
     max-width: 30rem;
     padding: $spacing-lg;
-    border: 0.1rem gray solid;
+    border: 0.15rem gray solid;
     border-radius: 0.4rem;
     background: $background-color;
 
@@ -34,5 +34,18 @@
 
   &__button {
     margin: 0.5rem 1rem 0 0;
+  }
+
+  &__section {
+    &--banner {
+      margin-right: $spacing-lg;
+    }
+    &--modal {
+      margin-bottom: $spacing-lg;
+    }
+  }
+
+  &__section-text {
+    margin: 0 0 0.4rem 0;
   }
 }
