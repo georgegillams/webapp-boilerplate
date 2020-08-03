@@ -7,7 +7,7 @@ import PageTitle from 'components/common/PageTitle';
 
 import STYLES from './status.scss';
 
-import { getTimeDifference } from 'helpers/time';
+import { getTimeDifference } from 'helpers/common/time';
 import appConfig from 'helpers/appConfig';
 
 const getClassName = cssModules(STYLES);
