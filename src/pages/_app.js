@@ -8,7 +8,7 @@ import Analytics from 'containers/common/Analytics';
 import Authenticator from 'containers/common/Authenticator';
 import Konami from 'containers/common/Konami';
 
-import withReduxStore from 'utils/redux/with-redux-store';
+import withReduxStore from 'utils/common/redux/with-redux-store';
 import appConfig from 'helpers/appConfig';
 import Navigation from 'containers/NavigationBarWrapper';
 import AppWrapper from 'components/common/AppWrapper';
