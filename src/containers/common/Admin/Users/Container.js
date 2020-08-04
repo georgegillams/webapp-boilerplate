@@ -9,7 +9,7 @@ import { Paragraph } from 'gg-components/Paragraph';
 import { SplitDetailItem } from 'components/common/SplitDetailView';
 import { AdminOnly } from 'components/common/Walls';
 import { SplitDetailView } from 'components/common/SplitDetailView';
-import { setPostLoginRedirect } from 'utils/storageHelpers';
+import { setPostLoginRedirect } from 'utils/common/storageHelpers';
 import Skeleton from './Skeleton';
 import { withRouter } from 'next/router';
 import UserFilter from './UserFilter';

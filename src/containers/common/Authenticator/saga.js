@@ -1,6 +1,6 @@
 import { takeLatest, put, call } from 'redux-saga/effects';
 
-import request from 'utils/request';
+import request from 'utils/common/request';
 import apiStructure from 'helpers/apiStructure';
 
 import { loadAuth } from './actions';
