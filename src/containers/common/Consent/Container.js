@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import { DebugObject } from 'components/common/DebugObject';
 import {
   CONSENT_STATE_UNSET,
+  CONSENT_STATE_ALLOWED,
   CONSENT_STATE_ALLOWED_CLIENT_VALUE,
   CONSENT_STATE_DEFERRED_CLIENT_VALUE,
-  CONSENT_STATE_DEFERRED,
 } from './constants';
 import Button from 'components/common/Button';
 import { Paragraph } from 'gg-components/Paragraph';
@@ -14,6 +14,8 @@ import { cssModules } from 'gg-components/helpers/cssModules';
 import STYLES from './consent.scss';
 import { getPrivacyPreferences, setPrivacyPreferences } from 'utils/storageHelpers';
 import TextLink from 'components/common/TextLink';
+import Banner from './Banner';
+import { Section } from 'gg-components/Section';
 
 const getClassName = cssModules(STYLES);
 
@@ -44,18 +46,27 @@ const Consent = props => {
     }
   }, []);
 
-  let cookieConsentPopup = null;
-  if (
-    !consentState.consentSuppressed &&
-    (consentState.cookieConsent === CONSENT_STATE_UNSET ||
-      (consentState.cookieConsent === CONSENT_STATE_DEFERRED && consentState.cookieConsentReason))
-  ) {
-    cookieConsentPopup = (
-      <Modal
-        isOpen
-        ariaHideApp
-        overlayClassName={getClassName('consent__modal-overlay')}
-        className={getClassName('consent__modal-content')}>
+  let showBanner = false;
+  let showModal = false;
+  if (consentState.cookieConsent === CONSENT_STATE_UNSET && !consentState.cookieConsentReason) {
+    showBanner = true;
+  }
+  if (consentState.cookieConsent !== CONSENT_STATE_ALLOWED && !!consentState.cookieConsentReason) {
+    showModal = true;
+  }
+
+  const consentChildren = (
+    <>
+      <Section
+        className={getClassName(
+          'consent__section',
+          !!showBanner && 'consent__section--banner',
+          !!showModal && 'consent__section--modal'
+        )}
+        textClassName={getClassName('consent__section-text')}
+        padding={false}
+        noPadding
+        name="Privacy and cookies">
         <Paragraph>
           To provide the best possible experience, we would like to use cookies and handle your data in accordance with
           our <TextLink href="/privacy-policy">Privacy policy</TextLink>.
@@ -67,26 +78,42 @@ const Consent = props => {
             </>
           )}
         </Paragraph>
-        <br />
-        <div>
-          <Button
-            className={getClassName('consent__button')}
-            onClick={() => {
-              setPrivacyPreferences(CONSENT_STATE_ALLOWED_CLIENT_VALUE);
-              consent();
-            }}>
-            Accept
-          </Button>
-          <Button
-            className={getClassName('consent__button')}
-            onClick={() => {
-              deferConsent();
-              setPrivacyPreferences(CONSENT_STATE_DEFERRED_CLIENT_VALUE);
-            }}
-            href={consentState.cookieConsentReason ? '/' : null}>
-            {consentState.cookieConsentReason ? 'Dismiss and go to home page' : 'Dismiss'}
-          </Button>
-        </div>
+      </Section>
+      <div>
+        <Button
+          className={getClassName('consent__button')}
+          onClick={() => {
+            setPrivacyPreferences(CONSENT_STATE_ALLOWED_CLIENT_VALUE);
+            consent();
+          }}>
+          Accept
+        </Button>
+        <Button
+          className={getClassName('consent__button')}
+          onClick={() => {
+            deferConsent();
+            setPrivacyPreferences(CONSENT_STATE_DEFERRED_CLIENT_VALUE);
+          }}
+          href={consentState.cookieConsentReason ? '/' : null}>
+          {consentState.cookieConsentReason ? 'Dismiss and go to home page' : 'Dismiss'}
+        </Button>
+      </div>
+    </>
+  );
+
+  let cookieConsentComponent = null;
+  if (showBanner) {
+    cookieConsentComponent = <Banner>{consentChildren}</Banner>;
+  }
+  if (showModal) {
+    // Show modal
+    cookieConsentComponent = (
+      <Modal
+        isOpen
+        ariaHideApp
+        overlayClassName={getClassName('consent__modal-overlay')}
+        className={getClassName('consent__modal-content')}>
+        {consentChildren}
       </Modal>
     );
   }
@@ -101,7 +128,7 @@ const Consent = props => {
           consentState,
         }}
       />
-      {cookieConsentPopup && cookieConsentPopup}
+      {cookieConsentComponent && cookieConsentComponent}
     </div>
   );
 };
@@ -114,7 +141,6 @@ Consent.propTypes = {
   consentState: PropTypes.shape({
     cookieConsent: PropTypes.string,
     cookieConsentReason: PropTypes.string,
-    consentSuppressed: PropTypes.bool,
   }).isRequired,
 };
 

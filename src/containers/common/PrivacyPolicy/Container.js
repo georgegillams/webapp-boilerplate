@@ -2,14 +2,12 @@ import React from 'react';
 import PageTitle from 'components/common/PageTitle';
 import { Paragraph } from 'gg-components/Paragraph';
 
-import ConsentSuppressor from 'containers/common/ConsentSuppressor';
 import Subsection from 'gg-components/Subsection';
 import TextLink from 'components/common/TextLink';
 
 const PrivacyPolicy = () => {
   return (
     <>
-      <ConsentSuppressor />
       <PageTitle name="Privacy policy">
         <Subsection name="Analytics">
           <Paragraph>

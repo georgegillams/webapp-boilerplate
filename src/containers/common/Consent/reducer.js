@@ -1,12 +1,11 @@
 import produce from 'immer';
 
-import { consent, deferConsent, setConsentReason, resetConsent, setConsentSuppression } from './actions';
+import { consent, deferConsent, setConsentReason, resetConsent } from './actions';
 import { CONSENT_STATE_UNSET, CONSENT_STATE_ALLOWED, CONSENT_STATE_DEFERRED } from './constants';
 
 export const initialState = {
   cookieConsent: null,
   cookieConsentReason: null,
-  consentSuppressed: false,
 };
 
 const reducer = (state = initialState, { type, payload }) =>
@@ -26,10 +25,6 @@ const reducer = (state = initialState, { type, payload }) =>
 
       case setConsentReason.TRIGGER:
         draft.cookieConsentReason = payload;
-        break;
-
-      case setConsentSuppression.TRIGGER:
-        draft.consentSuppressed = payload;
         break;
     }
   });

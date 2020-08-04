@@ -98,22 +98,4 @@ describe('<Consent />', () => {
 
     expect(container).toMatchSnapshot();
   });
-
-  it('should render correctly with consent suppressed', () => {
-    const { container } = render(
-      <Provider store={store}>
-        <Consent
-          consent={spy}
-          resetConsent={spy}
-          deferConsent={spy}
-          consentState={{
-            ...initialState,
-            consentSuppressed: true,
-          }}
-        />
-      </Provider>
-    );
-
-    expect(container).toMatchSnapshot();
-  });
 });
