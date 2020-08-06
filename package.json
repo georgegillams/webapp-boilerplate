@@ -119,6 +119,6 @@
     "redis-mock": "^0.50.0",
     "sass": "^1.26.10",
     "stylelint-config-skyscanner": "^2.4.0",
-    "whatwg-fetch": "^3.2.0"
+    "whatwg-fetch": "^3.3.1"
   }
 }
