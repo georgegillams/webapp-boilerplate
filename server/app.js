@@ -15,8 +15,7 @@ import redirects from 'helpers/redirects';
 
 setConfig(nextConfig);
 
-const { NODE_ENV } = process.env;
-const dev = NODE_ENV !== 'production';
+const dev = !appConfig.isProduction;
 
 const port = process.env.PORT || 3000;
 const app = next({ dev });
