@@ -2,10 +2,15 @@
 
 exports[`<Button /> Should render correctly 1`] = `
 <div>
-  <button
-    class="button__outer button__outer--regular button__outer--no-bouncy"
-    type="button"
-  />
+  <a
+    href="/test"
+  >
+    <button
+      aria-hidden="true"
+      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--link"
+      type="button"
+    />
+  </a>
 </div>
 `;
 
@@ -27,18 +32,28 @@ exports[`<Button /> Should render correctly hrefExternal 1`] = `
 
 exports[`<Button /> Should render correctly with custom className 1`] = `
 <div>
-  <button
-    class="button__outer button__outer--regular button__outer--no-bouncy test-custom-classname"
-    type="button"
-  />
+  <a
+    href="/test"
+  >
+    <button
+      aria-hidden="true"
+      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--link test-custom-classname"
+      type="button"
+    />
+  </a>
 </div>
 `;
 
 exports[`<Button /> Should render with nextified href 1`] = `
 <div>
-  <button
-    class="button__outer button__outer--regular button__outer--no-bouncy"
-    type="button"
-  />
+  <a
+    href="/blog/test"
+  >
+    <button
+      aria-hidden="true"
+      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--link"
+      type="button"
+    />
+  </a>
 </div>
 `;
