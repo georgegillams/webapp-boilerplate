@@ -17,7 +17,7 @@ const applySecurityPractises = server => {
   server.use(helmet());
 
   // Cors
-  if (appConfig.isProduction) {
+  if (appConfig.isProduction && !appConfig.projectUnderTest) {
     server.use(
       cors({
         origin: appConfig.siteUrl,

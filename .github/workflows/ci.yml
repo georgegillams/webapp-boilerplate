@@ -29,8 +29,8 @@ jobs:
       - name: npm install
         run: npm ci
 
-      - name: build
-        run: npm run build
+      - name: build for snapshot testing
+        run: npm run build:test
 
       - name: lint
         run: npm run lint
@@ -60,6 +60,7 @@ jobs:
           if [ "${{ github.ref }}" == "refs/heads/main" ] && [ "${{ github.event_name }}" != "pull_request" ]; then
             echo "${{ secrets.EC2_RSA }}" > ./identityFile.txt
             chmod 400 ./identityFile.txt
+            npm run build
             zip -r build build
             scp -o "StrictHostKeyChecking=no" -i ./identityFile.txt -r ./build.zip ubuntu@ec2-35-178-235-11.eu-west-2.compute.amazonaws.com:/home/ubuntu/webapp-boilerplate/
           fi;

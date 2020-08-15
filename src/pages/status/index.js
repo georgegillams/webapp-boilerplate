@@ -2,14 +2,23 @@ import React from 'react';
 
 import Status from 'containers/Status';
 import CommonLayout from 'components/common/CommonLayout';
+import appConfig from 'helpers/appConfig';
 import getConfig from 'next/config';
+
 const { publicRuntimeConfig } = getConfig();
-const { BUILT_AT, NODE_ENV } = publicRuntimeConfig;
+const { STARTED_AT } = publicRuntimeConfig;
+const { builtAt, nodeEnv } = appConfig;
 
 const Page = props => {
   return (
     <CommonLayout>
-      <Status builtAt={parseInt(BUILT_AT, 10)} nodeEnv={NODE_ENV} {...props} />
+      <Status
+        appConfig={appConfig}
+        startedAt={parseInt(STARTED_AT, 10)}
+        builtAt={parseInt(builtAt, 10)}
+        nodeEnv={nodeEnv}
+        {...props}
+      />
     </CommonLayout>
   );
 };

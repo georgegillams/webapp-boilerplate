@@ -4,7 +4,8 @@ const backstop = require('backstopjs');
 const scenarioData = require('./scenarios.json');
 
 const PORT = process.env.PORT || 9001;
-const BASE_URL = `http://127.0.0.1:${PORT}/`;
+// We must use `localhost` instead of `127.0.0.1` to ensure that CORS won't be a problem
+const BASE_URL = `http://localhost:${PORT}/`;
 
 const allowFailure = process.argv.includes('--allowFailure');
 

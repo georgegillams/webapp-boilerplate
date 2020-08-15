@@ -8,8 +8,14 @@ const nextConfig = {
   distDir: 'build',
   publicRuntimeConfig: {
     localeSubpaths: typeof process.env.LOCALE_SUBPATHS === 'string' ? process.env.LOCALE_SUBPATHS : 'all',
-    NODE_ENV: process.env.NODE_ENV,
+    STARTED_AT: process.env.STARTED_AT,
+  },
+  env: {
+    // NODE_ENV is handled automatically
     BUILT_AT: process.env.BUILT_AT,
+    PORT: process.env.PORT,
+    PROJECT_UNDER_TEST: process.env.PROJECT_UNDER_TEST,
+    HOST: process.env.HOST,
   },
 };
 
