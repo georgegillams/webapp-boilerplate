@@ -12,8 +12,11 @@ import withReduxStore from 'utils/common/redux/with-redux-store';
 import appConfig from 'helpers/appConfig';
 import Navigation from 'containers/NavigationBarWrapper';
 import AppWrapper from 'components/common/AppWrapper';
+import { enableES5 } from 'immer';
 
 import 'global-styles.scss';
+
+enableES5();
 
 class Srr extends App {
   render() {
