@@ -19,6 +19,7 @@
     "start:aws": "npm run start",
     "test": "cross-env jest --coverage",
     "test:watch": "cross-env jest --watchAll",
+    "test:debug": "node --inspect node_modules/.bin/jest --runInBand --watchAll",
     "backstopjs:test": "npm run start:test & (sleep 15 && node ./scripts/backstopjs/backstop.js)",
     "backstopjs:test:allow-failure": "npm run start:test & (sleep 15 && node ./scripts/backstopjs/backstop.js --allowFailure)",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
