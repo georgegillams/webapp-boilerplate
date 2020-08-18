@@ -34,6 +34,7 @@ module.exports = withBundleAnalyzer(
         withCSS({
           cssModules: true,
           cssLoaderOptions: {
+            importLoaders: 1,
             url: false,
             localIdentName: '[local]___[hash:base64:5]',
           },
