@@ -59,7 +59,11 @@ exports[`<HomePage /> should render correctly 1`] = `
       <div
         class="typography__main typography--no-padding tech-specs__container"
       >
-        Built in
+        <span
+          class="tech-specs__text"
+        >
+          Built in
+        </span>
         <a
           href="https://reactjs.org/"
           rel="noopener noreferrer"
@@ -73,7 +77,11 @@ exports[`<HomePage /> should render correctly 1`] = `
             width="5"
           />
         </a>
-        and
+        <span
+          class="tech-specs__text"
+        >
+          and
+        </span>
         <a
           href="https://redux.js.org/"
           rel="noopener noreferrer"
@@ -87,7 +95,11 @@ exports[`<HomePage /> should render correctly 1`] = `
             width="5"
           />
         </a>
-        Hosted on
+        <span
+          class="tech-specs__text"
+        >
+          Hosted on
+        </span>
         <a
           href="https://aws.amazon.com/"
           rel="noopener noreferrer"
