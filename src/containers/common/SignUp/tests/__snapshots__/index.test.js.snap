@@ -3,39 +3,31 @@
 exports[`<SignUp /> should render correctly - index 1`] = `
 <div>
   <div
-    class="loading-cover__outer-container"
+    class=""
   >
     <div
-      class="loading-cover__overlay"
+      class="skeleton__outer skeleton__section"
     >
       <div
-        class=""
-      >
-        <div
-          class="skeleton__outer skeleton__section"
-        >
-          <div
-            class="skeleton__shimmer"
-            style="margin-left: -0px;"
-          />
-        </div>
-        <div
-          class="skeleton__outer skeleton__input"
-        >
-          <div
-            class="skeleton__shimmer"
-            style="margin-left: -0px;"
-          />
-        </div>
-        <div
-          class="skeleton__outer skeleton__button"
-        >
-          <div
-            class="skeleton__shimmer"
-            style="margin-left: -0px;"
-          />
-        </div>
-      </div>
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="skeleton__outer skeleton__input"
+    >
+      <div
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="skeleton__outer skeleton__button"
+    >
+      <div
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
     </div>
   </div>
 </div>
@@ -44,39 +36,31 @@ exports[`<SignUp /> should render correctly - index 1`] = `
 exports[`<SignUp /> should render correctly with initial state 1`] = `
 <div>
   <div
-    class="loading-cover__outer-container"
+    class=""
   >
     <div
-      class="loading-cover__overlay"
+      class="skeleton__outer skeleton__section"
     >
       <div
-        class=""
-      >
-        <div
-          class="skeleton__outer skeleton__section"
-        >
-          <div
-            class="skeleton__shimmer"
-            style="margin-left: -0px;"
-          />
-        </div>
-        <div
-          class="skeleton__outer skeleton__input"
-        >
-          <div
-            class="skeleton__shimmer"
-            style="margin-left: -0px;"
-          />
-        </div>
-        <div
-          class="skeleton__outer skeleton__button"
-        >
-          <div
-            class="skeleton__shimmer"
-            style="margin-left: -0px;"
-          />
-        </div>
-      </div>
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="skeleton__outer skeleton__input"
+    >
+      <div
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="skeleton__outer skeleton__button"
+    >
+      <div
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
     </div>
   </div>
 </div>
@@ -85,39 +69,31 @@ exports[`<SignUp /> should render correctly with initial state 1`] = `
 exports[`<SignUp /> should render correctly with signUpError 1`] = `
 <div>
   <div
-    class="loading-cover__outer-container"
+    class=""
   >
     <div
-      class="loading-cover__overlay"
+      class="skeleton__outer skeleton__section"
     >
       <div
-        class=""
-      >
-        <div
-          class="skeleton__outer skeleton__section"
-        >
-          <div
-            class="skeleton__shimmer"
-            style="margin-left: -0px;"
-          />
-        </div>
-        <div
-          class="skeleton__outer skeleton__input"
-        >
-          <div
-            class="skeleton__shimmer"
-            style="margin-left: -0px;"
-          />
-        </div>
-        <div
-          class="skeleton__outer skeleton__button"
-        >
-          <div
-            class="skeleton__shimmer"
-            style="margin-left: -0px;"
-          />
-        </div>
-      </div>
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="skeleton__outer skeleton__input"
+    >
+      <div
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="skeleton__outer skeleton__button"
+    >
+      <div
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
     </div>
   </div>
 </div>
@@ -126,39 +102,31 @@ exports[`<SignUp /> should render correctly with signUpError 1`] = `
 exports[`<SignUp /> should render correctly with signUpResult 1`] = `
 <div>
   <div
-    class="loading-cover__outer-container"
+    class=""
   >
     <div
-      class="loading-cover__overlay"
+      class="skeleton__outer skeleton__section"
     >
       <div
-        class=""
-      >
-        <div
-          class="skeleton__outer skeleton__section"
-        >
-          <div
-            class="skeleton__shimmer"
-            style="margin-left: -0px;"
-          />
-        </div>
-        <div
-          class="skeleton__outer skeleton__input"
-        >
-          <div
-            class="skeleton__shimmer"
-            style="margin-left: -0px;"
-          />
-        </div>
-        <div
-          class="skeleton__outer skeleton__button"
-        >
-          <div
-            class="skeleton__shimmer"
-            style="margin-left: -0px;"
-          />
-        </div>
-      </div>
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="skeleton__outer skeleton__input"
+    >
+      <div
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="skeleton__outer skeleton__button"
+    >
+      <div
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
     </div>
   </div>
 </div>
@@ -167,39 +135,31 @@ exports[`<SignUp /> should render correctly with signUpResult 1`] = `
 exports[`<SignUp /> should render correctly with signingUp=true 1`] = `
 <div>
   <div
-    class="loading-cover__outer-container"
+    class=""
   >
     <div
-      class="loading-cover__overlay"
+      class="skeleton__outer skeleton__section"
     >
       <div
-        class=""
-      >
-        <div
-          class="skeleton__outer skeleton__section"
-        >
-          <div
-            class="skeleton__shimmer"
-            style="margin-left: -0px;"
-          />
-        </div>
-        <div
-          class="skeleton__outer skeleton__input"
-        >
-          <div
-            class="skeleton__shimmer"
-            style="margin-left: -0px;"
-          />
-        </div>
-        <div
-          class="skeleton__outer skeleton__button"
-        >
-          <div
-            class="skeleton__shimmer"
-            style="margin-left: -0px;"
-          />
-        </div>
-      </div>
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="skeleton__outer skeleton__input"
+    >
+      <div
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="skeleton__outer skeleton__button"
+    >
+      <div
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
     </div>
   </div>
 </div>

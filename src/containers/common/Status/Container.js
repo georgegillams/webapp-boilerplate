@@ -6,7 +6,7 @@ import { Paragraph } from 'gg-components/Paragraph';
 import PageTitle from 'components/common/PageTitle';
 import { DebugObject } from 'gg-components/DebugObject';
 
-import STYLES from './status.scss';
+import STYLES from './style.scss';
 
 import { getTimeDifference } from 'helpers/common/time';
 
