@@ -209,6 +209,7 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
         >
           <a
             aria-label="Login"
+            class="button__a"
             href="/login"
           >
             <button
@@ -287,6 +288,7 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
         >
           <a
             aria-label="Account"
+            class="button__a"
             href="/account"
           >
             <button

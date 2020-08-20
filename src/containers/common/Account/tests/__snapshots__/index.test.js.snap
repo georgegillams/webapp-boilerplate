@@ -3,39 +3,31 @@
 exports[`<Account /> should render correctly - index 1`] = `
 <div>
   <div
-    class="loading-cover__outer-container"
+    class=""
   >
     <div
-      class="loading-cover__overlay"
+      class="skeleton__outer skeleton__section"
     >
       <div
-        class=""
-      >
-        <div
-          class="skeleton__outer skeleton__section"
-        >
-          <div
-            class="skeleton__shimmer"
-            style="margin-left: -0px;"
-          />
-        </div>
-        <div
-          class="skeleton__outer skeleton__button"
-        >
-          <div
-            class="skeleton__shimmer"
-            style="margin-left: -0px;"
-          />
-        </div>
-        <div
-          class="skeleton__outer skeleton__button"
-        >
-          <div
-            class="skeleton__shimmer"
-            style="margin-left: -0px;"
-          />
-        </div>
-      </div>
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="skeleton__outer skeleton__button"
+    >
+      <div
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="skeleton__outer skeleton__button"
+    >
+      <div
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
     </div>
   </div>
 </div>
@@ -230,39 +222,31 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
 exports[`<Account /> should render correctly with no user 1`] = `
 <div>
   <div
-    class="loading-cover__outer-container"
+    class=""
   >
     <div
-      class="loading-cover__overlay"
+      class="skeleton__outer skeleton__section"
     >
       <div
-        class=""
-      >
-        <div
-          class="skeleton__outer skeleton__section"
-        >
-          <div
-            class="skeleton__shimmer"
-            style="margin-left: -0px;"
-          />
-        </div>
-        <div
-          class="skeleton__outer skeleton__button"
-        >
-          <div
-            class="skeleton__shimmer"
-            style="margin-left: -0px;"
-          />
-        </div>
-        <div
-          class="skeleton__outer skeleton__button"
-        >
-          <div
-            class="skeleton__shimmer"
-            style="margin-left: -0px;"
-          />
-        </div>
-      </div>
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="skeleton__outer skeleton__button"
+    >
+      <div
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="skeleton__outer skeleton__button"
+    >
+      <div
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
     </div>
   </div>
 </div>
