@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { cssModules } from 'gg-components/helpers/cssModules';
+import { THEMES } from 'gg-components/Theming';
 import TextLink from 'components/common/TextLink';
 
 import STYLES from './footer-nav.scss';
@@ -12,13 +13,13 @@ const TechSpecs = props => {
 
   return (
     <div className={getClassName('footer-nav__container', className)} {...rest}>
-      <TextLink className={getClassName('footer-nav__link')} light href="/sitemap">
+      <TextLink className={getClassName('footer-nav__link')} theme={THEMES.allWhite} href="/sitemap">
         Site map
       </TextLink>
-      <TextLink className={getClassName('footer-nav__link')} light href="/status">
+      <TextLink className={getClassName('footer-nav__link')} theme={THEMES.allWhite} href="/status">
         Status
       </TextLink>
-      <TextLink className={getClassName('footer-nav__link')} light href="/privacy-policy">
+      <TextLink className={getClassName('footer-nav__link')} theme={THEMES.allWhite} href="/privacy-policy">
         Privacy
       </TextLink>
     </div>
