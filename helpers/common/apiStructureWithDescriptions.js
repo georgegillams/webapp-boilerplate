@@ -1,4 +1,5 @@
-import apiStructure from 'helpers/apiStructure';
+import apiStructure from 'helpers/common/apiStructure';
+import { apiStructureWithDescriptionsExtensions } from '../apiStructureWithDescriptions_Extensions';
 
 // Analytics
 apiStructure.createAnalytic.description = 'Registers information about the page navigated to';
@@ -64,5 +65,7 @@ apiStructure.signUp.description = 'Create a user, and sign in as that user at th
 apiStructure.signUp.authorisation = 'None';
 apiStructure.updateUser.description = 'Update a given user';
 apiStructure.updateUser.authorisation = 'Any user - only an admin can promote other users to admin';
+
+apiStructureWithDescriptionsExtensions(apiStructure);
 
 export default apiStructure;
