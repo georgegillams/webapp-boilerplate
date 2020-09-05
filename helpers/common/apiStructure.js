@@ -1,4 +1,5 @@
 import appConfig from 'helpers/appConfig';
+import { apiStructureExtensions } from '../apiStructure_Extensions';
 
 const GET = 'GET';
 const POST = 'POST';
@@ -47,6 +48,8 @@ const apiStructure = {
   loadUsers: { method: GET, path: '/users/load-all' },
   signUp: { method: POST, path: '/users/sign-up', isSensitive: true },
   updateUser: { method: POST, path: '/users/update' },
+
+  ...apiStructureExtensions,
 };
 
 Object.keys(apiStructure).forEach(key => {

@@ -1,8 +1,8 @@
 # API Structure
 
-API structure is defined in [`apiStructure.js`](https://github.com/georgegillams/webapp-boilerplate/blob/master/helpers/apiStructure.js) which is available to both client and server. Each API capability has a http-method, path, and full-path.
+API structure is defined in [`apiStructure.js`](https://github.com/georgegillams/webapp-boilerplate/blob/master/helpers/common/apiStructure.js) which is available to both client and server. Each API capability has a http-method, path, and full-path.
 
-The actions (Promises) which the server uses to perform each capability are added in [`apiStructureWithActions.js`](https://github.com/georgegillams/webapp-boilerplate/blob/master/server/api/apiStructureWithActions.js).
+The actions (Promises) which the server uses to perform each capability are added in [`apiStructureWithActions.js`](https://github.com/georgegillams/webapp-boilerplate/blob/master/server/api/actions/common/apiStructureWithActions.js).
 
 ## API request handling
 

@@ -5,7 +5,7 @@ import TextLink from 'components/common/TextLink';
 import { cssModules } from 'gg-components/helpers/cssModules';
 
 import STYLES from './api-docs.scss';
-import apiStructure from './apiStructureWithDescriptions';
+import apiStructure from 'helpers/common/apiStructureWithDescriptions';
 
 const getClassName = cssModules(STYLES);
 
