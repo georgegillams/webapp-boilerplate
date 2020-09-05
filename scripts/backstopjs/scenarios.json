@@ -1,4 +1,4 @@
 {
   "scenarioIds": ["", "404", "418", "account", "admin", "debug", "not-found-page", "sign-up", "sitemap"],
-  "globallyHiddenSelectors": ["img"]
+  "globallyHiddenSelectors": ["img", "[class^=image__outer__]"]
 }
