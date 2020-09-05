@@ -215,6 +215,13 @@ exports[`<SiteMap /> should render correctly 1`] = `
         <br />
         <a
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          href="/admin/emails"
+        >
+          Emails
+        </a>
+        <br />
+        <a
+          class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/admin/notifications"
         >
           Notifications
