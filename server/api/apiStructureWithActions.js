@@ -13,6 +13,10 @@ apiStructure.logout.action = require('./actions/common/auth/logout');
 apiStructure.requestVerificationEmail.action = require('./actions/common/auth/requestVerificationEmail');
 apiStructure.verifyEmail.action = require('./actions/common/auth/verifyEmail');
 
+// Emails
+apiStructure.loadEmails.action = require('./actions/common/emails/loadAll');
+apiStructure.resendEmail.action = require('./actions/common/emails/resend');
+
 // login
 apiStructure.loginWithMagicLink.action = require('./actions/common/magicLinks/login');
 apiStructure.requestMagicLink.action = require('./actions/common/magicLinks/requestMagicLink');

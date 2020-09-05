@@ -19,6 +19,10 @@ const apiStructure = {
   },
   verifyEmail: { method: POST, path: '/auth/verify-email', isSensitive: true },
 
+  // Emails
+  loadEmails: { method: GET, path: '/emails/load' },
+  resendEmail: { method: POST, path: '/emails/resend' },
+
   // Login
   loginWithMagicLink: { method: POST, path: '/magic-links/login', isSensitive: true },
   requestMagicLink: { method: POST, path: '/magic-links/request', isSensitive: true },

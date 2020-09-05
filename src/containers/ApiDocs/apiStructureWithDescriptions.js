@@ -18,6 +18,12 @@ apiStructure.requestVerificationEmail.authorisation = 'Any user';
 apiStructure.verifyEmail.description = 'Verify an email address with a secret verification key';
 apiStructure.verifyEmail.authorisation = 'None';
 
+// Auth
+apiStructure.loadEmails.description = 'Loads emails that have been sent';
+apiStructure.loadEmails.authorisation = 'Admin only';
+apiStructure.resendEmail.description = "Resends an email that's stored in the database";
+apiStructure.resendEmail.authorisation = 'Admin only';
+
 // Login
 apiStructure.loginWithMagicLink.description = 'Login using a secret magic-link key';
 apiStructure.loginWithMagicLink.authorisation = 'None';
