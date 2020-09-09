@@ -64,6 +64,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         class="paragraph"
       >
         <a
+          aria-label="Robots.txt (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/robots.txt"
           rel="noopener noreferrer"
@@ -88,6 +89,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </a>
         <br />
         <a
+          aria-label="SiteMap.xml (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/sitemap.xml"
           rel="noopener noreferrer"
