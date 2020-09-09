@@ -45,7 +45,7 @@
     ]
   },
   "dependencies": {
-    "@next/bundle-analyzer": "^9.5.2",
+    "@next/bundle-analyzer": "^9.5.3",
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
     "async-lock": "^1.2.4",
