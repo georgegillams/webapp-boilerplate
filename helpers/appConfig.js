@@ -18,7 +18,6 @@ const environment = {
 const projectName = 'WEBAPP_BOILERPLATE';
 const projectTitle = 'Web App Boilerplate';
 const projectDescription = 'Just some boilerplate for a web app';
-const projectDescriptionShort = 'just some boilerplate for a web app';
 const githubRepo = 'georgegillams/webapp-boilerplate';
 const githubRepoUrl = `https://github.com/${githubRepo}`;
 const port = PORT || 3000;
@@ -37,7 +36,6 @@ module.exports = {
   projectName,
   projectTitle,
   projectDescription,
-  projectDescriptionShort,
   domain,
   siteUrl,
   apiEndpoint,
@@ -45,14 +43,13 @@ module.exports = {
   githubRepoUrl,
   themeColor,
   app: {
-    title: `${projectTitle} ${projectDescription}`,
+    title: projectTitle,
     head: {
-      titleTemplate: `${projectTitle}: %s`,
       meta: [
         { property: 'theme-color', content: themeColor },
         {
           property: 'description',
-          content: projectDescriptionShort,
+          content: projectDescription,
         },
         { property: 'og:site_name', content: projectTitle },
         {
@@ -74,7 +71,7 @@ module.exports = {
         { property: 'og:locale', content: 'en_GB' },
         {
           property: 'og:title',
-          content: `${projectTitle} ${projectDescriptionShort}`,
+          content: projectTitle,
         },
         {
           property: 'og:description',
