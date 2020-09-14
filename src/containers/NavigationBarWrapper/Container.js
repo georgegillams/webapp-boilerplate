@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { NavigationBar } from 'gg-components/NavigationBar';
 import NavigationItem from 'components/common/NavigationItem';
-import { SmallButtonSkeleton } from 'gg-components/Skeletons';
+import SmallButtonSkeleton from 'gg-components/Skeletons/SmallButtonSkeleton';
+import BurgerButtonWrapper from './BurgerButtonWrapper';
 
 import Logo from 'components/Logo';
 
@@ -34,6 +35,7 @@ const NavigationBarWrapper = props => {
       menuItems={menuItems}
       logo={<Logo padding={false} pride={isPride} animated />}
       accountMenuItem={accountItem}
+      burgerButtonWrapper={BurgerButtonWrapper}
     />
   );
 };
