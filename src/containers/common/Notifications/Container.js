@@ -13,7 +13,9 @@ const Notifications = props => {
   const { notifications } = notificationsState;
 
   useTabMadeVisible(load);
-  useEffect(load, []);
+  useEffect(() => {
+    load();
+  }, []);
 
   const filteredNotifications =
     notifications &&
