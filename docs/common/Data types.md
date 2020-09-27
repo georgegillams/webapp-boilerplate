@@ -12,24 +12,29 @@ Every data type has the following properties:
 
 Every data type can also have following properties:
 
-| name        | type   | source | description           |
-| ----------- | ------ | ------ | --------------------- |
-| requestedId | string | stored |                       |
-| authorId    | string | stored | the id of the creator |
-| deleted     | bool   | stored |                       |
+| name        | type   | source     | description                 |
+| ----------- | ------ | ---------- | --------------------------- |
+| requestedId | string | stored     | the id to take if available |
+| authorId    | string | stored     | the id of the creator       |
+| deleted     | bool   | stored     |                             |
+| ownerUname  | string | calculated |                             |
 
-## User
+## Users
+
+db key: `users`
 
 | name             | type    | source | description |
 | ---------------- | ------- | ------ | ----------- |
+| admin            | boolean | stored |             |
+| email            | string  | stored |             |
+| emailFingerprint | string  | stored |             |
 | name             | string  | stored |             |
 | uname            | string  | stored |             |
-| email            | string  | stored |             |
-| admin            | boolean | stored |             |
-| emailFingerprint | string  | stored |             |
 | password         | string  | stored | unused      |
 
-## Analytic
+## Analytics
+
+db key: `analytics`
 
 | name            | type   | source | description |
 | --------------- | ------ | ------ | ----------- |
@@ -39,7 +44,9 @@ Every data type can also have following properties:
 | os              | string | stored |             |
 | ipAddressPrefix | string | stored |             |
 
-## Email
+## Emails
+
+db key: `emails`
 
 | name    | type   | source | description |
 | ------- | ------ | ------ | ----------- |
@@ -49,7 +56,9 @@ Every data type can also have following properties:
 | text    | string | stored |             |
 | html    | string | stored |             |
 
-## Session
+## Sessions
+
+db key: `sessions`
 
 | name                       | type   | source | description |
 | -------------------------- | ------ | ------ | ----------- |
@@ -59,6 +68,8 @@ Every data type can also have following properties:
 
 ## Email verification
 
+db key: `emailVerificationCodes`
+
 | name   | type   | source | description |
 | ------ | ------ | ------ | ----------- |
 | key    | string | stored |             |
@@ -67,13 +78,17 @@ Every data type can also have following properties:
 
 ## Magic Link
 
+db key: `magiclinks`
+
 | name   | type   | source | description |
 | ------ | ------ | ------ | ----------- |
 | key    | string | stored |             |
 | userId | string | stored |             |
 | expiry | number | stored |             |
 
-## Notification
+## Notifications
+
+db key: `notifications`
 
 | name    | type                     | source | description |
 | ------- | ------------------------ | ------ | ----------- |
