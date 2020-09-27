@@ -42,6 +42,7 @@ exports[`<HomePage /> should render correctly 1`] = `
       class="logo__container footer__logo logo__container--centred logo__container--no-padding"
     >
       <a
+        class="logo__a"
         href="/"
       >
         <h1
@@ -57,7 +58,8 @@ exports[`<HomePage /> should render correctly 1`] = `
       class="footer__tech"
     >
       <span
-        class="paragraph paragraph--all-white tech-specs__container"
+        class="paragraph tech-specs__container"
+        theme="allWhite"
       >
         Built in
         <a
