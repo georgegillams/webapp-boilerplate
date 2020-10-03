@@ -146,7 +146,7 @@ const AdminEmails = props => {
             </>
           )}
           {emails && (
-            <Paragraph>
+            <Paragraph className={getClassName('admin-analytics__count')}>
               Showing {emails.length} of {emails.length} emails
             </Paragraph>
           )}

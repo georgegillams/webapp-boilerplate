@@ -187,8 +187,6 @@ const AdminUsers = props => {
           Clear filters
         </Button>
       )}
-      <br />
-      <br />
     </div>
   );
 
@@ -224,14 +222,9 @@ const AdminUsers = props => {
           )}
           {showFilters && filterControls}
           {users && (
-            <>
-              <br />
-              <Paragraph>
-                Showing {filteredUsers.length} of {users.length} users
-              </Paragraph>
-              <br />
-              <br />
-            </>
+            <Paragraph className={getClassName('admin-analytics__count')}>
+              Showing {filteredUsers.length} of {users.length} users
+            </Paragraph>
           )}
           <SplitDetailView
             className={getClassName('admin-users__split-view')}

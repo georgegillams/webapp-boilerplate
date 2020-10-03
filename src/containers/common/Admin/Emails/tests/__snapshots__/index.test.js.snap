@@ -104,7 +104,7 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
     </button>
   </div>
   <span
-    class="paragraph"
+    class="paragraph admin-analytics__count"
   >
     Showing 
     3
