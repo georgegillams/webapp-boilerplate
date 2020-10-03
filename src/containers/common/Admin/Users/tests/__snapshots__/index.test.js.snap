@@ -47,8 +47,7 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
   </div>
   <div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy"
-      style="margin-right: 1rem; margin-bottom: 1rem;"
+      class="button__outer button__outer--regular button__outer--no-bouncy admin-users__button"
       type="button"
     >
       <span
@@ -58,8 +57,7 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
       </span>
     </button>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy"
-      style="margin-right: 1rem; margin-bottom: 1rem;"
+      class="button__outer button__outer--regular button__outer--no-bouncy admin-users__button"
       type="button"
     >
       <span
@@ -136,8 +134,7 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
   </div>
   <div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy"
-      style="margin-right: 1rem; margin-bottom: 1rem;"
+      class="button__outer button__outer--regular button__outer--no-bouncy admin-users__button"
       type="button"
     >
       <span
@@ -147,8 +144,7 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
       </span>
     </button>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy"
-      style="margin-right: 1rem; margin-bottom: 1rem;"
+      class="button__outer button__outer--regular button__outer--no-bouncy admin-users__button"
       type="button"
     >
       <span
@@ -225,8 +221,7 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
   </div>
   <div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy"
-      style="margin-right: 1rem; margin-bottom: 1rem;"
+      class="button__outer button__outer--regular button__outer--no-bouncy admin-users__button"
       type="button"
     >
       <span
@@ -236,8 +231,7 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
       </span>
     </button>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy"
-      style="margin-right: 1rem; margin-bottom: 1rem;"
+      class="button__outer button__outer--regular button__outer--no-bouncy admin-users__button"
       type="button"
     >
       <span
@@ -339,8 +333,7 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
   </div>
   <div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy"
-      style="margin-right: 1rem; margin-bottom: 1rem;"
+      class="button__outer button__outer--regular button__outer--no-bouncy admin-users__button"
       type="button"
     >
       <span
@@ -350,8 +343,7 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
       </span>
     </button>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy"
-      style="margin-right: 1rem; margin-bottom: 1rem;"
+      class="button__outer button__outer--regular button__outer--no-bouncy admin-users__button"
       type="button"
     >
       <span
@@ -443,9 +435,8 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   </div>
   <div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--disabled"
+      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--disabled admin-users__button"
       disabled=""
-      style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
       <span
@@ -455,8 +446,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
       </span>
     </button>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy"
-      style="margin-right: 1rem; margin-bottom: 1rem;"
+      class="button__outer button__outer--regular button__outer--no-bouncy admin-users__button"
       type="button"
     >
       <span
@@ -533,8 +523,7 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
   </div>
   <div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy"
-      style="margin-right: 1rem; margin-bottom: 1rem;"
+      class="button__outer button__outer--regular button__outer--no-bouncy admin-users__button"
       type="button"
     >
       <span
@@ -544,8 +533,7 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
       </span>
     </button>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy"
-      style="margin-right: 1rem; margin-bottom: 1rem;"
+      class="button__outer button__outer--regular button__outer--no-bouncy admin-users__button"
       type="button"
     >
       <span
@@ -622,8 +610,7 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
   </div>
   <div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy"
-      style="margin-right: 1rem; margin-bottom: 1rem;"
+      class="button__outer button__outer--regular button__outer--no-bouncy admin-users__button"
       type="button"
     >
       <span
@@ -633,8 +620,7 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
       </span>
     </button>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy"
-      style="margin-right: 1rem; margin-bottom: 1rem;"
+      class="button__outer button__outer--regular button__outer--no-bouncy admin-users__button"
       type="button"
     >
       <span
@@ -711,8 +697,7 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
   </div>
   <div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy"
-      style="margin-right: 1rem; margin-bottom: 1rem;"
+      class="button__outer button__outer--regular button__outer--no-bouncy admin-users__button"
       type="button"
     >
       <span
@@ -722,8 +707,7 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
       </span>
     </button>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy"
-      style="margin-right: 1rem; margin-bottom: 1rem;"
+      class="button__outer button__outer--regular button__outer--no-bouncy admin-users__button"
       type="button"
     >
       <span
@@ -800,8 +784,7 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
   </div>
   <div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy"
-      style="margin-right: 1rem; margin-bottom: 1rem;"
+      class="button__outer button__outer--regular button__outer--no-bouncy admin-users__button"
       type="button"
     >
       <span
@@ -811,8 +794,7 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
       </span>
     </button>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy"
-      style="margin-right: 1rem; margin-bottom: 1rem;"
+      class="button__outer button__outer--regular button__outer--no-bouncy admin-users__button"
       type="button"
     >
       <span
@@ -889,8 +871,7 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
   </div>
   <div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy"
-      style="margin-right: 1rem; margin-bottom: 1rem;"
+      class="button__outer button__outer--regular button__outer--no-bouncy admin-users__button"
       type="button"
     >
       <span
@@ -900,8 +881,7 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
       </span>
     </button>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy"
-      style="margin-right: 1rem; margin-bottom: 1rem;"
+      class="button__outer button__outer--regular button__outer--no-bouncy admin-users__button"
       type="button"
     >
       <span
@@ -978,8 +958,7 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
   </div>
   <div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy"
-      style="margin-right: 1rem; margin-bottom: 1rem;"
+      class="button__outer button__outer--regular button__outer--no-bouncy admin-users__button"
       type="button"
     >
       <span
@@ -989,8 +968,7 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
       </span>
     </button>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy"
-      style="margin-right: 1rem; margin-bottom: 1rem;"
+      class="button__outer button__outer--regular button__outer--no-bouncy admin-users__button"
       type="button"
     >
       <span
@@ -1094,8 +1072,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
   </div>
   <div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy"
-      style="margin-right: 1rem; margin-bottom: 1rem;"
+      class="button__outer button__outer--regular button__outer--no-bouncy admin-users__button"
       type="button"
     >
       <span
@@ -1105,8 +1082,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
       </span>
     </button>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy"
-      style="margin-right: 1rem; margin-bottom: 1rem;"
+      class="button__outer button__outer--regular button__outer--no-bouncy admin-users__button"
       type="button"
     >
       <span

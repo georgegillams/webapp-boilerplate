@@ -10,4 +10,18 @@
     flex: 1;
     overflow: hidden;
   }
+
+  &__control-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__button {
+    margin-bottom: $spacing-base;
+  }
+
+  &__edit-button {
+    margin: $spacing-base 0;
+  }
 }

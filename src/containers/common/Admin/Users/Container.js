@@ -96,7 +96,6 @@ const AdminUsers = props => {
           <Error>
             <Paragraph>{adminUsersState.createError.errorMessage || 'Something went wrong'}</Paragraph>
           </Error>
-          <br />
         </>
       )}
 
@@ -152,21 +151,24 @@ const AdminUsers = props => {
         onUserUpdateSuccess={() => {
           load();
         }}>
-        <br />
-        <br />
-        <Button
-          destructive
-          disabled={requesting || removing}
-          onClick={() => {
-            requestMagicLink(detailUser);
-          }}>
-          Login as user
-        </Button>
-        <br />
-        <br />
-        <Button destructive disabled={removing} onClick={() => remove(detailUser)}>
-          Delete
-        </Button>
+        <div className={getClassName('admin-users__control-panel')}>
+          <Button
+            className={getClassName('admin-users__button')}
+            destructive
+            disabled={requesting || removing}
+            onClick={() => {
+              requestMagicLink(detailUser);
+            }}>
+            Login as user
+          </Button>
+          <Button
+            className={getClassName('admin-users__button')}
+            destructive
+            disabled={removing}
+            onClick={() => remove(detailUser)}>
+            Delete
+          </Button>
+        </div>
       </AdminUsersAPIEntity>
     );
   }
@@ -174,17 +176,14 @@ const AdminUsers = props => {
   const filtersApplied = filters !== defaultFilters;
   const mainControls = (
     <div>
-      <Button
-        style={{ marginRight: '1rem', marginBottom: '1rem' }}
-        disabled={adminUsersState.loading}
-        onClick={() => load()}>
+      <Button className={getClassName('admin-users__button')} disabled={adminUsersState.loading} onClick={() => load()}>
         Reload users
       </Button>
-      <Button style={{ marginRight: '1rem', marginBottom: '1rem' }} onClick={() => setShowFilters(!showFilters)}>
+      <Button className={getClassName('admin-users__button')} onClick={() => setShowFilters(!showFilters)}>
         {showFilters ? 'Hide filters' : 'Show filters'}
       </Button>
       {filtersApplied && (
-        <Button style={{ marginBottom: '1rem' }} onClick={() => setFilters(defaultFilters)}>
+        <Button className={getClassName('admin-users__button')} onClick={() => setFilters(defaultFilters)}>
           Clear filters
         </Button>
       )}
