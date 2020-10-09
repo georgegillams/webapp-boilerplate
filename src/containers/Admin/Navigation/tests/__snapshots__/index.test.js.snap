@@ -83,6 +83,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
             class="card__outer-container card__outer-container--padded"
           >
             <div
+              aria-hidden="true"
               class="feature-card__outer-container feature-card__outer-container--narrow-compact"
             >
               <div
@@ -121,6 +122,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
             class="card__outer-container card__outer-container--padded"
           >
             <div
+              aria-hidden="true"
               class="feature-card__outer-container feature-card__outer-container--narrow-compact"
             >
               <div
@@ -159,6 +161,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
             class="card__outer-container card__outer-container--padded"
           >
             <div
+              aria-hidden="true"
               class="feature-card__outer-container feature-card__outer-container--narrow-compact"
             >
               <div
@@ -197,6 +200,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
             class="card__outer-container card__outer-container--padded"
           >
             <div
+              aria-hidden="true"
               class="feature-card__outer-container feature-card__outer-container--narrow-compact"
             >
               <div
@@ -235,6 +239,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
             class="card__outer-container card__outer-container--padded"
           >
             <div
+              aria-hidden="true"
               class="feature-card__outer-container feature-card__outer-container--narrow-compact"
             >
               <div
