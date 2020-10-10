@@ -2,33 +2,28 @@
 
 exports[`<Home /> should render correctly 1`] = `
 <div>
-  <div
-    class="typography__main"
+  <h1
+    class="page-title__heading"
   >
-    <h1
-      class="typography__text typography__text--section page-title__section"
-      id="home"
+    Home
+  </h1>
+  <div
+    class="subsection__outer"
+  >
+    <span
+      class="paragraph"
     >
-      Home
-    </h1>
-    <div
-      class="typography__main"
-    >
-      <span
-        class="paragraph"
+      This is just a boilerplate page, but you can put any content you want in here.
+      <br />
+      This page is pretty boring, but the 
+      <a
+        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        href="/sitemap"
       >
-        This is just a boilerplate page, but you can put any content you want in here.
-        <br />
-        This page is pretty boring, but the 
-        <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
-          href="/sitemap"
-        >
-          site map
-        </a>
-         might be more inspiring.
-      </span>
-    </div>
+        site map
+      </a>
+       might be more inspiring.
+    </span>
   </div>
 </div>
 `;
