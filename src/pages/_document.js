@@ -5,14 +5,13 @@ import appConfig from 'helpers/appConfig';
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const page = ctx.renderPage();
-    // extract css to render in SSR
     const initialProps = await Document.getInitialProps(ctx);
     return { ...initialProps, ...page };
   }
 
   render() {
     return (
-      <Html>
+      <Html lang="en-GB">
         <Head>
           <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/favicon-180x180.png" />
 
@@ -29,7 +28,6 @@ class MyDocument extends Document {
           <link rel="shortcut icon" href="/static/favicon/favicon.png" />
 
           <meta name="msapplication-config" content="/static/favicon/browserconfig.xml" />
-          <style dangerouslySetInnerHTML={{ __html: this.props.css }} />
         </Head>
 
         <body>
