@@ -15,6 +15,7 @@ exports[`<SignUp /> should render correctly - index 1`] = `
     </div>
     <div
       class="skeleton__outer skeleton__input"
+      style="margin-top: 1.2rem;"
     >
       <div
         class="skeleton__shimmer"
@@ -48,6 +49,7 @@ exports[`<SignUp /> should render correctly with initial state 1`] = `
     </div>
     <div
       class="skeleton__outer skeleton__input"
+      style="margin-top: 1.2rem;"
     >
       <div
         class="skeleton__shimmer"
@@ -81,6 +83,7 @@ exports[`<SignUp /> should render correctly with signUpError 1`] = `
     </div>
     <div
       class="skeleton__outer skeleton__input"
+      style="margin-top: 1.2rem;"
     >
       <div
         class="skeleton__shimmer"
@@ -114,6 +117,7 @@ exports[`<SignUp /> should render correctly with signUpResult 1`] = `
     </div>
     <div
       class="skeleton__outer skeleton__input"
+      style="margin-top: 1.2rem;"
     >
       <div
         class="skeleton__shimmer"
@@ -147,6 +151,7 @@ exports[`<SignUp /> should render correctly with signingUp=true 1`] = `
     </div>
     <div
       class="skeleton__outer skeleton__input"
+      style="margin-top: 1.2rem;"
     >
       <div
         class="skeleton__shimmer"
