@@ -15,6 +15,8 @@ const SiteMap = props => (
     </Subsection>
     <Subsection anchor={false} name="Other stuff 🤷‍♂️">
       <Paragraph>
+        <TextLink href="/debug">Debug tools</TextLink>
+        <br />
         <TextLink href="/status">Status</TextLink>
       </Paragraph>
     </Subsection>
@@ -40,24 +42,28 @@ const SiteMap = props => (
     </Subsection>
     <Subsection anchor={false} name="Accounts 🔑">
       <Paragraph>
+        <TextLink href="/account">Account</TextLink>
+        <br />
         <TextLink href="/sign-up">Sign up</TextLink>
         <br />
         <TextLink href="/login">Log in</TextLink>
         <br />
-        <TextLink href="/account">Account</TextLink>
+        <TextLink href="/email-verification">Email verification</TextLink>
+        <br />
+        <TextLink href="/magic-login">Magic login</TextLink>
       </Paragraph>
     </Subsection>
     <Subsection anchor={false} name="Admin 👮‍♂️">
       <Paragraph>
         <TextLink href="/admin">Admin navigation</TextLink>
         <br />
-        <TextLink href="/admin/users">Users</TextLink>
-        <br />
         <TextLink href="/admin/analytics">Analytics</TextLink>
         <br />
         <TextLink href="/admin/emails">Emails</TextLink>
         <br />
         <TextLink href="/admin/notifications">Notifications</TextLink>
+        <br />
+        <TextLink href="/admin/users">Users</TextLink>
       </Paragraph>
     </Subsection>
     <Subsection anchor={false} name="Redirects 👉">

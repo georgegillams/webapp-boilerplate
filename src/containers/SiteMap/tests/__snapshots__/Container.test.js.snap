@@ -41,6 +41,13 @@ exports[`<SiteMap /> should render correctly 1`] = `
     >
       <a
         class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        href="/debug"
+      >
+        Debug tools
+      </a>
+      <br />
+      <a
+        class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="/status"
       >
         Status
@@ -158,6 +165,13 @@ exports[`<SiteMap /> should render correctly 1`] = `
     >
       <a
         class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        href="/account"
+      >
+        Account
+      </a>
+      <br />
+      <a
+        class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="/sign-up"
       >
         Sign up
@@ -172,9 +186,16 @@ exports[`<SiteMap /> should render correctly 1`] = `
       <br />
       <a
         class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/account"
+        href="/email-verification"
       >
-        Account
+        Email verification
+      </a>
+      <br />
+      <a
+        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        href="/magic-login"
+      >
+        Magic login
       </a>
     </span>
   </div>
@@ -199,13 +220,6 @@ exports[`<SiteMap /> should render correctly 1`] = `
       <br />
       <a
         class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/admin/users"
-      >
-        Users
-      </a>
-      <br />
-      <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="/admin/analytics"
       >
         Analytics
@@ -223,6 +237,13 @@ exports[`<SiteMap /> should render correctly 1`] = `
         href="/admin/notifications"
       >
         Notifications
+      </a>
+      <br />
+      <a
+        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        href="/admin/users"
+      >
+        Users
       </a>
     </span>
   </div>
