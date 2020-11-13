@@ -15,6 +15,7 @@ import { withRouter } from 'next/router';
 import UserFilter, { filterUsers, defaultFilters } from './UserFilter';
 import { UserEditForm } from 'components/common/Forms';
 import { Error } from 'gg-components/Error';
+import ErrorDisplay from 'components/common/ErrorDisplay';
 
 import AdminUsersAPIEntity from './AdminUsersAPIEntity';
 
@@ -91,14 +92,7 @@ const AdminUsers = props => {
 
   const newUserForm = (
     <>
-      {adminUsersState && adminUsersState.createError && (
-        <>
-          <Error>
-            <Paragraph>{adminUsersState.createError.errorMessage || 'Something went wrong'}</Paragraph>
-          </Error>
-        </>
-      )}
-
+      {adminUsersState && <ErrorDisplay message="Error creating user" error={adminUsersState.createError} />}
       <UserEditForm
         showAdminControls
         user={newUser}
