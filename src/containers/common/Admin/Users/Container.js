@@ -14,7 +14,6 @@ import Skeleton from './Skeleton';
 import { withRouter } from 'next/router';
 import UserFilter, { filterUsers, defaultFilters } from './UserFilter';
 import { UserEditForm } from 'components/common/Forms';
-import { Error } from 'gg-components/Error';
 import ErrorDisplay from 'components/common/ErrorDisplay';
 
 import AdminUsersAPIEntity from './AdminUsersAPIEntity';
@@ -201,19 +200,7 @@ const AdminUsers = props => {
             <PageTitle link={{ to: '/admin', text: 'Admin' }} name="Admin users"></PageTitle>
           </div>
           {mainControls}
-          {loadError && (
-            <>
-              <Paragraph>Could not load users</Paragraph>
-              {loadError.errorMessage && (
-                <>
-                  <br />
-                  <Error>
-                    <Paragraph>{loadError.errorMessage}</Paragraph>
-                  </Error>
-                </>
-              )}
-            </>
-          )}
+          <ErrorDisplay message="Could not load users" error={loadError} />
           {showFilters && filterControls}
           {users && (
             <Paragraph className={getClassName('admin-analytics__count')}>

@@ -4,12 +4,11 @@ import PageTitle from 'components/common/PageTitle';
 import { DebugObject } from 'components/common/DebugObject';
 import { LoadingCover } from 'gg-components/LoadingCover';
 import { Button } from 'gg-components/Button';
-import { Paragraph } from 'gg-components/Paragraph';
 import { AdminOnly } from 'components/common/Walls';
 import { setPostLoginRedirect } from 'utils/common/storageHelpers';
 import Skeleton from './Skeleton';
 import { withRouter } from 'next/router';
-import { Error } from 'gg-components/Error';
+import ErrorDisplay from 'components/common/ErrorDisplay';
 import NotificationEntity from './NotificationEntity';
 
 import { cssModules } from 'gg-components/helpers/cssModules';
@@ -74,21 +73,7 @@ const AdminNotifications = props => {
               create(newNotification);
             }}></CreateNotificationForm>
           {mainControls}
-          {loadError && (
-            <>
-              <Paragraph>
-                <Error>Could not load analytics</Error>
-              </Paragraph>
-              {loadError.errorMessage && (
-                <>
-                  <br />
-                  <Paragraph>
-                    <Error>{loadError.errorMessage}</Error>
-                  </Paragraph>
-                </>
-              )}
-            </>
-          )}
+          <ErrorDisplay message="Could not load notifications" error={loadError} />
           {showNotifications &&
             notifications.map(n => (
               <NotificationEntity className={getClassName('admin-notifications__entity')} key={n.id} entity={n}>
