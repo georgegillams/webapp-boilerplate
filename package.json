@@ -125,7 +125,7 @@
     "redis-mock": "^0.54.0",
     "sass": "^1.28.0",
     "style-loader": "^2.0.0",
-    "stylelint": "^13.7.2",
+    "stylelint": "^13.8.0",
     "stylelint-config-skyscanner": "^3.0.0",
     "whatwg-fetch": "^3.4.1"
   }
