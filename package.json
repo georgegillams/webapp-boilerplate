@@ -119,7 +119,7 @@
     "lint-staged": "^10.5.1",
     "mini-css-extract-plugin": "^1.2.1",
     "nodemon": "^2.0.6",
-    "prettier": "^2.1.2",
+    "prettier": "^2.2.0",
     "prompt": "^1.0.0",
     "react-test-renderer": "^17.0.1",
     "redis-mock": "^0.54.0",
