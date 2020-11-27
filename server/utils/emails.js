@@ -1,8 +1,8 @@
 /* eslint-disable max-len */
-import { sendMailPromise } from 'utils/common/nodemailer';
+import { sendMailPromise } from 'server-utils/common/nodemailer';
 
-import { dbCreate } from 'utils/common/database';
-import lockPromise from 'utils/common/lock';
+import { dbCreate } from 'server-utils/common/database';
+import lockPromise from 'server-utils/common/lock';
 
 let primaryColor = '#44AEFF';
 let primaryColorFaded = '#E5F4FF';
