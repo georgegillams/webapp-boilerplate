@@ -109,7 +109,7 @@
     "babel-plugin-add-module-exports": "^1.0.4",
     "babel-plugin-dynamic-import-node": "^2.3.3",
     "babel-plugin-module-resolver": "^4.0.0",
-    "backstopjs": "^5.0.6",
+    "backstopjs": "^5.2.1",
     "coveralls": "^3.1.0",
     "css-loader": "^5.0.1",
     "eslint": "^7.14.0",
