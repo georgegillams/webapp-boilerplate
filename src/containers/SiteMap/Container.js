@@ -3,24 +3,27 @@ import { Subsection } from 'gg-components/Subsection';
 import TextLink from 'components/common/TextLink';
 import PageTitle from 'components/common/PageTitle';
 import { Paragraph } from 'gg-components/Paragraph';
-
 import redirects from 'helpers/redirects';
+import STYLES from './site-map.scss';
+import { cssModules } from 'gg-components/helpers/cssModules';
+
+const getClassName = cssModules(STYLES);
 
 const SiteMap = props => (
   <PageTitle name="Site map" {...props}>
-    <Subsection anchor={false} name="Design 🎨">
+    <Subsection anchor={false} name="Design 🎨" className={getClassName('site-map__section')}>
       <Paragraph>
         <TextLink href="/privacy-policy">Privacy Policy</TextLink>
       </Paragraph>
     </Subsection>
-    <Subsection anchor={false} name="Other stuff 🤷‍♂️">
+    <Subsection anchor={false} name="Other stuff 🤷‍♂️" className={getClassName('site-map__section')}>
       <Paragraph>
         <TextLink href="/debug">Debug tools</TextLink>
         <br />
         <TextLink href="/status">Status</TextLink>
       </Paragraph>
     </Subsection>
-    <Subsection anchor={false} name="Random 🐉">
+    <Subsection anchor={false} name="Random 🐉" className={getClassName('site-map__section')}>
       <Paragraph>
         <TextLink hrefExternal href="/robots.txt">
           Robots.txt
@@ -35,12 +38,12 @@ const SiteMap = props => (
         <TextLink href="/teapot">418 error page - I&apos;m a teapot</TextLink>
       </Paragraph>
     </Subsection>
-    <Subsection anchor={false} name="API">
+    <Subsection anchor={false} name="API" className={getClassName('site-map__section')}>
       <Paragraph>
         <TextLink href="/api-docs">API docs</TextLink>
       </Paragraph>
     </Subsection>
-    <Subsection anchor={false} name="Accounts 🔑">
+    <Subsection anchor={false} name="Accounts 🔑" className={getClassName('site-map__section')}>
       <Paragraph>
         <TextLink href="/account">Account</TextLink>
         <br />
@@ -53,7 +56,7 @@ const SiteMap = props => (
         <TextLink href="/magic-login">Magic login</TextLink>
       </Paragraph>
     </Subsection>
-    <Subsection anchor={false} name="Admin 👮‍♂️">
+    <Subsection anchor={false} name="Admin 👮‍♂️" className={getClassName('site-map__section')}>
       <Paragraph>
         <TextLink href="/admin">Admin navigation</TextLink>
         <br />
@@ -66,7 +69,7 @@ const SiteMap = props => (
         <TextLink href="/admin/users">Users</TextLink>
       </Paragraph>
     </Subsection>
-    <Subsection anchor={false} name="Redirects 👉">
+    <Subsection anchor={false} name="Redirects" className={getClassName('site-map__section')}>
       <Paragraph>
         {redirects.map(redirect => (
           <div key={redirect.from}>

@@ -8,7 +8,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
     Site map
   </h1>
   <div
-    class="subsection__outer"
+    class="subsection__outer site-map__section"
   >
     <h3
       class="subsection__heading"
@@ -28,7 +28,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
     </span>
   </div>
   <div
-    class="subsection__outer"
+    class="subsection__outer site-map__section"
   >
     <h3
       class="subsection__heading"
@@ -55,7 +55,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
     </span>
   </div>
   <div
-    class="subsection__outer"
+    class="subsection__outer site-map__section"
   >
     <h3
       class="subsection__heading"
@@ -132,7 +132,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
     </span>
   </div>
   <div
-    class="subsection__outer"
+    class="subsection__outer site-map__section"
   >
     <h3
       class="subsection__heading"
@@ -152,7 +152,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
     </span>
   </div>
   <div
-    class="subsection__outer"
+    class="subsection__outer site-map__section"
   >
     <h3
       class="subsection__heading"
@@ -200,7 +200,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
     </span>
   </div>
   <div
-    class="subsection__outer"
+    class="subsection__outer site-map__section"
   >
     <h3
       class="subsection__heading"
@@ -248,13 +248,13 @@ exports[`<SiteMap /> should render correctly 1`] = `
     </span>
   </div>
   <div
-    class="subsection__outer"
+    class="subsection__outer site-map__section"
   >
     <h3
       class="subsection__heading"
-      id="redirects-👉"
+      id="redirects"
     >
-      Redirects 👉
+      Redirects
     </h3>
     <span
       class="paragraph"
