@@ -97,11 +97,10 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <button
+        <a
           class="card admin-users__card card--atomic card--not-disabled"
-          style="cursor: pointer;"
+          href="/admin/users?highlight=new"
           tabindex="0"
-          type="button"
         >
           <div
             class="card__outer-container"
@@ -128,7 +127,7 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
               </div>
             </div>
           </div>
-        </button>
+        </a>
       </div>
     </div>
   </div>
@@ -179,11 +178,10 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <button
+        <a
           class="card admin-users__card card--atomic card--not-disabled"
-          style="cursor: pointer;"
+          href="/admin/users?highlight=new"
           tabindex="0"
-          type="button"
         >
           <div
             class="card__outer-container"
@@ -210,7 +208,7 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
               </div>
             </div>
           </div>
-        </button>
+        </a>
       </div>
     </div>
   </div>
@@ -261,11 +259,10 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <button
+        <a
           class="card admin-users__card card--atomic card--not-disabled"
-          style="cursor: pointer;"
+          href="/admin/users?highlight=new"
           tabindex="0"
-          type="button"
         >
           <div
             class="card__outer-container"
@@ -292,7 +289,7 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
               </div>
             </div>
           </div>
-        </button>
+        </a>
       </div>
     </div>
   </div>
@@ -407,11 +404,10 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <button
+        <a
           class="card admin-users__card card--atomic card--not-disabled"
-          style="cursor: pointer;"
+          href="/admin/users?highlight=new"
           tabindex="0"
-          type="button"
         >
           <div
             class="card__outer-container"
@@ -438,7 +434,7 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
               </div>
             </div>
           </div>
-        </button>
+        </a>
       </div>
     </div>
   </div>
@@ -523,11 +519,10 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <button
+        <a
           class="card admin-users__card card--atomic card--not-disabled"
-          style="cursor: pointer;"
+          href="/admin/users?highlight=new"
           tabindex="0"
-          type="button"
         >
           <div
             class="card__outer-container"
@@ -554,7 +549,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
               </div>
             </div>
           </div>
-        </button>
+        </a>
       </div>
     </div>
   </div>
@@ -605,11 +600,10 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <button
+        <a
           class="card admin-users__card card--atomic card--not-disabled"
-          style="cursor: pointer;"
+          href="/admin/users?highlight=new"
           tabindex="0"
-          type="button"
         >
           <div
             class="card__outer-container"
@@ -636,7 +630,7 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
               </div>
             </div>
           </div>
-        </button>
+        </a>
       </div>
     </div>
   </div>
@@ -687,11 +681,10 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <button
+        <a
           class="card admin-users__card card--atomic card--not-disabled"
-          style="cursor: pointer;"
+          href="/admin/users?highlight=new"
           tabindex="0"
-          type="button"
         >
           <div
             class="card__outer-container"
@@ -718,7 +711,7 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
               </div>
             </div>
           </div>
-        </button>
+        </a>
       </div>
     </div>
   </div>
@@ -769,11 +762,10 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <button
+        <a
           class="card admin-users__card card--atomic card--not-disabled"
-          style="cursor: pointer;"
+          href="/admin/users?highlight=new"
           tabindex="0"
-          type="button"
         >
           <div
             class="card__outer-container"
@@ -800,7 +792,7 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
               </div>
             </div>
           </div>
-        </button>
+        </a>
       </div>
     </div>
   </div>
@@ -851,11 +843,10 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <button
+        <a
           class="card admin-users__card card--atomic card--not-disabled"
-          style="cursor: pointer;"
+          href="/admin/users?highlight=new"
           tabindex="0"
-          type="button"
         >
           <div
             class="card__outer-container"
@@ -882,7 +873,7 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
               </div>
             </div>
           </div>
-        </button>
+        </a>
       </div>
     </div>
   </div>
@@ -933,11 +924,10 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <button
+        <a
           class="card admin-users__card card--atomic card--not-disabled"
-          style="cursor: pointer;"
+          href="/admin/users?highlight=new"
           tabindex="0"
-          type="button"
         >
           <div
             class="card__outer-container"
@@ -964,7 +954,7 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
               </div>
             </div>
           </div>
-        </button>
+        </a>
       </div>
     </div>
   </div>
@@ -1015,11 +1005,10 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <button
+        <a
           class="card admin-users__card card--atomic card--not-disabled"
-          style="cursor: pointer;"
+          href="/admin/users?highlight=new"
           tabindex="0"
-          type="button"
         >
           <div
             class="card__outer-container"
@@ -1046,7 +1035,7 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
               </div>
             </div>
           </div>
-        </button>
+        </a>
       </div>
     </div>
   </div>
@@ -1133,11 +1122,10 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <button
+        <a
           class="card admin-users__card card--atomic card--not-disabled"
-          style="cursor: pointer;"
+          href="/admin/users?highlight=new"
           tabindex="0"
-          type="button"
         >
           <div
             class="card__outer-container"
@@ -1164,13 +1152,12 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
               </div>
             </div>
           </div>
-        </button>
-        <button
+        </a>
+        <a
           class="card admin-users__card card--atomic card--not-disabled"
+          href="/admin/users?highlight=1"
           id="1"
-          style="cursor: pointer;"
           tabindex="0"
-          type="button"
         >
           <div
             class="card__outer-container"
@@ -1204,13 +1191,12 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
               </div>
             </div>
           </div>
-        </button>
-        <button
+        </a>
+        <a
           class="card admin-users__card card--atomic card--not-disabled"
+          href="/admin/users?highlight=2"
           id="2"
-          style="cursor: pointer;"
           tabindex="0"
-          type="button"
         >
           <div
             class="card__outer-container"
@@ -1244,13 +1230,12 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
               </div>
             </div>
           </div>
-        </button>
-        <button
+        </a>
+        <a
           class="card admin-users__card card--atomic card--not-disabled"
+          href="/admin/users?highlight=3"
           id="3"
-          style="cursor: pointer;"
           tabindex="0"
-          type="button"
         >
           <div
             class="card__outer-container"
@@ -1284,7 +1269,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
               </div>
             </div>
           </div>
-        </button>
+        </a>
       </div>
     </div>
   </div>

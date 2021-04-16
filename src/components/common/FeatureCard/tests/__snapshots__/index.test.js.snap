@@ -2,12 +2,10 @@
 
 exports[`<NavigationItem /> Should render correctly 1`] = `
 <div>
-  <button
+  <a
     class="card feature-card card--atomic card--not-disabled"
-    role="link"
-    style="cursor: pointer;"
+    href="/test"
     tabindex="0"
-    type="button"
   >
     <div
       class="card__outer-container"
@@ -35,7 +33,7 @@ exports[`<NavigationItem /> Should render correctly 1`] = `
         </div>
       </div>
     </div>
-  </button>
+  </a>
 </div>
 `;
 
@@ -78,12 +76,10 @@ exports[`<NavigationItem /> Should render correctly hrefExternal 1`] = `
 
 exports[`<NavigationItem /> Should render correctly with custom className 1`] = `
 <div>
-  <button
+  <a
     class="card feature-card test-custom-classname card--atomic card--not-disabled"
-    role="link"
-    style="cursor: pointer;"
+    href="/test"
     tabindex="0"
-    type="button"
   >
     <div
       class="card__outer-container"
@@ -111,18 +107,16 @@ exports[`<NavigationItem /> Should render correctly with custom className 1`] = 
         </div>
       </div>
     </div>
-  </button>
+  </a>
 </div>
 `;
 
 exports[`<NavigationItem /> Should render with nextified href 1`] = `
 <div>
-  <button
+  <a
     class="card feature-card card--atomic card--not-disabled"
-    role="link"
-    style="cursor: pointer;"
+    href="/blog/test"
     tabindex="0"
-    type="button"
   >
     <div
       class="card__outer-container"
@@ -150,6 +144,6 @@ exports[`<NavigationItem /> Should render with nextified href 1`] = `
         </div>
       </div>
     </div>
-  </button>
+  </a>
 </div>
 `;

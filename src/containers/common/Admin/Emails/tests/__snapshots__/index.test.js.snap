@@ -137,12 +137,11 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <button
+        <a
           class="card admin-emails__card card--atomic card--not-disabled"
+          href="/admin/emails?highlight=1"
           id="1"
-          style="cursor: pointer;"
           tabindex="0"
-          type="button"
         >
           <div
             class="card__outer-container"
@@ -176,13 +175,12 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
               </div>
             </div>
           </div>
-        </button>
-        <button
+        </a>
+        <a
           class="card admin-emails__card card--atomic card--not-disabled"
+          href="/admin/emails?highlight=2"
           id="2"
-          style="cursor: pointer;"
           tabindex="0"
-          type="button"
         >
           <div
             class="card__outer-container"
@@ -216,13 +214,12 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
               </div>
             </div>
           </div>
-        </button>
-        <button
+        </a>
+        <a
           class="card admin-emails__card card--atomic card--not-disabled"
+          href="/admin/emails?highlight=3"
           id="3"
-          style="cursor: pointer;"
           tabindex="0"
-          type="button"
         >
           <div
             class="card__outer-container"
@@ -256,7 +253,7 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
               </div>
             </div>
           </div>
-        </button>
+        </a>
       </div>
     </div>
   </div>

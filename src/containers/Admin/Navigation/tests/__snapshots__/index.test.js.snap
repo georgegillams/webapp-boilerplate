@@ -66,13 +66,11 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
     <div
       class="admin-navigation__card-container"
     >
-      <button
+      <a
         aria-label="Debug settings"
         class="card feature-card feature-card--narrow-compact admin-navigation__card card--atomic card--not-disabled"
-        role="link"
-        style="cursor: pointer;"
+        href="/debug"
         tabindex="0"
-        type="button"
       >
         <div
           class="card__outer-container"
@@ -107,14 +105,12 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
             </div>
           </div>
         </div>
-      </button>
-      <button
+      </a>
+      <a
         aria-label="Analytics"
         class="card feature-card feature-card--narrow-compact admin-navigation__card card--atomic card--not-disabled"
-        role="link"
-        style="cursor: pointer;"
+        href="/admin/analytics"
         tabindex="0"
-        type="button"
       >
         <div
           class="card__outer-container"
@@ -149,14 +145,12 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
             </div>
           </div>
         </div>
-      </button>
-      <button
+      </a>
+      <a
         aria-label="Emails"
         class="card feature-card feature-card--narrow-compact admin-navigation__card card--atomic card--not-disabled"
-        role="link"
-        style="cursor: pointer;"
+        href="/admin/emails"
         tabindex="0"
-        type="button"
       >
         <div
           class="card__outer-container"
@@ -191,14 +185,12 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
             </div>
           </div>
         </div>
-      </button>
-      <button
+      </a>
+      <a
         aria-label="Notifications"
         class="card feature-card feature-card--narrow-compact admin-navigation__card card--atomic card--not-disabled"
-        role="link"
-        style="cursor: pointer;"
+        href="/admin/notifications"
         tabindex="0"
-        type="button"
       >
         <div
           class="card__outer-container"
@@ -233,14 +225,12 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
             </div>
           </div>
         </div>
-      </button>
-      <button
+      </a>
+      <a
         aria-label="Users"
         class="card feature-card feature-card--narrow-compact admin-navigation__card card--atomic card--not-disabled"
-        role="link"
-        style="cursor: pointer;"
+        href="/admin/users"
         tabindex="0"
-        type="button"
       >
         <div
           class="card__outer-container"
@@ -275,7 +265,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
             </div>
           </div>
         </div>
-      </button>
+      </a>
     </div>
   </div>
 </div>

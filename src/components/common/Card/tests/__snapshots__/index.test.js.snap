@@ -2,11 +2,10 @@
 
 exports[`<Card /> Should render correctly 1`] = `
 <div>
-  <button
+  <a
     class="card card--atomic card--not-disabled"
-    style="cursor: pointer;"
+    href="/test"
     tabindex="0"
-    type="button"
   >
     <div
       class="card__outer-container"
@@ -18,7 +17,7 @@ exports[`<Card /> Should render correctly 1`] = `
         class="card__content-container card__content-container--padded"
       />
     </div>
-  </button>
+  </a>
 </div>
 `;
 
@@ -45,11 +44,10 @@ exports[`<Card /> Should render correctly hrefExternal 1`] = `
 
 exports[`<Card /> Should render correctly with custom className 1`] = `
 <div>
-  <button
+  <a
     class="card test-custom-classname card--atomic card--not-disabled"
-    style="cursor: pointer;"
+    href="/test"
     tabindex="0"
-    type="button"
   >
     <div
       class="card__outer-container"
@@ -61,17 +59,16 @@ exports[`<Card /> Should render correctly with custom className 1`] = `
         class="card__content-container card__content-container--padded"
       />
     </div>
-  </button>
+  </a>
 </div>
 `;
 
 exports[`<Card /> Should render with nextified href 1`] = `
 <div>
-  <button
+  <a
     class="card card--atomic card--not-disabled"
-    style="cursor: pointer;"
+    href="/blog/test"
     tabindex="0"
-    type="button"
   >
     <div
       class="card__outer-container"
@@ -83,6 +80,6 @@ exports[`<Card /> Should render with nextified href 1`] = `
         class="card__content-container card__content-container--padded"
       />
     </div>
-  </button>
+  </a>
 </div>
 `;
