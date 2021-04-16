@@ -12,7 +12,7 @@ const Button = props => {
   const destination = nextifyHref(href);
 
   if (renderNormalButton) {
-    return <GGButton href={href} hrefExternal={hrefExternal} {...rest} />;
+    return <GGButton {...props} />;
   }
 
   return (

@@ -6,7 +6,7 @@ import nextifyHref from 'client-utils/nextifyHref';
 import Link from 'next/link';
 
 const Card = props => {
-  const { href, onClick, ...rest } = props;
+  const { href, ...rest } = props;
 
   const hrefExternal = href && HelperFunctions.includes(href, 'http');
 
@@ -15,7 +15,7 @@ const Card = props => {
   const destination = nextifyHref(href);
 
   if (renderNormalCard) {
-    return <GGCard href={href} onClick={onClick} {...rest} />;
+    return <GGCard {...props} />;
   }
 
   return (
