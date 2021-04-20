@@ -3,31 +3,35 @@
 exports[`<HomePage /> should render correctly 1`] = `
 <div>
   <main
-    class="page-container__container page-container__container--bottom-padding page-container__container--regular page-container__container--center common-layout__grow"
+    class="page-container__container common-layout__grow"
     id="main"
   >
-    <h1
-      class="page-title__heading"
-    >
-      Home
-    </h1>
     <div
-      class="subsection__outer"
+      class="page-container__container page-container__container--regular page-container__container--center"
     >
-      <span
-        class="paragraph"
+      <h1
+        class="page-title__heading"
       >
-        This is just a boilerplate page, but you can put any content you want in here.
-        <br />
-        This page is pretty boring, but the 
-        <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
-          href="/sitemap"
+        Home
+      </h1>
+      <div
+        class="subsection__outer"
+      >
+        <span
+          class="paragraph"
         >
-          site map
-        </a>
-         might be more inspiring.
-      </span>
+          This is just a boilerplate page, but you can put any content you want in here.
+          <br />
+          This page is pretty boring, but the 
+          <a
+            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            href="/sitemap"
+          >
+            site map
+          </a>
+           might be more inspiring.
+        </span>
+      </div>
     </div>
   </main>
   <footer
