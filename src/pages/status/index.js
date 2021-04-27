@@ -1,8 +1,8 @@
 import React from 'react';
 
-import CSSHack from 'components/common/CSSHack';
+import CSSHack from 'gg-webapp/components/CSSHack';
 import Status from 'containers/common/Status';
-import LegacyCommonLayout from 'components/common/LegacyCommonLayout';
+import LegacyCommonLayout from 'gg-webapp/components/LegacyCommonLayout';
 import appConfig from 'helpers/appConfig';
 import getConfig from 'next/config';
 

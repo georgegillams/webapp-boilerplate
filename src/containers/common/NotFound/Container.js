@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { cssModules } from 'gg-components/helpers/cssModules';
 import { Subsection } from 'gg-components/Subsection';
 import { Paragraph } from 'gg-components/Paragraph';
-import PageTitle from 'components/common/PageTitle';
-import TextLink from 'components/common/TextLink';
+import PageTitle from 'gg-webapp/components/PageTitle';
+import TextLink from 'gg-webapp/components/TextLink';
 
 import STYLES from './not-found.scss';
 

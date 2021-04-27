@@ -26,7 +26,7 @@ module.exports = {
       lines: 50,
     },
   },
-  moduleDirectories: ['node_modules', 'src', 'server', 'shared'],
+  moduleDirectories: ['node_modules', 'src', 'server', 'shared', 'gg-webapp'],
   testRegex: '.*\\.test\\.js$',
   setupFilesAfterEnv: [
     '<rootDir>/config/jest/jest-dom-extend-expect',

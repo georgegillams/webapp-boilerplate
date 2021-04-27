@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import TextLink from 'components/common/TextLink';
-import PageTitle from 'components/common/PageTitle';
-import { DebugObject } from 'components/common/DebugObject';
+import TextLink from 'gg-webapp/components/TextLink';
+import PageTitle from 'gg-webapp/components/PageTitle';
+import { DebugObject } from 'gg-webapp/components/DebugObject';
 import { LoadingCover } from 'gg-components/LoadingCover';
 
 import Skeleton from './Skeleton';
 
 import CookiesRequired from 'containers/common/CookiesRequired';
-import { LoggedOutOnly } from 'components/common/Walls';
-import { LoginForm } from 'components/common/Forms';
+import { LoggedOutOnly } from 'gg-webapp/components/Walls';
+import { LoginForm } from 'gg-webapp/components/Forms';
 import STYLES from './login.scss';
 import { cssModules } from 'gg-components/helpers/cssModules';
 

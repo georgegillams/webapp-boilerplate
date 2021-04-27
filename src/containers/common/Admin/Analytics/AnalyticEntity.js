@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Paragraph } from 'gg-components/Paragraph';
-import Card from 'components/common/Card';
-import DebugObject from 'components/common/DebugObject';
+import Card from 'gg-webapp/components/Card';
+import DebugObject from 'gg-webapp/components/DebugObject';
 
 const AnalyticEntity = props => {
   const { entity, children, ...rest } = props;

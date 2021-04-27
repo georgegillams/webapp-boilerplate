@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import TextLink from 'components/common/TextLink';
-import PageTitle from 'components/common/PageTitle';
-import { DebugObject } from 'components/common/DebugObject';
+import TextLink from 'gg-webapp/components/TextLink';
+import PageTitle from 'gg-webapp/components/PageTitle';
+import { DebugObject } from 'gg-webapp/components/DebugObject';
 import { LoadingCover } from 'gg-components/LoadingCover';
 
 import Skeleton from './Skeleton';
 
-import { LoggedOutOnly } from 'components/common/Walls';
-import { SignUpForm } from 'components/common/Forms';
+import { LoggedOutOnly } from 'gg-webapp/components/Walls';
+import { SignUpForm } from 'gg-webapp/components/Forms';
 import CookiesRequired from 'containers/common/CookiesRequired';
 import { CONSENT_STATE_ALLOWED } from 'containers/common/Consent/constants';
 import STYLES from './sign-up.scss';

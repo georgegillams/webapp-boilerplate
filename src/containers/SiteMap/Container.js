@@ -1,7 +1,7 @@
 import React from 'react';
 import { Subsection } from 'gg-components/Subsection';
-import TextLink from 'components/common/TextLink';
-import PageTitle from 'components/common/PageTitle';
+import TextLink from 'gg-webapp/components/TextLink';
+import PageTitle from 'gg-webapp/components/PageTitle';
 import { Paragraph } from 'gg-components/Paragraph';
 import redirects from 'helpers/redirects';
 import STYLES from './site-map.scss';

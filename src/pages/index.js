@@ -1,8 +1,8 @@
 import React from 'react';
 
-import CSSHack from 'components/common/CSSHack';
+import CSSHack from 'gg-webapp/components/CSSHack';
 import Home from 'containers/HomePage';
-import CommonLayout from 'components/common/CommonLayout';
+import CommonLayout from 'gg-webapp/components/CommonLayout';
 
 const Page = props => {
   return (

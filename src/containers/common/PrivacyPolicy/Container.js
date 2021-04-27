@@ -1,9 +1,9 @@
 import React from 'react';
-import PageTitle from 'components/common/PageTitle';
+import PageTitle from 'gg-webapp/components/PageTitle';
 import { Paragraph } from 'gg-components/Paragraph';
 
 import Subsection from 'gg-components/Subsection';
-import TextLink from 'components/common/TextLink';
+import TextLink from 'gg-webapp/components/TextLink';
 
 const PrivacyPolicy = () => {
   return (

@@ -1,8 +1,8 @@
 import React from 'react';
 
-import CSSHack from 'components/common/CSSHack';
+import CSSHack from 'gg-webapp/components/CSSHack';
 import Login from 'containers/common/Login';
-import LegacyCommonLayout from 'components/common/LegacyCommonLayout';
+import LegacyCommonLayout from 'gg-webapp/components/LegacyCommonLayout';
 
 const Page = props => {
   return (

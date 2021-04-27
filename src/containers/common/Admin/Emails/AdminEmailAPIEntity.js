@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Paragraph } from 'gg-components/Paragraph';
 import { Subsection } from 'gg-components/Subsection';
-import { SplitDetailItem } from 'components/common/SplitDetailView';
+import { SplitDetailItem } from 'gg-webapp/components/SplitDetailView';
 import { cssModules } from 'gg-components/helpers/cssModules';
 import STYLES from './admin-emails.scss';
 

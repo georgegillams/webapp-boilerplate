@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import { Button } from 'gg-components/Button';
 import { Paragraph } from 'gg-components/Paragraph';
 import { Subsection } from 'gg-components/Subsection';
-import { SplitDetailItem } from 'components/common/SplitDetailView';
-import { UserEditForm } from 'components/common/Forms';
-import ErrorDisplay from 'components/common/ErrorDisplay';
+import { SplitDetailItem } from 'gg-webapp/components/SplitDetailView';
+import { UserEditForm } from 'gg-webapp/components/Forms';
+import ErrorDisplay from 'gg-webapp/components/ErrorDisplay';
 import STYLES from './admin-users.scss';
 import { cssModules } from 'gg-components/helpers/cssModules';
 

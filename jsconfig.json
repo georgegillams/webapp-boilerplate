@@ -2,6 +2,9 @@
   "compilerOptions": {
     "baseUrl": "./src",
     "paths": {
+      "gg-webapp/*": [
+        "gg-webapp/*"
+      ],
       "helpers/*": [
         "shared/helpers/*"
       ],
@@ -10,10 +13,10 @@
       ],
       "client-utils/*": [
         "src/utils/*"
-      ],
+      ]
     }
   },
   "exclude": [
-    "node_modules",
+    "node_modules"
   ]
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { cssModules } from 'gg-components/helpers/cssModules';
 import { THEMES } from 'gg-components/Theming';
-import TextLink from 'components/common/TextLink';
+import TextLink from 'gg-webapp/components/TextLink';
 
 import STYLES from './footer-nav.scss';
 

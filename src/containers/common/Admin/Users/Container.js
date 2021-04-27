@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import PageTitle from 'components/common/PageTitle';
-import { DebugObject } from 'components/common/DebugObject';
+import PageTitle from 'gg-webapp/components/PageTitle';
+import { DebugObject } from 'gg-webapp/components/DebugObject';
 import { LoadingCover } from 'gg-components/LoadingCover';
 import { Button } from 'gg-components/Button';
 import { Subsection } from 'gg-components/Subsection';
 import { Paragraph } from 'gg-components/Paragraph';
-import { SplitDetailItem } from 'components/common/SplitDetailView';
-import { AdminOnly } from 'components/common/Walls';
-import { SplitDetailView } from 'components/common/SplitDetailView';
+import { SplitDetailItem } from 'gg-webapp/components/SplitDetailView';
+import { AdminOnly } from 'gg-webapp/components/Walls';
+import { SplitDetailView } from 'gg-webapp/components/SplitDetailView';
 import { setPostLoginRedirect } from 'client-utils/common/storageHelpers';
 import Skeleton from './Skeleton';
 import { withRouter } from 'next/router';
 import UserFilter, { filterUsers, defaultFilters } from './UserFilter';
-import { UserEditForm } from 'components/common/Forms';
-import ErrorDisplay from 'components/common/ErrorDisplay';
+import { UserEditForm } from 'gg-webapp/components/Forms';
+import ErrorDisplay from 'gg-webapp/components/ErrorDisplay';
 
 import AdminUsersAPIEntity from './AdminUsersAPIEntity';
 

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import DebugObject from 'components/common/DebugObject';
+import DebugObject from 'gg-webapp/components/DebugObject';
 import Notification from 'gg-components/Notification/Notification';
 import STYLES from './notifications.scss';
 import { cssModules } from 'gg-components/helpers/cssModules';

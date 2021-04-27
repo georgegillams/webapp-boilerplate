@@ -15,6 +15,7 @@
     ["module-resolver", { 
       "root": ["./"],
       "alias": {
+        "gg-webapp": "./gg-webapp",
         "helpers": "./shared/helpers",
         "server-utils": "./server/utils",
         "client-utils": "./src/utils"

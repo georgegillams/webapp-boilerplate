@@ -12,7 +12,7 @@ import Notifications from 'containers/common/Notifications';
 import withReduxStore from 'client-utils/common/redux/with-redux-store';
 import appConfig from 'helpers/appConfig';
 import Navigation from 'containers/NavigationBarWrapper';
-import AppWrapper from 'components/common/AppWrapper';
+import AppWrapper from 'gg-webapp/components/AppWrapper';
 import { SkipLink } from 'gg-components/SkipLink';
 import { enableES5 } from 'immer';
 

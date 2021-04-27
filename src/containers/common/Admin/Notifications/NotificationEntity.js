@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Notification } from 'gg-components/Notification';
-import DebugObject from 'components/common/DebugObject';
+import DebugObject from 'gg-webapp/components/DebugObject';
 
 const AnalyticEntity = props => {
   const { entity, children, ...rest } = props;

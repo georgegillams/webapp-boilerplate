@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import PageTitle from 'components/common/PageTitle';
-import { DebugObject } from 'components/common/DebugObject';
+import PageTitle from 'gg-webapp/components/PageTitle';
+import { DebugObject } from 'gg-webapp/components/DebugObject';
 import { LoadingCover } from 'gg-components/LoadingCover';
 import { Button } from 'gg-components/Button';
 import { Paragraph } from 'gg-components/Paragraph';
-import { AdminOnly } from 'components/common/Walls';
+import { AdminOnly } from 'gg-webapp/components/Walls';
 import { setPostLoginRedirect } from 'client-utils/common/storageHelpers';
 import Skeleton from './Skeleton';
 import { withRouter } from 'next/router';
 import AnalyticFilter, { filterAnalytics, defaultFilters } from './AnalyticsFilter';
-import ErrorDisplay from 'components/common/ErrorDisplay';
+import ErrorDisplay from 'gg-webapp/components/ErrorDisplay';
 import AnalyticsEntity from './AnalyticEntity';
 
 import { cssModules } from 'gg-components/helpers/cssModules';

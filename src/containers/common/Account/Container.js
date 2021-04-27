@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import PageTitle from 'components/common/PageTitle';
+import PageTitle from 'gg-webapp/components/PageTitle';
 import { LoadingCover } from 'gg-components/LoadingCover';
-import { DebugObject } from 'components/common/DebugObject';
+import { DebugObject } from 'gg-webapp/components/DebugObject';
 import { Paragraph } from 'gg-components/Paragraph';
-import Button from 'components/common/Button';
+import Button from 'gg-webapp/components/Button';
 import { setPostLoginRedirect } from 'client-utils/common/storageHelpers';
 
 import Skeleton from './Skeleton';
 
-import { LoggedInOnly } from 'components/common/Walls';
+import { LoggedInOnly } from 'gg-webapp/components/Walls';
 import STYLES from './account.scss';
 import { cssModules } from 'gg-components/helpers/cssModules';
 
