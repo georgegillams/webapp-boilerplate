@@ -1,21 +1,21 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { DebugObject } from 'gg-webapp/components/DebugObject';
+import { DebugObject } from '@george-gillams/webapp/components/DebugObject';
 import {
   CONSENT_STATE_UNSET,
   CONSENT_STATE_ALLOWED,
   CONSENT_STATE_ALLOWED_CLIENT_VALUE,
   CONSENT_STATE_DEFERRED_CLIENT_VALUE,
 } from './constants';
-import Button from 'gg-webapp/components/Button';
-import { Paragraph } from 'gg-components/Paragraph';
+import Button from '@george-gillams/webapp/components/Button';
+import { Paragraph } from '@george-gillams/components/Paragraph';
 import Modal from 'react-modal';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { cssModules } from '@george-gillams/components/helpers/cssModules';
 import STYLES from './consent.scss';
 import { getPrivacyPreferences, setPrivacyPreferences } from 'client-utils/common/storageHelpers';
-import TextLink from 'gg-webapp/components/TextLink';
+import TextLink from '@george-gillams/webapp/components/TextLink';
 import Banner from './Banner';
-import { Section } from 'gg-components/Section';
+import { Section } from '@george-gillams/components/Section';
 
 const getClassName = cssModules(STYLES);
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
-import appConfig from 'helpers/appConfig';
+import appConfig from '../../helpers/appConfig';
 
-const CSSHack = props => {
+const CSSHack = (props) => {
   const { pageName } = props;
 
   if (appConfig.isProduction) {

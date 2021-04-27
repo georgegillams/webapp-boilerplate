@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from 'gg-components/helpers/cssModules';
-import { THEMES } from 'gg-components/Theming';
-import TextLink from 'gg-webapp/components/TextLink';
+import { cssModules } from '@george-gillams/components/helpers/cssModules';
+import { THEMES } from '@george-gillams/components/Theming';
+import TextLink from '@george-gillams/webapp/components/TextLink';
 
 import STYLES from './footer-nav.scss';
 

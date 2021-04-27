@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Button } from 'gg-components/Button';
-import { Paragraph } from 'gg-components/Paragraph';
-import { Subsection } from 'gg-components/Subsection';
-import { SplitDetailItem } from 'gg-webapp/components/SplitDetailView';
-import { UserEditForm } from 'gg-webapp/components/Forms';
-import ErrorDisplay from 'gg-webapp/components/ErrorDisplay';
+import { Button } from '@george-gillams/components/Button';
+import { Paragraph } from '@george-gillams/components/Paragraph';
+import { Subsection } from '@george-gillams/components/Subsection';
+import { SplitDetailItem } from '@george-gillams/webapp/components/SplitDetailView';
+import { UserEditForm } from '@george-gillams/webapp/components/Forms';
+import ErrorDisplay from '@george-gillams/webapp/components/ErrorDisplay';
 import STYLES from './admin-users.scss';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { cssModules } from '@george-gillams/components/helpers/cssModules';
 
 const getClassName = cssModules(STYLES);
 

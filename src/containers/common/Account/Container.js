@@ -1,17 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import PageTitle from 'gg-webapp/components/PageTitle';
-import { LoadingCover } from 'gg-components/LoadingCover';
-import { DebugObject } from 'gg-webapp/components/DebugObject';
-import { Paragraph } from 'gg-components/Paragraph';
-import Button from 'gg-webapp/components/Button';
+import PageTitle from '@george-gillams/webapp/components/PageTitle';
+import { LoadingCover } from '@george-gillams/components/LoadingCover';
+import { DebugObject } from '@george-gillams/webapp/components/DebugObject';
+import { Paragraph } from '@george-gillams/components/Paragraph';
+import Button from '@george-gillams/webapp/components/Button';
 import { setPostLoginRedirect } from 'client-utils/common/storageHelpers';
 
 import Skeleton from './Skeleton';
 
-import { LoggedInOnly } from 'gg-webapp/components/Walls';
+import { LoggedInOnly } from '@george-gillams/webapp/components/Walls';
 import STYLES from './account.scss';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { cssModules } from '@george-gillams/components/helpers/cssModules';
 
 const getClassName = cssModules(STYLES);
 

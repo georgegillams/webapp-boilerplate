@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import PageTitle from 'gg-webapp/components/PageTitle';
-import { DebugObject } from 'gg-webapp/components/DebugObject';
-import { Paragraph } from 'gg-components/Paragraph';
-import ErrorDisplay from 'gg-webapp/components/ErrorDisplay';
+import PageTitle from '@george-gillams/webapp/components/PageTitle';
+import { DebugObject } from '@george-gillams/webapp/components/DebugObject';
+import { Paragraph } from '@george-gillams/components/Paragraph';
+import ErrorDisplay from '@george-gillams/webapp/components/ErrorDisplay';
 
 import { withRouter } from 'next/router';
 

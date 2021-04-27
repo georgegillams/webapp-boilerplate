@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import KonamiResponder from 'konami';
-import DebugObject from 'gg-webapp/components/DebugObject';
+import DebugObject from '@george-gillams/webapp/components/DebugObject';
 import ConfettiCanvas from './ConfettiCanvasLoadable';
 
 const Konami = () => {

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { DebugObject } from 'gg-webapp/components/DebugObject';
+import { DebugObject } from '@george-gillams/webapp/components/DebugObject';
 
 const CookiesRequired = props => {
   const { consentState, setConsentReason } = props;

@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import PageTitle from 'gg-webapp/components/PageTitle';
-import { DebugObject } from 'gg-webapp/components/DebugObject';
-import { LoadingCover } from 'gg-components/LoadingCover';
-import { Button } from 'gg-components/Button';
-import { Paragraph } from 'gg-components/Paragraph';
-import { AdminOnly } from 'gg-webapp/components/Walls';
-import { SplitDetailView } from 'gg-webapp/components/SplitDetailView';
+import PageTitle from '@george-gillams/webapp/components/PageTitle';
+import { DebugObject } from '@george-gillams/webapp/components/DebugObject';
+import { LoadingCover } from '@george-gillams/components/LoadingCover';
+import { Button } from '@george-gillams/components/Button';
+import { Paragraph } from '@george-gillams/components/Paragraph';
+import { AdminOnly } from '@george-gillams/webapp/components/Walls';
+import { SplitDetailView } from '@george-gillams/webapp/components/SplitDetailView';
 import { setPostLoginRedirect } from 'client-utils/common/storageHelpers';
 import Skeleton from './Skeleton';
 import { withRouter } from 'next/router';
-import ErrorDisplay from 'gg-webapp/components/ErrorDisplay';
+import ErrorDisplay from '@george-gillams/webapp/components/ErrorDisplay';
 
 import AdminEmailAPIEntity from './AdminEmailAPIEntity';
 
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { cssModules } from '@george-gillams/components/helpers/cssModules';
 import STYLES from './admin-emails.scss';
 import useTabMadeVisible from 'client-utils/common/useTabMadeVisible';
 

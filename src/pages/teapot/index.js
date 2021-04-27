@@ -1,7 +1,7 @@
 import React from 'react';
 
-import CSSHack from 'gg-webapp/components/CSSHack';
-import LegacyCommonLayout from 'gg-webapp/components/LegacyCommonLayout';
+import CSSHack from '@george-gillams/webapp/components/CSSHack';
+import LegacyCommonLayout from '@george-gillams/webapp/components/LegacyCommonLayout';
 import Teapot from 'containers/common/Teapot';
 
 const Page = props => {

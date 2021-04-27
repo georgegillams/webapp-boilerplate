@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { NavigationBar } from 'gg-components/NavigationBar';
-import NavigationItem from 'gg-webapp/components/NavigationItem';
-import SmallButtonSkeleton from 'gg-components/Skeletons/SmallButtonSkeleton';
+import { NavigationBar } from '@george-gillams/components/NavigationBar';
+import NavigationItem from '@george-gillams/webapp/components/NavigationItem';
+import SmallButtonSkeleton from '@george-gillams/components/Skeletons/SmallButtonSkeleton';
 import BurgerButtonWrapper from './BurgerButtonWrapper';
 
 import Logo from 'components/Logo';

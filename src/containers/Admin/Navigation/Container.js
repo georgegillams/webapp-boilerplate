@@ -1,17 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import PageTitle from 'gg-webapp/components/PageTitle';
-import { DebugObject } from 'gg-webapp/components/DebugObject';
-import { LoadingCover } from 'gg-components/LoadingCover';
-import { FEATURE_CARD_LAYOUTS } from 'gg-components/FeatureCard';
-import FeatureCard from 'gg-webapp/components/FeatureCard';
+import PageTitle from '@george-gillams/webapp/components/PageTitle';
+import { DebugObject } from '@george-gillams/webapp/components/DebugObject';
+import { LoadingCover } from '@george-gillams/components/LoadingCover';
+import { FEATURE_CARD_LAYOUTS } from '@george-gillams/components/FeatureCard';
+import FeatureCard from '@george-gillams/webapp/components/FeatureCard';
 import STYLES from './admin-navigation.scss';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { cssModules } from '@george-gillams/components/helpers/cssModules';
 import { setPostLoginRedirect } from 'client-utils/common/storageHelpers';
 
 import Skeleton from './Skeleton';
 
-import { AdminOnly } from 'gg-webapp/components/Walls';
+import { AdminOnly } from '@george-gillams/webapp/components/Walls';
 
 const getClassName = cssModules(STYLES);
 

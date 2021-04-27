@@ -1,9 +1,9 @@
 import React from 'react';
-import { Paragraph } from 'gg-components/Paragraph';
-import PageTitle from 'gg-webapp/components/PageTitle';
-import TextLink from 'gg-webapp/components/TextLink';
-import { cssModules } from 'gg-components/helpers/cssModules';
-import { Table, Head, Body, Row, Cell } from 'gg-components/Table';
+import { Paragraph } from '@george-gillams/components/Paragraph';
+import PageTitle from '@george-gillams/webapp/components/PageTitle';
+import TextLink from '@george-gillams/webapp/components/TextLink';
+import { cssModules } from '@george-gillams/components/helpers/cssModules';
+import { Table, Head, Body, Row, Cell } from '@george-gillams/components/Table';
 
 import STYLES from './api-docs.scss';
 import apiStructure from 'helpers/common/apiStructureWithDescriptions';

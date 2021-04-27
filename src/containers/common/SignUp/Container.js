@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import TextLink from 'gg-webapp/components/TextLink';
-import PageTitle from 'gg-webapp/components/PageTitle';
-import { DebugObject } from 'gg-webapp/components/DebugObject';
-import { LoadingCover } from 'gg-components/LoadingCover';
+import TextLink from '@george-gillams/webapp/components/TextLink';
+import PageTitle from '@george-gillams/webapp/components/PageTitle';
+import { DebugObject } from '@george-gillams/webapp/components/DebugObject';
+import { LoadingCover } from '@george-gillams/components/LoadingCover';
 
 import Skeleton from './Skeleton';
 
-import { LoggedOutOnly } from 'gg-webapp/components/Walls';
-import { SignUpForm } from 'gg-webapp/components/Forms';
+import { LoggedOutOnly } from '@george-gillams/webapp/components/Walls';
+import { SignUpForm } from '@george-gillams/webapp/components/Forms';
 import CookiesRequired from 'containers/common/CookiesRequired';
 import { CONSENT_STATE_ALLOWED } from 'containers/common/Consent/constants';
 import STYLES from './sign-up.scss';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { cssModules } from '@george-gillams/components/helpers/cssModules';
 
 const getClassName = cssModules(STYLES);
 

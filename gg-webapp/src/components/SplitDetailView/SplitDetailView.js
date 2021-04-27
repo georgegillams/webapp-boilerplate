@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { cssModules } from '@george-gillams/components/helpers/cssModules';
-import Button from 'gg-webapp/components/Button';
+import Button from '@george-gillams/webapp/components/Button';
 
 import STYLES from './split-detail-view.scss';
 

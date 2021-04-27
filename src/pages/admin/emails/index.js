@@ -1,8 +1,8 @@
 import React from 'react';
 
-import CSSHack from 'gg-webapp/components/CSSHack';
+import CSSHack from '@george-gillams/webapp/components/CSSHack';
 import Emails from 'containers/common/Admin/Emails';
-import FlexLayout from 'gg-webapp/components/FlexLayout';
+import FlexLayout from '@george-gillams/webapp/components/FlexLayout';
 
 const Page = props => {
   return (

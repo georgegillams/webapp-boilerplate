@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { PageTitle as GGPageTitle } from '@george-gillams/components/PageTitle';
-import TextLink from 'gg-webapp/components/TextLink';
+import TextLink from '@george-gillams/webapp/components/TextLink';
 import Head from 'next/head';
 import appConfig from 'helpers/appConfig';
 
