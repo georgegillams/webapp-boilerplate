@@ -9,7 +9,9 @@
     "url": "git://github.com/georgegillams/webapp-boilerplate.git"
   },
   "scripts": {
-    "try-gg-webapp-locally": "(cd gg-webapp && npm run transpile) && rm -rf node_modules/@george-gillams/webapp && cp -R gg-webapp/dist node_modules/@george-gillams/webapp",
+    "gg-webapp-install": "(cd gg-webapp && npm i)",
+    "gg-webapp-transpile": "(cd gg-webapp && npm run transpile)",
+    "gg-webapp-transpile:watch": "(cd gg-webapp && npm run transpile:watch)",
     "prebuild": "npm run build:clean",
     "build:clean": "rimraf ./build",
     "link-helpers:clean": "rm -f $(pwd)/src/helpers $(pwd)/server/helpers",
@@ -53,7 +55,7 @@
     ]
   },
   "dependencies": {
-    "@george-gillams/webapp": "^0.0.4"
+    "@george-gillams/webapp": "file:gg-webapp/dist"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.7",

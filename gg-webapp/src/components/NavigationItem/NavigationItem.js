@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Button from '@george-gillams/webapp/components/Button';
+import Button from '../Button';
 
 const NavigationItem = (props) => {
   const { name, href, ...rest } = props;

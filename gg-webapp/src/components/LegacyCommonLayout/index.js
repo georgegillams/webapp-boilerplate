@@ -1,9 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import LegacyPageContainer, {
-  LAYOUT_STYLES,
-} from '@george-gillams/webapp/components/LegacyPageContainer';
+import LegacyPageContainer, { LAYOUT_STYLES } from '../LegacyPageContainer';
 import Footer from 'components/Footer';
 import STYLES from './common-layout.scss';
 import { cssModules } from '@george-gillams/components/helpers/cssModules';

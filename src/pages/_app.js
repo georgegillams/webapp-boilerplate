@@ -12,6 +12,7 @@ import Notifications from 'containers/common/Notifications';
 import withReduxStore from 'client-utils/common/redux/with-redux-store';
 import appConfig from 'helpers/appConfig';
 import Navigation from 'containers/NavigationBarWrapper';
+import { ConfigProvider } from '@george-gillams/webapp/components/Config';
 import AppWrapper from '@george-gillams/webapp/components/AppWrapper';
 import { SkipLink } from '@george-gillams/components/SkipLink';
 import { enableES5 } from 'immer';
@@ -26,27 +27,29 @@ class Srr extends App {
     const { Component, pageProps, reduxStore } = this.props;
     return (
       <React.StrictMode>
-        <Head>
-          <title>{appConfig.projectTitle}</title>
-          {appConfig.app.head.meta.map(m => (
-            <meta key={m.property} name={m.property} content={m.content} />
-          ))}
-        </Head>
+        <ConfigProvider appConfig={appConfig}>
+          <Head>
+            <title>{appConfig.projectTitle}</title>
+            {appConfig.app.head.meta.map(m => (
+              <meta key={m.property} name={m.property} content={m.content} />
+            ))}
+          </Head>
 
-        <Provider store={reduxStore}>
-          <AppWrapper>
-            <div style={{ pointerEvents: 'none', zIndex: 2000, position: 'fixed', left: '1rem', top: '0.8rem' }}>
-              <SkipLink href="#main" label="Skip to main content" />
-            </div>
-            <Navigation />
-            <Notifications />
-            <Konami />
-            <Consent />
-            <Analytics />
-            <Authenticator />
-            <Component {...pageProps} />
-          </AppWrapper>
-        </Provider>
+          <Provider store={reduxStore}>
+            <AppWrapper>
+              <div style={{ pointerEvents: 'none', zIndex: 2000, position: 'fixed', left: '1rem', top: '0.8rem' }}>
+                <SkipLink href="#main" label="Skip to main content" />
+              </div>
+              <Navigation />
+              <Notifications />
+              <Konami />
+              <Consent />
+              <Analytics />
+              <Authenticator />
+              <Component {...pageProps} />
+            </AppWrapper>
+          </Provider>
+        </ConfigProvider>
       </React.StrictMode>
     );
   }

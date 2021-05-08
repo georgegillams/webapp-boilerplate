@@ -43,6 +43,8 @@ npm run dev
 
 A debugger can be attached to debug server-side code.
 
+To reflect changes in the webapp package immediately, run `npm run try-gg-webapp-locally:watch` in another terminal window.
+
 ### Testing
 
 If components have changed, snapshot tests may need to be updated. Backstop js visual regression tests may also need to be updated.

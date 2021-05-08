@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { cssModules } from '@george-gillams/components/helpers/cssModules';
-import Card from '@george-gillams/webapp/components/Card';
+import Card from '../Card';
 
 import STYLES from './split-detail-item.scss';
 

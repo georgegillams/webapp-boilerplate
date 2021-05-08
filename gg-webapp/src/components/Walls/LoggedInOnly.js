@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Paragraph } from '@george-gillams/components/Paragraph';
 import { Section } from '@george-gillams/components/Section';
-import TextLink from '@george-gillams/webapp/components/TextLink';
+import TextLink from '../TextLink';
 
 const LoggedInOnly = (props) => {
   const { user, activityName, children, setLoginRedirect, ...rest } = props;

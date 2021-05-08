@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { PageTitle as GGPageTitle } from '@george-gillams/components/PageTitle';
-import TextLink from '@george-gillams/webapp/components/TextLink';
+import TextLink from '../TextLink';
+import { withConfig } from '../Config';
 import Head from 'next/head';
-import appConfig from 'helpers/appConfig';
 
 const PageTitle = (props) => {
-  const { link, name, pageTitle, ...rest } = props;
+  const { appConfig, link, name, pageTitle, ...rest } = props;
 
   let result = null;
   if (!link) {
@@ -52,4 +52,4 @@ PageTitle.defaultProps = {
   pageTitle: null,
 };
 
-export default PageTitle;
+export default withConfig(PageTitle);

@@ -25,6 +25,8 @@ docker exec $dockerArgs $containerId tar -xzf $projectName.tar.gz --directory $p
 
 # prepare project
 if ! [ $skipNpm ]; then
+  docker exec $dockerArgs -w $destinationDirectory $containerId npm run gg-webapp-install
+  docker exec $dockerArgs -w $destinationDirectory $containerId npm run gg-webapp-transpile
   docker exec $dockerArgs -w $destinationDirectory $containerId npm ci
 fi
 docker exec $dockerArgs -w $destinationDirectory $containerId npm run build:test

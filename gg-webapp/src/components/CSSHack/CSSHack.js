@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
-import appConfig from '../../helpers/appConfig';
+import { withConfig, ConfigContext } from '../Config';
 
 const CSSHack = (props) => {
-  const { pageName } = props;
+  const { appConfig, pageName } = props;
 
   if (appConfig.isProduction) {
     return null;
@@ -26,4 +26,4 @@ CSSHack.propTypes = {
   pageName: PropTypes.string.isRequired,
 };
 
-export default CSSHack;
+export default withConfig(CSSHack);

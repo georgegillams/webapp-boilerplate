@@ -27,6 +27,9 @@ jobs:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
 
+      - name: gg-webapp setup
+        run: PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm run gg-webapp-install && npm run gg-webapp-transpile
+
       - name: npm install
         run: PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm ci
 
@@ -73,6 +76,9 @@ jobs:
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+
+      - name: gg-webapp setup
+        run: PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm run gg-webapp-install && npm run gg-webapp-transpile
 
       - name: npm install
         run: PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm ci

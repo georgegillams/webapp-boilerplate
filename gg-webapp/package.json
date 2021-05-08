@@ -15,10 +15,13 @@
     "release:minor": "npm run release -- --minor",
     "release:patch": "npm run release -- --patch",
     "release:alpha": "npm run release -- --alpha",
-    "transpile": "npm run pretranspile && npm run transpile:js && npm run transform:js && npm run transpile:sass",
+    "transpile:watch": "npm run transpile:js:watch",
+    "transpile:js:watch": "npm run transpile:js -- --watch --ignore dist",
+    "transpile": "npm run pretranspile && npm run transpile:js && npm run transform:js && npm run transpile:sass && npm run transpile:metadata",
     "transpile:js": "babel src -d dist --copy-files",
     "transform:js": "babel-node scripts/transform-js-scss-css-imports.js",
     "transpile:sass": "babel-node scripts/build-sass-in-place.js",
+    "transpile:metadata": "cp package.json ./dist/",
     "transpile:clean": "rimraf ./dist",
     "pretranspile": "npm run transpile:clean",
     "node-sass": "node-sass"
@@ -66,9 +69,7 @@
     "redux-saga-routines": "^3.2.3",
     "reselect": "4.0.0",
     "safe-compare": "^1.1.4",
-    "signale": "^1.4.0"
-  },
-  "devDependencies": {
+    "signale": "^1.4.0",
     "@babel/cli": "^7.12.7",
     "@babel/node": "^7.12.6",
     "@babel/preset-env": "^7.12.7",
