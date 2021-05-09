@@ -6,7 +6,7 @@ exports[`<NotFound /> should render correctly 1`] = `
     class="not-found__container"
   >
     <h1
-      class="page-title__heading not-found__container"
+      class="page-title__heading page-title__heading not-found__container"
     >
       Oops.
     </h1>

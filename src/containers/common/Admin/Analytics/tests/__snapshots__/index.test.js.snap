@@ -63,7 +63,7 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
       ⇠ Admin
     </a>
     <h1
-      class="page-title__heading page-title__heading--with-link"
+      class="page-title__heading page-title__heading--with-link page-title__heading"
     >
       Admin analytics
     </h1>
@@ -106,7 +106,7 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
       ⇠ Admin
     </a>
     <h1
-      class="page-title__heading page-title__heading--with-link"
+      class="page-title__heading page-title__heading--with-link page-title__heading"
     >
       Admin analytics
     </h1>
@@ -202,7 +202,7 @@ exports[`<AdminAnalytics /> should render correctly with loadError 1`] = `
       ⇠ Admin
     </a>
     <h1
-      class="page-title__heading page-title__heading--with-link"
+      class="page-title__heading page-title__heading--with-link page-title__heading"
     >
       Admin analytics
     </h1>
@@ -256,7 +256,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
       ⇠ Admin
     </a>
     <h1
-      class="page-title__heading page-title__heading--with-link"
+      class="page-title__heading page-title__heading--with-link page-title__heading"
     >
       Admin analytics
     </h1>

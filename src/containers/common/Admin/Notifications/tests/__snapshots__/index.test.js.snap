@@ -63,7 +63,7 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
       ⇠ Admin
     </a>
     <h1
-      class="page-title__heading page-title__heading--with-link"
+      class="page-title__heading page-title__heading--with-link page-title__heading"
     >
       Admin notifications
     </h1>
@@ -239,7 +239,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
       ⇠ Admin
     </a>
     <h1
-      class="page-title__heading page-title__heading--with-link"
+      class="page-title__heading page-title__heading--with-link page-title__heading"
     >
       Admin notifications
     </h1>
@@ -373,7 +373,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
       ⇠ Admin
     </a>
     <h1
-      class="page-title__heading page-title__heading--with-link"
+      class="page-title__heading page-title__heading--with-link page-title__heading"
     >
       Admin notifications
     </h1>
@@ -530,7 +530,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
       ⇠ Admin
     </a>
     <h1
-      class="page-title__heading page-title__heading--with-link"
+      class="page-title__heading page-title__heading--with-link page-title__heading"
     >
       Admin notifications
     </h1>

@@ -10,7 +10,7 @@ exports[`<HomePage /> should render correctly 1`] = `
       class="page-container__container page-container__container--regular page-container__container--center"
     >
       <h1
-        class="page-title__heading"
+        class="page-title__heading page-title__heading"
       >
         Home
       </h1>

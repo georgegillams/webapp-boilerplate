@@ -1,0 +1,20 @@
+@import '../../utils/tokens';
+
+.page-title {
+  &__heading {
+    &--centred {
+      text-align: center;
+    }
+
+    &--underlined {
+      text-decoration: underline;
+      text-decoration-color: $primary-color;
+      text-decoration-color: var(--primary-color, $primary-color);
+
+      @media (prefers-color-scheme: dark) {
+        text-decoration-color: $primary-color-dark;
+        text-decoration-color: var(--primary-color-dark, $primary-color-dark);
+      }
+    }
+  }
+}

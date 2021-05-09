@@ -3,7 +3,7 @@
 exports[`<SiteMap /> should render correctly 1`] = `
 <div>
   <h1
-    class="page-title__heading"
+    class="page-title__heading page-title__heading"
   >
     Site map
   </h1>

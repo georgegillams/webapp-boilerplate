@@ -63,7 +63,7 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
       ⇠ Admin
     </a>
     <h1
-      class="page-title__heading page-title__heading--with-link"
+      class="page-title__heading page-title__heading--with-link page-title__heading"
     >
       Admin users
     </h1>
@@ -143,7 +143,7 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
       ⇠ Admin
     </a>
     <h1
-      class="page-title__heading page-title__heading--with-link"
+      class="page-title__heading page-title__heading--with-link page-title__heading"
     >
       Admin users
     </h1>
@@ -223,7 +223,7 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
       ⇠ Admin
     </a>
     <h1
-      class="page-title__heading page-title__heading--with-link"
+      class="page-title__heading page-title__heading--with-link page-title__heading"
     >
       Admin users
     </h1>
@@ -356,7 +356,7 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
       ⇠ Admin
     </a>
     <h1
-      class="page-title__heading page-title__heading--with-link"
+      class="page-title__heading page-title__heading--with-link page-title__heading"
     >
       Admin users
     </h1>
@@ -447,7 +447,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
       ⇠ Admin
     </a>
     <h1
-      class="page-title__heading page-title__heading--with-link"
+      class="page-title__heading page-title__heading--with-link page-title__heading"
     >
       Admin users
     </h1>
@@ -561,7 +561,7 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
       ⇠ Admin
     </a>
     <h1
-      class="page-title__heading page-title__heading--with-link"
+      class="page-title__heading page-title__heading--with-link page-title__heading"
     >
       Admin users
     </h1>
@@ -641,7 +641,7 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
       ⇠ Admin
     </a>
     <h1
-      class="page-title__heading page-title__heading--with-link"
+      class="page-title__heading page-title__heading--with-link page-title__heading"
     >
       Admin users
     </h1>
@@ -721,7 +721,7 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
       ⇠ Admin
     </a>
     <h1
-      class="page-title__heading page-title__heading--with-link"
+      class="page-title__heading page-title__heading--with-link page-title__heading"
     >
       Admin users
     </h1>
@@ -801,7 +801,7 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
       ⇠ Admin
     </a>
     <h1
-      class="page-title__heading page-title__heading--with-link"
+      class="page-title__heading page-title__heading--with-link page-title__heading"
     >
       Admin users
     </h1>
@@ -881,7 +881,7 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
       ⇠ Admin
     </a>
     <h1
-      class="page-title__heading page-title__heading--with-link"
+      class="page-title__heading page-title__heading--with-link page-title__heading"
     >
       Admin users
     </h1>
@@ -961,7 +961,7 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
       ⇠ Admin
     </a>
     <h1
-      class="page-title__heading page-title__heading--with-link"
+      class="page-title__heading page-title__heading--with-link page-title__heading"
     >
       Admin users
     </h1>
@@ -1068,7 +1068,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
       ⇠ Admin
     </a>
     <h1
-      class="page-title__heading page-title__heading--with-link"
+      class="page-title__heading page-title__heading--with-link page-title__heading"
     >
       Admin users
     </h1>

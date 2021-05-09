@@ -59,7 +59,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
     class=""
   >
     <h1
-      class="page-title__heading"
+      class="page-title__heading page-title__heading"
     >
       Admin
     </h1>

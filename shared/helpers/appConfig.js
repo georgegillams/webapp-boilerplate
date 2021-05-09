@@ -46,6 +46,10 @@ module.exports = {
   themeColor,
   app: {
     title: projectTitle,
+    style: {
+      centerPageTitle: false,
+      underlinePageTitle: false,
+    },
     head: {
       meta: [
         { property: 'theme-color', content: themeColor },

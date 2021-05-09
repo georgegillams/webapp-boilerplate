@@ -1,10 +1,10 @@
 import React from 'react';
 
 const ConfigContext = React.createContext(
-  { config: {} }, // default value
+  { appConfig: { app: { style: {} } } } // default value
 );
 
-const ConfigProvider = (props) => {
+const ConfigProvider = props => {
   const { appConfig, ...rest } = props;
   return <ConfigContext.Provider value={{ appConfig: appConfig }} {...rest} />;
 };

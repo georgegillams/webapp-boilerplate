@@ -6,7 +6,7 @@ exports[`<MagicLogin /> should render correctly - index 1`] = `
     class=""
   >
     <h1
-      class="page-title__heading"
+      class="page-title__heading page-title__heading"
     >
       Logging in
     </h1>
@@ -20,7 +20,7 @@ exports[`<MagicLogin /> should render correctly with initial state 1`] = `
     class=""
   >
     <h1
-      class="page-title__heading"
+      class="page-title__heading page-title__heading"
     >
       Logging in
     </h1>
@@ -34,7 +34,7 @@ exports[`<MagicLogin /> should render correctly with logInError 1`] = `
     class=""
   >
     <h1
-      class="page-title__heading"
+      class="page-title__heading page-title__heading"
     >
       Logging in
     </h1>
@@ -66,7 +66,7 @@ exports[`<MagicLogin /> should render correctly with loggingIn=true 1`] = `
     class=""
   >
     <h1
-      class="page-title__heading"
+      class="page-title__heading page-title__heading"
     >
       Logging in
     </h1>
@@ -80,7 +80,7 @@ exports[`<MagicLogin /> should render correctly with user 1`] = `
     class=""
   >
     <h1
-      class="page-title__heading"
+      class="page-title__heading page-title__heading"
     >
       Logged in
     </h1>
