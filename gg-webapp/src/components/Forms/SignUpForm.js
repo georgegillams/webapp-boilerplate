@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FormBuilder } from '@george-gillams/components/FormBuilder';
 
-import { USERNAME_REGEX, EMAIL_REGEX } from 'helpers/regexConstants';
+import { USERNAME_REGEX, EMAIL_REGEX } from '../../helpers/regexConstants';
 
-const SignUpForm = (props) => {
+const SignUpForm = props => {
   const { onDataChanged, credentials, submitLabel, ...rest } = props;
 
-  const onDataChangedCustom = (newValue) => {
+  const onDataChangedCustom = newValue => {
     if (!newValue || !newValue.email) {
       onDataChanged(newValue);
       return;

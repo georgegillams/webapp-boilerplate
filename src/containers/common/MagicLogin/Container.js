@@ -8,7 +8,7 @@ import TextLink from '@george-gillams/webapp/components/TextLink';
 import ErrorDisplay from '@george-gillams/webapp/components/ErrorDisplay';
 import CookiesRequired from 'containers/common/CookiesRequired';
 import { withRouter } from 'next/router';
-import { REDIRECT_REGEX } from 'helpers/regexConstants';
+import { REDIRECT_REGEX } from '@george-gillams/webapp/helpers/regexConstants';
 import { CONSENT_STATE_ALLOWED } from 'containers/common/Consent/constants';
 
 const MagicLogin = props => {

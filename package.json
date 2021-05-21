@@ -28,7 +28,7 @@
     "start": "npm run link-helpers:clean && cross-env STARTED_AT=$( date -u +%s ) NODE_ENV=production node ./build/server/app.js",
     "start:test": "cross-env PORT=9001 PROJECT_UNDER_TEST=true npm run start",
     "start:aws": "npm run start",
-    "test": "cross-env jest --coverage",
+    "test": "cross-env jest --coverage && (cd gg-webapp && npm run test)",
     "test:watch": "cross-env jest --watchAll",
     "test:debug": "node --inspect node_modules/.bin/jest --runInBand --watchAll",
     "backstopjs:test": "npm run start:test & (sleep 15 && node ./scripts/backstopjs/backstop.js)",

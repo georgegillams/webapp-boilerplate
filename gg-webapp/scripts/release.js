@@ -29,7 +29,7 @@ const getBumpType = () => {
   return 'patch';
 };
 
-const updatePackageFile = (newVersion) => {
+const updatePackageFile = newVersion => {
   const newPackageData = JSON.parse(JSON.stringify(packageData));
   newPackageData.version = newVersion;
   const fileContent = `${JSON.stringify(newPackageData, null, 2)}\n`;
@@ -39,12 +39,12 @@ const updatePackageFile = (newVersion) => {
   console.log(blue('package.json updated'));
 };
 
-const createTag = (newVersion) => {
+const createTag = newVersion => {
   execSync(`git tag ${newVersion} && git push --tags`);
   console.log(blue('Release tagged'));
 };
 
-const commitChanges = (newVersion) => {
+const commitChanges = newVersion => {
   execSync(`git add .`);
   execSync(`git commit -m "Publish ${newVersion}"`);
   execSync(`git push`);
@@ -56,17 +56,14 @@ const publishPackage = () => {
   console.log(blue('Package published'));
 };
 
-const getCurrentPublishedVersion = () =>
-  execSync(`npm view gg-components version`).toString().split('\n')[0];
+const getCurrentPublishedVersion = () => execSync(`npm view gg-components version`).toString().split('\n')[0];
 
 const bumpType = getBumpType();
 const currentVersion = version;
 const currentVersionPublished = getCurrentPublishedVersion();
 if (currentVersion !== currentVersionPublished) {
   console.warn(
-    yellow(
-      `Published version (${currentVersionPublished}) does not match package.json version (${currentVersion})`,
-    ),
+    yellow(`Published version (${currentVersionPublished}) does not match package.json version (${currentVersion})`)
   );
 }
 let newVersion = currentVersion;

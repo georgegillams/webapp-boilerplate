@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FormBuilder } from '@george-gillams/components/FormBuilder';
 
-import { EMAIL_REGEX } from 'helpers/regexConstants';
+import { EMAIL_REGEX } from '../../helpers/regexConstants';
 
-const LoginForm = (props) => {
+const LoginForm = props => {
   const { credentials, onDataChanged, ...rest } = props;
 
-  const onDataChangedCustom = (newValue) => {
+  const onDataChangedCustom = newValue => {
     if (!newValue.email) {
       onDataChanged(newValue);
       return;

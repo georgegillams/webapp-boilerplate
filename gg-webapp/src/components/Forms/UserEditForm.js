@@ -2,19 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FormBuilder } from '@george-gillams/components/FormBuilder';
 
-import {
-  EMAIL_REGEX,
-  USERNAME_REGEX,
-  NAME_REGEX,
-} from 'helpers/regexConstants';
+import { EMAIL_REGEX, USERNAME_REGEX, NAME_REGEX } from '../../helpers/regexConstants';
 
-const UserEditForm = (props) => {
+const UserEditForm = props => {
   const { className, user, showAdminControls, onDataChanged, ...rest } = props;
 
   const classNameFinal = [];
   if (className) classNameFinal.push(className);
 
-  const onDataChangedCustom = (newValue) => {
+  const onDataChangedCustom = newValue => {
     if (!newValue.email) {
       onDataChanged(newValue);
       return;

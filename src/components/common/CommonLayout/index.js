@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import MainWrapper from '../MainWrapper';
+import MainWrapper from '@george-gillams/webapp/components/MainWrapper';
 import Footer from 'components/Footer';
 import STYLES from './common-layout.scss';
 import { cssModules } from '@george-gillams/components/helpers/cssModules';
 const getClassName = cssModules(STYLES);
 
-const CommonLayout = (props) => {
+const CommonLayout = props => {
   const { children, ...rest } = props;
 
   return (

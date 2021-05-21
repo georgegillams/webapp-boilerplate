@@ -7,12 +7,10 @@ import { cssModules } from '@george-gillams/components/helpers/cssModules';
 
 const getClassName = cssModules(STYLES);
 
-const AppWrapper = (props) => {
+const AppWrapper = props => {
   const { className, ...rest } = props;
 
-  return (
-    <div className={getClassName('app__app-wrapper', className)} {...rest} />
-  );
+  return <div className={getClassName('app__app-wrapper', className)} {...rest} />;
 };
 
 AppWrapper.propTypes = {

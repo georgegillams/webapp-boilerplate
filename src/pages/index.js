@@ -2,7 +2,7 @@ import React from 'react';
 
 import CSSHack from '@george-gillams/webapp/components/CSSHack';
 import Home from 'containers/HomePage';
-import CommonLayout from '@george-gillams/webapp/components/CommonLayout';
+import CommonLayout from 'components/common/CommonLayout';
 
 const Page = props => {
   return (

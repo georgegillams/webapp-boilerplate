@@ -2,7 +2,7 @@ import React from 'react';
 
 import CSSHack from '@george-gillams/webapp/components/CSSHack';
 import Status from 'containers/common/Status';
-import LegacyCommonLayout from '@george-gillams/webapp/components/LegacyCommonLayout';
+import LegacyCommonLayout from 'components/common/LegacyCommonLayout';
 import appConfig from 'helpers/appConfig';
 import getConfig from 'next/config';
 

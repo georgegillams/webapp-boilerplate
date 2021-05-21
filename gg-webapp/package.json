@@ -9,6 +9,8 @@
     "url": "git://github.com/georgegillams/webapp-boilerplate.git"
   },
   "scripts": {
+    "todo 1": "Try to run tests from top-level instead of having two jest configs",
+    "test": "cross-env jest --coverage",
     "prerelease": "npm run transpile",
     "release": "babel-node scripts/release.js",
     "release:major": "npm run release -- --major",
@@ -58,6 +60,7 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.2",
+    "jest-cli": "^26.6.3",
     "rimraf": "^3.0.2"
   },
   "publishConfig": {

@@ -4,7 +4,7 @@ import { Button as GGButton } from '@george-gillams/components/Button';
 import nextifyHref from '../../utils/nextifyHref';
 import Link from 'next/link';
 
-const Button = (props) => {
+const Button = props => {
   const { href, hrefExternal, ...rest } = props;
 
   const renderNormalButton = !href || hrefExternal;
@@ -16,12 +16,7 @@ const Button = (props) => {
   }
 
   return (
-    <Link
-      passHref
-      href={destination.url}
-      as={destination.as}
-      {...destination.options}
-    >
+    <Link passHref href={destination.url} as={destination.as} {...destination.options}>
       <GGButton {...rest} />
     </Link>
   );

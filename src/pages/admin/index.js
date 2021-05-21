@@ -2,7 +2,7 @@ import React from 'react';
 
 import CSSHack from '@george-gillams/webapp/components/CSSHack';
 import Admin from 'containers/Admin/Navigation';
-import LegacyCommonLayout from '@george-gillams/webapp/components/LegacyCommonLayout';
+import LegacyCommonLayout from 'components/common/LegacyCommonLayout';
 
 const Page = props => {
   return (
