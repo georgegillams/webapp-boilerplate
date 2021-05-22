@@ -5,6 +5,7 @@ node_modules
 stats.json
 yarn-error.log
 
+gg-webapp/dist
 build
 build.zip
 webapp-boilerplate.tar.gz
