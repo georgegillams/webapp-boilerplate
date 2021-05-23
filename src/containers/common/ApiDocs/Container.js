@@ -6,7 +6,7 @@ import { cssModules } from '@george-gillams/components/helpers/cssModules';
 import { Table, Head, Body, Row, Cell } from '@george-gillams/components/Table';
 
 import STYLES from './api-docs.scss';
-import apiStructure from 'helpers/common/apiStructureWithDescriptions';
+import apiStructure from '@george-gillams/webapp/helpers/apiStructureWithDescriptions';
 
 const getClassName = cssModules(STYLES);
 

@@ -58,6 +58,7 @@
     "@george-gillams/webapp": "file:gg-webapp/dist",
     "@next/bundle-analyzer": "^10.2.2",
     "cors": "^2.8.5",
+    "express-slow-down": "^1.4.0",
     "helmet": "^4.6.0",
     "next": "^10.2.2",
     "next-images": "^1.7.0",
