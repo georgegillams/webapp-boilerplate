@@ -1,11 +1,11 @@
 import React from 'react';
-import { Subsection } from 'gg-components/Subsection';
+import { Subsection } from '@george-gillams/components/Subsection';
 import TextLink from 'components/common/TextLink';
 import PageTitle from 'components/common/PageTitle';
-import { Paragraph } from 'gg-components/Paragraph';
+import { Paragraph } from '@george-gillams/components/Paragraph';
 import redirects from 'helpers/redirects';
 import STYLES from './site-map.scss';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { cssModules } from '@george-gillams/components/helpers/cssModules';
 
 const getClassName = cssModules(STYLES);
 

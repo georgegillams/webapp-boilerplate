@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Subsection } from 'gg-components/Subsection';
-import { Paragraph } from 'gg-components/Paragraph';
-import { PageContainer } from 'gg-components/PageContainer';
+import { Subsection } from '@george-gillams/components/Subsection';
+import { Paragraph } from '@george-gillams/components/Paragraph';
+import { PageContainer } from '@george-gillams/components/PageContainer';
 import PageTitle from 'components/common/PageTitle';
 import TextLink from 'components/common/TextLink';
 
