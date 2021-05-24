@@ -1,7 +1,7 @@
 import { takeLatest, put, call, select } from 'redux-saga/effects';
 
 import request from 'client-utils/common/request';
-import apiStructure from '@george-gillams/webapp/helpers/apiStructure';
+import apiStructure from 'helpers/common/apiStructure';
 
 import { load, resend } from './actions';
 import { selectState } from './selectors';

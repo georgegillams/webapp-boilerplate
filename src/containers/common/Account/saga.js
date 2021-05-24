@@ -1,7 +1,7 @@
 import { takeLatest, put, call } from 'redux-saga/effects';
 
 import request from 'client-utils/common/request';
-import apiStructure from '@george-gillams/webapp/helpers/apiStructure';
+import apiStructure from 'helpers/common/apiStructure';
 
 import { logout, requestVerificationEmail } from './actions';
 import { setUser } from 'containers/common/Authenticator/actions';

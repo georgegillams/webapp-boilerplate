@@ -34,7 +34,8 @@ console.log('');
 const scssFiles = execSync('find dist -name "*.scss" | grep -v node_modules')
   .toString()
   .split('\n')
-  .filter(s => s !== '');
+  .filter(s => s !== '')
+  .filter(s => !s.includes('_'));
 
 const componentScssFiles = JSON.parse(JSON.stringify(scssFiles)).filter(f => {
   let res = true;

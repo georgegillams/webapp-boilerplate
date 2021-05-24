@@ -1,4 +1,4 @@
-import originalApiStructure from '@george-gillams/webapp/helpers/apiStructure';
+import originalApiStructure from 'helpers/common/apiStructure';
 import { apiStructureWithActionsExtensions } from '../apiStructureWithActions_Extensions';
 
 const apiStructure = JSON.parse(JSON.stringify(originalApiStructure));
