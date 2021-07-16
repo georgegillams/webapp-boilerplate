@@ -7,6 +7,7 @@ module.exports = {
     '!coverage/**',
     '!src/.next/**',
     '!src/pages/**',
+    '!<rootDir>/gg-webapp/**',
     '!server/**/*.test.{js,jsx}',
     '!src/utils/with-redux-store.js',
     '!<rootDir>/next.config.js',
@@ -17,6 +18,7 @@ module.exports = {
     '<rootDir>/node_modules/',
     '<rootDir>/next.config.js',
     '<rootDir>/coverage/',
+    '<rootDir>/gg-webapp/',
   ],
   coverageThreshold: {
     global: {

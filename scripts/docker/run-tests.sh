@@ -15,15 +15,20 @@ fi
 
 # copy project to container (except node_modules)
 touch $projectName.tar.gz
+# TODO - exclude gg-webapp/node_modules too
 tar -zcf $projectName.tar.gz --exclude='node_modules' --exclude='.git' --exclude="$projectName.tar.gz" ./
 docker cp $projectName.tar.gz $containerId:$tmpDirectory
 
 # cleanup existing files and expand tar
 docker exec $dockerArgs $containerId mkdir -p $projectName
+# TODO - exclude gg-webapp/node_modules too
 docker exec $dockerArgs -w $destinationDirectory $containerId find . -maxdepth 1 ! -name node_modules -exec rm -rf {} \;
 docker exec $dockerArgs $containerId tar -xzf $projectName.tar.gz --directory $projectName
 
 # prepare project
+# TODO - Skip this too if $skipNpm
+docker exec $dockerArgs -w $destinationDirectory $containerId npm run gg-webapp-install
+docker exec $dockerArgs -w $destinationDirectory $containerId npm run gg-webapp-transpile
 if ! [ $skipNpm ]; then
   docker exec $dockerArgs -w $destinationDirectory $containerId npm ci
 fi
