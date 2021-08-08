@@ -26,6 +26,10 @@ Features:
 
 For more information about how the key features work, see [the documentation](https://webapp-boilerplate.georgegillams.co.uk/tree/main/docs).
 
+## [@george-gillams/webapp](https://www.npmjs.com/package/@george-gillams/webapp)
+
+I am in the process of migrating as much shared code as possible to a publishable [package](https://www.npmjs.com/package/@george-gillams/webapp) so that boilerplate code that must be copied is kept to a minimum. This will hopefully make it easier to adopt changes into consuming codebases without merging large PRs.
+
 ## Developing
 
 ### Prerequisites
@@ -88,4 +92,4 @@ To host this on Heroku, you will need to add the [Heroku-redis Add-on](https://d
 
 ## Contributing
 
-Contributions are welcome. Please fork and submit a PR if you want to add or change a featurej.
+Contributions are welcome. Please fork and submit a PR if you want to add or change a feature.
