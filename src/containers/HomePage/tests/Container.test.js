@@ -5,6 +5,7 @@ import Home from '../Container';
 
 describe('<Home />', () => {
   it('should render correctly', () => {
+    global.Date.getMonth = jest.fn(() => 2);
     const { container } = render(<Home />);
 
     expect(container).toMatchSnapshot();
