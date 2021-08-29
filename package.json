@@ -25,6 +25,7 @@
     "build:replace-paths": "if [[ \"$OSTYPE\" == \"darwin\"* ]]; then npm run build:replace-paths:mac; else npm run build:replace-paths:linux; fi;",
     "build:bundle-gg-webapp": "cp -R gg-webapp/dist build/gg-webapp-dist",
     "build": "BUILT_AT=$( date -u +%s ) npm run build:client && npm run build:shared && npm run build:server && npm run build:replace-paths && npm run build:bundle-gg-webapp",
+    "build:for-deploy": "npm run build && mkdir -p deploy && mv build deploy/ && cp package* deploy/ && cp next.config.js deploy/ && cp -R config deploy/ && mkdir -p deploy/gg-webapp/ && cp -R gg-webapp/dist deploy/gg-webapp/dist",
     "build:test": "cross-env PORT=9001 PROJECT_UNDER_TEST=true npm run build",
     "start": "npm run link-helpers:clean && cross-env STARTED_AT=$( date -u +%s ) NODE_ENV=production node ./build/server/app.js",
     "start:test": "cross-env PORT=9001 PROJECT_UNDER_TEST=true npm run start",
