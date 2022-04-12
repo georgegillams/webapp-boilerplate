@@ -5,10 +5,14 @@ RUN mkdir /opt/app
 WORKDIR /opt/app
 
 COPY . .
+RUN PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm run gg-webapp-install
+RUN npm run gg-webapp-transpile
 RUN PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm ci
 RUN npm run build
+RUN pwd
+RUN ls -la
 
-FROM node:${NODE_VERSION} as main
+# FROM node:${NODE_VERSION} as main
 
 ARG GSUITE_APP_PASSWORD
 ENV GSUITE_APP_PASSWORD=$GSUITE_APP_PASSWORD
@@ -19,12 +23,18 @@ ENV REDIS_URL=$REDIS_URL
 ARG SECRET_API_KEY
 ENV SECRET_API_KEY=$SECRET_API_KEY
 
-RUN mkdir /opt/app
-WORKDIR /opt/app
+# RUN mkdir /opt/app
+# WORKDIR /opt/app
 
-COPY --from=build /opt/app/build /
-COPY --from=build /opt/app/package.json /
-COPY --from=build /opt/app/package-lock.json /
-RUN npm ci --production
+# RUN pwd
+# RUN ls -la
+# RUN mkdir /gg-webapp
+# COPY --from=build /opt/app/gg-webapp/dist /gg-webapp/
+# COPY --from=build /opt/app/build /
+# COPY --from=build /opt/app/package.json /
+# COPY --from=build /opt/app/package-lock.json /
+# RUN pwd
+# RUN ls -la
+# RUN npm ci --production
 
 CMD ["npm", "run", "start"]
