@@ -1,0 +1,30 @@
+ARG NODE_VERSION=12
+FROM node:${NODE_VERSION} as build
+
+RUN mkdir /opt/app
+WORKDIR /opt/app
+
+COPY . .
+RUN PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm ci
+RUN npm run build
+
+FROM node:${NODE_VERSION} as main
+
+ARG GSUITE_APP_PASSWORD
+ENV GSUITE_APP_PASSWORD=$GSUITE_APP_PASSWORD
+ARG GSUITE_EMAIL
+ENV GSUITE_EMAIL=$GSUITE_EMAIL
+ARG REDIS_URL
+ENV REDIS_URL=$REDIS_URL
+ARG SECRET_API_KEY
+ENV SECRET_API_KEY=$SECRET_API_KEY
+
+RUN mkdir /opt/app
+WORKDIR /opt/app
+
+COPY --from=build /opt/app/build /
+COPY --from=build /opt/app/package.json /
+COPY --from=build /opt/app/package-lock.json /
+RUN npm ci --production
+
+CMD ["npm", "run", "start"]
