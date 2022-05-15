@@ -25,8 +25,7 @@
     "transpile:sass": "babel-node scripts/build-sass-in-place.js",
     "transpile:metadata": "cp package.json ./dist/",
     "transpile:clean": "rimraf ./dist",
-    "pretranspile": "npm run transpile:clean",
-    "node-sass": "node-sass"
+    "pretranspile": "npm run transpile:clean"
   },
   "peerDependencies": {
     "react": "^17.0.1",
@@ -54,8 +53,8 @@
     "node-sass-tilde-importer": "^1.0.2",
     "prompt": "^1.1.0",
     "prop-types": "^15.7.2",
-    "sass": "^1.29.0",
-    "sass-loader": "^10.0.5",
+    "sass": "^1.43.2",
+    "sass-loader": "^10.1.1",
     "style-loader": "^2.0.0"
   },
   "devDependencies": {
