@@ -22,7 +22,7 @@
     "transpile": "npm run pretranspile && npm run transpile:js && npm run transform:js && npm run transpile:sass && npm run transpile:metadata",
     "transpile:js": "babel src -d dist --copy-files",
     "transform:js": "babel-node scripts/transform-js-scss-css-imports.js",
-    "transpile:sass": "babel-node scripts/build-sass-in-place.js",
+    "transpile:sass": "babel-node scripts/build-sass-in-place.js && cp ./src/utils/_tokens.scss ./dist/utils/",
     "transpile:metadata": "cp package.json ./dist/",
     "transpile:clean": "rimraf ./dist",
     "pretranspile": "npm run transpile:clean"
