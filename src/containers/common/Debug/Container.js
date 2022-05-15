@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Checkbox } from '@george-gillams/components/Checkbox';
+import Checkbox from '@george-gillams/components/checkbox';
 import { Paragraph } from '@george-gillams/components/Paragraph';
 import PageTitle from 'components/common/PageTitle';
 import STYLES from './debug.scss';
