@@ -74,17 +74,17 @@ exports[`<PrivacyPolicy /> should render correctly - index 1`] = `
        
       <a
         aria-label="Stripe's policy (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-iBkjds kXOvCG"
         href="https://stripe.com/privacy"
         rel="noopener noreferrer"
         target="_blank"
       >
         Stripe's policy
         <div
-          class="text-link__icon-container"
+          class="sc-ftvSup kUuEWK"
         >
           <svg
-            class="icon text-link__icon"
+            class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
             height="18"
             viewBox="0 0 24 24"
             width="18"

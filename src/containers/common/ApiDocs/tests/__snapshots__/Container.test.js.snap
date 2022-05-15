@@ -10,16 +10,16 @@ exports[`<ApiDocs /> should render correctly 1`] = `
   <table
     cellpadding="4"
     cellspacing="4"
-    class="table__table api-docs__table"
+    class="sc-jqUVSM jxguen api-docs__table"
   >
     <thead
-      class="table__head"
+      class="sc-kDDrLX hDahyH"
     >
       <tr
-        class="table__row"
+        class="sc-crXcEl"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
@@ -28,7 +28,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
@@ -37,7 +37,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
@@ -46,7 +46,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
@@ -55,7 +55,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
@@ -66,27 +66,27 @@ exports[`<ApiDocs /> should render correctly 1`] = `
       </tr>
     </thead>
     <tbody
-      class="table__body"
+      class="sc-iqcoie"
     >
       <tr
-        class="table__row"
+        class="sc-crXcEl"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <a
             aria-label="/analytics/create (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://webapp-boilerplate.georgegillams.co.uk/api/analytics/create"
             rel="noopener noreferrer"
             target="_blank"
           >
             /analytics/create
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -100,7 +100,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__method"
@@ -109,14 +109,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
@@ -125,7 +125,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__description"
@@ -135,24 +135,24 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-crXcEl"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <a
             aria-label="/analytics/load-all (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://webapp-boilerplate.georgegillams.co.uk/api/analytics/load-all"
             rel="noopener noreferrer"
             target="_blank"
           >
             /analytics/load-all
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -166,7 +166,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__method"
@@ -175,14 +175,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
@@ -191,7 +191,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__description"
@@ -201,24 +201,24 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-crXcEl"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <a
             aria-label="/analytics/load (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://webapp-boilerplate.georgegillams.co.uk/api/analytics/load"
             rel="noopener noreferrer"
             target="_blank"
           >
             /analytics/load
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -232,7 +232,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__method"
@@ -241,14 +241,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
@@ -257,7 +257,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__description"
@@ -267,24 +267,24 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-crXcEl"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <a
             aria-label="/auth/load (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://webapp-boilerplate.georgegillams.co.uk/api/auth/load"
             rel="noopener noreferrer"
             target="_blank"
           >
             /auth/load
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -298,7 +298,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__method"
@@ -307,14 +307,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
@@ -323,7 +323,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__description"
@@ -333,24 +333,24 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-crXcEl"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <a
             aria-label="/auth/logout (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://webapp-boilerplate.georgegillams.co.uk/api/auth/logout"
             rel="noopener noreferrer"
             target="_blank"
           >
             /auth/logout
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -364,7 +364,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__method"
@@ -373,14 +373,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
@@ -389,7 +389,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__description"
@@ -399,24 +399,24 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-crXcEl"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <a
             aria-label="/auth/request-verification-email (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://webapp-boilerplate.georgegillams.co.uk/api/auth/request-verification-email"
             rel="noopener noreferrer"
             target="_blank"
           >
             /auth/request-verification-email
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -430,7 +430,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__method"
@@ -439,14 +439,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
@@ -455,7 +455,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__description"
@@ -465,24 +465,24 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-crXcEl"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <a
             aria-label="/auth/verify-email (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://webapp-boilerplate.georgegillams.co.uk/api/auth/verify-email"
             rel="noopener noreferrer"
             target="_blank"
           >
             /auth/verify-email
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -496,7 +496,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__method"
@@ -505,14 +505,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
@@ -521,7 +521,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__description"
@@ -531,24 +531,24 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-crXcEl"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <a
             aria-label="/emails/load (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://webapp-boilerplate.georgegillams.co.uk/api/emails/load"
             rel="noopener noreferrer"
             target="_blank"
           >
             /emails/load
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -562,7 +562,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__method"
@@ -571,14 +571,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
@@ -587,7 +587,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__description"
@@ -597,24 +597,24 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-crXcEl"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <a
             aria-label="/emails/resend (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://webapp-boilerplate.georgegillams.co.uk/api/emails/resend"
             rel="noopener noreferrer"
             target="_blank"
           >
             /emails/resend
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -628,7 +628,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__method"
@@ -637,14 +637,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
@@ -653,7 +653,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__description"
@@ -663,24 +663,24 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-crXcEl"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <a
             aria-label="/magic-links/login (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://webapp-boilerplate.georgegillams.co.uk/api/magic-links/login"
             rel="noopener noreferrer"
             target="_blank"
           >
             /magic-links/login
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -694,7 +694,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__method"
@@ -703,14 +703,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
@@ -719,7 +719,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__description"
@@ -729,24 +729,24 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-crXcEl"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <a
             aria-label="/magic-links/request (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://webapp-boilerplate.georgegillams.co.uk/api/magic-links/request"
             rel="noopener noreferrer"
             target="_blank"
           >
             /magic-links/request
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -760,7 +760,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__method"
@@ -769,14 +769,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
@@ -785,7 +785,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__description"
@@ -795,24 +795,24 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-crXcEl"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <a
             aria-label="/data-management/backup (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://webapp-boilerplate.georgegillams.co.uk/api/data-management/backup"
             rel="noopener noreferrer"
             target="_blank"
           >
             /data-management/backup
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -826,7 +826,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__method"
@@ -835,14 +835,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
@@ -851,7 +851,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__description"
@@ -861,24 +861,24 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-crXcEl"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <a
             aria-label="/data-management/delete-entity (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://webapp-boilerplate.georgegillams.co.uk/api/data-management/delete-entity"
             rel="noopener noreferrer"
             target="_blank"
           >
             /data-management/delete-entity
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -892,7 +892,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__method"
@@ -901,14 +901,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
@@ -917,7 +917,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__description"
@@ -927,24 +927,24 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-crXcEl"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <a
             aria-label="/data-management/delete-set (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://webapp-boilerplate.georgegillams.co.uk/api/data-management/delete-set"
             rel="noopener noreferrer"
             target="_blank"
           >
             /data-management/delete-set
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -958,7 +958,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__method"
@@ -967,14 +967,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
@@ -983,7 +983,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__description"
@@ -993,24 +993,24 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-crXcEl"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <a
             aria-label="/data-management/restore (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://webapp-boilerplate.georgegillams.co.uk/api/data-management/restore"
             rel="noopener noreferrer"
             target="_blank"
           >
             /data-management/restore
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1024,7 +1024,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__method"
@@ -1033,14 +1033,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
@@ -1049,7 +1049,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__description"
@@ -1059,24 +1059,24 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-crXcEl"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <a
             aria-label="/notifications/create (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://webapp-boilerplate.georgegillams.co.uk/api/notifications/create"
             rel="noopener noreferrer"
             target="_blank"
           >
             /notifications/create
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1090,7 +1090,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__method"
@@ -1099,14 +1099,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
@@ -1115,7 +1115,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__description"
@@ -1125,24 +1125,24 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-crXcEl"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <a
             aria-label="/notifications/delete (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://webapp-boilerplate.georgegillams.co.uk/api/notifications/delete"
             rel="noopener noreferrer"
             target="_blank"
           >
             /notifications/delete
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1156,7 +1156,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__method"
@@ -1165,14 +1165,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
@@ -1181,7 +1181,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__description"
@@ -1191,24 +1191,24 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-crXcEl"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <a
             aria-label="/notifications/load-all (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://webapp-boilerplate.georgegillams.co.uk/api/notifications/load-all"
             rel="noopener noreferrer"
             target="_blank"
           >
             /notifications/load-all
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1222,7 +1222,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__method"
@@ -1231,14 +1231,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
@@ -1247,7 +1247,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__description"
@@ -1257,24 +1257,24 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-crXcEl"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <a
             aria-label="/notifications/load/:id (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://webapp-boilerplate.georgegillams.co.uk/api/notifications/load/:id"
             rel="noopener noreferrer"
             target="_blank"
           >
             /notifications/load/:id
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1288,7 +1288,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__method"
@@ -1297,21 +1297,21 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__description"
@@ -1319,24 +1319,24 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-crXcEl"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <a
             aria-label="/notifications/update (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://webapp-boilerplate.georgegillams.co.uk/api/notifications/update"
             rel="noopener noreferrer"
             target="_blank"
           >
             /notifications/update
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1350,7 +1350,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__method"
@@ -1359,14 +1359,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
@@ -1375,7 +1375,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__description"
@@ -1385,24 +1385,24 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-crXcEl"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <a
             aria-label="/users/create (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://webapp-boilerplate.georgegillams.co.uk/api/users/create"
             rel="noopener noreferrer"
             target="_blank"
           >
             /users/create
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1416,7 +1416,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__method"
@@ -1425,14 +1425,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
@@ -1441,7 +1441,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__description"
@@ -1451,24 +1451,24 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-crXcEl"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <a
             aria-label="/users/delete (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://webapp-boilerplate.georgegillams.co.uk/api/users/delete"
             rel="noopener noreferrer"
             target="_blank"
           >
             /users/delete
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1482,7 +1482,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__method"
@@ -1491,14 +1491,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
@@ -1507,7 +1507,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__description"
@@ -1517,24 +1517,24 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-crXcEl"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <a
             aria-label="/users/load (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://webapp-boilerplate.georgegillams.co.uk/api/users/load"
             rel="noopener noreferrer"
             target="_blank"
           >
             /users/load
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1548,7 +1548,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__method"
@@ -1557,14 +1557,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
@@ -1573,7 +1573,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__description"
@@ -1583,24 +1583,24 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-crXcEl"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <a
             aria-label="/users/load-all (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://webapp-boilerplate.georgegillams.co.uk/api/users/load-all"
             rel="noopener noreferrer"
             target="_blank"
           >
             /users/load-all
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1614,7 +1614,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__method"
@@ -1623,14 +1623,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
@@ -1639,7 +1639,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__description"
@@ -1649,24 +1649,24 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-crXcEl"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <a
             aria-label="/users/sign-up (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://webapp-boilerplate.georgegillams.co.uk/api/users/sign-up"
             rel="noopener noreferrer"
             target="_blank"
           >
             /users/sign-up
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1680,7 +1680,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__method"
@@ -1689,14 +1689,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
@@ -1705,7 +1705,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__description"
@@ -1715,24 +1715,24 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-crXcEl"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <a
             aria-label="/users/update (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://webapp-boilerplate.georgegillams.co.uk/api/users/update"
             rel="noopener noreferrer"
             target="_blank"
           >
             /users/update
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1746,7 +1746,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__method"
@@ -1755,14 +1755,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding"
@@ -1771,7 +1771,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-evZas bBPMcW api-docs__cell"
         >
           <span
             class="paragraph paragraph--no-padding api-docs__description"

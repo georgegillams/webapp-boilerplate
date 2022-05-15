@@ -20,7 +20,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       class="paragraph"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-iBkjds kXOvCG"
         href="/privacy-policy"
       >
         Privacy Policy
@@ -40,14 +40,14 @@ exports[`<SiteMap /> should render correctly 1`] = `
       class="paragraph"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-iBkjds kXOvCG"
         href="/debug"
       >
         Debug tools
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-iBkjds kXOvCG"
         href="/status"
       >
         Status
@@ -68,17 +68,17 @@ exports[`<SiteMap /> should render correctly 1`] = `
     >
       <a
         aria-label="Robots.txt (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-iBkjds kXOvCG"
         href="/robots.txt"
         rel="noopener noreferrer"
         target="_blank"
       >
         Robots.txt
         <div
-          class="text-link__icon-container"
+          class="sc-ftvSup kUuEWK"
         >
           <svg
-            class="icon text-link__icon"
+            class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
             height="18"
             viewBox="0 0 24 24"
             width="18"
@@ -93,17 +93,17 @@ exports[`<SiteMap /> should render correctly 1`] = `
       <br />
       <a
         aria-label="SiteMap.xml (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-iBkjds kXOvCG"
         href="/sitemap.xml"
         rel="noopener noreferrer"
         target="_blank"
       >
         SiteMap.xml
         <div
-          class="text-link__icon-container"
+          class="sc-ftvSup kUuEWK"
         >
           <svg
-            class="icon text-link__icon"
+            class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
             height="18"
             viewBox="0 0 24 24"
             width="18"
@@ -117,14 +117,14 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-iBkjds kXOvCG"
         href="/404"
       >
         404 error page - not found
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-iBkjds kXOvCG"
         href="/teapot"
       >
         418 error page - I'm a teapot
@@ -144,7 +144,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       class="paragraph"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-iBkjds kXOvCG"
         href="/api-docs"
       >
         API docs
@@ -164,35 +164,35 @@ exports[`<SiteMap /> should render correctly 1`] = `
       class="paragraph"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-iBkjds kXOvCG"
         href="/account"
       >
         Account
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-iBkjds kXOvCG"
         href="/sign-up"
       >
         Sign up
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-iBkjds kXOvCG"
         href="/login"
       >
         Log in
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-iBkjds kXOvCG"
         href="/email-verification"
       >
         Email verification
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-iBkjds kXOvCG"
         href="/magic-login"
       >
         Magic login
@@ -212,35 +212,35 @@ exports[`<SiteMap /> should render correctly 1`] = `
       class="paragraph"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-iBkjds kXOvCG"
         href="/admin"
       >
         Admin navigation
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-iBkjds kXOvCG"
         href="/admin/analytics"
       >
         Analytics
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-iBkjds kXOvCG"
         href="/admin/emails"
       >
         Emails
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-iBkjds kXOvCG"
         href="/admin/notifications"
       >
         Notifications
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-iBkjds kXOvCG"
         href="/admin/users"
       >
         Users
@@ -261,7 +261,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
     >
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-iBkjds kXOvCG"
           href="/codebase"
         >
           /codebase ⇒ https://github.com/georgegillams/webapp-boilerplate
@@ -270,7 +270,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-iBkjds kXOvCG"
           href="/wp-admin"
         >
           /wp-admin ⇒ /admin
@@ -279,7 +279,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-iBkjds kXOvCG"
           href="/site-map"
         >
           /site-map ⇒ /sitemap

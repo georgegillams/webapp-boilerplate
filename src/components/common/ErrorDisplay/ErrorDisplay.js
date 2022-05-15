@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Error } from '@george-gillams/components/Error';
+import Error from '@george-gillams/components/error';
 import { Paragraph } from '@george-gillams/components/Paragraph';
 
 const ErrorDisplay = props => {

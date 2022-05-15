@@ -24,7 +24,7 @@ exports[`<HomePage /> should render correctly 1`] = `
           <br />
           This page is pretty boring, but the 
           <a
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="/sitemap"
           >
             site map
@@ -110,19 +110,19 @@ exports[`<HomePage /> should render correctly 1`] = `
       class="footer-nav__container footer__nav"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--text-link--all-white text-link--inline footer-nav__link"
+        class="sc-iBkjds kXOvCG footer-nav__link"
         href="/sitemap"
       >
         Site map
       </a>
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--text-link--all-white text-link--inline footer-nav__link"
+        class="sc-iBkjds kXOvCG footer-nav__link"
         href="/status"
       >
         Status
       </a>
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--text-link--all-white text-link--inline footer-nav__link"
+        class="sc-iBkjds kXOvCG footer-nav__link"
         href="/privacy-policy"
       >
         Privacy
