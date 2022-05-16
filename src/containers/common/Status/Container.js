@@ -4,7 +4,7 @@ import { cssModules } from '@george-gillams/components/helpers/cssModules';
 import { Subsection } from '@george-gillams/components/Subsection';
 import { Paragraph } from '@george-gillams/components/Paragraph';
 import PageTitle from 'components/common/PageTitle';
-import { DebugObject } from '@george-gillams/components/DebugObject';
+import DebugObject from '@george-gillams/components/debug-object';
 
 import STYLES from './style.scss';
 

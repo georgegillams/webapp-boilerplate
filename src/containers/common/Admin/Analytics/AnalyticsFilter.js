@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Input } from '@george-gillams/components/Input';
+import Input from '@george-gillams/components/input';
 import HelperFunctions from '@george-gillams/webapp/helpers/HelperFunctions';
 import FORM_BUILDER_STYLES from '@george-gillams/components/FormBuilder/forms.css';
 import { cssModules } from '@george-gillams/components/helpers/cssModules';

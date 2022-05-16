@@ -23,7 +23,7 @@ exports[`<Consent /> should render correctly - index 1`] = `
           >
             To provide the best possible experience, we would like to use cookies and handle your data in accordance with our 
             <a
-              class="text-link text-link--text-link text-link--no-padding text-link--inline"
+              class="sc-papXJ gfSAJY"
               href="/privacy-policy"
             >
               Privacy policy

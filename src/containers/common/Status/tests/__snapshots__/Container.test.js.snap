@@ -26,10 +26,10 @@ exports[`<Status /> should render correctly 1`] = `
         class="paragraph"
       >
         Built 
-        over 51 years ago
+        almost 52 years ago
         <br />
         Started 
-        over 51 years ago
+        almost 52 years ago
       </span>
     </div>
     <div
@@ -46,7 +46,7 @@ exports[`<Status /> should render correctly 1`] = `
       class="subsection__outer pages__component"
     >
       <div
-        class="section__outer debug-object__main"
+        class="section__outer sc-jqUVSM edoSIZ"
       >
         <h2
           class="section__heading"

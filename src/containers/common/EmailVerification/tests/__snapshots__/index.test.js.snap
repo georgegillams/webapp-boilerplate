@@ -61,7 +61,7 @@ exports[`<EmailVerification /> should render correctly with verifyError 1`] = `
       class="paragraph"
     >
       <span
-        class="error"
+        class="sc-jqUVSM jJqeiD"
       >
         Something went wrong whilst confirming your email
         <br />

@@ -3,7 +3,7 @@ import { Paragraph } from '@george-gillams/components/Paragraph';
 import PageTitle from 'components/common/PageTitle';
 import TextLink from 'components/common/TextLink';
 import { cssModules } from '@george-gillams/components/helpers/cssModules';
-import { Table, Head, Body, Row, Cell } from '@george-gillams/components/Table';
+import { Table, Head, Body, Row, Cell } from '@george-gillams/components/table';
 
 import STYLES from './api-docs.scss';
 import apiStructure from 'helpers/common/apiStructureWithDescriptions';

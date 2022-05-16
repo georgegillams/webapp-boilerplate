@@ -29,10 +29,10 @@ ENV SECRET_API_KEY=$SECRET_API_KEY
 # RUN pwd
 # RUN ls -la
 # RUN mkdir /gg-webapp
-# COPY --from=build /opt/app/gg-webapp/dist /gg-webapp/
-# COPY --from=build /opt/app/build /
-# COPY --from=build /opt/app/package.json /
-# COPY --from=build /opt/app/package-lock.json /
+# COPY --from=build /opt/app/gg-webapp/dist /opt/app/gg-webapp/dist
+# COPY --from=build /opt/app/build /opt/app/build
+# COPY --from=build /opt/app/package.json /opt/app/
+# COPY --from=build /opt/app/package-lock.json /opt/app/
 # RUN pwd
 # RUN ls -la
 # RUN npm ci --production
