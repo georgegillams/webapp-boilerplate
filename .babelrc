@@ -11,14 +11,25 @@
     }
   },
   "plugins": [
-    "babel-plugin-add-module-exports", 
-    ["module-resolver", { 
-      "root": ["./"],
-      "alias": {
-        "helpers": "./shared/helpers",
-        "server-utils": "./server/utils",
-        "client-utils": "./src/utils"
+    "babel-plugin-add-module-exports",
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "helpers": "./shared/helpers",
+          "server-utils": "./server/utils",
+          "client-utils": "./src/utils"
+        }
       }
-    }]
+    ],
+    [
+      "styled-components",
+      {
+        "ssr": true,
+        "displayName": true,
+        "preprocess": false
+      }
+    ]
   ]
 }
