@@ -1,12 +1,17 @@
 import React from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import appConfig from 'helpers/appConfig';
+import { ServerStyleSheet } from 'styled-components';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
-    const page = ctx.renderPage();
+    const sheet = new ServerStyleSheet();
+    const page = ctx.renderPage(App => props => sheet.collectStyles(<App {...props} />));
+    const styleTags = sheet.getStyleElement();
+
     const initialProps = await Document.getInitialProps(ctx);
-    return { ...initialProps, ...page };
+
+    return { styleTags, ...initialProps, ...page };
   }
 
   render() {
@@ -28,6 +33,7 @@ class MyDocument extends Document {
           <link rel="shortcut icon" href="/static/favicon/favicon.png" />
 
           <meta name="msapplication-config" content="/static/favicon/browserconfig.xml" />
+          {this.props.styleTags}
         </Head>
 
         <body>
