@@ -1,6 +1,6 @@
 import crypto from 'crypto';
 
-import bcrypt from 'bcryptjs';
+import bcrypt from 'bcrypt';
 
 export function compareHash(password, credentialHash) {
   const result = bcrypt.compareSync(password, credentialHash);
