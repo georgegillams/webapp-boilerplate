@@ -23,7 +23,7 @@ exports[`<Status /> should render correctly 1`] = `
       class="subsection__outer pages__component"
     >
       <span
-        class="paragraph"
+        class="sc-bczRLJ bhVmoO"
       >
         Built 
         almost 52 years ago
@@ -36,7 +36,7 @@ exports[`<Status /> should render correctly 1`] = `
       class="subsection__outer pages__component"
     >
       <span
-        class="paragraph"
+        class="sc-bczRLJ bhVmoO"
       >
         Environment 
         test-node-env
@@ -46,7 +46,7 @@ exports[`<Status /> should render correctly 1`] = `
       class="subsection__outer pages__component"
     >
       <div
-        class="section__outer sc-jqUVSM edoSIZ"
+        class="section__outer sc-kDDrLX ksrIma"
       >
         <h2
           class="section__heading"

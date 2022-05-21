@@ -230,10 +230,10 @@ exports[`<AdminAnalytics /> should render correctly with loadError 1`] = `
     </button>
   </div>
   <span
-    class="paragraph"
+    class="sc-iqcoie fIUTrZ"
   >
     <span
-      class="sc-crXcEl dggGEa"
+      class="sc-evZas jWVitK"
     >
       Could not load analytics
       <br />
@@ -335,7 +335,7 @@ exports[`<AdminAnalytics /> should render correctly with user 1`] = `
       Admin only
     </h2>
     <span
-      class="paragraph"
+      class="sc-iqcoie fIUTrZ"
     >
       You need to be logged in with an admin account to view this content.
       <br />

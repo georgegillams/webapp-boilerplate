@@ -122,7 +122,7 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
     </button>
   </div>
   <span
-    class="paragraph admin-analytics__count"
+    class="sc-iqcoie fIUTrZ admin-analytics__count"
   >
     Showing 
     3
@@ -164,7 +164,7 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
                     Email 1
                   </h3>
                   <span
-                    class="paragraph"
+                    class="sc-iqcoie fIUTrZ"
                   >
                     <br />
                     id: 
@@ -202,7 +202,7 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
                     Email 2
                   </h3>
                   <span
-                    class="paragraph"
+                    class="sc-iqcoie fIUTrZ"
                   >
                     <br />
                     id: 
@@ -240,7 +240,7 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
                     Email 3
                   </h3>
                   <span
-                    class="paragraph"
+                    class="sc-iqcoie fIUTrZ"
                   >
                     <br />
                     id: 
@@ -339,10 +339,10 @@ exports[`<AdminEmails /> should render correctly with loadError 1`] = `
     </button>
   </div>
   <span
-    class="paragraph"
+    class="sc-iqcoie fIUTrZ"
   >
     <span
-      class="sc-iqcoie kjCxBx"
+      class="sc-crXcEl dggGEa"
     >
       Could not load emails
       <br />
@@ -527,7 +527,7 @@ exports[`<AdminEmails /> should render correctly with user 1`] = `
       Admin only
     </h2>
     <span
-      class="paragraph"
+      class="sc-iqcoie fIUTrZ"
     >
       You need to be logged in with an admin account to view this content.
       <br />

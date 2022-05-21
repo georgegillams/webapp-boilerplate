@@ -1,8 +1,8 @@
 import React from 'react';
-import { Subsection } from '@george-gillams/components/Subsection';
+import Subsection from '@george-gillams/components/subsection';
 import TextLink from 'components/common/TextLink';
 import PageTitle from 'components/common/PageTitle';
-import { Paragraph } from '@george-gillams/components/Paragraph';
+import Paragraph from '@george-gillams/components/paragraph';
 import redirects from 'helpers/redirects';
 import STYLES from './site-map.scss';
 import { cssModules } from '@george-gillams/components/helpers/cssModules';

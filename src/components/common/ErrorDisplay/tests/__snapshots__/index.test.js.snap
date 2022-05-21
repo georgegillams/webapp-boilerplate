@@ -11,7 +11,7 @@ exports[`<ErrorDisplay  /> Should render correctly with message 1`] = `<div />`;
 exports[`<ErrorDisplay  /> Should render with empty error object and message 1`] = `
 <div>
   <span
-    class="paragraph"
+    class="sc-gsnTZi bUAnoQ"
   >
     <span
       class="sc-bczRLJ cuIShi"
@@ -25,7 +25,7 @@ exports[`<ErrorDisplay  /> Should render with empty error object and message 1`]
 exports[`<ErrorDisplay  /> Should render with empty error object and no message 1`] = `
 <div>
   <span
-    class="paragraph"
+    class="sc-gsnTZi bUAnoQ"
   >
     <span
       class="sc-bczRLJ cuIShi"
@@ -37,7 +37,7 @@ exports[`<ErrorDisplay  /> Should render with empty error object and no message 
 exports[`<ErrorDisplay  /> Should render with well-defined error object and message 1`] = `
 <div>
   <span
-    class="paragraph"
+    class="sc-gsnTZi bUAnoQ"
   >
     <span
       class="sc-bczRLJ cuIShi"
@@ -53,7 +53,7 @@ exports[`<ErrorDisplay  /> Should render with well-defined error object and mess
 exports[`<ErrorDisplay  /> Should render with well-defined error object and no message 1`] = `
 <div>
   <span
-    class="paragraph"
+    class="sc-gsnTZi bUAnoQ"
   >
     <span
       class="sc-bczRLJ cuIShi"

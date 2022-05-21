@@ -39,10 +39,10 @@ exports[`<MagicLogin /> should render correctly with logInError 1`] = `
       Logging in
     </h1>
     <span
-      class="paragraph"
+      class="sc-jqUVSM iuHAUr"
     >
       <span
-        class="sc-jqUVSM jJqeiD"
+        class="sc-kDDrLX BHeVQ"
       >
         Something went wrong logging you in
         <br />
@@ -85,7 +85,7 @@ exports[`<MagicLogin /> should render correctly with user 1`] = `
       Logged in
     </h1>
     <span
-      class="paragraph"
+      class="sc-jqUVSM iuHAUr"
     >
       Logged in!
       <br />

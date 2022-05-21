@@ -73,7 +73,7 @@ exports[`<Debug /> should render correctly 1`] = `
       </div>
     </label>
     <span
-      class="paragraph"
+      class="sc-gKXOVf dVduRi"
     >
       Note that changes will not take effect until you reload the page.
     </span>

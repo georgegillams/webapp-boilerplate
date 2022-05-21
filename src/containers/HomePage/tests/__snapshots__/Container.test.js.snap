@@ -14,13 +14,13 @@ exports[`<Home /> should render correctly 1`] = `
       class="subsection__outer"
     >
       <span
-        class="paragraph"
+        class="sc-bczRLJ bhVmoO"
       >
         This is just a boilerplate page, but you can put any content you want in here.
         <br />
         This page is pretty boring, but the 
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-ftvSup bvTsjB"
           href="/sitemap"
         >
           site map
