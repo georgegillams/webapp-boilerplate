@@ -68,7 +68,7 @@
     "express-fileupload": "^1.2.1",
     "express-slow-down": "^1.4.0",
     "helmet": "^4.6.0",
-    "immer": "^9.0.2",
+    "immer": "^9.0.6",
     "invariant": "^2.2.4",
     "ip": "^1.1.8",
     "ip-parse": "^1.0.5",
