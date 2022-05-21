@@ -18,13 +18,13 @@ exports[`<HomePage /> should render correctly 1`] = `
         class="subsection__outer"
       >
         <span
-          class="paragraph"
+          class="sc-bczRLJ bhVmoO"
         >
           This is just a boilerplate page, but you can put any content you want in here.
           <br />
           This page is pretty boring, but the 
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-ftvSup bvTsjB"
             href="/sitemap"
           >
             site map
@@ -58,8 +58,7 @@ exports[`<HomePage /> should render correctly 1`] = `
       class="footer__tech"
     >
       <span
-        class="paragraph tech-specs__container"
-        theme="allWhite"
+        class="sc-bczRLJ bhVmoO tech-specs__container"
       >
         Built in
         <a
@@ -110,19 +109,19 @@ exports[`<HomePage /> should render correctly 1`] = `
       class="footer-nav__container footer__nav"
     >
       <a
-        class="sc-iBkjds kXOvCG footer-nav__link"
+        class="sc-ftvSup bvTsjB footer-nav__link"
         href="/sitemap"
       >
         Site map
       </a>
       <a
-        class="sc-iBkjds kXOvCG footer-nav__link"
+        class="sc-ftvSup bvTsjB footer-nav__link"
         href="/status"
       >
         Status
       </a>
       <a
-        class="sc-iBkjds kXOvCG footer-nav__link"
+        class="sc-ftvSup bvTsjB footer-nav__link"
         href="/privacy-policy"
       >
         Privacy

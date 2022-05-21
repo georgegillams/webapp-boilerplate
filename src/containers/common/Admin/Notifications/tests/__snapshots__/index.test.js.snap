@@ -78,19 +78,19 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
       Message
     </label>
     <div
-      class="sc-crXcEl hnlecx forms__component forms__component__text-box"
+      class="sc-evZas dewINB forms__component forms__component__text-box"
       placeholder="Message"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-fEOsli bRlsjc"
+        class="sc-bjUoiL kSCxEt"
         id="message_FORM_ID"
         name="Message"
         value=""
       />
       <svg
-        class="sc-gKXOVf fAwmrp sc-bjUoiL jRFoTq"
+        class="sc-gKXOVf fAwmrp sc-idiyUo cJUKLa"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -254,19 +254,19 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
       Message
     </label>
     <div
-      class="sc-crXcEl hnlecx forms__component forms__component__text-box"
+      class="sc-evZas dewINB forms__component forms__component__text-box"
       placeholder="Message"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-fEOsli bRlsjc"
+        class="sc-bjUoiL kSCxEt"
         id="message_FORM_ID"
         name="Message"
         value=""
       />
       <svg
-        class="sc-gKXOVf fAwmrp sc-bjUoiL jRFoTq"
+        class="sc-gKXOVf fAwmrp sc-idiyUo cJUKLa"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -350,10 +350,10 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
     </button>
   </div>
   <span
-    class="paragraph"
+    class="sc-iqcoie fIUTrZ"
   >
     <span
-      class="sc-iqcoie kjCxBx"
+      class="sc-crXcEl dggGEa"
     >
       Could not load notifications
       <br />
@@ -388,19 +388,19 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
       Message
     </label>
     <div
-      class="sc-crXcEl hnlecx forms__component forms__component__text-box"
+      class="sc-evZas dewINB forms__component forms__component__text-box"
       placeholder="Message"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-fEOsli bRlsjc"
+        class="sc-bjUoiL kSCxEt"
         id="message_FORM_ID"
         name="Message"
         value=""
       />
       <svg
-        class="sc-gKXOVf fAwmrp sc-bjUoiL jRFoTq"
+        class="sc-gKXOVf fAwmrp sc-idiyUo cJUKLa"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -545,19 +545,19 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
       Message
     </label>
     <div
-      class="sc-crXcEl hnlecx forms__component forms__component__text-box"
+      class="sc-evZas dewINB forms__component forms__component__text-box"
       placeholder="Message"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-fEOsli bRlsjc"
+        class="sc-bjUoiL kSCxEt"
         id="message_FORM_ID"
         name="Message"
         value=""
       />
       <svg
-        class="sc-gKXOVf fAwmrp sc-bjUoiL jRFoTq"
+        class="sc-gKXOVf fAwmrp sc-idiyUo cJUKLa"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -712,7 +712,7 @@ exports[`<AdminNotifications /> should render correctly with user 1`] = `
       Admin only
     </h2>
     <span
-      class="paragraph"
+      class="sc-iqcoie fIUTrZ"
     >
       You need to be logged in with an admin account to view this content.
       <br />

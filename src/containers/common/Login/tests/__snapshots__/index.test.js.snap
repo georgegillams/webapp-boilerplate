@@ -225,7 +225,7 @@ exports[`<Login /> should render correctly with user 1`] = `
         You're logged in
       </h2>
       <span
-        class="paragraph"
+        class="sc-jqUVSM iuHAUr"
       >
         <a
           class="sc-iBkjds kXOvCG"

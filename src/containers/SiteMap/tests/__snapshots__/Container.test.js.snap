@@ -17,7 +17,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       Design 🎨
     </h3>
     <span
-      class="paragraph"
+      class="sc-jqUVSM iuHAUr"
     >
       <a
         class="sc-iBkjds kXOvCG"
@@ -37,7 +37,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       Other stuff 🤷‍♂️
     </h3>
     <span
-      class="paragraph"
+      class="sc-jqUVSM iuHAUr"
     >
       <a
         class="sc-iBkjds kXOvCG"
@@ -64,7 +64,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       Random 🐉
     </h3>
     <span
-      class="paragraph"
+      class="sc-jqUVSM iuHAUr"
     >
       <a
         aria-label="Robots.txt (opens in a new tab)"
@@ -141,7 +141,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       API
     </h3>
     <span
-      class="paragraph"
+      class="sc-jqUVSM iuHAUr"
     >
       <a
         class="sc-iBkjds kXOvCG"
@@ -161,7 +161,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       Accounts 🔑
     </h3>
     <span
-      class="paragraph"
+      class="sc-jqUVSM iuHAUr"
     >
       <a
         class="sc-iBkjds kXOvCG"
@@ -209,7 +209,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       Admin 👮‍♂️
     </h3>
     <span
-      class="paragraph"
+      class="sc-jqUVSM iuHAUr"
     >
       <a
         class="sc-iBkjds kXOvCG"
@@ -257,7 +257,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       Redirects
     </h3>
     <span
-      class="paragraph"
+      class="sc-jqUVSM iuHAUr"
     >
       <div>
         <a

@@ -34,8 +34,7 @@ exports[`<Layout /> Should render correctly 1`] = `
       class="footer__tech"
     >
       <span
-        class="paragraph tech-specs__container"
-        theme="allWhite"
+        class="sc-bczRLJ bhVmoO tech-specs__container"
       >
         Built in
         <a
@@ -86,19 +85,19 @@ exports[`<Layout /> Should render correctly 1`] = `
       class="footer-nav__container footer__nav"
     >
       <a
-        class="sc-iBkjds kXOvCG footer-nav__link"
+        class="sc-ftvSup bvTsjB footer-nav__link"
         href="/sitemap"
       >
         Site map
       </a>
       <a
-        class="sc-iBkjds kXOvCG footer-nav__link"
+        class="sc-ftvSup bvTsjB footer-nav__link"
         href="/status"
       >
         Status
       </a>
       <a
-        class="sc-iBkjds kXOvCG footer-nav__link"
+        class="sc-ftvSup bvTsjB footer-nav__link"
         href="/privacy-policy"
       >
         Privacy
@@ -142,8 +141,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
       class="footer__tech"
     >
       <span
-        class="paragraph tech-specs__container"
-        theme="allWhite"
+        class="sc-bczRLJ bhVmoO tech-specs__container"
       >
         Built in
         <a
@@ -194,19 +192,19 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
       class="footer-nav__container footer__nav"
     >
       <a
-        class="sc-iBkjds kXOvCG footer-nav__link"
+        class="sc-ftvSup bvTsjB footer-nav__link"
         href="/sitemap"
       >
         Site map
       </a>
       <a
-        class="sc-iBkjds kXOvCG footer-nav__link"
+        class="sc-ftvSup bvTsjB footer-nav__link"
         href="/status"
       >
         Status
       </a>
       <a
-        class="sc-iBkjds kXOvCG footer-nav__link"
+        class="sc-ftvSup bvTsjB footer-nav__link"
         href="/privacy-policy"
       >
         Privacy

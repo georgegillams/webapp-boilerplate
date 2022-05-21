@@ -224,31 +224,31 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
           class="button__loading-spinner"
         >
           <div
-            class="sc-jqUVSM VvXWN"
+            class="sc-kDDrLX kWUBZq"
           >
             <div
-              class="sc-kDDrLX eeXkXB"
+              class="sc-iqcoie bRqCOA"
             />
             <div
-              class="sc-kDDrLX bnwDAh"
+              class="sc-iqcoie hyZmyk"
             />
             <div
-              class="sc-kDDrLX jSzHFu"
+              class="sc-iqcoie hxuYMn"
             />
             <div
-              class="sc-kDDrLX hHQzVj"
+              class="sc-iqcoie jpQCvm"
             />
             <div
-              class="sc-kDDrLX bOKAbg"
+              class="sc-iqcoie cYotlJ"
             />
             <div
-              class="sc-kDDrLX coEtcF"
+              class="sc-iqcoie hAYXcQ"
             />
             <div
-              class="sc-kDDrLX cyugPZ"
+              class="sc-iqcoie bWgjE"
             />
             <div
-              class="sc-kDDrLX grMaMB"
+              class="sc-iqcoie dXrhCM"
             />
           </div>
         </div>
@@ -396,31 +396,31 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
           class="button__loading-spinner"
         >
           <div
-            class="sc-jqUVSM VvXWN"
+            class="sc-kDDrLX kWUBZq"
           >
             <div
-              class="sc-kDDrLX eeXkXB"
+              class="sc-iqcoie bRqCOA"
             />
             <div
-              class="sc-kDDrLX bnwDAh"
+              class="sc-iqcoie hyZmyk"
             />
             <div
-              class="sc-kDDrLX jSzHFu"
+              class="sc-iqcoie hxuYMn"
             />
             <div
-              class="sc-kDDrLX hHQzVj"
+              class="sc-iqcoie jpQCvm"
             />
             <div
-              class="sc-kDDrLX bOKAbg"
+              class="sc-iqcoie cYotlJ"
             />
             <div
-              class="sc-kDDrLX coEtcF"
+              class="sc-iqcoie hAYXcQ"
             />
             <div
-              class="sc-kDDrLX cyugPZ"
+              class="sc-iqcoie bWgjE"
             />
             <div
-              class="sc-kDDrLX grMaMB"
+              class="sc-iqcoie dXrhCM"
             />
           </div>
         </div>

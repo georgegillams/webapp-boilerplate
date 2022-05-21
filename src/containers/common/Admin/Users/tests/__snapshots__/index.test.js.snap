@@ -384,10 +384,10 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
     </button>
   </div>
   <span
-    class="paragraph"
+    class="sc-iqcoie fIUTrZ"
   >
     <span
-      class="sc-fnykZs fvQUIa"
+      class="sc-fEOsli ffZaGb"
     >
       Could not load users
       <br />
@@ -1043,7 +1043,7 @@ exports[`<AdminUsers /> should render correctly with user 1`] = `
       Admin only
     </h2>
     <span
-      class="paragraph"
+      class="sc-iqcoie fIUTrZ"
     >
       You need to be logged in with an admin account to view this content.
       <br />
@@ -1096,7 +1096,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
     </button>
   </div>
   <span
-    class="paragraph admin-analytics__count"
+    class="sc-iqcoie fIUTrZ admin-analytics__count"
   >
     Showing 
     3
@@ -1168,7 +1168,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
                     name
                   </h3>
                   <span
-                    class="paragraph"
+                    class="sc-iqcoie fIUTrZ"
                   >
                     <br />
                     id: 
@@ -1206,7 +1206,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
                     another
                   </h3>
                   <span
-                    class="paragraph"
+                    class="sc-iqcoie fIUTrZ"
                   >
                     <br />
                     id: 
@@ -1244,7 +1244,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
                     a third
                   </h3>
                   <span
-                    class="paragraph"
+                    class="sc-iqcoie fIUTrZ"
                   >
                     <br />
                     id: 

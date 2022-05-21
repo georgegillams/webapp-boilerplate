@@ -397,7 +397,7 @@ exports[`<AdminNavigation /> should render correctly with user 1`] = `
         Admin only
       </h2>
       <span
-        class="paragraph"
+        class="sc-jqUVSM iuHAUr"
       >
         You need to be logged in with an admin account to view this content.
         <br />

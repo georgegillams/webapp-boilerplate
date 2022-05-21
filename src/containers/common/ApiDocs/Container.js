@@ -1,5 +1,5 @@
 import React from 'react';
-import { Paragraph } from '@george-gillams/components/Paragraph';
+import Paragraph from '@george-gillams/components/paragraph';
 import PageTitle from 'components/common/PageTitle';
 import TextLink from 'components/common/TextLink';
 import { cssModules } from '@george-gillams/components/helpers/cssModules';
