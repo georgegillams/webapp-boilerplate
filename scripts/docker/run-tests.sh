@@ -27,19 +27,19 @@ docker exec $dockerArgs $containerId tar -xzf $projectName.tar.gz --directory $p
 
 # prepare project
 # TODO - Skip this too if $skipNpm
-docker exec $dockerArgs -w $destinationDirectory $containerId npm run gg-webapp-install
-docker exec $dockerArgs -w $destinationDirectory $containerId npm run gg-webapp-transpile
+docker exec $dockerArgs -w $destinationDirectory $containerId yarn gg-webapp-install
+docker exec $dockerArgs -w $destinationDirectory $containerId yarn gg-webapp-transpile
 if ! [ $skipNpm ]; then
-  docker exec $dockerArgs -w $destinationDirectory $containerId npm ci
+  docker exec $dockerArgs -w $destinationDirectory $containerId yarn install --frozen-lockfile
 fi
-docker exec $dockerArgs -w $destinationDirectory $containerId npm run build:test
+docker exec $dockerArgs -w $destinationDirectory $containerId yarn build:test
 
 # run tests
 if [ $updateMode ]; then
-    docker exec $dockerArgs -w $destinationDirectory $containerId npm run backstopjs:test:allow-failure
+    docker exec $dockerArgs -w $destinationDirectory $containerId yarn backstopjs:test:allow-failure
 else
     # should exit 1 if this fails, so if it does we set `shouldFail`
-    docker exec $dockerArgs -w $destinationDirectory $containerId npm run backstopjs:test || shouldFail=true
+    docker exec $dockerArgs -w $destinationDirectory $containerId yarn backstopjs:test || shouldFail=true
 fi
 
 # copy any failed snapshots back to the host

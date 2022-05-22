@@ -39,11 +39,11 @@ Ensure redis is installed (`brew install redis`).
 ### Running locally
 
 ```
-PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm ci
-npm run dev
+PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true yarn install --frozen-lockfile
+yarn dev
 ```
 
-`npm run dev` will set all necessary environment variables needed to run the application.
+`yarn dev` will set all necessary environment variables needed to run the application.
 
 A debugger can be attached to debug server-side code.
 
@@ -75,7 +75,7 @@ Any changes resulting from these commands should be verified and checked in.
 
 Both `dependencies` and `devDependencies` should be used for development, testing, CI, and building.
 
-Only `dependencies` should be used when running the production app. To install prod dependencies only, use `npm ci --only=prod`.
+Only `dependencies` should be used when running the production app. To install prod dependencies only, use `yarn install --frozen-lockfile --production `.
 
 The following environment variables should be set up
 

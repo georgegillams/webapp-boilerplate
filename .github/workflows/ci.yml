@@ -28,13 +28,13 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
 
       - name: gg-webapp setup
-        run: PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm run gg-webapp-install && npm run gg-webapp-transpile
+        run: PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true yarn gg-webapp-install && yarn gg-webapp-transpile
 
-      - name: npm install
-        run: PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm ci
+      - name: yarn install
+        run: PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true yarn install --frozen-lockfile
 
       - name: lint
-        run: npm run lint
+        run: yarn lint
 
       - name: jest test
         run: npm test
