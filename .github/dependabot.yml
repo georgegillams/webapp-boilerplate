@@ -1,0 +1,47 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: webpack
+    versions:
+    - 4.46.0
+    - 5.30.0
+    - 5.31.0
+    - 5.32.0
+    - 5.33.2
+    - 5.35.0
+    - 5.35.1
+    - 5.36.0
+  - dependency-name: redis
+    versions:
+    - 3.1.2
+  - dependency-name: next-transpile-modules
+    versions:
+    - 6.1.0
+    - 6.2.0
+    - 6.3.0
+    - 6.4.0
+  - dependency-name: y18n
+    versions:
+    - 4.0.1
+  - dependency-name: backstopjs
+    versions:
+    - 5.1.0
+    - 5.2.1
+  - dependency-name: react-redux
+    versions:
+    - 7.2.2
+    - 7.2.3
+  - dependency-name: eslint-plugin-prettier
+    versions:
+    - 3.3.1
+  - dependency-name: node-notifier
+    versions:
+    - 8.0.1
+  - dependency-name: lint-staged
+    versions:
+    - 10.5.3
