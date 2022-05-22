@@ -5,10 +5,10 @@ RUN mkdir /opt/app
 WORKDIR /opt/app
 
 COPY . .
-RUN PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm run gg-webapp-install
-RUN npm run gg-webapp-transpile
-RUN PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm ci
-RUN npm run build
+RUN PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true yarn gg-webapp-install
+RUN yarn gg-webapp-transpile
+RUN PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true yarn install --frozen-lockfile
+RUN yarn build
 RUN pwd
 RUN ls -la
 
@@ -32,9 +32,9 @@ ENV SECRET_API_KEY=$SECRET_API_KEY
 # COPY --from=build /opt/app/gg-webapp/dist /opt/app/gg-webapp/dist
 # COPY --from=build /opt/app/build /opt/app/build
 # COPY --from=build /opt/app/package.json /opt/app/
-# COPY --from=build /opt/app/package-lock.json /opt/app/
+# COPY --from=build /opt/app/yarn.lock /opt/app/
 # RUN pwd
 # RUN ls -la
-# RUN npm ci --production
+# RUN yarn install --frozen-lockfile --production
 
 CMD ["npm", "run", "start"]

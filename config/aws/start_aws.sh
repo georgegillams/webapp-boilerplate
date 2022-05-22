@@ -1,3 +1,3 @@
 #!/bin/bash
 
-PORT=3004 npm run start:aws
+PORT=3004 yarn start:aws
