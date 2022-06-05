@@ -2,30 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import NavigationBar from '@george-gillams/components/navigation-bar';
 import NavigationItem from 'components/common/NavigationItem';
-import SmallButtonSkeleton from '@george-gillams/components/skeleton/small-button-skeleton';
-import BurgerButtonWrapper from './BurgerButtonWrapper';
 
 import Logo from 'components/Logo';
+import BurgerButtonLink from './BurgerButtonLink';
 
 const NavigationBarWrapper = props => {
   const { authenticatorState } = props;
   const { user } = authenticatorState;
 
-  const accountItem =
-    user === undefined ? (
-      <SmallButtonSkeleton />
-    ) : (
-      <NavigationItem name={user ? 'Account' : 'Login'} href={user ? '/account' : '/login'} />
-    );
-
   const adminItem = user && user.admin ? <NavigationItem name="Admin" href="/admin" /> : null;
 
-  const menuItems = [
-    <NavigationItem key="home" name="Home" href="/" />,
-    adminItem,
-    accountItem,
-    <NavigationItem key="sitemap" name="Site map" href="/sitemap" />,
-  ];
+  const menuItems = [adminItem, <NavigationItem key="sitemap" name="Site map" href="/sitemap" />];
 
   const date = new Date();
   const isPride = date.getMonth() === 5;
@@ -33,9 +20,7 @@ const NavigationBarWrapper = props => {
   return (
     <NavigationBar
       menuItems={menuItems}
-      logo={<Logo padding={false} pride={isPride} animated />}
-      accountMenuItem={accountItem}
-      burgerButtonWrapper={BurgerButtonWrapper}
+      logo={<Logo padding={false} pride={isPride} animated noJsLinkProvider={BurgerButtonLink} />}
     />
   );
 };

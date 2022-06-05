@@ -11,11 +11,11 @@ exports[`<Layout /> Should render correctly 1`] = `
     </div>
   </main>
   <footer
-    class="footer__container"
+    class="footerstyles__Container-sc-ojjd19-0 lmaSVt"
     id="footer"
   >
     <div
-      class="logo__container footer__logo logo__container--centred logo__container--no-padding"
+      class="logo__container footerstyles__StyledLogo-sc-ojjd19-1 dHUBSN logo__container--centred logo__container--no-padding"
     >
       <a
         class="logo__a"
@@ -23,7 +23,7 @@ exports[`<Layout /> Should render correctly 1`] = `
       >
         <h1
           aria-label="Home page"
-          class="logo__heading logo__heading--no-padding"
+          class="logo__heading logo__heading--pride logo__heading--no-padding"
           role="button"
         >
           LOGO
@@ -31,10 +31,10 @@ exports[`<Layout /> Should render correctly 1`] = `
       </a>
     </div>
     <div
-      class="footer__tech"
+      class="footerstyles__StyledTechSpecs-sc-ojjd19-2 hLmmol"
     >
       <span
-        class="sc-bczRLJ bhVmoO tech-specs__container"
+        class="sc-jqUVSM iuHAUr tech-specsstyles__StyledParagraph-sc-1ysn53a-0 glkFZI"
       >
         Built in
         <a
@@ -44,7 +44,7 @@ exports[`<Layout /> Should render correctly 1`] = `
         >
           <img
             alt="React"
-            class="tech-specs__icon"
+            class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
             height="5"
             src="IMAGE_MOCK"
             width="5"
@@ -58,7 +58,7 @@ exports[`<Layout /> Should render correctly 1`] = `
         >
           <img
             alt="Redux"
-            class="tech-specs__icon"
+            class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
             height="5"
             src="IMAGE_MOCK"
             width="5"
@@ -72,7 +72,7 @@ exports[`<Layout /> Should render correctly 1`] = `
         >
           <img
             alt="Amazon Web Services"
-            class="tech-specs__icon"
+            class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
             height="5"
             src="IMAGE_MOCK"
             style="margin-top: .8rem; max-width: 2.9rem;"
@@ -82,26 +82,36 @@ exports[`<Layout /> Should render correctly 1`] = `
       </span>
     </div>
     <div
-      class="footer-nav__container footer__nav"
+      class="footer-navstyles__Wrapper-sc-7lmnsj-0 kTnJQq footerstyles__StyledFooterNav-sc-ojjd19-3"
     >
-      <a
-        class="sc-ftvSup bvTsjB footer-nav__link"
-        href="/sitemap"
+      <div
+        class="footer-navstyles__Section-sc-7lmnsj-1 iFmILp"
       >
-        Site map
-      </a>
-      <a
-        class="sc-ftvSup bvTsjB footer-nav__link"
-        href="/status"
-      >
-        Status
-      </a>
-      <a
-        class="sc-ftvSup bvTsjB footer-nav__link"
-        href="/privacy-policy"
-      >
-        Privacy
-      </a>
+        <a
+          class="sc-iBkjds cXbvnS"
+          href="/sitemap"
+        >
+          Site map
+        </a>
+        <a
+          class="sc-iBkjds cXbvnS"
+          href="/privacy-policy"
+        >
+          Privacy
+        </a>
+        <a
+          class="sc-iBkjds cXbvnS"
+          href="/login"
+        >
+          Login/Account
+        </a>
+        <a
+          class="sc-iBkjds cXbvnS"
+          href="/status"
+        >
+          Status
+        </a>
+      </div>
     </div>
   </footer>
 </div>
@@ -118,11 +128,11 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
     </div>
   </main>
   <footer
-    class="footer__container"
+    class="footerstyles__Container-sc-ojjd19-0 lmaSVt"
     id="footer"
   >
     <div
-      class="logo__container footer__logo logo__container--centred logo__container--no-padding"
+      class="logo__container footerstyles__StyledLogo-sc-ojjd19-1 dHUBSN logo__container--centred logo__container--no-padding"
     >
       <a
         class="logo__a"
@@ -130,7 +140,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
       >
         <h1
           aria-label="Home page"
-          class="logo__heading logo__heading--no-padding"
+          class="logo__heading logo__heading--pride logo__heading--no-padding"
           role="button"
         >
           LOGO
@@ -138,10 +148,10 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
       </a>
     </div>
     <div
-      class="footer__tech"
+      class="footerstyles__StyledTechSpecs-sc-ojjd19-2 hLmmol"
     >
       <span
-        class="sc-bczRLJ bhVmoO tech-specs__container"
+        class="sc-jqUVSM iuHAUr tech-specsstyles__StyledParagraph-sc-1ysn53a-0 glkFZI"
       >
         Built in
         <a
@@ -151,7 +161,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
         >
           <img
             alt="React"
-            class="tech-specs__icon"
+            class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
             height="5"
             src="IMAGE_MOCK"
             width="5"
@@ -165,7 +175,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
         >
           <img
             alt="Redux"
-            class="tech-specs__icon"
+            class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
             height="5"
             src="IMAGE_MOCK"
             width="5"
@@ -179,7 +189,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
         >
           <img
             alt="Amazon Web Services"
-            class="tech-specs__icon"
+            class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
             height="5"
             src="IMAGE_MOCK"
             style="margin-top: .8rem; max-width: 2.9rem;"
@@ -189,26 +199,36 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
       </span>
     </div>
     <div
-      class="footer-nav__container footer__nav"
+      class="footer-navstyles__Wrapper-sc-7lmnsj-0 kTnJQq footerstyles__StyledFooterNav-sc-ojjd19-3"
     >
-      <a
-        class="sc-ftvSup bvTsjB footer-nav__link"
-        href="/sitemap"
+      <div
+        class="footer-navstyles__Section-sc-7lmnsj-1 iFmILp"
       >
-        Site map
-      </a>
-      <a
-        class="sc-ftvSup bvTsjB footer-nav__link"
-        href="/status"
-      >
-        Status
-      </a>
-      <a
-        class="sc-ftvSup bvTsjB footer-nav__link"
-        href="/privacy-policy"
-      >
-        Privacy
-      </a>
+        <a
+          class="sc-iBkjds cXbvnS"
+          href="/sitemap"
+        >
+          Site map
+        </a>
+        <a
+          class="sc-iBkjds cXbvnS"
+          href="/privacy-policy"
+        >
+          Privacy
+        </a>
+        <a
+          class="sc-iBkjds cXbvnS"
+          href="/login"
+        >
+          Login/Account
+        </a>
+        <a
+          class="sc-iBkjds cXbvnS"
+          href="/status"
+        >
+          Status
+        </a>
+      </div>
     </div>
   </footer>
 </div>
