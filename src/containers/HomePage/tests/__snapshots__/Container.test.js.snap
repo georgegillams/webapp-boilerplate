@@ -3,7 +3,8 @@
 exports[`<Home /> should render correctly 1`] = `
 <div>
   <div
-    class="page-container__container page-container__container--regular page-container__container--center"
+    class="sc-gsnTZi hEEhJm"
+    width="default"
   >
     <h1
       class="page-title__heading"
@@ -20,7 +21,7 @@ exports[`<Home /> should render correctly 1`] = `
         <br />
         This page is pretty boring, but the 
         <a
-          class="sc-ftvSup bvTsjB"
+          class="sc-papXJ gfSAJY"
           href="/sitemap"
         >
           site map
