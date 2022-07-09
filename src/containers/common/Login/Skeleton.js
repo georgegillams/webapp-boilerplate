@@ -21,11 +21,11 @@ const PageSkeleton = props => {
   );
 };
 
-Skeleton.propTypes = {
+PageSkeleton.propTypes = {
   className: PropTypes.string,
 };
 
-Skeleton.defaultProps = {
+PageSkeleton.defaultProps = {
   className: null,
 };
 
