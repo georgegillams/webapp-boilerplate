@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { SectionSkeleton, CompactCardSkeleton } from '@george-gillams/components/skeleton';
+import Skeleton, { SKELETON_STYLES } from '@george-gillams/components/skeleton';
 import STYLES from './admin-navigation.scss';
 import { cssModules } from '@george-gillams/components/helpers/cssModules';
 
 const getClassName = cssModules(STYLES);
 
-const Skeleton = props => {
+const PageSkeleton = props => {
   const { className } = props;
 
   const outerClassNames = [];
@@ -17,12 +17,12 @@ const Skeleton = props => {
 
   return (
     <div className={outerClassNames.join(' ')}>
-      <SectionSkeleton />
+      <Skeleton skeletonStyle={SKELETON_STYLES.section} />
       <div className={getClassName('admin-navigation__card-container')}>
-        <CompactCardSkeleton />
-        <CompactCardSkeleton />
-        <CompactCardSkeleton />
-        <CompactCardSkeleton />
+        <Skeleton skeletonStyle={SKELETON_STYLES.cardCompact} />
+        <Skeleton skeletonStyle={SKELETON_STYLES.cardCompact} />
+        <Skeleton skeletonStyle={SKELETON_STYLES.cardCompact} />
+        <Skeleton skeletonStyle={SKELETON_STYLES.cardCompact} />
       </div>
     </div>
   );
@@ -36,4 +36,4 @@ Skeleton.defaultProps = {
   className: null,
 };
 
-export default Skeleton;
+export default PageSkeleton;

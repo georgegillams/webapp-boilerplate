@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { SectionSkeleton, ButtonSkeleton } from '@george-gillams/components/skeleton';
+import Skeleton, { SKELETON_STYLES } from '@george-gillams/components/skeleton';
 
-const Skeleton = props => {
+const PageSkeleton = props => {
   const { className } = props;
 
   const outerClassNames = [];
@@ -13,9 +13,9 @@ const Skeleton = props => {
 
   return (
     <div className={outerClassNames.join(' ')}>
-      <SectionSkeleton />
-      <ButtonSkeleton style={{ marginTop: '1.2rem' }} />
-      <ButtonSkeleton />
+      <Skeleton skeletonStyle={SKELETON_STYLES.section} />
+      <Skeleton skeletonStyle={SKELETON_STYLES.button} style={{ marginTop: '1.2rem' }} />
+      <Skeleton skeletonStyle={SKELETON_STYLES.button} />
     </div>
   );
 };
@@ -28,4 +28,4 @@ Skeleton.defaultProps = {
   className: null,
 };
 
-export default Skeleton;
+export default PageSkeleton;
