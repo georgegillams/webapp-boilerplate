@@ -3,25 +3,25 @@
 exports[`<Home /> should render correctly 1`] = `
 <div>
   <div
-    class="sc-gsnTZi hEEhJm"
+    class="sc-breuTD kDsXBP"
     width="default"
   >
     <h1
-      class="page-title__heading"
+      class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
     >
       Home
     </h1>
     <div
-      class="subsection__outer"
+      class="sc-jqUVSM leXYdV"
     >
       <span
-        class="sc-bczRLJ bhVmoO"
+        class="sc-evZas FCsLq"
       >
         This is just a boilerplate page, but you can put any content you want in here.
         <br />
         This page is pretty boring, but the 
         <a
-          class="sc-papXJ gfSAJY"
+          class="sc-iBkjds kXOvCG"
           href="/sitemap"
         >
           site map
