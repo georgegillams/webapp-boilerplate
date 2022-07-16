@@ -3,21 +3,21 @@
 exports[`<SiteMap /> should render correctly 1`] = `
 <div>
   <h1
-    class="page-title__heading"
+    class="sc-bczRLJ hDLBIv sc-evZas iNesyD"
   >
     Site map
   </h1>
   <div
-    class="subsection__outer site-map__section"
+    class="sc-jqUVSM leXYdV site-map__section"
   >
-    <h3
-      class="subsection__heading"
+    <h1
+      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
       id="design-🎨"
     >
       Design 🎨
-    </h3>
+    </h1>
     <span
-      class="sc-jqUVSM iuHAUr"
+      class="sc-ksZaOG cQKWUS"
     >
       <a
         class="sc-iBkjds kXOvCG"
@@ -28,16 +28,16 @@ exports[`<SiteMap /> should render correctly 1`] = `
     </span>
   </div>
   <div
-    class="subsection__outer site-map__section"
+    class="sc-jqUVSM leXYdV site-map__section"
   >
-    <h3
-      class="subsection__heading"
+    <h1
+      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
       id="other-stuff-🤷‍♂️"
     >
       Other stuff 🤷‍♂️
-    </h3>
+    </h1>
     <span
-      class="sc-jqUVSM iuHAUr"
+      class="sc-ksZaOG cQKWUS"
     >
       <a
         class="sc-iBkjds kXOvCG"
@@ -55,16 +55,16 @@ exports[`<SiteMap /> should render correctly 1`] = `
     </span>
   </div>
   <div
-    class="subsection__outer site-map__section"
+    class="sc-jqUVSM leXYdV site-map__section"
   >
-    <h3
-      class="subsection__heading"
+    <h1
+      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
       id="random-🐉"
     >
       Random 🐉
-    </h3>
+    </h1>
     <span
-      class="sc-jqUVSM iuHAUr"
+      class="sc-ksZaOG cQKWUS"
     >
       <a
         aria-label="Robots.txt (opens in a new tab)"
@@ -132,16 +132,16 @@ exports[`<SiteMap /> should render correctly 1`] = `
     </span>
   </div>
   <div
-    class="subsection__outer site-map__section"
+    class="sc-jqUVSM leXYdV site-map__section"
   >
-    <h3
-      class="subsection__heading"
+    <h1
+      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
       id="api"
     >
       API
-    </h3>
+    </h1>
     <span
-      class="sc-jqUVSM iuHAUr"
+      class="sc-ksZaOG cQKWUS"
     >
       <a
         class="sc-iBkjds kXOvCG"
@@ -152,16 +152,16 @@ exports[`<SiteMap /> should render correctly 1`] = `
     </span>
   </div>
   <div
-    class="subsection__outer site-map__section"
+    class="sc-jqUVSM leXYdV site-map__section"
   >
-    <h3
-      class="subsection__heading"
+    <h1
+      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
       id="accounts-🔑"
     >
       Accounts 🔑
-    </h3>
+    </h1>
     <span
-      class="sc-jqUVSM iuHAUr"
+      class="sc-ksZaOG cQKWUS"
     >
       <a
         class="sc-iBkjds kXOvCG"
@@ -200,16 +200,16 @@ exports[`<SiteMap /> should render correctly 1`] = `
     </span>
   </div>
   <div
-    class="subsection__outer site-map__section"
+    class="sc-jqUVSM leXYdV site-map__section"
   >
-    <h3
-      class="subsection__heading"
+    <h1
+      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
       id="admin-👮‍♂️"
     >
       Admin 👮‍♂️
-    </h3>
+    </h1>
     <span
-      class="sc-jqUVSM iuHAUr"
+      class="sc-ksZaOG cQKWUS"
     >
       <a
         class="sc-iBkjds kXOvCG"
@@ -248,16 +248,16 @@ exports[`<SiteMap /> should render correctly 1`] = `
     </span>
   </div>
   <div
-    class="subsection__outer site-map__section"
+    class="sc-jqUVSM leXYdV site-map__section"
   >
-    <h3
-      class="subsection__heading"
+    <h1
+      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
       id="redirects"
     >
       Redirects
-    </h3>
+    </h1>
     <span
-      class="sc-jqUVSM iuHAUr"
+      class="sc-ksZaOG cQKWUS"
     >
       <div>
         <a
