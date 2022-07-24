@@ -115,7 +115,7 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
           </div>
           <a
             aria-label="Site map"
-            class="sc-breuTD HjQTU button__a"
+            class="sc-breuTD HjQTU"
             href="/sitemap"
           >
             <span
@@ -246,7 +246,7 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
           </div>
           <a
             aria-label="Site map"
-            class="sc-breuTD HjQTU button__a"
+            class="sc-breuTD HjQTU"
             href="/sitemap"
           >
             <span
@@ -377,7 +377,7 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
           </div>
           <a
             aria-label="Site map"
-            class="sc-breuTD HjQTU button__a"
+            class="sc-breuTD HjQTU"
             href="/sitemap"
           >
             <span
@@ -508,7 +508,7 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
           </div>
           <a
             aria-label="Site map"
-            class="sc-breuTD HjQTU button__a"
+            class="sc-breuTD HjQTU"
             href="/sitemap"
           >
             <span
