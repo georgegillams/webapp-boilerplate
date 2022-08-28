@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import PageContainer from 'components/common/PageContainer';
 import { cssModules } from '@george-gillams/components/helpers/cssModules';
 import Subsection from '@george-gillams/components/subsection';
 import Paragraph from '@george-gillams/components/paragraph';
@@ -10,14 +10,8 @@ import STYLES from './teapot.scss';
 const getClassName = cssModules(STYLES);
 
 const Teapot = props => {
-  const { className } = props;
-  const classNameFinal = [getClassName('not-found__container')];
-  if (className) {
-    classNameFinal.push(className);
-  }
-
   return (
-    <main id="main" className={classNameFinal.join(' ')}>
+    <PageContainer bottomPadding centred {...props}>
       <PageTitle className={getClassName('not-found__container')} name="Error 418 - I'm a teapot." pageTitle="418">
         <Subsection anchor={false}>
           <Paragraph>
@@ -25,16 +19,8 @@ const Teapot = props => {
           </Paragraph>
         </Subsection>
       </PageTitle>
-    </main>
+    </PageContainer>
   );
-};
-
-Teapot.propTypes = {
-  className: PropTypes.string,
-};
-
-Teapot.defaultProps = {
-  className: null,
 };
 
 export default Teapot;

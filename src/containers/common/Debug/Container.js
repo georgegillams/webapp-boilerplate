@@ -9,6 +9,7 @@ import {
   DEBUG_SHOW_PAGE_CONTAINER_KEY,
   DEBUG_SHOW_DEBUG_INFORMATION_KEY,
 } from '@george-gillams/webapp/helpers/storageConstants';
+import PageContainer from 'components/common/PageContainer';
 
 const getClassName = cssModules(STYLES);
 
@@ -45,7 +46,7 @@ StatusControl.propTypes = {
 };
 
 const Debug = props => (
-  <div {...props}>
+  <PageContainer bottomPadding {...props}>
     <PageTitle anchor={false} name="Debug">
       <StatusControl
         className={getClassName('debug__checkbox')}
@@ -59,7 +60,7 @@ const Debug = props => (
       />
       <Paragraph>Note that changes will not take effect until you reload the page.</Paragraph>
     </PageTitle>
-  </div>
+  </PageContainer>
 );
 
 export default Debug;

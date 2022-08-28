@@ -10,6 +10,7 @@ import CookiesRequired from 'containers/common/CookiesRequired';
 import { withRouter } from 'next/router';
 import { REDIRECT_REGEX } from '@george-gillams/webapp/helpers/regexConstants';
 import { CONSENT_STATE_ALLOWED } from 'containers/common/Consent/constants';
+import PageContainer from 'components/common/PageContainer';
 
 const MagicLogin = props => {
   const [loginAttempted, setLoginAttempted] = useState(false);
@@ -22,8 +23,6 @@ const MagicLogin = props => {
     consentState,
     magicLoginState,
     authenticatorState,
-
-    className,
   } = props;
 
   const { logInError, logInResult } = magicLoginState;
@@ -44,12 +43,6 @@ const MagicLogin = props => {
 
   const success = user && logInResult && !logInError;
 
-  const outerClassNames = [];
-
-  if (className) {
-    outerClassNames.push(className);
-  }
-
   let redirectLocation = 'account';
   if (success) {
     if (router && router.query) {
@@ -64,7 +57,7 @@ const MagicLogin = props => {
   }
 
   return (
-    <div className={outerClassNames.join(' ')}>
+    <PageContainer bottomPadding>
       <CookiesRequired reason={'log in'} />
       <PageTitle name={success ? 'Logged in' : 'Logging in'}>
         {success && (
@@ -88,7 +81,7 @@ const MagicLogin = props => {
           magicLoginState,
         }}
       />
-    </div>
+    </PageContainer>
   );
 };
 
@@ -113,14 +106,12 @@ MagicLogin.propTypes = {
   consentState: PropTypes.shape({
     cookieConsent: PropTypes.string,
   }).isRequired,
-  className: PropTypes.string,
 };
 
 MagicLogin.defaultProps = {
   router: null,
   authenticatorState: null,
   magicLoginState: null,
-  className: null,
 };
 
 export default withRouter(MagicLogin);

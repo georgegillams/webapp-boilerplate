@@ -31,6 +31,7 @@
     "start:test": "cross-env PORT=9001 PROJECT_UNDER_TEST=true yarn start",
     "start:aws": "yarn start",
     "test": "cross-env jest --coverage && (cd gg-webapp && yarn test)",
+    "test:update": "cross-env jest -u --coverage && (cd gg-webapp && yarn test -u)",
     "test:watch": "cross-env jest --watchAll",
     "test:debug": "node --inspect node_modules/.bin/jest --runInBand --watchAll",
     "backstopjs:test": "yarn start:test & (sleep 15 && node ./scripts/backstopjs/backstop.js)",

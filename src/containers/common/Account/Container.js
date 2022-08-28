@@ -1,4 +1,5 @@
 import React from 'react';
+import PageContainer from 'components/common/PageContainer';
 import PropTypes from 'prop-types';
 import PageTitle from 'components/common/PageTitle';
 import LoadingCover from '@george-gillams/components/loading-cover';
@@ -23,23 +24,15 @@ const Account = props => {
 
     accountState,
     authenticatorState,
-
-    className,
   } = props;
   const { user } = authenticatorState;
-
-  const outerClassNames = [];
-
-  if (className) {
-    outerClassNames.push(className);
-  }
 
   const showEmail = user && user.email;
   const showUname = user && user.uname;
   const showUserDetails = showEmail || showUname;
 
   const page = (
-    <div className={outerClassNames.join(' ')}>
+    <PageContainer bottomPadding>
       <LoggedInOnly
         user={authenticatorState.user}
         setLoginRedirect={() => {
@@ -82,7 +75,7 @@ const Account = props => {
           </div>
         </PageTitle>
       </LoggedInOnly>
-    </div>
+    </PageContainer>
   );
 
   return (
@@ -116,13 +109,11 @@ Account.propTypes = {
   authenticatorState: PropTypes.shape({
     user: PropTypes.object,
   }).isRequired,
-  className: PropTypes.string,
 };
 
 Account.defaultProps = {
   authenticatorState: null,
   logoutState: null,
-  className: null,
 };
 
 export default Account;

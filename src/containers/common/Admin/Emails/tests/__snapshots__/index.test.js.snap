@@ -3,7 +3,9 @@
 exports[`<AdminEmails /> should render correctly - index 1`] = `
 <div>
   <div
-    class=""
+    aria-label="Loading"
+    class="sc-llJcti bkkie page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="default"
   >
     <div
       class="sc-ksZaOG duCsur"
@@ -14,7 +16,7 @@ exports[`<AdminEmails /> should render correctly - index 1`] = `
       />
     </div>
     <div
-      class="sc-ksZaOG fJrBYQ"
+      class="sc-ksZaOG gPHHop"
       style="margin-top: 1.2rem;"
     >
       <div
@@ -23,7 +25,7 @@ exports[`<AdminEmails /> should render correctly - index 1`] = `
       />
     </div>
     <div
-      class="sc-ksZaOG fJrBYQ"
+      class="sc-ksZaOG gPHHop"
       style="margin-top: 1.2rem;"
     >
       <div
@@ -32,7 +34,7 @@ exports[`<AdminEmails /> should render correctly - index 1`] = `
       />
     </div>
     <div
-      class="sc-ksZaOG fJrBYQ"
+      class="sc-ksZaOG gPHHop"
       style="margin-top: 1.2rem;"
     >
       <div
@@ -41,7 +43,7 @@ exports[`<AdminEmails /> should render correctly - index 1`] = `
       />
     </div>
     <div
-      class="sc-ksZaOG fJrBYQ"
+      class="sc-ksZaOG gPHHop"
       style="margin-top: 1.2rem;"
     >
       <div
@@ -268,7 +270,9 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
 exports[`<AdminEmails /> should render correctly with initial state 1`] = `
 <div>
   <div
-    class=""
+    aria-label="Loading"
+    class="sc-llJcti bkkie page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="default"
   >
     <div
       class="sc-ksZaOG duCsur"
@@ -279,7 +283,7 @@ exports[`<AdminEmails /> should render correctly with initial state 1`] = `
       />
     </div>
     <div
-      class="sc-ksZaOG fJrBYQ"
+      class="sc-ksZaOG gPHHop"
       style="margin-top: 1.2rem;"
     >
       <div
@@ -288,7 +292,7 @@ exports[`<AdminEmails /> should render correctly with initial state 1`] = `
       />
     </div>
     <div
-      class="sc-ksZaOG fJrBYQ"
+      class="sc-ksZaOG gPHHop"
       style="margin-top: 1.2rem;"
     >
       <div
@@ -297,7 +301,7 @@ exports[`<AdminEmails /> should render correctly with initial state 1`] = `
       />
     </div>
     <div
-      class="sc-ksZaOG fJrBYQ"
+      class="sc-ksZaOG gPHHop"
       style="margin-top: 1.2rem;"
     >
       <div
@@ -306,7 +310,7 @@ exports[`<AdminEmails /> should render correctly with initial state 1`] = `
       />
     </div>
     <div
-      class="sc-ksZaOG fJrBYQ"
+      class="sc-ksZaOG gPHHop"
       style="margin-top: 1.2rem;"
     >
       <div
@@ -354,7 +358,7 @@ exports[`<AdminEmails /> should render correctly with loadError 1`] = `
     class="sc-dmRaPn bsyMtp"
   >
     <span
-      class="sc-llJcti gTNJdJ"
+      class="sc-iIPllB chcucH"
     >
       Could not load emails
       <br />

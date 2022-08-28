@@ -2,24 +2,24 @@
 
 exports[`<Teapot /> should render correctly 1`] = `
 <div>
-  <main
-    class="not-found__container"
-    id="main"
+  <div
+    class="sc-bczRLJ eVJKhe page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="default"
   >
     <h1
-      class="sc-bczRLJ hDLBIv sc-breuTD iUaPig not-found__container"
+      class="sc-gsnTZi hUDWSp sc-ksZaOG UTWGT not-found__container"
     >
       Error 418 - I'm a teapot.
     </h1>
     <div
-      class="sc-jqUVSM leXYdV"
+      class="sc-kDDrLX iNAFzC"
     >
       <span
-        class="sc-evZas FCsLq"
+        class="sc-breuTD fxMIXR"
       >
         Coffee cannot be brewed inside a teapot context. The resulting entity body MAY be short and stout.
       </span>
     </div>
-  </main>
+  </div>
 </div>
 `;

@@ -13,6 +13,7 @@ import CookiesRequired from 'containers/common/CookiesRequired';
 import { CONSENT_STATE_ALLOWED } from 'containers/common/Consent/constants';
 import STYLES from './sign-up.scss';
 import { cssModules } from '@george-gillams/components/helpers/cssModules';
+import PageContainer from 'components/common/PageContainer';
 
 const getClassName = cssModules(STYLES);
 
@@ -25,14 +26,8 @@ const SignUp = props => {
     consentState,
     signUpState,
     authenticatorState,
-
-    className,
   } = props;
-  const outerClassNames = [];
 
-  if (className) {
-    outerClassNames.push(className);
-  }
   let preSubmitText = null;
   if (signUpState.signUpResult && signUpState.signUpResult.success) {
     preSubmitText = signUpState.signUpResult.success;
@@ -43,7 +38,7 @@ const SignUp = props => {
 
   // We shouldn't allow a user to sign up unless cookies are consented to
   const page = (
-    <div className={outerClassNames.join(' ')}>
+    <PageContainer bottomPadding>
       <CookiesRequired reason={'sign up'} />
       <LoggedOutOnly user={authenticatorState.user}>
         <PageTitle name="Sign up">
@@ -65,7 +60,7 @@ const SignUp = props => {
           </TextLink>
         </PageTitle>
       </LoggedOutOnly>
-    </div>
+    </PageContainer>
   );
 
   return (
@@ -98,13 +93,11 @@ SignUp.propTypes = {
   consentState: PropTypes.shape({
     cookieConsent: PropTypes.string,
   }).isRequired,
-  className: PropTypes.string,
 };
 
 SignUp.defaultProps = {
   authenticatorState: null,
   signUpState: null,
-  className: null,
 };
 
 export default SignUp;

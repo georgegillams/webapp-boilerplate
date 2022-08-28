@@ -2,9 +2,12 @@
 
 exports[`<Status /> should render correctly 1`] = `
 <div>
-  <div>
+  <div
+    class="sc-bczRLJ ikoAiL page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="default"
+  >
     <h1
-      class="sc-bczRLJ hDLBIv sc-breuTD iUaPig"
+      class="sc-gsnTZi hUDWSp sc-ksZaOG UTWGT"
     >
       Status
     </h1>
@@ -20,36 +23,36 @@ exports[`<Status /> should render correctly 1`] = `
       src="https://img.shields.io/david/GITHUB_REPO"
     />
     <div
-      class="sc-jqUVSM leXYdV pages__component"
+      class="sc-kDDrLX iNAFzC pages__component"
     >
       <span
-        class="sc-evZas FCsLq"
+        class="sc-breuTD fxMIXR"
       >
         Built 
-        about 52 years ago
+        over 52 years ago
         <br />
         Started 
-        about 52 years ago
+        over 52 years ago
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV pages__component"
+      class="sc-kDDrLX iNAFzC pages__component"
     >
       <span
-        class="sc-evZas FCsLq"
+        class="sc-breuTD fxMIXR"
       >
         Environment 
         test-node-env
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV pages__component"
+      class="sc-kDDrLX iNAFzC pages__component"
     >
       <div
-        class="sc-jqUVSM leXYdV sc-hAZoDl kWJBEH"
+        class="sc-kDDrLX iNAFzC sc-fnykZs bskKYg"
       >
         <h1
-          class="sc-gsnTZi cTWewb sc-crXcEl jisdVx"
+          class="sc-dkzDqf iBtyHU sc-evZas cCtlkt"
           id="app-config"
         >
           App config

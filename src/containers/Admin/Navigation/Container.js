@@ -1,4 +1,5 @@
 import React from 'react';
+import PageContainer from 'components/common/PageContainer';
 import PropTypes from 'prop-types';
 import PageTitle from 'components/common/PageTitle';
 import DebugObject from 'components/common/DebugObject';
@@ -16,21 +17,11 @@ import { AdminOnly } from 'components/common/Walls';
 const getClassName = cssModules(STYLES);
 
 const AdminNavigation = props => {
-  const {
-    authenticatorState,
-
-    className,
-  } = props;
+  const { authenticatorState } = props;
   const { user } = authenticatorState;
 
-  const outerClassNames = [];
-
-  if (className) {
-    outerClassNames.push(className);
-  }
-
   const page = (
-    <div className={outerClassNames.join(' ')}>
+    <PageContainer bottomPadding>
       <AdminOnly
         user={user}
         setLoginRedirect={() => {
@@ -81,7 +72,7 @@ const AdminNavigation = props => {
           </div>
         </PageTitle>
       </AdminOnly>
-    </div>
+    </PageContainer>
   );
 
   return (
@@ -102,11 +93,8 @@ AdminNavigation.propTypes = {
     user: PropTypes.object,
     loadAuthError: PropTypes.object,
   }).isRequired,
-  className: PropTypes.string,
 };
 
-AdminNavigation.defaultProps = {
-  className: null,
-};
+AdminNavigation.defaultProps = {};
 
 export default AdminNavigation;

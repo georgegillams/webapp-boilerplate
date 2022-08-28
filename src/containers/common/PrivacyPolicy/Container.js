@@ -1,4 +1,5 @@
 import React from 'react';
+import PageContainer from 'components/common/PageContainer';
 import PageTitle from 'components/common/PageTitle';
 import Paragraph from '@george-gillams/components/paragraph';
 
@@ -7,7 +8,7 @@ import TextLink from 'components/common/TextLink';
 
 const PrivacyPolicy = () => {
   return (
-    <>
+    <PageContainer bottomPadding>
       <PageTitle name="Privacy policy">
         <Subsection name="Analytics">
           <Paragraph>
@@ -57,7 +58,7 @@ const PrivacyPolicy = () => {
           </Paragraph>
         </Subsection>
       </PageTitle>
-    </>
+    </PageContainer>
   );
 };
 
