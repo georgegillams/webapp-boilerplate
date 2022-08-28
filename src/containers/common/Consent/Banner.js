@@ -20,8 +20,6 @@ Banner.propTypes = {
   className: PropTypes.string,
 };
 
-Banner.defaultProps = {
-  className: null,
-};
+Banner.defaultProps = { className: null };
 
 export default Banner;

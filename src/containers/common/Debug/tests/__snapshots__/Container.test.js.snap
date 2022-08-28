@@ -2,7 +2,10 @@
 
 exports[`<Debug /> should render correctly 1`] = `
 <div>
-  <div>
+  <div
+    class="sc-fnykZs cNMYuP page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="default"
+  >
     <h1
       class="sc-iBkjds nWKoN sc-ksZaOG UTWGT"
     >

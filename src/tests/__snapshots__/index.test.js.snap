@@ -7,25 +7,25 @@ exports[`<HomePage /> should render correctly 1`] = `
     id="main"
   >
     <div
-      class="sc-breuTD kDsXBP"
+      class="sc-bczRLJ eVJKhe page-containerstyles__StyledPageContainer-sc-19l7k4-0"
       width="default"
     >
       <h1
-        class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
+        class="sc-gsnTZi hUDWSp sc-ksZaOG UTWGT"
       >
         Home
       </h1>
       <div
-        class="sc-jqUVSM leXYdV"
+        class="sc-kDDrLX iNAFzC"
       >
         <span
-          class="sc-evZas FCsLq"
+          class="sc-breuTD fxMIXR"
         >
           This is just a boilerplate page, but you can put any content you want in here.
           <br />
           This page is pretty boring, but the 
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-ftvSup bvTsjB"
             href="/sitemap"
           >
             site map
@@ -59,7 +59,7 @@ exports[`<HomePage /> should render correctly 1`] = `
       class="footerstyles__StyledTechSpecs-sc-ojjd19-2 hLmmol"
     >
       <span
-        class="sc-evZas FCsLq tech-specsstyles__StyledParagraph-sc-1ysn53a-0 glkFZI"
+        class="sc-breuTD fxMIXR tech-specsstyles__StyledParagraph-sc-1ysn53a-0 glkFZI"
       >
         Built in
         <a
@@ -113,25 +113,25 @@ exports[`<HomePage /> should render correctly 1`] = `
         class="footer-navstyles__Section-sc-7lmnsj-1 iFmILp"
       >
         <a
-          class="sc-iBkjds cXbvnS"
+          class="sc-ftvSup dMEDbl"
           href="/sitemap"
         >
           Site map
         </a>
         <a
-          class="sc-iBkjds cXbvnS"
+          class="sc-ftvSup dMEDbl"
           href="/privacy-policy"
         >
           Privacy
         </a>
         <a
-          class="sc-iBkjds cXbvnS"
+          class="sc-ftvSup dMEDbl"
           href="/login"
         >
           Login/Account
         </a>
         <a
-          class="sc-iBkjds cXbvnS"
+          class="sc-ftvSup dMEDbl"
           href="/status"
         >
           Status

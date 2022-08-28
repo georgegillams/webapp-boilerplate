@@ -16,6 +16,7 @@ import { cssModules } from '@george-gillams/components/helpers/cssModules';
 import STYLES from './admin-notifications.scss';
 import useTabMadeVisible from 'client-utils/common/useTabMadeVisible';
 import { CreateNotificationForm } from 'components/common/Forms';
+import PageContainer from 'components/common/PageContainer';
 
 const getClassName = cssModules(STYLES);
 
@@ -54,7 +55,7 @@ const AdminNotifications = props => {
   );
 
   return (
-    <>
+    <PageContainer bottomPadding>
       <LoadingCover
         loadingSkeleton={Skeleton}
         loading={authenticatorState.user === undefined}
@@ -99,7 +100,7 @@ const AdminNotifications = props => {
           newNotification,
         }}
       />
-    </>
+    </PageContainer>
   );
 };
 

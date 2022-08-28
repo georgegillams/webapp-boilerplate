@@ -2,7 +2,7 @@ import React from 'react';
 
 import CSSHack from 'components/common/CSSHack';
 import Status from 'containers/common/Status';
-import LegacyCommonLayout from 'components/common/LegacyCommonLayout';
+import CommonLayout from 'components/common/CommonLayout';
 import appConfig from 'helpers/appConfig';
 import getConfig from 'next/config';
 
@@ -12,7 +12,7 @@ const { builtAt, nodeEnv } = appConfig;
 
 const Page = props => {
   return (
-    <LegacyCommonLayout>
+    <CommonLayout>
       <CSSHack pageName="status" />
       <Status
         appConfig={appConfig}
@@ -21,7 +21,7 @@ const Page = props => {
         nodeEnv={nodeEnv}
         {...props}
       />
-    </LegacyCommonLayout>
+    </CommonLayout>
   );
 };
 

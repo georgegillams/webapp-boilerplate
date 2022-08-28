@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import PageContainer from 'components/common/PageContainer';
 import { cssModules } from '@george-gillams/components/helpers/cssModules';
 import Subsection from '@george-gillams/components/subsection';
 import Paragraph from '@george-gillams/components/paragraph';
@@ -11,14 +11,8 @@ import STYLES from './not-found.scss';
 const getClassName = cssModules(STYLES);
 
 const NotFound = props => {
-  const { className } = props;
-  const classNameFinal = [getClassName('not-found__container')];
-  if (className) {
-    classNameFinal.push(className);
-  }
-
   return (
-    <div className={classNameFinal.join(' ')}>
+    <PageContainer bottomPadding centred {...props}>
       <PageTitle className={getClassName('not-found__container')} name="Oops." pageTitle="404">
         <Subsection anchor={false}>
           <Paragraph>
@@ -28,16 +22,8 @@ const NotFound = props => {
           </Paragraph>
         </Subsection>
       </PageTitle>
-    </div>
+    </PageContainer>
   );
-};
-
-NotFound.propTypes = {
-  className: PropTypes.string,
-};
-
-NotFound.defaultProps = {
-  className: null,
 };
 
 export default NotFound;

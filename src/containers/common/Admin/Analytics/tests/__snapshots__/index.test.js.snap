@@ -3,7 +3,9 @@
 exports[`<AdminAnalytics /> should render correctly - index 1`] = `
 <div>
   <div
-    class=""
+    aria-label="Loading"
+    class="sc-kgflAQ iUfyyg page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="default"
   >
     <div
       class="sc-ksZaOG duCsur"
@@ -150,7 +152,9 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
 exports[`<AdminAnalytics /> should render correctly with initial state 1`] = `
 <div>
   <div
-    class=""
+    aria-label="Loading"
+    class="sc-kgflAQ iUfyyg page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="default"
   >
     <div
       class="sc-ksZaOG duCsur"
@@ -245,7 +249,7 @@ exports[`<AdminAnalytics /> should render correctly with loadError 1`] = `
     class="sc-dmRaPn bsyMtp"
   >
     <span
-      class="sc-fLlhyt fMlfLK"
+      class="sc-bBrHrO feHweS"
     >
       Could not load analytics
       <br />

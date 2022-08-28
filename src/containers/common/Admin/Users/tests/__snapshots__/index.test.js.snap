@@ -3,7 +3,9 @@
 exports[`<AdminUsers /> should render correctly - index 1`] = `
 <div>
   <div
-    class=""
+    aria-label="Loading"
+    class="sc-llJcti bkkie page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="default"
   >
     <div
       class="sc-ksZaOG duCsur"
@@ -14,7 +16,7 @@ exports[`<AdminUsers /> should render correctly - index 1`] = `
       />
     </div>
     <div
-      class="sc-ksZaOG fJrBYQ"
+      class="sc-ksZaOG gPHHop"
       style="margin-top: 1.2rem;"
     >
       <div
@@ -23,7 +25,7 @@ exports[`<AdminUsers /> should render correctly - index 1`] = `
       />
     </div>
     <div
-      class="sc-ksZaOG fJrBYQ"
+      class="sc-ksZaOG gPHHop"
       style="margin-top: 1.2rem;"
     >
       <div
@@ -32,7 +34,7 @@ exports[`<AdminUsers /> should render correctly - index 1`] = `
       />
     </div>
     <div
-      class="sc-ksZaOG fJrBYQ"
+      class="sc-ksZaOG gPHHop"
       style="margin-top: 1.2rem;"
     >
       <div
@@ -41,7 +43,7 @@ exports[`<AdminUsers /> should render correctly - index 1`] = `
       />
     </div>
     <div
-      class="sc-ksZaOG fJrBYQ"
+      class="sc-ksZaOG gPHHop"
       style="margin-top: 1.2rem;"
     >
       <div
@@ -308,7 +310,9 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
 exports[`<AdminUsers /> should render correctly with initial state 1`] = `
 <div>
   <div
-    class=""
+    aria-label="Loading"
+    class="sc-llJcti bkkie page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="default"
   >
     <div
       class="sc-ksZaOG duCsur"
@@ -319,7 +323,7 @@ exports[`<AdminUsers /> should render correctly with initial state 1`] = `
       />
     </div>
     <div
-      class="sc-ksZaOG fJrBYQ"
+      class="sc-ksZaOG gPHHop"
       style="margin-top: 1.2rem;"
     >
       <div
@@ -328,7 +332,7 @@ exports[`<AdminUsers /> should render correctly with initial state 1`] = `
       />
     </div>
     <div
-      class="sc-ksZaOG fJrBYQ"
+      class="sc-ksZaOG gPHHop"
       style="margin-top: 1.2rem;"
     >
       <div
@@ -337,7 +341,7 @@ exports[`<AdminUsers /> should render correctly with initial state 1`] = `
       />
     </div>
     <div
-      class="sc-ksZaOG fJrBYQ"
+      class="sc-ksZaOG gPHHop"
       style="margin-top: 1.2rem;"
     >
       <div
@@ -346,7 +350,7 @@ exports[`<AdminUsers /> should render correctly with initial state 1`] = `
       />
     </div>
     <div
-      class="sc-ksZaOG fJrBYQ"
+      class="sc-ksZaOG gPHHop"
       style="margin-top: 1.2rem;"
     >
       <div
@@ -403,7 +407,7 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
     class="sc-dmRaPn bsyMtp"
   >
     <span
-      class="sc-iAvgwm dBVnUW"
+      class="sc-efBctP jFDViT"
     >
       Could not load users
       <br />

@@ -16,8 +16,6 @@ const Analytics = props => {
 
     analyticState,
     consentState,
-
-    className,
   } = props;
 
   const constructAnalytic = () => {
@@ -69,21 +67,14 @@ const Analytics = props => {
     }
   }, [consentState]);
 
-  const outerClassNames = [];
-
-  if (className) {
-    outerClassNames.push(className);
-  }
-
   return (
-    <div className={outerClassNames.join(' ')}>
+    <div>
       <DebugObject
         debugTitle="Analytics"
         debugObject={{
           sendAnalytic,
           analyticState,
           consentState,
-          className,
         }}
       />
     </div>
@@ -100,12 +91,10 @@ Analytics.propTypes = {
     sending: PropTypes.bool,
     sendError: PropTypes.object,
   }).isRequired,
-  className: PropTypes.string,
 };
 
 Analytics.defaultProps = {
   router: null,
-  className: null,
 };
 
 export default withRouter(Analytics);

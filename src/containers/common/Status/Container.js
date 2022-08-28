@@ -1,4 +1,5 @@
 import React from 'react';
+import PageContainer from 'components/common/PageContainer';
 import PropTypes from 'prop-types';
 import { cssModules } from '@george-gillams/components/helpers/cssModules';
 import Subsection from '@george-gillams/components/subsection';
@@ -16,7 +17,7 @@ const Status = props => {
   const { appConfig, startedAt, builtAt, nodeEnv, ...rest } = props;
 
   return (
-    <div {...rest}>
+    <PageContainer bottomPadding {...rest}>
       <PageTitle anchor={false} name="Status">
         <img
           className={getClassName('style__component')}
@@ -43,7 +44,7 @@ const Status = props => {
           <DebugObject debugObject={appConfig} debugTitle="App config"></DebugObject>
         </Subsection>
       </PageTitle>
-    </div>
+    </PageContainer>
   );
 };
 
