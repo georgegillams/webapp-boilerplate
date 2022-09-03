@@ -6,7 +6,7 @@ import lockPromise from 'server-utils/common/lock';
 
 let primaryColor = '#44AEFF';
 let primaryColorFaded = '#E5F4FF';
-let logoHtml = '<img src="https://i.imgur.com/EBMKBux.png" style="width: 7rem;">';
+let logoHtml = '<img src="https://i.imgur.com/WT002z4.png" style="width: 2.6rem;">';
 let buttonColor = '#025ca2';
 
 const EMAIL_HTML_BUTTON_STYLE = `background-color: ${buttonColor};padding: 0.6rem 1.2rem;color: white;border-radius: 0.25rem;text-decoration: none;`;

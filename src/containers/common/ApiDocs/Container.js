@@ -3,35 +3,31 @@ import PageContainer from 'components/common/PageContainer';
 import Paragraph from '@george-gillams/components/paragraph';
 import PageTitle from 'components/common/PageTitle';
 import TextLink from 'components/common/TextLink';
-import { cssModules } from '@george-gillams/components/helpers/cssModules';
-import { Table, Head, Body, Row, Cell } from '@george-gillams/components/table';
-import { VerticalScrollContainer } from './container.styles';
+import { Head, Body, Row, Cell } from '@george-gillams/components/table';
+import { VerticalScrollContainer, Description, Method, StyledTable } from './api-docs.styles';
 
-import STYLES from './api-docs.scss';
 import apiStructure from 'helpers/common/apiStructureWithDescriptions';
-
-const getClassName = cssModules(STYLES);
 
 const Container = () => (
   <PageContainer bottomPadding>
     <PageTitle name="API docs">
       <VerticalScrollContainer>
-        <Table className={getClassName('api-docs__table')}>
+        <StyledTable>
           <Head>
             <Row>
-              <Cell className={getClassName('api-docs__cell')}>
+              <Cell>
                 <Paragraph padding={false}>Path</Paragraph>
               </Cell>
-              <Cell className={getClassName('api-docs__cell')}>
+              <Cell>
                 <Paragraph padding={false}>Method</Paragraph>
               </Cell>
-              <Cell className={getClassName('api-docs__cell')}>
+              <Cell>
                 <Paragraph padding={false}>Arguments</Paragraph>
               </Cell>
-              <Cell className={getClassName('api-docs__cell')}>
+              <Cell>
                 <Paragraph padding={false}>Authorisation</Paragraph>
               </Cell>
-              <Cell className={getClassName('api-docs__cell')}>
+              <Cell>
                 <Paragraph padding={false}>Description</Paragraph>
               </Cell>
             </Row>
@@ -41,32 +37,28 @@ const Container = () => (
               const apiCapability = apiStructure[key];
               return (
                 <Row key={key}>
-                  <Cell className={getClassName('api-docs__cell')}>
+                  <Cell>
                     <TextLink href={apiCapability.fullPath} hrefExternal>
                       {apiCapability.path}
                     </TextLink>
                   </Cell>
-                  <Cell className={getClassName('api-docs__cell')}>
-                    <Paragraph padding={false} className={getClassName('api-docs__method')}>
-                      {apiCapability.method}
-                    </Paragraph>
+                  <Cell>
+                    <Method padding={false}>{apiCapability.method}</Method>
                   </Cell>
-                  <Cell className={getClassName('api-docs__cell')}>
+                  <Cell>
                     <Paragraph padding={false}>{apiCapability.arguments}</Paragraph>
                   </Cell>
-                  <Cell className={getClassName('api-docs__cell')}>
+                  <Cell>
                     <Paragraph padding={false}>{apiCapability.authorisation}</Paragraph>
                   </Cell>
-                  <Cell className={getClassName('api-docs__cell')}>
-                    <Paragraph padding={false} className={getClassName('api-docs__description')}>
-                      {apiCapability.description}
-                    </Paragraph>
+                  <Cell>
+                    <Description padding={false}>{apiCapability.description}</Description>
                   </Cell>
                 </Row>
               );
             })}
           </Body>
-        </Table>
+        </StyledTable>
       </VerticalScrollContainer>
     </PageTitle>
   </PageContainer>

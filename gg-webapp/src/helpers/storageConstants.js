@@ -1,11 +1,13 @@
 const DEBUG_SHOW_DEBUG_INFORMATION_KEY = 'showSessionDebugViews';
 const DEBUG_SHOW_PAGE_CONTAINER_KEY = 'showLegacyPageContainerDebugColor';
 const POST_LOGIN_REDIRECT_LOCATION_KEY = 'post-login-redirect-location';
-const PRIVACY_PREFERENCES_KEY = 'privacy_preferences_v2';
-const SESSION_COOKIE_KEY = 'session_v2';
+const VERSION = 3;
+const PRIVACY_PREFERENCES_KEY = `privacy_preferences_v${VERSION}`;
+const SESSION_COOKIE_KEY = `session_v${VERSION}`;
 const COOKIE_EXPIRY_TIME = 24 * 60 * 60 * 100 * 1000; // 100 days
 
 export {
+  VERSION,
   DEBUG_SHOW_DEBUG_INFORMATION_KEY,
   DEBUG_SHOW_PAGE_CONTAINER_KEY,
   POST_LOGIN_REDIRECT_LOCATION_KEY,
@@ -14,6 +16,7 @@ export {
   COOKIE_EXPIRY_TIME,
 };
 export default {
+  VERSION,
   DEBUG_SHOW_DEBUG_INFORMATION_KEY,
   DEBUG_SHOW_PAGE_CONTAINER_KEY,
   POST_LOGIN_REDIRECT_LOCATION_KEY,

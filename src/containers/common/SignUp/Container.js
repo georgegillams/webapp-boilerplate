@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import TextLink from 'components/common/TextLink';
 import PageTitle from 'components/common/PageTitle';
 import DebugObject from 'components/common/DebugObject';
 import LoadingCover from '@george-gillams/components/loading-cover';
@@ -8,14 +7,9 @@ import LoadingCover from '@george-gillams/components/loading-cover';
 import Skeleton from './Skeleton';
 
 import { LoggedOutOnly } from 'components/common/Walls';
-import { SignUpForm } from 'components/common/Forms';
-import CookiesRequired from 'containers/common/CookiesRequired';
-import { CONSENT_STATE_ALLOWED } from 'containers/common/Consent/constants';
-import STYLES from './sign-up.scss';
-import { cssModules } from '@george-gillams/components/helpers/cssModules';
 import PageContainer from 'components/common/PageContainer';
-
-const getClassName = cssModules(STYLES);
+import { StyledSignUpForm, StyledTextLink } from './sign-up.styles';
+import { VStack } from 'components/common/Stacks';
 
 const SignUp = props => {
   const [credentials, setCredentials] = useState({});
@@ -23,7 +17,6 @@ const SignUp = props => {
   const {
     signUp,
 
-    consentState,
     signUpState,
     authenticatorState,
   } = props;
@@ -39,25 +32,21 @@ const SignUp = props => {
   // We shouldn't allow a user to sign up unless cookies are consented to
   const page = (
     <PageContainer bottomPadding>
-      <CookiesRequired reason={'sign up'} />
       <LoggedOutOnly user={authenticatorState.user}>
         <PageTitle name="Sign up">
-          <SignUpForm
-            className={getClassName('sign-up__form')}
-            disabled={consentState.cookieConsent !== CONSENT_STATE_ALLOWED}
+          <StyledSignUpForm
             loading={signUpState.signingUp}
             credentials={credentials}
             onDataChanged={setCredentials}
             onSubmit={() => {
-              if (consentState.cookieConsent === CONSENT_STATE_ALLOWED) {
-                signUp(credentials);
-              }
+              signUp(credentials);
             }}
             preSubmitText={preSubmitText}
           />
-          <TextLink className={getClassName('sign-up__link')} href="/login">
-            Already got an account? Login here.
-          </TextLink>
+          <VStack>
+            <StyledTextLink href="/login">Already got an account? Login here.</StyledTextLink>
+            <StyledTextLink href="/privacy">Privacy policy</StyledTextLink>
+          </VStack>
         </PageTitle>
       </LoggedOutOnly>
     </PageContainer>
@@ -89,9 +78,6 @@ SignUp.propTypes = {
   }).isRequired,
   authenticatorState: PropTypes.shape({
     user: PropTypes.object,
-  }).isRequired,
-  consentState: PropTypes.shape({
-    cookieConsent: PropTypes.string,
   }).isRequired,
 };
 

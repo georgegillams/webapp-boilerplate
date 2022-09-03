@@ -12,12 +12,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
       API docs
     </h1>
     <div
-      class="containerstyles__VerticalScrollContainer-sc-5r33nx-0 imDakp"
+      class="api-docsstyles__VerticalScrollContainer-sc-4t6xyo-3 kgPUAS"
     >
       <table
-        cellpadding="4"
-        cellspacing="4"
-        class="sc-evZas eGVtFK api-docs__table"
+        class="api-docsstyles__StyledTable-sc-4t6xyo-0 gBkxaf"
       >
         <thead
           class="sc-breuTD VMYjy"
@@ -26,7 +24,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="sc-hAZoDl"
           >
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
@@ -35,7 +33,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
@@ -44,7 +42,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
@@ -53,7 +51,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
@@ -62,7 +60,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
@@ -79,7 +77,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="sc-hAZoDl"
           >
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <a
                 aria-label="/analytics/create (opens in a new tab)"
@@ -107,23 +105,23 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__method"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
               />
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
@@ -132,10 +130,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__description"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
               >
                 Registers information about the page navigated to
               </span>
@@ -145,7 +143,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="sc-hAZoDl"
           >
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <a
                 aria-label="/analytics/load-all (opens in a new tab)"
@@ -173,23 +171,23 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__method"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
               >
                 GET
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
               />
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
@@ -198,10 +196,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__description"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
               >
                 Loads all raw analytic points
               </span>
@@ -211,7 +209,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="sc-hAZoDl"
           >
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <a
                 aria-label="/analytics/load (opens in a new tab)"
@@ -239,23 +237,23 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__method"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
               >
                 GET
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
               />
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
@@ -264,10 +262,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__description"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
               >
                 Loads a summary of unique analytic points
               </span>
@@ -277,7 +275,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="sc-hAZoDl"
           >
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <a
                 aria-label="/auth/load (opens in a new tab)"
@@ -305,23 +303,23 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__method"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
               >
                 GET
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
               />
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
@@ -330,10 +328,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__description"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
               >
                 Loads the currently authenticated used. Returns null if signed out
               </span>
@@ -343,7 +341,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="sc-hAZoDl"
           >
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <a
                 aria-label="/auth/logout (opens in a new tab)"
@@ -371,23 +369,23 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__method"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
               />
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
@@ -396,10 +394,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__description"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
               >
                 Logs out the currently authenticated user
               </span>
@@ -409,7 +407,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="sc-hAZoDl"
           >
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <a
                 aria-label="/auth/request-verification-email (opens in a new tab)"
@@ -437,23 +435,23 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__method"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
               />
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
@@ -462,10 +460,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__description"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
               >
                 Resends an email verification email
               </span>
@@ -475,7 +473,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="sc-hAZoDl"
           >
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <a
                 aria-label="/auth/verify-email (opens in a new tab)"
@@ -503,23 +501,23 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__method"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
               />
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
@@ -528,10 +526,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__description"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
               >
                 Verify an email address with a secret verification key
               </span>
@@ -541,7 +539,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="sc-hAZoDl"
           >
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <a
                 aria-label="/emails/load (opens in a new tab)"
@@ -569,23 +567,23 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__method"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
               >
                 GET
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
               />
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
@@ -594,10 +592,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__description"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
               >
                 Loads emails that have been sent
               </span>
@@ -607,7 +605,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="sc-hAZoDl"
           >
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <a
                 aria-label="/emails/resend (opens in a new tab)"
@@ -635,23 +633,23 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__method"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
               />
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
@@ -660,10 +658,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__description"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
               >
                 Resends an email that's stored in the database
               </span>
@@ -673,7 +671,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="sc-hAZoDl"
           >
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <a
                 aria-label="/magic-links/login (opens in a new tab)"
@@ -701,23 +699,23 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__method"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
               />
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
@@ -726,10 +724,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__description"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
               >
                 Login using a secret magic-link key
               </span>
@@ -739,7 +737,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="sc-hAZoDl"
           >
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <a
                 aria-label="/magic-links/request (opens in a new tab)"
@@ -767,23 +765,23 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__method"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
               />
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
@@ -792,10 +790,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__description"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
               >
                 Request a magic link for a given account using the account's email address
               </span>
@@ -805,7 +803,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="sc-hAZoDl"
           >
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <a
                 aria-label="/data-management/backup (opens in a new tab)"
@@ -833,23 +831,23 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__method"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
               >
                 GET
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
               />
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
@@ -858,10 +856,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__description"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
               >
                 Returns a file containing a full data backup for the site
               </span>
@@ -871,7 +869,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="sc-hAZoDl"
           >
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <a
                 aria-label="/data-management/delete-entity (opens in a new tab)"
@@ -899,23 +897,23 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__method"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
               />
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
@@ -924,10 +922,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__description"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
               >
                 Remove a previously deleted entity completely from the DB
               </span>
@@ -937,7 +935,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="sc-hAZoDl"
           >
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <a
                 aria-label="/data-management/delete-set (opens in a new tab)"
@@ -965,23 +963,23 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__method"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
               />
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
@@ -990,10 +988,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__description"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
               >
                 Remove an entire collection from the DB
               </span>
@@ -1003,7 +1001,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="sc-hAZoDl"
           >
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <a
                 aria-label="/data-management/restore (opens in a new tab)"
@@ -1031,23 +1029,23 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__method"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
               />
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
@@ -1056,10 +1054,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__description"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
               >
                 Restore all the data from a backup file
               </span>
@@ -1069,7 +1067,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="sc-hAZoDl"
           >
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <a
                 aria-label="/notifications/create (opens in a new tab)"
@@ -1097,23 +1095,23 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__method"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
               />
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
@@ -1122,10 +1120,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__description"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
               >
                 Creates a notification which will be show at the top of the site
               </span>
@@ -1135,7 +1133,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="sc-hAZoDl"
           >
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <a
                 aria-label="/notifications/delete (opens in a new tab)"
@@ -1163,23 +1161,23 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__method"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
               />
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
@@ -1188,10 +1186,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__description"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
               >
                 Deletes a notification
               </span>
@@ -1201,7 +1199,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="sc-hAZoDl"
           >
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <a
                 aria-label="/notifications/load-all (opens in a new tab)"
@@ -1229,23 +1227,23 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__method"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
               >
                 GET
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
               />
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
@@ -1254,10 +1252,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__description"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
               >
                 Load all notifications
               </span>
@@ -1267,7 +1265,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="sc-hAZoDl"
           >
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <a
                 aria-label="/notifications/load/:id (opens in a new tab)"
@@ -1295,33 +1293,33 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__method"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
               >
                 GET
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
               />
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
               />
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__description"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
               />
             </th>
           </tr>
@@ -1329,7 +1327,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="sc-hAZoDl"
           >
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <a
                 aria-label="/notifications/update (opens in a new tab)"
@@ -1357,23 +1355,23 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__method"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
               />
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
@@ -1382,10 +1380,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__description"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
               >
                 Update a given notification
               </span>
@@ -1395,7 +1393,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="sc-hAZoDl"
           >
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <a
                 aria-label="/users/create (opens in a new tab)"
@@ -1423,23 +1421,23 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__method"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
               />
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
@@ -1448,10 +1446,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__description"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
               >
                 Create a user
               </span>
@@ -1461,7 +1459,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="sc-hAZoDl"
           >
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <a
                 aria-label="/users/delete (opens in a new tab)"
@@ -1489,23 +1487,23 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__method"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
               />
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
@@ -1514,10 +1512,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__description"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
               >
                 Delete a user
               </span>
@@ -1527,7 +1525,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="sc-hAZoDl"
           >
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <a
                 aria-label="/users/load (opens in a new tab)"
@@ -1555,23 +1553,23 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__method"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
               >
                 GET
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
               />
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
@@ -1580,10 +1578,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__description"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
               >
                 Load a given user
               </span>
@@ -1593,7 +1591,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="sc-hAZoDl"
           >
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <a
                 aria-label="/users/load-all (opens in a new tab)"
@@ -1621,23 +1619,23 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__method"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
               >
                 GET
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
               />
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
@@ -1646,10 +1644,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__description"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
               >
                 Load all users
               </span>
@@ -1659,7 +1657,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="sc-hAZoDl"
           >
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <a
                 aria-label="/users/sign-up (opens in a new tab)"
@@ -1687,23 +1685,23 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__method"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
               />
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
@@ -1712,10 +1710,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__description"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
               >
                 Create a user, and sign in as that user at the same time
               </span>
@@ -1725,7 +1723,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="sc-hAZoDl"
           >
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <a
                 aria-label="/users/update (opens in a new tab)"
@@ -1753,23 +1751,23 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__method"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
               />
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
                 class="sc-gsnTZi fzWRHm"
@@ -1778,10 +1776,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-fnykZs geZTSW api-docs__cell"
+              class="sc-fnykZs geZTSW"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docs__description"
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
               >
                 Update a given user
               </span>

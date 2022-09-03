@@ -3,15 +3,12 @@ import PropTypes from 'prop-types';
 import Checkbox from '@george-gillams/components/checkbox';
 import Paragraph from '@george-gillams/components/paragraph';
 import PageTitle from 'components/common/PageTitle';
-import STYLES from './debug.scss';
-import { cssModules } from '@george-gillams/components/helpers/cssModules';
 import {
   DEBUG_SHOW_PAGE_CONTAINER_KEY,
   DEBUG_SHOW_DEBUG_INFORMATION_KEY,
 } from '@george-gillams/webapp/helpers/storageConstants';
 import PageContainer from 'components/common/PageContainer';
-
-const getClassName = cssModules(STYLES);
+import { VStack } from 'components/common/Stacks';
 
 const StatusControl = props => {
   const { name, storageKey, ...rest } = props;
@@ -48,17 +45,11 @@ StatusControl.propTypes = {
 const Debug = props => (
   <PageContainer bottomPadding {...props}>
     <PageTitle anchor={false} name="Debug">
-      <StatusControl
-        className={getClassName('debug__checkbox')}
-        name="Show session debug views"
-        storageKey={DEBUG_SHOW_DEBUG_INFORMATION_KEY}
-      />
-      <StatusControl
-        className={getClassName('debug__checkbox')}
-        name="Show page container debug colours"
-        storageKey={DEBUG_SHOW_PAGE_CONTAINER_KEY}
-      />
-      <Paragraph>Note that changes will not take effect until you reload the page.</Paragraph>
+      <VStack topPadding>
+        <StatusControl name="Show session debug views" storageKey={DEBUG_SHOW_DEBUG_INFORMATION_KEY} />
+        <StatusControl name="Show page container debug colours" storageKey={DEBUG_SHOW_PAGE_CONTAINER_KEY} />
+        <Paragraph>Note that changes will not take effect until you reload the page.</Paragraph>
+      </VStack>
     </PageTitle>
   </PageContainer>
 );

@@ -74,9 +74,11 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
       Admin users
     </h1>
   </div>
-  <div>
+  <div
+    class="stackstyles__StyledHStack-sc-1m733wj-1 ilBDHD"
+  >
     <button
-      class="sc-bjUoiL hCXTDD admin-users__button"
+      class="sc-bjUoiL hCXTDD outer"
       type="button"
     >
       <span
@@ -86,7 +88,7 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
       </span>
     </button>
     <button
-      class="sc-bjUoiL hCXTDD admin-users__button"
+      class="sc-bjUoiL hCXTDD outer"
       type="button"
     >
       <span
@@ -97,27 +99,29 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
     </button>
   </div>
   <div
-    class="split-detail-view__outer admin-users__split-view"
+    class="split-detail-viewstyles__Outer-sc-1o7lavp-0 dsmGNQ"
   >
     <div
-      class="split-detail-view__list-view"
+      class="split-detail-viewstyles__ListView-sc-1o7lavp-1 dlOQM"
     >
-      <div>
+      <div
+        class="stackstyles__StyledVStack-sc-1m733wj-0 hxKxqM"
+      >
         <a
-          class="sc-fLlhyt gUuuPa admin-users__card"
+          class="sc-kgflAQ dsjsur"
           href="/admin/users?highlight=new"
         >
           <div
-            class="sc-bBrHrO kKyHOq"
+            class="sc-fLlhyt jAThyu"
           >
             <div
-              class="sc-ivTmOn jdfdye"
+              class="sc-bBrHrO cfVxES"
             />
             <div
-              class="sc-cxabCf eoTWlP"
+              class="sc-ivTmOn cgbBSF"
             >
               <div
-                class="split-detail-item__content"
+                class="split-detail-itemstyles__Item-sc-5gess9-0 cHrFus"
               >
                 <div
                   class="sc-iqcoie fvEXqf"
@@ -158,9 +162,11 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
       Admin users
     </h1>
   </div>
-  <div>
+  <div
+    class="stackstyles__StyledHStack-sc-1m733wj-1 ilBDHD"
+  >
     <button
-      class="sc-bjUoiL hCXTDD admin-users__button"
+      class="sc-bjUoiL hCXTDD outer"
       type="button"
     >
       <span
@@ -170,7 +176,7 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
       </span>
     </button>
     <button
-      class="sc-bjUoiL hCXTDD admin-users__button"
+      class="sc-bjUoiL hCXTDD outer"
       type="button"
     >
       <span
@@ -181,27 +187,29 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
     </button>
   </div>
   <div
-    class="split-detail-view__outer admin-users__split-view"
+    class="split-detail-viewstyles__Outer-sc-1o7lavp-0 dsmGNQ"
   >
     <div
-      class="split-detail-view__list-view"
+      class="split-detail-viewstyles__ListView-sc-1o7lavp-1 dlOQM"
     >
-      <div>
+      <div
+        class="stackstyles__StyledVStack-sc-1m733wj-0 hxKxqM"
+      >
         <a
-          class="sc-fLlhyt gUuuPa admin-users__card"
+          class="sc-kgflAQ dsjsur"
           href="/admin/users?highlight=new"
         >
           <div
-            class="sc-bBrHrO kKyHOq"
+            class="sc-fLlhyt jAThyu"
           >
             <div
-              class="sc-ivTmOn jdfdye"
+              class="sc-bBrHrO cfVxES"
             />
             <div
-              class="sc-cxabCf eoTWlP"
+              class="sc-ivTmOn cgbBSF"
             >
               <div
-                class="split-detail-item__content"
+                class="split-detail-itemstyles__Item-sc-5gess9-0 cHrFus"
               >
                 <div
                   class="sc-iqcoie fvEXqf"
@@ -242,9 +250,11 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
       Admin users
     </h1>
   </div>
-  <div>
+  <div
+    class="stackstyles__StyledHStack-sc-1m733wj-1 ilBDHD"
+  >
     <button
-      class="sc-bjUoiL hCXTDD admin-users__button"
+      class="sc-bjUoiL hCXTDD outer"
       type="button"
     >
       <span
@@ -254,7 +264,7 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
       </span>
     </button>
     <button
-      class="sc-bjUoiL hCXTDD admin-users__button"
+      class="sc-bjUoiL hCXTDD outer"
       type="button"
     >
       <span
@@ -265,27 +275,29 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
     </button>
   </div>
   <div
-    class="split-detail-view__outer admin-users__split-view"
+    class="split-detail-viewstyles__Outer-sc-1o7lavp-0 dsmGNQ"
   >
     <div
-      class="split-detail-view__list-view"
+      class="split-detail-viewstyles__ListView-sc-1o7lavp-1 dlOQM"
     >
-      <div>
+      <div
+        class="stackstyles__StyledVStack-sc-1m733wj-0 hxKxqM"
+      >
         <a
-          class="sc-fLlhyt gUuuPa admin-users__card"
+          class="sc-kgflAQ dsjsur"
           href="/admin/users?highlight=new"
         >
           <div
-            class="sc-bBrHrO kKyHOq"
+            class="sc-fLlhyt jAThyu"
           >
             <div
-              class="sc-ivTmOn jdfdye"
+              class="sc-bBrHrO cfVxES"
             />
             <div
-              class="sc-cxabCf eoTWlP"
+              class="sc-ivTmOn cgbBSF"
             >
               <div
-                class="split-detail-item__content"
+                class="split-detail-itemstyles__Item-sc-5gess9-0 cHrFus"
               >
                 <div
                   class="sc-iqcoie fvEXqf"
@@ -381,9 +393,11 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
       Admin users
     </h1>
   </div>
-  <div>
+  <div
+    class="stackstyles__StyledHStack-sc-1m733wj-1 ilBDHD"
+  >
     <button
-      class="sc-bjUoiL hCXTDD admin-users__button"
+      class="sc-bjUoiL hCXTDD outer"
       type="button"
     >
       <span
@@ -393,7 +407,7 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
       </span>
     </button>
     <button
-      class="sc-bjUoiL hCXTDD admin-users__button"
+      class="sc-bjUoiL hCXTDD outer"
       type="button"
     >
       <span
@@ -404,7 +418,7 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
     </button>
   </div>
   <span
-    class="sc-dmRaPn bsyMtp"
+    class="sc-cxabCf BrPUk"
   >
     <span
       class="sc-efBctP jFDViT"
@@ -415,27 +429,29 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
     </span>
   </span>
   <div
-    class="split-detail-view__outer admin-users__split-view"
+    class="split-detail-viewstyles__Outer-sc-1o7lavp-0 dsmGNQ"
   >
     <div
-      class="split-detail-view__list-view"
+      class="split-detail-viewstyles__ListView-sc-1o7lavp-1 dlOQM"
     >
-      <div>
+      <div
+        class="stackstyles__StyledVStack-sc-1m733wj-0 hxKxqM"
+      >
         <a
-          class="sc-fLlhyt gUuuPa admin-users__card"
+          class="sc-kgflAQ dsjsur"
           href="/admin/users?highlight=new"
         >
           <div
-            class="sc-bBrHrO kKyHOq"
+            class="sc-fLlhyt jAThyu"
           >
             <div
-              class="sc-ivTmOn jdfdye"
+              class="sc-bBrHrO cfVxES"
             />
             <div
-              class="sc-cxabCf eoTWlP"
+              class="sc-ivTmOn cgbBSF"
             >
               <div
-                class="split-detail-item__content"
+                class="split-detail-itemstyles__Item-sc-5gess9-0 cHrFus"
               >
                 <div
                   class="sc-iqcoie fvEXqf"
@@ -476,9 +492,11 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
       Admin users
     </h1>
   </div>
-  <div>
+  <div
+    class="stackstyles__StyledHStack-sc-1m733wj-1 ilBDHD"
+  >
     <button
-      class="sc-bjUoiL kQkTFv admin-users__button"
+      class="sc-bjUoiL kQkTFv outer"
       disabled=""
       type="button"
     >
@@ -522,7 +540,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
       </div>
     </button>
     <button
-      class="sc-bjUoiL hCXTDD admin-users__button"
+      class="sc-bjUoiL hCXTDD outer"
       type="button"
     >
       <span
@@ -533,27 +551,29 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
     </button>
   </div>
   <div
-    class="split-detail-view__outer admin-users__split-view"
+    class="split-detail-viewstyles__Outer-sc-1o7lavp-0 dsmGNQ"
   >
     <div
-      class="split-detail-view__list-view"
+      class="split-detail-viewstyles__ListView-sc-1o7lavp-1 dlOQM"
     >
-      <div>
+      <div
+        class="stackstyles__StyledVStack-sc-1m733wj-0 hxKxqM"
+      >
         <a
-          class="sc-fLlhyt gUuuPa admin-users__card"
+          class="sc-kgflAQ dsjsur"
           href="/admin/users?highlight=new"
         >
           <div
-            class="sc-bBrHrO kKyHOq"
+            class="sc-fLlhyt jAThyu"
           >
             <div
-              class="sc-ivTmOn jdfdye"
+              class="sc-bBrHrO cfVxES"
             />
             <div
-              class="sc-cxabCf eoTWlP"
+              class="sc-ivTmOn cgbBSF"
             >
               <div
-                class="split-detail-item__content"
+                class="split-detail-itemstyles__Item-sc-5gess9-0 cHrFus"
               >
                 <div
                   class="sc-iqcoie fvEXqf"
@@ -594,9 +614,11 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
       Admin users
     </h1>
   </div>
-  <div>
+  <div
+    class="stackstyles__StyledHStack-sc-1m733wj-1 ilBDHD"
+  >
     <button
-      class="sc-bjUoiL hCXTDD admin-users__button"
+      class="sc-bjUoiL hCXTDD outer"
       type="button"
     >
       <span
@@ -606,7 +628,7 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
       </span>
     </button>
     <button
-      class="sc-bjUoiL hCXTDD admin-users__button"
+      class="sc-bjUoiL hCXTDD outer"
       type="button"
     >
       <span
@@ -617,27 +639,29 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
     </button>
   </div>
   <div
-    class="split-detail-view__outer admin-users__split-view"
+    class="split-detail-viewstyles__Outer-sc-1o7lavp-0 dsmGNQ"
   >
     <div
-      class="split-detail-view__list-view"
+      class="split-detail-viewstyles__ListView-sc-1o7lavp-1 dlOQM"
     >
-      <div>
+      <div
+        class="stackstyles__StyledVStack-sc-1m733wj-0 hxKxqM"
+      >
         <a
-          class="sc-fLlhyt gUuuPa admin-users__card"
+          class="sc-kgflAQ dsjsur"
           href="/admin/users?highlight=new"
         >
           <div
-            class="sc-bBrHrO kKyHOq"
+            class="sc-fLlhyt jAThyu"
           >
             <div
-              class="sc-ivTmOn jdfdye"
+              class="sc-bBrHrO cfVxES"
             />
             <div
-              class="sc-cxabCf eoTWlP"
+              class="sc-ivTmOn cgbBSF"
             >
               <div
-                class="split-detail-item__content"
+                class="split-detail-itemstyles__Item-sc-5gess9-0 cHrFus"
               >
                 <div
                   class="sc-iqcoie fvEXqf"
@@ -678,9 +702,11 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
       Admin users
     </h1>
   </div>
-  <div>
+  <div
+    class="stackstyles__StyledHStack-sc-1m733wj-1 ilBDHD"
+  >
     <button
-      class="sc-bjUoiL hCXTDD admin-users__button"
+      class="sc-bjUoiL hCXTDD outer"
       type="button"
     >
       <span
@@ -690,7 +716,7 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
       </span>
     </button>
     <button
-      class="sc-bjUoiL hCXTDD admin-users__button"
+      class="sc-bjUoiL hCXTDD outer"
       type="button"
     >
       <span
@@ -701,27 +727,29 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
     </button>
   </div>
   <div
-    class="split-detail-view__outer admin-users__split-view"
+    class="split-detail-viewstyles__Outer-sc-1o7lavp-0 dsmGNQ"
   >
     <div
-      class="split-detail-view__list-view"
+      class="split-detail-viewstyles__ListView-sc-1o7lavp-1 dlOQM"
     >
-      <div>
+      <div
+        class="stackstyles__StyledVStack-sc-1m733wj-0 hxKxqM"
+      >
         <a
-          class="sc-fLlhyt gUuuPa admin-users__card"
+          class="sc-kgflAQ dsjsur"
           href="/admin/users?highlight=new"
         >
           <div
-            class="sc-bBrHrO kKyHOq"
+            class="sc-fLlhyt jAThyu"
           >
             <div
-              class="sc-ivTmOn jdfdye"
+              class="sc-bBrHrO cfVxES"
             />
             <div
-              class="sc-cxabCf eoTWlP"
+              class="sc-ivTmOn cgbBSF"
             >
               <div
-                class="split-detail-item__content"
+                class="split-detail-itemstyles__Item-sc-5gess9-0 cHrFus"
               >
                 <div
                   class="sc-iqcoie fvEXqf"
@@ -762,9 +790,11 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
       Admin users
     </h1>
   </div>
-  <div>
+  <div
+    class="stackstyles__StyledHStack-sc-1m733wj-1 ilBDHD"
+  >
     <button
-      class="sc-bjUoiL hCXTDD admin-users__button"
+      class="sc-bjUoiL hCXTDD outer"
       type="button"
     >
       <span
@@ -774,7 +804,7 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
       </span>
     </button>
     <button
-      class="sc-bjUoiL hCXTDD admin-users__button"
+      class="sc-bjUoiL hCXTDD outer"
       type="button"
     >
       <span
@@ -785,27 +815,29 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
     </button>
   </div>
   <div
-    class="split-detail-view__outer admin-users__split-view"
+    class="split-detail-viewstyles__Outer-sc-1o7lavp-0 dsmGNQ"
   >
     <div
-      class="split-detail-view__list-view"
+      class="split-detail-viewstyles__ListView-sc-1o7lavp-1 dlOQM"
     >
-      <div>
+      <div
+        class="stackstyles__StyledVStack-sc-1m733wj-0 hxKxqM"
+      >
         <a
-          class="sc-fLlhyt gUuuPa admin-users__card"
+          class="sc-kgflAQ dsjsur"
           href="/admin/users?highlight=new"
         >
           <div
-            class="sc-bBrHrO kKyHOq"
+            class="sc-fLlhyt jAThyu"
           >
             <div
-              class="sc-ivTmOn jdfdye"
+              class="sc-bBrHrO cfVxES"
             />
             <div
-              class="sc-cxabCf eoTWlP"
+              class="sc-ivTmOn cgbBSF"
             >
               <div
-                class="split-detail-item__content"
+                class="split-detail-itemstyles__Item-sc-5gess9-0 cHrFus"
               >
                 <div
                   class="sc-iqcoie fvEXqf"
@@ -846,9 +878,11 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
       Admin users
     </h1>
   </div>
-  <div>
+  <div
+    class="stackstyles__StyledHStack-sc-1m733wj-1 ilBDHD"
+  >
     <button
-      class="sc-bjUoiL hCXTDD admin-users__button"
+      class="sc-bjUoiL hCXTDD outer"
       type="button"
     >
       <span
@@ -858,7 +892,7 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
       </span>
     </button>
     <button
-      class="sc-bjUoiL hCXTDD admin-users__button"
+      class="sc-bjUoiL hCXTDD outer"
       type="button"
     >
       <span
@@ -869,27 +903,29 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
     </button>
   </div>
   <div
-    class="split-detail-view__outer admin-users__split-view"
+    class="split-detail-viewstyles__Outer-sc-1o7lavp-0 dsmGNQ"
   >
     <div
-      class="split-detail-view__list-view"
+      class="split-detail-viewstyles__ListView-sc-1o7lavp-1 dlOQM"
     >
-      <div>
+      <div
+        class="stackstyles__StyledVStack-sc-1m733wj-0 hxKxqM"
+      >
         <a
-          class="sc-fLlhyt gUuuPa admin-users__card"
+          class="sc-kgflAQ dsjsur"
           href="/admin/users?highlight=new"
         >
           <div
-            class="sc-bBrHrO kKyHOq"
+            class="sc-fLlhyt jAThyu"
           >
             <div
-              class="sc-ivTmOn jdfdye"
+              class="sc-bBrHrO cfVxES"
             />
             <div
-              class="sc-cxabCf eoTWlP"
+              class="sc-ivTmOn cgbBSF"
             >
               <div
-                class="split-detail-item__content"
+                class="split-detail-itemstyles__Item-sc-5gess9-0 cHrFus"
               >
                 <div
                   class="sc-iqcoie fvEXqf"
@@ -930,9 +966,11 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
       Admin users
     </h1>
   </div>
-  <div>
+  <div
+    class="stackstyles__StyledHStack-sc-1m733wj-1 ilBDHD"
+  >
     <button
-      class="sc-bjUoiL hCXTDD admin-users__button"
+      class="sc-bjUoiL hCXTDD outer"
       type="button"
     >
       <span
@@ -942,7 +980,7 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
       </span>
     </button>
     <button
-      class="sc-bjUoiL hCXTDD admin-users__button"
+      class="sc-bjUoiL hCXTDD outer"
       type="button"
     >
       <span
@@ -953,27 +991,29 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
     </button>
   </div>
   <div
-    class="split-detail-view__outer admin-users__split-view"
+    class="split-detail-viewstyles__Outer-sc-1o7lavp-0 dsmGNQ"
   >
     <div
-      class="split-detail-view__list-view"
+      class="split-detail-viewstyles__ListView-sc-1o7lavp-1 dlOQM"
     >
-      <div>
+      <div
+        class="stackstyles__StyledVStack-sc-1m733wj-0 hxKxqM"
+      >
         <a
-          class="sc-fLlhyt gUuuPa admin-users__card"
+          class="sc-kgflAQ dsjsur"
           href="/admin/users?highlight=new"
         >
           <div
-            class="sc-bBrHrO kKyHOq"
+            class="sc-fLlhyt jAThyu"
           >
             <div
-              class="sc-ivTmOn jdfdye"
+              class="sc-bBrHrO cfVxES"
             />
             <div
-              class="sc-cxabCf eoTWlP"
+              class="sc-ivTmOn cgbBSF"
             >
               <div
-                class="split-detail-item__content"
+                class="split-detail-itemstyles__Item-sc-5gess9-0 cHrFus"
               >
                 <div
                   class="sc-iqcoie fvEXqf"
@@ -1014,9 +1054,11 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
       Admin users
     </h1>
   </div>
-  <div>
+  <div
+    class="stackstyles__StyledHStack-sc-1m733wj-1 ilBDHD"
+  >
     <button
-      class="sc-bjUoiL hCXTDD admin-users__button"
+      class="sc-bjUoiL hCXTDD outer"
       type="button"
     >
       <span
@@ -1026,7 +1068,7 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
       </span>
     </button>
     <button
-      class="sc-bjUoiL hCXTDD admin-users__button"
+      class="sc-bjUoiL hCXTDD outer"
       type="button"
     >
       <span
@@ -1037,27 +1079,29 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
     </button>
   </div>
   <div
-    class="split-detail-view__outer admin-users__split-view"
+    class="split-detail-viewstyles__Outer-sc-1o7lavp-0 dsmGNQ"
   >
     <div
-      class="split-detail-view__list-view"
+      class="split-detail-viewstyles__ListView-sc-1o7lavp-1 dlOQM"
     >
-      <div>
+      <div
+        class="stackstyles__StyledVStack-sc-1m733wj-0 hxKxqM"
+      >
         <a
-          class="sc-fLlhyt gUuuPa admin-users__card"
+          class="sc-kgflAQ dsjsur"
           href="/admin/users?highlight=new"
         >
           <div
-            class="sc-bBrHrO kKyHOq"
+            class="sc-fLlhyt jAThyu"
           >
             <div
-              class="sc-ivTmOn jdfdye"
+              class="sc-bBrHrO cfVxES"
             />
             <div
-              class="sc-cxabCf eoTWlP"
+              class="sc-ivTmOn cgbBSF"
             >
               <div
-                class="split-detail-item__content"
+                class="split-detail-itemstyles__Item-sc-5gess9-0 cHrFus"
               >
                 <div
                   class="sc-iqcoie fvEXqf"
@@ -1091,7 +1135,7 @@ exports[`<AdminUsers /> should render correctly with user 1`] = `
       Admin only
     </h1>
     <span
-      class="sc-dmRaPn bsyMtp"
+      class="sc-cxabCf BrPUk"
     >
       You need to be logged in with an admin account to view this content.
       <br />
@@ -1125,9 +1169,11 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
       Admin users
     </h1>
   </div>
-  <div>
+  <div
+    class="stackstyles__StyledHStack-sc-1m733wj-1 ilBDHD"
+  >
     <button
-      class="sc-bjUoiL hCXTDD admin-users__button"
+      class="sc-bjUoiL hCXTDD outer"
       type="button"
     >
       <span
@@ -1137,7 +1183,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
       </span>
     </button>
     <button
-      class="sc-bjUoiL hCXTDD admin-users__button"
+      class="sc-bjUoiL hCXTDD outer"
       type="button"
     >
       <span
@@ -1148,7 +1194,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
     </button>
   </div>
   <span
-    class="sc-dmRaPn bsyMtp admin-analytics__count"
+    class="sc-cxabCf BrPUk admin-usersstyles__Count-sc-1qwrqg1-0 jJBuWT"
   >
     Showing 
     3
@@ -1157,27 +1203,29 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
      users
   </span>
   <div
-    class="split-detail-view__outer admin-users__split-view"
+    class="split-detail-viewstyles__Outer-sc-1o7lavp-0 dsmGNQ"
   >
     <div
-      class="split-detail-view__list-view"
+      class="split-detail-viewstyles__ListView-sc-1o7lavp-1 dlOQM"
     >
-      <div>
+      <div
+        class="stackstyles__StyledVStack-sc-1m733wj-0 hxKxqM"
+      >
         <a
-          class="sc-fLlhyt gUuuPa admin-users__card"
+          class="sc-kgflAQ dsjsur"
           href="/admin/users?highlight=new"
         >
           <div
-            class="sc-bBrHrO kKyHOq"
+            class="sc-fLlhyt jAThyu"
           >
             <div
-              class="sc-ivTmOn jdfdye"
+              class="sc-bBrHrO cfVxES"
             />
             <div
-              class="sc-cxabCf eoTWlP"
+              class="sc-ivTmOn cgbBSF"
             >
               <div
-                class="split-detail-item__content"
+                class="split-detail-itemstyles__Item-sc-5gess9-0 cHrFus"
               >
                 <div
                   class="sc-iqcoie fvEXqf"
@@ -1194,21 +1242,21 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
           </div>
         </a>
         <a
-          class="sc-fLlhyt gUuuPa admin-users__card"
+          class="sc-kgflAQ dsjsur"
           href="/admin/users?highlight=1"
           id="1"
         >
           <div
-            class="sc-bBrHrO kKyHOq"
+            class="sc-fLlhyt jAThyu"
           >
             <div
-              class="sc-ivTmOn jdfdye"
+              class="sc-bBrHrO cfVxES"
             />
             <div
-              class="sc-cxabCf eoTWlP"
+              class="sc-ivTmOn cgbBSF"
             >
               <div
-                class="split-detail-item__content"
+                class="split-detail-itemstyles__Item-sc-5gess9-0 cHrFus"
               >
                 <div
                   class="sc-iqcoie fvEXqf"
@@ -1220,7 +1268,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
                     name
                   </h1>
                   <span
-                    class="sc-dmRaPn bsyMtp"
+                    class="sc-cxabCf BrPUk"
                   >
                     <br />
                     id: 
@@ -1232,21 +1280,21 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
           </div>
         </a>
         <a
-          class="sc-fLlhyt gUuuPa admin-users__card"
+          class="sc-kgflAQ dsjsur"
           href="/admin/users?highlight=2"
           id="2"
         >
           <div
-            class="sc-bBrHrO kKyHOq"
+            class="sc-fLlhyt jAThyu"
           >
             <div
-              class="sc-ivTmOn jdfdye"
+              class="sc-bBrHrO cfVxES"
             />
             <div
-              class="sc-cxabCf eoTWlP"
+              class="sc-ivTmOn cgbBSF"
             >
               <div
-                class="split-detail-item__content"
+                class="split-detail-itemstyles__Item-sc-5gess9-0 cHrFus"
               >
                 <div
                   class="sc-iqcoie fvEXqf"
@@ -1258,7 +1306,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
                     another
                   </h1>
                   <span
-                    class="sc-dmRaPn bsyMtp"
+                    class="sc-cxabCf BrPUk"
                   >
                     <br />
                     id: 
@@ -1270,21 +1318,21 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
           </div>
         </a>
         <a
-          class="sc-fLlhyt gUuuPa admin-users__card"
+          class="sc-kgflAQ dsjsur"
           href="/admin/users?highlight=3"
           id="3"
         >
           <div
-            class="sc-bBrHrO kKyHOq"
+            class="sc-fLlhyt jAThyu"
           >
             <div
-              class="sc-ivTmOn jdfdye"
+              class="sc-bBrHrO cfVxES"
             />
             <div
-              class="sc-cxabCf eoTWlP"
+              class="sc-ivTmOn cgbBSF"
             >
               <div
-                class="split-detail-item__content"
+                class="split-detail-itemstyles__Item-sc-5gess9-0 cHrFus"
               >
                 <div
                   class="sc-iqcoie fvEXqf"
@@ -1296,7 +1344,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
                     a third
                   </h1>
                   <span
-                    class="sc-dmRaPn bsyMtp"
+                    class="sc-cxabCf BrPUk"
                   >
                     <br />
                     id: 

@@ -7,28 +7,24 @@ exports[`<NotFound /> should render correctly 1`] = `
     width="default"
   >
     <h1
-      class="sc-gsnTZi hUDWSp sc-ksZaOG UTWGT not-found__container"
+      class="sc-dkzDqf grUNba sc-iqcoie fulViU"
     >
       Oops.
     </h1>
-    <div
-      class="sc-kDDrLX iNAFzC"
+    <span
+      class="sc-gsnTZi bUAnoQ"
     >
-      <span
-        class="sc-breuTD fxMIXR"
+      The page you're looking for doesn't exist, or you don't have permission to view it.
+      <br />
+      Maybe the 
+      <a
+        class="sc-papXJ gfSAJY"
+        href="/sitemap"
       >
-        The page you're looking for doesn't exist, or you don't have permission to view it.
-        <br />
-        Maybe the 
-        <a
-          class="sc-ftvSup bvTsjB"
-          href="/sitemap"
-        >
-          site map
-        </a>
-         can help
-      </span>
-    </div>
+        site map
+      </a>
+       can help
+    </span>
   </div>
 </div>
 `;

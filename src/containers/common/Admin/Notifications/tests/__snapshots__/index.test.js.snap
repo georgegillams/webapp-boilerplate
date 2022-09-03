@@ -176,18 +176,19 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
         </span>
       </button>
     </div>
-    <div>
-      <button
-        class="sc-bjUoiL hCXTDD admin-notifications__control"
-        type="button"
+    <button
+      class="sc-bjUoiL hCXTDD outer"
+      type="button"
+    >
+      <span
+        class="sc-dIouRR ixIogl"
       >
-        <span
-          class="sc-dIouRR ixIogl"
-        >
-          Reload notifications
-        </span>
-      </button>
-    </div>
+        Reload notifications
+      </span>
+    </button>
+    <div
+      class="stackstyles__StyledVStack-sc-1m733wj-0 dejFMJ"
+    />
   </div>
 </div>
 `;
@@ -368,29 +369,31 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
         </span>
       </button>
     </div>
-    <div>
-      <button
-        class="sc-bjUoiL hCXTDD admin-notifications__control"
-        type="button"
-      >
-        <span
-          class="sc-dIouRR ixIogl"
-        >
-          Reload notifications
-        </span>
-      </button>
-    </div>
-    <span
-      class="sc-dmRaPn bsyMtp"
+    <button
+      class="sc-bjUoiL hCXTDD outer"
+      type="button"
     >
       <span
-        class="sc-fLlhyt fMlfLK"
+        class="sc-dIouRR ixIogl"
       >
-        Could not load notifications
-        <br />
-        Something went wrong
+        Reload notifications
       </span>
-    </span>
+    </button>
+    <div
+      class="stackstyles__StyledVStack-sc-1m733wj-0 dejFMJ"
+    >
+      <span
+        class="sc-dmRaPn bsyMtp"
+      >
+        <span
+          class="sc-fLlhyt fMlfLK"
+        >
+          Could not load notifications
+          <br />
+          Something went wrong
+        </span>
+      </span>
+    </div>
   </div>
 </div>
 `;
@@ -511,52 +514,53 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
         </span>
       </button>
     </div>
-    <div>
-      <button
-        class="sc-bjUoiL kQkTFv admin-notifications__control"
-        disabled=""
-        type="button"
+    <button
+      class="sc-bjUoiL kQkTFv outer"
+      disabled=""
+      type="button"
+    >
+      <span
+        class="sc-dIouRR dQEKTW"
       >
-        <span
-          class="sc-dIouRR dQEKTW"
-        >
-          Reload notifications
-        </span>
+        Reload notifications
+      </span>
+      <div
+        aria-hidden="true"
+        class="sc-hHLeRK dAWrmh"
+      >
         <div
-          aria-hidden="true"
-          class="sc-hHLeRK dAWrmh"
+          class="sc-fnykZs gCEWdg"
         >
           <div
-            class="sc-fnykZs gCEWdg"
-          >
-            <div
-              class="sc-fEOsli lkTqOy"
-            />
-            <div
-              class="sc-fEOsli dxKqkG"
-            />
-            <div
-              class="sc-fEOsli dGpXuh"
-            />
-            <div
-              class="sc-fEOsli cIgRdg"
-            />
-            <div
-              class="sc-fEOsli gZzohb"
-            />
-            <div
-              class="sc-fEOsli zmfC"
-            />
-            <div
-              class="sc-fEOsli gacaki"
-            />
-            <div
-              class="sc-fEOsli cIrbJy"
-            />
-          </div>
+            class="sc-fEOsli lkTqOy"
+          />
+          <div
+            class="sc-fEOsli dxKqkG"
+          />
+          <div
+            class="sc-fEOsli dGpXuh"
+          />
+          <div
+            class="sc-fEOsli cIgRdg"
+          />
+          <div
+            class="sc-fEOsli gZzohb"
+          />
+          <div
+            class="sc-fEOsli zmfC"
+          />
+          <div
+            class="sc-fEOsli gacaki"
+          />
+          <div
+            class="sc-fEOsli cIrbJy"
+          />
         </div>
-      </button>
-    </div>
+      </div>
+    </button>
+    <div
+      class="stackstyles__StyledVStack-sc-1m733wj-0 dejFMJ"
+    />
   </div>
 </div>
 `;
@@ -677,74 +681,70 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
         </span>
       </button>
     </div>
-    <div>
-      <button
-        class="sc-bjUoiL hCXTDD admin-notifications__control"
-        type="button"
-      >
-        <span
-          class="sc-dIouRR ixIogl"
-        >
-          Reload notifications
-        </span>
-      </button>
-    </div>
-    <div
-      class="admin-notifications__entity"
+    <button
+      class="sc-bjUoiL hCXTDD outer"
+      type="button"
     >
-      <div
-        class="notification-comp__notification notification-comp__notification--success"
+      <span
+        class="sc-dIouRR ixIogl"
       >
-        message1
-      </div>
-      <button
-        class="sc-bjUoiL eoymkC outer"
-        type="button"
-      >
-        <span
-          class="sc-dIouRR ixIogl"
-        >
-          Remove
-        </span>
-      </button>
-    </div>
+        Reload notifications
+      </span>
+    </button>
     <div
-      class="admin-notifications__entity"
+      class="stackstyles__StyledVStack-sc-1m733wj-0 dejFMJ"
     >
-      <div
-        class="notification-comp__notification notification-comp__notification--warn"
-      >
-        message2
-      </div>
-      <button
-        class="sc-bjUoiL eoymkC outer"
-        type="button"
-      >
-        <span
-          class="sc-dIouRR ixIogl"
+      <div>
+        <div
+          class="notification-comp__notification notification-comp__notification--success"
         >
-          Remove
-        </span>
-      </button>
-    </div>
-    <div
-      class="admin-notifications__entity"
-    >
-      <div
-        class="notification-comp__notification notification-comp__notification--error"
-      >
-        message3
-      </div>
-      <button
-        class="sc-bjUoiL eoymkC outer"
-        type="button"
-      >
-        <span
-          class="sc-dIouRR ixIogl"
+          message1
+        </div>
+        <button
+          class="sc-bjUoiL eoymkC outer"
+          type="button"
         >
-          Remove
-        </span>
-      </button>
+          <span
+            class="sc-dIouRR ixIogl"
+          >
+            Remove
+          </span>
+        </button>
+      </div>
+      <div>
+        <div
+          class="notification-comp__notification notification-comp__notification--warn"
+        >
+          message2
+        </div>
+        <button
+          class="sc-bjUoiL eoymkC outer"
+          type="button"
+        >
+          <span
+            class="sc-dIouRR ixIogl"
+          >
+            Remove
+          </span>
+        </button>
+      </div>
+      <div>
+        <div
+          class="notification-comp__notification notification-comp__notification--error"
+        >
+          message3
+        </div>
+        <button
+          class="sc-bjUoiL eoymkC outer"
+          type="button"
+        >
+          <span
+            class="sc-dIouRR ixIogl"
+          >
+            Remove
+          </span>
+        </button>
+      </div>
     </div>
   </div>
 </div>
