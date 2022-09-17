@@ -48,24 +48,24 @@ exports[`<Account /> should render correctly with initial state 1`] = `
       Account
     </h1>
     <div
-      class="account__control-panel"
+      class="accountstyles__ControlPanel-sc-b7dzct-2 irDDWO"
     >
       <button
-        class="sc-dIouRR kUeOfn account__button"
+        class="sc-idiyUo sooGH accountstyles__StyledButton-sc-b7dzct-1 lenMsB"
         type="button"
       >
         <span
-          class="sc-dmRaPn kMnZZe"
+          class="sc-hHLeRK eOuDcm"
         >
           Get a new verification email
         </span>
       </button>
       <button
-        class="sc-dIouRR hFFgMm outer"
+        class="sc-idiyUo ktTfvG outer"
         type="button"
       >
         <span
-          class="sc-dmRaPn kMnZZe"
+          class="sc-hHLeRK eOuDcm"
         >
           Logout
         </span>
@@ -87,24 +87,24 @@ exports[`<Account /> should render correctly with initial state 2`] = `
       Account
     </h1>
     <div
-      class="account__control-panel"
+      class="accountstyles__ControlPanel-sc-b7dzct-2 irDDWO"
     >
       <button
-        class="sc-dIouRR kUeOfn account__button"
+        class="sc-idiyUo sooGH accountstyles__StyledButton-sc-b7dzct-1 lenMsB"
         type="button"
       >
         <span
-          class="sc-dmRaPn kMnZZe"
+          class="sc-hHLeRK eOuDcm"
         >
           Get a new verification email
         </span>
       </button>
       <button
-        class="sc-dIouRR hFFgMm outer"
+        class="sc-idiyUo ktTfvG outer"
         type="button"
       >
         <span
-          class="sc-dmRaPn kMnZZe"
+          class="sc-hHLeRK eOuDcm"
         >
           Logout
         </span>
@@ -126,24 +126,24 @@ exports[`<Account /> should render correctly with logOutError 1`] = `
       Account
     </h1>
     <div
-      class="account__control-panel"
+      class="accountstyles__ControlPanel-sc-b7dzct-2 irDDWO"
     >
       <button
-        class="sc-dIouRR kUeOfn account__button"
+        class="sc-idiyUo sooGH accountstyles__StyledButton-sc-b7dzct-1 lenMsB"
         type="button"
       >
         <span
-          class="sc-dmRaPn kMnZZe"
+          class="sc-hHLeRK eOuDcm"
         >
           Get a new verification email
         </span>
       </button>
       <button
-        class="sc-dIouRR hFFgMm outer"
+        class="sc-idiyUo ktTfvG outer"
         type="button"
       >
         <span
-          class="sc-dmRaPn kMnZZe"
+          class="sc-hHLeRK eOuDcm"
         >
           Logout
         </span>
@@ -165,24 +165,24 @@ exports[`<Account /> should render correctly with logOutResult 1`] = `
       Account
     </h1>
     <div
-      class="account__control-panel"
+      class="accountstyles__ControlPanel-sc-b7dzct-2 irDDWO"
     >
       <button
-        class="sc-dIouRR kUeOfn account__button"
+        class="sc-idiyUo sooGH accountstyles__StyledButton-sc-b7dzct-1 lenMsB"
         type="button"
       >
         <span
-          class="sc-dmRaPn kMnZZe"
+          class="sc-hHLeRK eOuDcm"
         >
           Get a new verification email
         </span>
       </button>
       <button
-        class="sc-dIouRR hFFgMm outer"
+        class="sc-idiyUo ktTfvG outer"
         type="button"
       >
         <span
-          class="sc-dmRaPn kMnZZe"
+          class="sc-hHLeRK eOuDcm"
         >
           Logout
         </span>
@@ -204,58 +204,58 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
       Account
     </h1>
     <div
-      class="account__control-panel"
+      class="accountstyles__ControlPanel-sc-b7dzct-2 irDDWO"
     >
       <button
-        class="sc-dIouRR kUeOfn account__button"
+        class="sc-idiyUo sooGH accountstyles__StyledButton-sc-b7dzct-1 lenMsB"
         type="button"
       >
         <span
-          class="sc-dmRaPn kMnZZe"
+          class="sc-hHLeRK eOuDcm"
         >
           Get a new verification email
         </span>
       </button>
       <button
-        class="sc-dIouRR eJsbkS outer"
+        class="sc-idiyUo gBoQVO outer"
         disabled=""
         type="button"
       >
         <span
-          class="sc-dmRaPn edSfXd"
+          class="sc-hHLeRK la-DPV"
         >
           Logout
         </span>
         <div
           aria-hidden="true"
-          class="sc-kgflAQ cNZcHT"
+          class="sc-dmRaPn etefHp"
         >
           <div
-            class="sc-bjUoiL jLyPYU"
+            class="sc-fEOsli eGfMJp"
           >
             <div
-              class="sc-idiyUo fLnBRz"
+              class="sc-bjUoiL dChIjH"
             />
             <div
-              class="sc-idiyUo eukInX"
+              class="sc-bjUoiL jtDPGv"
             />
             <div
-              class="sc-idiyUo eCyvWk"
+              class="sc-bjUoiL csSmvg"
             />
             <div
-              class="sc-idiyUo hRQhhZ"
+              class="sc-bjUoiL fQKStd"
             />
             <div
-              class="sc-idiyUo hESrJe"
+              class="sc-bjUoiL eZeiia"
             />
             <div
-              class="sc-idiyUo jMjEBb"
+              class="sc-bjUoiL hgvuZX"
             />
             <div
-              class="sc-idiyUo gCFvzP"
+              class="sc-bjUoiL eBAgKT"
             />
             <div
-              class="sc-idiyUo dQfRWj"
+              class="sc-bjUoiL bkrIvf"
             />
           </div>
         </div>
@@ -313,24 +313,24 @@ exports[`<Account /> should render correctly with requestVerificationEmailError 
       Account
     </h1>
     <div
-      class="account__control-panel"
+      class="accountstyles__ControlPanel-sc-b7dzct-2 irDDWO"
     >
       <button
-        class="sc-dIouRR kUeOfn account__button"
+        class="sc-idiyUo sooGH accountstyles__StyledButton-sc-b7dzct-1 lenMsB"
         type="button"
       >
         <span
-          class="sc-dmRaPn kMnZZe"
+          class="sc-hHLeRK eOuDcm"
         >
           Get a new verification email
         </span>
       </button>
       <button
-        class="sc-dIouRR hFFgMm outer"
+        class="sc-idiyUo ktTfvG outer"
         type="button"
       >
         <span
-          class="sc-dmRaPn kMnZZe"
+          class="sc-hHLeRK eOuDcm"
         >
           Logout
         </span>
@@ -352,24 +352,24 @@ exports[`<Account /> should render correctly with requestVerificationEmailResult
       Account
     </h1>
     <div
-      class="account__control-panel"
+      class="accountstyles__ControlPanel-sc-b7dzct-2 irDDWO"
     >
       <button
-        class="sc-dIouRR kUeOfn account__button"
+        class="sc-idiyUo sooGH accountstyles__StyledButton-sc-b7dzct-1 lenMsB"
         type="button"
       >
         <span
-          class="sc-dmRaPn kMnZZe"
+          class="sc-hHLeRK eOuDcm"
         >
           Get a new verification email
         </span>
       </button>
       <button
-        class="sc-dIouRR hFFgMm outer"
+        class="sc-idiyUo ktTfvG outer"
         type="button"
       >
         <span
-          class="sc-dmRaPn kMnZZe"
+          class="sc-hHLeRK eOuDcm"
         >
           Logout
         </span>
@@ -391,58 +391,58 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
       Account
     </h1>
     <div
-      class="account__control-panel"
+      class="accountstyles__ControlPanel-sc-b7dzct-2 irDDWO"
     >
       <button
-        class="sc-dIouRR gftcYP account__button"
+        class="sc-idiyUo fWHeaH accountstyles__StyledButton-sc-b7dzct-1 lenMsB"
         disabled=""
         type="button"
       >
         <span
-          class="sc-dmRaPn edSfXd"
+          class="sc-hHLeRK la-DPV"
         >
           Get a new verification email
         </span>
         <div
           aria-hidden="true"
-          class="sc-kgflAQ cNZcHT"
+          class="sc-dmRaPn etefHp"
         >
           <div
-            class="sc-bjUoiL jLyPYU"
+            class="sc-fEOsli eGfMJp"
           >
             <div
-              class="sc-idiyUo fLnBRz"
+              class="sc-bjUoiL dChIjH"
             />
             <div
-              class="sc-idiyUo eukInX"
+              class="sc-bjUoiL jtDPGv"
             />
             <div
-              class="sc-idiyUo eCyvWk"
+              class="sc-bjUoiL csSmvg"
             />
             <div
-              class="sc-idiyUo hRQhhZ"
+              class="sc-bjUoiL fQKStd"
             />
             <div
-              class="sc-idiyUo hESrJe"
+              class="sc-bjUoiL eZeiia"
             />
             <div
-              class="sc-idiyUo jMjEBb"
+              class="sc-bjUoiL hgvuZX"
             />
             <div
-              class="sc-idiyUo gCFvzP"
+              class="sc-bjUoiL eBAgKT"
             />
             <div
-              class="sc-idiyUo dQfRWj"
+              class="sc-bjUoiL bkrIvf"
             />
           </div>
         </div>
       </button>
       <button
-        class="sc-dIouRR hFFgMm outer"
+        class="sc-idiyUo ktTfvG outer"
         type="button"
       >
         <span
-          class="sc-dmRaPn kMnZZe"
+          class="sc-hHLeRK eOuDcm"
         >
           Logout
         </span>
@@ -464,14 +464,14 @@ exports[`<Account /> should render correctly with user with emailVerified=true 1
       Account
     </h1>
     <div
-      class="account__control-panel"
+      class="accountstyles__ControlPanel-sc-b7dzct-2 irDDWO"
     >
       <button
-        class="sc-dIouRR hFFgMm outer"
+        class="sc-idiyUo ktTfvG outer"
         type="button"
       >
         <span
-          class="sc-dmRaPn kMnZZe"
+          class="sc-hHLeRK eOuDcm"
         >
           Logout
         </span>

@@ -16,7 +16,7 @@ exports[`<AdminNavigation /> should render correctly - index 1`] = `
       />
     </div>
     <div
-      class="admin-navigation__card-container"
+      class="admin-navigationstyles__CardContainer-sc-n2t86e-0 gCaCSq"
     >
       <div
         class="sc-hAZoDl hnURkf"
@@ -67,11 +67,45 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
       Admin
     </h1>
     <div
-      class="admin-navigation__card-container"
+      class="admin-navigationstyles__CardContainer-sc-n2t86e-0 gCaCSq"
     >
       <a
+        aria-label="Site status"
+        class="sc-bjUoiL iXnCrm sc-llJcti cTJlKy admin-navigationstyles__StyledFeatureCard-sc-n2t86e-1 FFmcP"
+        href="/status"
+      >
+        <div
+          class="sc-idiyUo laTiW"
+        >
+          <div
+            class="sc-dIouRR SXuOK"
+          />
+          <div
+            class="sc-hHLeRK hpzUyW"
+          >
+            <div
+              aria-hidden="true"
+              class="sc-iIPllB lkwJJO"
+            >
+              <div
+                class="sc-gicCDI ivioIu date container"
+              />
+              <div
+                class="sc-ezWOiH iIcgvz"
+              >
+                <h1
+                  class="sc-dkzDqf iBtyHU"
+                >
+                  Site status
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a
         aria-label="Debug settings"
-        class="sc-bjUoiL iXnCrm sc-llJcti cTJlKy admin-navigation__card"
+        class="sc-bjUoiL iXnCrm sc-llJcti cTJlKy admin-navigationstyles__StyledFeatureCard-sc-n2t86e-1 FFmcP"
         href="/debug"
       >
         <div
@@ -105,7 +139,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
       </a>
       <a
         aria-label="Analytics"
-        class="sc-bjUoiL iXnCrm sc-llJcti cTJlKy admin-navigation__card"
+        class="sc-bjUoiL iXnCrm sc-llJcti cTJlKy admin-navigationstyles__StyledFeatureCard-sc-n2t86e-1 FFmcP"
         href="/admin/analytics"
       >
         <div
@@ -139,7 +173,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
       </a>
       <a
         aria-label="Emails"
-        class="sc-bjUoiL iXnCrm sc-llJcti cTJlKy admin-navigation__card"
+        class="sc-bjUoiL iXnCrm sc-llJcti cTJlKy admin-navigationstyles__StyledFeatureCard-sc-n2t86e-1 FFmcP"
         href="/admin/emails"
       >
         <div
@@ -173,7 +207,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
       </a>
       <a
         aria-label="Notifications"
-        class="sc-bjUoiL iXnCrm sc-llJcti cTJlKy admin-navigation__card"
+        class="sc-bjUoiL iXnCrm sc-llJcti cTJlKy admin-navigationstyles__StyledFeatureCard-sc-n2t86e-1 FFmcP"
         href="/admin/notifications"
       >
         <div
@@ -207,7 +241,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
       </a>
       <a
         aria-label="Users"
-        class="sc-bjUoiL iXnCrm sc-llJcti cTJlKy admin-navigation__card"
+        class="sc-bjUoiL iXnCrm sc-llJcti cTJlKy admin-navigationstyles__StyledFeatureCard-sc-n2t86e-1 FFmcP"
         href="/admin/users"
       >
         <div
@@ -260,7 +294,7 @@ exports[`<AdminNavigation /> should render correctly with auth error 1`] = `
       />
     </div>
     <div
-      class="admin-navigation__card-container"
+      class="admin-navigationstyles__CardContainer-sc-n2t86e-0 gCaCSq"
     >
       <div
         class="sc-hAZoDl hnURkf"
@@ -325,7 +359,7 @@ exports[`<AdminNavigation /> should render correctly with initial state 1`] = `
       />
     </div>
     <div
-      class="admin-navigation__card-container"
+      class="admin-navigationstyles__CardContainer-sc-n2t86e-0 gCaCSq"
     >
       <div
         class="sc-hAZoDl hnURkf"

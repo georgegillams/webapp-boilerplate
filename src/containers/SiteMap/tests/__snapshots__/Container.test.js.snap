@@ -7,21 +7,21 @@ exports[`<SiteMap /> should render correctly 1`] = `
     width="default"
   >
     <h1
-      class="sc-gsnTZi hUDWSp sc-breuTD iUaPig"
+      class="sc-gsnTZi hUDWSp sc-kDDrLX cCIGfN"
     >
       Site map
     </h1>
     <div
-      class="sc-kDDrLX iNAFzC site-map__section"
+      class="sc-evZas fjRNQE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-hKMtZM juqKJr sc-evZas goeUxJ"
+        class="sc-hKMtZM juqKJr sc-hAZoDl lgucHm"
         id="design-🎨"
       >
         Design 🎨
       </h1>
       <span
-        class="sc-hAZoDl LEXuB"
+        class="sc-crXcEl hyjoRq"
       >
         <a
           class="sc-ftvSup bvTsjB"
@@ -32,16 +32,16 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </span>
     </div>
     <div
-      class="sc-kDDrLX iNAFzC site-map__section"
+      class="sc-evZas fjRNQE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-hKMtZM juqKJr sc-evZas goeUxJ"
+        class="sc-hKMtZM juqKJr sc-hAZoDl lgucHm"
         id="other-stuff-🤷‍♂️"
       >
         Other stuff 🤷‍♂️
       </h1>
       <span
-        class="sc-hAZoDl LEXuB"
+        class="sc-crXcEl hyjoRq"
       >
         <a
           class="sc-ftvSup bvTsjB"
@@ -59,16 +59,16 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </span>
     </div>
     <div
-      class="sc-kDDrLX iNAFzC site-map__section"
+      class="sc-evZas fjRNQE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-hKMtZM juqKJr sc-evZas goeUxJ"
+        class="sc-hKMtZM juqKJr sc-hAZoDl lgucHm"
         id="random-🐉"
       >
         Random 🐉
       </h1>
       <span
-        class="sc-hAZoDl LEXuB"
+        class="sc-crXcEl hyjoRq"
       >
         <a
           aria-label="Robots.txt (opens in a new tab)"
@@ -136,16 +136,16 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </span>
     </div>
     <div
-      class="sc-kDDrLX iNAFzC site-map__section"
+      class="sc-evZas fjRNQE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-hKMtZM juqKJr sc-evZas goeUxJ"
+        class="sc-hKMtZM juqKJr sc-hAZoDl lgucHm"
         id="api"
       >
         API
       </h1>
       <span
-        class="sc-hAZoDl LEXuB"
+        class="sc-crXcEl hyjoRq"
       >
         <a
           class="sc-ftvSup bvTsjB"
@@ -156,16 +156,16 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </span>
     </div>
     <div
-      class="sc-kDDrLX iNAFzC site-map__section"
+      class="sc-evZas fjRNQE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-hKMtZM juqKJr sc-evZas goeUxJ"
+        class="sc-hKMtZM juqKJr sc-hAZoDl lgucHm"
         id="accounts-🔑"
       >
         Accounts 🔑
       </h1>
       <span
-        class="sc-hAZoDl LEXuB"
+        class="sc-crXcEl hyjoRq"
       >
         <a
           class="sc-ftvSup bvTsjB"
@@ -204,16 +204,16 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </span>
     </div>
     <div
-      class="sc-kDDrLX iNAFzC site-map__section"
+      class="sc-evZas fjRNQE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-hKMtZM juqKJr sc-evZas goeUxJ"
+        class="sc-hKMtZM juqKJr sc-hAZoDl lgucHm"
         id="admin-👮‍♂️"
       >
         Admin 👮‍♂️
       </h1>
       <span
-        class="sc-hAZoDl LEXuB"
+        class="sc-crXcEl hyjoRq"
       >
         <a
           class="sc-ftvSup bvTsjB"
@@ -252,16 +252,16 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </span>
     </div>
     <div
-      class="sc-kDDrLX iNAFzC site-map__section"
+      class="sc-evZas fjRNQE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-hKMtZM juqKJr sc-evZas goeUxJ"
+        class="sc-hKMtZM juqKJr sc-hAZoDl lgucHm"
         id="redirects"
       >
         Redirects
       </h1>
       <span
-        class="sc-hAZoDl LEXuB"
+        class="sc-crXcEl hyjoRq"
       >
         <div>
           <a

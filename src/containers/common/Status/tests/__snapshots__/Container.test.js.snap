@@ -7,63 +7,42 @@ exports[`<Status /> should render correctly 1`] = `
     width="default"
   >
     <h1
-      class="sc-gsnTZi hUDWSp sc-ksZaOG UTWGT"
+      class="sc-dkzDqf grUNba sc-iqcoie fulViU"
     >
       Status
     </h1>
-    <img
-      alt="Build status"
-      class="style__component"
-      src="GITHUB_REPO_URL/workflows/CI/badge.svg"
-    />
-    <br />
-    <img
-      alt="Dependency status"
-      class="style__component"
-      src="https://img.shields.io/david/GITHUB_REPO"
-    />
-    <div
-      class="sc-kDDrLX iNAFzC pages__component"
+    <span
+      class="sc-gsnTZi bUAnoQ"
     >
-      <span
-        class="sc-breuTD fxMIXR"
+      <img
+        alt="Build status"
+        src="GITHUB_REPO_URL/workflows/CI/badge.svg"
+      />
+      <br />
+      Built 
+      over 52 years ago
+      <br />
+      Started 
+      over 52 years ago
+      <br />
+      Environment 
+      test-node-env
+    </span>
+    <div
+      class="sc-evZas fjRNQE sc-fnykZs bskKYg"
+    >
+      <h1
+        class="sc-hKMtZM bftfxT sc-hAZoDl VIrFO"
+        id="app-config"
       >
-        Built 
-        over 52 years ago
-        <br />
-        Started 
-        over 52 years ago
-      </span>
-    </div>
-    <div
-      class="sc-kDDrLX iNAFzC pages__component"
-    >
-      <span
-        class="sc-breuTD fxMIXR"
-      >
-        Environment 
-        test-node-env
-      </span>
-    </div>
-    <div
-      class="sc-kDDrLX iNAFzC pages__component"
-    >
+        App config
+      </h1>
       <div
-        class="sc-kDDrLX iNAFzC sc-fnykZs bskKYg"
+        role="button"
+        style="margin-left: 0rem;"
+        tabindex="0"
       >
-        <h1
-          class="sc-dkzDqf iBtyHU sc-evZas cCtlkt"
-          id="app-config"
-        >
-          App config
-        </h1>
-        <div
-          role="button"
-          style="margin-left: 0rem;"
-          tabindex="0"
-        >
-          ▶️ top-level:
-        </div>
+        ▶️ top-level:
       </div>
     </div>
   </div>

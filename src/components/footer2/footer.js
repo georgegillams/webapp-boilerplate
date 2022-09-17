@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import { StyledThemeProvider, STYLED_THEMES } from '@george-gillams/components/styled-theming';
 import { Container, StyledFooterNav, StyledLogo, StyledTechSpecs } from './footer.styles';
@@ -19,12 +18,8 @@ const Footer = props => {
   );
 };
 
-Footer.propTypes = {
-  className: PropTypes.string,
-};
+Footer.propTypes = {};
 
-Footer.defaultProps = {
-  className: null,
-};
+Footer.defaultProps = {};
 
 export default Footer;
