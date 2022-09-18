@@ -1,6 +1,6 @@
 {
   "name": "@george-gillams/webapp",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "main": "./index.js",
   "author": "George Gillams <open-source@georgegillams.co.uk>",
   "license": "MIT",
