@@ -128,8 +128,6 @@
     "prompt": "^1.1.0",
     "react-test-renderer": "^17.0.1",
     "redis-mock": "^0.54.0",
-    "style-loader": "^2.0.0",
-    "stylelint": "^13.8.0",
     "webpack": "^4.44.1",
     "whatwg-fetch": "^3.5.0"
   }
