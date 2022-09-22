@@ -49,8 +49,7 @@
     "hoist-non-react-statics": "3.3.2",
     "next": "^10.2.2",
     "prompt": "^1.1.0",
-    "prop-types": "^15.7.2",
-    "style-loader": "^2.0.0"
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "cross-env": "^7.0.2",
