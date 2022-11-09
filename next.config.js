@@ -17,6 +17,10 @@ const nextConfig = {
     PROJECT_UNDER_TEST: process.env.PROJECT_UNDER_TEST,
     HOST: process.env.HOST,
   },
+  compiler: {
+    // Enables the styled-components SWC transform
+    styledComponents: true,
+  },
 };
 
 const withTM = nextTranspileModules(['@george-gillams/components']);
