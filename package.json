@@ -11,6 +11,7 @@
   "scripts": {
     "gg-webapp-install": "(cd gg-webapp && yarn install)",
     "gg-webapp-transpile": "(cd gg-webapp && yarn transpile)",
+    "gg-webapp-transpile:live": "(cd gg-webapp && yarn transpile:js:live)",
     "gg-webapp-transpile:watch": "(cd gg-webapp && yarn transpile:watch)",
     "prebuild": "yarn build:clean",
     "build:clean": "rimraf ./build",
