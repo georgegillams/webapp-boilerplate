@@ -15,6 +15,7 @@ import AppWrapper from 'components/common/AppWrapper';
 import SkipLink from '@george-gillams/components/skip-link';
 import { enableES5 } from 'immer';
 
+import ErrorBoundary from 'components/ErrorBoundary';
 import GlobalCSS from 'global.styles';
 
 // Ensures that `immer` will work inside Internet Explorer
@@ -33,17 +34,20 @@ class Srr extends App {
         </Head>
         <GlobalCSS />
 
-        <Provider store={reduxStore}>
-          <AppWrapper>
-            <SkipLink href="#main" label="Skip to main content" />
-            <Navigation />
-            <Notifications />
-            <Konami />
-            <Analytics />
-            <Authenticator />
-            <Component {...pageProps} />
-          </AppWrapper>
-        </Provider>
+        <ErrorBoundary>
+          <Provider store={reduxStore}>
+            <AppWrapper>
+              <SkipLink href="#main" label="Skip to main content" />
+              <Notifications />
+              <Analytics />
+              <Authenticator />
+              <Konami />
+              <Navigation />
+
+              <Component {...pageProps} />
+            </AppWrapper>
+          </Provider>
+        </ErrorBoundary>
       </React.StrictMode>
     );
   }

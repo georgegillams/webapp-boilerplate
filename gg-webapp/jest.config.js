@@ -1,4 +1,5 @@
 module.exports = {
+  testEnvironment: 'jsdom',
   collectCoverageFrom: ['src/**/*.{js,jsx}', '!dist/**', '!coverage/**'],
   testPathIgnorePatterns: ['<rootDir>/dist/', '<rootDir>/node_modules/', '<rootDir>/coverage/'],
   coverageThreshold: {

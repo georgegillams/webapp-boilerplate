@@ -19,9 +19,8 @@
     "release:alpha": "yarn release --alpha",
     "transpile:watch": "yarn transpile:js:watch",
     "transpile:js:watch": "yarn transpile:js --watch --ignore dist",
-    "transpile": "yarn pretranspile && yarn transpile:js && yarn transform:js && yarn transpile:metadata",
+    "transpile": "yarn pretranspile && yarn transpile:js && yarn transpile:metadata",
     "transpile:js": "babel src -d dist --copy-files",
-    "transform:js": "babel-node scripts/transform-js-scss-css-imports.js",
     "transpile:metadata": "cp package.json ./dist/",
     "transpile:clean": "rimraf ./dist",
     "pretranspile": "yarn transpile:clean"

@@ -3,7 +3,7 @@
 exports[`<Authenticator /> should render correctly - index 1`] = `
 <div>
   <header
-    class="sc-hKMtZM LVOTa"
+    class="sc-hLBbgP ijUMmM"
     role="banner"
   >
     <style>
@@ -15,34 +15,34 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
 }
     </style>
     <nav
-      class="sc-jSMfEi llByxO"
+      class="sc-jSUZER giuvLu"
     >
       <div
-        class="sc-gKXOVf MHOqO"
+        class="sc-gKPRtg fZCFGT"
       >
         <div
-          class="sc-papXJ ejHZVP"
+          class="sc-pyfCe hCputG"
         >
           <div
-            class="sc-iBkjds hiohco"
+            class="sc-iBYQkv fkeGUo"
           >
             <button
               aria-expanded="false"
               aria-label="Menu"
-              class="sc-bczRLJ dIBDIK navigation-bar__burger-wrapper--js"
+              class="sc-bcXHqe gQKgVP navigation-bar__burger-wrapper--js"
               type="button"
             >
               <div
-                class="sc-gsnTZi lbGBid"
+                class="sc-gswNZR cUYZCO"
               >
                 <div
-                  class="sc-dkzDqf iKvdlc"
+                  class="sc-dkrFOg eMMepS"
                 />
                 <div
-                  class="sc-dkzDqf iKvdlc"
+                  class="sc-dkrFOg eMMepS"
                 />
                 <div
-                  class="sc-dkzDqf iKvdlc"
+                  class="sc-dkrFOg eMMepS"
                 />
               </div>
             </button>
@@ -55,57 +55,57 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
                 aria-expanded="false"
                 aria-hidden="true"
                 aria-label="Menu"
-                class="sc-bczRLJ dIBDIK"
+                class="sc-bcXHqe gQKgVP"
                 type="button"
               >
                 <div
-                  class="sc-gsnTZi lbGBid"
+                  class="sc-gswNZR cUYZCO"
                 >
                   <div
-                    class="sc-dkzDqf iKvdlc"
+                    class="sc-dkrFOg eMMepS"
                   />
                   <div
-                    class="sc-dkzDqf iKvdlc"
+                    class="sc-dkrFOg eMMepS"
                   />
                   <div
-                    class="sc-dkzDqf iKvdlc"
+                    class="sc-dkrFOg eMMepS"
                   />
                 </div>
               </button>
             </a>
           </div>
           <div
-            class="logostyles__OuterContainer-sc-1fentac-0 fZRqLi"
+            class="logostyles__OuterContainer-sc-1fentac-0 kkZAfR"
           >
             <a
-              class="logostyles__StyledLink-sc-1fentac-1 jmykYS"
+              class="logostyles__StyledLink-sc-1fentac-1 bTAtdl"
               href="/"
             >
               <span
                 aria-label="Home page"
-                class="logostyles__LargeText-sc-1fentac-2 eneHCc"
+                class="logostyles__LargeText-sc-1fentac-2 cachOr"
               >
                 LOGO
               </span>
             </a>
           </div>
           <div
-            class="sc-iBkjds hiohco"
+            class="sc-iBYQkv fkeGUo"
           />
         </div>
         <div
-          class="sc-ftvSup fXmYLN"
+          class="sc-ftTHYK gqpHHI"
         >
           <div
-            class="logostyles__OuterContainer-sc-1fentac-0 fZRqLi"
+            class="logostyles__OuterContainer-sc-1fentac-0 kkZAfR"
           >
             <a
-              class="logostyles__StyledLink-sc-1fentac-1 jmykYS"
+              class="logostyles__StyledLink-sc-1fentac-1 bTAtdl"
               href="/"
             >
               <span
                 aria-label="Home page"
-                class="logostyles__LargeText-sc-1fentac-2 eneHCc"
+                class="logostyles__LargeText-sc-1fentac-2 cachOr"
               >
                 LOGO
               </span>
@@ -113,11 +113,11 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
           </div>
           <a
             aria-label="Site map"
-            class="sc-breuTD HjQTU"
+            class="sc-bqWxrE kvTOPd"
             href="/sitemap"
           >
             <span
-              class="sc-ksZaOG cPAimV"
+              class="sc-ksBlkl aEVfs"
             >
               Site map
             </span>
@@ -132,7 +132,7 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
 exports[`<Authenticator /> should render correctly with default state 1`] = `
 <div>
   <header
-    class="sc-hKMtZM LVOTa"
+    class="sc-hLBbgP ijUMmM"
     role="banner"
   >
     <style>
@@ -144,34 +144,34 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
 }
     </style>
     <nav
-      class="sc-jSMfEi llByxO"
+      class="sc-jSUZER giuvLu"
     >
       <div
-        class="sc-gKXOVf MHOqO"
+        class="sc-gKPRtg fZCFGT"
       >
         <div
-          class="sc-papXJ ejHZVP"
+          class="sc-pyfCe hCputG"
         >
           <div
-            class="sc-iBkjds hiohco"
+            class="sc-iBYQkv fkeGUo"
           >
             <button
               aria-expanded="false"
               aria-label="Menu"
-              class="sc-bczRLJ dIBDIK navigation-bar__burger-wrapper--js"
+              class="sc-bcXHqe gQKgVP navigation-bar__burger-wrapper--js"
               type="button"
             >
               <div
-                class="sc-gsnTZi lbGBid"
+                class="sc-gswNZR cUYZCO"
               >
                 <div
-                  class="sc-dkzDqf iKvdlc"
+                  class="sc-dkrFOg eMMepS"
                 />
                 <div
-                  class="sc-dkzDqf iKvdlc"
+                  class="sc-dkrFOg eMMepS"
                 />
                 <div
-                  class="sc-dkzDqf iKvdlc"
+                  class="sc-dkrFOg eMMepS"
                 />
               </div>
             </button>
@@ -184,57 +184,57 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
                 aria-expanded="false"
                 aria-hidden="true"
                 aria-label="Menu"
-                class="sc-bczRLJ dIBDIK"
+                class="sc-bcXHqe gQKgVP"
                 type="button"
               >
                 <div
-                  class="sc-gsnTZi lbGBid"
+                  class="sc-gswNZR cUYZCO"
                 >
                   <div
-                    class="sc-dkzDqf iKvdlc"
+                    class="sc-dkrFOg eMMepS"
                   />
                   <div
-                    class="sc-dkzDqf iKvdlc"
+                    class="sc-dkrFOg eMMepS"
                   />
                   <div
-                    class="sc-dkzDqf iKvdlc"
+                    class="sc-dkrFOg eMMepS"
                   />
                 </div>
               </button>
             </a>
           </div>
           <div
-            class="logostyles__OuterContainer-sc-1fentac-0 fZRqLi"
+            class="logostyles__OuterContainer-sc-1fentac-0 kkZAfR"
           >
             <a
-              class="logostyles__StyledLink-sc-1fentac-1 jmykYS"
+              class="logostyles__StyledLink-sc-1fentac-1 bTAtdl"
               href="/"
             >
               <span
                 aria-label="Home page"
-                class="logostyles__LargeText-sc-1fentac-2 eneHCc"
+                class="logostyles__LargeText-sc-1fentac-2 cachOr"
               >
                 LOGO
               </span>
             </a>
           </div>
           <div
-            class="sc-iBkjds hiohco"
+            class="sc-iBYQkv fkeGUo"
           />
         </div>
         <div
-          class="sc-ftvSup fXmYLN"
+          class="sc-ftTHYK gqpHHI"
         >
           <div
-            class="logostyles__OuterContainer-sc-1fentac-0 fZRqLi"
+            class="logostyles__OuterContainer-sc-1fentac-0 kkZAfR"
           >
             <a
-              class="logostyles__StyledLink-sc-1fentac-1 jmykYS"
+              class="logostyles__StyledLink-sc-1fentac-1 bTAtdl"
               href="/"
             >
               <span
                 aria-label="Home page"
-                class="logostyles__LargeText-sc-1fentac-2 eneHCc"
+                class="logostyles__LargeText-sc-1fentac-2 cachOr"
               >
                 LOGO
               </span>
@@ -242,11 +242,11 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
           </div>
           <a
             aria-label="Site map"
-            class="sc-breuTD HjQTU"
+            class="sc-bqWxrE kvTOPd"
             href="/sitemap"
           >
             <span
-              class="sc-ksZaOG cPAimV"
+              class="sc-ksBlkl aEVfs"
             >
               Site map
             </span>
@@ -261,7 +261,7 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
 exports[`<Authenticator /> should render correctly with null user 1`] = `
 <div>
   <header
-    class="sc-hKMtZM LVOTa"
+    class="sc-hLBbgP ijUMmM"
     role="banner"
   >
     <style>
@@ -273,34 +273,34 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
 }
     </style>
     <nav
-      class="sc-jSMfEi llByxO"
+      class="sc-jSUZER giuvLu"
     >
       <div
-        class="sc-gKXOVf MHOqO"
+        class="sc-gKPRtg fZCFGT"
       >
         <div
-          class="sc-papXJ ejHZVP"
+          class="sc-pyfCe hCputG"
         >
           <div
-            class="sc-iBkjds hiohco"
+            class="sc-iBYQkv fkeGUo"
           >
             <button
               aria-expanded="false"
               aria-label="Menu"
-              class="sc-bczRLJ dIBDIK navigation-bar__burger-wrapper--js"
+              class="sc-bcXHqe gQKgVP navigation-bar__burger-wrapper--js"
               type="button"
             >
               <div
-                class="sc-gsnTZi lbGBid"
+                class="sc-gswNZR cUYZCO"
               >
                 <div
-                  class="sc-dkzDqf iKvdlc"
+                  class="sc-dkrFOg eMMepS"
                 />
                 <div
-                  class="sc-dkzDqf iKvdlc"
+                  class="sc-dkrFOg eMMepS"
                 />
                 <div
-                  class="sc-dkzDqf iKvdlc"
+                  class="sc-dkrFOg eMMepS"
                 />
               </div>
             </button>
@@ -313,57 +313,57 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
                 aria-expanded="false"
                 aria-hidden="true"
                 aria-label="Menu"
-                class="sc-bczRLJ dIBDIK"
+                class="sc-bcXHqe gQKgVP"
                 type="button"
               >
                 <div
-                  class="sc-gsnTZi lbGBid"
+                  class="sc-gswNZR cUYZCO"
                 >
                   <div
-                    class="sc-dkzDqf iKvdlc"
+                    class="sc-dkrFOg eMMepS"
                   />
                   <div
-                    class="sc-dkzDqf iKvdlc"
+                    class="sc-dkrFOg eMMepS"
                   />
                   <div
-                    class="sc-dkzDqf iKvdlc"
+                    class="sc-dkrFOg eMMepS"
                   />
                 </div>
               </button>
             </a>
           </div>
           <div
-            class="logostyles__OuterContainer-sc-1fentac-0 fZRqLi"
+            class="logostyles__OuterContainer-sc-1fentac-0 kkZAfR"
           >
             <a
-              class="logostyles__StyledLink-sc-1fentac-1 jmykYS"
+              class="logostyles__StyledLink-sc-1fentac-1 bTAtdl"
               href="/"
             >
               <span
                 aria-label="Home page"
-                class="logostyles__LargeText-sc-1fentac-2 eneHCc"
+                class="logostyles__LargeText-sc-1fentac-2 cachOr"
               >
                 LOGO
               </span>
             </a>
           </div>
           <div
-            class="sc-iBkjds hiohco"
+            class="sc-iBYQkv fkeGUo"
           />
         </div>
         <div
-          class="sc-ftvSup fXmYLN"
+          class="sc-ftTHYK gqpHHI"
         >
           <div
-            class="logostyles__OuterContainer-sc-1fentac-0 fZRqLi"
+            class="logostyles__OuterContainer-sc-1fentac-0 kkZAfR"
           >
             <a
-              class="logostyles__StyledLink-sc-1fentac-1 jmykYS"
+              class="logostyles__StyledLink-sc-1fentac-1 bTAtdl"
               href="/"
             >
               <span
                 aria-label="Home page"
-                class="logostyles__LargeText-sc-1fentac-2 eneHCc"
+                class="logostyles__LargeText-sc-1fentac-2 cachOr"
               >
                 LOGO
               </span>
@@ -371,11 +371,11 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
           </div>
           <a
             aria-label="Site map"
-            class="sc-breuTD HjQTU"
+            class="sc-bqWxrE kvTOPd"
             href="/sitemap"
           >
             <span
-              class="sc-ksZaOG cPAimV"
+              class="sc-ksBlkl aEVfs"
             >
               Site map
             </span>
@@ -390,7 +390,7 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
 exports[`<Authenticator /> should render correctly with user 1`] = `
 <div>
   <header
-    class="sc-hKMtZM LVOTa"
+    class="sc-hLBbgP ijUMmM"
     role="banner"
   >
     <style>
@@ -402,34 +402,34 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
 }
     </style>
     <nav
-      class="sc-jSMfEi llByxO"
+      class="sc-jSUZER giuvLu"
     >
       <div
-        class="sc-gKXOVf MHOqO"
+        class="sc-gKPRtg fZCFGT"
       >
         <div
-          class="sc-papXJ ejHZVP"
+          class="sc-pyfCe hCputG"
         >
           <div
-            class="sc-iBkjds hiohco"
+            class="sc-iBYQkv fkeGUo"
           >
             <button
               aria-expanded="false"
               aria-label="Menu"
-              class="sc-bczRLJ dIBDIK navigation-bar__burger-wrapper--js"
+              class="sc-bcXHqe gQKgVP navigation-bar__burger-wrapper--js"
               type="button"
             >
               <div
-                class="sc-gsnTZi lbGBid"
+                class="sc-gswNZR cUYZCO"
               >
                 <div
-                  class="sc-dkzDqf iKvdlc"
+                  class="sc-dkrFOg eMMepS"
                 />
                 <div
-                  class="sc-dkzDqf iKvdlc"
+                  class="sc-dkrFOg eMMepS"
                 />
                 <div
-                  class="sc-dkzDqf iKvdlc"
+                  class="sc-dkrFOg eMMepS"
                 />
               </div>
             </button>
@@ -442,57 +442,57 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
                 aria-expanded="false"
                 aria-hidden="true"
                 aria-label="Menu"
-                class="sc-bczRLJ dIBDIK"
+                class="sc-bcXHqe gQKgVP"
                 type="button"
               >
                 <div
-                  class="sc-gsnTZi lbGBid"
+                  class="sc-gswNZR cUYZCO"
                 >
                   <div
-                    class="sc-dkzDqf iKvdlc"
+                    class="sc-dkrFOg eMMepS"
                   />
                   <div
-                    class="sc-dkzDqf iKvdlc"
+                    class="sc-dkrFOg eMMepS"
                   />
                   <div
-                    class="sc-dkzDqf iKvdlc"
+                    class="sc-dkrFOg eMMepS"
                   />
                 </div>
               </button>
             </a>
           </div>
           <div
-            class="logostyles__OuterContainer-sc-1fentac-0 fZRqLi"
+            class="logostyles__OuterContainer-sc-1fentac-0 kkZAfR"
           >
             <a
-              class="logostyles__StyledLink-sc-1fentac-1 jmykYS"
+              class="logostyles__StyledLink-sc-1fentac-1 bTAtdl"
               href="/"
             >
               <span
                 aria-label="Home page"
-                class="logostyles__LargeText-sc-1fentac-2 eneHCc"
+                class="logostyles__LargeText-sc-1fentac-2 cachOr"
               >
                 LOGO
               </span>
             </a>
           </div>
           <div
-            class="sc-iBkjds hiohco"
+            class="sc-iBYQkv fkeGUo"
           />
         </div>
         <div
-          class="sc-ftvSup fXmYLN"
+          class="sc-ftTHYK gqpHHI"
         >
           <div
-            class="logostyles__OuterContainer-sc-1fentac-0 fZRqLi"
+            class="logostyles__OuterContainer-sc-1fentac-0 kkZAfR"
           >
             <a
-              class="logostyles__StyledLink-sc-1fentac-1 jmykYS"
+              class="logostyles__StyledLink-sc-1fentac-1 bTAtdl"
               href="/"
             >
               <span
                 aria-label="Home page"
-                class="logostyles__LargeText-sc-1fentac-2 eneHCc"
+                class="logostyles__LargeText-sc-1fentac-2 cachOr"
               >
                 LOGO
               </span>
@@ -500,11 +500,11 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
           </div>
           <a
             aria-label="Site map"
-            class="sc-breuTD HjQTU"
+            class="sc-bqWxrE kvTOPd"
             href="/sitemap"
           >
             <span
-              class="sc-ksZaOG cPAimV"
+              class="sc-ksBlkl aEVfs"
             >
               Site map
             </span>
