@@ -3,140 +3,171 @@
 exports[`<HomePage /> should render correctly 1`] = `
 <div>
   <main
-    class="main-wrapperstyles__StyledMainWrapper-sc-hveppy-0 iMOsNu common-layoutstyles__StyledMainWrapper-sc-1orix3m-0 bnxJXa"
+    class="main-wrapperstyles__StyledMainWrapper-sc-hveppy-0 llAgSZ common-layoutstyles__StyledMainWrapper-sc-1orix3m-0 ccuVuN"
     id="main"
   >
     <div
-      class="sc-bczRLJ eVJKhe page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+      class="sc-bcXHqe izJKIX page-containerstyles__StyledPageContainer-sc-19l7k4-0"
       width="default"
     >
-      <h1
-        class="sc-gsnTZi hUDWSp sc-ksZaOG UTWGT"
-      >
-        Home
-      </h1>
       <div
-        class="sc-kDDrLX iNAFzC"
+        class="sc-fEXmlR rMnCl"
       >
-        <span
-          class="sc-breuTD fxMIXR"
+        <h1
+          class="sc-gswNZR fEnHfq sc-bjfHbI bFlHCO"
         >
-          This is just a boilerplate page, but you can put any content you want in here.
-          <br />
-          This page is pretty boring, but the 
-          <a
-            class="sc-ftvSup bvTsjB"
-            href="/sitemap"
+          Home
+        </h1>
+      </div>
+      <div
+        class="sc-hBxehG hEuIQR"
+      >
+        <style>
+          .js .animated-content__wrapper--hidden {
+  padding-top: 4rem;
+  opacity: 0.01;
+}
+        </style>
+        <div
+          class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
+        >
+          <div
+            class="sc-kDvujY jcGnlL"
           >
-            site map
-          </a>
-           might be more inspiring.
-        </span>
+            <span
+              class="sc-bqWxrE xzuoV"
+            >
+              This is just a boilerplate page, but you can put any content you want in here.
+              <br />
+              This page is pretty boring, but the 
+              <a
+                class="sc-ftTHYK dpmGDG"
+                href="/sitemap"
+              >
+                site map
+              </a>
+               might be more inspiring.
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   </main>
-  <footer
-    class="footerstyles__Container-sc-ojjd19-0 beXJfO"
-    id="footer"
+  <div
+    class="sc-hBxehG hEuIQR"
   >
+    <style>
+      .js .animated-content__wrapper--hidden {
+  opacity: 0.01;
+}
+    </style>
     <div
-      class="logostyles__OuterContainer-sc-1fentac-0 ftAWyG footerstyles__StyledLogo-sc-ojjd19-1 dHUBSN"
+      class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
     >
-      <a
-        class="logostyles__StyledLink-sc-1fentac-1 jmykYS"
-        href="/"
+      <footer
+        class="footerstyles__Container-sc-ojjd19-0 jwEgwh"
+        id="footer"
       >
-        <span
-          aria-label="Home page"
-          class="logostyles__LargeText-sc-1fentac-2 eneHCc"
+        <div
+          class="logostyles__OuterContainer-sc-1fentac-0 hLzBQR footerstyles__StyledLogo-sc-ojjd19-1 iDMNXa"
         >
-          LOGO
-        </span>
-      </a>
+          <a
+            class="logostyles__StyledLink-sc-1fentac-1 bTAtdl"
+            href="/"
+          >
+            <span
+              aria-label="Home page"
+              class="logostyles__LargeText-sc-1fentac-2 cachOr"
+            >
+              LOGO
+            </span>
+          </a>
+        </div>
+        <div
+          class="footerstyles__StyledTechSpecs-sc-ojjd19-2 jckxzC"
+        >
+          <span
+            class="sc-bqWxrE xzuoV tech-specsstyles__StyledParagraph-sc-1ysn53a-0 hLsLJb"
+          >
+            Built in
+            <a
+              href="https://reactjs.org/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="React"
+                class="tech-specsstyles__Icon-sc-1ysn53a-1 ifSCys"
+                height="5"
+                src="IMAGE_MOCK"
+                width="5"
+              />
+            </a>
+            and
+            <a
+              href="https://redux.js.org/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="Redux"
+                class="tech-specsstyles__Icon-sc-1ysn53a-1 ifSCys"
+                height="5"
+                src="IMAGE_MOCK"
+                width="5"
+              />
+            </a>
+            Hosted on
+            <a
+              href="https://aws.amazon.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="Amazon Web Services"
+                class="tech-specsstyles__Icon-sc-1ysn53a-1 ifSCys"
+                height="5"
+                src="IMAGE_MOCK"
+                style="margin-top: .8rem; max-width: 2.9rem;"
+                width="8.28"
+              />
+            </a>
+          </span>
+        </div>
+        <div
+          class="footer-navstyles__Wrapper-sc-7lmnsj-0 bCyRIt footerstyles__StyledFooterNav-sc-ojjd19-3"
+        >
+          <div
+            class="footer-navstyles__Section-sc-7lmnsj-1 bcuhSW"
+          >
+            <a
+              class="sc-ftTHYK uCHsm"
+              href="/sitemap"
+            >
+              Site map
+            </a>
+            <a
+              class="sc-ftTHYK uCHsm"
+              href="/privacy-policy"
+            >
+              Privacy
+            </a>
+            <a
+              class="sc-ftTHYK uCHsm"
+              href="/login"
+            >
+              Login/Account
+            </a>
+            <a
+              class="sc-ftTHYK uCHsm"
+              href="/status"
+            >
+              Status
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
-    <div
-      class="footerstyles__StyledTechSpecs-sc-ojjd19-2 hLmmol"
-    >
-      <span
-        class="sc-breuTD fxMIXR tech-specsstyles__StyledParagraph-sc-1ysn53a-0 glkFZI"
-      >
-        Built in
-        <a
-          href="https://reactjs.org/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <img
-            alt="React"
-            class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
-            height="5"
-            src="IMAGE_MOCK"
-            width="5"
-          />
-        </a>
-        and
-        <a
-          href="https://redux.js.org/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <img
-            alt="Redux"
-            class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
-            height="5"
-            src="IMAGE_MOCK"
-            width="5"
-          />
-        </a>
-        Hosted on
-        <a
-          href="https://aws.amazon.com/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <img
-            alt="Amazon Web Services"
-            class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
-            height="5"
-            src="IMAGE_MOCK"
-            style="margin-top: .8rem; max-width: 2.9rem;"
-            width="8.28"
-          />
-        </a>
-      </span>
-    </div>
-    <div
-      class="footer-navstyles__Wrapper-sc-7lmnsj-0 kTnJQq footerstyles__StyledFooterNav-sc-ojjd19-3"
-    >
-      <div
-        class="footer-navstyles__Section-sc-7lmnsj-1 iFmILp"
-      >
-        <a
-          class="sc-ftvSup dMEDbl"
-          href="/sitemap"
-        >
-          Site map
-        </a>
-        <a
-          class="sc-ftvSup dMEDbl"
-          href="/privacy-policy"
-        >
-          Privacy
-        </a>
-        <a
-          class="sc-ftvSup dMEDbl"
-          href="/login"
-        >
-          Login/Account
-        </a>
-        <a
-          class="sc-ftvSup dMEDbl"
-          href="/status"
-        >
-          Status
-        </a>
-      </div>
-    </div>
-  </footer>
+  </div>
 </div>
 `;

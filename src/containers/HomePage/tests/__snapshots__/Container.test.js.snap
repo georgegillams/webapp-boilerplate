@@ -3,31 +3,49 @@
 exports[`<Home /> should render correctly 1`] = `
 <div>
   <div
-    class="sc-bczRLJ eVJKhe page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-bcXHqe izJKIX page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
-    <h1
-      class="sc-gsnTZi hUDWSp sc-ksZaOG UTWGT"
-    >
-      Home
-    </h1>
     <div
-      class="sc-kDDrLX iNAFzC"
+      class="sc-fEXmlR rMnCl"
     >
-      <span
-        class="sc-breuTD fxMIXR"
+      <h1
+        class="sc-gswNZR fEnHfq sc-bjfHbI bFlHCO"
       >
-        This is just a boilerplate page, but you can put any content you want in here.
-        <br />
-        This page is pretty boring, but the 
-        <a
-          class="sc-ftvSup bvTsjB"
-          href="/sitemap"
+        Home
+      </h1>
+    </div>
+    <div
+      class="sc-hBxehG hEuIQR"
+    >
+      <style>
+        .js .animated-content__wrapper--hidden {
+  padding-top: 4rem;
+  opacity: 0.01;
+}
+      </style>
+      <div
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
+      >
+        <div
+          class="sc-kDvujY jcGnlL"
         >
-          site map
-        </a>
-         might be more inspiring.
-      </span>
+          <span
+            class="sc-bqWxrE xzuoV"
+          >
+            This is just a boilerplate page, but you can put any content you want in here.
+            <br />
+            This page is pretty boring, but the 
+            <a
+              class="sc-ftTHYK dpmGDG"
+              href="/sitemap"
+            >
+              site map
+            </a>
+             might be more inspiring.
+          </span>
+        </div>
+      </div>
     </div>
   </div>
 </div>

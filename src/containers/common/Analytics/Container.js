@@ -58,7 +58,6 @@ const Analytics = props => {
       setAnalytic(newAnalytic);
     }
     const analyticToSend = analytic || newAnalytic;
-    // ... but wait to send it until we have consent
     if (analyticToSend && !analyticSent) {
       sendAnalytic(analyticToSend);
       setAnalyticSent(true);

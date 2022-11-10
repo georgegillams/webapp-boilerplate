@@ -2,22 +2,30 @@
 
 exports[`<PageTitle /> Should render correctly 1`] = `
 <div>
-  <h1
-    class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
+  <div
+    class="sc-bqWxrE VcTDu"
   >
-    Test
-  </h1>
+    <h1
+      class="sc-bcXHqe bHgOFy sc-jrcTuL ewlzmZ"
+    >
+      Test
+    </h1>
+  </div>
   some text
 </div>
 `;
 
 exports[`<PageTitle /> Should render correctly with custom className 1`] = `
 <div>
-  <h1
-    class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy test-custom-classname"
+  <div
+    class="sc-bqWxrE VcTDu"
   >
-    Test
-  </h1>
+    <h1
+      class="sc-bcXHqe bHgOFy sc-jrcTuL ewlzmZ test-custom-classname"
+    >
+      Test
+    </h1>
+  </div>
   some text
 </div>
 `;
@@ -25,20 +33,28 @@ exports[`<PageTitle /> Should render correctly with custom className 1`] = `
 exports[`<PageTitle /> Should render correctly with other props 1`] = `
 <div>
   <div
-    class="sc-kDDrLX emakin"
+    class="sc-bqWxrE VcTDu"
   >
-    <a
-      class="sc-iBkjds kXOvCG"
-      href="/test"
+    <div
+      class="sc-kDvujY bJLGdG"
     >
-      ⇠ test
-    </a>
+      <a
+        class="sc-iBYQkv jNlLug"
+        href="/test"
+      >
+        ⇠ test
+      </a>
+    </div>
   </div>
-  <h1
-    class="sc-bczRLJ hDLBIv sc-jqUVSM drQcdn"
+  <div
+    class="sc-bqWxrE VcTDu"
   >
-    Test
-  </h1>
+    <h1
+      class="sc-bcXHqe bHgOFy sc-jrcTuL jiMlto"
+    >
+      Test
+    </h1>
+  </div>
   some text
 </div>
 `;

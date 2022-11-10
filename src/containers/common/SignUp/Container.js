@@ -29,7 +29,6 @@ const SignUp = props => {
     preSubmitText = signUpState.signUpError.errorMessage;
   }
 
-  // We shouldn't allow a user to sign up unless cookies are consented to
   const page = (
     <PageContainer bottomPadding>
       <LoggedOutOnly user={authenticatorState.user}>

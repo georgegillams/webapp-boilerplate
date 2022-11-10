@@ -3,14 +3,18 @@
 exports[`<MagicLogin /> should render correctly - index 1`] = `
 <div>
   <div
-    class="sc-evZas duxpwP page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-fnGiBr fwOxJt page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
-    <h1
-      class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
+    <div
+      class="sc-bqWxrE VcTDu"
     >
-      Logging in
-    </h1>
+      <h1
+        class="sc-bcXHqe bHgOFy sc-jrcTuL ewlzmZ"
+      >
+        Logging in
+      </h1>
+    </div>
   </div>
 </div>
 `;
@@ -18,14 +22,18 @@ exports[`<MagicLogin /> should render correctly - index 1`] = `
 exports[`<MagicLogin /> should render correctly with initial state 1`] = `
 <div>
   <div
-    class="sc-evZas duxpwP page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-fnGiBr fwOxJt page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
-    <h1
-      class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
+    <div
+      class="sc-bqWxrE VcTDu"
     >
-      Logging in
-    </h1>
+      <h1
+        class="sc-bcXHqe bHgOFy sc-jrcTuL ewlzmZ"
+      >
+        Logging in
+      </h1>
+    </div>
   </div>
 </div>
 `;
@@ -33,26 +41,30 @@ exports[`<MagicLogin /> should render correctly with initial state 1`] = `
 exports[`<MagicLogin /> should render correctly with logInError 1`] = `
 <div>
   <div
-    class="sc-evZas duxpwP page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-fnGiBr fwOxJt page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
-    <h1
-      class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
+    <div
+      class="sc-bqWxrE VcTDu"
     >
-      Logging in
-    </h1>
+      <h1
+        class="sc-bcXHqe bHgOFy sc-jrcTuL ewlzmZ"
+      >
+        Logging in
+      </h1>
+    </div>
     <span
-      class="sc-iqcoie fIUTrZ"
+      class="sc-ksBlkl bLCpBX"
     >
       <span
-        class="sc-crXcEl iMitmy"
+        class="sc-hBxehG cqQowO"
       >
         Something went wrong logging you in
         <br />
         Invalid session
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-iBYQkv jNlLug"
           href="/login"
         >
           Try logging in again
@@ -66,14 +78,18 @@ exports[`<MagicLogin /> should render correctly with logInError 1`] = `
 exports[`<MagicLogin /> should render correctly with loggingIn=true 1`] = `
 <div>
   <div
-    class="sc-evZas duxpwP page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-fnGiBr fwOxJt page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
-    <h1
-      class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
+    <div
+      class="sc-bqWxrE VcTDu"
     >
-      Logging in
-    </h1>
+      <h1
+        class="sc-bcXHqe bHgOFy sc-jrcTuL ewlzmZ"
+      >
+        Logging in
+      </h1>
+    </div>
   </div>
 </div>
 `;
@@ -81,16 +97,20 @@ exports[`<MagicLogin /> should render correctly with loggingIn=true 1`] = `
 exports[`<MagicLogin /> should render correctly with user 1`] = `
 <div>
   <div
-    class="sc-evZas duxpwP page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-fnGiBr fwOxJt page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
-    <h1
-      class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
+    <div
+      class="sc-bqWxrE VcTDu"
     >
-      Logged in
-    </h1>
+      <h1
+        class="sc-bcXHqe bHgOFy sc-jrcTuL ewlzmZ"
+      >
+        Logged in
+      </h1>
+    </div>
     <span
-      class="sc-iqcoie fIUTrZ"
+      class="sc-ksBlkl bLCpBX"
     >
       Logged in!
       <br />
@@ -99,8 +119,8 @@ exports[`<MagicLogin /> should render correctly with user 1`] = `
        page
       <br />
       <a
-        class="sc-iBkjds kXOvCG"
-        href="/account"
+        class="sc-iBYQkv jNlLug"
+        href="account"
       >
         Not been redirected? Click here
       </a>

@@ -27,17 +27,20 @@ exports[`<Notifications /> should render correctly with loading=true 1`] = `
 exports[`<Notifications /> should render correctly with notifications 1`] = `
 <div>
   <div
-    class="notification-comp__notification notification-comp__notification--success notificationsstyles__StyledNotification-sc-1lybnks-0 fOYZIT"
+    class="sc-bcXHqe hjHSIA notificationsstyles__StyledNotification-sc-1lybnks-0 gFmlKg"
+    type="success"
   >
     message1
   </div>
   <div
-    class="notification-comp__notification notification-comp__notification--warn notificationsstyles__StyledNotification-sc-1lybnks-0 fOYZIT"
+    class="sc-bcXHqe dTnLBD notificationsstyles__StyledNotification-sc-1lybnks-0 gFmlKg"
+    type="warn"
   >
     message2
   </div>
   <div
-    class="notification-comp__notification notification-comp__notification--error notificationsstyles__StyledNotification-sc-1lybnks-0 fOYZIT"
+    class="sc-bcXHqe heLrXV notificationsstyles__StyledNotification-sc-1lybnks-0 gFmlKg"
+    type="error"
   >
     message3
   </div>

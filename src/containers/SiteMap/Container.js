@@ -5,23 +5,26 @@ import PageTitle from 'components/common/PageTitle';
 import Paragraph from '@george-gillams/components/paragraph';
 import redirects from 'helpers/redirects';
 import { StyledSubsection } from './site-map.styles';
+import { withScrollAnimation } from '@george-gillams/components/effects';
+
+const StyledSubsectionWithScroll = withScrollAnimation(StyledSubsection);
 
 const SiteMap = props => (
   <PageContainer bottomPadding {...props}>
     <PageTitle name="Site map">
-      <StyledSubsection anchor={false} name="Design 🎨">
+      <StyledSubsectionWithScroll anchor={false} name="Design 🎨">
         <Paragraph>
           <TextLink href="/privacy-policy">Privacy Policy</TextLink>
         </Paragraph>
-      </StyledSubsection>
-      <StyledSubsection anchor={false} name="Other stuff 🤷‍♂️">
+      </StyledSubsectionWithScroll>
+      <StyledSubsectionWithScroll anchor={false} name="Other stuff 🤷‍♂️">
         <Paragraph>
           <TextLink href="/debug">Debug tools</TextLink>
           <br />
           <TextLink href="/status">Status</TextLink>
         </Paragraph>
-      </StyledSubsection>
-      <StyledSubsection anchor={false} name="Random 🐉">
+      </StyledSubsectionWithScroll>
+      <StyledSubsectionWithScroll anchor={false} name="Random 🐉">
         <Paragraph>
           <TextLink hrefExternal href="/robots.txt">
             Robots.txt
@@ -35,13 +38,13 @@ const SiteMap = props => (
           <br />
           <TextLink href="/teapot">418 error page - I&apos;m a teapot</TextLink>
         </Paragraph>
-      </StyledSubsection>
-      <StyledSubsection anchor={false} name="API">
+      </StyledSubsectionWithScroll>
+      <StyledSubsectionWithScroll anchor={false} name="API">
         <Paragraph>
           <TextLink href="/api-docs">API docs</TextLink>
         </Paragraph>
-      </StyledSubsection>
-      <StyledSubsection anchor={false} name="Accounts 🔑">
+      </StyledSubsectionWithScroll>
+      <StyledSubsectionWithScroll anchor={false} name="Accounts 🔑">
         <Paragraph>
           <TextLink href="/account">Account</TextLink>
           <br />
@@ -53,8 +56,8 @@ const SiteMap = props => (
           <br />
           <TextLink href="/magic-login">Magic login</TextLink>
         </Paragraph>
-      </StyledSubsection>
-      <StyledSubsection anchor={false} name="Admin 👮‍♂️">
+      </StyledSubsectionWithScroll>
+      <StyledSubsectionWithScroll anchor={false} name="Admin 👮‍♂️">
         <Paragraph>
           <TextLink href="/admin">Admin navigation</TextLink>
           <br />
@@ -66,8 +69,8 @@ const SiteMap = props => (
           <br />
           <TextLink href="/admin/users">Users</TextLink>
         </Paragraph>
-      </StyledSubsection>
-      <StyledSubsection anchor={false} name="Redirects">
+      </StyledSubsectionWithScroll>
+      <StyledSubsectionWithScroll anchor={false} name="Redirects">
         <Paragraph>
           {redirects.map(redirect => (
             <div key={redirect.from}>
@@ -76,7 +79,7 @@ const SiteMap = props => (
             </div>
           ))}
         </Paragraph>
-      </StyledSubsection>
+      </StyledSubsectionWithScroll>
     </PageTitle>
   </PageContainer>
 );
