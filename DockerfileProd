@@ -1,4 +1,4 @@
-ARG NODE_VERSION=16
+ARG NODE_VERSION=16.10.0
 FROM node:${NODE_VERSION} as build
 
 RUN mkdir /opt/app
