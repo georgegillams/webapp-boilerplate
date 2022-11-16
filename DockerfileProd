@@ -7,6 +7,7 @@ WORKDIR /opt/app
 COPY . .
 RUN PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true yarn gg-webapp-install
 RUN yarn gg-webapp-transpile
+RUN PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true yarn add @george-gillams/webapp@file:gg-webapp/dist
 RUN PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true yarn install --frozen-lockfile
 RUN yarn build
 RUN pwd

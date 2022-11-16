@@ -28,7 +28,10 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
 
       - name: gg-webapp setup
-        run: PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true yarn gg-webapp-install && yarn gg-webapp-transpile
+        run: |
+          PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true yarn gg-webapp-install
+          yarn gg-webapp-transpile
+          PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true yarn add @george-gillams/webapp@file:gg-webapp/dist
 
       - name: yarn install
         run: PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true yarn install --frozen-lockfile

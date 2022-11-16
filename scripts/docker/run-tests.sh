@@ -29,6 +29,7 @@ docker exec $dockerArgs $containerId tar -xzf $projectName.tar.gz --directory $p
 # TODO - Skip this too if $skipNpm
 docker exec $dockerArgs -w $destinationDirectory $containerId yarn gg-webapp-install
 docker exec $dockerArgs -w $destinationDirectory $containerId yarn gg-webapp-transpile
+docker exec $dockerArgs -w $destinationDirectory $containerId yarn add @george-gillams/webapp@file:gg-webapp/dist
 if ! [ $skipNpm ]; then
   docker exec $dockerArgs -w $destinationDirectory $containerId yarn install --frozen-lockfile
 fi

@@ -59,7 +59,7 @@
   },
   "dependencies": {
     "@george-gillams/components": "^28.5.1",
-    "@george-gillams/webapp": "file:gg-webapp/dist",
+    "@george-gillams/webapp": "1.0.1",
     "@next/bundle-analyzer": "^13.0.2",
     "async-lock": "^1.4.0",
     "bcrypt": "^5.1.0",
