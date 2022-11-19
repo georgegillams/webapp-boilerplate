@@ -7,12 +7,10 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
     role="banner"
   >
     <style>
-      .js .navigation-bar__burger-wrapper--no-js {
-  display: none;
-}
-      .no-js .navigation-bar__burger-wrapper--js {
-  display: none;
-}
+      
+          .js .navigation-bar__burger-wrapper--no-js { display: none; }
+          .no-js .navigation-bar__burger-wrapper--js { display: none; }
+        
     </style>
     <nav
       class="sc-jSUZER giuvLu"
@@ -136,12 +134,10 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
     role="banner"
   >
     <style>
-      .js .navigation-bar__burger-wrapper--no-js {
-  display: none;
-}
-      .no-js .navigation-bar__burger-wrapper--js {
-  display: none;
-}
+      
+          .js .navigation-bar__burger-wrapper--no-js { display: none; }
+          .no-js .navigation-bar__burger-wrapper--js { display: none; }
+        
     </style>
     <nav
       class="sc-jSUZER giuvLu"
@@ -265,12 +261,10 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
     role="banner"
   >
     <style>
-      .js .navigation-bar__burger-wrapper--no-js {
-  display: none;
-}
-      .no-js .navigation-bar__burger-wrapper--js {
-  display: none;
-}
+      
+          .js .navigation-bar__burger-wrapper--no-js { display: none; }
+          .no-js .navigation-bar__burger-wrapper--js { display: none; }
+        
     </style>
     <nav
       class="sc-jSUZER giuvLu"
@@ -394,12 +388,10 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
     role="banner"
   >
     <style>
-      .js .navigation-bar__burger-wrapper--no-js {
-  display: none;
-}
-      .no-js .navigation-bar__burger-wrapper--js {
-  display: none;
-}
+      
+          .js .navigation-bar__burger-wrapper--no-js { display: none; }
+          .no-js .navigation-bar__burger-wrapper--js { display: none; }
+        
     </style>
     <nav
       class="sc-jSUZER giuvLu"
