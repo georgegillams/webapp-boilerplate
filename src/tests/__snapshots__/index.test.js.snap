@@ -1,26 +1,349 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<HomePage /> should render correctly 1`] = `
+.c2 {
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  max-width: 60rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.c4 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.c10 {
+  margin: 0;
+}
+
+.c8 {
+  width: 100%;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c9 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c9:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c7 {
+  padding-top: 0;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.c6 {
+  width: 100%;
+}
+
+.c3 {
+  -webkit-animation: bbwGtI 0.4s ease-in-out;
+  animation: bbwGtI 0.4s ease-in-out;
+}
+
+.c5 {
+  margin: 2.3rem 0 0 0;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1rem;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  border-radius: 0.25rem;
+  outline: none;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+}
+
+.c14 {
+  border-radius: 0.25rem;
+}
+
+.c14:focus-within,
+.c14:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c14:focus-within::after,
+.c14:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c14:hover,
+.c14:active,
+.c14:focus {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-name: gg-bounce-hover-effect;
+  animation-name: gg-bounce-hover-effect;
+}
+
+.c15 {
+  display: inline-block;
+  padding-top: 0.1rem;
+  border-radius: 0.25rem;
+  color: #44aeff;
+  font-size: 2.6rem;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.c19 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  max-width: 45rem;
+  margin: auto;
+}
+
+.c20 > * {
+  margin: 0.5rem 0.5rem 0 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c17 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 0.5rem;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c18 {
+  display: inline-block;
+  width: 100%;
+  max-width: 2.3rem;
+  height: 100%;
+  max-height: 2.3rem;
+  padding: 0 0.5rem 0 0.2rem;
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+
+.c18:hover {
+  -webkit-filter: brightness(0) invert(1) opacity(70%);
+  filter: brightness(0) invert(1) opacity(70%);
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem 1rem;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  border-top: solid #1e1e1e 0.15rem;
+  background-color: #1e1e1e;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.c13 {
+  text-align: center;
+}
+
+.c16 {
+  text-align: center;
+}
+
+.c0 {
+  width: 100%;
+}
+
+.c1 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+@media (min-width:50.25rem) {
+  .c2 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c8 {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (min-width:50.25rem) {
+  .c12 {
+    padding-right: unset;
+    padding-left: unset;
+    -webkit-align-items: unset;
+    -webkit-box-align: unset;
+    -ms-flex-align: unset;
+    align-items: unset;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c14:focus-within::after,
+  .c14:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c15 {
+    font-size: 3rem;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c15 {
+    color: white;
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c11 {
+    padding: 2rem 2rem;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c11 {
+    border-top: solid #44aeff 0.15rem;
+  }
+}
+
 <div>
   <main
-    class="main-wrapperstyles__StyledMainWrapper-sc-hveppy-0 llAgSZ common-layoutstyles__StyledMainWrapper-sc-1orix3m-0 ccuVuN"
+    class="c0 c1"
     id="main"
   >
     <div
-      class="sc-bcXHqe izJKIX page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+      class="c2 page-containerstyles__StyledPageContainer-sc-19l7k4-0"
       width="default"
     >
       <div
-        class="sc-fEXmlR rMnCl"
+        class="c3"
       >
         <h1
-          class="sc-gswNZR fEnHfq sc-bjfHbI bFlHCO"
+          class="c4 c5"
         >
           Home
         </h1>
       </div>
       <div
-        class="sc-hBxehG hEuIQR"
+        class="c6"
       >
         <style>
           .js .animated-content__wrapper--hidden {
@@ -29,23 +352,22 @@ exports[`<HomePage /> should render correctly 1`] = `
 }
         </style>
         <div
-          class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
+          class="c7 animated-content__wrapper--hidden"
         >
           <div
-            class="sc-kDvujY jcGnlL"
+            class="c8"
           >
             <span
-              class="sc-bqWxrE xzuoV"
+              class="c9"
             >
               This is just a boilerplate page, but you can put any content you want in here.
               <br />
               This page is pretty boring, but the 
-              <a
-                class="sc-ftTHYK dpmGDG"
-                href="/sitemap"
+              <span
+                class="c10"
               >
                 site map
-              </a>
+              </span>
                might be more inspiring.
             </span>
           </div>
@@ -54,7 +376,7 @@ exports[`<HomePage /> should render correctly 1`] = `
     </div>
   </main>
   <div
-    class="sc-hBxehG hEuIQR"
+    class="c6"
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -62,32 +384,32 @@ exports[`<HomePage /> should render correctly 1`] = `
 }
     </style>
     <div
-      class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
+      class="c7 animated-content__wrapper--hidden"
     >
       <footer
-        class="footerstyles__Container-sc-ojjd19-0 jwEgwh"
+        class="c11"
         id="footer"
       >
         <div
-          class="logostyles__OuterContainer-sc-1fentac-0 hLzBQR footerstyles__StyledLogo-sc-ojjd19-1 iDMNXa"
+          class="c12 c13"
         >
           <a
-            class="logostyles__StyledLink-sc-1fentac-1 bTAtdl"
+            class="c14"
             href="/"
           >
             <span
               aria-label="Home page"
-              class="logostyles__LargeText-sc-1fentac-2 cachOr"
+              class="c15"
             >
               LOGO
             </span>
           </a>
         </div>
         <div
-          class="footerstyles__StyledTechSpecs-sc-ojjd19-2 jckxzC"
+          class="c16"
         >
           <span
-            class="sc-bqWxrE xzuoV tech-specsstyles__StyledParagraph-sc-1ysn53a-0 hLsLJb"
+            class="c9 c17"
           >
             Built in
             <a
@@ -97,7 +419,7 @@ exports[`<HomePage /> should render correctly 1`] = `
             >
               <img
                 alt="React"
-                class="tech-specsstyles__Icon-sc-1ysn53a-1 ifSCys"
+                class="c18"
                 height="5"
                 src="IMAGE_MOCK"
                 width="5"
@@ -111,7 +433,7 @@ exports[`<HomePage /> should render correctly 1`] = `
             >
               <img
                 alt="Redux"
-                class="tech-specsstyles__Icon-sc-1ysn53a-1 ifSCys"
+                class="c18"
                 height="5"
                 src="IMAGE_MOCK"
                 width="5"
@@ -125,7 +447,7 @@ exports[`<HomePage /> should render correctly 1`] = `
             >
               <img
                 alt="Amazon Web Services"
-                class="tech-specsstyles__Icon-sc-1ysn53a-1 ifSCys"
+                class="c18"
                 height="5"
                 src="IMAGE_MOCK"
                 style="margin-top: .8rem; max-width: 2.9rem;"
@@ -135,35 +457,31 @@ exports[`<HomePage /> should render correctly 1`] = `
           </span>
         </div>
         <div
-          class="footer-navstyles__Wrapper-sc-7lmnsj-0 bCyRIt footerstyles__StyledFooterNav-sc-ojjd19-3"
+          class="c19 "
         >
           <div
-            class="footer-navstyles__Section-sc-7lmnsj-1 bcuhSW"
+            class="c20"
           >
-            <a
-              class="sc-ftTHYK uCHsm"
-              href="/sitemap"
+            <span
+              class="c10"
             >
               Site map
-            </a>
-            <a
-              class="sc-ftTHYK uCHsm"
-              href="/privacy-policy"
+            </span>
+            <span
+              class="c10"
             >
               Privacy
-            </a>
-            <a
-              class="sc-ftTHYK uCHsm"
-              href="/login"
+            </span>
+            <span
+              class="c10"
             >
               Login/Account
-            </a>
-            <a
-              class="sc-ftTHYK uCHsm"
-              href="/status"
+            </span>
+            <span
+              class="c10"
             >
               Status
-            </a>
+            </span>
           </div>
         </div>
       </footer>

@@ -1,22 +1,196 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<SiteMap /> should render correctly 1`] = `
+.c0 {
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  max-width: 60rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.c14 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.c12 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c12:focus-within,
+.c12:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c12:focus-within::after,
+.c12:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c12:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
+.c13 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 0.4rem;
+  height: 1rem;
+  margin-left: 0.55rem;
+}
+
+.c15 {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.12rem;
+  margin-left: -0.45rem;
+}
+
+.c2 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.c8 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.c11 {
+  margin: 0;
+}
+
+.c3 {
+  margin: 2.3rem 0 0 0;
+}
+
+.c5 {
+  padding-top: 0;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.c4 {
+  width: 100%;
+}
+
+.c1 {
+  -webkit-animation: bbwGtI 0.4s ease-in-out;
+  animation: bbwGtI 0.4s ease-in-out;
+}
+
+.c10 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c10:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c6 {
+  width: 100%;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c9 {
+  margin: 2.13rem 0 0 0;
+}
+
+.c7 {
+  word-break: break-word;
+}
+
+@media (min-width:50.25rem) {
+  .c0 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c12:focus-within::after,
+  .c12:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c12 {
+    color: orchid;
+    fill: orchid;
+  }
+
+  .c12:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+  .c6 {
+    color: white;
+  }
+}
+
 <div>
   <div
-    class="sc-bcXHqe dKDSeC page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="c0 page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-ksBlkl iCvzgk"
+      class="c1"
     >
       <h1
-        class="sc-gswNZR fEnHfq sc-kDvujY jlGjEY"
+        class="c2 c3"
       >
         Site map
       </h1>
     </div>
     <div
-      class="sc-eDWCr himBEe"
+      class="c4"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -25,32 +199,31 @@ exports[`<SiteMap /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="sc-csuSiG bimhCI animated-content__wrapper--hidden"
+        class="c5 animated-content__wrapper--hidden"
       >
         <div
-          class="sc-fnGiBr cWeZey site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="c6 c7"
         >
           <h1
-            class="sc-hLBbgP hxBBAy sc-idXgbr bJsfvb"
+            class="c8 c9"
             id="design-🎨"
           >
             Design 🎨
           </h1>
           <span
-            class="sc-hBxehG jiKGja"
+            class="c10"
           >
-            <a
-              class="sc-ftTHYK dpmGDG"
-              href="/privacy-policy"
+            <span
+              class="c11"
             >
               Privacy Policy
-            </a>
+            </span>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-eDWCr himBEe"
+      class="c4"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -59,39 +232,37 @@ exports[`<SiteMap /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="sc-csuSiG bimhCI animated-content__wrapper--hidden"
+        class="c5 animated-content__wrapper--hidden"
       >
         <div
-          class="sc-fnGiBr cWeZey site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="c6 c7"
         >
           <h1
-            class="sc-hLBbgP hxBBAy sc-idXgbr bJsfvb"
+            class="c8 c9"
             id="other-stuff-🤷‍♂️"
           >
             Other stuff 🤷‍♂️
           </h1>
           <span
-            class="sc-hBxehG jiKGja"
+            class="c10"
           >
-            <a
-              class="sc-ftTHYK dpmGDG"
-              href="/debug"
+            <span
+              class="c11"
             >
               Debug tools
-            </a>
+            </span>
             <br />
-            <a
-              class="sc-ftTHYK dpmGDG"
-              href="/status"
+            <span
+              class="c11"
             >
               Status
-            </a>
+            </span>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-eDWCr himBEe"
+      class="c4"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -100,33 +271,37 @@ exports[`<SiteMap /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="sc-csuSiG bimhCI animated-content__wrapper--hidden"
+        class="c5 animated-content__wrapper--hidden"
       >
         <div
-          class="sc-fnGiBr cWeZey site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="c6 c7"
         >
           <h1
-            class="sc-hLBbgP hxBBAy sc-idXgbr bJsfvb"
+            class="c8 c9"
             id="random-🐉"
           >
             Random 🐉
           </h1>
           <span
-            class="sc-hBxehG jiKGja"
+            class="c10"
           >
             <a
               aria-label="Robots.txt (opens in a new tab)"
-              class="sc-ftTHYK dpmGDG"
+              class="c12"
               href="/robots.txt"
               rel="noopener noreferrer"
               target="_blank"
             >
-              Robots.txt
+              <span
+                class="c11"
+              >
+                Robots.txt
+              </span>
               <div
-                class="sc-pyfCe bordam"
+                class="c13"
               >
                 <svg
-                  class="sc-iBYQkv lnzGUE sc-jrcTuL joTGkF"
+                  class="c14 c15"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -141,17 +316,21 @@ exports[`<SiteMap /> should render correctly 1`] = `
             <br />
             <a
               aria-label="SiteMap.xml (opens in a new tab)"
-              class="sc-ftTHYK dpmGDG"
+              class="c12"
               href="/sitemap.xml"
               rel="noopener noreferrer"
               target="_blank"
             >
-              SiteMap.xml
+              <span
+                class="c11"
+              >
+                SiteMap.xml
+              </span>
               <div
-                class="sc-pyfCe bordam"
+                class="c13"
               >
                 <svg
-                  class="sc-iBYQkv lnzGUE sc-jrcTuL joTGkF"
+                  class="c14 c15"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -164,25 +343,23 @@ exports[`<SiteMap /> should render correctly 1`] = `
               </div>
             </a>
             <br />
-            <a
-              class="sc-ftTHYK dpmGDG"
-              href="/404"
+            <span
+              class="c11"
             >
               404 error page - not found
-            </a>
+            </span>
             <br />
-            <a
-              class="sc-ftTHYK dpmGDG"
-              href="/teapot"
+            <span
+              class="c11"
             >
               418 error page - I'm a teapot
-            </a>
+            </span>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-eDWCr himBEe"
+      class="c4"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -191,32 +368,31 @@ exports[`<SiteMap /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="sc-csuSiG bimhCI animated-content__wrapper--hidden"
+        class="c5 animated-content__wrapper--hidden"
       >
         <div
-          class="sc-fnGiBr cWeZey site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="c6 c7"
         >
           <h1
-            class="sc-hLBbgP hxBBAy sc-idXgbr bJsfvb"
+            class="c8 c9"
             id="api"
           >
             API
           </h1>
           <span
-            class="sc-hBxehG jiKGja"
+            class="c10"
           >
-            <a
-              class="sc-ftTHYK dpmGDG"
-              href="/api-docs"
+            <span
+              class="c11"
             >
               API docs
-            </a>
+            </span>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-eDWCr himBEe"
+      class="c4"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -225,60 +401,55 @@ exports[`<SiteMap /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="sc-csuSiG bimhCI animated-content__wrapper--hidden"
+        class="c5 animated-content__wrapper--hidden"
       >
         <div
-          class="sc-fnGiBr cWeZey site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="c6 c7"
         >
           <h1
-            class="sc-hLBbgP hxBBAy sc-idXgbr bJsfvb"
+            class="c8 c9"
             id="accounts-🔑"
           >
             Accounts 🔑
           </h1>
           <span
-            class="sc-hBxehG jiKGja"
+            class="c10"
           >
-            <a
-              class="sc-ftTHYK dpmGDG"
-              href="/account"
+            <span
+              class="c11"
             >
               Account
-            </a>
+            </span>
             <br />
-            <a
-              class="sc-ftTHYK dpmGDG"
-              href="/sign-up"
+            <span
+              class="c11"
             >
               Sign up
-            </a>
+            </span>
             <br />
-            <a
-              class="sc-ftTHYK dpmGDG"
-              href="/login"
+            <span
+              class="c11"
             >
               Log in
-            </a>
+            </span>
             <br />
-            <a
-              class="sc-ftTHYK dpmGDG"
-              href="/email-verification"
+            <span
+              class="c11"
             >
               Email verification
-            </a>
+            </span>
             <br />
-            <a
-              class="sc-ftTHYK dpmGDG"
-              href="/magic-login"
+            <span
+              class="c11"
             >
               Magic login
-            </a>
+            </span>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-eDWCr himBEe"
+      class="c4"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -287,60 +458,55 @@ exports[`<SiteMap /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="sc-csuSiG bimhCI animated-content__wrapper--hidden"
+        class="c5 animated-content__wrapper--hidden"
       >
         <div
-          class="sc-fnGiBr cWeZey site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="c6 c7"
         >
           <h1
-            class="sc-hLBbgP hxBBAy sc-idXgbr bJsfvb"
+            class="c8 c9"
             id="admin-👮‍♂️"
           >
             Admin 👮‍♂️
           </h1>
           <span
-            class="sc-hBxehG jiKGja"
+            class="c10"
           >
-            <a
-              class="sc-ftTHYK dpmGDG"
-              href="/admin"
+            <span
+              class="c11"
             >
               Admin navigation
-            </a>
+            </span>
             <br />
-            <a
-              class="sc-ftTHYK dpmGDG"
-              href="/admin/analytics"
+            <span
+              class="c11"
             >
               Analytics
-            </a>
+            </span>
             <br />
-            <a
-              class="sc-ftTHYK dpmGDG"
-              href="/admin/emails"
+            <span
+              class="c11"
             >
               Emails
-            </a>
+            </span>
             <br />
-            <a
-              class="sc-ftTHYK dpmGDG"
-              href="/admin/notifications"
+            <span
+              class="c11"
             >
               Notifications
-            </a>
+            </span>
             <br />
-            <a
-              class="sc-ftTHYK dpmGDG"
-              href="/admin/users"
+            <span
+              class="c11"
             >
               Users
-            </a>
+            </span>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-eDWCr himBEe"
+      class="c4"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -349,45 +515,42 @@ exports[`<SiteMap /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="sc-csuSiG bimhCI animated-content__wrapper--hidden"
+        class="c5 animated-content__wrapper--hidden"
       >
         <div
-          class="sc-fnGiBr cWeZey site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="c6 c7"
         >
           <h1
-            class="sc-hLBbgP hxBBAy sc-idXgbr bJsfvb"
+            class="c8 c9"
             id="redirects"
           >
             Redirects
           </h1>
           <span
-            class="sc-hBxehG jiKGja"
+            class="c10"
           >
             <div>
-              <a
-                class="sc-ftTHYK dpmGDG"
-                href="/codebase"
+              <span
+                class="c11"
               >
                 /codebase ⇒ https://github.com/georgegillams/webapp-boilerplate
-              </a>
+              </span>
               <br />
             </div>
             <div>
-              <a
-                class="sc-ftTHYK dpmGDG"
-                href="/wp-admin"
+              <span
+                class="c11"
               >
                 /wp-admin ⇒ /admin
-              </a>
+              </span>
               <br />
             </div>
             <div>
-              <a
-                class="sc-ftTHYK dpmGDG"
-                href="/site-map"
+              <span
+                class="c11"
               >
                 /site-map ⇒ /sitemap
-              </a>
+              </span>
               <br />
             </div>
           </span>
