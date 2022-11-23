@@ -1,22 +1,116 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Home /> should render correctly 1`] = `
+.c0 {
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  max-width: 60rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.c2 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.c8 {
+  margin: 0;
+}
+
+.c6 {
+  width: 100%;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c7 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c7:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c5 {
+  padding-top: 0;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.c4 {
+  width: 100%;
+}
+
+.c1 {
+  -webkit-animation: bbwGtI 0.4s ease-in-out;
+  animation: bbwGtI 0.4s ease-in-out;
+}
+
+.c3 {
+  margin: 2.3rem 0 0 0;
+}
+
+@media (min-width:50.25rem) {
+  .c0 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c6 {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
 <div>
   <div
-    class="sc-bcXHqe izJKIX page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="c0 page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-fEXmlR rMnCl"
+      class="c1"
     >
       <h1
-        class="sc-gswNZR fEnHfq sc-bjfHbI bFlHCO"
+        class="c2 c3"
       >
         Home
       </h1>
     </div>
     <div
-      class="sc-hBxehG hEuIQR"
+      class="c4"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -25,23 +119,22 @@ exports[`<Home /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
+        class="c5 animated-content__wrapper--hidden"
       >
         <div
-          class="sc-kDvujY jcGnlL"
+          class="c6"
         >
           <span
-            class="sc-bqWxrE xzuoV"
+            class="c7"
           >
             This is just a boilerplate page, but you can put any content you want in here.
             <br />
             This page is pretty boring, but the 
-            <a
-              class="sc-ftTHYK dpmGDG"
-              href="/sitemap"
+            <span
+              class="c8"
             >
               site map
-            </a>
+            </span>
              might be more inspiring.
           </span>
         </div>

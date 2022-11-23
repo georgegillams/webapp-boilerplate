@@ -1,9 +1,265 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Layout /> Should render correctly 1`] = `
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1rem;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  border-radius: 0.25rem;
+  outline: none;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+}
+
+.c7 {
+  border-radius: 0.25rem;
+}
+
+.c7:focus-within,
+.c7:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c7:focus-within::after,
+.c7:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c7:hover,
+.c7:active,
+.c7:focus {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-name: gg-bounce-hover-effect;
+  animation-name: gg-bounce-hover-effect;
+}
+
+.c8 {
+  display: inline-block;
+  padding-top: 0.1rem;
+  border-radius: 0.25rem;
+  color: #44aeff;
+  font-size: 2.6rem;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.c15 {
+  margin: 0;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  max-width: 45rem;
+  margin: auto;
+}
+
+.c14 > * {
+  margin: 0.5rem 0.5rem 0 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c10:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 0.5rem;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c12 {
+  display: inline-block;
+  width: 100%;
+  max-width: 2.3rem;
+  height: 100%;
+  max-height: 2.3rem;
+  padding: 0 0.5rem 0 0.2rem;
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+
+.c12:hover {
+  -webkit-filter: brightness(0) invert(1) opacity(70%);
+  filter: brightness(0) invert(1) opacity(70%);
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem 1rem;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  border-top: solid #1e1e1e 0.15rem;
+  background-color: #1e1e1e;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.c6 {
+  text-align: center;
+}
+
+.c9 {
+  text-align: center;
+}
+
+.c0 {
+  width: 100%;
+}
+
+.c1 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.c3 {
+  padding-top: 0;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.c2 {
+  width: 100%;
+}
+
+@media (min-width:50.25rem) {
+  .c5 {
+    padding-right: unset;
+    padding-left: unset;
+    -webkit-align-items: unset;
+    -webkit-box-align: unset;
+    -ms-flex-align: unset;
+    align-items: unset;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c7:focus-within::after,
+  .c7:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c8 {
+    font-size: 3rem;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c8 {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (min-width:32.25rem) {
+  .c4 {
+    padding: 2rem 2rem;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c4 {
+    border-top: solid #44aeff 0.15rem;
+  }
+}
+
 <div>
   <main
-    class="main-wrapperstyles__StyledMainWrapper-sc-hveppy-0 llAgSZ common-layoutstyles__StyledMainWrapper-sc-1orix3m-0 ccuVuN"
+    class="c0 c1"
     id="main"
   >
     <div>
@@ -11,7 +267,7 @@ exports[`<Layout /> Should render correctly 1`] = `
     </div>
   </main>
   <div
-    class="sc-ipEyDJ cGLKSq"
+    class="c2"
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -19,32 +275,32 @@ exports[`<Layout /> Should render correctly 1`] = `
 }
     </style>
     <div
-      class="sc-kDvujY gFLbNj animated-content__wrapper--hidden"
+      class="c3 animated-content__wrapper--hidden"
     >
       <footer
-        class="footerstyles__Container-sc-ojjd19-0 jwEgwh"
+        class="c4"
         id="footer"
       >
         <div
-          class="logostyles__OuterContainer-sc-1fentac-0 hLzBQR footerstyles__StyledLogo-sc-ojjd19-1 iDMNXa"
+          class="c5 c6"
         >
           <a
-            class="logostyles__StyledLink-sc-1fentac-1 bTAtdl"
+            class="c7"
             href="/"
           >
             <span
               aria-label="Home page"
-              class="logostyles__LargeText-sc-1fentac-2 cachOr"
+              class="c8"
             >
               LOGO
             </span>
           </a>
         </div>
         <div
-          class="footerstyles__StyledTechSpecs-sc-ojjd19-2 jckxzC"
+          class="c9"
         >
           <span
-            class="sc-jrcTuL dRJySQ tech-specsstyles__StyledParagraph-sc-1ysn53a-0 hLsLJb"
+            class="c10 c11"
           >
             Built in
             <a
@@ -54,7 +310,7 @@ exports[`<Layout /> Should render correctly 1`] = `
             >
               <img
                 alt="React"
-                class="tech-specsstyles__Icon-sc-1ysn53a-1 ifSCys"
+                class="c12"
                 height="5"
                 src="IMAGE_MOCK"
                 width="5"
@@ -68,7 +324,7 @@ exports[`<Layout /> Should render correctly 1`] = `
             >
               <img
                 alt="Redux"
-                class="tech-specsstyles__Icon-sc-1ysn53a-1 ifSCys"
+                class="c12"
                 height="5"
                 src="IMAGE_MOCK"
                 width="5"
@@ -82,7 +338,7 @@ exports[`<Layout /> Should render correctly 1`] = `
             >
               <img
                 alt="Amazon Web Services"
-                class="tech-specsstyles__Icon-sc-1ysn53a-1 ifSCys"
+                class="c12"
                 height="5"
                 src="IMAGE_MOCK"
                 style="margin-top: .8rem; max-width: 2.9rem;"
@@ -92,35 +348,31 @@ exports[`<Layout /> Should render correctly 1`] = `
           </span>
         </div>
         <div
-          class="footer-navstyles__Wrapper-sc-7lmnsj-0 bCyRIt footerstyles__StyledFooterNav-sc-ojjd19-3"
+          class="c13 "
         >
           <div
-            class="footer-navstyles__Section-sc-7lmnsj-1 bcuhSW"
+            class="c14"
           >
-            <a
-              class="sc-iBYQkv cCatJA"
-              href="/sitemap"
+            <span
+              class="c15"
             >
               Site map
-            </a>
-            <a
-              class="sc-iBYQkv cCatJA"
-              href="/privacy-policy"
+            </span>
+            <span
+              class="c15"
             >
               Privacy
-            </a>
-            <a
-              class="sc-iBYQkv cCatJA"
-              href="/login"
+            </span>
+            <span
+              class="c15"
             >
               Login/Account
-            </a>
-            <a
-              class="sc-iBYQkv cCatJA"
-              href="/status"
+            </span>
+            <span
+              class="c15"
             >
               Status
-            </a>
+            </span>
           </div>
         </div>
       </footer>
@@ -130,9 +382,265 @@ exports[`<Layout /> Should render correctly 1`] = `
 `;
 
 exports[`<Layout /> Should render correctly with spread props 1`] = `
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1rem;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  border-radius: 0.25rem;
+  outline: none;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+}
+
+.c7 {
+  border-radius: 0.25rem;
+}
+
+.c7:focus-within,
+.c7:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c7:focus-within::after,
+.c7:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c7:hover,
+.c7:active,
+.c7:focus {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-name: gg-bounce-hover-effect;
+  animation-name: gg-bounce-hover-effect;
+}
+
+.c8 {
+  display: inline-block;
+  padding-top: 0.1rem;
+  border-radius: 0.25rem;
+  color: #44aeff;
+  font-size: 2.6rem;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.c15 {
+  margin: 0;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  max-width: 45rem;
+  margin: auto;
+}
+
+.c14 > * {
+  margin: 0.5rem 0.5rem 0 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c10:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 0.5rem;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c12 {
+  display: inline-block;
+  width: 100%;
+  max-width: 2.3rem;
+  height: 100%;
+  max-height: 2.3rem;
+  padding: 0 0.5rem 0 0.2rem;
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+
+.c12:hover {
+  -webkit-filter: brightness(0) invert(1) opacity(70%);
+  filter: brightness(0) invert(1) opacity(70%);
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem 1rem;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  border-top: solid #1e1e1e 0.15rem;
+  background-color: #1e1e1e;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.c6 {
+  text-align: center;
+}
+
+.c9 {
+  text-align: center;
+}
+
+.c0 {
+  width: 100%;
+}
+
+.c1 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.c3 {
+  padding-top: 0;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.c2 {
+  width: 100%;
+}
+
+@media (min-width:50.25rem) {
+  .c5 {
+    padding-right: unset;
+    padding-left: unset;
+    -webkit-align-items: unset;
+    -webkit-box-align: unset;
+    -ms-flex-align: unset;
+    align-items: unset;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c7:focus-within::after,
+  .c7:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c8 {
+    font-size: 3rem;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c8 {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (min-width:32.25rem) {
+  .c4 {
+    padding: 2rem 2rem;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c4 {
+    border-top: solid #44aeff 0.15rem;
+  }
+}
+
 <div>
   <main
-    class="main-wrapperstyles__StyledMainWrapper-sc-hveppy-0 llAgSZ common-layoutstyles__StyledMainWrapper-sc-1orix3m-0 ccuVuN"
+    class="c0 c1"
     id="main"
   >
     <div>
@@ -140,7 +648,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
     </div>
   </main>
   <div
-    class="sc-ipEyDJ cGLKSq"
+    class="c2"
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -148,32 +656,32 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
 }
     </style>
     <div
-      class="sc-kDvujY gFLbNj animated-content__wrapper--hidden"
+      class="c3 animated-content__wrapper--hidden"
     >
       <footer
-        class="footerstyles__Container-sc-ojjd19-0 jwEgwh"
+        class="c4"
         id="footer"
       >
         <div
-          class="logostyles__OuterContainer-sc-1fentac-0 hLzBQR footerstyles__StyledLogo-sc-ojjd19-1 iDMNXa"
+          class="c5 c6"
         >
           <a
-            class="logostyles__StyledLink-sc-1fentac-1 bTAtdl"
+            class="c7"
             href="/"
           >
             <span
               aria-label="Home page"
-              class="logostyles__LargeText-sc-1fentac-2 cachOr"
+              class="c8"
             >
               LOGO
             </span>
           </a>
         </div>
         <div
-          class="footerstyles__StyledTechSpecs-sc-ojjd19-2 jckxzC"
+          class="c9"
         >
           <span
-            class="sc-jrcTuL dRJySQ tech-specsstyles__StyledParagraph-sc-1ysn53a-0 hLsLJb"
+            class="c10 c11"
           >
             Built in
             <a
@@ -183,7 +691,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
             >
               <img
                 alt="React"
-                class="tech-specsstyles__Icon-sc-1ysn53a-1 ifSCys"
+                class="c12"
                 height="5"
                 src="IMAGE_MOCK"
                 width="5"
@@ -197,7 +705,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
             >
               <img
                 alt="Redux"
-                class="tech-specsstyles__Icon-sc-1ysn53a-1 ifSCys"
+                class="c12"
                 height="5"
                 src="IMAGE_MOCK"
                 width="5"
@@ -211,7 +719,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
             >
               <img
                 alt="Amazon Web Services"
-                class="tech-specsstyles__Icon-sc-1ysn53a-1 ifSCys"
+                class="c12"
                 height="5"
                 src="IMAGE_MOCK"
                 style="margin-top: .8rem; max-width: 2.9rem;"
@@ -221,35 +729,31 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
           </span>
         </div>
         <div
-          class="footer-navstyles__Wrapper-sc-7lmnsj-0 bCyRIt footerstyles__StyledFooterNav-sc-ojjd19-3"
+          class="c13 "
         >
           <div
-            class="footer-navstyles__Section-sc-7lmnsj-1 bcuhSW"
+            class="c14"
           >
-            <a
-              class="sc-iBYQkv cCatJA"
-              href="/sitemap"
+            <span
+              class="c15"
             >
               Site map
-            </a>
-            <a
-              class="sc-iBYQkv cCatJA"
-              href="/privacy-policy"
+            </span>
+            <span
+              class="c15"
             >
               Privacy
-            </a>
-            <a
-              class="sc-iBYQkv cCatJA"
-              href="/login"
+            </span>
+            <span
+              class="c15"
             >
               Login/Account
-            </a>
-            <a
-              class="sc-iBYQkv cCatJA"
-              href="/status"
+            </span>
+            <span
+              class="c15"
             >
               Status
-            </a>
+            </span>
           </div>
         </div>
       </footer>
