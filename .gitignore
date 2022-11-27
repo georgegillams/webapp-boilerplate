@@ -1,6 +1,6 @@
 # Don't check auto-generated stuff into git
 .idea
-.next/
+.next
 coverage
 node_modules
 stats.json
@@ -8,6 +8,7 @@ yarn-error.log
 
 gg-webapp/dist
 build
+deploy
 build.zip
 webapp-boilerplate.tar.gz
 

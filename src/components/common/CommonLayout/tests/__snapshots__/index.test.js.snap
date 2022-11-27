@@ -72,6 +72,42 @@ exports[`<Layout /> Should render correctly 1`] = `
 }
 
 .c15 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: white;
+  fill: white;
+}
+
+.c15:focus-within,
+.c15:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c15:focus-within::after,
+.c15:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c15:hover {
+  color: white;
+  fill: white;
+}
+
+.c16 {
   margin: 0;
 }
 
@@ -238,11 +274,22 @@ exports[`<Layout /> Should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c15:focus-within::after,
+  .c15:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
 }
 
 @media (prefers-color-scheme:dark) {
+  .c15 {
+    color: white;
+    fill: white;
+  }
 
+  .c15:hover {
+    color: white;
+    fill: white;
+  }
 }
 
 @media (min-width:32.25rem) {
@@ -353,26 +400,46 @@ exports[`<Layout /> Should render correctly 1`] = `
           <div
             class="c14"
           >
-            <span
+            <a
               class="c15"
+              href="/sitemap"
             >
-              Site map
-            </span>
-            <span
+              <span
+                class="c16"
+              >
+                Site map
+              </span>
+            </a>
+            <a
               class="c15"
+              href="/privacy-policy"
             >
-              Privacy
-            </span>
-            <span
+              <span
+                class="c16"
+              >
+                Privacy
+              </span>
+            </a>
+            <a
               class="c15"
+              href="/login"
             >
-              Login/Account
-            </span>
-            <span
+              <span
+                class="c16"
+              >
+                Login/Account
+              </span>
+            </a>
+            <a
               class="c15"
+              href="/status"
             >
-              Status
-            </span>
+              <span
+                class="c16"
+              >
+                Status
+              </span>
+            </a>
           </div>
         </div>
       </footer>
@@ -453,6 +520,42 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
 }
 
 .c15 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: white;
+  fill: white;
+}
+
+.c15:focus-within,
+.c15:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c15:focus-within::after,
+.c15:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c15:hover {
+  color: white;
+  fill: white;
+}
+
+.c16 {
   margin: 0;
 }
 
@@ -619,11 +722,22 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c15:focus-within::after,
+  .c15:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
 }
 
 @media (prefers-color-scheme:dark) {
+  .c15 {
+    color: white;
+    fill: white;
+  }
 
+  .c15:hover {
+    color: white;
+    fill: white;
+  }
 }
 
 @media (min-width:32.25rem) {
@@ -734,26 +848,46 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
           <div
             class="c14"
           >
-            <span
+            <a
               class="c15"
+              href="/sitemap"
             >
-              Site map
-            </span>
-            <span
+              <span
+                class="c16"
+              >
+                Site map
+              </span>
+            </a>
+            <a
               class="c15"
+              href="/privacy-policy"
             >
-              Privacy
-            </span>
-            <span
+              <span
+                class="c16"
+              >
+                Privacy
+              </span>
+            </a>
+            <a
               class="c15"
+              href="/login"
             >
-              Login/Account
-            </span>
-            <span
+              <span
+                class="c16"
+              >
+                Login/Account
+              </span>
+            </a>
+            <a
               class="c15"
+              href="/status"
             >
-              Status
-            </span>
+              <span
+                class="c16"
+              >
+                Status
+              </span>
+            </a>
           </div>
         </div>
       </footer>
