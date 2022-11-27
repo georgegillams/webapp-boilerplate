@@ -31,8 +31,44 @@ exports[`<Home /> should render correctly 1`] = `
   font-weight: bold;
 }
 
-.c8 {
+.c9 {
   margin: 0;
+}
+
+.c8 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c8:focus-within,
+.c8:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c8:focus-within::after,
+.c8:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c8:hover {
+  color: #44aeff;
+  fill: #44aeff;
 }
 
 .c6 {
@@ -82,17 +118,28 @@ exports[`<Home /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c6 {
-    color: white;
+  .c8:focus-within::after,
+  .c8:focus::after {
+    border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
+  .c8 {
+    color: orchid;
+    fill: orchid;
+  }
 
+  .c8:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c6 {
+    color: white;
+  }
 }
 
 <div>
@@ -130,11 +177,16 @@ exports[`<Home /> should render correctly 1`] = `
             This is just a boilerplate page, but you can put any content you want in here.
             <br />
             This page is pretty boring, but the 
-            <span
+            <a
               class="c8"
+              href="/sitemap"
             >
-              site map
-            </span>
+              <span
+                class="c9"
+              >
+                site map
+              </span>
+            </a>
              might be more inspiring.
           </span>
         </div>

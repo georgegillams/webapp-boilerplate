@@ -31,8 +31,80 @@ exports[`<HomePage /> should render correctly 1`] = `
   font-weight: bold;
 }
 
-.c10 {
+.c11 {
   margin: 0;
+}
+
+.c10 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c10:focus-within,
+.c10:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c10:focus-within::after,
+.c10:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c10:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
+.c22 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: white;
+  fill: white;
+}
+
+.c22:focus-within,
+.c22:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c22:focus-within::after,
+.c22:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c22:hover {
+  color: white;
+  fill: white;
 }
 
 .c8 {
@@ -74,7 +146,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   margin: 2.3rem 0 0 0;
 }
 
-.c12 {
+.c13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -101,18 +173,18 @@ exports[`<HomePage /> should render correctly 1`] = `
   padding: 0;
 }
 
-.c14 {
+.c15 {
   border-radius: 0.25rem;
 }
 
-.c14:focus-within,
-.c14:focus {
+.c15:focus-within,
+.c15:focus {
   position: relative;
   outline: none !important;
 }
 
-.c14:focus-within::after,
-.c14:focus::after {
+.c15:focus-within::after,
+.c15:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -125,16 +197,16 @@ exports[`<HomePage /> should render correctly 1`] = `
   pointer-events: none;
 }
 
-.c14:hover,
-.c14:active,
-.c14:focus {
+.c15:hover,
+.c15:active,
+.c15:focus {
   -webkit-animation-duration: 0.4s;
   animation-duration: 0.4s;
   -webkit-animation-name: gg-bounce-hover-effect;
   animation-name: gg-bounce-hover-effect;
 }
 
-.c15 {
+.c16 {
   display: inline-block;
   padding-top: 0.1rem;
   border-radius: 0.25rem;
@@ -144,7 +216,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   font-weight: bold;
 }
 
-.c19 {
+.c20 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -164,7 +236,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   margin: auto;
 }
 
-.c20 > * {
+.c21 > * {
   margin: 0.5rem 0.5rem 0 0.5rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -179,7 +251,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   align-items: center;
 }
 
-.c17 {
+.c18 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -199,7 +271,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   align-items: center;
 }
 
-.c18 {
+.c19 {
   display: inline-block;
   width: 100%;
   max-width: 2.3rem;
@@ -210,12 +282,12 @@ exports[`<HomePage /> should render correctly 1`] = `
   filter: brightness(0) invert(1);
 }
 
-.c18:hover {
+.c19:hover {
   -webkit-filter: brightness(0) invert(1) opacity(70%);
   filter: brightness(0) invert(1) opacity(70%);
 }
 
-.c11 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -235,11 +307,11 @@ exports[`<HomePage /> should render correctly 1`] = `
   color: white;
 }
 
-.c13 {
+.c14 {
   text-align: center;
 }
 
-.c16 {
+.c17 {
   text-align: center;
 }
 
@@ -261,29 +333,51 @@ exports[`<HomePage /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
+  .c10:focus-within::after,
+  .c10:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c10 {
+    color: orchid;
+    fill: orchid;
+  }
+
+  .c10:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c22:focus-within::after,
+  .c22:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c22 {
+    color: white;
+    fill: white;
+  }
+
+  .c22:hover {
+    color: white;
+    fill: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
   .c8 {
     color: white;
   }
 }
 
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
 @media (min-width:50.25rem) {
-  .c12 {
+  .c13 {
     padding-right: unset;
     padding-left: unset;
     -webkit-align-items: unset;
@@ -294,32 +388,32 @@ exports[`<HomePage /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:focus-within::after,
-  .c14:focus::after {
+  .c15:focus-within::after,
+  .c15:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (min-width:32.25rem) {
-  .c15 {
+  .c16 {
     font-size: 3rem;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c15 {
+  .c16 {
     color: white;
   }
 }
 
 @media (min-width:32.25rem) {
-  .c11 {
+  .c12 {
     padding: 2rem 2rem;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c11 {
+  .c12 {
     border-top: solid #44aeff 0.15rem;
   }
 }
@@ -363,11 +457,16 @@ exports[`<HomePage /> should render correctly 1`] = `
               This is just a boilerplate page, but you can put any content you want in here.
               <br />
               This page is pretty boring, but the 
-              <span
+              <a
                 class="c10"
+                href="/sitemap"
               >
-                site map
-              </span>
+                <span
+                  class="c11"
+                >
+                  site map
+                </span>
+              </a>
                might be more inspiring.
             </span>
           </div>
@@ -387,29 +486,29 @@ exports[`<HomePage /> should render correctly 1`] = `
       class="c7 animated-content__wrapper--hidden"
     >
       <footer
-        class="c11"
+        class="c12"
         id="footer"
       >
         <div
-          class="c12 c13"
+          class="c13 c14"
         >
           <a
-            class="c14"
+            class="c15"
             href="/"
           >
             <span
               aria-label="Home page"
-              class="c15"
+              class="c16"
             >
               LOGO
             </span>
           </a>
         </div>
         <div
-          class="c16"
+          class="c17"
         >
           <span
-            class="c9 c17"
+            class="c9 c18"
           >
             Built in
             <a
@@ -419,7 +518,7 @@ exports[`<HomePage /> should render correctly 1`] = `
             >
               <img
                 alt="React"
-                class="c18"
+                class="c19"
                 height="5"
                 src="IMAGE_MOCK"
                 width="5"
@@ -433,7 +532,7 @@ exports[`<HomePage /> should render correctly 1`] = `
             >
               <img
                 alt="Redux"
-                class="c18"
+                class="c19"
                 height="5"
                 src="IMAGE_MOCK"
                 width="5"
@@ -447,7 +546,7 @@ exports[`<HomePage /> should render correctly 1`] = `
             >
               <img
                 alt="Amazon Web Services"
-                class="c18"
+                class="c19"
                 height="5"
                 src="IMAGE_MOCK"
                 style="margin-top: .8rem; max-width: 2.9rem;"
@@ -457,31 +556,51 @@ exports[`<HomePage /> should render correctly 1`] = `
           </span>
         </div>
         <div
-          class="c19 "
+          class="c20 "
         >
           <div
-            class="c20"
+            class="c21"
           >
-            <span
-              class="c10"
+            <a
+              class="c22"
+              href="/sitemap"
             >
-              Site map
-            </span>
-            <span
-              class="c10"
+              <span
+                class="c11"
+              >
+                Site map
+              </span>
+            </a>
+            <a
+              class="c22"
+              href="/privacy-policy"
             >
-              Privacy
-            </span>
-            <span
-              class="c10"
+              <span
+                class="c11"
+              >
+                Privacy
+              </span>
+            </a>
+            <a
+              class="c22"
+              href="/login"
             >
-              Login/Account
-            </span>
-            <span
-              class="c10"
+              <span
+                class="c11"
+              >
+                Login/Account
+              </span>
+            </a>
+            <a
+              class="c22"
+              href="/status"
             >
-              Status
-            </span>
+              <span
+                class="c11"
+              >
+                Status
+              </span>
+            </a>
           </div>
         </div>
       </footer>

@@ -18,7 +18,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
   height: 1.25rem;
 }
 
-.c12 {
+.c11 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -29,14 +29,14 @@ exports[`<SiteMap /> should render correctly 1`] = `
   fill: darkorchid;
 }
 
-.c12:focus-within,
-.c12:focus {
+.c11:focus-within,
+.c11:focus {
   position: relative;
   outline: none !important;
 }
 
-.c12:focus-within::after,
-.c12:focus::after {
+.c11:focus-within::after,
+.c11:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -49,7 +49,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
   pointer-events: none;
 }
 
-.c12:hover {
+.c11:hover {
   color: #44aeff;
   fill: #44aeff;
 }
@@ -84,7 +84,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
   font-weight: bold;
 }
 
-.c11 {
+.c12 {
   margin: 0;
 }
 
@@ -143,30 +143,22 @@ exports[`<SiteMap /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12:focus-within::after,
-  .c12:focus::after {
+  .c11:focus-within::after,
+  .c11:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12 {
+  .c11 {
     color: orchid;
     fill: orchid;
   }
 
-  .c12:hover {
+  .c11:hover {
     color: #44aeff;
     fill: #44aeff;
   }
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
 }
 
 @media (prefers-color-scheme:dark) {
@@ -213,11 +205,16 @@ exports[`<SiteMap /> should render correctly 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/privacy-policy"
             >
-              Privacy Policy
-            </span>
+              <span
+                class="c12"
+              >
+                Privacy Policy
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -246,17 +243,27 @@ exports[`<SiteMap /> should render correctly 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/debug"
             >
-              Debug tools
-            </span>
+              <span
+                class="c12"
+              >
+                Debug tools
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/status"
             >
-              Status
-            </span>
+              <span
+                class="c12"
+              >
+                Status
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -287,13 +294,13 @@ exports[`<SiteMap /> should render correctly 1`] = `
           >
             <a
               aria-label="Robots.txt (opens in a new tab)"
-              class="c12"
+              class="c11"
               href="/robots.txt"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="c11"
+                class="c12"
               >
                 Robots.txt
               </span>
@@ -316,13 +323,13 @@ exports[`<SiteMap /> should render correctly 1`] = `
             <br />
             <a
               aria-label="SiteMap.xml (opens in a new tab)"
-              class="c12"
+              class="c11"
               href="/sitemap.xml"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="c11"
+                class="c12"
               >
                 SiteMap.xml
               </span>
@@ -343,17 +350,27 @@ exports[`<SiteMap /> should render correctly 1`] = `
               </div>
             </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/404"
             >
-              404 error page - not found
-            </span>
+              <span
+                class="c12"
+              >
+                404 error page - not found
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/teapot"
             >
-              418 error page - I'm a teapot
-            </span>
+              <span
+                class="c12"
+              >
+                418 error page - I'm a teapot
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -382,11 +399,16 @@ exports[`<SiteMap /> should render correctly 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/api-docs"
             >
-              API docs
-            </span>
+              <span
+                class="c12"
+              >
+                API docs
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -415,35 +437,60 @@ exports[`<SiteMap /> should render correctly 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/account"
             >
-              Account
-            </span>
+              <span
+                class="c12"
+              >
+                Account
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/sign-up"
             >
-              Sign up
-            </span>
+              <span
+                class="c12"
+              >
+                Sign up
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/login"
             >
-              Log in
-            </span>
+              <span
+                class="c12"
+              >
+                Log in
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/email-verification"
             >
-              Email verification
-            </span>
+              <span
+                class="c12"
+              >
+                Email verification
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/magic-login"
             >
-              Magic login
-            </span>
+              <span
+                class="c12"
+              >
+                Magic login
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -472,35 +519,60 @@ exports[`<SiteMap /> should render correctly 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/admin"
             >
-              Admin navigation
-            </span>
+              <span
+                class="c12"
+              >
+                Admin navigation
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/admin/analytics"
             >
-              Analytics
-            </span>
+              <span
+                class="c12"
+              >
+                Analytics
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/admin/emails"
             >
-              Emails
-            </span>
+              <span
+                class="c12"
+              >
+                Emails
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/admin/notifications"
             >
-              Notifications
-            </span>
+              <span
+                class="c12"
+              >
+                Notifications
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/admin/users"
             >
-              Users
-            </span>
+              <span
+                class="c12"
+              >
+                Users
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -530,27 +602,42 @@ exports[`<SiteMap /> should render correctly 1`] = `
             class="c10"
           >
             <div>
-              <span
+              <a
                 class="c11"
+                href="/codebase"
               >
-                /codebase ⇒ https://github.com/georgegillams/webapp-boilerplate
-              </span>
+                <span
+                  class="c12"
+                >
+                  /codebase ⇒ https://github.com/georgegillams/webapp-boilerplate
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/wp-admin"
               >
-                /wp-admin ⇒ /admin
-              </span>
+                <span
+                  class="c12"
+                >
+                  /wp-admin ⇒ /admin
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/site-map"
               >
-                /site-map ⇒ /sitemap
-              </span>
+                <span
+                  class="c12"
+                >
+                  /site-map ⇒ /sitemap
+                </span>
+              </a>
               <br />
             </div>
           </span>
