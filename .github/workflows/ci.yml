@@ -135,7 +135,7 @@ jobs:
           git config --global credential.helper cache
           git clone https://${{secrets.PUBLISH_GH_TOKEN}}@github.com/georgegillams/webapp-boilerplate
           mv node_modules webapp-boilerplate/
-          mv gg-webapp/mode_modules webapp-boilerplate/gg-webapp/
+          mv gg-webapp/node_modules webapp-boilerplate/gg-webapp/
 
       - name: npm install
         run: |
