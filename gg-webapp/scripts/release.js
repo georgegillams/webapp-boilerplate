@@ -6,28 +6,19 @@ import { inc } from 'semver';
 
 import packageData, { version } from '../package.json';
 
+import {
+  getVersionRc,
+  getChangesData,
+  getSemverBumpFromChanges,
+  generateMarkdown,
+  addToChangelog,
+} from './changelog-helpers.js';
 import { blue, yellow } from './colors';
 
 console.log('Starting release');
 console.log('');
 
-const getBumpType = () => {
-  if (process.argv.includes('--alpha')) {
-    return 'alpha';
-  }
-  if (process.argv.includes('--major')) {
-    return 'major';
-  }
-  if (process.argv.includes('--minor')) {
-    return 'minor';
-  }
-  if (process.argv.includes('--patch')) {
-    return 'patch';
-  }
-
-  console.warn(yellow(`No release type specified. Defaulting to patch.`));
-  return 'patch';
-};
+const debug = process.argv.includes('--debug');
 
 const updatePackageFile = newVersion => {
   const newPackageData = JSON.parse(JSON.stringify(packageData));
@@ -35,30 +26,62 @@ const updatePackageFile = newVersion => {
   const fileContent = `${JSON.stringify(newPackageData, null, 2)}\n`;
   writeFileSync('package.json', fileContent, 'utf8');
   execSync('cp package.json ./dist/');
-  execSync('cp ../README.md ./dist/');
+  execSync('cp README.md ./dist/');
   console.log(blue('package.json updated'));
 };
 
 const createTag = newVersion => {
-  execSync(`git tag ${newVersion} && git push --tags`);
+  const commands = [`git tag ${newVersion} && git push --tags`];
+
+  if (debug) {
+    commands.forEach(c => console.log(blue(c)));
+  } else {
+    commands.forEach(execSync);
+  }
+
   console.log(blue('Release tagged'));
 };
 
 const commitChanges = newVersion => {
-  execSync(`git add .`);
-  execSync(`git commit -m "Publish ${newVersion}"`);
-  execSync(`git push`);
+  const commands = [`git add .`, `git commit -m "[skip ci] Publish ${newVersion}"`, `git push`];
+
+  if (debug) {
+    commands.forEach(c => console.log(blue(c)));
+  } else {
+    commands.forEach(execSync);
+  }
+
   console.log(blue('Code pushed'));
 };
 
 const publishPackage = () => {
-  execSync(`(cd dist && npm publish --access public)`);
+  const commands = [`(cd dist && npm publish --access public)`];
+
+  if (debug) {
+    commands.forEach(c => console.log(blue(c)));
+  } else {
+    commands.forEach(execSync);
+  }
+
   console.log(blue('Package published'));
 };
 
-const getCurrentPublishedVersion = () => execSync(`npm view @george-gillams/webapp version`).toString().split('\n')[0];
+const getCurrentPublishedVersion = () => {
+  try {
+    return execSync(`npm view @george-gillams/webapp version`).toString().split('\n')[0];
+  } catch (error) {
+    return '0.0.0';
+  }
+};
 
-const bumpType = getBumpType();
+const changeData = getChangesData();
+
+let semverBump = getSemverBumpFromChanges(changeData);
+if (process.argv.includes('--alpha')) {
+  semverBump = 'alpha';
+}
+console.log(`semverBump`, semverBump);
+
 const currentVersion = version;
 const currentVersionPublished = getCurrentPublishedVersion();
 if (currentVersion !== currentVersionPublished) {
@@ -67,15 +90,19 @@ if (currentVersion !== currentVersionPublished) {
   );
 }
 let newVersion = currentVersion;
-if (bumpType === 'alpha') {
+if (semverBump === 'alpha') {
   newVersion = `${currentVersion}-alpha`;
 } else {
-  newVersion = inc(currentVersion, bumpType);
+  newVersion = inc(currentVersion, semverBump);
 }
 console.log(`Publishing version ${newVersion}`);
 
+const versionRc = getVersionRc();
+
 updatePackageFile(newVersion);
-createTag(newVersion);
+const changelogMarkdown = generateMarkdown(versionRc, newVersion, changeData);
+addToChangelog(changelogMarkdown);
 commitChanges(newVersion);
+createTag(newVersion);
 publishPackage();
 console.log('Done');

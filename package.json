@@ -1,6 +1,6 @@
 {
   "name": "webapp-boilerplate",
-  "version": "1.2.0",
+  "version": "0.0.0-example-app-not-released",
   "main": "index.js",
   "author": "George Gillams <open-source@georgegillams.co.uk>",
   "license": "MIT",
@@ -9,6 +9,7 @@
     "url": "git://github.com/georgegillams/webapp-boilerplate.git"
   },
   "scripts": {
+    "release": "(cd gg-webapp && yarn release)",
     "gg-webapp-install": "(cd gg-webapp && yarn install)",
     "gg-webapp-transpile": "(cd gg-webapp && yarn transpile)",
     "gg-webapp-transpile:live": "(cd gg-webapp && yarn transpile:js:live)",
@@ -43,11 +44,6 @@
     "prettier": "prettier --config .prettierrc \"./**/*.+(js|json|jsx)\" --write",
     "clean:example": "rnb --c",
     "analyze": "cross-env ANALYZE=true next build"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "lint-staged": {
     "*.js": [
@@ -121,7 +117,6 @@
     "eslint-plugin-react": "^7.31.10",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-redux-saga": "^1.3.2",
-    "husky": "^8.0.2",
     "jest-cli": "^29.3.1",
     "jest-styled-components": "^7.1.1",
     "lint-staged": "^13.0.3",
