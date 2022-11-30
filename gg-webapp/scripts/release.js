@@ -43,7 +43,7 @@ const createTag = newVersion => {
 };
 
 const commitChanges = newVersion => {
-  const commands = [`git add .`, `git commit -m "[skip ci] Publish ${newVersion}"`, `git push`];
+  const commands = [`(cd .. && git add . && git commit -m "[skip ci] Publish ${newVersion}" && git push)`];
 
   if (debug) {
     commands.forEach(c => console.log(blue(c)));
