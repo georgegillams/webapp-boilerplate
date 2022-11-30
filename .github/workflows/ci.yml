@@ -139,13 +139,13 @@ jobs:
 
       - name: npm install
         run: |
-          cd gg-webapp
+          cd webapp-boilerplate/gg-webapp
           PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true yarn install --frozen-lockfile
 
       - name: release
         env:
           NPM_PUBLISH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
         run: |
-          cd gg-webapp
+          cd webapp-boilerplate
           npm config set //registry.npmjs.org/:_authToken $NPM_PUBLISH_TOKEN
           yarn release
