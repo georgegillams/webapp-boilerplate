@@ -139,8 +139,9 @@ jobs:
 
       - name: npm install
         run: |
-          cd webapp-boilerplate/gg-webapp
+          cd webapp-boilerplate
           PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true yarn install --frozen-lockfile
+          PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true yarn gg-webapp-install
 
       - name: release
         env:
