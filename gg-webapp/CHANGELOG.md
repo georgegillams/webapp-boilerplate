@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.3
+
+### Bug Fixes
+
+- Fix release 5
+
 ## 1.0.2
 
 ### Bug Fixes
