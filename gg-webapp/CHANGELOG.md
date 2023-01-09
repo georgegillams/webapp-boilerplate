@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.4
+
+### Bug Fixes
+
+- Include hyphens and dashes in blog titles (#497)
+
 ## 1.0.3
 
 ### Bug Fixes
