@@ -31,29 +31,29 @@ exports[`<Home /> should render correctly 1`] = `
   font-weight: bold;
 }
 
-.c9 {
+.c8 {
   margin: 0;
 }
 
-.c8 {
+.c7 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
   -webkit-text-decoration: none;
   text-decoration: none;
   position: relative;
-  color: darkorchid;
-  fill: darkorchid;
+  color: #9932cc;
+  fill: #9932cc;
 }
 
-.c8:focus-within,
-.c8:focus {
+.c7:focus-within,
+.c7:focus {
   position: relative;
   outline: none !important;
 }
 
-.c8:focus-within::after,
-.c8:focus::after {
+.c7:focus-within::after,
+.c7:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -61,24 +61,24 @@ exports[`<Home /> should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
 
-.c8:hover {
+.c7:hover {
   color: #44aeff;
   fill: #44aeff;
 }
 
-.c6 {
+.c5 {
   width: 100%;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c7 {
+.c6 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -86,24 +86,20 @@ exports[`<Home /> should render correctly 1`] = `
   margin-top: 2rem;
 }
 
-.c7:first-of-type {
+.c6:first-of-type {
   margin-top: 0.86rem;
 }
 
-.c5 {
+.c4 {
   padding-top: 0;
   opacity: 1;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 
-.c4 {
-  width: 100%;
-}
-
 .c1 {
-  -webkit-animation: bbwGtI 0.4s ease-in-out;
-  animation: bbwGtI 0.4s ease-in-out;
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
 }
 
 .c3 {
@@ -118,27 +114,27 @@ exports[`<Home /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c8:focus-within::after,
-  .c8:focus::after {
-    border-color: rgba(0,125,250,0.6);
+  .c7:focus-within::after,
+  .c7:focus::after {
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c8 {
-    color: orchid;
-    fill: orchid;
+  .c7 {
+    color: #da70d6;
+    fill: #da70d6;
   }
 
-  .c8:hover {
+  .c7:hover {
     color: #44aeff;
     fill: #44aeff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c6 {
-    color: white;
+  .c5 {
+    color: #ffffff;
   }
 }
 
@@ -156,9 +152,7 @@ exports[`<Home /> should render correctly 1`] = `
         Home
       </h1>
     </div>
-    <div
-      class="c4"
-    >
+    <div>
       <style>
         .js .animated-content__wrapper--hidden {
   padding-top: 4rem;
@@ -166,23 +160,23 @@ exports[`<Home /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="c5 animated-content__wrapper--hidden"
+        class="c4 animated-content__wrapper--hidden"
       >
         <div
-          class="c6"
+          class="c5"
         >
           <span
-            class="c7"
+            class="c6"
           >
             This is just a boilerplate page, but you can put any content you want in here.
             <br />
             This page is pretty boring, but the 
             <a
-              class="c8"
+              class="c7"
               href="/sitemap"
             >
               <span
-                class="c9"
+                class="c8"
               >
                 site map
               </span>
