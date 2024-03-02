@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.6
+
+### Bug Fixes
+
+- Adopt common code March 2024 (#511)
+
 ## 1.0.5
 
 ## 1.0.4
