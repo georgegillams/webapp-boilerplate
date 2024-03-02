@@ -13,30 +13,30 @@ exports[`<SiteMap /> should render correctly 1`] = `
   padding-left: 1rem;
 }
 
-.c14 {
+.c13 {
   width: 1.25rem;
   height: 1.25rem;
 }
 
-.c11 {
+.c10 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
   -webkit-text-decoration: none;
   text-decoration: none;
   position: relative;
-  color: darkorchid;
-  fill: darkorchid;
+  color: #9932cc;
+  fill: #9932cc;
 }
 
-.c11:focus-within,
-.c11:focus {
+.c10:focus-within,
+.c10:focus {
   position: relative;
   outline: none !important;
 }
 
-.c11:focus-within::after,
-.c11:focus::after {
+.c10:focus-within::after,
+.c10:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -44,17 +44,17 @@ exports[`<SiteMap /> should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
 
-.c11:hover {
+.c10:hover {
   color: #44aeff;
   fill: #44aeff;
 }
 
-.c13 {
+.c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -64,7 +64,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
   margin-left: 0.55rem;
 }
 
-.c15 {
+.c14 {
   position: absolute;
   width: 1rem;
   height: 1rem;
@@ -78,13 +78,13 @@ exports[`<SiteMap /> should render correctly 1`] = `
   font-weight: bold;
 }
 
-.c8 {
+.c7 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.c12 {
+.c11 {
   margin: 0;
 }
 
@@ -92,23 +92,19 @@ exports[`<SiteMap /> should render correctly 1`] = `
   margin: 2.3rem 0 0 0;
 }
 
-.c5 {
+.c4 {
   padding-top: 0;
   opacity: 1;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 
-.c4 {
-  width: 100%;
-}
-
 .c1 {
-  -webkit-animation: bbwGtI 0.4s ease-in-out;
-  animation: bbwGtI 0.4s ease-in-out;
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
 }
 
-.c10 {
+.c9 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -116,22 +112,22 @@ exports[`<SiteMap /> should render correctly 1`] = `
   margin-top: 2rem;
 }
 
-.c10:first-of-type {
+.c9:first-of-type {
   margin-top: 0.86rem;
 }
 
-.c6 {
+.c5 {
   width: 100%;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c9 {
+.c8 {
   margin: 2.13rem 0 0 0;
 }
 
-.c7 {
+.c6 {
   word-break: break-word;
 }
 
@@ -143,27 +139,27 @@ exports[`<SiteMap /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c11:focus-within::after,
-  .c11:focus::after {
-    border-color: rgba(0,125,250,0.6);
+  .c10:focus-within::after,
+  .c10:focus::after {
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c11 {
-    color: orchid;
-    fill: orchid;
+  .c10 {
+    color: #da70d6;
+    fill: #da70d6;
   }
 
-  .c11:hover {
+  .c10:hover {
     color: #44aeff;
     fill: #44aeff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c6 {
-    color: white;
+  .c5 {
+    color: #ffffff;
   }
 }
 
@@ -181,9 +177,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         Site map
       </h1>
     </div>
-    <div
-      class="c4"
-    >
+    <div>
       <style>
         .js .animated-content__wrapper--hidden {
   padding-top: 4rem;
@@ -191,26 +185,26 @@ exports[`<SiteMap /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="c5 animated-content__wrapper--hidden"
+        class="c4 animated-content__wrapper--hidden"
       >
         <div
-          class="c6 c7"
+          class="c5 c6"
         >
           <h1
-            class="c8 c9"
+            class="c7 c8"
             id="design-🎨"
           >
             Design 🎨
           </h1>
           <span
-            class="c10"
+            class="c9"
           >
             <a
-              class="c11"
+              class="c10"
               href="/privacy-policy"
             >
               <span
-                class="c12"
+                class="c11"
               >
                 Privacy Policy
               </span>
@@ -219,9 +213,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
       </div>
     </div>
-    <div
-      class="c4"
-    >
+    <div>
       <style>
         .js .animated-content__wrapper--hidden {
   padding-top: 4rem;
@@ -229,37 +221,37 @@ exports[`<SiteMap /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="c5 animated-content__wrapper--hidden"
+        class="c4 animated-content__wrapper--hidden"
       >
         <div
-          class="c6 c7"
+          class="c5 c6"
         >
           <h1
-            class="c8 c9"
+            class="c7 c8"
             id="other-stuff-🤷‍♂️"
           >
             Other stuff 🤷‍♂️
           </h1>
           <span
-            class="c10"
+            class="c9"
           >
             <a
-              class="c11"
+              class="c10"
               href="/debug"
             >
               <span
-                class="c12"
+                class="c11"
               >
                 Debug tools
               </span>
             </a>
             <br />
             <a
-              class="c11"
+              class="c10"
               href="/status"
             >
               <span
-                class="c12"
+                class="c11"
               >
                 Status
               </span>
@@ -268,9 +260,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
       </div>
     </div>
-    <div
-      class="c4"
-    >
+    <div>
       <style>
         .js .animated-content__wrapper--hidden {
   padding-top: 4rem;
@@ -278,37 +268,37 @@ exports[`<SiteMap /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="c5 animated-content__wrapper--hidden"
+        class="c4 animated-content__wrapper--hidden"
       >
         <div
-          class="c6 c7"
+          class="c5 c6"
         >
           <h1
-            class="c8 c9"
+            class="c7 c8"
             id="random-🐉"
           >
             Random 🐉
           </h1>
           <span
-            class="c10"
+            class="c9"
           >
             <a
               aria-label="Robots.txt (opens in a new tab)"
-              class="c11"
+              class="c10"
               href="/robots.txt"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="c12"
+                class="c11"
               >
                 Robots.txt
               </span>
               <div
-                class="c13"
+                class="c12"
               >
                 <svg
-                  class="c14 c15"
+                  class="c13 c14"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -323,21 +313,21 @@ exports[`<SiteMap /> should render correctly 1`] = `
             <br />
             <a
               aria-label="SiteMap.xml (opens in a new tab)"
-              class="c11"
+              class="c10"
               href="/sitemap.xml"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="c12"
+                class="c11"
               >
                 SiteMap.xml
               </span>
               <div
-                class="c13"
+                class="c12"
               >
                 <svg
-                  class="c14 c15"
+                  class="c13 c14"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -351,22 +341,22 @@ exports[`<SiteMap /> should render correctly 1`] = `
             </a>
             <br />
             <a
-              class="c11"
+              class="c10"
               href="/404"
             >
               <span
-                class="c12"
+                class="c11"
               >
                 404 error page - not found
               </span>
             </a>
             <br />
             <a
-              class="c11"
+              class="c10"
               href="/teapot"
             >
               <span
-                class="c12"
+                class="c11"
               >
                 418 error page - I'm a teapot
               </span>
@@ -375,9 +365,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
       </div>
     </div>
-    <div
-      class="c4"
-    >
+    <div>
       <style>
         .js .animated-content__wrapper--hidden {
   padding-top: 4rem;
@@ -385,26 +373,26 @@ exports[`<SiteMap /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="c5 animated-content__wrapper--hidden"
+        class="c4 animated-content__wrapper--hidden"
       >
         <div
-          class="c6 c7"
+          class="c5 c6"
         >
           <h1
-            class="c8 c9"
+            class="c7 c8"
             id="api"
           >
             API
           </h1>
           <span
-            class="c10"
+            class="c9"
           >
             <a
-              class="c11"
+              class="c10"
               href="/api-docs"
             >
               <span
-                class="c12"
+                class="c11"
               >
                 API docs
               </span>
@@ -413,9 +401,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
       </div>
     </div>
-    <div
-      class="c4"
-    >
+    <div>
       <style>
         .js .animated-content__wrapper--hidden {
   padding-top: 4rem;
@@ -423,70 +409,70 @@ exports[`<SiteMap /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="c5 animated-content__wrapper--hidden"
+        class="c4 animated-content__wrapper--hidden"
       >
         <div
-          class="c6 c7"
+          class="c5 c6"
         >
           <h1
-            class="c8 c9"
+            class="c7 c8"
             id="accounts-🔑"
           >
             Accounts 🔑
           </h1>
           <span
-            class="c10"
+            class="c9"
           >
             <a
-              class="c11"
+              class="c10"
               href="/account"
             >
               <span
-                class="c12"
+                class="c11"
               >
                 Account
               </span>
             </a>
             <br />
             <a
-              class="c11"
+              class="c10"
               href="/sign-up"
             >
               <span
-                class="c12"
+                class="c11"
               >
                 Sign up
               </span>
             </a>
             <br />
             <a
-              class="c11"
+              class="c10"
               href="/login"
             >
               <span
-                class="c12"
+                class="c11"
               >
                 Log in
               </span>
             </a>
             <br />
             <a
-              class="c11"
+              class="c10"
               href="/email-verification"
             >
               <span
-                class="c12"
+                class="c11"
               >
                 Email verification
               </span>
             </a>
             <br />
             <a
-              class="c11"
+              class="c10"
               href="/magic-login"
             >
               <span
-                class="c12"
+                class="c11"
               >
                 Magic login
               </span>
@@ -495,9 +481,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
       </div>
     </div>
-    <div
-      class="c4"
-    >
+    <div>
       <style>
         .js .animated-content__wrapper--hidden {
   padding-top: 4rem;
@@ -505,70 +489,70 @@ exports[`<SiteMap /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="c5 animated-content__wrapper--hidden"
+        class="c4 animated-content__wrapper--hidden"
       >
         <div
-          class="c6 c7"
+          class="c5 c6"
         >
           <h1
-            class="c8 c9"
+            class="c7 c8"
             id="admin-👮‍♂️"
           >
             Admin 👮‍♂️
           </h1>
           <span
-            class="c10"
+            class="c9"
           >
             <a
-              class="c11"
+              class="c10"
               href="/admin"
             >
               <span
-                class="c12"
+                class="c11"
               >
                 Admin navigation
               </span>
             </a>
             <br />
             <a
-              class="c11"
+              class="c10"
               href="/admin/analytics"
             >
               <span
-                class="c12"
+                class="c11"
               >
                 Analytics
               </span>
             </a>
             <br />
             <a
-              class="c11"
+              class="c10"
               href="/admin/emails"
             >
               <span
-                class="c12"
+                class="c11"
               >
                 Emails
               </span>
             </a>
             <br />
             <a
-              class="c11"
+              class="c10"
               href="/admin/notifications"
             >
               <span
-                class="c12"
+                class="c11"
               >
                 Notifications
               </span>
             </a>
             <br />
             <a
-              class="c11"
+              class="c10"
               href="/admin/users"
             >
               <span
-                class="c12"
+                class="c11"
               >
                 Users
               </span>
@@ -577,9 +561,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
       </div>
     </div>
-    <div
-      class="c4"
-    >
+    <div>
       <style>
         .js .animated-content__wrapper--hidden {
   padding-top: 4rem;
@@ -587,27 +569,27 @@ exports[`<SiteMap /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="c5 animated-content__wrapper--hidden"
+        class="c4 animated-content__wrapper--hidden"
       >
         <div
-          class="c6 c7"
+          class="c5 c6"
         >
           <h1
-            class="c8 c9"
+            class="c7 c8"
             id="redirects"
           >
             Redirects
           </h1>
           <span
-            class="c10"
+            class="c9"
           >
             <div>
               <a
-                class="c11"
+                class="c10"
                 href="/codebase"
               >
                 <span
-                  class="c12"
+                  class="c11"
                 >
                   /codebase ⇒ https://github.com/georgegillams/webapp-boilerplate
                 </span>
@@ -616,11 +598,11 @@ exports[`<SiteMap /> should render correctly 1`] = `
             </div>
             <div>
               <a
-                class="c11"
+                class="c10"
                 href="/wp-admin"
               >
                 <span
-                  class="c12"
+                  class="c11"
                 >
                   /wp-admin ⇒ /admin
                 </span>
@@ -629,11 +611,11 @@ exports[`<SiteMap /> should render correctly 1`] = `
             </div>
             <div>
               <a
-                class="c11"
+                class="c10"
                 href="/site-map"
               >
                 <span
-                  class="c12"
+                  class="c11"
                 >
                   /site-map ⇒ /sitemap
                 </span>

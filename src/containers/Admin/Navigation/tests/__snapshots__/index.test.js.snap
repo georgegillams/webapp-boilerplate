@@ -40,11 +40,11 @@ exports[`<AdminNavigation /> should render correctly - index 1`] = `
   top: 0;
   width: 13rem;
   height: 100vh;
-  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
+  background-image: linear-gradient( 90deg,rgb(238,238,238),rgb(245,245,245),rgb(238,238,238) );
   background-repeat: no-repeat;
   background-size: 12.5rem 100%;
-  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
-  animation: sjjMW 3.5s ease-in-out infinite;
+  -webkit-animation: eflhBg 3.5s ease-in-out infinite;
+  animation: eflhBg 3.5s ease-in-out infinite;
 }
 
 .c3 {
@@ -84,7 +84,7 @@ exports[`<AdminNavigation /> should render correctly - index 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c2 {
-    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+    background-image: linear-gradient( 90deg,rgb(17,17,17),rgb(50,50,50),rgb(17,17,17) );
   }
 }
 
@@ -172,8 +172,8 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
 }
 
 .c1 {
-  -webkit-animation: bbwGtI 0.4s ease-in-out;
-  animation: bbwGtI 0.4s ease-in-out;
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
 }
 
 .c5 {
@@ -181,6 +181,11 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
   display: inline-block;
   z-index: 1;
   width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
+  cursor: pointer;
+  box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -188,11 +193,6 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
   border-radius: 0.35rem;
   background: none;
   text-align: left;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
-  cursor: pointer;
-  box-sizing: border-box;
 }
 
 .c5:disabled {
@@ -201,7 +201,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
 
 .c5:not(:disabled):focus,.c5:not(:disabled):focus-within,
 .c5:not(:disabled):active,.c5:not(:disabled):hover {
-  box-shadow: 0.4rem 0.4rem 1rem 0 rgba(37,32,31,0.3);
+  box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
 }
 
 .c8 {
@@ -221,12 +221,13 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
   height: calc(100% + 2rem);
   margin-top: -1rem;
   margin-left: -1rem;
-  background-color: white;
+  background-color: #ffffff;
   background-position: center;
   background-size: cover;
 }
 
 .c10 {
+  height: 100%;
   padding: 2rem;
 }
 
@@ -257,6 +258,10 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
   -ms-flex-align: center;
   align-items: center;
   box-sizing: border-box;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c12 {
@@ -323,14 +328,14 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c5 {
-    box-shadow: 0.44rem 0.44rem 1rem 0 transparent;
+    box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c5:not(:disabled):focus,.c5:not(:disabled):focus-within,
   .c5:not(:disabled):active,.c5:not(:disabled):hover {
-    box-shadow: 0.2rem 0.2rem 0.5rem 0 transparent;
+    box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
   }
 }
 
@@ -342,7 +347,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c6 {
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -655,11 +660,11 @@ exports[`<AdminNavigation /> should render correctly with auth error 1`] = `
   top: 0;
   width: 13rem;
   height: 100vh;
-  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
+  background-image: linear-gradient( 90deg,rgb(238,238,238),rgb(245,245,245),rgb(238,238,238) );
   background-repeat: no-repeat;
   background-size: 12.5rem 100%;
-  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
-  animation: sjjMW 3.5s ease-in-out infinite;
+  -webkit-animation: eflhBg 3.5s ease-in-out infinite;
+  animation: eflhBg 3.5s ease-in-out infinite;
 }
 
 .c3 {
@@ -687,7 +692,7 @@ exports[`<AdminNavigation /> should render correctly with auth error 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c5 {
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -705,7 +710,7 @@ exports[`<AdminNavigation /> should render correctly with auth error 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c2 {
-    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+    background-image: linear-gradient( 90deg,rgb(17,17,17),rgb(50,50,50),rgb(17,17,17) );
   }
 }
 
@@ -813,11 +818,11 @@ exports[`<AdminNavigation /> should render correctly with initial state 1`] = `
   top: 0;
   width: 13rem;
   height: 100vh;
-  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
+  background-image: linear-gradient( 90deg,rgb(238,238,238),rgb(245,245,245),rgb(238,238,238) );
   background-repeat: no-repeat;
   background-size: 12.5rem 100%;
-  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
-  animation: sjjMW 3.5s ease-in-out infinite;
+  -webkit-animation: eflhBg 3.5s ease-in-out infinite;
+  animation: eflhBg 3.5s ease-in-out infinite;
 }
 
 .c3 {
@@ -857,7 +862,7 @@ exports[`<AdminNavigation /> should render correctly with initial state 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c2 {
-    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+    background-image: linear-gradient( 90deg,rgb(17,17,17),rgb(50,50,50),rgb(17,17,17) );
   }
 }
 
@@ -935,8 +940,8 @@ exports[`<AdminNavigation /> should render correctly with user 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   position: relative;
-  color: darkorchid;
-  fill: darkorchid;
+  color: #9932cc;
+  fill: #9932cc;
 }
 
 .c5:focus-within,
@@ -954,7 +959,7 @@ exports[`<AdminNavigation /> should render correctly with user 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1007,14 +1012,14 @@ exports[`<AdminNavigation /> should render correctly with user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c5:focus-within::after,
   .c5:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c5 {
-    color: orchid;
-    fill: orchid;
+    color: #da70d6;
+    fill: #da70d6;
   }
 
   .c5:hover {
@@ -1025,7 +1030,7 @@ exports[`<AdminNavigation /> should render correctly with user 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c1 {
-    color: white;
+    color: #ffffff;
   }
 }
 
