@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import PageTitle from 'components/common/PageTitle';
 import DebugObject from 'components/common/DebugObject';
@@ -21,9 +21,10 @@ import AdminUsersAPIEntity from './AdminUsersAPIEntity';
 import useTabMadeVisible from 'client-utils/common/useTabMadeVisible';
 import { ControlPanel, Count } from './admin-users.styles';
 import { HStack, VStack } from 'components/common/Stacks';
+import { useEffectOnce } from 'react-use';
+import Paragraph from '@george-gillams/components/paragraph';
 
 const AdminUsers = props => {
-  const [firstPageHit, setFirstPageHit] = useState(true);
   const [highlightId, setHighlightId] = useState(null);
   const [highlightToScrollTo, setHighlightToScrollTo] = useState(null);
   const [showFilters, setShowFilters] = useState(false);
@@ -48,9 +49,9 @@ const AdminUsers = props => {
 
   useTabMadeVisible(load);
 
-  useEffect(() => {
+  useEffectOnce(() => {
     load();
-  }, []);
+  });
 
   const scrollToHighlightedId = () => {
     if (!highlightToScrollTo) {
@@ -64,18 +65,20 @@ const AdminUsers = props => {
     }
   };
 
+  const firstPageHitDone = useRef(false);
+
   useEffect(() => {
     if (!router || !router.query || !router.query.highlight) {
       setHighlightId(null);
-      setFirstPageHit(false);
+      firstPageHitDone.current = true;
       return;
     }
 
     const highlight = router.query.highlight;
     setHighlightId(highlight);
-    if (firstPageHit) {
+    if (!firstPageHitDone.current) {
       setHighlightToScrollTo(highlight);
-      setFirstPageHit(false);
+      firstPageHitDone.current = true;
     }
   }, [router]);
 
@@ -178,18 +181,18 @@ const AdminUsers = props => {
           setLoginRedirect={() => {
             setPostLoginRedirect('admin/users');
           }}>
-          <div>
-            <PageTitle link={{ to: '/admin', text: 'Admin' }} name="Admin users"></PageTitle>
-          </div>
-          {mainControls}
-          <ErrorDisplay message="Could not load users" error={loadError} />
-          {showFilters && filterControls}
-          {users && (
-            <Count>
-              Showing {filteredUsers.length} of {users.length} users
-            </Count>
-          )}
-          <SplitDetailView listView={listView} detailView={detailView} closeLink="/admin/users" />
+          <>
+            <PageTitle link={{ to: '/admin', text: 'Admin' }} name="Admin users" />
+            <Paragraph>{mainControls}</Paragraph>
+            <ErrorDisplay message="Could not load users" error={loadError} />
+            {showFilters && filterControls}
+            {users && (
+              <Count>
+                Showing {filteredUsers.length} of {users.length} users
+              </Count>
+            )}
+            <SplitDetailView listView={listView} detailView={detailView} closeLink="/admin/users" />
+          </>
         </AdminOnly>
       </LoadingCover>
       <DebugObject

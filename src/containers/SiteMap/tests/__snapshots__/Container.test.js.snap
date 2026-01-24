@@ -29,14 +29,12 @@ exports[`<SiteMap /> should render correctly 1`] = `
   fill: #9932cc;
 }
 
-.c10:focus-within,
-.c10:focus {
+.c10:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c10:focus-within::after,
-.c10:focus::after {
+.c10:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -44,8 +42,8 @@ exports[`<SiteMap /> should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
-  border-radius: 0.5rem;
+  border: solid #44aeff 0.2rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -139,9 +137,8 @@ exports[`<SiteMap /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c10:focus-within::after,
-  .c10:focus::after {
-    border-color: #007dfa3C;
+  .c10:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 

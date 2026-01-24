@@ -32,14 +32,12 @@ exports[`<Footer /> Should render correctly 1`] = `
   border-radius: 0.25rem;
 }
 
-.c3:focus-within,
-.c3:focus {
+.c3:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c3:focus-within::after,
-.c3:focus::after {
+.c3:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -47,8 +45,8 @@ exports[`<Footer /> Should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
-  border-radius: 0.5rem;
+  border: solid #44aeff 0.2rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -82,14 +80,12 @@ exports[`<Footer /> Should render correctly 1`] = `
   fill: white;
 }
 
-.c11:focus-within,
-.c11:focus {
+.c11:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c11:focus-within::after,
-.c11:focus::after {
+.c11:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -97,8 +93,8 @@ exports[`<Footer /> Should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
-  border-radius: 0.5rem;
+  border: solid #44aeff 0.2rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -234,9 +230,8 @@ exports[`<Footer /> Should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c3:focus-within::after,
-  .c3:focus::after {
-    border-color: #007dfa3C;
+  .c3:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -253,9 +248,8 @@ exports[`<Footer /> Should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c11:focus-within::after,
-  .c11:focus::after {
-    border-color: #007dfa3C;
+  .c11:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -438,14 +432,12 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
   border-radius: 0.25rem;
 }
 
-.c3:focus-within,
-.c3:focus {
+.c3:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c3:focus-within::after,
-.c3:focus::after {
+.c3:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -453,8 +445,8 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
-  border-radius: 0.5rem;
+  border: solid #44aeff 0.2rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -488,14 +480,12 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
   fill: white;
 }
 
-.c11:focus-within,
-.c11:focus {
+.c11:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c11:focus-within::after,
-.c11:focus::after {
+.c11:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -503,8 +493,8 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
-  border-radius: 0.5rem;
+  border: solid #44aeff 0.2rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -640,9 +630,8 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c3:focus-within::after,
-  .c3:focus::after {
-    border-color: #007dfa3C;
+  .c3:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -659,9 +648,8 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c11:focus-within::after,
-  .c11:focus::after {
-    border-color: #007dfa3C;
+  .c11:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 

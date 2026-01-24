@@ -32,14 +32,12 @@ exports[`<Layout /> Should render correctly 1`] = `
   border-radius: 0.25rem;
 }
 
-.c6:focus-within,
-.c6:focus {
+.c6:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c6:focus-within::after,
-.c6:focus::after {
+.c6:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -47,8 +45,8 @@ exports[`<Layout /> Should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
-  border-radius: 0.5rem;
+  border: solid #44aeff 0.2rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -82,14 +80,12 @@ exports[`<Layout /> Should render correctly 1`] = `
   fill: white;
 }
 
-.c14:focus-within,
-.c14:focus {
+.c14:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c14:focus-within::after,
-.c14:focus::after {
+.c14:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -97,8 +93,8 @@ exports[`<Layout /> Should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
-  border-radius: 0.5rem;
+  border: solid #44aeff 0.2rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -251,9 +247,8 @@ exports[`<Layout /> Should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c6:focus-within::after,
-  .c6:focus::after {
-    border-color: #007dfa3C;
+  .c6:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -270,9 +265,8 @@ exports[`<Layout /> Should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:focus-within::after,
-  .c14:focus::after {
-    border-color: #007dfa3C;
+  .c14:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -474,14 +468,12 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
   border-radius: 0.25rem;
 }
 
-.c6:focus-within,
-.c6:focus {
+.c6:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c6:focus-within::after,
-.c6:focus::after {
+.c6:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -489,8 +481,8 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
-  border-radius: 0.5rem;
+  border: solid #44aeff 0.2rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -524,14 +516,12 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
   fill: white;
 }
 
-.c14:focus-within,
-.c14:focus {
+.c14:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c14:focus-within::after,
-.c14:focus::after {
+.c14:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -539,8 +529,8 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
-  border-radius: 0.5rem;
+  border: solid #44aeff 0.2rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -693,9 +683,8 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c6:focus-within::after,
-  .c6:focus::after {
-    border-color: #007dfa3C;
+  .c6:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -712,9 +701,8 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:focus-within::after,
-  .c14:focus::after {
-    border-color: #007dfa3C;
+  .c14:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
