@@ -12,9 +12,18 @@ jobs:
 
     steps:
       # Checkout the repo
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           ref: ${{ github.head_ref }}
+
+      - name: Setup asdf
+        uses: asdf-vm/actions/install@v4
+
+      - name: Get node version
+        run: |
+          NODE_VERSION=$(node -v)
+          echo "NODE_VERSION=$NODE_VERSION" >> $GITHUB_ENV
+          echo "Node version: $NODE_VERSION"
 
       - name: print job details
         run: |
@@ -24,8 +33,8 @@ jobs:
       - name: restore-yarn-cache
         uses: actions/cache@v3
         with:
-          path: '**/node_modules'
-          key: ${{ runner.os }}-node_modules-${{ hashFiles('**/yarn.lock') }}
+          path: "**/node_modules"
+          key: ${{ runner.os }}-node_modules-${{ env.NODE_VERSION}}-${{ hashFiles('**/package.json', '**/yarn.lock') }}
 
       - name: gg-webapp setup
         run: |
@@ -47,9 +56,12 @@ jobs:
 
   #   steps:
   #     # Checkout the repo
-  #     - uses: actions/checkout@v2
+  #     - uses: actions/checkout@v3
   #       with:
   #         ref: ${{ github.head_ref }}
+
+  #     - name: Setup asdf
+  #       uses: asdf-vm/actions/install@v4
 
   #     - name: run snapshot tests
   #       run: |
@@ -71,9 +83,17 @@ jobs:
 
     steps:
       # Checkout the repo
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           ref: ${{ github.head_ref }}
+
+      - name: Setup asdf
+        uses: asdf-vm/actions/install@v4
+
+      - name: Get node version
+        run: |
+          NODE_VERSION=$(asdf current nodejs | awk '{print $2}')
+          echo "Node version: $NODE_VERSION"
 
       - name: generate hash
         run: |
@@ -94,6 +114,9 @@ jobs:
           NODE_ENV: ${{ secrets.NODE_ENV }}
           REDIS_URL: ${{ secrets.REDIS_URL }}
           SECRET_API_KEY: ${{ secrets.SECRET_API_KEY }}
+          SESSION_SECRET: ${{ secrets.SESSION_SECRET }}
+          NEXT_PUBLIC_TURNSTILE_SITE_KEY: ${{ secrets.NEXT_PUBLIC_TURNSTILE_SITE_KEY }}
+          TURNSTILE_SECRET_KEY: ${{ secrets.TURNSTILE_SECRET_KEY }}
         run: |
           echo "zipFileName ${{ env.ZIP_FILE_NAME }}"
           zipFileName=${{ env.ZIP_FILE_NAME }}
@@ -123,8 +146,8 @@ jobs:
       - name: restore-yarn-cache
         uses: actions/cache@v3
         with:
-          path: '**/node_modules'
-          key: ${{ runner.os }}-node_modules-${{ hashFiles('**/yarn.lock') }}
+          path: "**/node_modules"
+          key: ${{ runner.os }}-node_modules-${{ env.NODE_VERSION}}-${{ hashFiles('**/package.json', '**/yarn.lock') }}
 
       # We use a fresh checkout here so that we can authenticate with a personal access token.
       # This allows us to push new commits to a protected branch, which we cannot do with default GH action token.

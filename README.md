@@ -85,6 +85,10 @@ The following environment variables should be set up
 | GSUITE_EMAIL        | To send emails from your Gmail account | Your G-Suite email address                                                |
 | REDIS_URL           | To access the redis database.          | If no URL is provided, the server will connect to a local redis instance. |
 | SECRET_API_KEY      | Used to make admin API requests        | Anything secret and impossible to guess                                   |
+| SESSION_SECRET      | Used to sign cookies                   | Anything secret and impossible to guess                                   |
+| NEXT_PUBLIC_TURNSTILE_SITE_KEY | Cloudflare Turnstile site key for bot protection | Your Turnstile site key from Cloudflare dashboard |
+| TURNSTILE_SECRET_KEY | Cloudflare Turnstile secret key for server-side verification | Your Turnstile secret key from Cloudflare dashboard |
+
 
 ### Hosting on Heroku
 
