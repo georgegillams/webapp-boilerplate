@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import PageTitle from 'components/common/PageTitle';
 import DebugObject from 'components/common/DebugObject';
@@ -16,6 +16,8 @@ import useTabMadeVisible from 'client-utils/common/useTabMadeVisible';
 import { CreateNotificationForm } from 'components/common/Forms';
 import PageContainer from 'components/common/PageContainer';
 import { VStack } from 'components/common/Stacks';
+import { useEffectOnce } from 'react-use';
+import Paragraph from '@george-gillams/components/paragraph';
 
 const AdminNotifications = props => {
   const {
@@ -34,9 +36,9 @@ const AdminNotifications = props => {
 
   const [newNotification, setNewNotification] = useState({ type: 'success' });
 
-  useEffect(() => {
+  useEffectOnce(() => {
     load();
-  }, []);
+  });
 
   const showNotifications = !!notifications && !!notifications.map && notifications.length > 0;
 
@@ -51,35 +53,37 @@ const AdminNotifications = props => {
           setLoginRedirect={() => {
             setPostLoginRedirect('admin/notifications');
           }}>
-          <div>
-            <PageTitle link={{ to: '/admin', text: 'Admin' }} name="Admin notifications"></PageTitle>
-          </div>
-          <CreateNotificationForm
-            notification={newNotification}
-            onDataChanged={setNewNotification}
-            onSubmit={() => {
-              create(newNotification);
-            }}
-          />
-          <Button loading={notificationsState.loading} onClick={() => load()}>
-            Reload notifications
-          </Button>
-          <VStack topPadding>
-            <ErrorDisplay message="Could not load notifications" error={loadError} />
-            {showNotifications &&
-              notifications.map(n => (
-                <NotificationEntity key={n.id} entity={n}>
-                  <Button
-                    buttonType={BUTTON_TYPES.destructive}
-                    disabled={n.deleted}
-                    onClick={() => {
-                      remove(n);
-                    }}>
-                    Remove
-                  </Button>
-                </NotificationEntity>
-              ))}
-          </VStack>
+          <>
+            <PageTitle link={{ to: '/admin', text: 'Admin' }} name="Admin notifications" />
+            <Paragraph style={{ width: '100%' }}>
+              <CreateNotificationForm
+                notification={newNotification}
+                onDataChanged={setNewNotification}
+                onSubmit={() => {
+                  create(newNotification);
+                }}
+              />
+              <Button loading={notificationsState.loading} onClick={() => load()}>
+                Reload notifications
+              </Button>
+            </Paragraph>
+            <VStack topPadding>
+              <ErrorDisplay message="Could not load notifications" error={loadError} />
+              {showNotifications &&
+                notifications.map(n => (
+                  <NotificationEntity key={n.id} entity={n}>
+                    <Button
+                      buttonType={BUTTON_TYPES.destructive}
+                      disabled={n.deleted}
+                      onClick={() => {
+                        remove(n);
+                      }}>
+                      Remove
+                    </Button>
+                  </NotificationEntity>
+                ))}
+            </VStack>
+          </>
         </AdminOnly>
       </LoadingCover>
       <DebugObject

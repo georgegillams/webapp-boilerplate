@@ -33,6 +33,7 @@ exports[`<AdminNavigation /> should render correctly - index 1`] = `
   max-width: 25rem;
   height: 10rem;
   margin-bottom: 1.2rem;
+  border-radius: 0.75rem;
 }
 
 .c2 {
@@ -190,9 +191,27 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   border: none;
-  border-radius: 0.35rem;
+  border-radius: 0.75rem;
   background: none;
   text-align: left;
+}
+
+.c5:focus-visible {
+  position: relative;
+  outline: none !important;
+}
+
+.c5:focus-visible::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid #44aeff 0.2rem;
+  border-radius: 0.75rem;
+  pointer-events: none;
 }
 
 .c5:disabled {
@@ -208,7 +227,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
   position: relative;
   width: 100%;
   height: 100%;
-  border-radius: 0.35rem;
+  border-radius: 0.75rem;
   overflow: hidden;
 }
 
@@ -329,6 +348,12 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c5 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -653,6 +678,7 @@ exports[`<AdminNavigation /> should render correctly with auth error 1`] = `
   max-width: 25rem;
   height: 10rem;
   margin-bottom: 1.2rem;
+  border-radius: 0.75rem;
 }
 
 .c2 {
@@ -811,6 +837,7 @@ exports[`<AdminNavigation /> should render correctly with initial state 1`] = `
   max-width: 25rem;
   height: 10rem;
   margin-bottom: 1.2rem;
+  border-radius: 0.75rem;
 }
 
 .c2 {
@@ -944,14 +971,12 @@ exports[`<AdminNavigation /> should render correctly with user 1`] = `
   fill: #9932cc;
 }
 
-.c5:focus-within,
-.c5:focus {
+.c5:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c5:focus-within::after,
-.c5:focus::after {
+.c5:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -959,8 +984,8 @@ exports[`<AdminNavigation /> should render correctly with user 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
-  border-radius: 0.5rem;
+  border: solid #44aeff 0.2rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -1010,9 +1035,8 @@ exports[`<AdminNavigation /> should render correctly with user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:focus-within::after,
-  .c5:focus::after {
-    border-color: #007dfa3C;
+  .c5:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 

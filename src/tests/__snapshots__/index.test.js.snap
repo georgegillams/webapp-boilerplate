@@ -46,14 +46,12 @@ exports[`<HomePage /> should render correctly 1`] = `
   fill: #9932cc;
 }
 
-.c9:focus-within,
-.c9:focus {
+.c9:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c9:focus-within::after,
-.c9:focus::after {
+.c9:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -61,8 +59,8 @@ exports[`<HomePage /> should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
-  border-radius: 0.5rem;
+  border: solid #44aeff 0.2rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -82,14 +80,12 @@ exports[`<HomePage /> should render correctly 1`] = `
   fill: white;
 }
 
-.c21:focus-within,
-.c21:focus {
+.c21:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c21:focus-within::after,
-.c21:focus::after {
+.c21:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -97,8 +93,8 @@ exports[`<HomePage /> should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
-  border-radius: 0.5rem;
+  border: solid #44aeff 0.2rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -173,14 +169,12 @@ exports[`<HomePage /> should render correctly 1`] = `
   border-radius: 0.25rem;
 }
 
-.c14:focus-within,
-.c14:focus {
+.c14:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c14:focus-within::after,
-.c14:focus::after {
+.c14:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -188,8 +182,8 @@ exports[`<HomePage /> should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
-  border-radius: 0.5rem;
+  border: solid #44aeff 0.2rem;
+  border-radius: 0.75rem;
   pointer-events: none;
 }
 
@@ -329,9 +323,8 @@ exports[`<HomePage /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c9:focus-within::after,
-  .c9:focus::after {
-    border-color: #007dfa3C;
+  .c9:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -348,9 +341,8 @@ exports[`<HomePage /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c21:focus-within::after,
-  .c21:focus::after {
-    border-color: #007dfa3C;
+  .c21:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -384,9 +376,8 @@ exports[`<HomePage /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:focus-within::after,
-  .c14:focus::after {
-    border-color: #007dfa3C;
+  .c14:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
