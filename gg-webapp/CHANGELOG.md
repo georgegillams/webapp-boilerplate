@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.7
+
+### Bug Fixes
+
+- Fix release
+- Bot protection (#512)
+
 ## 1.0.6
 
 ### Bug Fixes
