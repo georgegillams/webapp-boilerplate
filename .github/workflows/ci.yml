@@ -143,6 +143,20 @@ jobs:
           ref: ${{ github.head_ref }}
           fetch-depth: 0
 
+      - name: Setup asdf
+        uses: asdf-vm/actions/install@v4
+
+      - name: Get node version
+        run: |
+          NODE_VERSION=$(node -v)
+          echo "NODE_VERSION=$NODE_VERSION" >> $GITHUB_ENV
+          echo "Node version: $NODE_VERSION"
+
+      - name: print job details
+        run: |
+          echo "github_ref ${{ github.ref }}"
+          echo "github_event_name ${{ github.event_name }}"
+
       - name: restore-yarn-cache
         uses: actions/cache@v3
         with:
