@@ -16,6 +16,7 @@ const nextConfig = {
     PORT: process.env.PORT,
     PROJECT_UNDER_TEST: process.env.PROJECT_UNDER_TEST,
     HOST: process.env.HOST,
+    NEXT_PUBLIC_TURNSTILE_SITE_KEY: process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY,
   },
   compiler: {
     // Enables the styled-components SWC transform
