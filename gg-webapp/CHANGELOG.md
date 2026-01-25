@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.10
+
+### Bug Fixes
+
+- Optimise docker args (#513)
+
 ## 1.0.9
 
 ### Bug Fixes
