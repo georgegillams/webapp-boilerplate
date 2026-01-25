@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.9
+
+### Bug Fixes
+
+- 3879987 Merge branch 'main' of github.com:georgegillams/webapp-boilerplate
+- Add turnstile key to public env
+
 ## 1.0.8
 
 ### Bug Fixes
