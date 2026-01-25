@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.8
+
+### Bug Fixes
+
+- Require turnstyle for build
+
 ## 1.0.7
 
 ### Bug Fixes
